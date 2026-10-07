@@ -1,0 +1,24 @@
+{
+  "name": "@red-cup-engineering/tex-engineering-services-section",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Read TeX source commands, environments, dependencies, labels and references.",
+  "exports": {
+    ".": {
+      "import": "./src/index.mjs"
+    },
+    "./schema": {
+      "import": "./src/schema.mjs"
+    },
+    "./syntax": {
+      "import": "./src/syntax.mjs"
+    }
+  },
+  "dependencies": {
+    "@red-cup-engineering/json-schema-services-section": "workspace:*"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  }
+}
