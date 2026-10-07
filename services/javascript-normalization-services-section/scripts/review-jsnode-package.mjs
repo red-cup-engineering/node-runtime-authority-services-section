@@ -7,7 +7,7 @@ import { normalizeJsnodePackageManifest } from "@red-cup-engineering/npm-package
 import { readJavascriptFileImports } from "@red-cup-engineering/javascript-file-import-services-section/read-javascript-file-imports";
 import { SPECIFIER } from "@red-cup-engineering/javascript-node-services-section/audit-layer-imports";
 import { argument } from "@red-cup-engineering/javascript-node-services-section/argv";
-import { discoverHousePackages } from "../../javascript-node-services-section/src/discover-house-packages.mjs";
+import { discoverHousePackages } from "@red-cup-engineering/javascript-node-services-section/discover-house-packages";
 
 const TEST_FILE = /\.test\.(mjs|mts|js|ts|cjs)$/u;
 const EXTERNAL_TEST_RUNNER = /^(?:npx\s+)?(?:vitest|jest|mocha|tap|ava|playwright)(?:\s|$)/u;
