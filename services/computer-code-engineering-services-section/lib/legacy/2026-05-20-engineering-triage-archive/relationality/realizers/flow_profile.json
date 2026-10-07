@@ -1,0 +1,9 @@
+{
+  "id": "flow_profile",
+  "act": "FlowProfile",
+  "module": "realizers.py.core",
+  "callable": "realize_flow_profile",
+  "input_kind": "NucleatedProfile",
+  "output_kind": "PhaseSpace",
+  "description": "Apply FlowProfile dynamics to update the PhaseSpace carrier."
+}

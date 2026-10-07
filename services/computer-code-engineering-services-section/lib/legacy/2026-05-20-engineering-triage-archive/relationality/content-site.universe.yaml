@@ -1,0 +1,11 @@
+sources: content/**/*.md
+publish:
+  mode: permissive
+html:
+  sanitize: true
+  lang: en
+  assets:
+    inline: false
+    minify: true
+cache:
+  enabled: true

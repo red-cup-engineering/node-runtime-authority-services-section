@@ -1,0 +1,16 @@
+{
+  "id": "observation-carrier:template",
+  "kind": "ObservationCarrier",
+  "acts": ["Observe", "SeedObservation", "RecognizeObservation"],
+  "payload": {
+    "measurement": {
+      "channel": "default"
+    },
+    "recognition_lattice": {
+      "description": "Template for external observation carriers compatible with MeasurementFrame."
+    }
+  },
+  "metadata": {
+    "template": true
+  }
+}
