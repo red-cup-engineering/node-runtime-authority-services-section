@@ -1,8 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { isTerm } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation";
-import { checkTy, inferTy, isClosed } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/typing";
+import { isTerm } from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation";
+import { checkTy, inferTy, isClosed } from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation/typing";
 import {
   derivePunctuatedName,
   inferSemioticResourceNameType,

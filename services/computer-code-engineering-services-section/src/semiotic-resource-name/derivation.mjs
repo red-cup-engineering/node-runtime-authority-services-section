@@ -1,4 +1,4 @@
-import { checkTy, inferTy } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/typing";
+import { checkTy, inferTy } from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation/typing";
 
 // derivePunctuatedName — a Three Dots and a Dash SRN surface -> the SEN term it denotes.
 //
