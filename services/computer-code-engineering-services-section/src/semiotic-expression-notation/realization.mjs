@@ -6,7 +6,7 @@
  * judges these bindings against golden vectors read off the specification, so every dialect of SEN
  * that comes to rest here keeps the specification's rows.
  */
-import { instantiateSen, shiftSen } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation";
+import { instantiateSen, shiftSen } from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation";
 import { dev, normalize, step } from "./eval.mjs";
 
 const lambek = "Obsmetrologia.Predicating.CurryHowardLambek.";
