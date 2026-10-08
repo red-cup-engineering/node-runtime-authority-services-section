@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { tm } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation";
-import { arrayTerm, jsonToTerm, termToJson } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/json-codec";
+import { tm } from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation";
+import { arrayTerm, jsonToTerm, termToJson } from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation/json-codec";
 import { step, dev, normalize, evaluate, evaluateRunTerm } from "../../src/semiotic-expression-notation/eval.mjs";
 // Track A's expected values below were originally proven byte-for-byte
 // identical to the real, compiled metroplat build of the module this package
