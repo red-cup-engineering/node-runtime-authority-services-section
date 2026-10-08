@@ -3,7 +3,7 @@ import { createHash } from "node:crypto";
 import { resolve, join } from "node:path";
 import { packageNameFromLockLocation } from "./lockfile-registry-classification.mjs";
 import { writeFileText } from "@red-cup-engineering/file-services/write-file";
-import { sha256Hex } from "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/integrity";
+import { sha256Hex } from "@red-cup-engineering/cryptographic-data-service/integrity";
 
 /** Cache one exact upstream release for a registry with automatic proxying disabled.
  * Run offline. Existing releases cannot be overwritten; metadata has a backup and
