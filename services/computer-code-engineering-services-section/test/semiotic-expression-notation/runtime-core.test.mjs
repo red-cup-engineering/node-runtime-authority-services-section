@@ -16,10 +16,10 @@ import {
 import {
   inferTerm,
   validateType,
-} from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation/typing";
+} from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/typing";
 import { decodeSemantic, semanticBytes, semanticId } from "@red-cup-engineering/computer-content-engineering-services-section/semiotic-content-address";
-import { SEN_FORMS, TySchema, tm } from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation";
-import { FOUR, isKnowledgeCover } from "@red-cup-engineering/computer-data-services-section/four";
+import { SEN_FORMS, TySchema, tm } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation";
+import { FOUR, isKnowledgeCover } from "@red-cup-engineering/computer-data-engineering-services-section/four";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
