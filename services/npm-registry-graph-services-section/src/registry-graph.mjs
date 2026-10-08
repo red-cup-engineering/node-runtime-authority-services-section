@@ -1,7 +1,7 @@
 
 import { openNpmRegistryQuerySource } from "@red-cup-engineering/npm-registry-query-service";
 import { maxSatisfying, valid, validRange } from "semver";
-import { sha256Digest, sha256Hex } from "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/integrity";
+import { sha256Digest, sha256Hex } from "@red-cup-engineering/cryptographic-data-service/integrity";
 
 // A registry graph is one chart in the firm's atlas, and its tiers are
 // independent dimensions that must not collapse into a single edge set:

@@ -7,7 +7,7 @@ import { effectivePackageDependencyEdges, isExactSemver, publicationManifest, re
 import { downloadConfiguredNpmRegistryTarball, readConfiguredNpmRegistryPackageVersion } from "./registry.mjs";
 import { scanWorkspaceManifests } from "./read-workspace-manifests.mjs";
 import { verifyIsolatedCarrier } from "./isolated-carrier-verification.mjs";
-import { sha256Hex } from "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/integrity";
+import { sha256Hex } from "@red-cup-engineering/cryptographic-data-service/integrity";
 
 const SHA512_INTEGRITY = /^sha512-[A-Za-z0-9+/]+={0,2}$/u;
 const PACKAGE_NAME = /^(?:@[A-Za-z0-9][A-Za-z0-9._~-]*\/)?[A-Za-z0-9][A-Za-z0-9._~-]*$/u;

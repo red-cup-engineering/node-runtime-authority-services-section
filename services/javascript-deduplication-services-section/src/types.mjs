@@ -1,4 +1,4 @@
-import { defineType } from "@red-cup-engineering/computer-data-engineering-services-section/type-system";
+import { defineType } from "@red-cup-engineering/computer-data-services-section/type-system";
 
 const established = (result) => {
   if (!result.ok) throw new TypeError(`deduplication type declaration refused: ${JSON.stringify(result.refusal)}`);
