@@ -32,7 +32,7 @@
     "@red-cup-engineering/markdown-engineering-services-section": "workspace:*"
   },
   "devDependencies": {
-    "@red-cup-engineering/package-test-plan": "workspace:*"
+    "@red-cup-engineering/jsnode-package-services-section": "workspace:*"
   },
   "scripts": {
     "check": "check-package-syntax",

@@ -91,6 +91,6 @@
   "devDependencies": {
     "@red-cup-engineering/agent-organization-engine": "workspace:*",
     "@red-cup-engineering/feltos": "0.18.3",
-    "@red-cup-engineering/package-test-plan": "workspace:*"
+    "@red-cup-engineering/jsnode-package-services-section": "workspace:*"
   }
 }
