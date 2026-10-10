@@ -83,12 +83,14 @@
     "cache-verdaccio-upstream-release": "scripts/cache-verdaccio-upstream-release.mjs"
   },
   "scripts": {
-    "test": "node --test test/*.test.mjs",
-    "pack:dry-run": "npm pack --dry-run --ignore-scripts"
+    "test": "run-package-tests",
+    "pack:dry-run": "npm pack --dry-run --ignore-scripts",
+    "check": "check-package-syntax"
   },
   "main": "./src/index.mjs",
   "devDependencies": {
     "@red-cup-engineering/agent-organization-engine": "workspace:*",
-    "@red-cup-engineering/feltos": "0.18.3"
+    "@red-cup-engineering/feltos": "0.18.3",
+    "@red-cup-engineering/package-test-plan": "workspace:*"
   }
 }
