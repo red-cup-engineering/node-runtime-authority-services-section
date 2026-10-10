@@ -2,7 +2,7 @@
 
 import { freezeJson } from "@red-cup-engineering/json-services-section";
 
-import { requireTextFileRead } from "@red-cup-engineering/file-services/require-text-file-read";
+import { requireTextFileRead } from "@red-cup-engineering/computer-file-engineering-services-section/require-text-file-read";
 
 import { SPECIFIER, stripCommentsAndLiterals } from "@red-cup-engineering/javascript-node-services-section/audit-layer-imports";
 import operationInputSchema from "../data/records/read-javascript-file-imports.input.schema.json" with { type: "json" };

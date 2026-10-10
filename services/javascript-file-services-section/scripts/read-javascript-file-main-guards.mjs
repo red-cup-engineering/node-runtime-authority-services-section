@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { requireTextFileRead } from "@red-cup-engineering/file-services/require-text-file-read";
+import { requireTextFileRead } from "@red-cup-engineering/computer-file-engineering-services-section/require-text-file-read";
 import { parseJavaScript, walkJavaScript } from "@red-cup-engineering/javascript-node-services-section/javascript-parser";
 import { runJavascriptNodeOperation } from "@red-cup-engineering/javascript-node-services-section/operation";
 

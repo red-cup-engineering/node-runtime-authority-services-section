@@ -7,7 +7,7 @@
     "./read-javascript-file-main-guards": "./scripts/read-javascript-file-main-guards.mjs"
   },
   "dependencies": {
-    "@red-cup-engineering/file-services": "workspace:*",
+    "@red-cup-engineering/computer-file-engineering-services-section": "workspace:*",
     "@red-cup-engineering/javascript-node-services-section": "workspace:*"
   },
   "scripts": {

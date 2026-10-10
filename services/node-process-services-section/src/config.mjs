@@ -2,7 +2,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { basename, dirname, isAbsolute, resolve } from "node:path";
 import { processArguments } from "./entrypoint.mjs";
 import { processEnvironment } from "./environment.mjs";
-// @red-cup-engineering/file-services (computer-file-engineering-services-section)
+// @red-cup-engineering/computer-file-engineering-services-section (computer-file-engineering-services-section)
 // is this house's real file-read primitive, but its readFileText is async
 // (node:fs/promises) and every read below is a synchronous CLI-boundary
 // config resolution that must complete before the caller's event loop does

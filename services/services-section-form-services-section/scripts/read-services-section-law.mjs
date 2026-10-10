@@ -1,5 +1,5 @@
 import { resolve } from "node:path";
-import { readFileText } from "@red-cup-engineering/file-services/read-file";
+import { readFileText } from "@red-cup-engineering/computer-file-engineering-services-section/read-file";
 import { findAncestorMarkerFile } from "@red-cup-engineering/computer-filepath-engineering-services-section/find-ancestor-marker-file";
 
 const GROUP_SERVICES = "lib/emsenn/services/561-group/services";

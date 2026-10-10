@@ -5,7 +5,7 @@ import { dirname, join, relative, resolve } from "node:path";
 import { promisify } from "node:util";
 import semver from "semver";
 import { planZeroMajorVersionMap, rewriteZeroMajorCarrier } from "./zero-major-version-reset.mjs";
-import { writeFileBytes } from "@red-cup-engineering/file-services/write-file";
+import { writeFileBytes } from "@red-cup-engineering/computer-file-engineering-services-section/write-file";
 import { sha256Hex } from "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/integrity";
 const run = promisify(callback);
 const bytes = value => Buffer.from(JSON.stringify(value, null, 2) + "\n");

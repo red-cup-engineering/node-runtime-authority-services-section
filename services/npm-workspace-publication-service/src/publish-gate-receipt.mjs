@@ -1,6 +1,6 @@
 /**
  * Assemble the publish-or-refusal record body this house's publish gate has
- * recorded through `@red-cup-engineering/eavt/semantic-record`
+ * recorded through `@red-cup-engineering/eavt-services-section/semantic-record`
  * (field shape verified against `npm-registry-services-section`'s and
  * `news-media-engineering-services-section`'s own prior receipts): package
  * identity, the fresh-install test count, the lockfile classification, and

@@ -1,7 +1,7 @@
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { existsSync, readFileSync, writeFileSync } from "node:fs";
-import { execute } from "@red-cup-engineering/eavt";
+import { execute } from "@red-cup-engineering/eavt-services-section";
 import { semanticId } from "@red-cup-engineering/computer-content-engineering-services-section/semiotic-content-address";
 import { projectScriptOntoOperation, KERNEL_SPECIFIER } from "./operation-form.mjs";
 

@@ -7,7 +7,7 @@ import {
 
 } from "@red-cup-engineering/javascript-computer";
 import { eachWorkspacePackageDir } from "@red-cup-engineering/javascript-computer";
-import { writeFileTextSync } from "@red-cup-engineering/file-services/write-file";
+import { writeFileTextSync } from "@red-cup-engineering/computer-file-engineering-services-section/write-file";
 
   
 

@@ -7,7 +7,7 @@ import { dirname, join, resolve } from "node:path";
 import { createHash, randomUUID } from "node:crypto";
 import { promisify } from "node:util";
 import { correctedTarballURL } from "./tarball-guard.mjs";
-import { writeFileText } from "@red-cup-engineering/file-services/write-file";
+import { writeFileText } from "@red-cup-engineering/computer-file-engineering-services-section/write-file";
 
 const execFile = promisify(execFileCallback);
 const SHA512_INTEGRITY = /^sha512-[A-Za-z0-9+/]+={0,2}$/u;

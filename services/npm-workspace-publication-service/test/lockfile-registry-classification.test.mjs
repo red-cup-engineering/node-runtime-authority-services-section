@@ -35,12 +35,12 @@ test("a house-scoped dependency off-canonical is flagged by name and location", 
   const lock = {
     packages: {
       "": { name: "root" },
-      "node_modules/@red-cup-engineering/eavt": { resolved: "http://127.0.0.1:4873/@red-cup-engineering/eavt/-/eavt-0.5.0.tgz" },
+      "node_modules/@red-cup-engineering/eavt-services-section": { resolved: "http://127.0.0.1:4873/@red-cup-engineering/eavt-services-section/-/eavt-0.5.0.tgz" },
     },
   };
   const result = classifyLockfileResolvedUrls(lock, CANONICAL);
   assert.equal(result.houseScopedNotCanonical, 1);
-  assert.deepEqual(result.houseScopedNotCanonicalEntries[0].name, "@red-cup-engineering/eavt");
+  assert.deepEqual(result.houseScopedNotCanonicalEntries[0].name, "@red-cup-engineering/eavt-services-section");
 });
 
 test("a package's own resolved field takes precedence over the location-derived name", () => {
