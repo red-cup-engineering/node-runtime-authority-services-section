@@ -34,6 +34,32 @@ It performs no filesystem reads. The Group retains custody of the law data.
 Command: `fold-directory-entries-into-services-section-form` reads one JSON
 value per input line and writes one JSON value per output line.
 
+### deriveServicesSectionPath and checkServicesSectionPlacement
+
+~~~js
+export function deriveServicesSectionPath({ name, sections })
+export function checkServicesSectionPlacement({ sections })
+~~~
+
+Derives a services section's path from its name, never by an agent's choice
+(rule `placement-is-derived-from-the-name-by-script`). The custody is read
+from the name: internal `561-group-*`, external `public-*`, otherwise the
+house its last word names (`engineering`, `science`, `operations`). The
+section nests under the existing section whose name it specializes most
+closely: the one whose words appear, in order, within its own words, in the
+same custody, the custody's root section being the least specific. A name
+that derives no custody (`NAME_DERIVES_NO_CUSTODY`), has no parent
+(`NO_PARENT`), or that two sections specialize equally (`AMBIGUOUS_PARENT`)
+is refused: a placement the script cannot derive is a defect of the name.
+
+`checkServicesSectionPlacement` takes sections as `{name, path}` and returns
+how many stand where their names place them, each misplaced section with its
+derived path, and each refusal.
+
+Command: `derive-services-section-path` reads one JSON value per input line
+(`{name, sections}` to derive, `{sections: [{name, path}]}` to check) and
+writes one JSON value per output line.
+
 ### foundServicesSection
 
 ~~~js
