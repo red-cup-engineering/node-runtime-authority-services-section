@@ -9,7 +9,7 @@
     "@red-cup-engineering/semiotic-eavt-services-section": "workspace:*",
     "@red-cup-engineering/computer-content-engineering-services-section": "workspace:*",
     "@red-cup-engineering/computer-filepath-engineering-services-section": "workspace:*",
-    "@red-cup-engineering/cryptographic-data-service": "workspace:*",
+    "@red-cup-engineering/cryptographic-computer-data-engineering-services-section": "workspace:*",
     "@red-cup-engineering/eavt": "workspace:*",
     "@red-cup-engineering/execute-javascript-node-command-service": "workspace:*",
     "@red-cup-engineering/feltos": "0.18.3",

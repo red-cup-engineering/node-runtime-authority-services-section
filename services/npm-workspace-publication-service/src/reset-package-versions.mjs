@@ -6,7 +6,7 @@ import { promisify } from "node:util";
 import semver from "semver";
 import { planZeroMajorVersionMap, rewriteZeroMajorCarrier } from "./zero-major-version-reset.mjs";
 import { writeFileBytes } from "@red-cup-engineering/file-services/write-file";
-import { sha256Hex } from "@red-cup-engineering/cryptographic-data-service/integrity";
+import { sha256Hex } from "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/integrity";
 const run = promisify(callback);
 const bytes = value => Buffer.from(JSON.stringify(value, null, 2) + "\n");
 const scopes = new Set(["@561-group", "@causeway-services", "@coesite-operations", "@emsenn", "@emsweb", "@harmonious-union", "@koios-news", "@lenticule-science", "@red-cup-engineering", "@red-cup-science", "@rsc-quiescent", "@turntide-islands", "@union-officer-academy"]);

@@ -1,8 +1,8 @@
-import { admit, collectTypeSystem, isSubtypeOf } from "@red-cup-engineering/computer-data-services-section/type-system";
-import { tm, ty, shiftSen } from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation";
+import { admit, collectTypeSystem, isSubtypeOf } from "@red-cup-engineering/computer-data-engineering-services-section/type-system";
+import { tm, ty, shiftSen } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation";
 import { evaluate, evaluateRunTerm } from "./semiotic-expression-notation/eval.mjs";
-import { descriptorTy, encodeDescriptor, decodeDescriptor } from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation/json-codec";
-import { checkTy, tyEqual } from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation/typing";
+import { descriptorTy, encodeDescriptor, decodeDescriptor } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/json-codec";
+import { checkTy, tyEqual } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/typing";
 
 /** The common engineering specification addressed by portable executable code. */
 export const COMPUTER_ENGINEERING_SPECIFICATION_ID = "https://schemas.561.group/computer/computer-engineering.schema.json";

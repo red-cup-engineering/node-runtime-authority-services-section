@@ -3,7 +3,7 @@ import { createHash, randomUUID } from "node:crypto";
 import { cp, lstat, mkdir, mkdtemp, readFile, readdir, readlink, realpath, rename, rm, writeFile } from "node:fs/promises";
 import { basename, dirname, join, relative, resolve, sep } from "node:path";
 import { dependencyContractViolations } from "./dependency-policy.mjs";
-import { sha256Digest } from "@red-cup-engineering/cryptographic-data-service/integrity";
+import { sha256Digest } from "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/integrity";
 
 export const RECONCILE_NODE_VERSION = "v24.19.0";
 export const RECONCILE_NPM_VERSION = "11.17.0";

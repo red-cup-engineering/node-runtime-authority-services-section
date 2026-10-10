@@ -2,13 +2,13 @@ import {
   SEN_FORMS,
   tm,
   validateSenTerm,
-} from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation";
-import { inferTy, isClosed } from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation/typing";
+} from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation";
+import { inferTy, isClosed } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/typing";
 import {
   arrayTag,
   objectTag,
   stringTag,
-} from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation/json-codec";
+} from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/json-codec";
 import { parse as parseJson } from "@red-cup-engineering/json-services-section";
 import { EMPTY_WITNESS_ROOT } from "@red-cup-engineering/computer-content-engineering-services-section/semantic-content-identity";
 import { identifyNormalizedSemanticContent } from "./runtime.mjs";

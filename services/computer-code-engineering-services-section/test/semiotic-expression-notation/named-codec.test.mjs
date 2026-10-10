@@ -1,8 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { tm } from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation";
+import { tm } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation";
 import { evaluate } from "../../src/semiotic-expression-notation/eval.mjs";
-import { inferTy } from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation/typing";
+import { inferTy } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/typing";
 import {
   namedString, namedArray, namedObject, namedBool, namedGenerator,
   compileNamedSen, parseNamedSen,

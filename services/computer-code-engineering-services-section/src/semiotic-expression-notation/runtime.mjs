@@ -10,11 +10,11 @@ import {
 import {
   tm,
   validateEffectCell,
-} from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation";
-import { jsonToTerm, termToJson } from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation/json-codec";
-import { checkTerm, inferTerm, validateTerm, validateType } from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation/typing";
+} from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation";
+import { jsonToTerm, termToJson } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/json-codec";
+import { checkTerm, inferTerm, validateTerm, validateType } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/typing";
 import { step as reductionStep } from "./eval.mjs";
-import { readingOfSides, witnessBit } from "@red-cup-engineering/computer-data-services-section/four";
+import { readingOfSides, witnessBit } from "@red-cup-engineering/computer-data-engineering-services-section/four";
 export const PROFILE = "org.emsenn.sen.core.v1";
 export const RML_LANGUAGE = "sen/v2";
 function fail(code, message) {

@@ -7,7 +7,7 @@ import { promisify } from "node:util";
 import { rewriteVerdaccioPackument } from "./verdaccio-version-reset.mjs";
 import { rewriteZeroMajorCarrier } from "./zero-major-version-reset.mjs";
 import { writeFileText } from "@red-cup-engineering/file-services/write-file";
-import { sha256Hex } from "@red-cup-engineering/cryptographic-data-service/integrity";
+import { sha256Hex } from "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/integrity";
 const execFile = promisify(execFileCallback);
 const json = value => JSON.stringify(value);
 const filename = (name, version) => `${name.split("/").at(-1)}-${version}.tgz`;
