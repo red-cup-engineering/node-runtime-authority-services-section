@@ -19,8 +19,7 @@
     "data/records/schema"
   ],
   "dependencies": {
-    "@red-cup-engineering/javascript-node-services-section": "workspace:*",
-    "@red-cup-engineering/jsonl-services-section": "workspace:*"
+    "@red-cup-engineering/javascript-node-services-section": "workspace:*"
   },
   "scripts": {
     "test": "node --test test/*.test.mjs",
@@ -28,5 +27,8 @@
   },
   "engines": {
     "node": ">=24"
+  },
+  "devDependencies": {
+    "@red-cup-engineering/jsonl-services-section": "workspace:*"
   }
 }

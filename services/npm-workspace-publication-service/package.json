@@ -4,15 +4,11 @@
   "description": "Verifies exact registry dependency specifications, orders a package estate into leaf-first tiers, and publishes with npm; dry-run by default.",
   "type": "module",
   "dependencies": {
-    "@red-cup-engineering/agent-organization-engine": "workspace:*",
-    "@red-cup-engineering/cbor-services-section": "workspace:*",
     "@red-cup-engineering/semiotic-eavt-services-section": "workspace:*",
     "@red-cup-engineering/computer-content-engineering-services-section": "workspace:*",
     "@red-cup-engineering/computer-filepath-engineering-services-section": "workspace:*",
     "@red-cup-engineering/cryptographic-computer-data-engineering-services-section": "workspace:*",
-    "@red-cup-engineering/eavt": "workspace:*",
     "@red-cup-engineering/execute-javascript-node-command-service": "workspace:*",
-    "@red-cup-engineering/feltos": "0.18.3",
     "@red-cup-engineering/file-services": "workspace:*",
     "@red-cup-engineering/git-services-section": "workspace:*",
     "@red-cup-engineering/javascript-node-services-section": "workspace:*",
@@ -20,7 +16,6 @@
     "@red-cup-engineering/npm-registry-read-service": "workspace:*",
     "@red-cup-engineering/npm-registry-snapshot-services-section": "workspace:*",
     "@red-cup-engineering/uri-services-section": "workspace:*",
-    "@red-cup-engineering/witness-journal-document-service": "workspace:*",
     "semver": "7.7.2"
   },
   "private": false,
@@ -91,5 +86,9 @@
     "test": "node --test test/*.test.mjs",
     "pack:dry-run": "npm pack --dry-run --ignore-scripts"
   },
-  "main": "./src/index.mjs"
+  "main": "./src/index.mjs",
+  "devDependencies": {
+    "@red-cup-engineering/agent-organization-engine": "workspace:*",
+    "@red-cup-engineering/feltos": "0.18.3"
+  }
 }
