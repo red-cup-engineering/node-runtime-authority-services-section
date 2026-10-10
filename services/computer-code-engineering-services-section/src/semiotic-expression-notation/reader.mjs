@@ -46,7 +46,7 @@
  * this reader has no codec-package dependency.
  */
 import { evaluate } from "./eval.mjs";
-import { inferTy, isClosed } from "@red-cup-engineering/computer-data-services-section/semiotic-expression-notation/typing";
+import { inferTy, isClosed } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/typing";
 import { parse as parseJson } from "@red-cup-engineering/json-services-section";
 
 /**
