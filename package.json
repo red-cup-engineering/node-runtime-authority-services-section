@@ -3,5 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Groups services by the programming language interfaces they operate."
+  "description": "Groups services by the programming language interfaces they operate.",
+  "scripts": {
+    "test": "run-package-tests",
+    "check": "check-package-syntax"
+  },
+  "devDependencies": {
+    "@red-cup-engineering/jsnode-package-services-section": "workspace:*"
+  }
 }
