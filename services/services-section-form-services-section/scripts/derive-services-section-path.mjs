@@ -78,11 +78,82 @@ export function checkServicesSectionPlacement(request) {
   return { checked: sections.length, placed: sections.length - misplaced.length - refused.length, misplaced, refused };
 }
 
+/** The shortest word sequence holding both `first` and `second` in order, `first`'s words placed first where they tie. */
+function interleave(first, second) {
+  const table = Array.from({ length: first.length + 1 }, () => new Array(second.length + 1).fill(0));
+  for (let i = first.length - 1; i >= 0; i -= 1) for (let j = second.length - 1; j >= 0; j -= 1) {
+    table[i][j] = first[i] === second[j] ? table[i + 1][j + 1] + 1 : Math.max(table[i + 1][j], table[i][j + 1]);
+  }
+  const merged = [];
+  let i = 0, j = 0;
+  while (i < first.length || j < second.length) {
+    if (i < first.length && j < second.length && first[i] === second[j]) { merged.push(first[i]); i += 1; j += 1; }
+    else if (j >= second.length || (i < first.length && table[i + 1][j] >= table[i][j + 1])) { merged.push(first[i]); i += 1; }
+    else { merged.push(second[j]); j += 1; }
+  }
+  return merged;
+}
+
+/**
+ * Derives the name a section must carry where it stands: a name that declares its custody and specializes its
+ * parent section. A section already so named keeps its name; otherwise its own words are interleaved with its
+ * parent's, the parent's words first where they tie, and the parent's custody word closes the name (a 561-group or
+ * public parent's prefix opens it). A section with no parent section, a parent whose own name declares no
+ * custody, or a name declaring another house than its parent's, is refused: the script does not guess.
+ * @param {{name: string, parent: string|null}} request The section's name and its parent section's name.
+ * @returns {{name: string, derived: string, renamed: boolean} | {refused: string, name: string, parent?: string|null}}
+ *   NOT_A_SECTION_NAME, NO_PARENT_SECTION, PARENT_DECLARES_NO_CUSTODY or CUSTODY_CONFLICT.
+ */
+export function deriveServicesSectionName(request) {
+  const { name, parent = null } = request ?? {};
+  if (typeof name !== "string" || !name.endsWith(SUFFIX) || name.length === SUFFIX.length) return { refused: "NOT_A_SECTION_NAME", name };
+  const own = servicesSectionCustody(name);
+  if (parent === null) return own && own.root === name ? { name, derived: name, renamed: false } : { refused: "NO_PARENT_SECTION", name, parent };
+  const seat = servicesSectionCustody(parent);
+  if (!seat) return { refused: "PARENT_DECLARES_NO_CUSTODY", name, parent };
+  if (own && own.custody !== seat.custody) return { refused: "CUSTODY_CONFLICT", name, parent };
+  if (own && specializes(name, parent)) return { name, derived: name, renamed: false };
+  const house = HOUSES.includes(seat.custody);
+  const strip = (list) => (house && list.at(-1) === seat.custody ? list.slice(0, -1) : list);
+  const parentWords = parent === seat.root && house ? [] : strip(words(parent));
+  const merged = interleave(parentWords, strip(words(name)));
+  const derived = `${(house ? [...merged, seat.custody] : merged).join("-")}${SUFFIX}`;
+  return { name, derived, renamed: derived !== name };
+}
+
+/**
+ * Plans every section's name from where it stands, parents before children, each child derived against its
+ * parent's planned name.
+ * @param {{sections: {name: string, path: string}[]}} request The sections with their repository-relative paths.
+ * @returns {{planned: {name: string, path: string, derived: string}[], unchanged: number, refused: object[], collisions: {name: string, paths: string[]}[]}}
+ *   Collisions are the names two or more sections would carry, left for a person to settle.
+ */
+export function planServicesSectionNames(request) {
+  const sections = [...(request?.sections ?? [])].sort((a, b) => a.path.split("/").length - b.path.split("/").length);
+  const renamedAt = new Map(), planned = [], refused = [];
+  let unchanged = 0;
+  for (const section of sections) {
+    const parentPath = section.path.replace(/\/services\/[^/]+$/u, "");
+    const parentName = parentPath === section.path ? null : renamedAt.get(parentPath) ?? parentPath.split("/").at(-1);
+    const result = deriveServicesSectionName({ name: section.name, parent: parentName && parentName.endsWith(SUFFIX) ? parentName : null });
+    if (result.refused) { refused.push({ ...result, path: section.path }); renamedAt.set(section.path, section.name); continue; }
+    renamedAt.set(section.path, result.derived);
+    if (result.renamed) planned.push({ name: section.name, path: section.path, derived: result.derived });
+    else unchanged += 1;
+  }
+  // Two sections may not come to carry one name: each such pair is reported, neither is settled by the script.
+  const finalName = new Map(sections.map((section) => [section.path, renamedAt.get(section.path)]));
+  const holders = new Map();
+  for (const [path, name] of finalName) holders.set(name, [...(holders.get(name) ?? []), path]);
+  const collisions = [...holders].filter(([, paths]) => paths.length > 1).map(([name, paths]) => ({ name, paths: paths.sort() }));
+  return { planned, unchanged, refused, collisions };
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   for await (const line of createInterface({ input: process.stdin })) {
     if (!line.trim()) continue;
     const request = JSON.parse(line);
-    const result = request.name ? deriveServicesSectionPath(request) : checkServicesSectionPlacement(request);
+    const result = request.name ? ("parent" in request ? deriveServicesSectionName(request) : deriveServicesSectionPath(request)) : request.plan ? planServicesSectionNames(request) : checkServicesSectionPlacement(request);
     process.stdout.write(`${JSON.stringify(result)}\n`);
   }
 }
