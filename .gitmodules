@@ -1,0 +1,4 @@
+[submodule "git-services-section"]
+	path = services/computer-code-development-services-section/services/version-control-services-section/services/git-services-section
+	url = https://github.com/red-cup-engineering/git-services-section.git
+	branch = main
