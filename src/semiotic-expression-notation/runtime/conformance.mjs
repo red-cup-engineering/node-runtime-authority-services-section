@@ -2,7 +2,7 @@
 import { makeNiUri } from "@red-cup-engineering/uri-services-section/ni-uri";
 import { checkTerm, validateType } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/typing";
 import { assay, effectCellOfTerm, evaluate } from "../runtime.mjs";
-import { decodeSemantic, semanticBytes, semanticId } from "@red-cup-engineering/computer-content-engineering-services-section/semiotic-content-address";
+import { decodeSemantic, semanticBytes, semanticId } from "@red-cup-engineering/computer-content-address-engineering-services-section/semiotic-content-address";
 
 function fail(code, message) {
   const error = new Error(message);

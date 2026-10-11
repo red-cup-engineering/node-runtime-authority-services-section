@@ -10,7 +10,7 @@ import {
   stringTag,
 } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/json-codec";
 import { parse as parseJson } from "@red-cup-engineering/json-services-section";
-import { EMPTY_WITNESS_ROOT } from "@red-cup-engineering/computer-content-engineering-services-section/semantic-content-identity";
+import { EMPTY_WITNESS_ROOT } from "@red-cup-engineering/computer-content-address-engineering-services-section/semantic-content-identity";
 import { identifyNormalizedSemanticContent } from "./runtime.mjs";
 
 const text = (value) => JSON.stringify(value);

@@ -16,7 +16,7 @@ import {
   jsonToTerm,
   termToJson,
 } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/json-codec";
-import { coincides, semanticBytes } from "@red-cup-engineering/computer-content-engineering-services-section/semiotic-content-address";
+import { coincides, semanticBytes } from "@red-cup-engineering/computer-content-address-engineering-services-section/semiotic-content-address";
 
 function dedupe(terms) {
   const seen = new Set();
