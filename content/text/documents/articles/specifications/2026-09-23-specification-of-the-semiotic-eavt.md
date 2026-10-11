@@ -1,7 +1,6 @@
 ---
 title: "Specification of the semiotic EAVT"
 date-created: 2026-09-23
-status: realized; the semiotic-eavt modules of the code section
 part-of: computer-code-engineering-services-section
 version: 0.1.0
 stability: draft
@@ -37,8 +36,8 @@ and depends downward on EAVT in the data section.
 
 - `appendSeavtEntries({root, feed, entries, at})` admits and appends rows.
 - `readSeavtEntries({root, feed, at})` and `readSeavtEntriesAtPath({path})`
-  read and admit rows. A reader that must accept journals written before
-  admission existed reads them with the EAVT journal reader instead.
+  read and admit rows. A reader that must accept journals written without
+  admission reads them with the EAVT journal reader instead.
 
 ## Semantic records
 
@@ -48,7 +47,7 @@ default object kind; its `record` and `query` are
 
 ## Operations
 
-Each operation is implemented in its named module of `src/semiotic-eavt/`, with exported input/output schemas and a command face accepting one JSON value on stdin.
+Each operation lives in its named module of `src/semiotic-eavt/`, with input/output schemas and a command face accepting one JSON value on stdin.
 
 | Effect | Script |
 | --- | --- |
