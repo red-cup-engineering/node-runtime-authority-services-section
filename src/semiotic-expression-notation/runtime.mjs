@@ -6,7 +6,7 @@ import {
   canonicalizeSemioticJson as normalizeCarrier,
   semanticBytes,
   semanticId,
-} from "@red-cup-engineering/computer-content-engineering-services-section/semiotic-content-address";
+} from "@red-cup-engineering/computer-content-address-engineering-services-section/semiotic-content-address";
 import {
   tm,
   validateEffectCell,

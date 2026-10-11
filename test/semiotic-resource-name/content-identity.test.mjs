@@ -3,7 +3,7 @@ import test from "node:test";
 
 import {
   EMPTY_WITNESS_ROOT,
-} from "@red-cup-engineering/computer-content-engineering-services-section/semantic-content-identity";
+} from "@red-cup-engineering/computer-content-address-engineering-services-section/semantic-content-identity";
 import {
   identifyNormalizedSemanticContent,
   verifyNormalizedSemanticContent,

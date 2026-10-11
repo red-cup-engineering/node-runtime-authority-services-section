@@ -1,7 +1,6 @@
 ---
 title: "Specification of the semiotic expression notation"
 date-created: 2026-09-23
-status: core stated from the 2026-06-18 reference and the Lean development; the implementation admits exactly the core and the four executable forms
 part-of: computer-code-engineering-services-section
 version: 0.1.0
 stability: draft
@@ -65,8 +64,7 @@ the type of an array-encoded list whose spine holds only `T`. Consing onto a
 list is `pair(fst xs, pair(h, snd xs))` (`tm.consArray`); the typer gives
 that shape `list T` when `xs : list T` and `h : T`. `church_rosser` covers the seven core forms;
 `mark`, `coincide`, `cond` and `fold` are executable extensions whose
-reduction rules are local and deterministic, and the Lean side does not yet
-range over them (the "mark : base" atom rule is research-grade).
+reduction rules are local and deterministic.
 
 A semiotic content address enters a term as a `mark` whose surface is the
 address's `ni:` token. That is how SEN carries SCAs as terms: the token is
@@ -89,9 +87,9 @@ has no case for any of them.
 
 ## Forms that are derived, not primitive
 
-An earlier grammar (profile `org.emsenn.rmn.core.v3`) admitted forms the
-core does not have. Each is now a composition in the core, built where it is
-used; the reducer and typer have no case for any of them:
+Forms of the grammar profile `org.emsenn.rmn.core.v3` that the core does not
+have are each a composition in the core, built where it is used; the reducer
+and typer have no case for any of them:
 
 | v3 form | core derivation |
 |---|---|
@@ -104,11 +102,10 @@ used; the reducer and typer have no case for any of them:
 | `ground p s o`, `witness …` (types `grounded`, `wit`, `relation`) | the predication cell `pair(s, pair(mark(p), o))`; a WIT is `pair(cell, pair(before, pair(after, mark(evidence))))` with the two charges as marks, its one-cover law checked by the assay, not the grammar |
 | `effect cell` (type `effect`) | the cell's JSON bridge term (`effectTerm`); a bundle is `pair(effectTerm(cell), operation)` typed by `effectBundleType` |
 
-Removing these changed the normal form, and so the semantic identity, of every
-term that used them. Identities already issued over v3 terms (pinned contract
-addresses, circuit identities, published agent-card addresses) are content
-addresses of those exact bytes and still verify as bytes; content re-issued
-under the core receives a new address. A v3 envelope is never rewritten in
+A term that uses a v3 form has a different normal form, and so a different
+semantic identity, than its core composition. An identity issued over v3
+terms is the content address of those exact bytes and verifies as bytes;
+content re-issued under the core receives a new address. A v3 envelope is never rewritten in
 place.
 
 ## Layers around the notation
