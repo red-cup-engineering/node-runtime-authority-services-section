@@ -45,7 +45,7 @@
  * `parseJson` comes from the upstream JSON carrier's direct parse script, so
  * this reader has no codec-package dependency.
  */
-import { evaluate } from "./eval.mjs";
+import { evaluate as evaluateBounded } from "./runtime.mjs";
 import { inferTy, isClosed } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/typing";
 import { parse as parseJson } from "@red-cup-engineering/json-services-section";
 
@@ -81,14 +81,18 @@ export function parseSen(source) {
   return value;
 }
 
-/** Settle an admitted SEN term with the package evaluator. The evaluator uses
- *  complete development and a fuel bound, so failure to settle is reported as
- *  an ordinary exception instead of escaping into host-language execution.
+/** Settle an admitted SEN term using the runtime's existing bounded reducer.
+ * The old reader called eval.normalize without any fuel limit; claiming a
+ * bound in prose was not an operational bound. This adapter now requires a
+ * closed, inferable term and reports exhaustion as `fuel-exceeded`, without
+ * mistaking bounded execution for a strong-normalization theorem.
  * @param {Tm} term
+ * @param {{ fuel?: number }} options
  * @returns {Tm}
  */
-export function settleSen(term) {
-  return evaluate(term);
+export function settleSen(term, { fuel = 10_000 } = {}) {
+  if (!isRelationalTerm(term)) throw new TypeError("sen: not a well-typed closed term");
+  return evaluateBounded(term, fuel).normalForm;
 }
 
 const SEN_SCRIPT = /<script\b[^>]*\btype\s*=\s*["']application\/sen\+json["'][^>]*>([\s\S]*?)<\/script>/gi;
@@ -132,9 +136,9 @@ export function htmlIsRelational(html) {
  * @param {string} html
  * @returns {Tm[]}
  */
-export function settleRelationalHtml(html) {
+export function settleRelationalHtml(html, options = {}) {
   if (!htmlIsRelational(html)) throw new TypeError("html: contains a non-relational (Turing) script");
-  return extractRelationalScripts(html).map((source) => settleSen(parseSen(source)));
+  return extractRelationalScripts(html).map((source) => settleSen(parseSen(source), options));
 }
 
 /** Whether every message exchanged in a session is an admitted SEN term. This
@@ -153,9 +157,9 @@ export function sessionIsRelational(messages) {
  * @param {readonly unknown[]} messages
  * @returns {Tm[]}
  */
-export function settleRelationalSession(messages) {
+export function settleRelationalSession(messages, options = {}) {
   if (!sessionIsRelational(messages)) {
     throw new TypeError("session: contains a non-relational (Turing) message");
   }
-  return messages.filter(isRelationalTerm).map(settleSen);
+  return messages.filter(isRelationalTerm).map((message) => settleSen(message, options));
 }
