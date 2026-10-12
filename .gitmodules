@@ -2,3 +2,7 @@
 	path = services/computer-code-development-services-section/services/version-control-services-section/services/git-services-section
 	url = https://github.com/red-cup-engineering/git-services-section.git
 	branch = main
+[submodule "capability-cell-fabrication-services-section"]
+	path = services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/capability-cell-fabrication-services-section
+	url = https://github.com/red-cup-engineering/capability-cell-fabrication-services-section.git
+	branch = main
