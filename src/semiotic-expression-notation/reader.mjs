@@ -1,20 +1,17 @@
 /**
- * notation — Semiotic Expression Notation (SEN)'s admission gate: the closed,
- * well-typed-term decidability boundary, and its extension to HTML documents
+ * notation — Semiotic Expression Notation (SEN)'s finite syntax/type admission
+ * gate for closed terms, and its extension to HTML documents
  * and message-stream sessions.
  *
- * The package admits only closed, well-typed core terms at this boundary, then
- * settles them with the package evaluator. That gives the codec a concrete
- * decidable admission gate for executable JSON content. It is deliberately not
- * an arbitrary JavaScript execution boundary, and this package does not currently
- * claim a formal Lean strong-normalization proof for the evaluator's whole
- * domain extension.
+ * parseSen admits only closed, well-typed core syntax and returns it unreduced.
+ * This is a finite syntax/type check, not evaluation and not a proof of a
+ * uniform resource bound. settleSen separately uses the runtime's finite
+ * reduction budget and may refuse with fuel-exceeded. That bounds accepted
+ * contractions, not time or memory per step, and is not a strong-normalization
+ * theorem or a promise that every admitted term settles within the budget.
  *
- * This is the gauge behind "an HTML document may carry a program and stay
- * decidable": admit `<script type="application/sen+json">` only when the script
- * body is a closed, well-typed SEN term, and reject every other script type. The
- * document then carries its data, its markup, and its morphism — everything but
- * the interpreter itself.
+ * HTML/session admission below checks which script bodies have this syntax.
+ * Their settlement calls preserve the same per-term reduction-budget boundary.
  *
  * NOTE (scoping, not yet acted on): `extractRelationalScripts`/`htmlIsRelational`/
  * `settleRelationalHtml` and `sessionIsRelational`/`settleRelationalSession` are
@@ -34,12 +31,11 @@
  * bundled together before this split, which is exactly the "several functions,
  * several packages" scoping error being corrected.
  *
- * Transcribed from metroplat's `src/lib/language/reader/index.mts`, behavior
- * preserved exactly (TypeScript type annotations dropped; JSDoc typedefs
- * substituted). `evaluate` now comes from
- * `@red-cup-engineering/computer-code-engineering-services-section/semiotic-expression-notation/eval` in place of the relative
- * `../eval/index.mts`; `inferTy`/`isClosed` now come from
- * `@red-cup-engineering/computer-code-engineering-services-section/semiotic-expression-notation/typing` in place of the
+ * Originally transcribed from metroplat's `src/lib/language/reader/index.mts`
+ * with TypeScript annotations replaced by JSDoc. Bounded settlement now uses
+ * the existing runtime reducer;
+ * `inferTy`/`isClosed` come from
+ * `@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/typing` in place of the
  * relative `../check/index.mts`.
  *
  * `parseJson` comes from the upstream JSON carrier's direct parse script, so
