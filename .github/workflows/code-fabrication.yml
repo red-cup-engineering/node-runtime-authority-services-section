@@ -8,6 +8,7 @@ on:
       - "test/exact-source-edits.test.mjs"
       - "services/javascript-engineering-services-section/services/software-edit-language-service/**"
       - "services/lean-engineering/**"
+      - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-scaffold-service/**"
       - ".github/workflows/code-fabrication.yml"
   pull_request:
     paths:
@@ -16,6 +17,7 @@ on:
       - "test/exact-source-edits.test.mjs"
       - "services/javascript-engineering-services-section/services/software-edit-language-service/**"
       - "services/lean-engineering/**"
+      - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-scaffold-service/**"
       - ".github/workflows/code-fabrication.yml"
   workflow_dispatch:
 permissions:
@@ -40,6 +42,10 @@ jobs:
           node --check src/workspace-path-relocation.mjs
           node --check services/javascript-engineering-services-section/services/software-edit-language-service/src/edit-language.mjs
           node --test test/exact-source-edits.test.mjs services/javascript-engineering-services-section/services/software-edit-language-service/test/edit-language.test.mjs
+      - name: Fabricate and actually execute generated JSNode packages
+        run: |
+          node --check services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-scaffold-service/src/scaffold-jsnode-package.mjs
+          node --test services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-scaffold-service/test/scaffold-jsnode-package.test.mjs
       - name: Check the lightweight Lean compiler integration adapter
         run: |
           node --check services/lean-engineering/check.mjs
