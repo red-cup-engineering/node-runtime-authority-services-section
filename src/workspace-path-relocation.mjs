@@ -1,4 +1,5 @@
 import path from "node:path";
+import { applyExactSourceEdits } from "./exact-source-edits.mjs";
 import { sha256Digest, sha256Hex } from "@red-cup-engineering/cryptographic-computer-data-engineering-services-section/integrity";
 
 const posix = path.posix;
@@ -105,12 +106,6 @@ function admittedModuleLiterals(text, references) {
   });
 }
 
-function apply(text, edits) {
-  let result = text;
-  for (const edit of [...edits].reverse()) result = result.slice(0, edit.start) + edit.text + result.slice(edit.end);
-  return result;
-}
-
 /**
  * Plans exact path-reference edits for an explicitly admitted active JSON
  * configuration or Markdown document. Journals, snapshots, user data and
@@ -135,7 +130,7 @@ export function planActivePathRelocation(source, options) {
 export function applyActivePathRelocation(source, plan) {
   if (plan?.kind !== "active-path-relocation.plan" || plan.version !== 1) throw new TypeError("not an active path relocation plan");
   if (source?.path !== plan.source.path || typeof source.text !== "string" || sha256Digest(source.text) !== plan.source.digest) throw new Error("source changed after the path relocation plan was admitted");
-  return Object.freeze({ kind: "active-path-relocation.receipt", version: 1, source: plan.source, relocatedPath: plan.relocatedPath, editCount: plan.edits.length, text: apply(source.text, plan.edits) });
+  return Object.freeze({ kind: "active-path-relocation.receipt", version: 1, source: plan.source, relocatedPath: plan.relocatedPath, editCount: plan.edits.length, text: applyExactSourceEdits(source.text, plan.edits) });
 }
 
 /** Rewrites the pathname carrier only; callers use it to project a file move before applying text edits. */
