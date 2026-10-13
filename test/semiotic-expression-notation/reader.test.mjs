@@ -75,6 +75,31 @@ test("settleSen: actually reduces a term with a real redex (identity applied to 
   assert.deepEqual(settled, tm.mark("payload"));
 });
 
+test("settleSen: typed admission precedes a bounded reduction", () => {
+  assert.throws(() => settleSen(tm.var(0)), /well-typed closed term/u);
+  assert.throws(() => settleSen(tm.fst(tm.star())), /well-typed closed term/u);
+  assert.deepEqual(settleSen(tm.star(), { fuel: 0 }), tm.star());
+  assert.throws(
+    () => settleSen(closedWellTypedTerm, { fuel: 0 }),
+    error => error?.code === "fuel-exceeded",
+  );
+  assert.deepEqual(settleSen(closedWellTypedTerm, { fuel: 1 }), tm.mark("payload"));
+});
+
+test("HTML and session boundaries propagate the same finite reduction budget", () => {
+  const html = `<script type="application/sen+json">${JSON.stringify(closedWellTypedTerm)}</script>`;
+  assert.throws(
+    () => settleRelationalHtml(html, { fuel: 0 }),
+    error => error?.code === "fuel-exceeded",
+  );
+  assert.throws(
+    () => settleRelationalSession([closedWellTypedTerm], { fuel: 0 }),
+    error => error?.code === "fuel-exceeded",
+  );
+  assert.deepEqual(settleRelationalHtml(html, { fuel: 1 }), [tm.mark("payload")]);
+  assert.deepEqual(settleRelationalSession([closedWellTypedTerm], { fuel: 1 }), [tm.mark("payload")]);
+});
+
 test("SEN_JSON: is the expected media-type string", () => {
   assert.equal(SEN_JSON, "application/sen+json; charset=utf-8");
 });
