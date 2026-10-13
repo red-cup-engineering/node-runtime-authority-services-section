@@ -10,6 +10,10 @@ on:
       - "services/lean-engineering/**"
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/src/assay-completion.mjs"
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/src/derive-jsnode-package-from-closure.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/src/fabricate-markdown-jsnode-operation-package.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/fixtures/controlled-local-assay.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/clause-assay-derivation.test.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/operation-closure-binding.test.mjs"
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/assay-completion.test.mjs"
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/connected-module-fabrication.test.mjs"
       - "services/computer-code-development-services-section/services/software-solve-loop-service/**"
@@ -24,6 +28,10 @@ on:
       - "services/lean-engineering/**"
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/src/assay-completion.mjs"
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/src/derive-jsnode-package-from-closure.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/src/fabricate-markdown-jsnode-operation-package.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/fixtures/controlled-local-assay.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/clause-assay-derivation.test.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/operation-closure-binding.test.mjs"
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/assay-completion.test.mjs"
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/connected-module-fabrication.test.mjs"
       - "services/computer-code-development-services-section/services/software-solve-loop-service/**"
@@ -65,6 +73,11 @@ jobs:
         run: |
           node --check services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/src/assay-completion.mjs
           node --check services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/src/derive-jsnode-package-from-closure.mjs
+          node --check services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/src/fabricate-markdown-jsnode-operation-package.mjs
+          node --check services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/fixtures/controlled-local-assay.mjs
+          node --check services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/connected-module-fabrication.test.mjs
+          node --check services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/clause-assay-derivation.test.mjs
+          node --check services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/operation-closure-binding.test.mjs
           node --test services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/assay-completion.test.mjs
       - name: Check the lightweight Lean compiler integration adapter
         run: |
