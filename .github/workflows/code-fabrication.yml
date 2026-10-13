@@ -8,6 +8,10 @@ on:
       - "test/exact-source-edits.test.mjs"
       - "services/javascript-engineering-services-section/services/software-edit-language-service/**"
       - "services/lean-engineering/**"
+      - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/src/assay-completion.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/src/derive-jsnode-package-from-closure.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/assay-completion.test.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/connected-module-fabrication.test.mjs"
       - "services/computer-code-development-services-section/services/software-solve-loop-service/**"
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-scaffold-service/**"
       - ".github/workflows/code-fabrication.yml"
@@ -18,6 +22,10 @@ on:
       - "test/exact-source-edits.test.mjs"
       - "services/javascript-engineering-services-section/services/software-edit-language-service/**"
       - "services/lean-engineering/**"
+      - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/src/assay-completion.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/src/derive-jsnode-package-from-closure.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/assay-completion.test.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/connected-module-fabrication.test.mjs"
       - "services/computer-code-development-services-section/services/software-solve-loop-service/**"
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-scaffold-service/**"
       - ".github/workflows/code-fabrication.yml"
@@ -53,6 +61,11 @@ jobs:
           node --check services/computer-code-development-services-section/services/software-solve-loop-service/src/solve-loop.mjs
           node --check services/computer-code-development-services-section/services/software-solve-loop-service/src/resolvers.mjs
           node --test services/computer-code-development-services-section/services/software-solve-loop-service/test/solve-loop.test.mjs
+      - name: Verify real factory test execution, including forged-success controls
+        run: |
+          node --check services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/src/assay-completion.mjs
+          node --check services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/src/derive-jsnode-package-from-closure.mjs
+          node --test services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/assay-completion.test.mjs
       - name: Check the lightweight Lean compiler integration adapter
         run: |
           node --check services/lean-engineering/check.mjs
