@@ -8,6 +8,7 @@ on:
       - "test/exact-source-edits.test.mjs"
       - "services/javascript-engineering-services-section/services/software-edit-language-service/**"
       - "services/lean-engineering/**"
+      - "services/computer-code-development-services-section/services/software-solve-loop-service/**"
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-scaffold-service/**"
       - ".github/workflows/code-fabrication.yml"
   pull_request:
@@ -17,6 +18,7 @@ on:
       - "test/exact-source-edits.test.mjs"
       - "services/javascript-engineering-services-section/services/software-edit-language-service/**"
       - "services/lean-engineering/**"
+      - "services/computer-code-development-services-section/services/software-solve-loop-service/**"
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-scaffold-service/**"
       - ".github/workflows/code-fabrication.yml"
   workflow_dispatch:
@@ -46,6 +48,11 @@ jobs:
         run: |
           node --check services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-scaffold-service/src/scaffold-jsnode-package.mjs
           node --test services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-scaffold-service/test/scaffold-jsnode-package.test.mjs
+      - name: Run actual code proposal and rollback/clean workspace trials
+        run: |
+          node --check services/computer-code-development-services-section/services/software-solve-loop-service/src/solve-loop.mjs
+          node --check services/computer-code-development-services-section/services/software-solve-loop-service/src/resolvers.mjs
+          node --test services/computer-code-development-services-section/services/software-solve-loop-service/test/solve-loop.test.mjs
       - name: Check the lightweight Lean compiler integration adapter
         run: |
           node --check services/lean-engineering/check.mjs
