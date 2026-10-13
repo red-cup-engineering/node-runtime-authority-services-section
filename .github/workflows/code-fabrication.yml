@@ -47,7 +47,9 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: fabrication-${{ github.ref }}
+  # Keep push and same-branch PR qualification in one execution slot.
+  # Include source repository identity so unrelated forks cannot cancel each other.
+  group: fabrication-${{ github.event.pull_request.head.repo.full_name || github.repository }}-${{ github.head_ref || github.ref_name }}
   cancel-in-progress: true
 jobs:
   source-edits:
