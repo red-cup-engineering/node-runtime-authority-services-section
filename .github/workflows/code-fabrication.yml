@@ -7,6 +7,7 @@ on:
       - "src/workspace-path-relocation.mjs"
       - "services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/src/install-workspace-selection.mjs"
       - "services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/test/install-workspace-selection.test.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/test/pnpm-exact-importer.integration.test.mjs"
       - "test/exact-source-edits.test.mjs"
       - "services/javascript-engineering-services-section/services/software-edit-language-service/**"
       - "services/lean-engineering/**"
@@ -27,6 +28,7 @@ on:
       - "src/workspace-path-relocation.mjs"
       - "services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/src/install-workspace-selection.mjs"
       - "services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/test/install-workspace-selection.test.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/test/pnpm-exact-importer.integration.test.mjs"
       - "test/exact-source-edits.test.mjs"
       - "services/javascript-engineering-services-section/services/software-edit-language-service/**"
       - "services/lean-engineering/**"
@@ -92,3 +94,6 @@ jobs:
           node --check services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/src/install-workspace-selection.mjs
           node --check services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/test/install-workspace-selection.test.mjs
           node --test services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/test/install-workspace-selection.test.mjs
+      - name: Verify real pinned pnpm CLI directory selections
+        run: |
+          npm exec --yes --package=pnpm@11.19.0 -- node --test services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/test/pnpm-exact-importer.integration.test.mjs
