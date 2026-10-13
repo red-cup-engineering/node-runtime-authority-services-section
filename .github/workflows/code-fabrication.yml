@@ -1,0 +1,46 @@
+name: Code fabrication regressions
+on:
+  push:
+    branches: ["**"]
+    paths:
+      - "src/exact-source-edits.mjs"
+      - "src/workspace-path-relocation.mjs"
+      - "test/exact-source-edits.test.mjs"
+      - "services/javascript-engineering-services-section/services/software-edit-language-service/**"
+      - "services/lean-engineering/**"
+      - ".github/workflows/code-fabrication.yml"
+  pull_request:
+    paths:
+      - "src/exact-source-edits.mjs"
+      - "src/workspace-path-relocation.mjs"
+      - "test/exact-source-edits.test.mjs"
+      - "services/javascript-engineering-services-section/services/software-edit-language-service/**"
+      - "services/lean-engineering/**"
+      - ".github/workflows/code-fabrication.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: fabrication-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  source-edits:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+        with:
+          node-version: "24"
+      - name: Run real generated code edit and create regressions
+        run: |
+          node --check src/exact-source-edits.mjs
+          node --check src/workspace-path-relocation.mjs
+          node --check services/javascript-engineering-services-section/services/software-edit-language-service/src/edit-language.mjs
+          node --test test/exact-source-edits.test.mjs services/javascript-engineering-services-section/services/software-edit-language-service/test/edit-language.test.mjs
+      - name: Check the lightweight Lean compiler integration adapter
+        run: |
+          node --check services/lean-engineering/check.mjs
+          node --test services/lean-engineering/check.test.mjs
