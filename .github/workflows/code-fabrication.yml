@@ -5,6 +5,9 @@ on:
     paths:
       - "src/exact-source-edits.mjs"
       - "src/workspace-path-relocation.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/src/install-workspace-selection.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/test/install-workspace-selection.test.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/test/pnpm-exact-importer.integration.test.mjs"
       - "test/exact-source-edits.test.mjs"
       - "services/javascript-engineering-services-section/services/software-edit-language-service/**"
       - "services/lean-engineering/**"
@@ -25,6 +28,9 @@ on:
     paths:
       - "src/exact-source-edits.mjs"
       - "src/workspace-path-relocation.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/src/install-workspace-selection.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/test/install-workspace-selection.test.mjs"
+      - "services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/test/pnpm-exact-importer.integration.test.mjs"
       - "test/exact-source-edits.test.mjs"
       - "services/javascript-engineering-services-section/services/software-edit-language-service/**"
       - "services/lean-engineering/**"
@@ -45,7 +51,9 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: fabrication-${{ github.ref }}
+  # Keep push and same-branch PR qualification in one execution slot.
+  # Include source repository identity so unrelated forks cannot cancel each other.
+  group: fabrication-${{ github.event.pull_request.head.repo.full_name || github.repository }}-${{ github.head_ref || github.ref_name }}
   cancel-in-progress: true
 jobs:
   source-edits:
@@ -94,3 +102,11 @@ jobs:
         run: |
           node --check services/lean-engineering/check.mjs
           node --test services/lean-engineering/check.test.mjs
+      - name: Test Node runtime frozen workspace selector and safety gates
+        run: |
+          node --check services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/src/install-workspace-selection.mjs
+          node --check services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/test/install-workspace-selection.test.mjs
+          node --test services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/test/install-workspace-selection.test.mjs
+      - name: Verify real pinned pnpm CLI directory selections
+        run: |
+          npm exec --yes --package=pnpm@11.19.0 -- node --test services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/test/pnpm-exact-importer.integration.test.mjs
