@@ -10,6 +10,7 @@ on:
       - "services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/test/pnpm-exact-importer.integration.test.mjs"
       - "test/exact-source-edits.test.mjs"
       - "services/javascript-engineering-services-section/services/software-edit-language-service/**"
+      - "services/javascript-engineering-services-section/services/javascript-code-analysis-services-section/services/javascript-computer/src/imports.*"
       - "services/lean-engineering/**"
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/scripts/transform-json-schema-to-typescript.mjs"
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/test/index.test.mjs"
@@ -33,6 +34,7 @@ on:
       - "services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/test/pnpm-exact-importer.integration.test.mjs"
       - "test/exact-source-edits.test.mjs"
       - "services/javascript-engineering-services-section/services/software-edit-language-service/**"
+      - "services/javascript-engineering-services-section/services/javascript-code-analysis-services-section/services/javascript-computer/src/imports.*"
       - "services/lean-engineering/**"
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/scripts/transform-json-schema-to-typescript.mjs"
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/test/index.test.mjs"
@@ -66,6 +68,12 @@ jobs:
       - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
         with:
           node-version: "24"
+      - name: Exercise native JavaScript import parser without installing other packages
+        run: |
+          mkdir -p node_modules/@red-cup-engineering
+          ln -s "$PWD/services/javascript-engineering-services-section/services/javascript-node-services-section" node_modules/@red-cup-engineering/javascript-node-services-section
+          node --check services/javascript-engineering-services-section/services/javascript-code-analysis-services-section/services/javascript-computer/src/imports.mjs
+          node --test services/javascript-engineering-services-section/services/javascript-code-analysis-services-section/services/javascript-computer/src/imports.test.mjs
       - name: Run real generated code edit and create regressions
         run: |
           node --check src/exact-source-edits.mjs
