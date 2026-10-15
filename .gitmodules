@@ -17,3 +17,7 @@
 [submodule "node-job-service"]
 	path = services/computer-code-development-services-section/services/node-job-service
 	url = https://github.com/red-cup-engineering/node-job-service.git
+[submodule "disk-package-observation-app"]
+	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-package-services-section/apps/disk-package-observation-app
+	url = https://github.com/red-cup-engineering/disk-package-observation-app.git
+	branch = main
