@@ -25,3 +25,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section/apps/jsnode-package-body-normalization-app
 	url = https://github.com/red-cup-engineering/jsnode-package-body-normalization-app.git
 	branch = main
+[submodule "check-stale-references-app"]
+	path = services/javascript-engineering-services-section/apps/check-stale-references-app
+	url = https://github.com/red-cup-engineering/check-stale-references-app.git
+	branch = main
