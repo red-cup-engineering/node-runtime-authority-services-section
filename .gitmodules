@@ -29,3 +29,7 @@
 	path = services/javascript-engineering-services-section/apps/check-stale-references-app
 	url = https://github.com/red-cup-engineering/check-stale-references-app.git
 	branch = main
+[submodule "javascript-node-operation-engineering-services-section"]
+	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/javascript-node-operation-engineering-services-section
+	url = https://github.com/red-cup-engineering/javascript-node-operation-engineering-services-section.git
+	branch = main
