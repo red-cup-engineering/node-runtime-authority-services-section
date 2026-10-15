@@ -33,3 +33,6 @@
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/javascript-node-operation-engineering-services-section
 	url = https://github.com/red-cup-engineering/javascript-node-operation-engineering-services-section.git
 	branch = main
+[submodule "services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/services/npm-workspace-publication-service"]
+	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/services/npm-workspace-publication-service
+	url = https://github.com/red-cup-engineering/npm-workspace-publication-service.git
