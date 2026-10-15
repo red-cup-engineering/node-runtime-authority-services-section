@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 import test from "node:test";
 
-import { EMPTY_WITNESS_ROOT } from "@red-cup-engineering/computer-content-address-engineering-services-section/semantic-content-identity";
+import { EMPTY_WITNESS_ROOT } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/semantic-content-identity";
 
 const script = fileURLToPath(new URL("../../src/semiotic-expression-notation/runtime/semantic-content-identity-cli.mjs", import.meta.url));
 const content = Object.freeze({

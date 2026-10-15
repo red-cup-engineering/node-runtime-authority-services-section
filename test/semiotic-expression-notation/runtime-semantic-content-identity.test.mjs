@@ -9,7 +9,7 @@ import {
   IDENTITY_SETTLEMENT_PROFILE,
   SEN_NORMALIZATION_PROFILE,
   verifyJsonSemanticRecord,
-} from "@red-cup-engineering/computer-content-address-engineering-services-section/semantic-content-identity";
+} from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/semantic-content-identity";
 import {
   admitNormalizedSemanticContent,
   identifyNormalizedSemanticContent,

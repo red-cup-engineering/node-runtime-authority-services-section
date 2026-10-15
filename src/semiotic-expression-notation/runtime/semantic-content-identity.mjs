@@ -1,7 +1,7 @@
 /**
  * Normalized semantic content identity: the content address of an arbitrary typed SEN
  * term, taken after the SEN evaluator normalizes it. The envelope law and JSON content
- * identity are the data layer's (`@red-cup-engineering/computer-content-address-engineering-services-section/semantic-content-identity`);
+ * identity are the data layer's (`@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/semantic-content-identity`);
  * this module adds only what needs evaluation — normalizing a term and checking a body is
  * already normal under `SEN_NORMALIZATION_PROFILE`.
  */
@@ -14,7 +14,7 @@ import {
   SEMANTIC_ENVELOPE_KIND,
   SEMANTIC_ENVELOPE_VERSION,
   SEN_NORMALIZATION_PROFILE,
-} from "@red-cup-engineering/computer-content-address-engineering-services-section/semantic-content-identity";
+} from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/semantic-content-identity";
 import { evaluate } from "../runtime.mjs";
 
 /** The normal form of a term under `SEN_NORMALIZATION_PROFILE`. */
