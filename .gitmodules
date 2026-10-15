@@ -10,3 +10,7 @@
 	path = apps/signchain
 	url = https://github.com/red-cup-engineering/signchain.git
 	branch = main
+[submodule "javascript-deduplication-services-section"]
+	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section/services/javascript-deduplication-services-section
+	url = https://github.com/red-cup-engineering/javascript-deduplication-services-section.git
+	branch = main
