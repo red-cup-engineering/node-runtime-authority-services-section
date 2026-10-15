@@ -21,3 +21,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-package-services-section/apps/disk-package-observation-app
 	url = https://github.com/red-cup-engineering/disk-package-observation-app.git
 	branch = main
+[submodule "jsnode-package-body-normalization-app"]
+	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section/apps/jsnode-package-body-normalization-app
+	url = https://github.com/red-cup-engineering/jsnode-package-body-normalization-app.git
+	branch = main
