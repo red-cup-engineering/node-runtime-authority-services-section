@@ -29,3 +29,7 @@
 	path = services/javascript-engineering-services-section/apps/check-stale-references-app
 	url = https://github.com/red-cup-engineering/check-stale-references-app.git
 	branch = main
+[submodule "node-runtime-materialization-engineering-services-section"]
+	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-package-services-section/services/npm-package-set-services-section/services/node-runtime-release-materialization-service
+	url = https://github.com/red-cup-engineering/node-runtime-materialization-engineering-services-section.git
+	branch = main
