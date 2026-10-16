@@ -1,7 +1,7 @@
 {
   "name": "@red-cup-engineering/tex-engineering-services-section",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.1",
+  "private": false,
   "type": "module",
   "description": "Read TeX source commands, environments, dependencies, labels and references.",
   "exports": {
@@ -16,7 +16,7 @@
     }
   },
   "dependencies": {
-    "@red-cup-engineering/json-schema-services-section": "workspace:*"
+    "@red-cup-engineering/json-schema-services-section": "0.5.0"
   },
   "scripts": {
     "test": "run-package-tests",
