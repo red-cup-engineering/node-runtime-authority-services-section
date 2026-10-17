@@ -133,3 +133,14 @@ test("host budget mechanism refuses self-enlarging, fake, repeated and swapped g
     { withResourceBudget: (_request, run) => run(1) },
     { ...requested, requested: 0 }, work), TypeError);
 });
+
+test("async host resources cannot substitute a different result after awaited work", async () => {
+  const request={resource:"compute.search-nodes",requested:12};
+  const work=async granted => Object.freeze({grant:granted});
+  const host={withResourceBudget: async (_request,run) => await run(3)};
+  const actual=await withHostResourceBudget(host,request,work);
+  assert.deepEqual(actual,{grant:3});
+  await assert.rejects(()=>withHostResourceBudget({
+    withResourceBudget: async (_request,run) => { await run(3); return {grant:3}; },
+  },request,work),error=>error.code==="HostBudgetUnreceived");
+});
