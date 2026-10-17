@@ -144,3 +144,44 @@ test("async host resources cannot substitute a different result after awaited wo
     withResourceBudget: async (_request,run) => { await run(3); return {grant:3}; },
   },request,work),error=>error.code==="HostBudgetUnreceived");
 });
+
+test("a host cannot defer execution beyond a refused or completed grant", async () => {
+  const request = { resource: "compute.unit", requested: 4 };
+  let escaped, executed = 0;
+  const execute = granted => { executed++; return { granted }; };
+  assert.throws(() => withHostResourceBudget({
+    withResourceBudget: (_request, run) => {
+      escaped = run;
+      return { forged: true };
+    },
+  }, request, execute), error => error.code === "HostBudgetUnreceived");
+  assert.throws(() => escaped(1), error => error.code === "HostBudgetClosed");
+  assert.equal(executed, 0, "a refused grant must not later trigger work");
+
+  assert.throws(() => withHostResourceBudget({
+    withResourceBudget: (_request, run) => {
+      escaped = run;
+      throw new Error("host failure");
+    },
+  }, request, execute), /host failure/);
+  assert.throws(() => escaped(1), error => error.code === "HostBudgetClosed");
+  assert.equal(executed, 0);
+
+  assert.deepEqual(withHostResourceBudget({
+    withResourceBudget: (_request, run) => {
+      escaped = run;
+      return run(2);
+    },
+  }, request, execute), { granted: 2 });
+  assert.throws(() => escaped(1), error => error.code === "HostBudgetClosed");
+  assert.equal(executed, 1);
+
+  await assert.rejects(() => withHostResourceBudget({
+    withResourceBudget: (_request, run) => {
+      escaped = run;
+      return Promise.reject(new Error("async host failure"));
+    },
+  }, request, execute), /async host failure/);
+  assert.throws(() => escaped(1), error => error.code === "HostBudgetClosed");
+  assert.equal(executed, 1);
+});

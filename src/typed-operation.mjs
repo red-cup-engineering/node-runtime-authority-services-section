@@ -44,9 +44,13 @@ export function withHostResourceBudget(context, { resource, requested } = {}, ex
     throw Object.assign(new Error("host-owned computational capacity is unavailable"), {
       code: "HostResourceUnavailable",
     });
-  let called = false;
+  let called = false, closed = false;
   let result;
   const work = granted => {
+    if (closed)
+      throw Object.assign(new Error("host budget continuation outlived its grant"), {
+        code: "HostBudgetClosed",
+      });
     if (called)
       throw Object.assign(new Error("host budget continuation was invoked twice"), {
         code: "HostBudgetRepeated",
@@ -60,6 +64,7 @@ export function withHostResourceBudget(context, { resource, requested } = {}, ex
     return result;
   };
   const completed = output => {
+    closed = true;
     if (!called || output !== result)
       throw Object.assign(new Error("host budget did not deliver the actual operation result"), {
         code: "HostBudgetUnreceived",
@@ -67,6 +72,7 @@ export function withHostResourceBudget(context, { resource, requested } = {}, ex
     return output;
   };
   const finishedAsync = async output => {
+    closed = true; // The host response has settled; no later callback may start work.
     const produced = await result;
     if (!called || output !== produced)
       throw Object.assign(new Error("host budget did not deliver the actual operation result"), {
@@ -74,9 +80,15 @@ export function withHostResourceBudget(context, { resource, requested } = {}, ex
       });
     return produced;
   };
-  const value = port(Object.freeze({ resource, requested }), work);
+  let value;
+  try { value = port(Object.freeze({ resource, requested }), work); }
+  catch (error) { closed = true; throw error; }
   return isPromiseLike(value) || isPromiseLike(result)
-    ? Promise.resolve(value).then(finishedAsync) : completed(value);
+    ? Promise.resolve(value).then(finishedAsync, error => {
+      closed = true;
+      throw error;
+    })
+    : completed(value);
 }
 
 export const refusal = (code, message) => Object.freeze({ ok: false, refusal: Object.freeze({ code, message }) });
