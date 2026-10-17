@@ -20,11 +20,9 @@ test("input admission allows original JSON byte carrier and explicit expected-ro
   for(const invalid of [
     {...valid,principal:"admin"},
     {...valid,root:"/somewhere"},
-    {...valid,path:["a/b"]},
     {...valid,expected:3},
     {...valid,carrier:{...valid.carrier,extra:true}},
   ]) {
-    if(invalid.path?.[0]==="a/b")continue; // original custody, not JSON Schema, owns canonical slot grammar
     assert.equal(admit(put.domain,invalid).ok,false);
   }
   const link=ops["content-space-link-path"];
