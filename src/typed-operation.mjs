@@ -59,15 +59,24 @@ export function withHostResourceBudget(context, { resource, requested } = {}, ex
     result = execute(granted);
     return result;
   };
-  const finished = output => {
+  const completed = output => {
     if (!called || output !== result)
       throw Object.assign(new Error("host budget did not deliver the actual operation result"), {
         code: "HostBudgetUnreceived",
       });
     return output;
   };
+  const finishedAsync = async output => {
+    const produced = await result;
+    if (!called || output !== produced)
+      throw Object.assign(new Error("host budget did not deliver the actual operation result"), {
+        code: "HostBudgetUnreceived",
+      });
+    return produced;
+  };
   const value = port(Object.freeze({ resource, requested }), work);
-  return isPromiseLike(value) ? Promise.resolve(value).then(finished) : finished(value);
+  return isPromiseLike(value) || isPromiseLike(result)
+    ? Promise.resolve(value).then(finishedAsync) : completed(value);
 }
 
 export const refusal = (code, message) => Object.freeze({ ok: false, refusal: Object.freeze({ code, message }) });
