@@ -19,6 +19,57 @@ export function evaluateBoundary(input, admitInput, move, admitOutput) {
   return isPromiseLike(output) ? Promise.resolve(output).then(admitOutput) : admitOutput(output);
 }
 
+/**
+ * Receive a governed computational budget from the *process-local* host.
+ *
+ * A remote JSON request can ask for a quantity but cannot authorize the
+ * capacity to execute it. The actual Code/Systems host must install a
+ * withResourceBudget request/continuation port in its execution context,
+ * acquire the available allowance, account for work in the continuation,
+ * and return exactly that output. This primitive supplies no budgets and
+ * performs no resource accounting on the host's behalf.
+ *
+ * A missed callback, duplicate invocation, enlarged grant or substituted
+ * result refuses. A function-valued port cannot arrive through JSON/RPC
+ * input; trusted host construction is essential. In-process arbitrary JS
+ * execution is outside this transport boundary's authority.
+ */
+export function withHostResourceBudget(context, { resource, requested } = {}, execute) {
+  if (typeof resource !== "string" || !resource.trim() ||
+      !Number.isSafeInteger(requested) || requested < 1 ||
+      typeof execute !== "function")
+    throw new TypeError("host budget requires a resource, positive safe integer request and function");
+  const port = context?.withResourceBudget;
+  if (typeof port !== "function")
+    throw Object.assign(new Error("host-owned computational capacity is unavailable"), {
+      code: "HostResourceUnavailable",
+    });
+  let called = false;
+  let result;
+  const work = granted => {
+    if (called)
+      throw Object.assign(new Error("host budget continuation was invoked twice"), {
+        code: "HostBudgetRepeated",
+      });
+    called = true;
+    if (!Number.isSafeInteger(granted) || granted < 1 || granted > requested)
+      throw Object.assign(new RangeError("host grant is not a positive bound of the requested budget"), {
+        code: "HostBudgetInvalid",
+      });
+    result = execute(granted);
+    return result;
+  };
+  const finished = output => {
+    if (!called || output !== result)
+      throw Object.assign(new Error("host budget did not deliver the actual operation result"), {
+        code: "HostBudgetUnreceived",
+      });
+    return output;
+  };
+  const value = port(Object.freeze({ resource, requested }), work);
+  return isPromiseLike(value) ? Promise.resolve(value).then(finished) : finished(value);
+}
+
 export const refusal = (code, message) => Object.freeze({ ok: false, refusal: Object.freeze({ code, message }) });
 const accepted = (value) => Object.freeze({ ok: true, value });
 const validEffects = (effects) => Array.isArray(effects) && effects.every((effect) => typeof effect === "string" && effect.length > 0);
