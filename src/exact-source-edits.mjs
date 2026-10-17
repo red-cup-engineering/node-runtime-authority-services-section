@@ -19,6 +19,7 @@ export function applyExactSourceEdits(text, edits, { expectedSourceSha256 } = {}
   }
   const ordered = [...edits].sort((left, right) => left.start - right.start || left.end - right.end);
   let previousEnd = 0;
+  let previousInsertion = null;
   for (const edit of ordered) {
     if (!edit || !Number.isSafeInteger(edit.start) || !Number.isSafeInteger(edit.end) ||
       edit.start < 0 || edit.end < edit.start || edit.end > text.length)
@@ -27,11 +28,20 @@ export function applyExactSourceEdits(text, edits, { expectedSourceSha256 } = {}
     if (edit.original !== undefined &&
       (typeof edit.original !== "string" || text.slice(edit.start, edit.end) !== edit.original))
       throw new Error("source edit original span does not match admitted source");
-    if (edit.start < previousEnd) throw new RangeError("source edits overlap");
+    if (edit.start < previousEnd || (edit.start === edit.end && edit.start === previousInsertion))
+      throw new RangeError("source edits overlap or insert ambiguously at the same position");
     previousEnd = edit.end;
+    previousInsertion = edit.start === edit.end ? edit.start : null;
   }
-  let result = text;
-  for (const edit of [...ordered].reverse())
-    result = result.slice(0, edit.start) + edit.text + result.slice(edit.end);
-  return result;
+
+  // Emit untouched slices exactly once instead of re-copying the growing
+  // source for each edit. UTF-16 code-unit offsets remain unchanged.
+  const pieces = [];
+  let cursor = 0;
+  for (const edit of ordered) {
+    pieces.push(text.slice(cursor, edit.start), edit.text);
+    cursor = edit.end;
+  }
+  pieces.push(text.slice(cursor));
+  return pieces.join("");
 }
