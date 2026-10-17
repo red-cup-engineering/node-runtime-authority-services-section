@@ -104,7 +104,12 @@ export function executeOperation(operation, input, options = {}) {
     const admitted = admitOperation(operation);
     if (!admitted.ok) return admitted;
     const op = admitted.value;
-    if (!op.effects.every((effect) => (options.allowedEffects ?? []).includes(effect))) return refusal("EffectRefused", "operation effects exceed allowed effects");
+    // Permission is a set of exact effect names, never substring inclusion on a string.
+    // A string such as "internet" must not authorize the distinct "net" effect.
+    const allowedEffects = options.allowedEffects ?? [];
+    if (!Array.isArray(allowedEffects) || !allowedEffects.every((effect) => typeof effect === "string" && effect.length > 0))
+      return refusal("EffectRefused", "allowedEffects must be an array of nonempty effect names");
+    if (!op.effects.every((effect) => allowedEffects.includes(effect))) return refusal("EffectRefused", "operation effects exceed allowed effects");
     const predicate = (type, code) => (value) => {
       const result = admit(type, value);
       if (!result.ok) throw Object.assign(new TypeError(result.refusal.issues.map((issue) => `${issue.path || "/"} ${issue.message}`).join("; ")), { code });
@@ -147,7 +152,16 @@ const descriptorIdentity = (value) => value === null || typeof value !== "object
 
 /** Compose portable operations only when their declared carrier and SEN boundaries agree. */
 export function composeOperations(producer, consumer, id) {
-  if (!isSubtypeOf(producer?.codomain, consumer?.domain)) return refusal("CompositionRefused", "producer codomain is not a declared subtype of consumer domain");
+  // Use the existing typed code-admission gate before inspecting either operation.
+  // A malformed or untrusted operation is a typed refusal, not a dereference
+  // inside SignCell subtype comparison or an untyped SEN exception.
+  const admittedProducer = admitOperation(producer);
+  const admittedConsumer = admitOperation(consumer);
+  if (!admittedProducer.ok || !admittedConsumer.ok)
+    return refusal("CompositionRefused", "both operations must be admitted before composition");
+  producer = admittedProducer.value;
+  consumer = admittedConsumer.value;
+  if (!isSubtypeOf(producer.codomain, consumer.domain)) return refusal("CompositionRefused", "producer codomain is not a declared subtype of consumer domain");
   if (producer?.body?.kind !== "sen" || consumer?.body?.kind !== "sen") return refusal("CompositionRefused", "only portable SEN bodies compose");
   const middle = descriptorTy(producer.body.outputDescriptor);
   const domain = descriptorTy(consumer.body.inputDescriptor);
