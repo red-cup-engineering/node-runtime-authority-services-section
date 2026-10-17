@@ -4,7 +4,7 @@ import { defineType } from "@red-cup-engineering/signcell/type-system";
 import { tm } from "@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation";
 import {
   COMPUTER_ENGINEERING_SPECIFICATION_ID,
-  admitOperation, composeOperations, declareCapabilityOperation, executeOperation,
+  admitOperation, composeOperations, declareCapabilityOperation, executeOperation, withHostResourceBudget,
 } from "../src/typed-operation.mjs";
 
 const textType = defineType({
@@ -84,4 +84,52 @@ test("host effects require exact explicit tokens and cannot be granted by substr
   });
   assert.deepEqual(authorized, { ok: true, value: "explicit authorization" });
   assert.equal(invoked, 1);
+});
+
+test("resource budgets are granted by the hosting process rather than user inputs", async () => {
+  let invoked = 0;
+  const work = n => { invoked++; return Object.freeze({ granted: n }); };
+  assert.throws(() => withHostResourceBudget(null,
+    { resource: "compute.search-nodes", requested: 100 }, work),
+    error => error.code === "HostResourceUnavailable");
+  assert.equal(invoked, 0, "missing host port does not spend computation");
+  const host = {
+    withResourceBudget: ({ resource, requested }, run) => {
+      assert.equal(resource, "compute.search-nodes");
+      assert.equal(requested, 100);
+      return run(17); // host-accounted actual capacity, not requested capacity
+    },
+  };
+  assert.deepEqual(withHostResourceBudget(host,
+    { resource: "compute.search-nodes", requested: 100 }, work), { granted: 17 });
+  assert.equal(invoked, 1);
+  const asyncHost = { withResourceBudget: async (request, run) => run(8) };
+  assert.deepEqual(await withHostResourceBudget(asyncHost,
+    { resource: "compute.search-nodes", requested: 100 }, work), { granted: 8 });
+});
+
+test("host budget mechanism refuses self-enlarging, fake, repeated and swapped grants", () => {
+  const requested = { resource: "compute.search-nodes", requested: 4 };
+  let computations = 0;
+  const work = grant => { computations++; return Object.freeze({ spent: grant }); };
+  for (const invalid of [0, -1, 1.5, 5, Number.MAX_SAFE_INTEGER+1]) {
+    assert.throws(() => withHostResourceBudget(
+      { withResourceBudget: (_request, run) => run(invalid) }, requested, work),
+      error => error.code === "HostBudgetInvalid");
+  }
+  assert.equal(computations, 0, "unadmitted grant cannot start a computation");
+  assert.throws(() => withHostResourceBudget(
+    { withResourceBudget: () => ({ forged: true }) }, requested, work),
+    error => error.code === "HostBudgetUnreceived");
+  assert.throws(() => withHostResourceBudget(
+    { withResourceBudget: (_request, run) => { run(1); return { replacement: true }; } },
+    requested, work),
+    error => error.code === "HostBudgetUnreceived");
+  assert.throws(() => withHostResourceBudget(
+    { withResourceBudget: (_request, run) => { run(1); return run(1); } },
+    requested, work),
+    error => error.code === "HostBudgetRepeated");
+  assert.throws(() => withHostResourceBudget(
+    { withResourceBudget: (_request, run) => run(1) },
+    { ...requested, requested: 0 }, work), TypeError);
 });
