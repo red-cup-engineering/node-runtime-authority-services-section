@@ -215,7 +215,11 @@ function expression(tokens, state) {
           "malformed-rml",
           "RML map entries must be unique (key value) pairs",
         );
-      map[entry[0]] = entry[1];
+      // RML map keys are carrier data, including "__proto__": never invoke
+      // the host object's inherited prototype setter while admitting them.
+      Object.defineProperty(map, entry[0], {
+        value: entry[1], enumerable: true, writable: true, configurable: true,
+      });
     }
     return map;
   }

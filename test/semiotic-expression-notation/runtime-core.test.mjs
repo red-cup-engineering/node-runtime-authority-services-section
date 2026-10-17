@@ -12,6 +12,7 @@ import {
   effectTerm,
   normalizeEffectCell,
   parseRml,
+  formatRml,
 } from "../../src/semiotic-expression-notation/runtime.mjs";
 import {
   inferTerm,
@@ -107,4 +108,17 @@ test("a WIT is one FOUR cover between two cells of one effect, carried as core c
   assert.deepEqual(wit.witnessTerm[2][2][1], tm.reading("held"));
   assert.equal(wit.witness, semanticId(wit.witnessTerm));
   assert.throws(() => assayEffectTransition({ proposalCell: cell(false, evidence), completionCell: { ...cell(true, evidence), outcome: { positiveEvidence: true, negativeEvidence: true } }, evidence }), /WIT/u);
+});
+
+test("RML map keys remain data, including prototype-sensitive JSON keys", () => {
+  const source = '#lang sen/v2\n(map ("__proto__" 7) ("constructor" 8) ("toString" 9))';
+  const parsed = parseRml(source);
+  const expected = JSON.parse('{"__proto__":7,"constructor":8,"toString":9}');
+  assert.deepEqual(parsed, expected);
+  assert.equal(Object.getPrototypeOf(parsed), Object.prototype);
+  assert.deepEqual(parseRml(formatRml(parsed)), expected);
+  assert.throws(
+    () => parseRml('#lang sen/v2\n(map ("__proto__" 1) ("__proto__" 2))'),
+    /unique/u,
+  );
 });
