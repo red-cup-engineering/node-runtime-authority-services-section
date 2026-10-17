@@ -8,6 +8,10 @@ import {
   contentSpacePutInputSchema,
   contentSpaceLinkInputSchema,
   contentSpacePublicationSchema,
+  contentSpaceLinkBatchInputSchema,
+  contentSpaceBatchPublicationSchema,
+  contentSpaceWalkInputSchema,
+  contentSpaceWalkOutputSchema,
 } from "@red-cup-engineering/computer-data-engineering-services-section/content-space-operation-schemas";
 import { declareCapabilityOperation } from "./typed-operation.mjs";
 
@@ -22,17 +26,24 @@ const establish = (id,schema) => {
     throw new TypeError("content-space type unavailable: "+result.refusal.message);
   return result.value;
 };
-const output=establish("Publication",contentSpacePublicationSchema);
+const publication=establish("Publication",contentSpacePublicationSchema);
+const batchPublication=establish("BatchPublication",contentSpaceBatchPublicationSchema);
+const snapshotWalk=establish("Walk",contentSpaceWalkOutputSchema);
 
+/** All operations use the ORIGINAL Code type/effect machinery and Networking projection. */
 export const contentSpaceCapabilityOperations = Object.freeze([
-  ["content-space-put-path",contentSpacePutInputSchema,
-    "Publish exact bytes into an authorized named NI tree"],
-  ["content-space-link-path",contentSpaceLinkInputSchema,
-    "Link an independently admitted NI into a named tree without copying bytes"],
-].map(([id,schema,description])=>{
+  ["content-space-put-path",contentSpacePutInputSchema,publication,
+    "Publish exact bytes into an authorized named NI tree","content-space.publish"],
+  ["content-space-link-path",contentSpaceLinkInputSchema,publication,
+    "Link an independently admitted NI into a named tree without copying bytes","content-space.publish"],
+  ["content-space-link-batch",contentSpaceLinkBatchInputSchema,batchPublication,
+    "Publish a bounded collection of held NI links in one compare-and-publish","content-space.publish"],
+  ["content-space-walk",contentSpaceWalkInputSchema,snapshotWalk,
+    "Read a bounded, independently authorized immutable NI Merkle territory","content-space.read"],
+].map(([id,schema,codomain,description,effect])=>{
   const result=declareCapabilityOperation({
-    id,description,domain:establish(id,schema),codomain:output,
-    effects:["content-space.publish"],capability:id,
+    id,description,domain:establish(id,schema),codomain,
+    effects:[effect],capability:id,
   });
   if(!result.ok)
     throw new TypeError("content-space capability unavailable: "+result.refusal.message);
