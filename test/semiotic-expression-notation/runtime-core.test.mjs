@@ -78,7 +78,7 @@ test("RFC 8949 and RFC 6920 identities match the released vectors", () => {
     assert.equal(encodeCanonical(values.get(name)).toString("hex"), hex);
     assert.equal(semanticId(values.get(name)), ni);
   }
-  assert.throws(() => decodeCanonical(Buffer.from([0x18, 0x00])), /not in RFC 8949 core deterministic form/u);
+  assert.throws(() => decodeCanonical(Buffer.from([0x18, 0x00])), { code: "non-canonical-cbor" });
 });
 
 
