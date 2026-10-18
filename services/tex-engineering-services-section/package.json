@@ -4,6 +4,11 @@
   "private": false,
   "type": "module",
   "description": "Read TeX source commands, environments, dependencies, labels and references.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/computer-code-engineering-services-section.git",
+    "directory": "services/tex-engineering-services-section"
+  },
   "exports": {
     ".": {
       "import": "./src/index.mjs"
