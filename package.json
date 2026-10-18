@@ -1,6 +1,6 @@
 {
   "name": "@red-cup-engineering/computer-code-engineering-services-section",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "type": "module",
   "description": "Root for code concepts: codecs for languages and version control; its library modules are SignChain, the evidence-ordering assembly over cells, and the dynamics of the semiotic expression notation, the house typed term language: its evaluator, reader, runtime and normalized content identity.",
   "exports": {
@@ -20,7 +20,8 @@
     "./typed-operation": "./src/typed-operation.mjs",
     "./exact-source-edits": "./src/exact-source-edits.mjs",
     "./content-space-operations": "./src/content-space-operations.mjs",
-    "./typed-operation-message": "./src/typed-operation-message.mjs"
+    "./typed-operation-message": "./src/typed-operation-message.mjs",
+    "./typed-operation-invoke": "./src/typed-operation-invoke.mjs"
   },
   "dependencies": {
     "@red-cup-engineering/cbor-services-section": "0.1.1",

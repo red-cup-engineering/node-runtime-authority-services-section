@@ -4,7 +4,7 @@ import {
   TYPED_OPERATION_REFUSAL_KIND,
   TYPED_OPERATION_RESULT_KIND,
   typedOperationRequestType,
-} from "@red-cup-engineering/computer-code-engineering-services-section/typed-operation-message";
+} from "./typed-operation-message.mjs";
 
 const CODECS = Object.freeze({
   json: Object.freeze({
@@ -29,7 +29,7 @@ function resultMessage(requestId, outputCodec, output) {
 
 /**
  * Invoke one operation registered under `operations` against a
- * typed-operation-request message. This is the content-engineering
+ * typed-operation-request message. This is the Computer Code
  * composition boundary every content-typed engine (text, markdown, and so
  * on) dispatches through rather than reimplementing its own admission,
  * codec, and refusal handling: it admits the request against
@@ -42,29 +42,35 @@ function resultMessage(requestId, outputCodec, output) {
  * @returns {Promise<Readonly<Record<string, unknown>>>} A typed-operation-result or typed-operation-refusal message.
  */
 export async function invokeTypedOperation({ operations, request } = {}) {
-  if (operations === null || typeof operations !== "object") throw new TypeError("operations must be a registered operation table");
+  if (operations === null || typeof operations !== "object" || Array.isArray(operations)) throw new TypeError("operations must be a registered operation table");
   const admission = admit(typedOperationRequestType, request);
   if (!admission.ok) {
     const detail = admission.refusal.issues.map((issue) => issue.message).join("; ") || "request does not satisfy typed-operation-request";
     return refusalMessage(request?.requestId, "malformed-request", detail);
   }
   const { requestId, operationId, inputCodec, input, outputCodec } = admission.value;
-  const inCodec = CODECS[inputCodec];
-  const outCodec = CODECS[outputCodec];
+  const inCodec = Object.hasOwn(CODECS, inputCodec) ? CODECS[inputCodec] : undefined;
+  const outCodec = Object.hasOwn(CODECS, outputCodec) ? CODECS[outputCodec] : undefined;
   if (!inCodec || !outCodec) return refusalMessage(requestId, "unsupported-codec", `unsupported codec ${inputCodec}/${outputCodec}`);
-  const handler = operations[operationId];
+  const handler = Object.hasOwn(operations, operationId) ? operations[operationId] : undefined;
   if (typeof handler !== "function") return refusalMessage(requestId, "unknown-operation", `unknown operation ${operationId}`);
   let decoded;
   try {
     decoded = inCodec.decode(input);
   } catch (error) {
-    return refusalMessage(requestId, "malformed-input", error.message);
+    return refusalMessage(requestId, "malformed-input", "input is not valid for the declared codec");
   }
   let output;
   try {
     output = await handler(decoded);
   } catch (error) {
-    return refusalMessage(requestId, "operation-failed", error.message);
+    return refusalMessage(requestId, "operation-failed", "the declared operation failed");
   }
-  return resultMessage(requestId, outputCodec, outCodec.encode(output));
+  try {
+    const encoded = outCodec.encode(output);
+    if (typeof encoded !== "string") throw new TypeError("output codec yielded no encoded value");
+    return resultMessage(requestId, outputCodec, encoded);
+  } catch {
+    return refusalMessage(requestId, "malformed-output", "operation result is not encodable by the declared codec");
+  }
 }
