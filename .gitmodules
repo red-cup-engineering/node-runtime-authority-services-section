@@ -85,3 +85,7 @@
 	path = services/computer-code-development-services-section/services/software-trajectory-memory-service
 	url = https://github.com/red-cup-engineering/software-trajectory-memory-service.git
 	branch = main
+[submodule "software-solve-loop-service"]
+	path = services/computer-code-development-services-section/services/software-solve-loop-service
+	url = https://github.com/red-cup-engineering/software-solve-loop-service.git
+	branch = main
