@@ -125,3 +125,7 @@
 	path = services/computer-code-development-services-section/services/solidity-services-section/services/search-path-for-relations
 	url = https://github.com/red-cup-engineering/solidity-search-path-for-relations.git
 	branch = main
+[submodule "transform-json-schema-to-typescript-service"]
+	path = services/javascript-engineering-services-section/services/transform-json-schema-to-typescript-service
+	url = https://github.com/red-cup-engineering/transform-json-schema-to-typescript-service.git
+	branch = main
