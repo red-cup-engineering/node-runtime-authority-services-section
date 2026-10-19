@@ -105,3 +105,7 @@
 	path = services/computer-code-development-services-section/services/recursive-observation-circuit-synthesis
 	url = https://github.com/red-cup-engineering/recursive-observation-circuit-synthesis.git
 	branch = main
+[submodule "organizational-profile-projection-service"]
+	path = services/computer-code-development-services-section/services/organizational-profile-projection-service
+	url = https://github.com/red-cup-engineering/organizational-profile-projection-service.git
+	branch = main
