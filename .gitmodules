@@ -109,3 +109,7 @@
 	path = services/computer-code-development-services-section/services/organizational-profile-projection-service
 	url = https://github.com/red-cup-engineering/organizational-profile-projection-service.git
 	branch = main
+[submodule "legacy-capability-reallocation-service"]
+	path = services/computer-code-development-services-section/services/legacy-capability-reallocation-service
+	url = https://github.com/red-cup-engineering/legacy-capability-reallocation-service.git
+	branch = main
