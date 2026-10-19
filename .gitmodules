@@ -40,23 +40,11 @@
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/pnpm-services-section/services/pnpm-workspace-services-section/services/pnpm-workspace-fabrication-service
 	url = https://github.com/red-cup-engineering/pnpm-workspace-fabrication-service.git
 	branch = main
-[submodule "npm-cache-release-recovery-service"]
-	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-cache-services-section/services/npm-cache-release-recovery-service
-	url = https://github.com/red-cup-engineering/npm-cache-release-recovery-service.git
-	branch = main
-[submodule "semiotic-npm-registry-services-section"]
-	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/semiotic-npm-registry-services-section
-	url = https://github.com/red-cup-engineering/semiotic-npm-registry-services-section.git
-	branch = main
-[submodule "npm-registry-services-section"]
-	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section
-	url = https://github.com/red-cup-engineering/npm-registry-services-section.git
-	branch = main
-[submodule "npm-package-services-section"]
-	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-package-services-section
-	url = https://github.com/red-cup-engineering/npm-package-services-section.git
-	branch = main
 [submodule "node-package-authority-assay-service"]
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-package-authority-assay-service
 	url = https://github.com/red-cup-engineering/node-package-authority-assay-service.git
+	branch = main
+[submodule "npm-services-section"]
+	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section
+	url = https://github.com/red-cup-engineering/npm-services-section.git
 	branch = main
