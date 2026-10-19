@@ -108,3 +108,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-code-analysis-services-section/services/javascript-computer
 	url = https://github.com/red-cup-engineering/javascript-computer.git
 	branch = main
+[submodule "javascript-algebra"]
+	path = services/javascript-engineering-services-section/services/javascript-code-analysis-services-section/services/javascript-algebra
+	url = https://github.com/red-cup-engineering/javascript-algebra.git
+	branch = main
