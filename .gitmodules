@@ -117,3 +117,7 @@
 	path = services/computer-code-development-services-section/services/lean-blueprint-chart-service
 	url = https://github.com/red-cup-engineering/lean-blueprint-chart-service.git
 	branch = main
+[submodule "future-work-topology-projection-service"]
+	path = services/computer-code-development-services-section/services/future-work-topology-projection-service
+	url = https://github.com/red-cup-engineering/future-work-topology-projection-service.git
+	branch = main
