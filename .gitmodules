@@ -137,3 +137,7 @@
 	path = services/computer-code-development-services-section/services/campaign-rollup-projection-service
 	url = https://github.com/red-cup-engineering/campaign-rollup-projection-service.git
 	branch = main
+[submodule "accepted-software-delivery-receiver-service"]
+	path = services/computer-code-development-services-section/services/accepted-software-delivery-receiver-service
+	url = https://github.com/red-cup-engineering/accepted-software-delivery-receiver-service.git
+	branch = main
