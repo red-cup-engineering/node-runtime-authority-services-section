@@ -1,4 +1,5 @@
 import { admit } from "@red-cup-engineering/signcell/type-system";
+import { parseJsonValue, requireJsonValue, canonicalJson } from "@red-cup-engineering/json-services-section";
 import {
   TYPED_OPERATION_MESSAGE_VERSION,
   TYPED_OPERATION_REFUSAL_KIND,
@@ -6,10 +7,23 @@ import {
   typedOperationRequestType,
 } from "./typed-operation-message.mjs";
 
+// RFC 8259 remains the original v1 message mode. RFC 8785 is a distinct
+// requested codec rather than a silent re-encoding of historical JSON bodies.
+// Both use Computer Data's original JSON admission/canonicalizer.
 const CODECS = Object.freeze({
   json: Object.freeze({
-    decode: (text) => JSON.parse(text),
-    encode: (value) => JSON.stringify(value),
+    decode: parseJsonValue,
+    encode: (value) => JSON.stringify(requireJsonValue(value)),
+  }),
+  jcs: Object.freeze({
+    decode: (text) => {
+      const value = parseJsonValue(text);
+      if (canonicalJson(value) !== text) {
+        throw new TypeError("RFC 8785 JCS input must already be canonical");
+      }
+      return value;
+    },
+    encode: canonicalJson,
   }),
 });
 
