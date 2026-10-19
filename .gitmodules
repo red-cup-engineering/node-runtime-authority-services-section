@@ -133,3 +133,7 @@
 	path = services/computer-code-development-services-section/services/deployment-services-section
 	url = https://github.com/red-cup-engineering/deployment-services-section.git
 	branch = main
+[submodule "campaign-rollup-projection-service"]
+	path = services/computer-code-development-services-section/services/campaign-rollup-projection-service
+	url = https://github.com/red-cup-engineering/campaign-rollup-projection-service.git
+	branch = main
