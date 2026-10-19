@@ -129,3 +129,7 @@
 	path = services/computer-code-development-services-section/services/deterministic-intent-compiler-supplier
 	url = https://github.com/red-cup-engineering/deterministic-intent-compiler-supplier.git
 	branch = main
+[submodule "deployment-services-section"]
+	path = services/computer-code-development-services-section/services/deployment-services-section
+	url = https://github.com/red-cup-engineering/deployment-services-section.git
+	branch = main
