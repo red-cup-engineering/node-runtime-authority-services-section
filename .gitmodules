@@ -17,14 +17,6 @@
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/javascript-node-operation-engineering-services-section
 	url = https://github.com/red-cup-engineering/javascript-node-operation-engineering-services-section.git
 	branch = main
-[submodule "jsnode-package-body-normalization-app"]
-	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section/apps/jsnode-package-body-normalization-app
-	url = https://github.com/red-cup-engineering/jsnode-package-body-normalization-app.git
-	branch = main
-[submodule "javascript-deduplication-services-section"]
-	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section/services/javascript-deduplication-services-section
-	url = https://github.com/red-cup-engineering/javascript-deduplication-services-section.git
-	branch = main
 [submodule "execute-javascript-node-command-service"]
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/javascript-node-command-execution-services-section/services/execute-javascript-node-command-service
 	url = https://github.com/red-cup-engineering/execute-javascript-node-command-service.git
@@ -32,34 +24,6 @@
 [submodule "read-javascript-file-export-documentation-service"]
 	path = services/javascript-engineering-services-section/services/javascript-file-services-section/services/javascript-file-documentation-services-section/services/read-javascript-file-export-documentation-service
 	url = https://github.com/red-cup-engineering/read-javascript-file-export-documentation-service.git
-	branch = main
-[submodule "jsnode-package-owner-projection-service"]
-	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section/services/jsnode-package-owner-projection-service
-	url = https://github.com/red-cup-engineering/jsnode-package-owner-projection-service.git
-	branch = main
-[submodule "jsnode-package-identity-reference-normalization-service"]
-	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section/services/jsnode-package-identity-reference-normalization-service
-	url = https://github.com/red-cup-engineering/jsnode-package-identity-reference-normalization-service.git
-	branch = main
-[submodule "jsnode-package-identity-normalization-service"]
-	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section/services/jsnode-package-identity-normalization-service
-	url = https://github.com/red-cup-engineering/jsnode-package-identity-normalization-service.git
-	branch = main
-[submodule "jsnode-package-dependency-normalization-service"]
-	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section/services/jsnode-package-dependency-normalization-service
-	url = https://github.com/red-cup-engineering/jsnode-package-dependency-normalization-service.git
-	branch = main
-[submodule "jsnode-package-check-service"]
-	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section/services/jsnode-package-check-service
-	url = https://github.com/red-cup-engineering/jsnode-package-check-service.git
-	branch = main
-[submodule "jsnode-package-body-observation-service"]
-	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section/services/jsnode-package-body-observation-service
-	url = https://github.com/red-cup-engineering/jsnode-package-body-observation-service.git
-	branch = main
-[submodule "jsnode-cross-package-module-edge-normalization-service"]
-	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section/services/jsnode-cross-package-module-edge-normalization-service
-	url = https://github.com/red-cup-engineering/jsnode-cross-package-module-edge-normalization-service.git
 	branch = main
 [submodule "services-section-form-services-section"]
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/services-section-form-services-section
@@ -148,4 +112,8 @@
 [submodule "jsnode-observation-service"]
 	path = services/javascript-engineering-services-section/services/jsnode-observation-service
 	url = https://github.com/red-cup-engineering/jsnode-observation-service.git
+	branch = main
+[submodule "javascript-normalization-services-section"]
+	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section
+	url = https://github.com/red-cup-engineering/javascript-normalization-services-section.git
 	branch = main
