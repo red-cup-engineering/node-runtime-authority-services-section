@@ -32,14 +32,6 @@
 [submodule "github-engineering-services-section"]
 	path = services/computer-code-development-services-section/services/version-control-services-section/services/software-forge-services-section/services/github-engineering-services-section
 	url = https://github.com/red-cup-engineering/github-engineering-services-section.git
-[submodule "pnpm-workspace-fabrication-service"]
-	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/pnpm-services-section/services/pnpm-workspace-services-section/services/pnpm-workspace-fabrication-service
-	url = https://github.com/red-cup-engineering/pnpm-workspace-fabrication-service.git
-	branch = main
-[submodule "npm-services-section"]
-	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section
-	url = https://github.com/red-cup-engineering/npm-services-section.git
-	branch = main
 [submodule "execute-javascript-node-command-service"]
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/javascript-node-command-execution-services-section/services/execute-javascript-node-command-service
 	url = https://github.com/red-cup-engineering/execute-javascript-node-command-service.git
@@ -95,4 +87,8 @@
 [submodule "node-process-services-section"]
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section
 	url = https://github.com/red-cup-engineering/node-process-services-section.git
+	branch = main
+[submodule "jsnode-packaging-services-section"]
+	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section
+	url = https://github.com/red-cup-engineering/jsnode-packaging-services-section.git
 	branch = main
