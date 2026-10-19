@@ -56,3 +56,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-file-services-section/services/javascript-file-documentation-services-section/services/read-javascript-file-export-documentation-service
 	url = https://github.com/red-cup-engineering/read-javascript-file-export-documentation-service.git
 	branch = main
+[submodule "jsnode-package-services-section"]
+	path = services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section
+	url = https://github.com/red-cup-engineering/jsnode-package-services-section.git
+	branch = main
