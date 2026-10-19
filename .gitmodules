@@ -112,3 +112,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-code-analysis-services-section/services/javascript-algebra
 	url = https://github.com/red-cup-engineering/javascript-algebra.git
 	branch = main
+[submodule "jsnode-function-movement-cloud-provider"]
+	path = services/javascript-engineering-services-section/services/deno-services-section/services/jsnode-function-movement-cloud-provider
+	url = https://github.com/red-cup-engineering/jsnode-function-movement-cloud-provider.git
+	branch = main
