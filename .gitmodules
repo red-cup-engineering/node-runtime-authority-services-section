@@ -116,3 +116,7 @@
 	path = services/javascript-engineering-services-section/services/deno-services-section/services/jsnode-function-movement-cloud-provider
 	url = https://github.com/red-cup-engineering/jsnode-function-movement-cloud-provider.git
 	branch = main
+[submodule "deno-deploy-free-compute-provider"]
+	path = services/javascript-engineering-services-section/services/deno-services-section/services/deno-deploy-free-compute-provider
+	url = https://github.com/red-cup-engineering/deno-deploy-free-compute-provider.git
+	branch = main
