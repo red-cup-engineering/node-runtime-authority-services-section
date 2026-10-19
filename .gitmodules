@@ -21,10 +21,6 @@
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/javascript-node-operation-engineering-services-section
 	url = https://github.com/red-cup-engineering/javascript-node-operation-engineering-services-section.git
 	branch = main
-[submodule "disk-package-observation-app"]
-	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-package-services-section/apps/disk-package-observation-app
-	url = https://github.com/red-cup-engineering/disk-package-observation-app.git
-	branch = main
 [submodule "jsnode-package-body-normalization-app"]
 	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section/apps/jsnode-package-body-normalization-app
 	url = https://github.com/red-cup-engineering/jsnode-package-body-normalization-app.git
@@ -40,49 +36,9 @@
 [submodule "github-engineering-services-section"]
 	path = services/computer-code-development-services-section/services/version-control-services-section/services/software-forge-services-section/services/github-engineering-services-section
 	url = https://github.com/red-cup-engineering/github-engineering-services-section.git
-[submodule "node-runtime-materialization-engineering-services-section"]
-	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-package-services-section/services/npm-package-set-services-section/services/node-runtime-release-materialization-service
-	url = https://github.com/red-cup-engineering/node-runtime-materialization-engineering-services-section.git
-	branch = main
-[submodule "node-runtime-container-image-context-materialization-service"]
-	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-package-services-section/services/npm-package-set-services-section/services/node-runtime-container-image-context-materialization-service
-	url = https://github.com/red-cup-engineering/node-runtime-container-image-context-materialization-service.git
-	branch = main
 [submodule "pnpm-workspace-fabrication-service"]
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/pnpm-services-section/services/pnpm-workspace-services-section/services/pnpm-workspace-fabrication-service
 	url = https://github.com/red-cup-engineering/pnpm-workspace-fabrication-service.git
-	branch = main
-[submodule "project-npm-package-lock-regeneration-command-service"]
-	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-package-services-section/services/project-npm-package-lock-regeneration-command-service
-	url = https://github.com/red-cup-engineering/project-npm-package-lock-regeneration-command-service.git
-	branch = main
-[submodule "npm-scoped-package-name-formation-service"]
-	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-package-services-section/services/npm-scoped-package-name-formation-service
-	url = https://github.com/red-cup-engineering/npm-scoped-package-name-formation-service.git
-	branch = main
-[submodule "npm-package-version-admission-service"]
-	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-package-services-section/services/npm-package-version-admission-service
-	url = https://github.com/red-cup-engineering/npm-package-version-admission-service.git
-	branch = main
-[submodule "npm-package-name-leaf-admission-service"]
-	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-package-services-section/services/npm-package-name-leaf-admission-service
-	url = https://github.com/red-cup-engineering/npm-package-name-leaf-admission-service.git
-	branch = main
-[submodule "npm-package-manifest-normalization-service"]
-	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-package-services-section/services/npm-package-manifest-normalization-service
-	url = https://github.com/red-cup-engineering/npm-package-manifest-normalization-service.git
-	branch = main
-[submodule "npm-package-manifest-admission-service"]
-	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-package-services-section/services/npm-package-manifest-admission-service
-	url = https://github.com/red-cup-engineering/npm-package-manifest-admission-service.git
-	branch = main
-[submodule "npm-owner-admission-service"]
-	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-package-services-section/services/npm-owner-admission-service
-	url = https://github.com/red-cup-engineering/npm-owner-admission-service.git
-	branch = main
-[submodule "inspect-installed-npm-package-service"]
-	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-package-services-section/services/inspect-installed-npm-package-service
-	url = https://github.com/red-cup-engineering/inspect-installed-npm-package-service.git
 	branch = main
 [submodule "npm-cache-release-recovery-service"]
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-cache-services-section/services/npm-cache-release-recovery-service
@@ -95,4 +51,8 @@
 [submodule "npm-registry-services-section"]
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section
 	url = https://github.com/red-cup-engineering/npm-registry-services-section.git
+	branch = main
+[submodule "npm-package-services-section"]
+	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-package-services-section
+	url = https://github.com/red-cup-engineering/npm-package-services-section.git
 	branch = main
