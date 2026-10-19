@@ -79,3 +79,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/services/verdaccio-storage-release-projection-service
 	url = https://github.com/red-cup-engineering/verdaccio-storage-release-projection-service.git
 	branch = main
+[submodule "verdaccio-services-section"]
+	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/services/verdaccio-services-section
+	url = https://github.com/red-cup-engineering/verdaccio-services-section.git
+	branch = main
