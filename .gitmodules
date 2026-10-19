@@ -92,3 +92,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section
 	url = https://github.com/red-cup-engineering/jsnode-packaging-services-section.git
 	branch = main
+[submodule "jsnode-package-vulnerability-triage-services-section"]
+	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-package-vulnerability-triage-services-section
+	url = https://github.com/red-cup-engineering/jsnode-package-vulnerability-triage-services-section.git
+	branch = main
