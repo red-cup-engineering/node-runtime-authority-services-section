@@ -92,3 +92,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section
 	url = https://github.com/red-cup-engineering/node-runtime-authority-services-section.git
 	branch = main
+[submodule "node-process-services-section"]
+	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section
+	url = https://github.com/red-cup-engineering/node-process-services-section.git
+	branch = main
