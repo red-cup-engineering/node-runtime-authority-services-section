@@ -141,3 +141,7 @@
 	path = services/javascript-engineering-services-section/services/software-edit-language-service
 	url = https://github.com/red-cup-engineering/software-edit-language-service.git
 	branch = main
+[submodule "sandbox-command-execution-service"]
+	path = services/javascript-engineering-services-section/services/sandbox-command-execution-service
+	url = https://github.com/red-cup-engineering/sandbox-command-execution-service.git
+	branch = main
