@@ -113,3 +113,7 @@
 	path = services/computer-code-development-services-section/services/legacy-capability-reallocation-service
 	url = https://github.com/red-cup-engineering/legacy-capability-reallocation-service.git
 	branch = main
+[submodule "lean-blueprint-chart-service"]
+	path = services/computer-code-development-services-section/services/lean-blueprint-chart-service
+	url = https://github.com/red-cup-engineering/lean-blueprint-chart-service.git
+	branch = main
