@@ -89,3 +89,7 @@
 	path = services/computer-code-development-services-section/services/software-solve-loop-service
 	url = https://github.com/red-cup-engineering/software-solve-loop-service.git
 	branch = main
+[submodule "software-program-synthesis-solicitation-service"]
+	path = services/computer-code-development-services-section/services/software-program-synthesis-solicitation-service
+	url = https://github.com/red-cup-engineering/software-program-synthesis-solicitation-service.git
+	branch = main
