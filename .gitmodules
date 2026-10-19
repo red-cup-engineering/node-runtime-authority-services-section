@@ -17,10 +17,6 @@
 	path = services/computer-code-development-services-section/services/version-control-services-section/services/software-forge-services-section
 	url = https://github.com/red-cup-engineering/software-forge-services-section.git
 	branch = main
-[submodule "solidity-search-path-for-relations"]
-	path = services/computer-code-development-services-section/services/solidity-services-section/services/search-path-for-relations
-	url = https://github.com/red-cup-engineering/solidity-search-path-for-relations.git
-	branch = main
 [submodule "transform-json-schema-to-typescript-service"]
 	path = services/javascript-engineering-services-section/services/transform-json-schema-to-typescript-service
 	url = https://github.com/red-cup-engineering/transform-json-schema-to-typescript-service.git
@@ -80,4 +76,8 @@
 [submodule "typed-resource-catalog"]
 	path = services/computer-code-development-services-section/services/typed-resource-catalog-service
 	url = https://github.com/red-cup-engineering/typed-resource-catalog.git
+	branch = main
+[submodule "solidity-services-section"]
+	path = services/computer-code-development-services-section/services/solidity-services-section
+	url = https://github.com/red-cup-engineering/solidity-services-section.git
 	branch = main
