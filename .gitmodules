@@ -96,3 +96,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-package-vulnerability-triage-services-section
 	url = https://github.com/red-cup-engineering/jsnode-package-vulnerability-triage-services-section.git
 	branch = main
+[submodule "javascript-parser-service"]
+	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/javascript-parser-service
+	url = https://github.com/red-cup-engineering/javascript-parser-service.git
+	branch = main
