@@ -141,3 +141,7 @@
 	path = services/computer-code-development-services-section/services/accepted-software-delivery-receiver-service
 	url = https://github.com/red-cup-engineering/accepted-software-delivery-receiver-service.git
 	branch = main
+[submodule "acceptance-oracle-assay-service"]
+	path = services/computer-code-development-services-section/services/acceptance-oracle-assay-service
+	url = https://github.com/red-cup-engineering/acceptance-oracle-assay-service.git
+	branch = main
