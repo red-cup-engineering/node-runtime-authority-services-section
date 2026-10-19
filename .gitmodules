@@ -145,3 +145,7 @@
 	path = services/computer-code-development-services-section/services/acceptance-oracle-assay-service
 	url = https://github.com/red-cup-engineering/acceptance-oracle-assay-service.git
 	branch = main
+[submodule "tex-engineering-services-section"]
+	path = services/tex-engineering-services-section
+	url = https://github.com/red-cup-engineering/tex-engineering-services-section.git
+	branch = main
