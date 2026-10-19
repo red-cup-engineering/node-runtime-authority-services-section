@@ -1,6 +1,6 @@
 {
   "name": "@red-cup-engineering/computer-code-engineering-services-section",
-  "version": "0.2.1",
+  "version": "0.3.0-dev.0",
   "type": "module",
   "description": "Root for code concepts: codecs for languages and version control; its library modules are SignChain, the evidence-ordering assembly over cells, and the dynamics of the semiotic expression notation, the house typed term language: its evaluator, reader, runtime and normalized content identity.",
   "repository": {
@@ -33,7 +33,7 @@
     "@red-cup-engineering/computer-content-engineering-services-section": "0.1.0",
     "@red-cup-engineering/computer-data-engineering-services-section": "0.2.4",
     "@red-cup-engineering/cryptographic-computer-data-engineering-services-section": "0.3.1",
-    "@red-cup-engineering/json-services-section": "0.4.0",
+    "@red-cup-engineering/json-services-section": "0.4.2-dev.2",
     "@red-cup-engineering/signcell": "0.4.2",
     "@red-cup-engineering/uri-services-section": "0.1.1"
   },
