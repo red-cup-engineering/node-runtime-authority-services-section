@@ -9,61 +9,9 @@
 	path = services/computer-code-development-services-section/services/version-control-services-section/services/git-services-section
 	url = https://github.com/red-cup-engineering/git-services-section.git
 	branch = main
-[submodule "check-stale-references-app"]
-	path = services/javascript-engineering-services-section/apps/check-stale-references-app
-	url = https://github.com/red-cup-engineering/check-stale-references-app.git
-	branch = main
 [submodule "software-forge-services-section"]
 	path = services/computer-code-development-services-section/services/version-control-services-section/services/software-forge-services-section
 	url = https://github.com/red-cup-engineering/software-forge-services-section.git
-	branch = main
-[submodule "transform-json-schema-to-typescript-service"]
-	path = services/javascript-engineering-services-section/services/transform-json-schema-to-typescript-service
-	url = https://github.com/red-cup-engineering/transform-json-schema-to-typescript-service.git
-	branch = main
-[submodule "software-mission-customer-induction-service"]
-	path = services/javascript-engineering-services-section/services/software-mission-customer-induction-service
-	url = https://github.com/red-cup-engineering/software-mission-customer-induction-service.git
-	branch = main
-[submodule "software-mission-action-record-parser-service"]
-	path = services/javascript-engineering-services-section/services/software-mission-action-record-parser-service
-	url = https://github.com/red-cup-engineering/software-mission-action-record-parser-service.git
-	branch = main
-[submodule "software-edit-language-service"]
-	path = services/javascript-engineering-services-section/services/software-edit-language-service
-	url = https://github.com/red-cup-engineering/software-edit-language-service.git
-	branch = main
-[submodule "sandbox-command-execution-service"]
-	path = services/javascript-engineering-services-section/services/sandbox-command-execution-service
-	url = https://github.com/red-cup-engineering/sandbox-command-execution-service.git
-	branch = main
-[submodule "jsnode-observation-service"]
-	path = services/javascript-engineering-services-section/services/jsnode-observation-service
-	url = https://github.com/red-cup-engineering/jsnode-observation-service.git
-	branch = main
-[submodule "javascript-normalization-services-section"]
-	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section
-	url = https://github.com/red-cup-engineering/javascript-normalization-services-section.git
-	branch = main
-[submodule "javascript-node-services-section"]
-	path = services/javascript-engineering-services-section/services/javascript-node-services-section
-	url = https://github.com/red-cup-engineering/javascript-node-services-section.git
-	branch = main
-[submodule "javascript-file-services-section"]
-	path = services/javascript-engineering-services-section/services/javascript-file-services-section
-	url = https://github.com/red-cup-engineering/javascript-file-services-section.git
-	branch = main
-[submodule "javascript-code-fabrication-services-section"]
-	path = services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section
-	url = https://github.com/red-cup-engineering/javascript-code-fabrication-services-section.git
-	branch = main
-[submodule "javascript-code-analysis-services-section"]
-	path = services/javascript-engineering-services-section/services/javascript-code-analysis-services-section
-	url = https://github.com/red-cup-engineering/javascript-code-analysis-services-section.git
-	branch = main
-[submodule "deno-services-section"]
-	path = services/javascript-engineering-services-section/services/deno-services-section
-	url = https://github.com/red-cup-engineering/deno-services-section.git
 	branch = main
 [submodule "write-capability-assay-service"]
 	path = services/computer-code-development-services-section/services/write-capability-assay-service
@@ -148,4 +96,8 @@
 [submodule "tex-engineering-services-section"]
 	path = services/tex-engineering-services-section
 	url = https://github.com/red-cup-engineering/tex-engineering-services-section.git
+	branch = main
+[submodule "javascript-engineering-services-section"]
+	path = services/javascript-engineering-services-section
+	url = https://github.com/red-cup-engineering/javascript-engineering-services-section.git
 	branch = main
