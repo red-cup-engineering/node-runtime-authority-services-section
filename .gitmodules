@@ -93,3 +93,7 @@
 	path = services/computer-code-development-services-section/services/software-program-synthesis-solicitation-service
 	url = https://github.com/red-cup-engineering/software-program-synthesis-solicitation-service.git
 	branch = main
+[submodule "search-path-for-relations"]
+	path = services/computer-code-development-services-section/services/search-path-for-relations
+	url = https://github.com/red-cup-engineering/search-path-for-relations.git
+	branch = main
