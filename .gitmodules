@@ -81,3 +81,7 @@
 	path = services/computer-code-development-services-section/services/solidity-services-section
 	url = https://github.com/red-cup-engineering/solidity-services-section.git
 	branch = main
+[submodule "software-trajectory-memory-service"]
+	path = services/computer-code-development-services-section/services/software-trajectory-memory-service
+	url = https://github.com/red-cup-engineering/software-trajectory-memory-service.git
+	branch = main
