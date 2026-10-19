@@ -100,3 +100,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/javascript-parser-service
 	url = https://github.com/red-cup-engineering/javascript-parser-service.git
 	branch = main
+[submodule "javascript-node-operation-service"]
+	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/javascript-node-operation-service
+	url = https://github.com/red-cup-engineering/javascript-node-operation-service.git
+	branch = main
