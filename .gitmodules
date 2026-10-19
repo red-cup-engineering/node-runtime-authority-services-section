@@ -13,10 +13,6 @@
 	path = services/javascript-engineering-services-section/apps/check-stale-references-app
 	url = https://github.com/red-cup-engineering/check-stale-references-app.git
 	branch = main
-[submodule "capability-cell-fabrication-services-section"]
-	path = services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/capability-cell-fabrication-services-section
-	url = https://github.com/red-cup-engineering/capability-cell-fabrication-services-section.git
-	branch = main
 [submodule "javascript-node-operation-engineering-services-section"]
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/javascript-node-operation-engineering-services-section
 	url = https://github.com/red-cup-engineering/javascript-node-operation-engineering-services-section.git
@@ -39,14 +35,6 @@
 [submodule "read-javascript-file-export-documentation-service"]
 	path = services/javascript-engineering-services-section/services/javascript-file-services-section/services/javascript-file-documentation-services-section/services/read-javascript-file-export-documentation-service
 	url = https://github.com/red-cup-engineering/read-javascript-file-export-documentation-service.git
-	branch = main
-[submodule "jsnode-package-services-section"]
-	path = services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section
-	url = https://github.com/red-cup-engineering/jsnode-package-services-section.git
-	branch = main
-[submodule "jsnode-package-scaffold-service"]
-	path = services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-scaffold-service
-	url = https://github.com/red-cup-engineering/jsnode-package-scaffold-service.git
 	branch = main
 [submodule "jsnode-package-owner-projection-service"]
 	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section/services/jsnode-package-owner-projection-service
@@ -111,4 +99,8 @@
 [submodule "javascript-file-import-services-section"]
 	path = services/javascript-engineering-services-section/services/javascript-file-services-section/services/javascript-file-import-services-section
 	url = https://github.com/red-cup-engineering/javascript-file-import-services-section.git
+	branch = main
+[submodule "javascript-node-code-fabrication-services-section"]
+	path = services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section
+	url = https://github.com/red-cup-engineering/javascript-node-code-fabrication-services-section.git
 	branch = main
