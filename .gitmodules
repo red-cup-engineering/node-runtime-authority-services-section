@@ -73,3 +73,7 @@
 	path = services/computer-code-development-services-section/services/write-capability-assay-service
 	url = https://github.com/red-cup-engineering/write-capability-assay-service.git
 	branch = main
+[submodule "workspace-content-graph-service"]
+	path = services/computer-code-development-services-section/services/workspace-content-graph-service
+	url = https://github.com/red-cup-engineering/workspace-content-graph-service.git
+	branch = main
