@@ -76,3 +76,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section/services/jsnode-package-identity-normalization-service
 	url = https://github.com/red-cup-engineering/jsnode-package-identity-normalization-service.git
 	branch = main
+[submodule "jsnode-package-dependency-normalization-service"]
+	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section/services/jsnode-package-dependency-normalization-service
+	url = https://github.com/red-cup-engineering/jsnode-package-dependency-normalization-service.git
+	branch = main
