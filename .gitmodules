@@ -92,3 +92,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section/services/jsnode-cross-package-module-edge-normalization-service
 	url = https://github.com/red-cup-engineering/jsnode-cross-package-module-edge-normalization-service.git
 	branch = main
+[submodule "services-section-form-services-section"]
+	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/services-section-form-services-section
+	url = https://github.com/red-cup-engineering/services-section-form-services-section.git
+	branch = main
