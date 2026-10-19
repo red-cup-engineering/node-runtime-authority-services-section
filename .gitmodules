@@ -104,3 +104,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/javascript-node-operation-service
 	url = https://github.com/red-cup-engineering/javascript-node-operation-service.git
 	branch = main
+[submodule "javascript-module-closure-service"]
+	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/javascript-module-closure-service
+	url = https://github.com/red-cup-engineering/javascript-module-closure-service.git
+	branch = main
