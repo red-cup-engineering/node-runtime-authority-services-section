@@ -77,3 +77,7 @@
 	path = services/computer-code-development-services-section/services/workspace-content-graph-service
 	url = https://github.com/red-cup-engineering/workspace-content-graph-service.git
 	branch = main
+[submodule "typed-resource-catalog"]
+	path = services/computer-code-development-services-section/services/typed-resource-catalog-service
+	url = https://github.com/red-cup-engineering/typed-resource-catalog.git
+	branch = main
