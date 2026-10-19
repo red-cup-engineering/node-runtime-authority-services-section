@@ -5,7 +5,7 @@
  * Systems/Networking may project these structures without computing their own
  * operation join, rewriting JSON Schema URI rules, or inventing evidence.
  */
-import { bytesCompare, semanticBytes } from "@red-cup-engineering/computer-content-address-engineering-services-section/semiotic-content-address";
+import { bytesCompare, bytesToLatin1, semanticBytes } from "@red-cup-engineering/computer-content-address-engineering-services-section/semiotic-content-address";
 import { resolveSchemaUri } from "@red-cup-engineering/json-schema-services-section/validation";
 
 const compare = (a, b) => bytesCompare(semanticBytes(a), semanticBytes(b));
@@ -43,8 +43,9 @@ export function operationSchemaTopology(programs) {
   for (const program of programs) {
     if (!program || typeof program.name !== "string" || !program.name)
       throw new TypeError("operation name must be a nonempty string");
-    if (names.has(program.name)) throw new TypeError("duplicate-component: operation name appears twice");
-    names.add(program.name);
+    const identity = bytesToLatin1(semanticBytes(program.name));
+    if (names.has(identity)) throw new TypeError("duplicate-component: operation name appears twice");
+    names.add(identity);
   }
   const byName = new Map(programs.map(p => [p.name, p]));
   const domains = slots(programs, "domain");
@@ -87,9 +88,9 @@ export function operationSchemaMesh(packages) {
   if (!Array.isArray(packages)) throw new TypeError("operation packages must be an array");
   const identities = new Set();
   const admitted = packages.map(pkg => {
-    if (!pkg || typeof pkg.package !== "string" || !pkg.package || identities.has(pkg.package))
+    if (!pkg || typeof pkg.package !== "string" || !pkg.package || identities.has(bytesToLatin1(semanticBytes(pkg.package))))
       throw new TypeError("distinct nonempty package identities are required");
-    identities.add(pkg.package);
+    identities.add(bytesToLatin1(semanticBytes(pkg.package)));
     // A derivative list of type slots is not authority to manufacture a match.
     const topology = operationSchemaTopology(pkg.programs);
     return Object.freeze({package: pkg.package, ...topology});

@@ -73,3 +73,10 @@ test('a forged precomputed extrema surface cannot produce a candidate edge',()=>
   assert.equal(candidate.edges.length,1);
   assert.equal(Object.hasOwn(candidate.edges[0],'proof'),false);
 });
+
+test('canonical Unicode equivalence cannot duplicate operation or package names', () => {
+  assert.throws(()=>operationSchemaTopology([endpoint('tâche',S),endpoint('ta\u0302che',S)]),/duplicate-component/);
+  assert.throws(()=>operationSchemaMesh([
+    {package:'café',programs:[]}, {package:'cafe\u0301',programs:[]},
+  ]),/distinct nonempty package/);
+});
