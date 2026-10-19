@@ -64,3 +64,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-scaffold-service
 	url = https://github.com/red-cup-engineering/jsnode-package-scaffold-service.git
 	branch = main
+[submodule "jsnode-package-owner-projection-service"]
+	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section/services/jsnode-package-owner-projection-service
+	url = https://github.com/red-cup-engineering/jsnode-package-owner-projection-service.git
+	branch = main
