@@ -52,17 +52,24 @@ test('cross-package candidates preserve direction, avoid self joining, expose tr
   const down=operationSchemaTopology([endpoint('consume',S)]);
   const orphan=operationSchemaTopology([endpoint('other','https://example.org/missing.json')]);
   const actual=operationSchemaMesh([
-    {package:'up',domains:up.domains,codomains:up.codomains},
-    {package:'down',domains:down.domains,codomains:down.codomains},
-    {package:'orphan',domains:orphan.domains,codomains:orphan.codomains},
+    {package:'up',programs:[endpoint('produce',undefined,S)]},
+    {package:'down',programs:[endpoint('consume',S)]},
+    {package:'orphan',programs:[endpoint('other','https://example.org/missing.json')]},
   ]);
   assert.deepEqual(actual.edges,[{fromPackage:'up',from:'produce',toPackage:'down',to:'consume',schema:S,relation:'codomain-domain-candidate'}]);
   assert.deepEqual(actual.frontier.incoming,[{package:'orphan',schema:'https://example.org/missing.json',operations:['other']}]);
   assert.deepEqual(actual.frontier.outgoing,[]);
-  assert.throws(()=>operationSchemaMesh([{package:'up',...up},{package:'up',...up}]),/distinct nonempty/);
+  assert.throws(()=>operationSchemaMesh([{package:'up',programs:[]},{package:'up',programs:[]}]),/distinct nonempty/);
 });
 
 test('Unicode operation names are stable in canonical byte order',()=>{
   const got=operationSchemaTopology([endpoint('é',S),endpoint('z',S),endpoint('🦉',S)]);
   assert.deepEqual(got.domains[0].operations,['z','é','🦉']);
+});
+
+test('a forged precomputed extrema surface cannot produce a candidate edge',()=>{
+  assert.throws(()=>operationSchemaMesh([{package:'forge',domains:[{schema:S,operations:['P']}],codomains:[{schema:S,operations:['Q']}]}]),/operation programs must be an array/);
+  const candidate=operationSchemaMesh([{package:'P',programs:[endpoint('P',undefined,S)]},{package:'Q',programs:[endpoint('Q',S)]}]);
+  assert.equal(candidate.edges.length,1);
+  assert.equal(Object.hasOwn(candidate.edges[0],'proof'),false);
 });

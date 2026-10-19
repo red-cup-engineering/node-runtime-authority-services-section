@@ -76,25 +76,36 @@ export function operationSchemaTopology(programs) {
   });
 }
 
-/** Candidate cross-package adjacencies over Code's already resolved type slots. */
+/**
+ * Cross-package candidates are derived FROM original declared operations, not
+ * copied/read from independently supplied extrema metadata. Code reuses its
+ * own operationSchemaTopology for each package; Systems interprets the result
+ * into the same SignCells it uses locally. An interface match is not an effect
+ * grant or proof that either operation was deployed.
+ */
 export function operationSchemaMesh(packages) {
   if (!Array.isArray(packages)) throw new TypeError("operation packages must be an array");
-  const ids = packages.map(x => x.package);
-  if (new Set(ids).size !== ids.length || ids.some(x => typeof x !== "string" || !x))
-    throw new TypeError("distinct nonempty package identities are required");
+  const identities = new Set();
+  const admitted = packages.map(pkg => {
+    if (!pkg || typeof pkg.package !== "string" || !pkg.package || identities.has(pkg.package))
+      throw new TypeError("distinct nonempty package identities are required");
+    identities.add(pkg.package);
+    // A derivative list of type slots is not authority to manufacture a match.
+    const topology = operationSchemaTopology(pkg.programs);
+    return Object.freeze({package: pkg.package, ...topology});
+  });
   const producers = new Map(), consumers = new Map();
-  for (const pkg of packages) for (const [side, index] of [["codomains",producers], ["domains",consumers]]) {
+  for (const pkg of admitted) for (const [side, index] of [["codomains", producers], ["domains", consumers]]) {
     for (const extremum of pkg[side]) {
-      if (!Array.isArray(extremum.operations) || typeof extremum.schema !== "string")
-        throw new TypeError("typed operation extrema are required");
-      const slots = index.get(extremum.schema) ?? [];
-      for (const operation of extremum.operations) slots.push(Object.freeze({package:pkg.package,operation}));
-      index.set(extremum.schema, slots);
+      const declared = index.get(extremum.schema) ?? [];
+      for (const operation of extremum.operations)
+        declared.push(Object.freeze({ package: pkg.package, operation }));
+      index.set(extremum.schema, declared);
     }
   }
   const edges = [];
-  for (const [schema, output] of producers) {
-    for (const from of output) for (const to of (consumers.get(schema) ?? [])) {
+  for (const [schema, outputs] of producers) {
+    for (const from of outputs) for (const to of (consumers.get(schema) ?? [])) {
       if (from.package === to.package) continue;
       edges.push(Object.freeze({
         fromPackage:from.package, from:from.operation,
@@ -108,7 +119,7 @@ export function operationSchemaMesh(packages) {
   const frontier = side => {
     const missing = side === "incoming" ? producers : consumers;
     const result = [];
-    for (const pkg of packages) for (const extremum of pkg[side === "incoming" ? "domains" : "codomains"]) {
+    for (const pkg of admitted) for (const extremum of pkg[side === "incoming" ? "domains" : "codomains"]) {
       if (!missing.has(extremum.schema)) result.push(Object.freeze({
         package:pkg.package, schema:extremum.schema, operations:extremum.operations,
       }));
