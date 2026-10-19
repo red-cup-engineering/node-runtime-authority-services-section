@@ -121,3 +121,7 @@
 	path = services/computer-code-development-services-section/services/version-control-services-section/services/software-forge-services-section
 	url = https://github.com/red-cup-engineering/software-forge-services-section.git
 	branch = main
+[submodule "solidity-search-path-for-relations"]
+	path = services/computer-code-development-services-section/services/solidity-services-section/services/search-path-for-relations
+	url = https://github.com/red-cup-engineering/solidity-search-path-for-relations.git
+	branch = main
