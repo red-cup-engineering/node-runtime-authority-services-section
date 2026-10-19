@@ -151,3 +151,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-package-services-section/services/npm-package-manifest-admission-service
 	url = https://github.com/red-cup-engineering/npm-package-manifest-admission-service.git
 	branch = main
+[submodule "npm-owner-admission-service"]
+	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-package-services-section/services/npm-owner-admission-service
+	url = https://github.com/red-cup-engineering/npm-owner-admission-service.git
+	branch = main
