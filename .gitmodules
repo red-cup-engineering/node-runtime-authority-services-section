@@ -83,3 +83,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/services/verdaccio-services-section
 	url = https://github.com/red-cup-engineering/verdaccio-services-section.git
 	branch = main
+[submodule "package-installation-check-service"]
+	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/services/package-installation-check-service
+	url = https://github.com/red-cup-engineering/package-installation-check-service.git
+	branch = main
