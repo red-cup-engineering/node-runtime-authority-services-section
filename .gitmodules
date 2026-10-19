@@ -121,3 +121,7 @@
 	path = services/computer-code-development-services-section/services/future-work-topology-projection-service
 	url = https://github.com/red-cup-engineering/future-work-topology-projection-service.git
 	branch = main
+[submodule "deterministic-report-graphic-service"]
+	path = services/computer-code-development-services-section/services/deterministic-report-graphic-service
+	url = https://github.com/red-cup-engineering/deterministic-report-graphic-service.git
+	branch = main
