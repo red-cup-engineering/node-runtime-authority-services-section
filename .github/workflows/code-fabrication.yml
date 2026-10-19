@@ -6,6 +6,8 @@ on:
       - "src/exact-source-edits.mjs"
       - "src/workspace-path-relocation.mjs"
       - "src/typed-operation.mjs"
+      - "src/operation-schema-topology.mjs"
+      - "test/operation-schema-topology.test.mjs"
       - "test/typed-operation.test.mjs"
       - "services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/src/install-workspace-selection.mjs"
       - "services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/test/install-workspace-selection.test.mjs"
@@ -32,6 +34,8 @@ on:
       - "src/exact-source-edits.mjs"
       - "src/workspace-path-relocation.mjs"
       - "src/typed-operation.mjs"
+      - "src/operation-schema-topology.mjs"
+      - "test/operation-schema-topology.test.mjs"
       - "test/typed-operation.test.mjs"
       - "services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/src/install-workspace-selection.mjs"
       - "services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/test/install-workspace-selection.test.mjs"
@@ -76,6 +80,8 @@ jobs:
         run: npm install --ignore-scripts --no-audit --no-fund
       - name: Exercise portable operation composition and effect authorization
         run: node --test test/typed-operation.test.mjs
+      - name: Exercise Code-owned schema topology and recipient frontiers
+        run: node --test test/operation-schema-topology.test.mjs
   source-edits:
     runs-on: ubuntu-latest
     timeout-minutes: 8
