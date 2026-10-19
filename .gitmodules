@@ -52,3 +52,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/javascript-node-command-execution-services-section/services/execute-javascript-node-command-service
 	url = https://github.com/red-cup-engineering/execute-javascript-node-command-service.git
 	branch = main
+[submodule "read-javascript-file-export-documentation-service"]
+	path = services/javascript-engineering-services-section/services/javascript-file-services-section/services/javascript-file-documentation-services-section/services/read-javascript-file-export-documentation-service
+	url = https://github.com/red-cup-engineering/read-javascript-file-export-documentation-service.git
+	branch = main
