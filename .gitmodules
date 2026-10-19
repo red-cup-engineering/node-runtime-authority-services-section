@@ -13,14 +13,6 @@
 	path = services/javascript-engineering-services-section/apps/check-stale-references-app
 	url = https://github.com/red-cup-engineering/check-stale-references-app.git
 	branch = main
-[submodule "read-javascript-file-export-documentation-service"]
-	path = services/javascript-engineering-services-section/services/javascript-file-services-section/services/javascript-file-documentation-services-section/services/read-javascript-file-export-documentation-service
-	url = https://github.com/red-cup-engineering/read-javascript-file-export-documentation-service.git
-	branch = main
-[submodule "javascript-file-import-services-section"]
-	path = services/javascript-engineering-services-section/services/javascript-file-services-section/services/javascript-file-import-services-section
-	url = https://github.com/red-cup-engineering/javascript-file-import-services-section.git
-	branch = main
 [submodule "javascript-node-code-fabrication-services-section"]
 	path = services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section
 	url = https://github.com/red-cup-engineering/javascript-node-code-fabrication-services-section.git
@@ -80,4 +72,8 @@
 [submodule "javascript-node-services-section"]
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section
 	url = https://github.com/red-cup-engineering/javascript-node-services-section.git
+	branch = main
+[submodule "javascript-file-services-section"]
+	path = services/javascript-engineering-services-section/services/javascript-file-services-section
+	url = https://github.com/red-cup-engineering/javascript-file-services-section.git
 	branch = main
