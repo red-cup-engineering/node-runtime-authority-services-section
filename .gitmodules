@@ -101,3 +101,7 @@
 	path = services/computer-code-development-services-section/services/repository-state-observation-service
 	url = https://github.com/red-cup-engineering/repository-state-observation-service.git
 	branch = main
+[submodule "recursive-observation-circuit-synthesis"]
+	path = services/computer-code-development-services-section/services/recursive-observation-circuit-synthesis
+	url = https://github.com/red-cup-engineering/recursive-observation-circuit-synthesis.git
+	branch = main
