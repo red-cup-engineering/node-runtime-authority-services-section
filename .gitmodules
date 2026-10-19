@@ -60,3 +60,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section
 	url = https://github.com/red-cup-engineering/jsnode-package-services-section.git
 	branch = main
+[submodule "jsnode-package-scaffold-service"]
+	path = services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-scaffold-service
+	url = https://github.com/red-cup-engineering/jsnode-package-scaffold-service.git
+	branch = main
