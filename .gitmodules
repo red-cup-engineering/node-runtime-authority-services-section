@@ -13,14 +13,6 @@
 	path = services/javascript-engineering-services-section/apps/check-stale-references-app
 	url = https://github.com/red-cup-engineering/check-stale-references-app.git
 	branch = main
-[submodule "javascript-computer"]
-	path = services/javascript-engineering-services-section/services/javascript-code-analysis-services-section/services/javascript-computer
-	url = https://github.com/red-cup-engineering/javascript-computer.git
-	branch = main
-[submodule "javascript-algebra"]
-	path = services/javascript-engineering-services-section/services/javascript-code-analysis-services-section/services/javascript-algebra
-	url = https://github.com/red-cup-engineering/javascript-algebra.git
-	branch = main
 [submodule "jsnode-function-movement-cloud-provider"]
 	path = services/javascript-engineering-services-section/services/deno-services-section/services/jsnode-function-movement-cloud-provider
 	url = https://github.com/red-cup-engineering/jsnode-function-movement-cloud-provider.git
@@ -76,4 +68,8 @@
 [submodule "javascript-code-fabrication-services-section"]
 	path = services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section
 	url = https://github.com/red-cup-engineering/javascript-code-fabrication-services-section.git
+	branch = main
+[submodule "javascript-code-analysis-services-section"]
+	path = services/javascript-engineering-services-section/services/javascript-code-analysis-services-section
+	url = https://github.com/red-cup-engineering/javascript-code-analysis-services-section.git
 	branch = main
