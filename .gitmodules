@@ -104,3 +104,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section
 	url = https://github.com/red-cup-engineering/javascript-node-code-fabrication-services-section.git
 	branch = main
+[submodule "javascript-computer"]
+	path = services/javascript-engineering-services-section/services/javascript-code-analysis-services-section/services/javascript-computer
+	url = https://github.com/red-cup-engineering/javascript-computer.git
+	branch = main
