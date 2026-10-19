@@ -71,3 +71,7 @@
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/semiotic-npm-registry-services-section/services/npm-package-install-resolution-assay-service
 	url = https://github.com/red-cup-engineering/npm-package-install-resolution-assay-service.git
 	branch = main
+[submodule "consumer-dependency-closure-installation-service"]
+	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/semiotic-npm-registry-services-section/services/consumer-dependency-closure-installation-service
+	url = https://github.com/red-cup-engineering/consumer-dependency-closure-installation-service.git
+	branch = main
