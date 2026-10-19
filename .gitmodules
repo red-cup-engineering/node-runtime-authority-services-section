@@ -13,14 +13,6 @@
 	path = services/javascript-engineering-services-section/apps/check-stale-references-app
 	url = https://github.com/red-cup-engineering/check-stale-references-app.git
 	branch = main
-[submodule "jsnode-function-movement-cloud-provider"]
-	path = services/javascript-engineering-services-section/services/deno-services-section/services/jsnode-function-movement-cloud-provider
-	url = https://github.com/red-cup-engineering/jsnode-function-movement-cloud-provider.git
-	branch = main
-[submodule "deno-deploy-free-compute-provider"]
-	path = services/javascript-engineering-services-section/services/deno-services-section/services/deno-deploy-free-compute-provider
-	url = https://github.com/red-cup-engineering/deno-deploy-free-compute-provider.git
-	branch = main
 [submodule "software-forge-services-section"]
 	path = services/computer-code-development-services-section/services/version-control-services-section/services/software-forge-services-section
 	url = https://github.com/red-cup-engineering/software-forge-services-section.git
@@ -72,4 +64,8 @@
 [submodule "javascript-code-analysis-services-section"]
 	path = services/javascript-engineering-services-section/services/javascript-code-analysis-services-section
 	url = https://github.com/red-cup-engineering/javascript-code-analysis-services-section.git
+	branch = main
+[submodule "deno-services-section"]
+	path = services/javascript-engineering-services-section/services/deno-services-section
+	url = https://github.com/red-cup-engineering/deno-services-section.git
 	branch = main
