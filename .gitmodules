@@ -25,9 +25,6 @@
 	path = services/javascript-engineering-services-section/services/javascript-normalization-services-section/services/javascript-deduplication-services-section
 	url = https://github.com/red-cup-engineering/javascript-deduplication-services-section.git
 	branch = main
-[submodule "github-engineering-services-section"]
-	path = services/computer-code-development-services-section/services/version-control-services-section/services/software-forge-services-section/services/github-engineering-services-section
-	url = https://github.com/red-cup-engineering/github-engineering-services-section.git
 [submodule "execute-javascript-node-command-service"]
 	path = services/javascript-engineering-services-section/services/javascript-node-services-section/services/javascript-node-command-execution-services-section/services/execute-javascript-node-command-service
 	url = https://github.com/red-cup-engineering/execute-javascript-node-command-service.git
@@ -119,4 +116,8 @@
 [submodule "deno-deploy-free-compute-provider"]
 	path = services/javascript-engineering-services-section/services/deno-services-section/services/deno-deploy-free-compute-provider
 	url = https://github.com/red-cup-engineering/deno-deploy-free-compute-provider.git
+	branch = main
+[submodule "software-forge-services-section"]
+	path = services/computer-code-development-services-section/services/version-control-services-section/services/software-forge-services-section
+	url = https://github.com/red-cup-engineering/software-forge-services-section.git
 	branch = main
