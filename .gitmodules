@@ -129,3 +129,7 @@
 	path = services/javascript-engineering-services-section/services/transform-json-schema-to-typescript-service
 	url = https://github.com/red-cup-engineering/transform-json-schema-to-typescript-service.git
 	branch = main
+[submodule "software-mission-customer-induction-service"]
+	path = services/javascript-engineering-services-section/services/software-mission-customer-induction-service
+	url = https://github.com/red-cup-engineering/software-mission-customer-induction-service.git
+	branch = main
