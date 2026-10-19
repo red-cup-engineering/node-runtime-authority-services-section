@@ -69,3 +69,7 @@
 	path = services/javascript-engineering-services-section/services/deno-services-section
 	url = https://github.com/red-cup-engineering/deno-services-section.git
 	branch = main
+[submodule "write-capability-assay-service"]
+	path = services/computer-code-development-services-section/services/write-capability-assay-service
+	url = https://github.com/red-cup-engineering/write-capability-assay-service.git
+	branch = main
