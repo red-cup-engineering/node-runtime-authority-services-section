@@ -145,3 +145,7 @@
 	path = services/javascript-engineering-services-section/services/sandbox-command-execution-service
 	url = https://github.com/red-cup-engineering/sandbox-command-execution-service.git
 	branch = main
+[submodule "jsnode-observation-service"]
+	path = services/javascript-engineering-services-section/services/jsnode-observation-service
+	url = https://github.com/red-cup-engineering/jsnode-observation-service.git
+	branch = main
