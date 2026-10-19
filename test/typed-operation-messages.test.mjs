@@ -96,3 +96,49 @@ test("a failed or unencodable handler cannot forge a successful typed operation 
   });
   assert.equal(cyclicResult.code,"malformed-output");
 });
+
+
+test("Code's original executable JSON mode retains wire ordering while using Data admission", async () => {
+  const request = {
+    version: 1, kind: TYPED_OPERATION_REQUEST_KIND,
+    requestId: "legacy-json", operationId: "identity",
+    inputCodec: "json", input: '{"b":2,"a":1}',
+    outputCodec: "json", actorResourceCatalog: {}
+  };
+  const result = await invokeTypedOperation({
+    operations: { identity: value => value }, request
+  });
+  assert.equal(result.kind, TYPED_OPERATION_RESULT_KIND);
+  assert.equal(result.output, '{"b":2,"a":1}', "existing RFC 8259 consumers retain their byte-facing presentation");
+  const invalid = await invokeTypedOperation({
+    operations: { identity: () => ({bad: Number.POSITIVE_INFINITY}) }, request
+  });
+  assert.equal(invalid.kind, TYPED_OPERATION_REFUSAL_KIND);
+  assert.equal(invalid.code, "malformed-output");
+});
+
+test("explicit JCS codec receives RFC 8785 canonical input and produces canonical output", async () => {
+  const request = {
+    version: 1, kind: TYPED_OPERATION_REQUEST_KIND,
+    requestId: "jcs-source", operationId: "rewrite",
+    inputCodec: "jcs", input: '{"a":1,"b":2}',
+    outputCodec: "jcs", actorResourceCatalog: {}
+  };
+  const success = await invokeTypedOperation({
+    operations: { rewrite: value => ({z: value.b, a: value.a}) },
+    request
+  });
+  assert.equal(success.kind, TYPED_OPERATION_RESULT_KIND);
+  assert.equal(success.outputCodec, "jcs");
+  assert.equal(success.output, '{"a":1,"z":2}');
+  const noncanonical = await invokeTypedOperation({
+    operations: {rewrite: () => 42},
+    request: {...request, input: '{"b":2,"a":1}'}
+  });
+  assert.equal(noncanonical.code, "malformed-input");
+  const noncanonicalWhitespace = await invokeTypedOperation({
+    operations: {rewrite: () => 42},
+    request: {...request, input: '{ "a":1,"b":2 }'}
+  });
+  assert.equal(noncanonicalWhitespace.code, "malformed-input");
+});
