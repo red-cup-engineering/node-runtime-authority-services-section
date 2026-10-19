@@ -133,3 +133,7 @@
 	path = services/javascript-engineering-services-section/services/software-mission-customer-induction-service
 	url = https://github.com/red-cup-engineering/software-mission-customer-induction-service.git
 	branch = main
+[submodule "software-mission-action-record-parser-service"]
+	path = services/javascript-engineering-services-section/services/software-mission-action-record-parser-service
+	url = https://github.com/red-cup-engineering/software-mission-action-record-parser-service.git
+	branch = main
