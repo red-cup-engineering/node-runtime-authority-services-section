@@ -95,7 +95,7 @@ jobs:
       - name: Exercise native JavaScript import parser without installing other packages
         run: |
           mkdir -p node_modules/@red-cup-engineering
-          ln -s "$PWD/services/javascript-engineering-services-section/services/javascript-node-services-section" node_modules/@red-cup-engineering/javascript-node-services-section
+          ln -s "$PWD/services/javascript-engineering-services-section/services/javascript-node-services-section" node_modules/@red-cup-engineering/javascript-node-engineering-services-section
           node --check services/javascript-engineering-services-section/services/javascript-code-analysis-services-section/services/javascript-computer/src/imports.mjs
           node --test services/javascript-engineering-services-section/services/javascript-code-analysis-services-section/services/javascript-computer/src/imports.test.mjs
       - name: Run real generated code edit and create regressions
