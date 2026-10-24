@@ -12,7 +12,7 @@
 	branch = main
 [submodule "software-development-services-section"]
 	path = services/computer-code-development-services-section
-	url = https://github.com/red-cup-engineering/software-development-services-section.git
+	url = https://github.com/red-cup-engineering/software-development-engineering-services-section.git
 	branch = main
 [submodule "smart-contract-audit-engineering-services-section"]
 	path = services/smart-contract-audit-engineering-services-section
