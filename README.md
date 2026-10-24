@@ -23,3 +23,5 @@ export and local implementation are retired in its 0.4.0 source edition.
 Existing exact V1 message IDs remain in Code `./typed-operation-message`.
 Full registry release/installation and migrating any independently held
 old JSNode clients remain separate receiving obligations.
+
+Its child smart-contract-audit-engineering-services-section audits Solidity codebases and admits only findings proven by a runnable proof-of-concept on a local fork.
