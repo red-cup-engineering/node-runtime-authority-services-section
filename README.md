@@ -24,4 +24,17 @@ Existing exact V1 message IDs remain in Code `./typed-operation-message`.
 Full registry release/installation and migrating any independently held
 old JSNode clients remain separate receiving obligations.
 
+## Bounded exact source construction
+
+`./exact-source-edit-operation` exposes the object-input body
+`applyExactSourceEditOperation`, its closed `inputSchema`/`outputSchema`, and
+the original operation-family `effects` shape. It delegates once to the
+unchanged `./exact-source-edits` primitive with mandatory preimage/span guards,
+bounded UTF-8 bytes, scalar-aligned UTF-16 offsets and NFC-stable input/output.
+The [source specification](content/text/documents/articles/specifications/exact-source-edit-operation.md)
+defines its deliberately narrower domain. It is not itself an admitted
+Operation: the existing higher operation owner captures the exported body
+through JSNode and composes the original descriptor, without making Code
+depend upward on Relating or creating another registry.
+
 Its child smart-contract-audit-engineering-services-section audits Solidity codebases and admits only findings proven by a runnable proof-of-concept on a local fork.

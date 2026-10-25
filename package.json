@@ -23,6 +23,7 @@
     "./semiotic-expression-notation/projector": "./src/semiotic-expression-notation/projector.mjs",
     "./typed-operation": "./src/typed-operation.mjs",
     "./exact-source-edits": "./src/exact-source-edits.mjs",
+    "./exact-source-edit-operation": "./src/exact-source-edit-operation.mjs",
     "./content-space-operations": "./src/content-space-operations.mjs",
     "./typed-operation-message": "./src/typed-operation-message.mjs",
     "./typed-operation-invoke": "./src/typed-operation-invoke.mjs",
