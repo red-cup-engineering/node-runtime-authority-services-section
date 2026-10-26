@@ -1,8 +1,0 @@
-{
-  "original": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/services/git-services-section/data/logs/github-source-intake-logs/curated-record-source-publication-v1/submit-curated-record-source.mjs",
-  "originalSha256": "a9ba2b731e783f0863473d9787b57e6deb2776c89cb09e9e7c35f03d9fdb6642",
-  "adapted": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/source-publication/submit-node-owned-root-source.mjs",
-  "adaptedSha256": "dcda30ca64308b55ca5199908fec5f571d301a44ad8bfddecaeb4ac08dbca9db",
-  "scope": "Owner-specific input guards and existing-file expected-before checks; same existing qualified GHS client API, one-parent/base-tree preservation, fresh main, nonforce branch, draft PR. No execution or credentials read yet.",
-  "changes": 10
-}

@@ -1,9 +1,0 @@
-{
-  "at": "2026-10-21T00:11:51.568Z",
-  "method": "POST",
-  "path": "/repos/red-cup-engineering/node-process-services-section/git/blobs",
-  "body": {
-    "encoding": "base64",
-    "sourceContentSHA256": "4f260290dad9355dc5e3c105105377533016277a9ab32b8244f28f0c56eeb2c1"
-  }
-}

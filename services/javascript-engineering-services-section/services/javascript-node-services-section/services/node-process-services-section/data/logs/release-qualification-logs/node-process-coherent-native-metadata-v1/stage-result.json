@@ -1,8 +1,0 @@
-{
-  "executed": false,
-  "state": "refused",
-  "reason": "Independent physical100GBfloor refused",
-  "errorCode": "ERR_ASSERTION",
-  "backingCapacityProbe": null,
-  "scopeDispatchAttempted": false
-}

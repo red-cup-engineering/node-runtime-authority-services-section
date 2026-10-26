@@ -1,9 +1,0 @@
-{
-  "name": "node-process-code-qualification-context",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "dependencies": {
-    "@red-cup-engineering/npm-workspace-publication-service": "file:../code23-source"
-  }
-}

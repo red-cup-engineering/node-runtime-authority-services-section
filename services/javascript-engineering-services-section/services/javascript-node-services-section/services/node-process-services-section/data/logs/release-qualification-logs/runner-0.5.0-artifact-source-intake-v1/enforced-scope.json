@@ -1,9 +1,0 @@
-{
-  "at": "2026-10-21T00:58:59.076Z",
-  "unit": "node-process-runner-050-artifact-source-v1.scope",
-  "group": "/user.slice/user-1000.slice/user@1000.service/app.slice/node-process-runner-050-artifact-source-v1.scope",
-  "memoryMax": "2147483648",
-  "cpuMax": "100000 100000",
-  "runtimeMax": "3min",
-  "commandSha256": "f8e04bd1600b6c3f3f96b392b97a11d98bdfae8d0e13c1efd2cb197a6a329856"
-}

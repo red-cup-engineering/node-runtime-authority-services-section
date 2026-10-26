@@ -1,9 +1,0 @@
-{
-  "at": "2026-10-21T01:04:02.906Z",
-  "unit": "node-process-runner-050-original-controls-v1.scope",
-  "group": "/user.slice/user-1000.slice/user@1000.service/app.slice/node-process-runner-050-original-controls-v1.scope",
-  "memoryMax": "2147483648",
-  "cpuMax": "100000 100000",
-  "runtimeMax": "3min",
-  "commandSha256": "ec9bac25037d226eba35cba6b551879dbd217a6cb37011e17e53f5aafce36a2b"
-}

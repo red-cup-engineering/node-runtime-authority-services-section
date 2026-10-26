@@ -1,9 +1,0 @@
-{
-  "at": "2026-10-21T00:48:48.335Z",
-  "unit": "node-process-030-original-registry-intake-v1.scope",
-  "group": "/user.slice/user-1000.slice/user@1000.service/app.slice/node-process-030-original-registry-intake-v1.scope",
-  "memoryMax": "2147483648",
-  "cpuMax": "100000 100000",
-  "runtimeMax": "3min",
-  "commandSha256": "50b9e773b59d8a390f464127177fd820d9a6fc99a4ebdc4b2059fcee973bb7a1"
-}
