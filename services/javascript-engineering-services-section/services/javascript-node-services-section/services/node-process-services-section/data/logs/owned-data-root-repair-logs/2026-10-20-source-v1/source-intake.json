@@ -1,0 +1,106 @@
+{
+  "at": "2026-10-20T23:52:14.440360+00:00",
+  "repository": "red-cup-engineering/node-process-services-section",
+  "base": "9ea4f22f9e56fe67d936d629fae8033634903b7b",
+  "tree": "9ea4f22f9e56fe67d936d629fae8033634903b7b",
+  "files": [
+    {
+      "path": ".npmrc",
+      "gitBlob": "0a1f8151935f5a483c368cd930c26519cb3663cf",
+      "bytes": 37,
+      "sha256": "8de08949bab508293e0d9aa76a511469ee2d306b1f6140a8f60c0d1de8b17fe2"
+    },
+    {
+      "path": "package.json",
+      "gitBlob": "2a8dedf04472a0bc107bb2509deb29c48db2c649",
+      "bytes": 1588,
+      "sha256": "ff736db14c862f21edc62af9277ac33c1151eb24a85048dce32fad3287bca52d"
+    },
+    {
+      "path": "src/clock.mjs",
+      "gitBlob": "8ac3a38e653d9ac224b5839bea10cecf93a43e8a",
+      "bytes": 338,
+      "sha256": "f65ec1ff8deaa0b3ebb98295e28f0740b34c9dadeda010756c196e6480a185b9"
+    },
+    {
+      "path": "src/command.mjs",
+      "gitBlob": "6132d70597933cab3974fc5206a28e58f2342344",
+      "bytes": 3161,
+      "sha256": "51c3e72bc15b1b7464282429442da5db221f9d4402715dc8f61cafee76ac8d05"
+    },
+    {
+      "path": "src/config.mjs",
+      "gitBlob": "c736ada4fcbac437ed6487b80efa979d60aac7ac",
+      "bytes": 9593,
+      "sha256": "aa5b313e6a1fc63b464896060c2ba1bb9881869b38969e7388e66f3fec9af03f"
+    },
+    {
+      "path": "src/entropy.mjs",
+      "gitBlob": "e92b816419c65228f3d2c8ff803f7e4ce6a00894",
+      "bytes": 216,
+      "sha256": "318318f79b36bc142951324d080ca7f89c1883a756ebbb8d9c46d38f253dd7fe"
+    },
+    {
+      "path": "src/entrypoint.mjs",
+      "gitBlob": "05f3152276fe0b11d334d05309039597cd257100",
+      "bytes": 2546,
+      "sha256": "d3e75a5fff5b8057d0189ada61ea5c5664cf2171ab57b8b2624b1a8ce9a797c9"
+    },
+    {
+      "path": "src/environment.mjs",
+      "gitBlob": "a366c71785cc423bc5bdc413be0d36f37d08655c",
+      "bytes": 1164,
+      "sha256": "585ade712d1ae1e459a30c363a38b115f7732c95c3354d35d032eae81c427ee7"
+    },
+    {
+      "path": "src/lifecycle-schema-schema.mjs",
+      "gitBlob": "15b476b31ce56e104f37166a73eac12621d5278b",
+      "bytes": 4459,
+      "sha256": "614c50a0708ff380c9688e5c8081674f7b7bfdc1f99be5e21fa9e0df5a70fb87"
+    },
+    {
+      "path": "src/lifecycle.mjs",
+      "gitBlob": "b5a3f1f80406265981f7f143d264f63ce4567eb6",
+      "bytes": 1763,
+      "sha256": "64285ae1a93498d8ca0f00cdf8c3187ea80e9b9ffdeaca425e274cc7a82584a6"
+    },
+    {
+      "path": "src/main-runner.mjs",
+      "gitBlob": "db7a40ccc1351b982e35d1c6cce5451048c4d585",
+      "bytes": 1784,
+      "sha256": "fbe2032803b9511b10cc24af081f6a5fdeff52a5e3e488717dccffe69f466d8f"
+    },
+    {
+      "path": "src/stdio.mjs",
+      "gitBlob": "a44c25504eb42fdd49490bc9d23c969545ecd216",
+      "bytes": 927,
+      "sha256": "ddba6f5dd52f6a3c5af53ab27544c76e3b3fb1a6cb1f69a8e8dfe2d8bd4f85cd"
+    },
+    {
+      "path": "test/command.test.mjs",
+      "gitBlob": "c9fb4b91226678f7a8ca37aa2221b5f040d4e99c",
+      "bytes": 1468,
+      "sha256": "015b3abe97d6633989723192e0c220717b23ee044c97adb9ce8c073d7c78617e"
+    },
+    {
+      "path": "test/config.test.mjs",
+      "gitBlob": "1d18cc57808bf0cebf3619201990a87befeff835",
+      "bytes": 3460,
+      "sha256": "0956ffb4955588e390361b2d5850c5937dcfe56dad97f3aab6b6a94690f84df7"
+    },
+    {
+      "path": "test/entrypoint.test.mjs",
+      "gitBlob": "00f065f625fc14e15f9d563681c19f6fc492870c",
+      "bytes": 4128,
+      "sha256": "fba9cc5b7e7ef42f780837203dfeb32508dc8fa72403571debb4011d413cf4a9"
+    },
+    {
+      "path": "test/environment.test.mjs",
+      "gitBlob": "69550f3b9de56b567559ee34f5bdcad095a511cd",
+      "bytes": 612,
+      "sha256": "964ad659ed53b49c425a9859d16d713fef826b9ec1557f876681fdc794524df0"
+    }
+  ],
+  "candidate": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/candidate",
+  "scope": "source only; no installed consumer or native package graph"
+}

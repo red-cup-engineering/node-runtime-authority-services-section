@@ -1,0 +1,26 @@
+{
+  "kind": "npm.source-registry-closure",
+  "registry": "https://registry.561.group/",
+  "complete": true,
+  "consumers": 1,
+  "aliases": {},
+  "packages": [
+    {
+      "name": "native-released-code-receiving-consumer",
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-frozen-recipient/consumer/package.json",
+      "publish": false,
+      "from": "0.0.0",
+      "manifest": {
+        "name": "native-released-code-receiving-consumer",
+        "version": "0.0.0",
+        "private": true,
+        "dependencies": {
+          "@red-cup-engineering/npm-workspace-publication-service": "0.14.24"
+        }
+      },
+      "rewrites": [],
+      "missingTargets": [],
+      "violations": []
+    }
+  ]
+}

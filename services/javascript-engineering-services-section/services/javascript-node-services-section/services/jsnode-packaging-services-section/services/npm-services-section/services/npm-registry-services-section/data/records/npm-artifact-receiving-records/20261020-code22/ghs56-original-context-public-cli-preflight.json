@@ -1,0 +1,12 @@
+{
+  "source": {
+    "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+    "commit": "e423fe6770df03eecce803a82ffd12231a8583a5"
+  },
+  "manifestSHA256": "e83d17fd5fcb03049ca66c77b5c61b41c1ddb5960b82002e26366110df7c6fbd",
+  "archivePath": "/var/tmp/cairn-provider-source-qualification-20261020/upstream-artifacts/ghs-0.2.4.tgz",
+  "integrity": "sha512-ryEAx8+nuiINv7gqNBrb8Ake02kudVX2WNjMsoFg+miSmpp0hZrI8gYrKuHKXHwL3SSj5NP5ZmRbRFTyL/Pu/Q==",
+  "onlyCanonicalGitHeadProjection": true,
+  "sourceVersion": "0.2.4",
+  "archiveVersion": "0.2.4"
+}

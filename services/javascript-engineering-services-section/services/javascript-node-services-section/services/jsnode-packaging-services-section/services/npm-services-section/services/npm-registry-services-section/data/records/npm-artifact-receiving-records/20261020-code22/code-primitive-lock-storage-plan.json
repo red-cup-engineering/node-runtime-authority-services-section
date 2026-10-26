@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "sequential": true,
+  "stages": [
+    {
+      "name": "derive-code-primitive-owner-lock",
+      "lifecycle": {
+        "owner": "@red-cup-engineering/npm-workspace-publication-service",
+        "invocation": "20261020-Code22/primitive-owner-lock",
+        "purpose": "Derive standalone native Code lock for genuine zero-dependency Gitreadingprimitive0.1.1 plus declaredtar7.5.22. Umbrella Networking edge removed; metadata-only originalPNPM11.28.5, no graph/install. Reuse admitted owner metadata cache, preserve all prior attempts.",
+        "kind": "unique",
+        "retention": "Preserve source, exactGitobjects, terminal/admission and qualification through originalCode13/22 integration and publication; original owner retires only after receiving. No blanket cleanup.",
+        "source": [
+          {
+            "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+            "commit": "bc494ee673f59fcdccc939a6102ae089fac1658b",
+            "path": "."
+          }
+        ],
+        "custody": [
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/derive-code-primitive-lock.mjs",
+            "sha256": "76f258708af2f861d10bbbeec7aeb3bf32d18c0a29cfbc75d6056fe4941d9e26",
+            "role": "creation"
+          },
+          {
+            "path": "/var/tmp/engineering-abandoned-prs-20261020/packaging-github-intake/code23-source-bc494ee673f59fcdccc939a6102ae089fac1658b/package.json",
+            "sha256": "94452b29a16e32ecf8054aa5ba6d24baa0616fab3d18b35cc43f58003ac20576",
+            "role": "creation"
+          },
+          {
+            "path": "/var/tmp/engineering-abandoned-prs-20261020/packaging-github-intake/code23-source-bc494ee673f59fcdccc939a6102ae089fac1658b/pnpm-lock.yaml",
+            "sha256": "35a6447735c666667b8e76147e91d29c4f3adcbbbe9b1d77cfa502f9dbafb9a6",
+            "role": "creation"
+          },
+          {
+            "path": "/var/tmp/engineering-abandoned-prs-20261020/packaging-github-intake/code23-source-bc494ee673f59fcdccc939a6102ae089fac1658b/.npmrc",
+            "sha256": "8de08949bab508293e0d9aa76a511469ee2d306b1f6140a8f60c0d1de8b17fe2",
+            "role": "creation"
+          },
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/services/git-services-section/data/records/git-source-reading-qualification-records/2026-10-20-primitive/primitive-authoritative-received.json",
+            "sha256": "4dd46a2f0e2af28d073622a289d9e6361b427e252da1c8c42c32263de624bd87",
+            "role": "creation"
+          }
+        ],
+        "status": "planned"
+      },
+      "headroom": {
+        "minFreePercent": 3,
+        "minFreeInodes": 1000000,
+        "growthBytes": 2147483648,
+        "growthInodes": 250000
+      },
+      "backingCapacity": {
+        "kind": "wsl-host-service/1",
+        "node": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+        "script": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/scripts/wsl-host.mjs",
+        "scriptSha256": "eb9d89519f73f30726d9673c5f0588e81f88235dcc0e016c84c28c6366703ec3",
+        "parameters": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/bare-cedar-fog-services-section/data/records/wsl-host-service-records/bare-cedar-fog/wsl-host.json",
+        "parametersSha256": "4778ccbb8c36b0abf4fc8c7a360b10ee333c3cff8ec6374201f57cc9cea3e49f",
+        "sourceFiles": [
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/scripts/wsl-host.mjs",
+            "sha256": "eb9d89519f73f30726d9673c5f0588e81f88235dcc0e016c84c28c6366703ec3"
+          },
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/src/wsl-host.mjs",
+            "sha256": "755478f1da2001991c6ae6501da096ee3881dc060860ab1d0f3d83e17f51becd"
+          },
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/src/backing-capacity.mjs",
+            "sha256": "5b04c9ba24a611a62fa13a1a11de0ce7ed25ada22463e86b3b1983767a586c01"
+          },
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/assets/observe-backing-capacity.ps1",
+            "sha256": "4c2cf7a9818943c8adf166cc1b5af6d28037b88617d6426ee2c95d6b9a079e70"
+          }
+        ]
+      },
+      "command": [
+        "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+        "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/derive-code-primitive-lock.mjs",
+        "--execute"
+      ],
+      "destinations": [
+        {
+          "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state",
+          "peakBytes": 536870912,
+          "peakInodes": 32768,
+          "basis": "Canonical Code direct suppliers preserve original48KB lock closure; remove umbrella Git entirely, add genuine zeroDep primitive0.1.1 and normal tar5 declared ranges. Native metadata-only lock derivation512MiB bound, no installed graph; fresh host/guest/inode admission and100GBfloor.",
+          "estimateKind": "estimate"
+        },
+        {
+          "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22",
+          "peakBytes": 8388608,
+          "peakInodes": 512,
+          "basis": "Source lock preimage/native request-result/source guards and receipts.",
+          "estimateKind": "estimate"
+        },
+        {
+          "path": "/var/tmp/engineering-abandoned-prs-20261020/packaging-github-intake/code23-source-bc494ee673f59fcdccc939a6102ae089fac1658b",
+          "peakBytes": 8388608,
+          "peakInodes": 512,
+          "basis": "Only native pnpm-lock.yaml replacement; manifest/config remain byteidentical, no source dependency installation.",
+          "estimateKind": "estimate"
+        }
+      ]
+    }
+  ]
+}

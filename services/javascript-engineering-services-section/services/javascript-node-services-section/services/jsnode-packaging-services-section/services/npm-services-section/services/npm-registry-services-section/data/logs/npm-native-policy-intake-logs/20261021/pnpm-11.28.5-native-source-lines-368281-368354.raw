@@ -1,0 +1,74 @@
+import path356 from "node:path";
+async function getConfig2(cliOptions, opts3) {
+  const warnings = [];
+  try {
+    const { config: config2, context } = await getConfig({
+      cliOptions,
+      globalDirShouldAllowWrite: opts3.globalDirShouldAllowWrite,
+      skipGlobalBinDirCheck: opts3.skipGlobalBinDirCheck,
+      packageManager,
+      workspaceDir: opts3.workspaceDir,
+      onlyInheritDlxSettingsFromLocal: opts3.onlyInheritDlxSettingsFromLocal,
+      forSelfUpdate: opts3.forSelfUpdate,
+      ignoreProjectNpmrc: opts3.ignoreProjectNpmrc,
+      warnings
+    });
+    context.cliOptions = cliOptions;
+    context.rawCliConfig = opts3.rawCliConfig;
+    applyDerivedConfig(config2);
+    if (opts3.excludeReporter) {
+      delete config2.reporter;
+    }
+    return { config: config2, context };
+  } finally {
+    if (opts3.printWarnings !== false && warnings.length > 0) {
+      console.warn(warnings.map((warning) => formatWarn(warning)).join("\n"));
+    }
+  }
+}
+function isSingleSettingRead(cmd, cliParams) {
+  if (cmd === "config")
+    return cliParams[0] === "get" && cliParams.length > 1;
+  return cmd === "get" && cliParams.length > 0;
+}
+async function installConfigDepsAndLoadHooks(config2, context, opts3) {
+  let configDependenciesVerified = false;
+  if (config2.configDependencies) {
+    configDependenciesVerified = await installConfigDeps2(config2, context, {
+      configDependencies: config2.configDependencies,
+      tolerateErrors: opts3?.tolerateConfigDependenciesErrors
+    });
+  }
+  if (config2.ignorePnpmfile) {
+    return { config: config2, context };
+  }
+  return {
+    config: await loadPnpmfileHooks(config2, context, { forSelfUpdate: opts3?.forSelfUpdate, configDependenciesVerified }),
+    context
+  };
+}
+async function installConfigDeps2(config2, context, opts3) {
+  const store = await createStoreController({ ...config2, ...context, skipBypassedHomeStoreWarning: true });
+  try {
+    await resolveAndInstallConfigDeps(opts3.configDependencies, {
+      ...config2,
+      ...context,
+      store: store.ctrl,
+      storeDir: store.dir,
+      rootDir: config2.lockfileDir ?? context.rootProjectManifestDir,
+      frozenLockfile: config2.frozenLockfile
+    });
+    return true;
+  } catch (err2) {
+    if (!opts3.tolerateErrors || isConfigDependencyVerificationError(err2)) {
+      throw err2;
+    }
+    const errorMessage2 = isError(err2) ? err2.message : String(err2);
+    logger.debug({
+      message: `Failed to install configDependencies. This is expected if authentication is not yet configured. Proceeding. Error: ${errorMessage2}`,
+      err: err2
+    });
+    return false;
+  } finally {
+    await store.ctrl.close();
+  }

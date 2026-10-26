@@ -1,0 +1,27 @@
+{
+  "request": {
+    "type": "JavascriptNodeCommandExecutionRequest",
+    "version": 1,
+    "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+    "arguments": [
+      "--test",
+      "--test-reporter=tap",
+      "test/package-test-plan.test.mjs"
+    ],
+    "directory": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/runner-0.5.0-original-controls-v1/runner-source",
+    "environment": {
+      "PATH": "/gnu/store/2jgm0z1f745cmg2wnv8yskcm5q2dpq2m-git-2.54.0/bin:/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin:/usr/bin:/bin",
+      "HOME": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/runner-0.5.0-original-controls-v1/native-result/home",
+      "TMPDIR": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/runner-0.5.0-original-controls-v1/native-result/tmp",
+      "LANG": "C.UTF-8",
+      "NODE_DISABLE_COMPILE_CACHE": "1",
+      "GIT_CEILING_DIRECTORIES": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/runner-0.5.0-original-controls-v1",
+      "GIT_SSL_CAINFO": "/etc/ssl/certs/ca-certificates.crt"
+    },
+    "input": null
+  },
+  "policy": {
+    "timeoutMilliseconds": 60000,
+    "outputLimit": 16777216
+  }
+}

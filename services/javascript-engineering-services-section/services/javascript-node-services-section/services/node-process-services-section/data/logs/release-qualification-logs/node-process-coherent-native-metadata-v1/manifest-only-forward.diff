@@ -1,0 +1,18 @@
+--- v3/package.json
++++ coherent/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "@red-cup-engineering/node-process-services-section",
+-  "version": "0.3.0",
++  "version": "0.3.1",
+   "type": "module",
+   "description": "Shared Node process boundary helpers: argv, environment, clock, entropy, stdio, command-result interpretation and lifecycle-record projection (execution itself is @red-cup-engineering/execute-javascript-node-command-service's job), config-file/data-root resolution, and service lifecycle events/records.",
+   "repository": {
+@@ -55,6 +55,6 @@
+   },
+   "dependencies": {},
+   "devDependencies": {
+-    "@red-cup-engineering/jsnode-package-services-section": "0.2.4"
++    "@red-cup-engineering/jsnode-package-services-section": "0.5.0"
+   }
+ }

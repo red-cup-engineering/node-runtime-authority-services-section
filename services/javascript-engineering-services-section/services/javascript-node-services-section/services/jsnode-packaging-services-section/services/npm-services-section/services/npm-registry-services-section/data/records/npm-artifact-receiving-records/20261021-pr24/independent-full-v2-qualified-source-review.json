@@ -1,0 +1,33 @@
+{
+  "kind": "IndependentOriginalPR24QualifiedSourceReceiving",
+  "verdict": "APPROVE_QUALIFIED_PREALLOCATION_SOURCE",
+  "proposalSHA256": "41f385a65aa24b425fd1b2570d291a9e2b5ce8498b0f4454b1061336a0fc5873",
+  "patchSHA256": "a79530ff2f0eddd69dd89ec907a335f6b8aea84e46a90db7d07a1c4814cda951",
+  "completeTreeSHA256": "3097cd4abc129def78f466e24a338f4a1250fe9bbe5d167907d5a264eca26140",
+  "completeFilesVerified": 162,
+  "changedPaths": 11,
+  "precedent": {
+    "independentPrelockReviewSHA256": "d395fe2adfc9387ebd771ff58e6b4201e58f4f2802b5c47a7b316f607bee65e9",
+    "designReviewSHA256": "0cecd0ea6c73768e2f1924d73e40428536bdfafe0ef7d2dfe01512a1a6a27361"
+  },
+  "deltaFromApprovedPrelock": {
+    "implementation": "All9otherchangedfile proposed hashes identical; no implementation delta.",
+    "fixture": "One Array.isArray guard limits mutable-array freeze assertion; non-array TypeError and all six adversarial controls/top-level nonmutation retained.",
+    "nativeLock": "Only primitive1.1\u2192published1.2 root/importer/entry/snapshot/SRI change; reverse-normalization reproduces original750a5ad0 lock bytehash, all remaining lock bytes preserved.",
+    "primitiveSRI": "sha512-cLt/BcAPEkoz5kpA729rqzrmg3LbkXpnr3zScv4WAmOnAhSBZRXevFLweRK9RX+CCe+K3wQ2W5+2+E6oDuLXNg=="
+  },
+  "qualificationReceived": {
+    "wholeOwner": "481 tests/480pass/1test-only oracle failure retained; no all-pass whole-run claim",
+    "correctedAffectedCompleteSuite": "20/20pass, no implementation edits",
+    "actualNativeSHA256CLI": "passed in original whole qualification",
+    "allBindingsFinallyRestored": true,
+    "ownTestsOrBindings": false
+  },
+  "findings": [],
+  "remainingConditions": [
+    "Original native breaking release allocation/version must be independently received before normal release integration.",
+    "New GHS guard must be OPERATING before breaking Code publication.",
+    "Actual authoritative release/source/installed/public CLI receiving remains separate and open."
+  ],
+  "installationOrPublicationClaimed": false
+}

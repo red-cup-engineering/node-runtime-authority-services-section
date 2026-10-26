@@ -1,0 +1,14 @@
+{
+  "kind": "PublishedCliCallerContextRepair",
+  "failedOriginalStage": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/original-three-released-cli-receiving.json.terminal.json",
+  "actualOriginalFailure": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/code86-released-public-cli-failed.json",
+  "firstSourceRead": "authenticated nativeGit succeeded in original process context",
+  "ordinaryCliFailure": "Git promptsdisabled/no original caller credential-helper context because taskownedsubprocess whitelistedenv",
+  "correction": "same original environment for ordinary registeredCLI, delete only NODE_OPTIONS/NODE_PATH source-mapping ingress; nativeNPM observer retains its own explicit empty credential/config context",
+  "implementationChanged": false,
+  "newPrivateCredentialBinding": false,
+  "effectsToRepeat": "bounded readonlyGit/source/memberreceiving only; no publication/install/businesswrite",
+  "revisedHelper": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/receive-actual-code-cli-cohorts-original-context.mjs",
+  "revisedHelperSHA256": "3cd4276fae305853532a880abd224fba29a2738ac6d960fd152e16395f4d6ade",
+  "priorCustodyPreserved": true
+}

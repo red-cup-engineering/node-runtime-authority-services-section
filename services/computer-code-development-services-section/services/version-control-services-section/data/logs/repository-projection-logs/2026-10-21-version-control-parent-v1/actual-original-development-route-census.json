@@ -1,0 +1,242 @@
+{
+  "at": "2026-10-21T18:14:15.485Z",
+  "originalUrl": "https://github.com/red-cup-engineering/software-development-services-section",
+  "repository": "red-cup-engineering/software-development-services-section",
+  "repositoryId": 1425310771,
+  "visibility": "public",
+  "defaultBranch": "main",
+  "commit": "da3829977fab35cf2af5b4ba84720e24fc30dd4d",
+  "root": {
+    "sha": "3e0549302219e059445be40bdc1eaea4f5325041",
+    "url": "https://api.github.com/repos/red-cup-engineering/software-development-services-section/git/trees/3e0549302219e059445be40bdc1eaea4f5325041",
+    "tree": [
+      {
+        "path": ".codex",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "4e0a6eba9f3c9afe1c18146b1f6a12eae260f76f",
+        "url": "https://api.github.com/repos/red-cup-engineering/software-development-services-section/git/trees/4e0a6eba9f3c9afe1c18146b1f6a12eae260f76f"
+      },
+      {
+        "path": ".gitmodules",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "c46fdf88566d0b4148de245fbebdb08b5e8aec3a",
+        "size": 4568,
+        "url": "https://api.github.com/repos/red-cup-engineering/software-development-services-section/git/blobs/c46fdf88566d0b4148de245fbebdb08b5e8aec3a"
+      },
+      {
+        "path": "README.md",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3c6ed672fd2ca58b45f01cc9286c739cdc770387",
+        "size": 5846,
+        "url": "https://api.github.com/repos/red-cup-engineering/software-development-services-section/git/blobs/3c6ed672fd2ca58b45f01cc9286c739cdc770387"
+      },
+      {
+        "path": "content",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "fb8a1bf6874618e7620b1b0399d6d2af9caf3c15",
+        "url": "https://api.github.com/repos/red-cup-engineering/software-development-services-section/git/trees/fb8a1bf6874618e7620b1b0399d6d2af9caf3c15"
+      },
+      {
+        "path": "lib",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "6290fa2fae25fe0a787c620c6488c7ea40ee5329",
+        "url": "https://api.github.com/repos/red-cup-engineering/software-development-services-section/git/trees/6290fa2fae25fe0a787c620c6488c7ea40ee5329"
+      },
+      {
+        "path": "package.json",
+        "mode": "100644",
+        "type": "blob",
+        "sha": "bac06c74a637a9445669dba446f02a34a01e8fe6",
+        "size": 451,
+        "url": "https://api.github.com/repos/red-cup-engineering/software-development-services-section/git/blobs/bac06c74a637a9445669dba446f02a34a01e8fe6"
+      },
+      {
+        "path": "services",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "a6d821ce5b0ccccf6a7b724a0da945dec264dc8b",
+        "url": "https://api.github.com/repos/red-cup-engineering/software-development-services-section/git/trees/a6d821ce5b0ccccf6a7b724a0da945dec264dc8b"
+      }
+    ],
+    "truncated": false
+  },
+  "services": {
+    "sha": "a6d821ce5b0ccccf6a7b724a0da945dec264dc8b",
+    "url": "https://api.github.com/repos/red-cup-engineering/software-development-services-section/git/trees/a6d821ce5b0ccccf6a7b724a0da945dec264dc8b",
+    "tree": [
+      {
+        "path": "acceptance-oracle-assay-service",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "089fed9785a9a8ea29c437c476a13ddc6dc566cf"
+      },
+      {
+        "path": "accepted-software-delivery-receiver-service",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "4324461f329c81b3e78f0c35b4e3e0f9a6956560"
+      },
+      {
+        "path": "campaign-rollup-projection-service",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "2cfced39c64c3f3a4f2179504d23bd44799f748d"
+      },
+      {
+        "path": "deployment-services-section",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "041b0b8c11a70be77434a47f12ac5aa1e8c35256"
+      },
+      {
+        "path": "deterministic-intent-compiler-supplier",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "dd41d461091031c73eb1cabb9c83a0042f4ef523"
+      },
+      {
+        "path": "deterministic-report-graphic-service",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "8c57724aa4c2b4ed5cf59a0d7571d9e90f4ae948"
+      },
+      {
+        "path": "future-work-topology-projection-service",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "959930d7cdc5cd6a896b7c9e0713d67c5cc545fa"
+      },
+      {
+        "path": "lean-blueprint-chart-service",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "cd689769b413aab7b18b22c430b1abc3e6ff87e1"
+      },
+      {
+        "path": "legacy-capability-reallocation-service",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "7b442c3468160fbabde3d282af7e69ad77c04daa"
+      },
+      {
+        "path": "node-job-service",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "4b75665a5c9bfa4082910d1e588007e31d1e4bfa"
+      },
+      {
+        "path": "organizational-profile-projection-service",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "527590ea5d5ab538005fb1946842a1d24dacff8d"
+      },
+      {
+        "path": "recursive-observation-circuit-synthesis",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "7b2f0b0f62ed3e57533fbc1a48bb81bce2738885"
+      },
+      {
+        "path": "repository-state-observation-service",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "47ee1960eea533da3af81eed46aa04c15065e91e"
+      },
+      {
+        "path": "research-citation-engineering-service",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "50e09b788c21b04f57136143b70efda6c956907c",
+        "url": "https://api.github.com/repos/red-cup-engineering/software-development-services-section/git/trees/50e09b788c21b04f57136143b70efda6c956907c"
+      },
+      {
+        "path": "search-path-for-relations",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "75e1860d2c08b51fbc6d051f36c33a641f33acc2"
+      },
+      {
+        "path": "software-program-synthesis-solicitation-service",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "7c2d5b9dd61c9ced953e7242724cd84865a552fd"
+      },
+      {
+        "path": "software-solve-loop-service",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "7d28d6c1c8dc0369a567ea056afd9f1fa20a29d4"
+      },
+      {
+        "path": "software-trajectory-memory-service",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "28b37d2c2b88794a9165d4d544d15fe85c75f39d"
+      },
+      {
+        "path": "solidity-services-section",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "532824dda2e56ceb01207cbc83abf333ac761f98"
+      },
+      {
+        "path": "typed-resource-catalog-service",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "132232c44c0fa025ee371fe8e7cb2c3b35c65fb0"
+      },
+      {
+        "path": "version-control-services-section",
+        "mode": "040000",
+        "type": "tree",
+        "sha": "e5b4938579124cf35793fbccc680c8bf766c5dcb",
+        "url": "https://api.github.com/repos/red-cup-engineering/software-development-services-section/git/trees/e5b4938579124cf35793fbccc680c8bf766c5dcb"
+      },
+      {
+        "path": "workspace-content-graph-service",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "78312b7d92b545ebf03d50d60a47bc8d740a7b04"
+      },
+      {
+        "path": "write-capability-assay-service",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "60f1f258ad6a5b368519010c4caf230fce3b2176"
+      }
+    ],
+    "truncated": false
+  },
+  "calls": [
+    {
+      "path": "/repos/red-cup-engineering/software-development-services-section",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/repos/red-cup-engineering/software-development-services-section/branches/main",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/repos/red-cup-engineering/software-development-services-section/git/commits/da3829977fab35cf2af5b4ba84720e24fc30dd4d",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/repos/red-cup-engineering/software-development-services-section/git/trees/3e0549302219e059445be40bdc1eaea4f5325041",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/repos/red-cup-engineering/software-development-services-section/git/trees/a6d821ce5b0ccccf6a7b724a0da945dec264dc8b",
+      "status": 200,
+      "location": null
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "found": true,
+  "reachable": true,
+  "manifest": {
+    "name": "@red-cup-engineering/git-services-section",
+    "version": "0.1.9",
+    "private": false,
+    "type": "module",
+    "description": "Small repository and submodule utilities built on standard Git commands.",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/red-cup-engineering/git-services-section.git"
+    },
+    "bin": {
+      "archive-discovery": "./scripts/archive-discovery",
+      "archive-worktree-map": "./scripts/archive-worktree-map",
+      "audit-git-submodule-graph": "./scripts/audit-git-submodule-graph.mjs",
+      "register-existing-git-repository": "./scripts/register-existing-git-repository.mjs",
+      "inspect-reform-target": "./scripts/inspect-reform-target.mjs",
+      "maintain-git-branches": "./scripts/maintain-branches.mjs",
+      "inspect-semiotic-lineage": "./scripts/inspect-semiotic-lineage.mjs",
+      "reconcile-chatgpt-drive": "./scripts/reconcile-chatgpt-drive.mjs",
+      "reconcile-working-copies": "./scripts/reconcile-working-copies.mjs",
+      "reconcile-integration-eligibility": "./scripts/reconcile-integration-eligibility.mjs",
+      "admit-git-blob-to-space": "./scripts/admit-git-blob-to-space.mjs"
+    },
+    "scripts": {
+      "check": "for file in src/*.mjs scripts/*.mjs scripts/archive-discovery scripts/archive-worktree-map test/*.test.mjs services/*/src/*.mjs services/*/scripts/*.mjs services/*/test/*.test.mjs; do if [ -f \"$file\" ]; then node --check \"$file\" || exit 1; fi; done",
+      "test": "node --test \"test/**/*.test.mjs\" \"services/committing-git-paths-service/test/**/*.test.mjs\" \"services/finding-parent-git-repositories-service/test/**/*.test.mjs\" \"services/gitmodules-file-codec-service/test/**/*.test.mjs\" \"services/observing-git-repository-service/test/**/*.test.mjs\" \"services/pushing-current-branch-service/test/**/*.test.mjs\"",
+      "verify": "npm run check && npm test"
+    },
+    "engines": {
+      "node": ">=22.18"
+    },
+    "dependencies": {
+      "@red-cup-engineering/git-source-reading-service": "0.1.0",
+      "@red-cup-engineering/semiotic-eavt-services-section": "0.1.0",
+      "@red-cup-engineering/github-semioverse-settler-service": "0.1.2"
+    },
+    "exports": {
+      "./src/collect-colony-activity.mjs": "./src/collect-colony-activity.mjs",
+      "./src/discover-archives.mjs": "./src/discover-archives.mjs",
+      "./src/map-archive-worktrees.mjs": "./src/map-archive-worktrees.mjs",
+      "./src/inspect-reform-target.mjs": "./src/inspect-reform-target.mjs",
+      "./git-command-codec": "./src/git-command-codec.mjs",
+      "./git-object-id": "./src/git-object-id.mjs",
+      "./gitmodules": "./src/gitmodules.mjs",
+      "./chatgpt-github-call-preflight": "./src/chatgpt-github-call-preflight.mjs",
+      "./github-update-evidence": "./src/github-update-evidence.mjs",
+      "./branch-maintenance": "./src/branch-maintenance.mjs",
+      "./source-comparison": "./src/source-comparison.mjs",
+      "./source-observation": "./src/source-observation.mjs",
+      "./source-tree-patch": "./src/source-tree-patch.mjs",
+      "./source-path-proof": "./src/source-path-proof.mjs",
+      "./semiotic-lineage-control": "./src/semiotic-lineage-control.mjs",
+      "./chatgpt-drive-reconciliation": "./src/chatgpt-drive-reconciliation.mjs",
+      "./chatgpt-drive-mirror-reconciliation": "./src/chatgpt-drive-mirror-reconciliation.mjs",
+      "./working-copy-reconciliation": "./src/working-copy-reconciliation.mjs",
+      "./integration-eligibility": "./src/integration-eligibility.mjs",
+      "./github-integration-observation": "./src/github-integration-observation.mjs",
+      "./git-ni-admission": "./src/git-ni-admission.mjs",
+      "./pinned-source-files": "./src/pinned-source-files.mjs"
+    },
+    "files": [
+      "package.json",
+      "README*",
+      "LICENSE*",
+      "AGENTS.md",
+      "src",
+      "scripts",
+      "test",
+      "docs",
+      "content/customer-interface.md",
+      "content/text/glossary",
+      "ingress/chatgpt-spaces/pointer.schema.json",
+      "ingress/chatgpt-spaces/README.md",
+      "data/records/integrated-reference-receiving-requirement-records/integrated-reference-receiving.json",
+      "data/records/integrated-reference-receiving-specification-records/integrated-reference-receiving.json",
+      "data/records/integrated-reference-receiving-design-records/integrated-reference-receiving.json",
+      "data/records/requirements-records/semiotic-lineage-control-meets-then-beats-application-peers.json",
+      "services/committing-git-paths-service/package.json",
+      "services/committing-git-paths-service/scripts",
+      "services/committing-git-paths-service/test",
+      "services/finding-parent-git-repositories-service/package.json",
+      "services/finding-parent-git-repositories-service/scripts",
+      "services/finding-parent-git-repositories-service/test",
+      "services/gitmodules-file-codec-service/package.json",
+      "services/gitmodules-file-codec-service/src",
+      "services/gitmodules-file-codec-service/scripts",
+      "services/gitmodules-file-codec-service/test",
+      "services/observing-git-repository-service/package.json",
+      "services/observing-git-repository-service/scripts",
+      "services/observing-git-repository-service/test",
+      "services/pushing-current-branch-service/package.json",
+      "services/pushing-current-branch-service/scripts",
+      "services/pushing-current-branch-service/test"
+    ],
+    "gitHead": "2c022223608d2f8854a8fd5f0b14c3160b2ada65",
+    "_id": "@red-cup-engineering/git-services-section@0.1.9",
+    "contentDigest": "sha256-0afc2110709fb6672977c94c0528b846e668e0e38950dcc6b59a2b7f90905b0a",
+    "dist": {
+      "tarball": "https://registry.561.group/@red-cup-engineering/git-services-section/-/git-services-section-0.1.9.tgz",
+      "shasum": "6d5d3ab05f8720ff805811eafeefe4b6d6c378e7",
+      "integrity": "sha512-BxPhCCJRASxwfeOgYwDjoBSKr8iaufszHPSKsTxfet4wvXJJ3Wb+zGNqLYXo3YRFkHjjkzVdUf/bcVintOe+Dw=="
+    },
+    "_npmUser": {
+      "name": "github-services"
+    }
+  }
+}

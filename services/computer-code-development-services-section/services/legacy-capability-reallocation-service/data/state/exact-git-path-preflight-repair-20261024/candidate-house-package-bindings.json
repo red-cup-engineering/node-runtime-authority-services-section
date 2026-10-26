@@ -1,0 +1,26 @@
+{
+  "type": "HousePackageBindings",
+  "version": 1,
+  "packages": [
+    {
+      "name": "@red-cup-engineering/git-source-reading-service",
+      "version": "0.1.4",
+      "directory": "/home/emsenn/info/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/services/git-services-section/services/git-source-reading-service"
+    },
+    {
+      "name": "@red-cup-engineering/computer-systems-fabrication-engineering-services-section",
+      "version": "0.4.15-dev.243",
+      "directory": "/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/bare-cedar-fog-services-section/data/state/source-stage-state/merge-receiving-20261024/registry-artifact/package"
+    },
+    {
+      "name": "@red-cup-engineering/computer-data-engineering-services-section",
+      "version": "0.6.0",
+      "directory": "/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-code-development-system-services-section/apps/computer-code-development-engine/node_modules/.pnpm/@red-cup-engineering+computer-data-engineering-services-section@0.6.0/node_modules/@red-cup-engineering/computer-data-engineering-services-section"
+    },
+    {
+      "name": "@red-cup-engineering/git-services-section",
+      "version": "0.1.2",
+      "directory": "/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-code-development-system-services-section/apps/computer-code-development-engine/node_modules/.pnpm/@red-cup-engineering+git-services-section@0.1.2/node_modules/@red-cup-engineering/git-services-section"
+    }
+  ]
+}

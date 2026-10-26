@@ -1,0 +1,21 @@
+frozen
+✓ Lockfile passes supply-chain policies (verified 5s ago)
+Lockfile is up to date, resolution step is skipped
+Progress: resolved 1, reused 0, downloaded 0, added 0
+Packages: +102
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Progress: resolved 102, reused 0, downloaded 0, added 0
+Progress: resolved 102, reused 0, downloaded 1, added 0
+Progress: resolved 102, reused 0, downloaded 62, added 0
+Packages are hard linked from the content-addressable store to the virtual store.
+  Content-addressable store is at: /home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-frozen-recipient/cache/store/v11
+  Virtual store is at:             node_modules/.pnpm
+Progress: resolved 102, reused 0, downloaded 102, added 12
+Progress: resolved 102, reused 0, downloaded 102, added 85
+Progress: resolved 102, reused 0, downloaded 102, added 102, done
+
+dependencies:
++ @red-cup-engineering/npm-workspace-publication-service 0.14.24
+
+Done in 9.3s using pnpm v11.28.5
+

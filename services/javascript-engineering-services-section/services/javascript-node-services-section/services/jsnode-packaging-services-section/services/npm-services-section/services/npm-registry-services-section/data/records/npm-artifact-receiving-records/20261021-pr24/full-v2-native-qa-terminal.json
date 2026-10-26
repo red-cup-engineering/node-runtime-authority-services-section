@@ -1,0 +1,218 @@
+{
+  "stage": "qualify-code-pr24-full-v2-original-source",
+  "executed": true,
+  "state": "failed",
+  "reason": "original-command-failed",
+  "before": {
+    "admitted": true,
+    "filesystems": [
+      {
+        "device": "2096",
+        "bytes": "1081101176832",
+        "availableBytes": "682174722048",
+        "inodes": "67108864",
+        "freeInodes": "43938068",
+        "blockSize": "4096",
+        "peakBytes": "545259520",
+        "peakInodes": "33280",
+        "paths": [
+          "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261021-pr24",
+          "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24"
+        ],
+        "requiresBacking": true,
+        "reserveBytes": "32433035305",
+        "requiredBytes": "35125778473",
+        "requiredInodes": "1283280",
+        "admitted": true
+      }
+    ],
+    "admissionKind": "snapshot-not-reservation",
+    "concurrency": "Owner growth allowance is charged; unrelated concurrent activity can change capacity after this observation.",
+    "backing": {
+      "at": "2026-10-21T04:30:57.692Z",
+      "mappings": [
+        {
+          "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261021-pr24",
+          "linuxMount": "/",
+          "device": "2096",
+          "volumeId": "\\\\?\\Volume{715daebd-cb0c-495a-a2cb-85c7ff775c00}\\"
+        },
+        {
+          "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24",
+          "linuxMount": "/",
+          "device": "2096",
+          "volumeId": "\\\\?\\Volume{715daebd-cb0c-495a-a2cb-85c7ff775c00}\\"
+        }
+      ],
+      "volumes": [
+        {
+          "id": "\\\\?\\Volume{715daebd-cb0c-495a-a2cb-85c7ff775c00}\\",
+          "volumeFreeBytes": "107721674752",
+          "callerAvailableBytes": "107721674752",
+          "totalBytes": "1022907904000",
+          "availableBytes": "107721674752",
+          "allocationUnitBytes": "4096",
+          "policy": {
+            "minFreeBytes": "0",
+            "minFreePercent": 3,
+            "growthBytes": "2147483648",
+            "overheadBytes": "67108864",
+            "basis": "Operations retains 3% physical-volume reserve plus 2 GiB growth and a 64 MiB estimated probe/VHDX metadata allowance; estimates are not reservations or arbitrary-write upper bounds. Exact distro/volume binding was read on 2026-10-19; each capacity invocation reobserves it. No automatic trim, sparse conversion, compaction or deletion is authorized."
+          },
+          "vhd": {
+            "lengthBytes": "489582231552",
+            "path": "C:\\Users\\emsen\\AppData\\Local\\wsl\\{645c490d-c03a-4203-80e4-451ee497d286}\\ext4.vhdx",
+            "attributes": 32,
+            "sparse": false
+          },
+          "peakBytes": "545259520",
+          "reserveBytes": "30687237120",
+          "requiredBytes": "33447089152",
+          "devices": [
+            "2096"
+          ],
+          "admitted": true
+        }
+      ],
+      "port": {
+        "kind": "wsl-host-service/1",
+        "node": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+        "script": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/scripts/wsl-host.mjs",
+        "scriptSha256": "eb9d89519f73f30726d9673c5f0588e81f88235dcc0e016c84c28c6366703ec3",
+        "parameters": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/bare-cedar-fog-services-section/data/records/wsl-host-service-records/bare-cedar-fog/wsl-host.json",
+        "parametersSha256": "4778ccbb8c36b0abf4fc8c7a360b10ee333c3cff8ec6374201f57cc9cea3e49f",
+        "sourceFiles": [
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/scripts/wsl-host.mjs",
+            "sha256": "eb9d89519f73f30726d9673c5f0588e81f88235dcc0e016c84c28c6366703ec3"
+          },
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/src/wsl-host.mjs",
+            "sha256": "755478f1da2001991c6ae6501da096ee3881dc060860ab1d0f3d83e17f51becd"
+          },
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/src/backing-capacity.mjs",
+            "sha256": "5b04c9ba24a611a62fa13a1a11de0ce7ed25ada22463e86b3b1983767a586c01"
+          },
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/assets/observe-backing-capacity.ps1",
+            "sha256": "4c2cf7a9818943c8adf166cc1b5af6d28037b88617d6426ee2c95d6b9a079e70"
+          }
+        ]
+      },
+      "responseSha256": "f76eeb5508fc2596bd41cb57e26c4a22699cdc6abfea8f38d9a94694d7a1987c",
+      "admitted": true,
+      "admissionKind": "snapshot-not-reservation"
+    }
+  },
+  "after": {
+    "admitted": true,
+    "filesystems": [
+      {
+        "device": "2096",
+        "bytes": "1081101176832",
+        "availableBytes": "682442055680",
+        "inodes": "67108864",
+        "freeInodes": "43968955",
+        "blockSize": "4096",
+        "peakBytes": "0",
+        "peakInodes": "0",
+        "paths": [
+          "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261021-pr24",
+          "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24"
+        ],
+        "requiresBacking": true,
+        "reserveBytes": "32433035305",
+        "requiredBytes": "34580518953",
+        "requiredInodes": "1250000",
+        "admitted": true
+      }
+    ],
+    "admissionKind": "snapshot-not-reservation",
+    "concurrency": "Owner growth allowance is charged; unrelated concurrent activity can change capacity after this observation.",
+    "backing": {
+      "at": "2026-10-21T04:31:57.149Z",
+      "mappings": [
+        {
+          "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261021-pr24",
+          "linuxMount": "/",
+          "device": "2096",
+          "volumeId": "\\\\?\\Volume{715daebd-cb0c-495a-a2cb-85c7ff775c00}\\"
+        },
+        {
+          "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24",
+          "linuxMount": "/",
+          "device": "2096",
+          "volumeId": "\\\\?\\Volume{715daebd-cb0c-495a-a2cb-85c7ff775c00}\\"
+        }
+      ],
+      "volumes": [
+        {
+          "id": "\\\\?\\Volume{715daebd-cb0c-495a-a2cb-85c7ff775c00}\\",
+          "volumeFreeBytes": "107387129856",
+          "callerAvailableBytes": "107387129856",
+          "totalBytes": "1022907904000",
+          "availableBytes": "107387129856",
+          "allocationUnitBytes": "4096",
+          "policy": {
+            "minFreeBytes": "0",
+            "minFreePercent": 3,
+            "growthBytes": "2147483648",
+            "overheadBytes": "67108864",
+            "basis": "Operations retains 3% physical-volume reserve plus 2 GiB growth and a 64 MiB estimated probe/VHDX metadata allowance; estimates are not reservations or arbitrary-write upper bounds. Exact distro/volume binding was read on 2026-10-19; each capacity invocation reobserves it. No automatic trim, sparse conversion, compaction or deletion is authorized."
+          },
+          "vhd": {
+            "lengthBytes": "489682894848",
+            "path": "C:\\Users\\emsen\\AppData\\Local\\wsl\\{645c490d-c03a-4203-80e4-451ee497d286}\\ext4.vhdx",
+            "attributes": 32,
+            "sparse": false
+          },
+          "peakBytes": "0",
+          "reserveBytes": "30687237120",
+          "requiredBytes": "32834720768",
+          "devices": [
+            "2096"
+          ],
+          "admitted": true
+        }
+      ],
+      "port": {
+        "kind": "wsl-host-service/1",
+        "node": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+        "script": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/scripts/wsl-host.mjs",
+        "scriptSha256": "eb9d89519f73f30726d9673c5f0588e81f88235dcc0e016c84c28c6366703ec3",
+        "parameters": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/bare-cedar-fog-services-section/data/records/wsl-host-service-records/bare-cedar-fog/wsl-host.json",
+        "parametersSha256": "4778ccbb8c36b0abf4fc8c7a360b10ee333c3cff8ec6374201f57cc9cea3e49f",
+        "sourceFiles": [
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/scripts/wsl-host.mjs",
+            "sha256": "eb9d89519f73f30726d9673c5f0588e81f88235dcc0e016c84c28c6366703ec3"
+          },
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/src/wsl-host.mjs",
+            "sha256": "755478f1da2001991c6ae6501da096ee3881dc060860ab1d0f3d83e17f51becd"
+          },
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/src/backing-capacity.mjs",
+            "sha256": "5b04c9ba24a611a62fa13a1a11de0ce7ed25ada22463e86b3b1983767a586c01"
+          },
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/assets/observe-backing-capacity.ps1",
+            "sha256": "4c2cf7a9818943c8adf166cc1b5af6d28037b88617d6426ee2c95d6b9a079e70"
+          }
+        ]
+      },
+      "responseSha256": "817f540905d742f08aa1ec4391e0d0c2f515245234b7894d6632bb1c1bcb372c",
+      "admitted": true,
+      "admissionKind": "snapshot-not-reservation"
+    }
+  },
+  "filesystemDrift": [],
+  "observationError": null,
+  "commandResult": {
+    "code": 1,
+    "signal": null
+  },
+  "error": null,
+  "backingCapacityProbe": null
+}

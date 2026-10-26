@@ -1,0 +1,40 @@
+{
+  "kind": "IndependentCodeNativeArtifactSourceReview",
+  "at": "2026-10-21T00:01:53.912605+00:00",
+  "verdict": "REQUEST_CHANGES",
+  "sourceProposalSHA256": "9a4a8c52b4a1ac0505cd94862032a566ce9f8e9bc171b7b023a519af6532b07e",
+  "patchSHA256": "d05cc749bf3c0348e78e3706bc4866cd62872cd00ae3e3d764e53730f45fea86",
+  "exactFrozenChangedFilesVerified": 16,
+  "findings": [
+    {
+      "priority": "P1",
+      "path": "scripts/receive-packed-registry-artifact.mjs",
+      "line": 55,
+      "problem": "Strict primitive reader has no caller resolveSubmodule; selected composed Gitlinks in the original historical Git99 artifact necessarily refuse before member comparison. Current ordinary CLI test covers only one repository.",
+      "requiredRepair": "Qualify bounded original native CLI declared-child resolution without GitHub networking law, arbitrary workspace traversal, skipped composed source or branch substitution; add actual selected-child exact-pin positive and unrelated/unqualified-child refusal."
+    },
+    {
+      "priority": "P2",
+      "path": "src/artifact-member-receiving.mjs",
+      "line": 322,
+      "problem": "binDirectory is confined lexically but its real path/directory kind is not received. An in-installation .bin symlink to an outside directory can supply a shim pointing back to a valid package target and pass.",
+      "requiredRepair": "Receive actual bin directory inside original native installation and add redirected-bin refusal; preserve legitimate PNPM package-root links and actual installed positive."
+    }
+  ],
+  "otherBoundariesInspected": [
+    "Maintained strict TAR reader, native bounded decompression, headers/EOF accounting, no extraction, explicit unread extensions/name decoding",
+    "Independent original Git source selection before archive names and native NPM packlist/ignore precedence",
+    "Shared carrier allowance includes root/selected/ancestor native ignore inputs without unrelated Gitlink entry; competing adapter regex removed",
+    "Prepared manifest recomputed from original source with finite original allocation and sole publisher stamp",
+    "Actual in-process build qualification retained via WeakMap; JSON claimed generated product evidence refuses",
+    "Original frozen consumer preflight occurs before native install; request/result/provider/raw receipt retained before transfer; no new global install/workspace requirement",
+    "Root Code13 native compile-only ambiguous-JS correction retained; no application evaluation",
+    "Explicit primitive dependency/imports remove umbrella Networking edge; canonical nested SEAVT0.1.0 retained"
+  ],
+  "receivingPending": [
+    "Actual published primitive selection and normal exact lock derivation",
+    "Final fixed source/native supplier full QA",
+    "Genuine original Code86/Git99/GHS56 cohort public CLI and actual native installed consumer obligations"
+  ],
+  "receiverEffects": "Read frozen proposals/source/tests only; no edits, bindings, test reruns, installation, publication or live effects."
+}

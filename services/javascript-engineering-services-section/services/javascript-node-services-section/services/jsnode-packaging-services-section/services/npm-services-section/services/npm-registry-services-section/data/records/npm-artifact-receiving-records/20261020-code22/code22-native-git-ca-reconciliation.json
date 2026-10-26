@@ -1,0 +1,10 @@
+{
+  "kind": "NativeSourceGitPushReconciliation",
+  "head": "905e17113da0cb63021215174ec48da0d32b1728",
+  "initialPushResult": 128,
+  "actualError": "SSL certificate verification failed: certificate signer not trusted; GNU Git CAfile none",
+  "remoteRefAfterInitialFailure": "exactprimary404",
+  "recovery": "Reuse existing /etc/ssl/certs/ca-certificates.crt only in nativeGit child GIT_SSL_CAINFO; TLSverification retained, no machine configuration change",
+  "caFileSHA256": "ecd9dc38bc3efb7dbd6431f57e29d2f8d6a0f0d211e1464b3fef2cbfe266fcd2",
+  "qualifiedDryRun": 0
+}

@@ -1,0 +1,29 @@
+{
+  "schema": "cd.retired-intake-fleet.same-pr-workflow-forward.v1",
+  "at": "2026-10-21T22:29:03.881Z",
+  "repository": "red-cup-engineering/continuous-delivery-services-section",
+  "repositoryId": 1410813101,
+  "number": 81,
+  "previousHead": "2e7c85fcadfd590216e238edb53adf584a27251d",
+  "base": "d36ffc299e2feb28072ca4fe20a843af5e0bdbe1",
+  "branch": "fleet/retire-intake-all-house-orgs",
+  "change": {
+    "path": ".github/workflows/retire-obsolete-intake-fleet.yml",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "fbb217e64fb0d6e92831ffa86fc8720e8a59bb14"
+  },
+  "plan": {
+    "kind": "git.source-tree-patch-plan",
+    "sourceTree": "abbb2bd6e70514ca88f78ab550797f057f4061fd",
+    "targetTree": "8966887f9cce4b26ff46db31938154d07df90b8e",
+    "declaredLeaves": 1,
+    "changedLeaves": 1,
+    "immediateTrees": 3,
+    "unchangedSubtrees": 8,
+    "completeTransformation": true,
+    "contentAssessed": false,
+    "capabilitiesReceived": false
+  },
+  "rootReceiving": "Root independently MET full exact workflow7ced; all5source/evidence carriers, verbatim admittedCD80step/cachefalse; no9testreplay. Source-only; no fleet dispatch/apply."
+}

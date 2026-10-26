@@ -1,0 +1,10 @@
+{
+  "at": "2026-10-21T01:04:02.972Z",
+  "unit": "node-process-runner-050-original-controls-v1.scope",
+  "inputSHA256": "01ff5df0ab935884bc2652493859ad02ad6dbcf03a9dc20ca9aed9bc407b2555",
+  "initialProcs": [
+    "387525",
+    "387533"
+  ],
+  "source": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/runner-0.5.0-original-controls-v1/runner-source"
+}

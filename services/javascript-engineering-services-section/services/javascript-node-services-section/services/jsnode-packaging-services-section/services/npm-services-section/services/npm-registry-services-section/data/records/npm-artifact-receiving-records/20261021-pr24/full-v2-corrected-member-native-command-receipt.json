@@ -1,0 +1,39 @@
+{
+  "type": "JavascriptNodeCommandExecutionReceipt",
+  "version": 1,
+  "request": {
+    "type": "JavascriptNodeCommandExecutionRequest",
+    "version": 1,
+    "command": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+    "arguments": [
+      "--test",
+      "test/artifact-member-receiving.test.mjs"
+    ],
+    "directory": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261021-pr24/code-source",
+    "environment": {
+      "LANG": "C.UTF-8",
+      "LC_ALL": "C.UTF-8",
+      "PATH": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin:/gnu/store/niv2n69b6gr947cp1p1k9lyzml7nnhvg-git-minimal-2.54.0/bin:/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin:/home/emsenn/.config/guix/current/bin:/home/emsenn/.guix-profile/bin:/home/emsenn/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/wsl/lib",
+      "HOME": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261021-pr24/full-v2-corrected-member-native-test-tmp/home",
+      "TMPDIR": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261021-pr24/full-v2-corrected-member-native-test-tmp",
+      "GIT_CONFIG_NOSYSTEM": "1",
+      "GIT_CONFIG_GLOBAL": "/dev/null",
+      "GIT_DEFAULT_HASH": "sha1",
+      "npm_config_userconfig": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261021-pr24/full-v2-corrected-member-native-test-tmp/npmrc",
+      "npm_config_cache": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261021-pr24/full-v2-corrected-member-native-test-tmp/npm-cache",
+      "npm_config_update_notifier": "false",
+      "npm_config_audit": "false",
+      "npm_config_fund": "false"
+    },
+    "input": null
+  },
+  "result": {
+    "type": "JavascriptNodeCommandExecutionResult",
+    "version": 1,
+    "status": 0,
+    "signal": null,
+    "stdout": "✔ source/archive accepts a nonexecutable declared bin without claiming installation (12.125401ms)\n✔ archive stage cannot promote a declared bin or lose source executable intent (4.423205ms)\n✔ one immutable SHA512 identity rejects pad-bit aliases and wrong digest lengths (3.88615ms)\n✔ publisher projection requires exact source commit and exact representation, with no extra fields (14.686191ms)\n✔ bounded literal member identity refuses duplicates, traversal, links and special modes (2.778126ms)\n✔ member omissions, extra members and changed payload cannot disappear into a set or digest (3.890269ms)\n✔ received native context permits finite read/write normalization and actual bin promotion (3.668797ms)\n✔ native npm file-directory bins follow the actual manager umask primitive only (25.315141ms)\n✔ declaration, extract, failed or foreign manager evidence cannot stand for native installation (17.750816ms)\n✔ normalization does not permit payload changes, undeclared execute, lost execute or an arbitrary chmod map (6.962146ms)\n✔ the original receiving CLI compares both stages offline and preserves exclusive result custody (2365.013225ms)\n✔ full release composes the same partial identities without authenticating or mutating supplied observations (22.567593ms)\n✔ full admission requires both byte stages, native context, finite bounds and explicit import observations (6.481161ms)\n✔ either failed partial comparison prevents a full release, with exact failure scope (32.577895ms)\n✔ full release retains witnessed PNPM normalization and the distinct native NPM umask law (11.103665ms)\n✔ full source identities support literal SHA256 while keeping exact publisher and native manifest binding (8.574774ms)\n✔ new partial stages refuse contradictory, unknown and mixed-unit evidence without freezing callers (3.383581ms)\n✔ literal paths refuse control characters and native bin receipts cannot contain duplicate or foreign bindings (5.316922ms)\n✔ the bounded original CLI decodes UTF8 fatally while preserving ordinary Unicode (721.811973ms)\n✔ immutable identities are literal strings and never coercible shared objects (19.424902ms)\nℹ tests 20\nℹ suites 0\nℹ pass 20\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 3504.122273\n",
+    "stderr": "",
+    "error": ""
+  }
+}

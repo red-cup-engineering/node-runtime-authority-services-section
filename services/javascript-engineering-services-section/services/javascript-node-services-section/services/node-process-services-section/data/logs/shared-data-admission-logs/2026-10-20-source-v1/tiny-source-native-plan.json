@@ -1,0 +1,19 @@
+{
+  "kind": "TinyDirectNodeSourceFamilyPlan",
+  "sourceProposalSHA256": "2612ed0cf5dfd34d16e349202644ab76bda212b4bedcfb85e69d8507cdfe6e6c",
+  "worker": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/shared-data-admission-logs/2026-10-20-source-v1/qualify-direct-node-shared-admission-source.py",
+  "workerSHA256": "1a2af43487f23dd27726ae03f549627b240ad377f85c081aae09c49d5f1dfc90",
+  "sourceRoot": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/shared-data-admission-logs/2026-10-20-source-v1/candidate",
+  "receiptDirectory": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/shared-data-admission-logs/2026-10-20-source-v1/source-native-v1",
+  "ownSourceFixtureLogCeilingBytes": 536870912,
+  "maxOutputFileBytes": 4194304,
+  "nodeMaxOldSpaceMiB": 96,
+  "childTimeoutSeconds": 60,
+  "terminationSeconds": 5,
+  "testEntrances": 5,
+  "expectedCases": 60,
+  "nativeClosureOrInstallation": false,
+  "sourceOwnedFixturePathsOnly": true,
+  "originalTestsUnchanged": true,
+  "effectScope": "dependency-free original source families plus11 explicit metadata controls; no network, Guix, service, native World or production state effects"
+}

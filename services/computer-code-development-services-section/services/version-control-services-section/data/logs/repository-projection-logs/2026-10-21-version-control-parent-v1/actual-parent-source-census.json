@@ -1,0 +1,209 @@
+{
+  "at": "2026-10-21T18:12:33.614Z",
+  "repository": "red-cup-engineering/computer-code-engineering-services-section",
+  "repositoryId": 1327997659,
+  "visibility": "private",
+  "defaultBranch": "main",
+  "commit": "c8c06ab82c264728d5ded2b5f9df79c086cf3d02",
+  "rootTree": "a062b86981b64b023344bcfa401dd86951a2b29d",
+  "trees": [
+    {
+      "component": null,
+      "oid": "a062b86981b64b023344bcfa401dd86951a2b29d",
+      "tree": [
+        {
+          "path": ".github",
+          "mode": "040000",
+          "type": "tree",
+          "sha": "0b79b7d86bcb2640df75547528bc790bacb1dd7d",
+          "url": "https://api.github.com/repos/red-cup-engineering/computer-code-engineering-services-section/git/trees/0b79b7d86bcb2640df75547528bc790bacb1dd7d"
+        },
+        {
+          "path": ".gitignore",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "c2658d7d1b31848c3b71960543cb0368e56cd4c7",
+          "size": 14,
+          "url": "https://api.github.com/repos/red-cup-engineering/computer-code-engineering-services-section/git/blobs/c2658d7d1b31848c3b71960543cb0368e56cd4c7"
+        },
+        {
+          "path": ".gitmodules",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "035631f764819a3749975af1cfc229bafa29b775",
+          "size": 753,
+          "url": "https://api.github.com/repos/red-cup-engineering/computer-code-engineering-services-section/git/blobs/035631f764819a3749975af1cfc229bafa29b775"
+        },
+        {
+          "path": ".npmrc",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "0a1f8151935f5a483c368cd930c26519cb3663cf",
+          "size": 37,
+          "url": "https://api.github.com/repos/red-cup-engineering/computer-code-engineering-services-section/git/blobs/0a1f8151935f5a483c368cd930c26519cb3663cf"
+        },
+        {
+          "path": "README.md",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "dd32193bbba73aaa1f447928009ee81dd7a56148",
+          "size": 1412,
+          "url": "https://api.github.com/repos/red-cup-engineering/computer-code-engineering-services-section/git/blobs/dd32193bbba73aaa1f447928009ee81dd7a56148"
+        },
+        {
+          "path": "apps",
+          "mode": "040000",
+          "type": "tree",
+          "sha": "010505b2ce1683e4f948cd9d546f7e86f7410f42",
+          "url": "https://api.github.com/repos/red-cup-engineering/computer-code-engineering-services-section/git/trees/010505b2ce1683e4f948cd9d546f7e86f7410f42"
+        },
+        {
+          "path": "content",
+          "mode": "040000",
+          "type": "tree",
+          "sha": "c483f717a688d32560d461ad41806c8bc1f9e1fd",
+          "url": "https://api.github.com/repos/red-cup-engineering/computer-code-engineering-services-section/git/trees/c483f717a688d32560d461ad41806c8bc1f9e1fd"
+        },
+        {
+          "path": "data",
+          "mode": "040000",
+          "type": "tree",
+          "sha": "bea66a4c2d5caf4620ccc4a6125b1b5a65030ea9",
+          "url": "https://api.github.com/repos/red-cup-engineering/computer-code-engineering-services-section/git/trees/bea66a4c2d5caf4620ccc4a6125b1b5a65030ea9"
+        },
+        {
+          "path": "docs",
+          "mode": "040000",
+          "type": "tree",
+          "sha": "5405437e32a94080d0ca6a45c1035e5d76e629fc",
+          "url": "https://api.github.com/repos/red-cup-engineering/computer-code-engineering-services-section/git/trees/5405437e32a94080d0ca6a45c1035e5d76e629fc"
+        },
+        {
+          "path": "lib",
+          "mode": "040000",
+          "type": "tree",
+          "sha": "46a94531f086cd47570a00d2acfe733445f1fb25",
+          "url": "https://api.github.com/repos/red-cup-engineering/computer-code-engineering-services-section/git/trees/46a94531f086cd47570a00d2acfe733445f1fb25"
+        },
+        {
+          "path": "package.json",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "1feff23a369bd0e5c26b6c5438710d915237c8c5",
+          "size": 3138,
+          "url": "https://api.github.com/repos/red-cup-engineering/computer-code-engineering-services-section/git/blobs/1feff23a369bd0e5c26b6c5438710d915237c8c5"
+        },
+        {
+          "path": "services",
+          "mode": "040000",
+          "type": "tree",
+          "sha": "3b74d9af24e3ac0107803fccb2e833168c965f28",
+          "url": "https://api.github.com/repos/red-cup-engineering/computer-code-engineering-services-section/git/trees/3b74d9af24e3ac0107803fccb2e833168c965f28"
+        },
+        {
+          "path": "src",
+          "mode": "040000",
+          "type": "tree",
+          "sha": "ddc7e662c9e2efe105e54d6485e4f61916fa92b4",
+          "url": "https://api.github.com/repos/red-cup-engineering/computer-code-engineering-services-section/git/trees/ddc7e662c9e2efe105e54d6485e4f61916fa92b4"
+        },
+        {
+          "path": "test",
+          "mode": "040000",
+          "type": "tree",
+          "sha": "41f214a47545b906830c9c031f20584587ca4675",
+          "url": "https://api.github.com/repos/red-cup-engineering/computer-code-engineering-services-section/git/trees/41f214a47545b906830c9c031f20584587ca4675"
+        }
+      ]
+    },
+    {
+      "component": "services",
+      "oid": "3b74d9af24e3ac0107803fccb2e833168c965f28",
+      "tree": [
+        {
+          "path": "agent-systems-engineering-services-section",
+          "mode": "040000",
+          "type": "tree",
+          "sha": "18a8fc9f8f4efe1e6529a951ee8d8f891d952aab",
+          "url": "https://api.github.com/repos/red-cup-engineering/computer-code-engineering-services-section/git/trees/18a8fc9f8f4efe1e6529a951ee8d8f891d952aab"
+        },
+        {
+          "path": "computer-code-development-services-section",
+          "mode": "160000",
+          "type": "commit",
+          "sha": "cf119d19c5ab71658632a363aa07506eb849ac39"
+        },
+        {
+          "path": "elisp-services-section",
+          "mode": "040000",
+          "type": "tree",
+          "sha": "cb722413a8d33547f319d546649587e627b6cfa7",
+          "url": "https://api.github.com/repos/red-cup-engineering/computer-code-engineering-services-section/git/trees/cb722413a8d33547f319d546649587e627b6cfa7"
+        },
+        {
+          "path": "guile-engineering-services-section",
+          "mode": "040000",
+          "type": "tree",
+          "sha": "94b94d8496985044660090cba6c91b27c65ce4c6",
+          "url": "https://api.github.com/repos/red-cup-engineering/computer-code-engineering-services-section/git/trees/94b94d8496985044660090cba6c91b27c65ce4c6"
+        },
+        {
+          "path": "javascript-engineering-services-section",
+          "mode": "160000",
+          "type": "commit",
+          "sha": "b87f7d694b85a0bd8331fc082e4f57ac6ec67f5c"
+        },
+        {
+          "path": "lean-engineering",
+          "mode": "040000",
+          "type": "tree",
+          "sha": "3d0600299a16afd2104aec32242ad57086ec233f",
+          "url": "https://api.github.com/repos/red-cup-engineering/computer-code-engineering-services-section/git/trees/3d0600299a16afd2104aec32242ad57086ec233f"
+        },
+        {
+          "path": "python-engineering-services-section",
+          "mode": "040000",
+          "type": "tree",
+          "sha": "f74c806d955c1fb53bbe66f93fff521210bb5da0",
+          "url": "https://api.github.com/repos/red-cup-engineering/computer-code-engineering-services-section/git/trees/f74c806d955c1fb53bbe66f93fff521210bb5da0"
+        },
+        {
+          "path": "tex-engineering-services-section",
+          "mode": "160000",
+          "type": "commit",
+          "sha": "b2ee70cd9509dc9fe67feb087048616dd0649af0"
+        }
+      ]
+    },
+    {
+      "terminal": {
+        "path": "computer-code-development-services-section",
+        "mode": "160000",
+        "type": "commit",
+        "sha": "cf119d19c5ab71658632a363aa07506eb849ac39"
+      }
+    }
+  ],
+  "calls": [
+    {
+      "path": "/repos/red-cup-engineering/computer-code-engineering-services-section",
+      "status": 200
+    },
+    {
+      "path": "/repos/red-cup-engineering/computer-code-engineering-services-section/branches/main",
+      "status": 200
+    },
+    {
+      "path": "/repos/red-cup-engineering/computer-code-engineering-services-section/git/commits/c8c06ab82c264728d5ded2b5f9df79c086cf3d02",
+      "status": 200
+    },
+    {
+      "path": "/repos/red-cup-engineering/computer-code-engineering-services-section/git/trees/a062b86981b64b023344bcfa401dd86951a2b29d",
+      "status": 200
+    },
+    {
+      "path": "/repos/red-cup-engineering/computer-code-engineering-services-section/git/trees/3b74d9af24e3ac0107803fccb2e833168c965f28",
+      "status": 200
+    }
+  ]
+}

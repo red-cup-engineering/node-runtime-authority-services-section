@@ -1,0 +1,31 @@
+{
+  "native": {
+    "at": "2026-10-23T16:55:55.598Z",
+    "raw": "RuntimeMaxUSec=infinity\nMainPID=0\nControlPID=0\nResult=success\nExecMainCode=0\nExecMainStatus=0\nControlGroup=\nCPUQuotaPerSecUSec=infinity\nMemoryHigh=infinity\nMemoryMax=infinity\nMemorySwapMax=infinity\nTasksMax=14342\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nFragmentPath=\nUnitFileState=\nJob=\nInvocationID=\n",
+    "values": {
+      "RuntimeMaxUSec": "infinity",
+      "MainPID": "0",
+      "ControlPID": "0",
+      "Result": "success",
+      "ExecMainCode": "0",
+      "ExecMainStatus": "0",
+      "ControlGroup": "",
+      "CPUQuotaPerSecUSec": "infinity",
+      "MemoryHigh": "infinity",
+      "MemoryMax": "infinity",
+      "MemorySwapMax": "infinity",
+      "TasksMax": "14342",
+      "LoadState": "not-found",
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "FragmentPath": "",
+      "UnitFileState": "",
+      "Job": "",
+      "InvocationID": ""
+    }
+  },
+  "receiptSha256": "0cd208e57a46f9c896a4ecbaa172b81d8e9c2341f05fcf07141c93406a5aad5c",
+  "demandSha256": "3794edac08d9b319808fa3baa5b25776178771c4f164617138515b034626ce35",
+  "preserved": true,
+  "realPhysicalReader": true
+}

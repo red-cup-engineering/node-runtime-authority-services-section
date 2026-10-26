@@ -1,0 +1,34 @@
+  if (first.done)
+    return;
+  yield typeof first.value === "number" ? first.value : camelCase(first.value, { locale: "en-US" });
+  yield* iter;
+}
+var init_parseConfigPropertyPath = __esm({
+  "../config/commands/lib/parseConfigPropertyPath.js"() {
+    "use strict";
+    init_lib163();
+    init_camelcase();
+  }
+});
+
+// ../config/commands/lib/configGet.js
+function configGet(opts3, key) {
+  const isScopedKey = key.startsWith("@");
+  const configResult = lookupConfig(opts3, key, isScopedKey) ?? (isPropertyPath(key) ? lookupByPropertyPath(opts3, key) : { value: void 0 });
+  const output = displayConfig(configResult?.value, opts3);
+  return { output, exitCode: 0 };
+}
+function lookupConfig(opts3, key, isScopedKey) {
+  if (isScopedKey) {
+    return lookupScopedKey(opts3, key);
+  }
+  if (key === "globalconfig") {
+    return { value: getGlobalConfigPath(opts3.configDir) };
+  }
+  const kebabKey = isCamelCase(key) ? (0, import_lodash7.default)(key) : key;
+  if (kebabKey === "registry") {
+    return { value: opts3._config.registriesByScope?.default ?? opts3.authConfig.registry };
+  }
+  if (Object.hasOwn(types2, kebabKey)) {
+    return lookupTypedKey(opts3, kebabKey);
+  }

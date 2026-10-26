@@ -1,0 +1,27 @@
+{
+  "kind": "OriginalAuthoredNegativeFixtureContractReconciliation",
+  "sourceChanged": false,
+  "observed": {
+    "tests": 481,
+    "pass": 480,
+    "fail": 1,
+    "failingLine": 258,
+    "negativeMutation": "imports='complete'",
+    "refusal": "expectedTypeError passed",
+    "invalidAssertion": "Object.isFrozen(input.imports)===false applied to string primitive",
+    "nativeSHA256CLICase": "passed",
+    "bindingsFinallyRestored": true
+  },
+  "existingContract": "Caller records and arrays remain unfrozen by admission; no mutable-object state exists on a string primitive. Preserve original imports non-array refusal and each six malformed input controls.",
+  "proposedCorrection": "Only assert unfrozen imports when it is an array; preserve top-level unfrozen assertion for each input.",
+  "patch": {
+    "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24/full-v2-negative-fixture-correction-proposal.patch",
+    "sha256": "c2d74dfeffa56b045587285451f38f301893b3825180171192526e1513092fcc"
+  },
+  "beforeSHA256": "dfd84d0ea214f3ecd4d36cd87af0ad004a9188392b72002d0e2c8853e04f8a5a",
+  "proposedSHA256": "24bc788822fed72459709182c19efcc4a605ce1aa796f44028b5258b2c3f122e",
+  "qaReceipt": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24/full-v2-native-qa-receipt.json",
+  "qaReceiptSHA256": "37cc8d49928aed241f645ef2dec17d053d923f84acfab494c11293a6a29959cc",
+  "implementationChangeRequired": false,
+  "rerun": "affected authored member suite after independently accepted fixture correction; unchanged other480cases retained"
+}

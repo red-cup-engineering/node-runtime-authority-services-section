@@ -1,0 +1,15 @@
+{
+  "kind": "OriginalDirectNodeSourceFamilyResult",
+  "code": 0,
+  "timedOut": false,
+  "seconds": 1.1407625869996991,
+  "sourceUnchanged": true,
+  "guardedFiles": 25,
+  "processGroupAbsent": true,
+  "stdoutBytes": 5382,
+  "stderrBytes": 0,
+  "stdoutSHA256": "600b9e1e71a78ef2dea174dcef964fe504a2d0f16e98ceef6f05a1bb4dac1a04",
+  "stderrSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "childMaxRSSKiB": 65808,
+  "packageOrInstalledConsumerQualification": false
+}

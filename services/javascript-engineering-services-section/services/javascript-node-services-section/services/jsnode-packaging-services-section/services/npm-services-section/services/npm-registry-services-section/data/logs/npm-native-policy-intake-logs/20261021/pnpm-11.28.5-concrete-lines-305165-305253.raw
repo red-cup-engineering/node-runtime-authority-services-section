@@ -1,0 +1,89 @@
+      key;
+      constructor(key) {
+        super("CONFIG_SET_UNSUPPORTED_YAML_CONFIG_KEY", `The key ${JSON.stringify(key)} isn't supported by the global config.yaml file`, {
+          hint: hintForRefusedKey(key, "Try setting them instead to the local pnpm-workspace.yaml file")
+        });
+        this.key = key;
+      }
+    };
+  }
+});
+
+// ../config/commands/lib/config.js
+var config_exports = {};
+__export(config_exports, {
+  cliOptionsTypes: () => cliOptionsTypes17,
+  commandNames: () => commandNames18,
+  handler: () => handler18,
+  help: () => help18,
+  rcOptionsTypes: () => rcOptionsTypes18
+});
+function rcOptionsTypes18() {
+  return {};
+}
+function cliOptionsTypes17() {
+  return {
+    global: Boolean,
+    location: ["global", "project"],
+    json: Boolean
+  };
+}
+function help18() {
+  return renderHelp({
+    description: "Manage the pnpm configuration files.",
+    descriptionLists: [
+      {
+        title: "Commands",
+        list: SUBCOMMANDS_HELP
+      },
+      {
+        title: "Options",
+        list: OPTIONS_HELP
+      }
+    ],
+    url: docsUrl("config"),
+    usages: [
+      "pnpm config set <key> <value>",
+      "pnpm config get <key>",
+      "pnpm config get --json <key>",
+      "pnpm config delete <key>",
+      "pnpm config list"
+    ]
+  });
+}
+async function handler18(opts3, params) {
+  if (params.length === 0) {
+    throw new PnpmError("CONFIG_NO_SUBCOMMAND", "Please specify the subcommand", {
+      hint: help18()
+    });
+  }
+  applyConfigLocation(opts3);
+  switch (params[0]) {
+    case "set":
+    case "delete": {
+      return setOrDeleteConfig(opts3, params);
+    }
+    case "get": {
+      if (params[1]) {
+        return configGet(opts3, params[1]);
+      } else {
+        return configList(opts3);
+      }
+    }
+    case "list": {
+      return configList(opts3);
+    }
+    default: {
+      throw new PnpmError("CONFIG_UNKNOWN_SUBCOMMAND", "This subcommand is not known");
+    }
+  }
+}
+function applyConfigLocation(opts3) {
+  if (opts3.location) {
+    opts3.global = opts3.location === "global";
+  } else if (opts3.cliOptions["global"] == null) {
+    opts3.global = true;
+  }
+}
+async function setOrDeleteConfig(opts3, params) {
+  if (!params[1]) {

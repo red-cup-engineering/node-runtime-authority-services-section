@@ -1,0 +1,122 @@
+{
+  "schema": "cd.retired-intake-fleet.actual-merged-source-receiving.v1",
+  "verdict": "RECEIVED_SAME_PR_SOURCE_INTEGRATION_AND_ORIGINAL_PUBLIC_ARCHIVE_CONSUMER",
+  "at": "2026-10-21T22:35:45.945Z",
+  "repositoryId": 1410813101,
+  "public": true,
+  "pull": "https://github.com/red-cup-engineering/continuous-delivery-services-section/pull/81",
+  "merged": true,
+  "merge": "8eac6a02b7d196b4e6e6f5cf7c6689891993b647",
+  "tree": "8966887f9cce4b26ff46db31938154d07df90b8e",
+  "parents": [
+    "d36ffc299e2feb28072ca4fe20a843af5e0bdbe1",
+    "1224c571ae76cbd8949c4eebc237299bb0443fe7"
+  ],
+  "currentMain": "8eac6a02b7d196b4e6e6f5cf7c6689891993b647",
+  "originalBranch": {
+    "absent": true,
+    "status": 404
+  },
+  "deleteBranchOnMerge": true,
+  "branchEffect": "No native/delete API invocation. Original repository auto-cleanup observed read-only.",
+  "grade": "Actual source integration plus original public source178+178/archive39 receiving; fleet apply not dispatched; aggregate-only per-repository attempt custody remains open.",
+  "nativeAntecedent": "Root independently received original9/9; missingYAMLinitialfailure retained; no isolated9replay.",
+  "actualPublicSourceCi": [
+    {
+      "runId": 39686821279,
+      "tests": 178,
+      "pass": 178
+    },
+    {
+      "runId": 39686830892,
+      "tests": 178,
+      "pass": 178
+    }
+  ],
+  "actualIndependentArchive": {
+    "runId": 39686830877,
+    "tests": 39,
+    "pass": 39,
+    "artifactId": 12387056856,
+    "bytes": 218751,
+    "regularMembers": 96,
+    "sourceMembersMatched": 95,
+    "manifest": "exactoriginal+versiononly",
+    "source": "526b1a0c747c43899875412087916d0255dce39a",
+    "sha256": "cd8695b6f17bf074c9c44befaa66e8f2a4b8f716c86446765c67796503fddd08"
+  },
+  "evidence": [
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/continuous-delivery-services-section/data/logs/pull-receiving-logs/2026-10-21-retired-intake-fleet-81/owned-workflow-successor-v1/source-and-effects-proposal.json",
+      "bytes": 4356,
+      "sha256": "7cedba8740f81f9895f6059519fc8d979a1600e7cc46fb8c8a02e50957603ac3"
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/continuous-delivery-services-section/data/logs/pull-receiving-logs/2026-10-21-retired-intake-fleet-81/owned-workflow-successor-v1/source.diff",
+      "bytes": 2233,
+      "sha256": "1e841725056db217577491c324855751a9ef53afcd3dcd27f282c4d9b250ab9b"
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/continuous-delivery-services-section/data/logs/pull-receiving-logs/2026-10-21-retired-intake-fleet-81/owned-workflow-successor-v1/actual-source-forward.json",
+      "bytes": 8300,
+      "sha256": "e6969731e7437ec6dbdf03179ae6a0096a8adcdc65c0187ca09d6efedda1ad89"
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/continuous-delivery-services-section/data/logs/pull-receiving-logs/2026-10-21-retired-intake-fleet-81/owned-workflow-successor-v1/actual-source-forward-readonly-reconciliation.json",
+      "bytes": 82944,
+      "sha256": "60044303526ec5c3cd924de0985d290aa506d0650dd0cbe004e12e4858ce18c3"
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/continuous-delivery-services-section/data/logs/pull-receiving-logs/2026-10-21-retired-intake-fleet-81/owned-workflow-successor-v1/actual-current-ci-runs.json",
+      "bytes": 58123,
+      "sha256": "02c9c0d3dd5fc9329baebcad71165582e6598a9830339bacdbf306bf283eb476"
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/continuous-delivery-services-section/data/logs/pull-receiving-logs/2026-10-21-retired-intake-fleet-81/owned-workflow-successor-v1/actual-full-ci-log-receiving.json",
+      "bytes": 1983,
+      "sha256": "4c04a5466508b6e1a970e6e406e4f61f3eca3d108cc57443816a2cec50505455"
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/continuous-delivery-services-section/data/logs/pull-receiving-logs/2026-10-21-retired-intake-fleet-81/owned-workflow-successor-v1/actual-original-ci-summary-receiving.json",
+      "bytes": 2175,
+      "sha256": "87a23fdc7749827e3db539928c666c0ff643cbc97031830e12388f666667a248"
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/continuous-delivery-services-section/data/logs/pull-receiving-logs/2026-10-21-retired-intake-fleet-81/owned-workflow-successor-v1/actual-original-archive-source-receiving.json",
+      "bytes": 29186,
+      "sha256": "07f06a8dcdd63d63ef7d3293e8cf10a2494ab4c737938aca1916c4a23e1ba17e"
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/continuous-delivery-services-section/data/logs/pull-receiving-logs/2026-10-21-retired-intake-fleet-81/owned-workflow-successor-v1/actual-premerge-source-and-admission.json",
+      "bytes": 121469,
+      "sha256": "80739dae4c1c77a01019279fdfdcadcfca3a97ba9c9c192062ba614588a417d0"
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/continuous-delivery-services-section/data/logs/pull-receiving-logs/2026-10-21-retired-intake-fleet-81/owned-workflow-successor-v1/actual-original-source-receiving-comment.json",
+      "bytes": 3240,
+      "sha256": "4710e3e83f84f129d12d7dd68c3c881208213700b92220139625abb387b0ce0a"
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/continuous-delivery-services-section/data/logs/pull-receiving-logs/2026-10-21-retired-intake-fleet-81/owned-workflow-successor-v1/original-integration-intent.json",
+      "bytes": 1602,
+      "sha256": "e9fbe0fc0b0b2682fcf3de714ff7c345b729054dd61918ff6a7d020a59ce38aa"
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/continuous-delivery-services-section/data/logs/pull-receiving-logs/2026-10-21-retired-intake-fleet-81/owned-workflow-successor-v1/actual-original-source-integration.json",
+      "bytes": 3941,
+      "sha256": "6d6f9f7c9cc93b3f458970fba35cfffc0836903ba3483ef1f9bd53b614d411b8"
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/continuous-delivery-services-section/data/logs/pull-receiving-logs/2026-10-21-retired-intake-fleet-81/owned-workflow-successor-v1/actual-merged-source-and-branch-readback.json",
+      "bytes": 947,
+      "sha256": "bf470be287653923811d9cae426f84f4a394e9b2cc16f3f4cc1da8c051f2bebd"
+    }
+  ],
+  "limits": [
+    "No production fleet apply/dispatch",
+    "No repeated CI/native tests",
+    "No private CI/newgrant/provider",
+    "Original fleet controller must retain per-repository uncertain attempt/outcome before bulk apply",
+    "No full private peer/Guix/registry/host claim"
+  ]
+}

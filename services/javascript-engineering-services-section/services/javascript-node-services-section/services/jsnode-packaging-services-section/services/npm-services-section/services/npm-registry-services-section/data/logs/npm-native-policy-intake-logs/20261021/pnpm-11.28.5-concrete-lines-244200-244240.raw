@@ -1,0 +1,41 @@
+  }
+  await assertRecordedBuildsAreApproved(opts3);
+  globalInfo("Already up to date");
+  return true;
+}
+function applyWorkspaceOption(opts3) {
+  if (opts3.latest) {
+    throw new PnpmError("BAD_OPTIONS", "Cannot use --latest with --workspace simultaneously");
+  }
+  if (!opts3.workspaceDir) {
+    throw new PnpmError("WORKSPACE_OPTION_OUTSIDE_WORKSPACE", "--workspace can only be used inside a workspace");
+  }
+  if (!opts3.linkWorkspacePackages && !opts3.saveWorkspaceProtocol) {
+    opts3.saveWorkspaceProtocol = true;
+  }
+  opts3["preserveWorkspaceProtocol"] = !opts3.linkWorkspacePackages;
+}
+async function createPacquetRunner(opts3) {
+  const pacquetConfigDepName = await findVerifiedPacquetConfigDepName(opts3);
+  if (pacquetConfigDepName == null || opts3.deploy)
+    return void 0;
+  return makeRunPacquet({
+    lockfileDir: opts3.lockfileDir ?? opts3.dir,
+    packageName: pacquetConfigDepName,
+    argv: { original: opts3.argv.original, remain: opts3.argv.remain ?? [] },
+    isInstallCommand: opts3.isInstallCommand === true,
+    virtualStoreDirMaxLength: opts3.virtualStoreDirMaxLength,
+    forceIgnoresPlatform: opts3.forceIgnoresPlatform !== false
+  });
+}
+async function findVerifiedPacquetConfigDepName(opts3) {
+  const declaredPacquetConfigDepName = findDeclaredPacquetConfigDepName(opts3.configDependencies);
+  if (declaredPacquetConfigDepName == null)
+    return void 0;
+  const verified2 = await verifyPacquetIdentity(declaredPacquetConfigDepName, {
+    ...opts3,
+    lockfileDir: opts3.lockfileDir ?? opts3.dir,
+    rootDir: opts3.lockfileDir ?? opts3.dir
+  });
+  return verified2 ? declaredPacquetConfigDepName : void 0;
+}

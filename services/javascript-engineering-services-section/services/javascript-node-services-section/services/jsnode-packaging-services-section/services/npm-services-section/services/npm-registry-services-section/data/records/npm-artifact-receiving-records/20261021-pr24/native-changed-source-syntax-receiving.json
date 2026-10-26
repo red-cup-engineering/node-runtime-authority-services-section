@@ -1,0 +1,60 @@
+{
+  "kind": "NativeChangedSourceSyntaxReceiving",
+  "node": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+  "version": "v24.18.0",
+  "proposalSHA256": "74351030a436038a8beff2701a7c7b822d4ecbb19e51fd327955611e4153ebe0",
+  "files": [
+    {
+      "path": "scripts/receive-packed-registry-artifact.mjs",
+      "sha256": "3380c9dc80810a67a774212d4c154f21b7ca35898f6664f88525d7bb48d0c2d8",
+      "status": 0,
+      "signal": null,
+      "stderr": ""
+    },
+    {
+      "path": "src/artifact-member-receiving.mjs",
+      "sha256": "0358984f32e1054625f88e9fdfd79718ad57e1265b74aa9bef8e0e8c5be05b11",
+      "status": 0,
+      "signal": null,
+      "stderr": ""
+    },
+    {
+      "path": "src/artifact-release.mjs",
+      "sha256": "1750e450991fa55f425844832ea2f3bcb4b88ddd6384b90efff104957218bce6",
+      "status": 0,
+      "signal": null,
+      "stderr": ""
+    },
+    {
+      "path": "src/publication-carrier-manifest.mjs",
+      "sha256": "aabd5754ac18bdf8be5e306fcf617708055a8b2ec70a6860f7044cdaaaa37e7d",
+      "status": 0,
+      "signal": null,
+      "stderr": ""
+    },
+    {
+      "path": "test/artifact-member-receiving.test.mjs",
+      "sha256": "dfd84d0ea214f3ecd4d36cd87af0ad004a9188392b72002d0e2c8853e04f8a5a",
+      "status": 0,
+      "signal": null,
+      "stderr": ""
+    },
+    {
+      "path": "test/artifact-native-receiving.test.mjs",
+      "sha256": "288684991be9092d7b558e61bad6fdc87c12703c0edc6ab067f5f35b9a8b2d1c",
+      "status": 0,
+      "signal": null,
+      "stderr": ""
+    },
+    {
+      "path": "test/artifact-release.test.mjs",
+      "sha256": "4fe6f19613b513b603c89094e33907b99ef5980e9c83aba4f556d4986434a5e7",
+      "status": 0,
+      "signal": null,
+      "stderr": ""
+    }
+  ],
+  "testsExecuted": false,
+  "bindingsUsed": false,
+  "installationPerformed": false
+}

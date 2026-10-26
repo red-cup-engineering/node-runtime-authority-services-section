@@ -1,0 +1,81 @@
+      "key",
+      "registry"
+    ];
+    NETWORK_INI_KEYS = [
+      "https-proxy",
+      "proxy",
+      "no-proxy",
+      "http-proxy",
+      "local-address",
+      "strict-ssl"
+    ];
+    RAW_AUTH_CFG_KEY_SUFFIXES = [
+      ":ca",
+      ":cafile",
+      ":cert",
+      ":certfile",
+      ":key",
+      ":keyfile",
+      ":registry",
+      ":tokenHelper",
+      ":_auth",
+      ":_authToken"
+    ];
+    AUTH_CFG_KEYS = [
+      "ca",
+      "cert",
+      "configByUri",
+      "key",
+      "registry",
+      "registriesByScope"
+    ];
+    SECURITY_POLICY_CFG_KEYS = [
+      "minimumReleaseAge",
+      "minimumReleaseAgeExclude",
+      "minimumReleaseAgeIgnoreMissingTime",
+      "minimumReleaseAgeStrict",
+      "trustLockfile",
+      "trustPolicy",
+      "trustPolicyExclude",
+      "trustPolicyIgnoreAfter"
+    ];
+    CATALOGS_CFG_KEYS = [
+      "catalogs"
+    ];
+    FETCH_CFG_KEYS = [
+      "fetchRetryFactor",
+      "fetchRetryMaxtimeout",
+      "fetchRetryMintimeout",
+      "fetchRetries",
+      "fetchTimeout"
+    ];
+    NPM_AUTH_SETTINGS = [
+      ...RAW_AUTH_CFG_KEYS,
+      "_auth",
+      "_authToken",
+      "_password",
+      "email",
+      "username"
+    ];
+    isIniConfigKey = (key) => key.startsWith("@") || key.startsWith("//") || NPM_AUTH_SETTINGS.includes(key);
+    isNpmrcReadableKey = (key) => isIniConfigKey(key) || NETWORK_INI_KEYS.includes(key);
+  }
+});
+
+// ../config/reader/lib/quoteAndJoin.js
+function quoteAndJoin(values) {
+  return values.map((value) => `"${value}"`).join(", ");
+}
+var init_quoteAndJoin = __esm({
+  "../config/reader/lib/quoteAndJoin.js"() {
+    "use strict";
+  }
+});
+
+// ../config/reader/lib/resolveJsonAuthRegistries.js
+function resolveJsonAuthRegistries(jsonAuth, declared) {
+  const { default: envDefault, ...envScopedRegistries } = jsonAuth.registries;
+  const scopedRegistryUrls = new Set(Object.entries(declared.registries).filter(([scope]) => scope !== "default" && envScopedRegistries[scope] == null).map(([, url6]) => (0, import_normalize_registry_url3.default)(url6)));
+  const isScopedRegistry = (url6) => scopedRegistryUrls.has((0, import_normalize_registry_url3.default)(url6));
+  const { default: fallbackDefault, ...fallbackRegistries } = jsonAuth.fallbackRegistries;
+  if (fallbackDefault != null && !isScopedRegistry(fallbackDefault)) {

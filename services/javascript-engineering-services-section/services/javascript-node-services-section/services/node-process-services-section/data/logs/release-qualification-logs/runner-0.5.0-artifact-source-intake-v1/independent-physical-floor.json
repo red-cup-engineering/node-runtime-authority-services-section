@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-21T00:58:58.951Z",
+  "rows": [
+    {
+      "availableBytes": "119150260224",
+      "peakBytes": "6442450944",
+      "chargedGrowthBytes": "4294967296",
+      "chargedOverheadBytes": "134217728",
+      "projectedBytes": "108278624256",
+      "floorBytes": "100000000000"
+    }
+  ],
+  "scope": "Fresh observation, not a reservation"
+}

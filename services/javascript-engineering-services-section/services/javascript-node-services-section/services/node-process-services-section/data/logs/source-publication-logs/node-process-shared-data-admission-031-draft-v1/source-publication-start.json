@@ -1,0 +1,54 @@
+{
+  "at": "2026-10-21T02:00:09.989Z",
+  "manifestSHA256": "c1db49a15b10c4929a6c1c4b4e541c430cd88841231adf4c37fac5a5787f30f6",
+  "files": [
+    {
+      "path": "src/config.mjs",
+      "sha256": "c9825e69f6f41c61664e01d098cf6a3091d56ed018b67e77473e8ea5a1481440",
+      "gitBlob": "eb50e1b09f521af88c722d25e2240bc836a5a0bd",
+      "bytes": 11540,
+      "mode": "100644"
+    },
+    {
+      "path": "specifications/explicit-owned-data-admission.md",
+      "sha256": "4c40f21a0cb79c3cff2b5c17e580306757719a4add6398f93c023009b866282c",
+      "gitBlob": "81ef12a8bfe88834a4fe0c65b4a50ee52d832da5",
+      "bytes": 4327,
+      "mode": "100644"
+    },
+    {
+      "path": "test/owned-data-admission.test.mjs",
+      "sha256": "407759d236272a0ba1f1a29515022a713e8bf6bd2548d19c1905d00bb025e6db",
+      "gitBlob": "d40707d215e05abea030427278daa114580d27ba",
+      "bytes": 8377,
+      "mode": "100644"
+    },
+    {
+      "path": "package.json",
+      "sha256": "81f002900016bf4b3449ef9da6b7a9bb8c8cd6c7859307f6dfa5fd3ae506b635",
+      "gitBlob": "cf7a3f5168ac3eb07457a726c56d6cfc4bfc4722",
+      "bytes": 1588,
+      "mode": "100644"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/independent-shared-owned-data-source-receiving.json",
+      "sha256": "c473e0187eee7f375cc9af31a0f672e468d1d6941d4a481bae2ea550e624cdd2",
+      "gitBlob": "a255907bcfd99c18309cd2de293452cdbfeffcb2",
+      "bytes": 3980,
+      "mode": "100644"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/independent-shared-owned-data-corrected-context-receiving.json",
+      "sha256": "03dcf159dc3b41957ee276f29fc686daec98262d1a855ec043e5900908a58f63",
+      "gitBlob": "42231488b500d0188fe44766cc44635587553bd1",
+      "bytes": 5303,
+      "mode": "100644"
+    }
+  ],
+  "supplier": {
+    "module": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/services/git-services-section/data/logs/github-source-operation-suppliers/github-rest-client-0.2.4/github-rest-client.mjs",
+    "sha256": "8a3ea5787f79ef656a546596ab1b5d87b5b61f8419323a1416b7937432efeba5",
+    "kind": "Byte-exact received GHS2.4 all-builtins source projection; no package installation or old home carrier executed"
+  },
+  "noRawPrivateProviderResponses": true
+}

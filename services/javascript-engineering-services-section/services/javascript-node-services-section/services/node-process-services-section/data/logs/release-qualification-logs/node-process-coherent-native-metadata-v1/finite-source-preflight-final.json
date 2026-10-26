@@ -1,0 +1,9 @@
+{
+  "type": "ExactFiniteFinalMetadataInputsSourcePreflight",
+  "guardedRegularFiles": 164,
+  "realDirectories": 10,
+  "providerRoots": 13,
+  "sourceUnchanged": true,
+  "nativeEffects": false,
+  "freshCapacityObserved": false
+}

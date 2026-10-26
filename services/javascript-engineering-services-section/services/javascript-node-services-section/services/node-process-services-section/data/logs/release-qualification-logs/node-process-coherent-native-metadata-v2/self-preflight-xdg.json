@@ -1,0 +1,17 @@
+{
+  "type": "NodeMetadataXdgForwardSelfPreflight",
+  "at": "2026-10-21T03:37:43.837Z",
+  "proposalSHA256": "1dfa23ccaeb2194e1f75d26ddbfef41c393192cd24bd07604778cd47b615c241",
+  "inputFiles": 166,
+  "originalInputFilesRetained": 165,
+  "syntax": 3,
+  "originalPreflight": {
+    "preflight": true,
+    "unit": "node-process-coherent-lock-metadata-v2.scope",
+    "planSHA256": "968e7463f2f8b43e16907e6f8e52e2b8ec6619ee2b13d5d132b81028e2291537",
+    "managedSHA256": "9dac26e684c2914a4ee1d15493aa167be368701cce954c96ff9b2b951d3a5a83",
+    "dispatched": false,
+    "capacityObserved": false
+  },
+  "dispatched": false
+}

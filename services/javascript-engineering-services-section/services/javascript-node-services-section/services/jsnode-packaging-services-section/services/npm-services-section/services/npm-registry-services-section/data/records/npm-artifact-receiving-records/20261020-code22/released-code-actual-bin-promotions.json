@@ -1,0 +1,105 @@
+{
+  "kind": "ActualReleasedCodeNativeDeclaredBinPromotionReceiving",
+  "nativeInstalledReceipt": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/released-code-native-installed-receipt.json",
+  "nativeInstalledReceiptSHA256": "e2b3d269944eec6aaee82764b85641420c06af0d99fd02adf79ef35844ed30e5",
+  "originalOperationReceipt": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/.registry-install-eqlif3.native-installation.json",
+  "originalOperationReceiptSHA256": "b1fb9815bbc693a15e156a82fc115246f696d0b5f45034b8696710b22f3d9593",
+  "actualReceivedNativeManager": "PNPM11.28.5",
+  "promotions": [
+    {
+      "bin": "pin-exact-dependencies",
+      "target": "scripts/pin-exact-dependencies.mjs",
+      "archiveMode": 384,
+      "installedMode": 493,
+      "sha256": "6a03413ccd2640418a340df2adb4b820e14cf62f7b02e24ff6c972e465127b31",
+      "payloadBytes": 3150,
+      "actualRegistration": {
+        "name": "pin-exact-dependencies",
+        "kind": "pnpm11-cmd-shim-target",
+        "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261020-code22/released-code-native-success/.registry-install-eqlif3/node_modules/.bin/pin-exact-dependencies",
+        "target": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261020-code22/released-code-native-success/.registry-install-eqlif3/node_modules/.pnpm/@red-cup-engineering+npm-workspace-publication-service@0.14.24/node_modules/@red-cup-engineering/npm-workspace-publication-service/scripts/pin-exact-dependencies.mjs",
+        "sha256": "e6fce7c4eb3f36f968c10c3513313a9454d490d341b5b4bb90076da44e964466"
+      }
+    },
+    {
+      "bin": "plan-source-registry-closure",
+      "target": "scripts/plan-source-registry-closure.mjs",
+      "archiveMode": 384,
+      "installedMode": 493,
+      "sha256": "b88323cb03b974310f805271a5cfc5ba579be87d876ad790171d6c4f28be2af0",
+      "payloadBytes": 978,
+      "actualRegistration": {
+        "name": "plan-source-registry-closure",
+        "kind": "pnpm11-cmd-shim-target",
+        "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261020-code22/released-code-native-success/.registry-install-eqlif3/node_modules/.bin/plan-source-registry-closure",
+        "target": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261020-code22/released-code-native-success/.registry-install-eqlif3/node_modules/.pnpm/@red-cup-engineering+npm-workspace-publication-service@0.14.24/node_modules/@red-cup-engineering/npm-workspace-publication-service/scripts/plan-source-registry-closure.mjs",
+        "sha256": "829383710c64f2cabb7b3108f21f813ba4f7bcedb908e3f8bea2790eeafd181a"
+      }
+    },
+    {
+      "bin": "pack-source-registry-closure",
+      "target": "scripts/pack-source-registry-closure.mjs",
+      "archiveMode": 384,
+      "installedMode": 493,
+      "sha256": "a63c9b051c5d9523467a7107ea0803453428b905237dd9604cf0c3ef540f05a0",
+      "payloadBytes": 1170,
+      "actualRegistration": {
+        "name": "pack-source-registry-closure",
+        "kind": "pnpm11-cmd-shim-target",
+        "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261020-code22/released-code-native-success/.registry-install-eqlif3/node_modules/.bin/pack-source-registry-closure",
+        "target": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261020-code22/released-code-native-success/.registry-install-eqlif3/node_modules/.pnpm/@red-cup-engineering+npm-workspace-publication-service@0.14.24/node_modules/@red-cup-engineering/npm-workspace-publication-service/scripts/pack-source-registry-closure.mjs",
+        "sha256": "ef4089192c4f8e9315dc612e5dd0ac21180722965247013928be08df65940d88"
+      }
+    },
+    {
+      "bin": "publish-source-registry-closure",
+      "target": "scripts/publish-source-registry-closure.mjs",
+      "archiveMode": 384,
+      "installedMode": 493,
+      "sha256": "63bccf64aac803790da7fe00a96190e7cc9cd781b85a2cada1287eef2221c75e",
+      "payloadBytes": 704,
+      "actualRegistration": {
+        "name": "publish-source-registry-closure",
+        "kind": "pnpm11-cmd-shim-target",
+        "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261020-code22/released-code-native-success/.registry-install-eqlif3/node_modules/.bin/publish-source-registry-closure",
+        "target": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261020-code22/released-code-native-success/.registry-install-eqlif3/node_modules/.pnpm/@red-cup-engineering+npm-workspace-publication-service@0.14.24/node_modules/@red-cup-engineering/npm-workspace-publication-service/scripts/publish-source-registry-closure.mjs",
+        "sha256": "0a2ca9e57e3542482fe70cd30dd4c1fcdf986446440806befbc068cac67b3e3c"
+      }
+    },
+    {
+      "bin": "receive-source-registry-consumers",
+      "target": "scripts/receive-source-registry-consumers.mjs",
+      "archiveMode": 384,
+      "installedMode": 493,
+      "sha256": "dfbec60da7ef4792fe6f04958d33717db24c4761cdf622b46f615262e078a988",
+      "payloadBytes": 791,
+      "actualRegistration": {
+        "name": "receive-source-registry-consumers",
+        "kind": "pnpm11-cmd-shim-target",
+        "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261020-code22/released-code-native-success/.registry-install-eqlif3/node_modules/.bin/receive-source-registry-consumers",
+        "target": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261020-code22/released-code-native-success/.registry-install-eqlif3/node_modules/.pnpm/@red-cup-engineering+npm-workspace-publication-service@0.14.24/node_modules/@red-cup-engineering/npm-workspace-publication-service/scripts/receive-source-registry-consumers.mjs",
+        "sha256": "cf2fcefb10ae422738ffba5825bebab72f150fb6615d1f727e5901b78d002704"
+      }
+    },
+    {
+      "bin": "audit-registry-carrier-imports",
+      "target": "scripts/audit-registry-carrier-imports.mjs",
+      "archiveMode": 384,
+      "installedMode": 493,
+      "sha256": "ee7c71e8cea9299450094170e3bd07ed797457efa5f55659816a9bdf27cd8ddd",
+      "payloadBytes": 844,
+      "actualRegistration": {
+        "name": "audit-registry-carrier-imports",
+        "kind": "pnpm11-cmd-shim-target",
+        "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261020-code22/released-code-native-success/.registry-install-eqlif3/node_modules/.bin/audit-registry-carrier-imports",
+        "target": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261020-code22/released-code-native-success/.registry-install-eqlif3/node_modules/.pnpm/@red-cup-engineering+npm-workspace-publication-service@0.14.24/node_modules/@red-cup-engineering/npm-workspace-publication-service/scripts/audit-registry-carrier-imports.mjs",
+        "sha256": "2be6c87e8becae5aeb67aec08d4c0ffa6a4d0513f66b7167567303a19582a8d2"
+      }
+    }
+  ],
+  "normalization": "Actualarchive0600 non-executable files receive originalPNPM regular-file normalization and declared-bin0755 executable promotion; payload unchanged; no handchmod",
+  "interpretationOnly": true,
+  "newInstallations": 0,
+  "comparisonAccepted": true,
+  "all89PayloadsCompared": 89
+}

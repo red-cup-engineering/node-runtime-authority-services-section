@@ -1,0 +1,35 @@
+{
+  "type": "OriginalHarnessAddressedHandoffReceiving",
+  "id": "sha256:bfd554c25193cf2be659b18f4f876b02a6cc771fc1092c0c96044285a36b548f",
+  "file": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/data/logs/node-job-writer-receiving-20261023/checkpoint/handoffs/bfd554c25193cf2be659b18f4f876b02a6cc771fc1092c0c96044285a36b548f.json",
+  "sha256": "a39ddf311c515ef0f88c464022a0aade299ab14c1261d17a383bef0417ed0438",
+  "bytes": 10367,
+  "originalHarness": "0.2.11",
+  "nativeNode": "v24.18.0",
+  "nativeWriterExit": 0,
+  "readbackReformedSameIdAndObject": true,
+  "from": {
+    "sessionId": null,
+    "agentId": "/root/receive_pace_source",
+    "model": null,
+    "contextTokens": null
+  },
+  "work": {
+    "id": "8",
+    "title": "Revive and deploy coherent PACE capabilities on Bare Cedar Fog"
+  },
+  "operativeAnnex": {
+    "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/bare-cedar-fog-services-section/data/logs/pace-s-deployment-logs/20261023/state-conversion-source-intake/canonical-keh0Vp/state-conversion-design-v4-acceptance-map-amendment-1.md",
+    "sha256": "546eebfd5af80cf75b428adcea8b1e996baa1c3ee4e0180f863c04ad2c545e40"
+  },
+  "actualBindingEvidenceSHA256": "fd5df062cb78c4e182f0f6e9410488207145220b8e18f2d8f40b97c19ba6f65f",
+  "previousContextHandoff": "sha256:c32b761905960116edf85c16a4bb9ab70319a615d1414a58534939cb2a16ff10",
+  "contextOnly": true,
+  "nativeUnitBinding": null,
+  "modelAndUsageUnknown": true,
+  "ownCommandsInFlightAfterThisReceiving": false,
+  "otherActorInventoryClaimed": false,
+  "userReadinessReceived": false,
+  "offlineAdmissionClaimed": false,
+  "overallWorkComplete": false
+}

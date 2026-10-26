@@ -1,0 +1,66 @@
+{
+  "type": "NewExclusiveOriginalNode031NativeMetadataCapacityReopeningProposal",
+  "namespace": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v2",
+  "sourceCommit": "f0b7cf0a64738c5b08ffea973f2869c66f83958c",
+  "sourceTree": "993ef058fa8fec8f1ca9f7127cc6dc42772ec6fc",
+  "sourceSnapshot": "aea503bb5649df85c00a47ea4c40a090dc66ec1dc0804edf6552c6c132b67c4e",
+  "originalRefusal": {
+    "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/actual-refused-metadata-evidence-index.json",
+    "sha256": "1abb2c3026d114b5999350f405a991ab2a1ed65e78a51e7717b84a41e5bbe594"
+  },
+  "reuse": {
+    "nodeSource": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source",
+    "frozenSource": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2",
+    "codeSource": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source",
+    "codeConsumer": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-consumer",
+    "sourceOrGraphRecopy": false,
+    "original164GuardsRetained": true,
+    "newWorkerAdditionalGuard": true
+  },
+  "deltas": [
+    "Exclusive v2 unit/input/plan/dispatch/output; actual prior unit inactive/dead/empty guard",
+    "Actual candidate f0/tree993ef operation/source marker, base23113 retained",
+    "GIT ceiling actual reused Node/Code source/consumer roots instead of sibling attempt directory",
+    "No product/PMargv/timeout/floor/HOME/context change",
+    "Narrow mandatory XDG forward: original165 input guards retained plus activeworker166th; four owned XDG directories created before actual releasedCode import/help; HOME/CODEX_HOME unchanged. No budgets/PMargv/source/namespace changed."
+  ],
+  "phaseMilliseconds": [
+    60000,
+    60000,
+    30000,
+    600000
+  ],
+  "scopeSeconds": 900,
+  "memoryBytes": 2147483648,
+  "cpuPercent": 100,
+  "quiescenceMilliseconds": 5000,
+  "ownPeakBytes": 536870912,
+  "peerPeakBytes": 5905580032,
+  "aggregateBytes": 6442450944,
+  "growthBytesEachCopy": 2147483648,
+  "overheadBytesEachCopy": 67108864,
+  "physicalChargeCopies": 2,
+  "physicalFloorBytes": 100000000000,
+  "guestMinFreePercent": 10,
+  "guestMinFreeInodes": 1000000,
+  "rootNativeSnapshot": {
+    "availableBytes": 111057485824,
+    "at": "2026-10-21T03:23:42Z",
+    "admission": false,
+    "reservation": false
+  },
+  "receiving": "Fresh original predicates stillmandatory. Real Code offline3entry context then Node own lock-only actualIDs/SRIs; Node NMabsent. Full Nodegraph/scripts/pack/publication/use remain unmet.",
+  "dispatch": "Root review first; not executed",
+  "bindings": {
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v2/inputs-xdg.json": "8ad9ac2be8761781393670d8545b04e1132f1da98b94b09c1d130c7d04812193",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v2/qualify-native-metadata-xdg.mjs": "6658acff4eabe69f1ca7d32b86e75fdeead67a32521cf0a1d0791baaf61a9917",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v2/managed-input-xdg.json": "9dac26e684c2914a4ee1d15493aa167be368701cce954c96ff9b2b951d3a5a83",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v2/storage-plan-xdg.json": "968e7463f2f8b43e16907e6f8e52e2b8ec6619ee2b13d5d132b81028e2291537",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v2/receive-scope.mjs": "1f28cfb58fe264bd0c8bdacbbab0903784661c99c58bcb707cc5d7c264549fa0",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v2/dispatch-native-xdg.mjs": "1db1e3267acaac93256131b1a2f583e942b37f684d396d433038bf58985ad38a"
+  },
+  "antecedent": {
+    "proposal": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v2/execution-proposal.json",
+    "sha256": "7e9d8365526cc9165d3b52626ba5839effefa0b1d46dce86a930baa5e098ec57"
+  }
+}

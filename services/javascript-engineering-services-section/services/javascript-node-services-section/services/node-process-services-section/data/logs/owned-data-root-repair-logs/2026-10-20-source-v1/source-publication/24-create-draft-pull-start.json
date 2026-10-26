@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-21T00:11:59.114Z",
+  "method": "POST",
+  "path": "/repos/red-cup-engineering/node-process-services-section/pulls",
+  "body": {
+    "head": "codex/require-service-owned-data-roots",
+    "base": "main",
+    "title": "Require service-owned data roots independently of Git layout",
+    "body": "The resolver rejected a services section when it was its own Git checkout, while accepting arbitrary roots outside a checkout. Require the selected existing real services section above data/, refuse home .local, installed-code and symlink-backed data roots, and keep config/environment/argv precedence and the immutable result. Applications use their existing explicit owner selection.\n\nVersion 0.3.0 marks the intentional change to formerly admitted app/arbitrary roots. All four source test families pass: 49 tests, no failures or skips. The five curated records include independent source receiving, exact base/parent identities, named native observations and preserved earlier test failures; raw captures stay in owned logs.\n\nThis is source-only integration. The shared npm runner/dependency closure, package publication, CSE dependency update, deployed explicit owner bindings and actual federation use remain unreceived. CDE ownerDataRoot takes section/data; this resolver returns the section above data. No installed or live-host change is claimed.",
+    "draft": true
+  }
+}

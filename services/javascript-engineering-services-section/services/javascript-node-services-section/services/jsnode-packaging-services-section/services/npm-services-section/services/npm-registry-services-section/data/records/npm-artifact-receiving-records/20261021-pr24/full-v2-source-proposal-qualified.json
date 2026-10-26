@@ -1,0 +1,175 @@
+{
+  "kind": "OriginalPR24FullV2QualifiedSourceProposal",
+  "source": {
+    "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+    "commit": "24bb6cedfe36a847057f9003bde6e88bcc7da00b",
+    "directory": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261021-pr24/code-source"
+  },
+  "design": {
+    "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/pr24-completion-contract-design-proposal.md",
+    "sha256": "59e1ad0c080318982e68c99139ff2c7adfab1caa1a594ead755785bc0514cdbc",
+    "independentReviewSHA256": "0cecd0ea6c73768e2f1924d73e40428536bdfafe0ef7d2dfe01512a1a6a27361"
+  },
+  "patch": {
+    "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24/full-v2-source-proposal-qualified.patch",
+    "sha256": "a79530ff2f0eddd69dd89ec907a335f6b8aea84e46a90db7d07a1c4814cda951",
+    "bytes": 31790
+  },
+  "files": [
+    {
+      "path": "package.json",
+      "sourceSHA256": "94452b29a16e32ecf8054aa5ba6d24baa0616fab3d18b35cc43f58003ac20576",
+      "proposedSHA256": "fe97c87dffa3b06a732acedd7bf217ee3e2de97be2be7bd8121c1d12a010ac74",
+      "bytes": 6876,
+      "gitMode": "100644"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sourceSHA256": "750a5ad0e85f02011895eb6c7225b4b36c9264b4522bf7a04512dce2c76c195a",
+      "proposedSHA256": "508a3ba0961167af9a5f55692542e32e91c154af21fb1e488161f709f713895c",
+      "bytes": 49125,
+      "gitMode": "100644"
+    },
+    {
+      "path": "README.md",
+      "sourceSHA256": "926dd8095280a61dc8baf587bd4cf1bde84bf30d83758469fcd3c9ba0b3a947a",
+      "proposedSHA256": "dd25bc5a1d5a971f4fab4aa738ab60bdc663dc983e53a1f09b41762c500dcab9",
+      "bytes": 42785,
+      "gitMode": "100644"
+    },
+    {
+      "path": "scripts/receive-packed-registry-artifact.mjs",
+      "sourceSHA256": "a510811870865509917951355347986cdf37e94c8856707142b2d91b92cc3aa2",
+      "proposedSHA256": "3380c9dc80810a67a774212d4c154f21b7ca35898f6664f88525d7bb48d0c2d8",
+      "bytes": 7431,
+      "gitMode": "100755"
+    },
+    {
+      "path": "specifications/artifact-member-receiving.md",
+      "sourceSHA256": "a91e7e20e03e30acd72733bd9a7de8c241436d4d567f4695daa7785151d2c79a",
+      "proposedSHA256": "95844349a636f5d0004875b8a9020f52c241f5e53fc002b9f04a359970623723",
+      "bytes": 17309,
+      "gitMode": "100644"
+    },
+    {
+      "path": "src/artifact-member-receiving.mjs",
+      "sourceSHA256": "e8dda407055d72dc017318ca68a4aaff4bf8d5409625e0ad806a7e0583c22d47",
+      "proposedSHA256": "0358984f32e1054625f88e9fdfd79718ad57e1265b74aa9bef8e0e8c5be05b11",
+      "bytes": 28814,
+      "gitMode": "100644"
+    },
+    {
+      "path": "src/artifact-release.mjs",
+      "sourceSHA256": "c5cd534d769ad327ae28a3b6cdabcb91e467b5ed8da641311a97d3f9af29c710",
+      "proposedSHA256": "1750e450991fa55f425844832ea2f3bcb4b88ddd6384b90efff104957218bce6",
+      "bytes": 22297,
+      "gitMode": "100644"
+    },
+    {
+      "path": "src/publication-carrier-manifest.mjs",
+      "sourceSHA256": "413263aa3c73b02a98abfac6928d58d7f0423e538a9997e4c074b17ae34e8102",
+      "proposedSHA256": "aabd5754ac18bdf8be5e306fcf617708055a8b2ec70a6860f7044cdaaaa37e7d",
+      "bytes": 2618,
+      "gitMode": "100644"
+    },
+    {
+      "path": "test/artifact-member-receiving.test.mjs",
+      "sourceSHA256": "f82371ba91b9a94d69b40a7838dcd551bb96dcffb32edba5b0b199ba81e7617a",
+      "proposedSHA256": "24bc788822fed72459709182c19efcc4a605ce1aa796f44028b5258b2c3f122e",
+      "bytes": 25042,
+      "gitMode": "100644"
+    },
+    {
+      "path": "test/artifact-native-receiving.test.mjs",
+      "sourceSHA256": "4e654c149125a9b8b84affade3793a884fdeee2d02fc553ef2efd93b4f2a0058",
+      "proposedSHA256": "288684991be9092d7b558e61bad6fdc87c12703c0edc6ab067f5f35b9a8b2d1c",
+      "bytes": 22779,
+      "gitMode": "100644"
+    },
+    {
+      "path": "test/artifact-release.test.mjs",
+      "sourceSHA256": "3f98b18a2b151616534d9a4828f1f710ac4dff176d0d605d01461ae30c03e36d",
+      "proposedSHA256": "4fe6f19613b513b603c89094e33907b99ef5980e9c83aba4f556d4986434a5e7",
+      "bytes": 1954,
+      "gitMode": "100644"
+    }
+  ],
+  "qualification": {
+    "firstWholeOwnerSuite": {
+      "receipt": {
+        "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24/full-v2-native-qa-receipt.json",
+        "sha256": "37cc8d49928aed241f645ef2dec17d053d923f84acfab494c11293a6a29959cc"
+      },
+      "tests": 481,
+      "pass": 480,
+      "fail": 1,
+      "soleFailure": "New test incorrectly expected Object.isFrozen(string) false; implementation TypeError passed. Original failure preserved.",
+      "actualNativeSHA256CLI": "passed"
+    },
+    "independentFixtureCorrection": {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24/root-independent-full-v2-negative-fixture-contract.json",
+      "sha256": "5c4c842614c52940fe596e3ba13c26f23d2719cea5e53c3087c9e78c81a27d9d"
+    },
+    "correctedAffectedCompleteMemberSuite": {
+      "receipt": {
+        "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24/full-v2-corrected-member-native-qa-receipt.json",
+        "sha256": "ef37a8fbf3b1ce9ee1529bd14d06c4bad977ebd2155505a9620058b56829ae30"
+      },
+      "tests": 20,
+      "pass": 20,
+      "fail": 0
+    },
+    "qualifiedDistinctAuthoredCases": 481,
+    "wholeSuiteRepeated": false,
+    "disclosure": "One test-only Array.isArray guard corrected; 480 unchanged whole-suite passes retained and affected complete20case suite rerun. No claim that first whole run passed.",
+    "bindingsFinallyRestored": true,
+    "nativeLock": {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24/code-primitive-lock-receipt.json",
+      "sha256": "f30d524446057ffc9736ff46819ec4320b91cbe19e5484649959c944c8b00493"
+    },
+    "bindingPlan": {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24/full-v2-source-binding-plan.json",
+      "sha256": "10b5142a12d3cafa6b0a1bdbafc1113bc520ca989a68138cc67f8d96ce5398ed"
+    },
+    "primitiveActualReceipt": {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/services/git-services-section/data/records/git-source-reading-qualification-records/20261021-sha256/authoritative-0.1.2-received.json",
+      "sha256": "d08b7a1778341fbbcca313db71cb4fd5222b8a0ec1d7681194b4050b389d3b6a"
+    },
+    "installationPerformed": false,
+    "versionAllocated": false,
+    "publicationPerformed": false,
+    "liveGuardRequiredBeforeBreakingPublication": true
+  },
+  "requiredCases": [
+    "existing473ownerregressions",
+    "explicitlegacyinventorysamev1result",
+    "fullcompositionofsamepartialidentities",
+    "bothnativePNPMandNPMnormalizationlaws",
+    "incompletecontradictorymixedunknownandcoercibleinputs",
+    "caller/resultnonmutation",
+    "ordinaryCLIexplicit/defaultfullv2exclusivecustody",
+    "actualnativeSHA256sourceGitcommitand64blobidentitywithoppositeambienthash",
+    "literalSHA256publicationcarrierpreparation"
+  ],
+  "dependency": "Only current published zero-dependency primitive1.2 pin; no Networking/Gitumbrella edge",
+  "physicalStage": "Original unchanged512MiB lock and QA stages fresh admitted; independent100GBfloor preserved. Prior floor-refused attempts preserved, no Windows replay.",
+  "completeTree": {
+    "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24/full-v2-qualified-tree.json",
+    "sha256": "3097cd4abc129def78f466e24a338f4a1250fe9bbe5d167907d5a264eca26140",
+    "files": 162
+  },
+  "method": {
+    "gitBlob": "a640d66dde935e09b6bc426f84d8fc12593be2d3",
+    "sha256": "5515127218bbd9b067cc38d5083e2b8e1e57719e0de3ccf2f4f0e84ecc233136",
+    "scope": "Existing-source maintenance reconciliation, prior approved CbC premises retained; original dependency and native allocation law before expensive receiving."
+  },
+  "sourceGate": "Request independent exact11-file source+native-lock proposal receiving. Source version remains0.14.24; no breaking allocation/integration/publication until actualGHS0.3.0 operating guard independently received.",
+  "remainingConsumerReceiving": [
+    "Native releaseplanner breaking-version selection after operating GHSguard",
+    "Original source integration/currenthead/requiredchecks and actual publisher",
+    "Authoritative published byte/source comparison and current defaultfull-v2 publicCLI receiving",
+    "Actual selected native installed recipient/publicbinary receiving; no new installation has been performed for this lot",
+    "Actual ordinary publisher/composer compatibility guard effect preserving rootCode15factory",
+    "Selected alternate publisher serializer remains bounded to authentic original available supplier; no invented codec or arbitrary preparedmanifest acceptance"
+  ]
+}

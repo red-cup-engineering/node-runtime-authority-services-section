@@ -1,0 +1,28 @@
+{
+  "type": "NewExclusiveOriginalMetadataSourcePreflight",
+  "original164FileGuardsUnchanged": true,
+  "actualGuardFiles": 165,
+  "actualDirectories": 11,
+  "syntax": [
+    {
+      "file": "qualify-native-metadata.mjs",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "dispatch-native.mjs",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "receive-scope.mjs",
+      "status": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "nativeEffects": false,
+  "capacityObserved": false
+}

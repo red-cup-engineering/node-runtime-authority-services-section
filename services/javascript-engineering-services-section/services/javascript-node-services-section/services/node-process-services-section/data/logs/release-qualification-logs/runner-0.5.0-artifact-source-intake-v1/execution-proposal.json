@@ -1,0 +1,53 @@
+{
+  "type": "OriginalRunner050ActualArtifactSourceIntakeProposal",
+  "state": "UNEXECUTED",
+  "dispatcherSHA256": "6397d4010b34742d534e9457d52f068bdc49889e578bafc7ddaebbd5e957e17a",
+  "managedSHA256": "71e412e50fc7253910ca465666d5d4811648c93a2342d4074e630dc18bfd1310",
+  "planSHA256": "a49b1365b35672baa8487adad1e2f661b3d8a1ad7553049a808534b97602dc70",
+  "ownBytes": 536870912,
+  "aggregateBytes": 6442450944,
+  "scopeSeconds": 180,
+  "memoryBytes": 2147483648,
+  "queries": [
+    {
+      "name": "@red-cup-engineering/jsnode-package-services-section",
+      "version": "0.5.0"
+    },
+    {
+      "name": "@red-cup-engineering/node-process-services-section",
+      "version": "0.3.1"
+    }
+  ],
+  "sourceFiles": [
+    {
+      "path": "src/package-files.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6aba12e33bc1631ce4956ba30faee9e35c20298",
+      "size": 1685,
+      "url": "https://api.github.com/repos/red-cup-engineering/jsnode-package-services-section/git/blobs/a6aba12e33bc1631ce4956ba30faee9e35c20298"
+    },
+    {
+      "path": "src/package-test-plan.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e86dafdf65e64f0ade8786abe5c28dcb8e3f4e97",
+      "size": 6879,
+      "url": "https://api.github.com/repos/red-cup-engineering/jsnode-package-services-section/git/blobs/e86dafdf65e64f0ade8786abe5c28dcb8e3f4e97"
+    },
+    {
+      "path": "test/package-test-plan.test.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4ee635daa0cc2842b76dac4c18b367334123020",
+      "size": 6972,
+      "url": "https://api.github.com/repos/red-cup-engineering/jsnode-package-services-section/git/blobs/f4ee635daa0cc2842b76dac4c18b367334123020"
+    }
+  ],
+  "command": [
+    "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/runner-0.5.0-artifact-source-intake-v1/dispatch-native.mjs",
+    "6397d4010b34742d534e9457d52f068bdc49889e578bafc7ddaebbd5e957e17a",
+    "71e412e50fc7253910ca465666d5d4811648c93a2342d4074e630dc18bfd1310"
+  ]
+}

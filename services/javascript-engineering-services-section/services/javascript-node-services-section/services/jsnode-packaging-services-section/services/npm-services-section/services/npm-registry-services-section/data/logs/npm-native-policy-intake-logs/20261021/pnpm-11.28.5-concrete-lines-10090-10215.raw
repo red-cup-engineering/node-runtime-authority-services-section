@@ -1,0 +1,126 @@
+var init_options = __esm({
+  "../core/types/lib/options.js"() {
+    "use strict";
+  }
+});
+
+// ../core/types/lib/package.js
+function isRuntimeAlias(alias) {
+  return RUNTIME_NAMES.includes(alias);
+}
+var RUNTIME_NAMES;
+var init_package = __esm({
+  "../core/types/lib/package.js"() {
+    "use strict";
+    RUNTIME_NAMES = ["node", "deno", "bun"];
+  }
+});
+
+// ../core/types/lib/peerDependencyIssues.js
+var init_peerDependencyIssues = __esm({
+  "../core/types/lib/peerDependencyIssues.js"() {
+    "use strict";
+  }
+});
+
+// ../core/types/lib/project.js
+var init_project = __esm({
+  "../core/types/lib/project.js"() {
+    "use strict";
+  }
+});
+
+// ../core/types/lib/versioning.js
+var init_versioning = __esm({
+  "../core/types/lib/versioning.js"() {
+    "use strict";
+  }
+});
+
+// ../core/types/lib/index.js
+var init_lib11 = __esm({
+  "../core/types/lib/index.js"() {
+    "use strict";
+    init_config();
+    init_misc();
+    init_options();
+    init_package();
+    init_peerDependencyIssues();
+    init_project();
+    init_versioning();
+  }
+});
+
+// ../pkg-manifest/utils/lib/convertEnginesRuntimeToDependencies.js
+function convertEnginesRuntimeToDependencies(manifest, enginesFieldName, dependenciesFieldName) {
+  for (const runtimeName of RUNTIME_NAMES) {
+    const runtimes = toRuntimeList(manifest[enginesFieldName]?.runtime);
+    if (runtimes == null || manifest[dependenciesFieldName]?.[runtimeName]) {
+      continue;
+    }
+    const runtime = runtimes.find((runtime2) => runtime2.name === runtimeName);
+    if (runtime?.onFail !== "download") {
+      continue;
+    }
+    if (typeof runtime.version !== "string") {
+      globalWarn(`Cannot download ${runtimeName} because no version is specified in ${enginesFieldName}.runtime`);
+      continue;
+    }
+    addRuntimeDependency(manifest, dependenciesFieldName, { runtimeName, version: runtime.version.trim() });
+  }
+}
+function addRuntimeDependency(manifest, dependenciesFieldName, { runtimeName, version: version2 }) {
+  if ("webcontainer" in process.versions) {
+    globalWarn(`Installation of ${runtimeName} versions is not supported in WebContainer`);
+    return;
+  }
+  const deps = manifest[dependenciesFieldName] ??= {};
+  Object.defineProperty(deps, runtimeName, {
+    value: `runtime:${version2}`,
+    enumerable: true,
+    writable: true,
+    configurable: true
+  });
+}
+function applyRuntimeOnFailOverride(manifest, onFailOverride) {
+  for (const [enginesFieldName, dependenciesFieldName] of [
+    ["devEngines", "devDependencies"],
+    ["engines", "dependencies"]
+  ]) {
+    const runtimes = toRuntimeList(manifest[enginesFieldName]?.runtime);
+    if (runtimes == null)
+      continue;
+    for (const runtime of runtimes) {
+      runtime.onFail = onFailOverride;
+    }
+    if (onFailOverride !== "download") {
+      removeRuntimeDependencies(manifest[dependenciesFieldName], runtimes);
+    } else {
+      convertEnginesRuntimeToDependencies(manifest, enginesFieldName, dependenciesFieldName);
+    }
+  }
+}
+function removeRuntimeDependencies(deps, runtimes) {
+  if (!deps)
+    return;
+  for (const runtimeName of RUNTIME_NAMES) {
+    if (runtimes.some((runtime) => runtime.name === runtimeName) && typeof deps[runtimeName] === "string" && deps[runtimeName].startsWith("runtime:")) {
+      delete deps[runtimeName];
+    }
+  }
+}
+function toRuntimeList(enginesFieldRuntime) {
+  if (enginesFieldRuntime == null)
+    return void 0;
+  return Array.isArray(enginesFieldRuntime) ? enginesFieldRuntime : [enginesFieldRuntime];
+}
+var init_convertEnginesRuntimeToDependencies = __esm({
+  "../pkg-manifest/utils/lib/convertEnginesRuntimeToDependencies.js"() {
+    "use strict";
+    init_lib4();
+    init_lib11();
+  }
+});
+
+// ../pkg-manifest/utils/lib/filterDependenciesByType.js
+function filterDependenciesByType(manifest, include) {

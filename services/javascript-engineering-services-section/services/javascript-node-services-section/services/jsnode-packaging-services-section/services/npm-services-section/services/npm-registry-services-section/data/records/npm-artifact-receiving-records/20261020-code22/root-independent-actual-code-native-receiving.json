@@ -1,0 +1,145 @@
+{
+  "kind": "IndependentActualReleasedCodeReceiving",
+  "author": "Codex Chief Engineering /root",
+  "at": "2026-10-21T00:53:03.291Z",
+  "scope": "Received actual Code14.24 native frozen recipient and original Code86/Git99/GHS56 public CLI outcomes; source proof and original source contexts read separately",
+  "reconciliation": {
+    "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/pr24-actual-delivery-reconciliation.json",
+    "sha256": "4bef3782605554f3d4b77f2ccdb98e75fc843aa9fe4e2500efb15ccddf66ac8e"
+  },
+  "evidenceHashes": [
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/pr24-current.json",
+      "sha256": "702dc58eecb1d5fbc5e915eeebaaeed3249e90f7561b8f248625177a78ecf1bb",
+      "bytes": 22717
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/pr24-current-comments.json",
+      "sha256": "b314f51f5cd3a5c4859723827d16e105d1d2c3af28d2712a74b7156cdf568898",
+      "bytes": 10159
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/issue22-current.json",
+      "sha256": "11be0a5fe378e46ebefbb44523d6e79f16593c4f722183a6f2c3271241c1e43d",
+      "bytes": 7642
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/code22-source-integration.json",
+      "sha256": "d293266517c781bf64a4af466f22f86239ee8e0f79081e9a60bc799189b9a363",
+      "bytes": 731
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/code-0.14.24-authoritative-byte-proof.json",
+      "sha256": "837209223eaf450f11655aa6c6c25ea974419ba5a474359a456358a0b41c3796",
+      "bytes": 21530
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/code-0.14.24-primitive-full-owner-test.json",
+      "sha256": "2763087795e2fa1d80acc8bcf918546a9b1fb109ca3ec95e0972d809e51362bc",
+      "bytes": 2256
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/independent-code-0.14.24-final-source-review.json",
+      "sha256": "e7a5b644cab9441018dbb117ea39b06dab2915edea6bb5fc49178d954d80483c",
+      "bytes": 1796
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/released-code-frozen-recipient.json",
+      "sha256": "ecdd5b4e098b85b6864076cc977357d2c21946c81b7a97e9e0bc725cd97a3a7e",
+      "bytes": 3023
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/released-code-native-installed-receipt.json",
+      "sha256": "e2b3d269944eec6aaee82764b85641420c06af0d99fd02adf79ef35844ed30e5",
+      "bytes": 147484
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/original-three-released-cli-original-context-receiving.json",
+      "sha256": "60d58df6fbdd7bce17d7baf251cd2839b1dd1b47472768fef8c57e70f34f4ece",
+      "bytes": 147001
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/released-code-actual-bin-promotions.json",
+      "sha256": "ae58471b21115e6a8011b2f3113e42cad82b7ec3a05757c4bd22d99d48241e52",
+      "bytes": 12318
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/services/software-forge-services-section/services/github-engineering-services-section/data/records/github-source-receiving-records/2026-10-20/ghs25-released-public-cli.json",
+      "sha256": "18ed76cb2c8ccfcd9fb5d409ba51e891a5505145df30ecb4e563c606ed265fdc",
+      "bytes": 69537
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/services/software-forge-services-section/services/github-engineering-services-section/data/records/github-source-receiving-records/2026-10-20/ghs25-actual-released-code-cli-receiving.json",
+      "sha256": "57c4994c29a62acd72f470974255fe00f56a4ccfdbc484b055147bbde098f9a4",
+      "bytes": 35289
+    }
+  ],
+  "cases": [
+    {
+      "label": "code86-original-context",
+      "version": "0.14.21",
+      "source": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8"
+      },
+      "archiveMembers": 86,
+      "receipt": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/code86-original-context-released-public-cli.json",
+      "sha256": "31f67670fd2437c4d9c2b89881402d37f026a7270ebfa1a30b9d336253f8d73d",
+      "ok": true,
+      "code": 0,
+      "installationClaimed": false,
+      "publicationClaimed": false
+    },
+    {
+      "label": "git99-original-context",
+      "version": "0.1.9",
+      "source": {
+        "repository": "https://github.com/red-cup-engineering/git-services-section.git",
+        "commit": "2c022223608d2f8854a8fd5f0b14c3160b2ada65"
+      },
+      "archiveMembers": 99,
+      "receipt": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/git99-original-context-released-public-cli.json",
+      "sha256": "19c854371f9b18166e908bb875c11a5ae0c267607ab0b495b9f0966b2cbcd5e5",
+      "ok": true,
+      "code": 0,
+      "installationClaimed": false,
+      "publicationClaimed": false
+    },
+    {
+      "label": "ghs56-original-context",
+      "version": "0.2.4",
+      "source": {
+        "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+        "commit": "e423fe6770df03eecce803a82ffd12231a8583a5"
+      },
+      "archiveMembers": 56,
+      "receipt": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/ghs56-original-context-released-public-cli.json",
+      "sha256": "f66be3866d423b80fde5abc28a23cb8cdcf46a0250330a136c44882e573c410d",
+      "ok": true,
+      "code": 0,
+      "installationClaimed": false,
+      "publicationClaimed": false
+    }
+  ],
+  "installed": {
+    "frozen": true,
+    "refusals": 0,
+    "payloads": 89,
+    "registeredBins": 26,
+    "observedNativeBinPromotions": 6,
+    "workspaceRequired": false
+  },
+  "verdict": "ACCEPT_SCOPED_ACTUAL_NATIVE_RECEIVING",
+  "remaining": [
+    "PR24 remaining original requirement/design reconciliation is open; no full-v2/SHA256/alternate publisher claim",
+    "Current GHS2.5 installed common runtime and live publisher receiving remain open",
+    "Code15 authority/factory hold retained",
+    "Code17 original1095 operation not discharged by this distinct native recipient"
+  ],
+  "effects": {
+    "newInstallation": false,
+    "republish": false,
+    "prClosed": false,
+    "sourceEdited": false
+  }
+}

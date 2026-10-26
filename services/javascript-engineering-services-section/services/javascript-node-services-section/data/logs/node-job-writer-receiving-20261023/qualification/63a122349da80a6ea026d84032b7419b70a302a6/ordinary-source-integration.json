@@ -1,0 +1,21 @@
+{
+  "type": "SelectedJobWriterOriginalSourceIntegration",
+  "repository": "https://github.com/red-cup-engineering/node-job-service",
+  "originalBase": "698dbdde74149c91f6c2b557fa3b5f385196c65a",
+  "sourceQualifiedCommit": "63a122349da80a6ea026d84032b7419b70a302a6",
+  "sourceQualificationSHA256": "ed46479adf55d9d36fafe28e2a9ec5acd3c3bfee0749135eb17f111a9d1a0996",
+  "independentSourceReceivingSHA256": "8442f888f1d5aff9d430cf1f476e121c1c347886ddc029828e52dc81d0a8605f",
+  "versionOnlyCommit": "8f14987033d199261af0cde67cd54d46c38d457a",
+  "version": "0.4.1-dev.28",
+  "selectorMetadataSHA256": "2c326fa3b2769ebdccfcb039dee5805d011d5f9f8f2f7d60a30b62606a76a2ed",
+  "pullRequest": "https://github.com/red-cup-engineering/node-job-service/pull/6",
+  "expectedHead": "8f14987033d199261af0cde67cd54d46c38d457a",
+  "mergedMain": "e01d3e27028045feceaf4c57514fff5397c59bf3",
+  "mergedTree": "04be7a2854fa1051d6a4d905cbfa7722f62f6c35",
+  "candidateTree": "04be7a2854fa1051d6a4d905cbfa7722f62f6c35",
+  "freshOriginMainFetched": true,
+  "mergedCandidateDiffEmpty": true,
+  "publishedReceiving": false,
+  "actualDeclaredJobsRead": false,
+  "machineEffects": false
+}

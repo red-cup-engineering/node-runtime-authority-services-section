@@ -1,0 +1,18 @@
+{
+  "at": "2026-10-20T23:52:30.179674+00:00",
+  "argv": [
+    "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+    "--max-old-space-size=96",
+    "--test",
+    "--test-concurrency=1",
+    "test/config.test.mjs",
+    "test/command.test.mjs",
+    "test/environment.test.mjs",
+    "test/entrypoint.test.mjs"
+  ],
+  "cwd": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/candidate",
+  "TMPDIR": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/baseline-native/fixtures",
+  "scope": "four original source test families; no package install or supplier graph",
+  "timeoutSeconds": 30,
+  "outputLimitBytes": 16777216
+}

@@ -1,0 +1,41 @@
+{
+  "kind": "ExistingNativeLockCallerFreshReleaseContractCorrection",
+  "sourceOwner": "@red-cup-engineering/npm-workspace-publication-service",
+  "disputedPremise": "The old task invocation admitted only the newly selected primitive1.2. NativePNPM11.28.5 first checks its retained valid1.1lock against age policy, before updating it; exact1.1 also has genuine independent receiving.",
+  "intendedContract": "Reuse existing actualCode14.24 exact-ref age admission for both already received old and newly selected releases. Keep strict external age policy, source+lock preimage, exact native integrity checks, original512MiB budgets/growth/floor. No lock handedit, dep/version edits, graph, cleanup or replay without independent design receiving.",
+  "failedAttempt": {
+    "terminal": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24/code-primitive-lock-terminal.json",
+    "sha256": "1e37f1299b6c27701d906769e7eb97a6f0e4815804d39a0b826a1017bca60ffd",
+    "sourceLockUnchanged": true
+  },
+  "supplierReceipts": [
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/services/git-services-section/data/records/git-source-reading-qualification-records/2026-10-20-primitive/primitive-authoritative-received.json",
+      "sha256": "4dd46a2f0e2af28d073622a289d9e6361b427e252da1c8c42c32263de624bd87",
+      "name": "@red-cup-engineering/git-source-reading-service",
+      "version": "0.1.1",
+      "integrity": "sha512-AtiBu9I5H+35nJPka4T0CClR7oJfZCPwpWlvScR2M95h/xLSa07FAgAhf47oSON7fRM5LKdfZJNpEf5f64U2vQ=="
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/services/git-services-section/data/records/git-source-reading-qualification-records/20261021-sha256/authoritative-0.1.2-received.json",
+      "sha256": "d08b7a1778341fbbcca313db71cb4fd5222b8a0ec1d7681194b4050b389d3b6a",
+      "name": "@red-cup-engineering/git-source-reading-service",
+      "version": "0.1.2",
+      "integrity": "sha512-cLt/BcAPEkoz5kpA729rqzrmg3LbkXpnr3zScv4WAmOnAhSBZRXevFLweRK9RX+CCe+K3wQ2W5+2+E6oDuLXNg=="
+    }
+  ],
+  "nativeConsumerOwnerLaw": {
+    "path": "src/source-registry-closure.mjs",
+    "lines": "475 exact strict policy plus repeated received name@version exclusions; normal actualCode14.24 provider retained"
+  },
+  "helper": {
+    "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24/derive-code-primitive12-lock-qualified-continuation.mjs",
+    "sha256": "0b4c261e826e84452b9b104f61a4f81b8d1c18e15a929805e289ea119645be63"
+  },
+  "plan": {
+    "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24/primitive12-lock-storage-plan-qualified-continuation.json",
+    "sha256": "d82e07f3c7bd030ec35663ed932806d9a57aba03bc00404355f35c802aae121b"
+  },
+  "newChildStarted": false,
+  "independentReviewRequired": true
+}

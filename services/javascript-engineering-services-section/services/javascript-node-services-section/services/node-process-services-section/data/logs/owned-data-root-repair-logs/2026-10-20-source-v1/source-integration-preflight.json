@@ -1,0 +1,19 @@
+{
+  "repository": {
+    "id": 1425297553,
+    "full_name": "red-cup-engineering/node-process-services-section",
+    "private": false,
+    "default_branch": "main"
+  },
+  "currentMain": "9ea4f22f9e56fe67d936d629fae8033634903b7b",
+  "pulls": [],
+  "issues": [],
+  "workflows": [],
+  "branches": [
+    {
+      "name": "main",
+      "commit": "9ea4f22f9e56fe67d936d629fae8033634903b7b",
+      "protected": false
+    }
+  ]
+}

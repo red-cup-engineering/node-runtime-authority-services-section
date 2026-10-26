@@ -1,0 +1,41 @@
+{
+  "kind": "NativeCodeOwnerLockDerivation",
+  "command": {
+    "program": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+    "args": [
+      "/home/emsenn/.cache/561-group/lagoon-promote/runtimes/f3e4672231d2b37284388677d176e9b2cd899744/node_modules/.pnpm/pnpm@11.28.5/node_modules/pnpm/bin/pnpm.mjs",
+      "--dir",
+      "/var/tmp/engineering-abandoned-prs-20261020/packaging-github-intake/code23-source-bc494ee673f59fcdccc939a6102ae089fac1658b",
+      "--store-dir",
+      "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-primitive-lock/store",
+      "--cache-dir",
+      "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-lock/metadata",
+      "install",
+      "--lockfile-only",
+      "--ignore-scripts",
+      "--ignore-workspace",
+      "--reporter=append-only",
+      "--config.minimumReleaseAgeStrict=true",
+      "--config.minimumReleaseAgeExclude=@red-cup-engineering/git-source-reading-service@0.1.1"
+    ],
+    "cwd": "/var/tmp/engineering-abandoned-prs-20261020/packaging-github-intake/code23-source-bc494ee673f59fcdccc939a6102ae089fac1658b"
+  },
+  "result": {
+    "code": 0,
+    "signal": null
+  },
+  "managerEntrySHA256": "ff3224d46b47fbb24a7e9fe15fededef7e00892d07d4e376b6762d4899906bfd",
+  "manifestSHA256": "94452b29a16e32ecf8054aa5ba6d24baa0616fab3d18b35cc43f58003ac20576",
+  "lockSHA256": "750a5ad0e85f02011895eb6c7225b4b36c9264b4522bf7a04512dce2c76c195a",
+  "lockBytes": 49125,
+  "workspaceAdded": false,
+  "installationPerformed": false,
+  "qualifiedFreshSupplier": {
+    "integrity": "sha512-AtiBu9I5H+35nJPka4T0CClR7oJfZCPwpWlvScR2M95h/xLSa07FAgAhf47oSON7fRM5LKdfZJNpEf5f64U2vQ==",
+    "bytes": 23723,
+    "artifactDownloaded": true,
+    "name": "@red-cup-engineering/git-source-reading-service",
+    "version": "0.1.1",
+    "gitHead": "e121cc899cee60b65985eb840dff5b7255a22876"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "id": "inert",
+  "summary": "Native bounded resource receiving fixture",
+  "directory": ".",
+  "node": [
+    "--jitless",
+    "--max-old-space-size=16",
+    "--max-semi-space-size=2",
+    "inert.mjs"
+  ],
+  "maxSeconds": 10,
+  "demand": true,
+  "environment": {
+    "NODE_JOB_FLEET": "",
+    "NODE_JOB_NODE_ID": "bcf-resource-fixture",
+    "NODE_OPTIONS": "--jitless --max-old-space-size=16 --max-semi-space-size=2"
+  },
+  "resources": {
+    "memoryMaxBytes": 67108864,
+    "memoryHighBytes": 50331648,
+    "memorySwapMaxBytes": 0,
+    "tasksMax": 12,
+    "cpuQuotaPercent": 50,
+    "memoryReserveBytes": 33554432
+  }
+}

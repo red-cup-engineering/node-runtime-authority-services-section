@@ -1,0 +1,23 @@
+{
+  "kind": "ActualCodeFrozenYamlSupplierSourceReceiving",
+  "codeVersion": "0.14.24",
+  "codeRoot": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-frozen-recipient/consumer/node_modules/.pnpm/@red-cup-engineering+npm-workspace-publication-service@0.14.24/node_modules/@red-cup-engineering/npm-workspace-publication-service",
+  "provider": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-frozen-recipient/consumer/node_modules/.pnpm/yaml@2.9.0/node_modules/yaml",
+  "yamlVersion": "2.9.0",
+  "files": 233,
+  "bytes": 685953,
+  "allPayloadsMatchOriginalDeclaredInventory": true,
+  "originalIntegrity": "sha512-2AvhNX3mb8zd6Zy7INTtSpl1F15HW6Wnqj0srWlkKLcpYl/gMIMJiyuGq2KeI2YFxUPjdlB+3Lc10seMLtL4cA==",
+  "frozenConsumerLock": {
+    "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-frozen-recipient/consumer/pnpm-lock.yaml",
+    "sha256": "a9caa4caa8ab208171848235cc736ce52bae70c6f7bf45d820dbaecd7e19a0e5"
+  },
+  "futureDirectDeclarationRequired": true,
+  "closureDelta": {
+    "newDirectEdges": 1,
+    "newPackageVersions": 0,
+    "newTransitiveEdges": 0,
+    "newInstallationRequiredForSourceQualification": false
+  },
+  "sourceImplementationChanged": false
+}

@@ -1,0 +1,136 @@
+  }
+  if (pnpmConfig.sharedWorkspaceLockfile) {
+    if (cliOptions["shared-workspace-lockfile"]) {
+      throw new PnpmError("CONFIG_CONFLICT_SHARED_WORKSPACE_LOCKFILE_WITH_GLOBAL", 'Configuration conflict. "shared-workspace-lockfile" may not be used with "global"');
+    }
+    pnpmConfig.sharedWorkspaceLockfile = false;
+  }
+  if (pnpmConfig.lockfileDir) {
+    if (cliOptions["lockfile-dir"]) {
+      throw new PnpmError("CONFIG_CONFLICT_LOCKFILE_DIR_WITH_GLOBAL", 'Configuration conflict. "lockfile-dir" may not be used with "global"');
+    }
+    delete pnpmConfig.lockfileDir;
+  }
+}
+var init_globalInstall = __esm({
+  "../config/reader/lib/getConfig/globalInstall.js"() {
+    "use strict";
+    init_lib3();
+    init_checkGlobalBinDir();
+  }
+});
+
+// ../config/reader/lib/getConfig/ignoredPnpmFieldKeys.js
+function getIgnoredLockfilePnpmFieldKeys(manifest) {
+  return getIgnoredPnpmFieldKeys(manifest).filter((key) => LOCKFILE_RECORDED_PNPM_FIELD_KEYS.has(key));
+}
+function getIgnoredPnpmFieldKeys(manifest) {
+  const legacyField = manifest.pnpm;
+  if (legacyField == null || typeof legacyField !== "object" || Array.isArray(legacyField)) {
+    return [];
+  }
+  return Object.keys(legacyField).filter((k2) => MIGRATED_PNPM_FIELD_KEYS.has(k2));
+}
+var MIGRATED_PNPM_FIELD_KEYS, LOCKFILE_RECORDED_PNPM_FIELD_KEYS;
+var init_ignoredPnpmFieldKeys = __esm({
+  "../config/reader/lib/getConfig/ignoredPnpmFieldKeys.js"() {
+    "use strict";
+    MIGRATED_PNPM_FIELD_KEYS = /* @__PURE__ */ new Set([
+      "allowBuilds",
+      "allowedDeprecatedVersions",
+      "allowUnusedPatches",
+      "audit",
+      "auditConfig",
+      "configDependencies",
+      "executionEnv",
+      "ignoredOptionalDependencies",
+      "neverBuiltDependencies",
+      "onlyBuiltDependencies",
+      "onlyBuiltDependenciesFile",
+      "overrides",
+      "packageExtensions",
+      "patchedDependencies",
+      "peerDependencyRules",
+      "requiredScripts",
+      "supportedArchitectures",
+      "update",
+      "updateConfig"
+    ]);
+    LOCKFILE_RECORDED_PNPM_FIELD_KEYS = /* @__PURE__ */ new Set([
+      "ignoredOptionalDependencies",
+      "overrides",
+      "packageExtensions",
+      "patchedDependencies"
+    ]);
+  }
+});
+
+// ../config/reader/lib/getConfig/localSettings.js
+async function applyLocalSettings(state, { forSelfUpdate }) {
+  const { cliOptions, pnpmConfig, warnings } = state;
+  pnpmConfig.rootProjectManifest = await safeReadProjectManifestOnly(pnpmConfig.rootProjectManifestDir) ?? void 0;
+  if (pnpmConfig.rootProjectManifest != null) {
+    warnAboutRootProjectManifestFields(state, pnpmConfig.rootProjectManifest);
+  }
+  if (cliOptions["shared-workspace-lockfile"] != null && !pnpmConfig.workspaceDir && !cliOptions["global"]) {
+    warnings.push('The "shared-workspace-lockfile" option was ignored because no "pnpm-workspace.yaml" was found.');
+  }
+  await readEnginePinManifest(state);
+  if (pnpmConfig.workspaceDir != null) {
+    return applyProjectWorkspaceManifest(state, { forSelfUpdate, workspaceDir: pnpmConfig.workspaceDir });
+  }
+  if (cliOptions["global"]) {
+    return applyGlobalPackageDirWorkspaceManifest(state);
+  }
+  return void 0;
+}
+function warnAboutRootProjectManifestFields({ pnpmConfig, warnings }, rootProjectManifest) {
+  if (rootProjectManifest.workspaces?.length && !pnpmConfig.workspaceDir) {
+    warnings.push('The "workspaces" field in package.json is not supported by pnpm. Create a "pnpm-workspace.yaml" file instead.');
+  }
+  const ignoredPnpmFieldKeys = getIgnoredPnpmFieldKeys(rootProjectManifest);
+  if (ignoredPnpmFieldKeys.length > 0) {
+    warnings.push(`The "pnpm" field in package.json is no longer read by pnpm. The following keys were ignored: ${quoteAndJoin(ignoredPnpmFieldKeys.map((k2) => `pnpm.${k2}`))}. See https://pnpm.io/settings for the new home of each setting.`);
+  }
+}
+async function readEnginePinManifest({ pnpmConfig, warnings }) {
+  const enginePinManifestDir = pnpmConfig.workspaceDir ?? pnpmConfig.dir;
+  pnpmConfig.enginePinManifest = enginePinManifestDir === pnpmConfig.rootProjectManifestDir ? pnpmConfig.rootProjectManifest : await safeReadProjectManifestOnly(enginePinManifestDir) ?? void 0;
+  if (pnpmConfig.enginePinManifest == null)
+    return;
+  const wantedPmResult = getWantedPackageManager(pnpmConfig.enginePinManifest);
+  if (wantedPmResult.pm) {
+    pnpmConfig.wantedPackageManager = wantedPmResult.pm;
+  }
+  warnings.push(...wantedPmResult.warnings);
+}
+async function applyProjectWorkspaceManifest(state, { forSelfUpdate, workspaceDir }) {
+  const { cliOptions, pnpmConfig } = state;
+  const workspaceManifest = await readWorkspaceManifest(workspaceDir);
+  pnpmConfig.workspacePackagePatterns = cliOptions["workspace-packages"] ?? workspaceManifest?.packages ?? ["."];
+  if (!workspaceManifest)
+    return void 0;
+  warnAboutDroppedWorkspaceManifestKeys(state.warnings, workspaceManifest);
+  addSettingsFromWorkspaceManifestToConfig(pnpmConfig, {
+    configFromCliOpts: state.configFromCliOpts,
+    projectManifest: pnpmConfig.rootProjectManifest,
+    skipSettings: forSelfUpdate ? /* @__PURE__ */ new Set([...PROJECT_MANIFEST_SKIPPED_KEYS, ...SELF_UPDATE_SKIPPED_SETTINGS]) : PROJECT_MANIFEST_SKIPPED_KEYS,
+    workspaceDir,
+    workspaceManifest
+  });
+  return getRegistriesDeclaredByWorkspaceManifest(state, workspaceManifest);
+}
+async function applyGlobalPackageDirWorkspaceManifest(state) {
+  const { pnpmConfig } = state;
+  const workspaceManifest = await readWorkspaceManifest(pnpmConfig.globalPkgDir);
+  if (!workspaceManifest)
+    return void 0;
+  addSettingsFromWorkspaceManifestToConfig(pnpmConfig, {
+    configFromCliOpts: state.configFromCliOpts,
+    projectManifest: pnpmConfig.rootProjectManifest,
+    workspaceDir: pnpmConfig.globalPkgDir,
+    workspaceManifest
+  });
+  return getRegistriesDeclaredByWorkspaceManifest(state, workspaceManifest);
+}
+function getRegistriesDeclaredByWorkspaceManifest({ pnpmConfig }, workspaceManifest) {

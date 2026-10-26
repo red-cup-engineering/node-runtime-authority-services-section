@@ -1,0 +1,79 @@
+[
+  {
+    "path": "package.json",
+    "sourceSHA256": "94452b29a16e32ecf8054aa5ba6d24baa0616fab3d18b35cc43f58003ac20576",
+    "proposedSHA256": "fe97c87dffa3b06a732acedd7bf217ee3e2de97be2be7bd8121c1d12a010ac74",
+    "bytes": 6876,
+    "gitMode": "100644"
+  },
+  {
+    "path": "pnpm-lock.yaml",
+    "sourceSHA256": "750a5ad0e85f02011895eb6c7225b4b36c9264b4522bf7a04512dce2c76c195a",
+    "proposedSHA256": "508a3ba0961167af9a5f55692542e32e91c154af21fb1e488161f709f713895c",
+    "bytes": 49125,
+    "gitMode": "100644"
+  },
+  {
+    "path": "README.md",
+    "sourceSHA256": "926dd8095280a61dc8baf587bd4cf1bde84bf30d83758469fcd3c9ba0b3a947a",
+    "proposedSHA256": "dd25bc5a1d5a971f4fab4aa738ab60bdc663dc983e53a1f09b41762c500dcab9",
+    "bytes": 42785,
+    "gitMode": "100644"
+  },
+  {
+    "path": "scripts/receive-packed-registry-artifact.mjs",
+    "sourceSHA256": "a510811870865509917951355347986cdf37e94c8856707142b2d91b92cc3aa2",
+    "proposedSHA256": "3380c9dc80810a67a774212d4c154f21b7ca35898f6664f88525d7bb48d0c2d8",
+    "bytes": 7431,
+    "gitMode": "100755"
+  },
+  {
+    "path": "specifications/artifact-member-receiving.md",
+    "sourceSHA256": "a91e7e20e03e30acd72733bd9a7de8c241436d4d567f4695daa7785151d2c79a",
+    "proposedSHA256": "95844349a636f5d0004875b8a9020f52c241f5e53fc002b9f04a359970623723",
+    "bytes": 17309,
+    "gitMode": "100644"
+  },
+  {
+    "path": "src/artifact-member-receiving.mjs",
+    "sourceSHA256": "e8dda407055d72dc017318ca68a4aaff4bf8d5409625e0ad806a7e0583c22d47",
+    "proposedSHA256": "0358984f32e1054625f88e9fdfd79718ad57e1265b74aa9bef8e0e8c5be05b11",
+    "bytes": 28814,
+    "gitMode": "100644"
+  },
+  {
+    "path": "src/artifact-release.mjs",
+    "sourceSHA256": "c5cd534d769ad327ae28a3b6cdabcb91e467b5ed8da641311a97d3f9af29c710",
+    "proposedSHA256": "1750e450991fa55f425844832ea2f3bcb4b88ddd6384b90efff104957218bce6",
+    "bytes": 22297,
+    "gitMode": "100644"
+  },
+  {
+    "path": "src/publication-carrier-manifest.mjs",
+    "sourceSHA256": "413263aa3c73b02a98abfac6928d58d7f0423e538a9997e4c074b17ae34e8102",
+    "proposedSHA256": "aabd5754ac18bdf8be5e306fcf617708055a8b2ec70a6860f7044cdaaaa37e7d",
+    "bytes": 2618,
+    "gitMode": "100644"
+  },
+  {
+    "path": "test/artifact-member-receiving.test.mjs",
+    "sourceSHA256": "f82371ba91b9a94d69b40a7838dcd551bb96dcffb32edba5b0b199ba81e7617a",
+    "proposedSHA256": "24bc788822fed72459709182c19efcc4a605ce1aa796f44028b5258b2c3f122e",
+    "bytes": 25042,
+    "gitMode": "100644"
+  },
+  {
+    "path": "test/artifact-native-receiving.test.mjs",
+    "sourceSHA256": "4e654c149125a9b8b84affade3793a884fdeee2d02fc553ef2efd93b4f2a0058",
+    "proposedSHA256": "288684991be9092d7b558e61bad6fdc87c12703c0edc6ab067f5f35b9a8b2d1c",
+    "bytes": 22779,
+    "gitMode": "100644"
+  },
+  {
+    "path": "test/artifact-release.test.mjs",
+    "sourceSHA256": "3f98b18a2b151616534d9a4828f1f710ac4dff176d0d605d01461ae30c03e36d",
+    "proposedSHA256": "4fe6f19613b513b603c89094e33907b99ef5980e9c83aba4f556d4986434a5e7",
+    "bytes": 1954,
+    "gitMode": "100644"
+  }
+]

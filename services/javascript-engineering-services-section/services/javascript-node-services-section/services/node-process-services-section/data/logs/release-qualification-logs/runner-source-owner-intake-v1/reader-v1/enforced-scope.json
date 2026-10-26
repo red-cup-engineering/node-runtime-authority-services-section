@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-21T00:54:39.196Z",
+  "unit": "node-process-runner-owner-source-intake-v1.scope",
+  "group": "/user.slice/user-1000.slice/user@1000.service/app.slice/node-process-runner-owner-source-intake-v1.scope",
+  "memoryMax": "2147483648",
+  "cpuMax": "100000 100000",
+  "runtimeMax": "3min",
+  "commandSha256": "403554d255d302d76ca2106ccde5ea09a0846ab461ed85b996271b787b038201"
+}

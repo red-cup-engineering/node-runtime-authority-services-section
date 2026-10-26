@@ -1,0 +1,39 @@
+✔ projects a successful canonical command result to a successful lifecycle (6.133018ms)
+✔ projects a failed canonical command result to a failed lifecycle (0.601972ms)
+✔ processDataRootConfig accepts an apps/<name> package directory inside a checkout (4.972421ms)
+✔ processDataRootConfig accepts a *-services-section directory inside a checkout (2.541225ms)
+✔ processDataRootConfig refuses the checkout root itself (4.056572ms)
+✔ processDataRootConfig refuses <checkout root>/data (2.208183ms)
+✔ processDataRootConfig refuses a checkout directory that is neither a services-section nor an apps/<name> package (2.71658ms)
+✖ processDataRootConfig accepts any shape outside a checkout (e.g. a /tmp test fixture) (1.674124ms)
+✔ processDataRootConfig rejects a relative defaultRoot rather than resolving it against cwd (0.344001ms)
+✔ a script run by its real path is the entry; a module it imports is not (80.038161ms)
+✔ a script run through a symlinked package directory under node_modules is the entry (95.480993ms)
+✔ a script run under a symlinked top-level directory is the entry (101.610332ms)
+✔ a missing, empty or unresolvable argv[1] answers false and never throws (51.795184ms)
+✔ an explicit argv slot naming this file answers true, and the older name agrees (1.154377ms)
+✔ puts the running Node.js first on PATH once and keeps the rest of the environment (0.699353ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 14
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 737.177283
+
+✖ failing tests:
+
+test at test/config.test.mjs:82:1
+✖ processDataRootConfig accepts any shape outside a checkout (e.g. a /tmp test fixture) (1.674124ms)
+  Error: process data root from default (/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/baseline-native/fixtures/metroplat-data-root-config-outside-W6xhxh) is not a *-services-section or apps/<name> package directory inside the checkout (/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section); refusing to create /home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/baseline-native/fixtures/metroplat-data-root-config-outside-W6xhxh/data
+      at refuseCheckoutDataRoot (file:///home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/candidate/src/config.mjs:166:15)
+      at processDataRootConfig (file:///home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/candidate/src/config.mjs:66:5)
+      at configFor (file:///home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/candidate/test/config.test.mjs:18:10)
+      at TestContext.<anonymous> (file:///home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/candidate/test/config.test.mjs:85:20)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7)

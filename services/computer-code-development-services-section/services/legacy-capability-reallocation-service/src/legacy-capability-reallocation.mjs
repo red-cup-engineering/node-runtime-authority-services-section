@@ -1,11 +1,13 @@
 import { execFileSync } from "node:child_process";
 import { createHash } from "node:crypto";
-import { existsSync, lstatSync, mkdirSync, readFileSync, readdirSync, renameSync, rmSync, writeFileSync } from "node:fs";
-import { basename, dirname, relative, resolve, sep } from "node:path";
+import { closeSync, constants, existsSync, fstatSync, lstatSync, mkdirSync, openSync, readFileSync, readSync, readdirSync, realpathSync, renameSync, rmSync, writeFileSync } from "node:fs";
+import { basename, dirname, isAbsolute, relative, resolve, sep } from "node:path";
+import { inventoryTrackedLegacyCapabilities as trackedInventory } from "./tracked-legacy-retirement.mjs";
+import { createReceivedOwnerSourceReader } from "./received-owner-source.mjs";
 
 const IGNORED_DIRECTORIES = new Set([".git", ".hg", ".svn", "node_modules", ".venv", "venv", "__pycache__", ".pytest_cache", ".mypy_cache", "dist", "build", "coverage"]);
-const TEXT_EXTENSIONS = new Set([".c", ".cc", ".cpp", ".cs", ".css", ".go", ".h", ".hpp", ".html", ".java", ".js", ".json", ".jsonl", ".jsx", ".md", ".mjs", ".org", ".py", ".rb", ".rs", ".rst", ".sh", ".sql", ".tex", ".toml", ".ts", ".tsx", ".txt", ".yaml", ".yml"]);
-const CODE_EXTENSIONS = new Set([".c", ".cc", ".cpp", ".cs", ".go", ".h", ".hpp", ".java", ".js", ".jsx", ".mjs", ".py", ".rb", ".rs", ".sh", ".ts", ".tsx"]);
+const TEXT_EXTENSIONS = new Set([".c", ".cc", ".cpp", ".cs", ".css", ".go", ".h", ".hpp", ".html", ".java", ".js", ".json", ".jsonl", ".jsx", ".md", ".mjs", ".org", ".py", ".rb", ".rs", ".rst", ".sh", ".sql", ".tex", ".toml", ".ts", ".tsx", ".mts", ".el", ".rkt", ".scm", ".lean", ".txt", ".yaml", ".yml"]);
+const CODE_EXTENSIONS = new Set([".c", ".cc", ".cpp", ".cs", ".go", ".h", ".hpp", ".java", ".js", ".jsx", ".mjs", ".py", ".rb", ".rs", ".sh", ".ts", ".tsx", ".mts", ".el", ".rkt", ".scm", ".lean"]);
 const MARKDOWN_HOME = "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/services/computer-content-engineering-services-section/services/typed-computer-content-engineering-services-section/services/computer-text-data-services-section/services/markdown-engineering-services-section";
 const SIGNCELL_HOME = "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section/src/signcell";
 const DATA_HOME = "lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-data-engineering-services-section";
@@ -101,11 +103,9 @@ function candidateHomes(recordSignals, extension) {
   return freeze([...new Map(homes.map((home) => [home.destination, home])).values()]);
 }
 
-function recordFor(root, file) {
-  const relativePath = slash(relative(root, file));
+function recordFromBytes(relativePath, bytes) {
   const extension = extensionOf(relativePath);
-  const bytes = readFileSync(file);
-  const text = textOf(file);
+  const text = TEXT_EXTENSIONS.has(extension) ? bytes.toString("utf8") : null;
   const recordSignals = signals(relativePath, text);
   return freeze({
     id: `legacy-source:${relativePath}:${hash(bytes).slice(0, 16)}`,
@@ -115,6 +115,91 @@ function recordFor(root, file) {
     signals: recordSignals,
     candidateHomes: candidateHomes(recordSignals, extension)
   });
+}
+
+function recordFor(root, file) {
+  return recordFromBytes(slash(relative(root, file)), readFileSync(file));
+}
+
+function directExportNames(bytes) {
+  return unique([...bytes.toString("utf8").matchAll(/^\s*export\s+(?:async\s+)?(?:function|class|const|let|var)\s+([A-Za-z_$][A-Za-z0-9_$]*)/gmu)].map(match => match[1]));
+}
+
+function boundedOwnerBytes(file, limit) {
+  const fd = openSync(file, constants.O_RDONLY | constants.O_NOFOLLOW | constants.O_NONBLOCK);
+  try {
+    const before = fstatSync(fd, { bigint: true });
+    if (!before.isFile() || before.size > BigInt(limit)) throw new TypeError("owner must be a regular file within byte limits");
+    const bytes = Buffer.alloc(Number(before.size) + 1);
+    let size = 0, count;
+    while (size < bytes.length && (count = readSync(fd, bytes, size, bytes.length - size, null)) > 0) size += count;
+    const after = fstatSync(fd, { bigint: true }), named = lstatSync(file, { bigint: true });
+    if (size !== Number(before.size) || after.size !== before.size || after.mtimeNs !== before.mtimeNs || after.ctimeNs !== before.ctimeNs || !named.isFile() || named.ino !== before.ino || named.dev !== before.dev || realpathSync(file) !== file) throw new TypeError("owner changed during observation");
+    return bytes.subarray(0, size);
+  } finally { closeSync(fd); }
+}
+
+/** Compare selected committed sources with named living modules; matches are hints, never coverage or deletion authority. */
+export function observeTrackedLegacyOwnerCandidates({ repositoryRoot, legacyRoot, revision, sourcePaths, owners, maximumFileBytes = 262_144, maximumTotalBytes = 8_388_608 } = {}) {
+  if (!Array.isArray(sourcePaths) || sourcePaths.length === 0 || sourcePaths.length > 64 || new Set(sourcePaths).size !== sourcePaths.length) throw new TypeError("one to 64 unique selected source paths required");
+  if (!Array.isArray(owners) || owners.length === 0 || owners.length > 64) throw new TypeError("one to 64 explicitly named owner modules required");
+  if (![maximumFileBytes, maximumTotalBytes].every(n => Number.isSafeInteger(n) && n > 0) || maximumFileBytes > 1_048_576 || maximumTotalBytes > 16_777_216) throw new TypeError("bounded positive byte limits required");
+  const inventory = trackedInventory({ repositoryRoot, legacyRoot, revision });
+  if (revision !== inventory.revision) throw new TypeError("an immutable commit revision is required");
+  const byPath = new Map(inventory.entries.map(entry => [entry.path, entry]));
+  const selected = sourcePaths.map(path => {
+    const entry = byPath.get(path);
+    if (!entry || entry.type !== "blob" || !["100644", "100755"].includes(entry.mode)) throw new TypeError("selected source must be a committed regular blob: " + path);
+    return entry;
+  });
+  const seen = new Set(), roots = new Map(), directories = new Map();
+  const namedOwners = owners.map(owner => {
+    if (!owner || typeof owner.repositoryRoot !== "string" || !isAbsolute(owner.repositoryRoot) || typeof owner.path !== "string" || isAbsolute(owner.path) || owner.path.includes("\0") || owner.path.split("/").some(part => !part || [".", "..", "legacy"].includes(part))) throw new TypeError("a confined non-legacy owner module is required");
+    const root = resolve(owner.repositoryRoot), file = resolve(root, owner.path);
+    if (!roots.has(root)) roots.set(root, execFileSync("git", ["-C", root, "rev-parse", "--show-toplevel"], { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }).trim());
+    const actual = roots.get(root);
+    if (root !== actual || realpathSync(file) !== file) throw new TypeError("owner must use its actual Git root and no linked path");
+    if (!directories.has(dirname(file))) directories.set(dirname(file), execFileSync("git", ["-C", dirname(file), "rev-parse", "--show-toplevel"], { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }).trim());
+    const actualFileOwner = directories.get(dirname(file));
+    const key = JSON.stringify([file, owner.receivedSource?.owner ?? null, owner.receivedSource?.path ?? null]);
+    if (actualFileOwner !== root || seen.has(key)) throw new TypeError("owner module is duplicated or belongs to a different Git owner");
+    seen.add(key);
+    return { repositoryRoot: root, path: owner.path, ...(owner.receivedSource === undefined ? {} : { receivedSource: owner.receivedSource }), file };
+  });
+  let remaining = maximumTotalBytes;
+  const receipts = new Map();
+  const observedOwners = namedOwners.map(({ file, ...owner }) => {
+    let bytes, receipt;
+    if (owner.receivedSource === undefined) {
+      bytes = boundedOwnerBytes(file, Math.min(maximumFileBytes, remaining));
+      remaining -= bytes.length;
+    } else {
+      if (!receipts.has(file)) {
+        const held = boundedOwnerBytes(file, remaining);
+        remaining -= held.length;
+        receipts.set(file, { held, read: createReceivedOwnerSourceReader(held) });
+      }
+      const { held, read } = receipts.get(file), source = read(owner.receivedSource, maximumFileBytes);
+      bytes = source.bytes;
+      receipt = freeze({ sha256: hash(held), bytes: held.length, source: freeze(source.identity), reviewRequired: true });
+    }
+    return freeze({ ...owner, ...(receipt ? { receipt } : {}), ...recordFromBytes(owner.receivedSource?.path ?? owner.path, bytes), directExports: directExportNames(bytes) });
+  });
+  const records = selected.map(entry => {
+    const size = Number(execFileSync("git", ["-C", inventory.repositoryRoot, "cat-file", "-s", entry.blob], { encoding: "utf8", stdio: ["ignore", "pipe", "pipe"] }).trim());
+    if (!Number.isSafeInteger(size) || size < 0 || size > Math.min(maximumFileBytes, remaining)) throw new TypeError("selected source exceeds byte limits: " + entry.path);
+    const bytes = execFileSync("git", ["-C", inventory.repositoryRoot, "cat-file", "blob", entry.blob], { maxBuffer: Math.max(1, size + 1), stdio: ["ignore", "pipe", "pipe"] });
+    if (bytes.length !== size) throw new TypeError("committed blob size changed");
+    remaining -= bytes.length;
+    const record = recordFromBytes(entry.path, bytes);
+    const exported = directExportNames(bytes);
+    const candidates = observedOwners.flatMap((owner, index) => {
+      const names = new Set(owner.directExports), sharedSymbols = exported.filter(name => names.has(name));
+      return sharedSymbols.length === 0 ? [] : [freeze({ owner: index, sharedSymbols })];
+    });
+    return freeze({ ...record, directExports: exported, blob: entry.blob, mode: entry.mode, candidates: freeze(candidates), reviewRequired: true });
+  });
+  return freeze({ kind: "tracked-legacy-owner-candidates/v1", repositoryRoot: inventory.repositoryRoot, legacyRoot, revision, bytesRead: maximumTotalBytes - remaining, retirementAuthorized: false, owners: freeze(observedOwners), records: freeze(records) });
 }
 
 /** Inventory every regular source carrier beneath a legacy root. Nothing is silently counted as migrated. */
@@ -505,3 +590,8 @@ export function applyLegacyCapabilityAllocations({ ledgerPath, declarationsPath 
   writeFileSync(ledgerPath, stable({ ...ledger, capabilities: applied }));
   return freeze({ ledgerPath: resolve(ledgerPath), applied: declared.size, retained: retained.length, sourceEvidence: knownSources.size });
 }
+
+export {inventoryTrackedLegacyCapabilities, readTrackedLegacyRetirementPlan, retireTrackedLegacyCapabilities, commitTrackedLegacyRetirement, publishTrackedLegacyRetirement, prepareTrackedLegacyRecordPublication, publishTrackedLegacyRecords} from "./tracked-legacy-retirement.mjs";
+export {composeTrackedLegacyRetirementBatch, prepareTrackedLegacyRetirementBatch} from "./tracked-legacy-batch.mjs";
+export {prepareTrackedLegacySourcePublication} from "./tracked-legacy-source-publication.mjs";
+export {receivePinnedLegacyOwnerEvidence} from "./pinned-legacy-owner-evidence.mjs";

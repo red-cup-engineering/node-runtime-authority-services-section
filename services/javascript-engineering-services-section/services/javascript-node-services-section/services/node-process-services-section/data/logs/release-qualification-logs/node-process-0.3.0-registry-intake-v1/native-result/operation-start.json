@@ -1,0 +1,17 @@
+{
+  "at": "2026-10-21T00:48:48.398Z",
+  "unit": "node-process-030-original-registry-intake-v1.scope",
+  "sourceCommit": "23113a67473de9784fdea1d1d45757fc0dd1569b",
+  "inputsSHA256": "08664c23768bfcd4ed103b5637163f096b2e44b6755c5d9c2da6e8a9461b9428",
+  "credential": false,
+  "queries": [
+    {
+      "name": "@red-cup-engineering/node-process-services-section",
+      "version": "0.3.0"
+    },
+    {
+      "name": "@red-cup-engineering/jsnode-package-services-section",
+      "version": "0.2.4"
+    }
+  ]
+}

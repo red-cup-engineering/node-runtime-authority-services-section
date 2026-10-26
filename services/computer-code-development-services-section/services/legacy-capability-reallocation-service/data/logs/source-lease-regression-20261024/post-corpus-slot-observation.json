@@ -1,0 +1,49 @@
+{
+  "at": "2026-10-25T03:24:16.820217+00:00",
+  "lock": "/run/user/1000/agent-heavy.lock",
+  "inode": 545,
+  "observations": [
+    {
+      "pid": 1808085,
+      "waiting": false
+    },
+    {
+      "pid": 1845682,
+      "waiting": true
+    },
+    {
+      "pid": 1850616,
+      "waiting": true
+    },
+    {
+      "pid": 1854032,
+      "waiting": true
+    },
+    {
+      "pid": 1854189,
+      "waiting": true
+    },
+    {
+      "pid": 1859670,
+      "waiting": true
+    },
+    {
+      "pid": 1860135,
+      "waiting": true
+    },
+    {
+      "pid": 1860598,
+      "waiting": true
+    },
+    {
+      "pid": 1861588,
+      "waiting": true
+    },
+    {
+      "pid": 1862310,
+      "waiting": true
+    }
+  ],
+  "free": false,
+  "newWaiterStarted": false
+}

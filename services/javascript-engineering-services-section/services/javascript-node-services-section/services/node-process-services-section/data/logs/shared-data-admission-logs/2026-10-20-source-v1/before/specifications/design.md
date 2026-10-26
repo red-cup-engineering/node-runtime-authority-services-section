@@ -1,0 +1,9 @@
+# Process data-root design
+
+Keep the existing synchronous CLI resolution and immutable `{ dataRoot, source, configPath? }` result. Resolve all input precedence first, then validate the selected owner before returning it to a writer. Keep config reads read-only, including when an executable default is overridden by an actual section.
+
+Replace the nearest-`.git` policy. It rejected a section's own checkout, while unconditionally admitting arbitrary roots outside any checkout, including home state. Ownership is independent of checkout markers. Require a `*-services-section` leaf; walk only the selected absolute path's ancestors with `lstat`, requiring real directories; refuse `.local`, `node_modules` and `/gnu/store`. Inspect only the owner's immediate `data` entry when present and reject symlink or non-directory backing. Do not scan a checkout, create directories, resolve owners by searching, inspect Git history or change configuration.
+
+An app directory remains usable as executable/config input when its existing explicit data-root selection supplies the real section. App-owned runtime data is intentionally refused under the corrected requirement. There is no compatibility link or alternative home-storage fallback. Existing consumers with executable-root defaults require their normal explicit owner binding before this release can be activated.
+
+Receive the existing independent command, environment and entrypoint test families; exercise standalone section checkouts/worktrees, nested and unmarked sections, installed-code override, path redirection, absent/invalid owners, actual forbidden home selection without writing there, and configuration precedence/refusals. Retain original test failures and source-only limitations separately from consumer uptake. No supplier installation or full deployment proof follows from these tests.

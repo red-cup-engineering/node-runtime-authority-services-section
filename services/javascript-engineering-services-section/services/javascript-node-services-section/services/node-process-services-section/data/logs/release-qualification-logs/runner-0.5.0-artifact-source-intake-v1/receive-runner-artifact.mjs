@@ -1,0 +1,16 @@
+import assert from 'node:assert/strict';
+import {readFileSync,lstatSync,realpathSync,mkdirSync,openSync,writeFileSync,fsyncSync,closeSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {pathToFileURL} from 'node:url';
+const hash=b=>createHash('sha256').update(b).digest('hex'),[input,expected]=process.argv.slice(2),raw=readFileSync(input);assert.equal(hash(raw),expected);const c=JSON.parse(raw);
+for(const p of c.ancestors){const s=lstatSync(p);assert(s.isDirectory()&&!s.isSymbolicLink());assert.equal(realpathSync(p),p);}
+for(const [p,h]of Object.entries(c.files)){assert(lstatSync(p).isFile()&&!lstatSync(p).isSymbolicLink());assert.equal(hash(readFileSync(p)),h,p);}
+const group=readFileSync('/proc/self/cgroup','utf8').trim().slice(3);assert(group.endsWith('/'+c.unit));assert.equal(readFileSync('/sys/fs/cgroup'+group+'/memory.max','utf8').trim(),'2147483648');assert(!process.env.NODE_AUTH_TOKEN);mkdirSync(c.workDirectory,{mode:0o700});
+const save=(name,x)=>{const fd=openSync(c.workDirectory+'/'+name,'wx',0o600);try{writeFileSync(fd,JSON.stringify(x,null,2)+'\n');fsyncSync(fd);}finally{closeSync(fd);}};save('operation-start.json',{at:new Date().toISOString(),unit:c.unit,inputSHA256:expected,credential:false});
+try{
+ const api=await import(pathToFileURL(c.registryModule).href),gh=await import(pathToFileURL(c.githubModule).href),client=gh.createClient({token:null,budgetFloor:10,secondaryRetries:0});const outputs=[];
+ for(let i=0;i<c.queries.length;i++){const q=c.queries[i];save(i+'-metadata-start.json',{at:new Date().toISOString(),...q});const result=await api.readRegistryPackageVersion(c.registry,q.name,q.version);save(i+'-metadata-result.json',result);if(result.found){const m=result.manifest;const tar=await api.receiveRegistryTarball({registry:c.registry,tarball:m.dist.tarball,integrity:m.dist.integrity,destination:c.workDirectory+'/'+i+'.tgz'});save(i+'-archive-result.json',tar);}outputs.push({name:q.name,version:q.version,found:result.found,reachable:result.reachable});}
+ const rows=[];
+ for(let i=0;i<c.sourceFiles.length;i++){const z=c.sourceFiles[i],blob=await client.request('GET','/repos/'+c.repository+'/git/blobs/'+z.sha);assert.equal(blob.encoding,'base64');const b=Buffer.from(blob.content,'base64');assert.equal(createHash('sha1').update(Buffer.concat([Buffer.from('blob '+b.length+'\0'),b])).digest('hex'),z.sha);assert(b.length<=524288);const fd=openSync(c.workDirectory+'/source-'+i,'wx',0o600);writeFileSync(fd,b);fsyncSync(fd);closeSync(fd);rows.push({path:z.path,gitBlob:z.sha,mode:z.mode,sha256:hash(b),bytes:b.length,file:'source-'+i});}
+ save('selected-source.json',{repository:c.repository,commit:c.commit,tree:c.tree,rows});save('terminal.json',{at:new Date().toISOString(),status:0,queries:outputs,sourceFiles:rows.length,scope:'Exact runner artifact/source controls intake; no native install, test execution, source mutation or publication'});console.log(JSON.stringify({status:0,queries:outputs,sourceFiles:rows.length}));
+}catch(e){save('terminal.json',{at:new Date().toISOString(),status:1,error:{name:e.name,code:e.code??null,status:e.status??null,message:e.message}});console.error(JSON.stringify({name:e.name,code:e.code??null,status:e.status??null,message:e.message}));process.exitCode=1;}

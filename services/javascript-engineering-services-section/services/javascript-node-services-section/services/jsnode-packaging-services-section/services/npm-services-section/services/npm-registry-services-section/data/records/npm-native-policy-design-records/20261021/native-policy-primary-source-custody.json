@@ -1,0 +1,69 @@
+{
+  "kind": "ActualInstalledNativePolicyDesignIntake",
+  "Code": "0.14.24",
+  "PNPM": "11.28.5",
+  "sources": [
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-frozen-recipient/consumer/node_modules/.pnpm/@red-cup-engineering+npm-workspace-publication-service@0.14.24/node_modules/@red-cup-engineering/npm-workspace-publication-service/src/source-registry-closure.mjs",
+      "sha256": "a358064e1c7a726441dc37ecbe2836721ca1b0a0eb077b169fc3dc1d8d30ace8",
+      "capture": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-native-policy-intake-logs/20261021/actual-code-0.14.24-source-registry-closure.raw"
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-frozen-recipient/consumer/node_modules/.pnpm/@red-cup-engineering+npm-workspace-publication-service@0.14.24/node_modules/@red-cup-engineering/npm-workspace-publication-service/src/produce-registry-runtime.mjs",
+      "sha256": "d27fd0b952a25063308f7610db9e6b4facbfb13503a98e115af9510c2a12d3dd",
+      "capture": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-native-policy-intake-logs/20261021/actual-code-0.14.24-produce-registry-runtime.raw"
+    },
+    {
+      "path": "/home/emsenn/.cache/561-group/lagoon-promote/runtimes/f3e4672231d2b37284388677d176e9b2cd899744/node_modules/.pnpm/pnpm@11.28.5/node_modules/pnpm/package.json",
+      "sha256": "2dd7bab34254562873ed6a748748f7259b727b143c2f8cca9966069cfdcae800",
+      "capture": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-native-policy-intake-logs/20261021/actual-pnpm-11.28.5-manifest.raw"
+    },
+    {
+      "path": "/home/emsenn/.cache/561-group/lagoon-promote/runtimes/f3e4672231d2b37284388677d176e9b2cd899744/node_modules/.pnpm/pnpm@11.28.5/node_modules/pnpm/dist/pnpm.mjs",
+      "sha256": "e3738fda08262f74611d7a1ffc11b3e87fa52b466c07eb73211d179ebcb98810",
+      "bytes": 15896609,
+      "selectedRanges": [
+        [
+          176765,
+          176850
+        ],
+        [
+          178906,
+          178976
+        ],
+        [
+          179115,
+          179225
+        ],
+        [
+          183008,
+          183130
+        ],
+        [
+          304817,
+          304850
+        ],
+        [
+          305207,
+          305252
+        ],
+        [
+          368281,
+          368354
+        ],
+        [
+          368924,
+          368977
+        ],
+        [
+          369350,
+          369417
+        ]
+      ]
+    }
+  ],
+  "nativeConfigurationCommandsExecuted": false,
+  "testsRun": false,
+  "sourceBindingsChanged": false,
+  "PR24SourceChanged": false
+}

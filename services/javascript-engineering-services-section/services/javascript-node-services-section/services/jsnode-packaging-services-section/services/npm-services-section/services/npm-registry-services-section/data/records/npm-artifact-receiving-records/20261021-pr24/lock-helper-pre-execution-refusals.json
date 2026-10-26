@@ -1,0 +1,19 @@
+{
+  "kind": "OwnedHelperPreExecutionFailureReconciliation",
+  "failures": [
+    {
+      "error": "MODULE_NOT_FOUND",
+      "cause": "Task invocation used owner-relative helper path from short host cwd",
+      "stageAdmitted": false,
+      "childStarted": false
+    },
+    {
+      "error": "SyntaxError: Unexpected token ']'",
+      "cause": "Task adaptation emitted double closing bracket in literal guard list",
+      "stageAdmitted": false,
+      "childStarted": false
+    }
+  ],
+  "correction": "Use absolute owner helper and source-reviewed single guard-array terminator; native syntax preflight before any future admission. No planned source or provider changed.",
+  "physicalStageHeld": true
+}

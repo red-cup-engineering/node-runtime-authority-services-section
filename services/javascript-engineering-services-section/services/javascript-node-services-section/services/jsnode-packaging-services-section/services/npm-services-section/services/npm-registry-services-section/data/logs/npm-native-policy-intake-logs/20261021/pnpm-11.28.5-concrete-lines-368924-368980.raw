@@ -1,0 +1,57 @@
+var import_semver101, VersionSwitchFail;
+var init_switchCliVersion = __esm({
+  "lib/switchCliVersion.js"() {
+    "use strict";
+    init_lib();
+    init_lib79();
+    init_lib177();
+    init_lib3();
+    init_lib142();
+    init_lib103();
+    init_lib4();
+    init_lib92();
+    import_semver101 = __toESM(require_semver2(), 1);
+    init_exit();
+    init_packageManagerLockfile();
+    init_syncEnvLockfile();
+    VersionSwitchFail = class extends PnpmError {
+      constructor(version2, wantedPnpmBinDir, cause) {
+        super("VERSION_SWITCH_FAIL", `Failed to switch pnpm to v${version2}. Looks like pnpm CLI is missing at "${wantedPnpmBinDir}" or is incorrect`, { hint: isError(cause) ? cause?.message : void 0 });
+        if (cause != null) {
+          this.cause = cause;
+        }
+      }
+    };
+  }
+});
+
+// lib/packageManagerCheck.js
+async function handlePackageManagerAndRuntimes(opts3) {
+  const { cmd, cliOptions, config: config2, context, rejectUnknownOptions } = opts3;
+  const pm2 = context.wantedPackageManager;
+  if (pm2 != null) {
+    if (pm2.onFail !== "ignore") {
+      await handleWantedPackageManager(pm2, opts3);
+    }
+  } else if (cmd === "fetch" && !isExecutedByCorepack() && !rejectUnknownOptions) {
+    await fetchLockedPackageManager(config2, context);
+  }
+  if (cmd != null && !cliOptions.global && !rejectUnknownOptions) {
+    for (const runtime of getWantedRuntimes(context)) {
+      checkRuntime(runtime, config2);
+    }
+  }
+}
+async function handleWantedPackageManager(pm2, opts3) {
+  const { cmd, cliOptions, config: config2, context } = opts3;
+  const printingVersion = cmd == null && cliOptions.version === true;
+  if (cliOptions.global) {
+    if (!isRunningPnpmPinned(pm2)) {
+      warnAboutProject(config2, "Using --global skips the package manager check for this project");
+    }
+    return;
+  }
+  if (pm2.name === "pnpm" && pm2.onFail === "download" && !isExecutedByCorepack()) {
+    await tolerateWhenPrintingVersion(printingVersion, async () => {
+      await switchCliVersion(config2, context);
+    });

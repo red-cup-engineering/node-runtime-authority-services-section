@@ -1,0 +1,68 @@
+  if (loaded == null)
+    return;
+  if (cmd == null && parsedCliArgs.options.version) {
+    console.log(packageManager.version);
+    return;
+  }
+  await runCommandWithConfig(parsedCliArgs, loaded);
+}
+function dropUnknownOptions(parsedCliArgs) {
+  const { cmd, options: cliOptions, unknownOptions } = parsedCliArgs;
+  const rejectUnknownOptions = unknownOptions.size > 0 && !(cmd && NOT_IMPLEMENTED_COMMAND_SET.has(cmd));
+  if (rejectUnknownOptions) {
+    for (const unknownOption of unknownOptions.keys()) {
+      delete cliOptions[unknownOption];
+    }
+  }
+  return rejectUnknownOptions;
+}
+async function loadCommandConfig(parsedCliArgs, rejectUnknownOptions) {
+  const { cmd } = parsedCliArgs;
+  try {
+    return await readCommandConfig(parsedCliArgs, rejectUnknownOptions);
+  } catch (err2) {
+    const hint = err2["hint"] ? err2["hint"] : `For help, run: pnpm help${cmd ? ` ${cmd}` : ""}`;
+    printError(err2.message, hint);
+    process.exitCode = 1;
+    await finishWorkers();
+    return void 0;
+  }
+}
+async function readCommandConfig(parsedCliArgs, rejectUnknownOptions) {
+  const { cmd, params: cliParams, options: cliOptions, unknownOptions, workspaceDir, rawCliConfig } = parsedCliArgs;
+  const isConfigCommand = cmd === "config" || cmd === "set" || cmd === "get";
+  applyGlobalScope(parsedCliArgs, isConfigCommand);
+  let { config: config2, context } = await getConfig2(cliOptions, {
+    excludeReporter: false,
+    // When we just want to print the location of the global bin directory,
+    // we don't need the write permission to it. Related issue: pnpm/pnpm#2700
+    globalDirShouldAllowWrite: cmd !== "root" && cmd !== "prefix",
+    skipGlobalBinDirCheck: envSubcommandSkipsGlobalBinCheck(cmd, cliParams),
+    workspaceDir,
+    rawCliConfig,
+    onlyInheritDlxSettingsFromLocal: cmd === "dlx" || cmd === "create",
+    forSelfUpdate: cmd === "self-update",
+    ignoreProjectNpmrc: isGlobalConfigCommand(isConfigCommand, cliOptions),
+    printWarnings: !isSingleSettingRead(cmd, cliParams)
+  });
+  if (cmd !== "setup" && !shouldSkipPmHandling(cmd, cliParams, cliOptions.location)) {
+    await handlePackageManagerAndRuntimes({ cmd, cliOptions, config: config2, context, rejectUnknownOptions });
+  }
+  if (rejectUnknownOptions) {
+    printError(formatUnknownOptionsError(unknownOptions), `For help, run: pnpm help${cmd ? ` ${cmd}` : ""}`);
+    process.exitCode = 1;
+    await finishWorkers();
+    return void 0;
+  }
+  ;
+  ({ config: config2, context } = await installConfigDepsAndLoadHooks(config2, context, {
+    tolerateConfigDependenciesErrors: isConfigCommand,
+    forSelfUpdate: cmd === "self-update"
+  }));
+  applyInvocationToConfig(config2, parsedCliArgs);
+  return { config: config2, context };
+}
+function applyGlobalScope({ cmd, params, options: options2 }, isConfigCommand) {
+  if (cmd === "link" && params.length === 0) {
+    options2.global = true;
+  } else if (isConfigCommand && options2.global === true) {

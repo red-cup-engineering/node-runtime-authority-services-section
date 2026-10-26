@@ -1,0 +1,410 @@
+agent-work-contract	Set up job	﻿2026-10-21T22:29:12.9265592Z Current runner version: '2.338.0'
+agent-work-contract	Set up job	2026-10-21T22:29:12.9302836Z ##[group]Runner Image Provisioner
+agent-work-contract	Set up job	2026-10-21T22:29:12.9304255Z Hosted Compute Agent
+agent-work-contract	Set up job	2026-10-21T22:29:12.9305505Z Version: 20261012.601
+agent-work-contract	Set up job	2026-10-21T22:29:12.9306602Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+agent-work-contract	Set up job	2026-10-21T22:29:12.9307865Z Build Date: 2026-10-12T17:48:21Z
+agent-work-contract	Set up job	2026-10-21T22:29:12.9309154Z Worker ID: {deef4eb9-78d0-433d-9eaf-9927b5186c81}
+agent-work-contract	Set up job	2026-10-21T22:29:12.9310406Z Region: centralus
+agent-work-contract	Set up job	2026-10-21T22:29:12.9311466Z Cloud: Azure
+agent-work-contract	Set up job	2026-10-21T22:29:12.9312821Z ##[endgroup]
+agent-work-contract	Set up job	2026-10-21T22:29:12.9315236Z ##[group]Operating System
+agent-work-contract	Set up job	2026-10-21T22:29:12.9316454Z Ubuntu
+agent-work-contract	Set up job	2026-10-21T22:29:12.9317463Z 24.04.5
+agent-work-contract	Set up job	2026-10-21T22:29:12.9318417Z LTS
+agent-work-contract	Set up job	2026-10-21T22:29:12.9319467Z ##[endgroup]
+agent-work-contract	Set up job	2026-10-21T22:29:12.9320528Z ##[group]Runner Image
+agent-work-contract	Set up job	2026-10-21T22:29:12.9321706Z Image: ubuntu-24.04
+agent-work-contract	Set up job	2026-10-21T22:29:12.9323060Z Version: 20261012.334.1
+agent-work-contract	Set up job	2026-10-21T22:29:12.9324960Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+agent-work-contract	Set up job	2026-10-21T22:29:12.9328025Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+agent-work-contract	Set up job	2026-10-21T22:29:12.9330625Z ##[endgroup]
+agent-work-contract	Set up job	2026-10-21T22:29:12.9332897Z ##[group]GITHUB_TOKEN Permissions
+agent-work-contract	Set up job	2026-10-21T22:29:12.9335855Z Contents: read
+agent-work-contract	Set up job	2026-10-21T22:29:12.9336886Z Metadata: read
+agent-work-contract	Set up job	2026-10-21T22:29:12.9337784Z ##[endgroup]
+agent-work-contract	Set up job	2026-10-21T22:29:12.9340895Z Secret source: Actions
+agent-work-contract	Set up job	2026-10-21T22:29:12.9342905Z Cache mode: write
+agent-work-contract	Set up job	2026-10-21T22:29:12.9344882Z Prepare workflow directory
+agent-work-contract	Set up job	2026-10-21T22:29:12.9741325Z Prepare all required actions
+agent-work-contract	Set up job	2026-10-21T22:29:12.9812674Z Getting action download info
+agent-work-contract	Set up job	2026-10-21T22:29:13.2421780Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+agent-work-contract	Set up job	2026-10-21T22:29:13.3543625Z Download action repository 'actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444' (SHA:a0853c24544627f65ddf259abe73b1d18a591444)
+agent-work-contract	Set up job	2026-10-21T22:29:13.5837414Z Complete job name: agent-work-contract
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	﻿2026-10-21T22:29:13.6695817Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.6696894Z with:
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.6697347Z   persist-credentials: false
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.6698086Z   repository: red-cup-engineering/continuous-delivery-services-section
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.6702464Z   token: ***
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.6702906Z   ssh-strict: true
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.6703342Z   ssh-user: git
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.6703758Z   clean: true
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.6704198Z   sparse-checkout-cone-mode: true
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.6704772Z   fetch-depth: 1
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.6705197Z   fetch-tags: false
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.6705641Z   show-progress: true
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.6706087Z   lfs: false
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.6706491Z   submodules: false
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.6706935Z   set-safe-directory: true
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.6707440Z   allow-unsafe-pr-checkout: false
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.6708205Z ##[endgroup]
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.7712257Z Syncing repository: red-cup-engineering/continuous-delivery-services-section
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.7715679Z ##[group]Getting Git version info
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.7717454Z Working directory is '/home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section'
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.7719747Z [command]/usr/bin/git version
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.7777027Z git version 2.55.0
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.7799368Z ##[endgroup]
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.7814102Z Temporarily overriding HOME='/home/runner/work/_temp/a485775d-cb52-41ed-a194-714f1a60f857' before making global git config changes
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.7816694Z Adding repository directory to the temporary git global config as a safe directory
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.7820161Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.7877250Z Deleting the contents of '/home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section'
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.7881333Z ##[group]Initializing the repository
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.7886035Z [command]/usr/bin/git init /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8020773Z hint: Using 'master' as the name for the initial branch. This default branch name
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8022852Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8024797Z hint: to use in all of your new repositories, which will suppress this warning,
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8026361Z hint: call:
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8027260Z hint:
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8028060Z hint: 	git config --global init.defaultBranch <name>
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8038452Z hint:
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8043234Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8044506Z hint: 'development'. The just-created branch can be renamed via this command:
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8046399Z hint:
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8047359Z hint: 	git branch -m <name>
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8048606Z hint:
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8049921Z hint: Disable this message with "git config set advice.defaultBranchName false"
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8052346Z Initialized empty Git repository in /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/.git/
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8054665Z [command]/usr/bin/git remote add origin https://github.com/red-cup-engineering/continuous-delivery-services-section
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8102189Z ##[endgroup]
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8103447Z ##[group]Disabling automatic garbage collection
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8105662Z [command]/usr/bin/git config --local gc.auto 0
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8137220Z ##[endgroup]
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8138477Z ##[group]Setting up auth
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8144624Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8185740Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8590981Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8628664Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8854324Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.8891668Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.9130345Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.9172156Z ##[endgroup]
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.9173489Z ##[group]Fetching the repository
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:13.9182803Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +1224c571ae76cbd8949c4eebc237299bb0443fe7:refs/remotes/origin/fleet/retire-intake-all-house-orgs
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.3519094Z From https://github.com/red-cup-engineering/continuous-delivery-services-section
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.3521647Z  * [new ref]         1224c571ae76cbd8949c4eebc237299bb0443fe7 -> origin/fleet/retire-intake-all-house-orgs
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.3525443Z ##[endgroup]
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.3526750Z ##[group]Determining the checkout info
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.3528649Z ##[endgroup]
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.3535284Z [command]/usr/bin/git sparse-checkout disable
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.3589998Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.3622847Z ##[group]Checking out the ref
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.3628536Z [command]/usr/bin/git checkout --progress --force -B fleet/retire-intake-all-house-orgs refs/remotes/origin/fleet/retire-intake-all-house-orgs
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.3790336Z Switched to a new branch 'fleet/retire-intake-all-house-orgs'
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.3797347Z branch 'fleet/retire-intake-all-house-orgs' set up to track 'origin/fleet/retire-intake-all-house-orgs'.
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.3803749Z ##[endgroup]
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.3845668Z [command]/usr/bin/git log -1 --format=%H
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.3870865Z 1224c571ae76cbd8949c4eebc237299bb0443fe7
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.3882188Z ##[group]Removing auth
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.3886712Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.3920493Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.4151354Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.4182451Z http.https://github.com/.extraheader
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.4191625Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.4229811Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.4462786Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.4494819Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+agent-work-contract	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:14.4707353Z ##[endgroup]
+agent-work-contract	Bind authored CI outputs to section data	﻿2026-10-21T22:29:14.4945180Z ##[group]Run set -euo pipefail
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4946548Z [36;1mset -euo pipefail[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4947924Z [36;1mcd_workspace=$(realpath -e "$GITHUB_WORKSPACE")[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4949778Z [36;1m[[ "$GITHUB_RUN_ID" =~ ^[0-9]+$ && "$GITHUB_RUN_ATTEMPT" =~ ^[0-9]+$ ]][0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4951510Z [36;1m[[ "$GITHUB_JOB" =~ ^[A-Za-z0-9_-]+$ ]][0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4954075Z [36;1mcd_ci_run="$cd_workspace/data/logs/public-source-ci-logs/$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4956358Z [36;1mcd_ci_data="$cd_ci_run/$GITHUB_JOB"[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4958666Z [36;1mcd_paths=("$cd_workspace/data" "$cd_workspace/data/logs" "$cd_workspace/data/logs/public-source-ci-logs"[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4962023Z [36;1m  "$cd_ci_run" "$cd_ci_data" "$cd_ci_data"/{npm-cache,corepack,cache,state,config,data,temporary})[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4964239Z [36;1mfor selected_path in "${cd_paths[@]}"; do[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4965812Z [36;1m  if [[ -e "$selected_path" || -L "$selected_path" ]]; then[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4967879Z [36;1m    [[ -d "$selected_path" && ! -L "$selected_path" && -O "$selected_path" ]] || exit 1[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4969638Z [36;1m  fi[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4970480Z [36;1mdone[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4971356Z [36;1mmkdir -p "${cd_paths[@]}"[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4972873Z [36;1mfor selected_path in "${cd_paths[@]}"; do[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4974681Z [36;1m  [[ $(realpath -e "$selected_path") == "$selected_path" ]] || exit 1[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4976313Z [36;1mdone[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4977160Z [36;1m{[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4978185Z [36;1m  printf 'CD_ARTIFACT_ROOT=%s\n' "$cd_ci_data"[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4979870Z [36;1m  printf 'npm_config_cache=%s\n' "$cd_ci_data/npm-cache"[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4981643Z [36;1m  printf 'COREPACK_HOME=%s\n' "$cd_ci_data/corepack"[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4983559Z [36;1m  printf 'XDG_CACHE_HOME=%s\n' "$cd_ci_data/cache"[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4985492Z [36;1m  printf 'XDG_STATE_HOME=%s\n' "$cd_ci_data/state"[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4987200Z [36;1m  printf 'XDG_CONFIG_HOME=%s\n' "$cd_ci_data/config"[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4988852Z [36;1m  printf 'XDG_DATA_HOME=%s\n' "$cd_ci_data/data"[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4990425Z [36;1m  printf 'TMPDIR=%s\n' "$cd_ci_data/temporary"[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.4992100Z [36;1m} >> "$GITHUB_ENV"[0m
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.5282697Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+agent-work-contract	Bind authored CI outputs to section data	2026-10-21T22:29:14.5284508Z ##[endgroup]
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	﻿2026-10-21T22:29:14.5859154Z ##[group]Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.5860814Z with:
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.5861575Z   node-version: 24
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.5862828Z   always-auth: false
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.5863722Z   check-latest: false
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.5874351Z   token: ***
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.5875213Z   package-manager-cache: true
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.5876201Z env:
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.5879120Z   CD_ARTIFACT_ROOT: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.5884909Z   npm_config_cache: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/npm-cache
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.5890515Z   COREPACK_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/corepack
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.5896333Z   XDG_CACHE_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/cache
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.5902452Z   XDG_STATE_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/state
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.5909323Z   XDG_CONFIG_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/config
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.5915827Z   XDG_DATA_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/data
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.5921110Z   TMPDIR: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/temporary
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.5924595Z ##[endgroup]
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.7420412Z Found in cache @ /opt/hostedtoolcache/node/24.21.0/x64
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.7424978Z (node:2364) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.7428478Z (Use `node --trace-deprecation ...` to show where the warning was created)
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:14.7430772Z ##[group]Environment details
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:15.1530460Z node: v24.21.0
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:15.1531163Z npm: 11.19.0
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:15.1531474Z yarn: 1.22.22
+agent-work-contract	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:15.1532893Z ##[endgroup]
+agent-work-contract	Install pinned generator parser	﻿2026-10-21T22:29:15.1662065Z ##[group]Run npm ci --legacy-peer-deps --no-audit --no-fund
+agent-work-contract	Install pinned generator parser	2026-10-21T22:29:15.1662862Z [36;1mnpm ci --legacy-peer-deps --no-audit --no-fund[0m
+agent-work-contract	Install pinned generator parser	2026-10-21T22:29:15.1736320Z shell: /usr/bin/bash -e {0}
+agent-work-contract	Install pinned generator parser	2026-10-21T22:29:15.1736782Z env:
+agent-work-contract	Install pinned generator parser	2026-10-21T22:29:15.1737697Z   CD_ARTIFACT_ROOT: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract
+agent-work-contract	Install pinned generator parser	2026-10-21T22:29:15.1739285Z   npm_config_cache: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/npm-cache
+agent-work-contract	Install pinned generator parser	2026-10-21T22:29:15.1740824Z   COREPACK_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/corepack
+agent-work-contract	Install pinned generator parser	2026-10-21T22:29:15.1742662Z   XDG_CACHE_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/cache
+agent-work-contract	Install pinned generator parser	2026-10-21T22:29:15.1744248Z   XDG_STATE_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/state
+agent-work-contract	Install pinned generator parser	2026-10-21T22:29:15.1746030Z   XDG_CONFIG_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/config
+agent-work-contract	Install pinned generator parser	2026-10-21T22:29:15.1747535Z   XDG_DATA_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/data
+agent-work-contract	Install pinned generator parser	2026-10-21T22:29:15.1749027Z   TMPDIR: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/temporary
+agent-work-contract	Install pinned generator parser	2026-10-21T22:29:15.1749983Z ##[endgroup]
+agent-work-contract	Install pinned generator parser	2026-10-21T22:29:16.0977139Z 
+agent-work-contract	Install pinned generator parser	2026-10-21T22:29:16.0986586Z added 1 package in 862ms
+agent-work-contract	Check standalone public source contracts	﻿2026-10-21T22:29:16.1401759Z ##[group]Run npm run test:public-source-contract
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.1402493Z [36;1mnpm run test:public-source-contract[0m
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.1469738Z shell: /usr/bin/bash -e {0}
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.1470008Z env:
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.1470738Z   CD_ARTIFACT_ROOT: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.1472394Z   npm_config_cache: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/npm-cache
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.1473793Z   COREPACK_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/corepack
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.1475126Z   XDG_CACHE_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/cache
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.1476448Z   XDG_STATE_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/state
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.1477745Z   XDG_CONFIG_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/config
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.1479048Z   XDG_DATA_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/data
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.1480322Z   TMPDIR: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686821279-1/agent-work-contract/temporary
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.1481094Z ##[endgroup]
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.2483472Z 
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.2484000Z > test:public-source-contract
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.2487923Z > node --check generator/generate-ci.mjs && node --test test/generate-ci.test.mjs test/retained-runner.test.mjs test/node-package-options.test.mjs test/cloudbuild-native.test.mjs test/cloudbuild-trigger-operations.test.mjs test/circleci-free-source.test.mjs test/circleci-private-inference-source.test.mjs test/circleci-private-x402-source.test.mjs test/circleci-public-source.test.mjs test/placement.test.mjs test/submodule-pr.test.mjs test/lockfile-caller.test.mjs test/retired-intake-fleet.test.mjs test/release.test.mjs && node generator/generate-ci.mjs . --audit-runners --public-repo
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.2490772Z 
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.5255698Z ✔ free private CI executes native source tests without provider billing or deployment (2.701506ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.5274894Z ✔ actual private Git source checkout is admitted only at its exact provider commit (101.909101ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.5605448Z ✔ separate inference consumer is a source-verified private CircleCI Free test, never a paid runner (2.510982ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.5611270Z ✔ only the original Git source and exact commit can enter inference CI (103.835822ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.5613331Z ✔ private x402 CI selects the original Code service and Free small runner, never a public source copy (2.383157ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.5615486Z ✔ exact private x402 Git commit and original checkout are both required (89.656383ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.5617127Z ✔ admission requires the original complete x402 check/test/receiving selectors (0.486114ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.7647585Z ✔ public OSS compute does not consume or expose private Git Services (2.662163ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.7671220Z ✔ native public checkout rejects foreign and private source revisions (85.034806ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.7819418Z ✔ native Cloud Build is bounded to the free-eligible default worker pool (2.323493ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.7833501Z ✔ Cloud Build substitutions do not accidentally consume shell variables (0.41901ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.7846316Z ✔ source comes from the immutable owning Git revision even without workspace .git (0.300179ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.7848741Z ✔ no mutable source, extra artifact push, credentials, cloud administration or deploy (0.415042ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.8157925Z ✔ native owner creates precisely one approved exact-main 2nd-gen trigger (1.897881ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.8160267Z ✔ invalid identities and wrong provider connections refuse before mutation (2.0857ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.8165366Z ✔ inspect never creates; ensure creates once then reads provider native state (0.953975ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.8175285Z ✔ provider trigger conflicts and missing manual approval are refused (1.754053ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.8177816Z ✔ build readback requires a direct successful npm test after original preflight (3.207507ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.8188030Z ✔ native 2nd-gen repository discovery requires one genuine matching GitHub connection (1.063529ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.8199336Z ✔ native exact-commit request uses the installed approved trigger; dry-run cannot bill (1.278739ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.8215237Z ✔ native pending request has a provider build receipt; failure is never retried (3.522823ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.8218089Z ✔ original immutable Git recipe executes source checks before a direct npm test (121.655182ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9642491Z ✔ GitHub standard private-org monthly included minutes are plan-based quantities (2.556656ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9673263Z ✔ empty repository creates no administrative workflows (2.060162ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9693629Z ✔ agent PR intake cannot be regenerated by explicit selection (0.58057ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9713146Z ✔ package.json selects node-package, also when nested; node_modules is ignored (0.961659ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9743403Z ✔ lakefile selects lean with its working directory (1.095779ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9761096Z ✔ relative $schema selects content; remote $schema does not (1.124242ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9763345Z ✔ relative markdown links select content; urls, anchors and fenced code do not (1.464133ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9765317Z ✔ all three selected: short caller naming each reusable workflow (1.059041ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9770508Z ✔ handwritten workflows are reported against the covering reusable workflow (15.753278ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9772712Z ✔ repository with submodules gets a sync caller; a parent adds the upward notify (2.167783ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9798072Z ✔ current machine-neutral generator does not assign a package to implicit machines (0.928819ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9833721Z ✔ root sync receives reviewed caller changes on its default branch without a review-branch loop (7.524348ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9843560Z ✔ parented callers retain all default-source notifications and never advance on their own push (7.503539ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9845517Z ✔ generated workflows refuse exhausted GitHub-hosted capacity and anonymous runners (1.190014ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9847366Z ✔ runner auditor finds direct GitHub-hosted drift and missing reusable caller identity (8.205406ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9849161Z ✔ runner auditor recognizes required inherited selectors and refuses unbound ones (6.651444ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9850804Z ✔ runner auditor refuses duplicate workflow keys and anonymous direct runners (2.888854ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9852710Z ✔ runner auditor follows local reusable selectors and does not trust unknown providers (2.543963ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9854656Z ✔ actual runner audit tests consumer access rather than supplier labels (5.069903ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9856335Z ✔ unavailable runner observation is not misreported as absent runner or completed tests (4.528225ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9857866Z ✔ runner access audit requires explicit recipient identity (0.451149ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9859262Z ✔ section CI exercises current caller contracts without retired intake files (74.98383ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:16.9860957Z ✔ release: a committed binding generates a caller of release-publish.yml, and a bad binding fails (2.213779ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9313984Z ✔ real BCF source binds exact supplier and workspace, then repeats byte-identically (19.62511ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9316729Z ✔ different caller retains unrelated policy while binding its selected source secret (54.54218ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9345450Z ✔ quoted and flow-style supplier scalars preserve adjacent comments and Unicode source (9.199825ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9373899Z ✔ caller transformation refuses duplicate key (0.991273ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9411553Z ✔ caller transformation refuses alias (1.168053ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9417056Z ✔ caller transformation refuses anchor (0.464534ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9418433Z ✔ caller transformation refuses merge declaration (0.541077ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9419743Z ✔ caller transformation refuses wrong supplier (0.691867ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9420850Z ✔ caller transformation refuses wrong workflow (1.516531ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9422272Z ✔ caller transformation refuses moving supplier (1.379407ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9423537Z ✔ caller transformation refuses dynamic supplier (0.793346ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9424805Z ✔ caller transformation refuses direct steps (0.837207ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9453644Z ✔ caller transformation refuses direct runner (0.904533ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9484975Z ✔ caller transformation refuses matrix job (0.579148ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9511578Z ✔ caller transformation refuses unbound runner (0.571693ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9533000Z ✔ caller transformation refuses dynamic runner (0.48909ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9534485Z ✔ caller transformation refuses different runner (1.158906ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9538967Z ✔ caller transformation refuses duplicate checker jobs (1.541427ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9540242Z ✔ caller transformation refuses invalid YAML (0.34918ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9544342Z ✔ caller transformation refuses non-workflow document (0.239957ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9545901Z ✔ supplier identity is the actual generator revision, never an independent override (0.680716ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9547706Z ✔ explicit selection adopts only its existing caller and accurately classifies generated output (6.899104ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9551483Z ✔ ordinary generation leaves the existing checker unmodified and does not enroll new callers (3.594186ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9553459Z ✔ existing non-caller source and source symlinks are never silently adopted (1.288577ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9556127Z ✔ source byte decoding and direct string inputs must be lossless and bounded (1.768089ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9557530Z ✔ explicit unrelated caller secrets survive source token binding (5.534713ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9561182Z ✔ existing source associations cannot silently change (5.126397ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9562900Z ✔ exact composed source and existing secret name are required (0.523995ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9566813Z ✔ selected checker Gitlink source survives one and two-level native Git receiving (874.136447ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9600156Z ✔ existing callers keep install, check and npm test defaults (0.91925ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9602355Z ✔ dependency-free source tests skip install and checks without changing the default workflow (0.254333ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9653724Z ✔ caller cannot turn an npm script name into arbitrary shell (0.25273ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9663386Z ✔ the Kalshi closure goes to the node that already holds it (4.510752ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9683262Z ✔ unknown sizes are intervals, never zero: an unmeasured node is possible, not certain (1.751338ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9706717Z ✔ hosted minutes are refused once the free allowance cannot cover the job, never overdrawn (0.705893ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9708883Z ✔ with only a hosted runner left and an exhausted allowance there is no placement (0.699882ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9710659Z ✔ a hosted minute costs more once the request exceeds the daily pace (0.424139ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9712709Z ✔ a node too small for the job is refused with the field named (2.034955ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9714731Z ✔ a job that must run on named nodes is not placed elsewhere, and an effect waits for the Leader (1.064801ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9724111Z ✔ a down node is never chosen (0.609464ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9726068Z ✔ allowance: hold, settle spent, remaining shrinks; a second hold on the same job is refused (1.713147ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9727918Z ✔ lease: one live holder, fencing token rises, stale holder is refused (1.21461ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9729840Z ✔ invalid lease identities or unbounded time cannot mutate fencing custody (0.851884ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9731417Z ✔ lease: an effect is not accepted after expiry, a pure build is (0.234707ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9733355Z ✔ two builders with identical store paths agree; a difference is top and queues a repair (0.968642ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9735076Z ✔ absence of usage or freshness never becomes free private GitHub minutes (1.246038ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9736787Z ✔ stale cloud capacity is refused; source snapshots never authorize a job (0.536628ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9739132Z ✔ observed Free CircleCI credits select original source without spending GitHub minutes (1.31171ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9742995Z ✔ Oracle Always Free multi-unit quotes cannot overspend either OCPU or GB-hour (0.709538ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9745007Z ✔ shared compute budget refuses zero holds and negative multi-unit settlement (0.407899ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9746999Z ✔ budget receipt expires and provider may not silently switch denomination (0.272928ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9749144Z ✔ hosted remaining minutes cannot be carried across a monthly reset without reobservation (0.110355ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9751057Z ✔ fenced build comparison never publishes a lone or duplicate builder (0.261707ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9753030Z ✔ hosted minutes are held at maximum duration and provider overrun cannot settle (1.156421ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9754794Z ✔ fleet planning actually distributes concurrent work across held and free providers (2.251999ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9756340Z ✔ fleet does not dispatch effects, unknown nodes, missing quota or duplicate jobs (1.074559ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9757780Z ✔ provider placement prices net-available free credits after original reservations (1.113462ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9759341Z ✔ typed effectful office jobs never acquire pure fleet placements on owned or cloud capacity (0.765043ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:17.9760868Z ✔ the existing placement CLI reads a complete original office shift without provider effects (257.132143ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0073544Z ✔ a version is a semver prerelease tagged with the commit (1.523504ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0075270Z ✔ pull: activates the tagged version, then is a no-op on a 304 (66.193963ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0076767Z ✔ pull: promoting a new version activates it; moving the tag back is the rollback (59.97133ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0078444Z ✔ pull: a tarball whose digest differs from the packument is refused and nothing is installed (35.024539ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0079745Z ✔ pull: when the registry answers 502 the active version is kept (6.169395ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0107779Z ✔ pull: a failed health check returns to the previous version (34.0948ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0133351Z ✔ publish: dependencies first, exact internal versions, a cycle is refused, promotion is a tag move (2.019907ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0152153Z ✔ closure: follows internal dependencies, rewrites workspace ranges to exact versions, ignores external ones (11.299822ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0181328Z ✔ unit: names one checkout's packages, shares one version among them, and sends every other internal dependency to the registry (1.848329ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0185404Z ✔ publish-packed: token from the credential directory only, dependencies first, present versions are idempotent, root is promoted (7.031585ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0187256Z ✔ release source census excludes raw logs while preserving durable records and state (6.582316ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0188920Z ✔ actual release CLI packs from owned descendant temp without copying logs or losing durable data (688.855542ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0305556Z ✔ immutable reusable graph resolves relative calls at its containing supplier and revision (23.044702ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0307153Z ✔ retained graph refuses mutable supplier (5.139598ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0307973Z ✔ retained graph refuses dynamic selector (1.100738ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0308811Z ✔ retained graph refuses different selector (1.896609ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0309532Z ✔ retained graph refuses duplicate YAML key (2.152725ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0310153Z ✔ retained graph refuses matrix strategy (1.738023ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0310901Z ✔ retained graph refuses dynamic name (1.627478ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0311791Z ✔ retained graph refuses input-dependent environment (1.302353ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0313243Z ✔ existing leaf permission changes cannot hide behind equal selectors (6.207008ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0314184Z ✔ existing leaf secret identity changes cannot hide behind equal selectors (5.935542ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0315250Z ✔ existing leaf environment changes cannot hide behind equal selectors (3.877273ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0316441Z ✔ different supplier path is refused despite matching declarations (4.854341ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0317429Z ✔ job-profile swapping cannot preserve admission by set equality (4.017478ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0318194Z ✔ reusable input and default changes cannot hide behind an unchanged callee expression (9.575671ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0318992Z ✔ workflow environment bracket and case credential expressions stay visible (4.700754ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0320199Z ✔ complete activation delta includes nested job-if and concurrency (6.909997ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0321514Z ✔ only the exact owner-produced read-only direct addition retains existing selection (5.73499ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0322739Z ✔ even an exact fragment cannot admit a new write permissions grant (2.165486ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0323710Z ✔ even an exact fragment cannot admit a new environment grant (2.000973ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0324701Z ✔ even an exact fragment cannot admit a new secret grant (1.356433ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0325448Z ✔ even an exact fragment cannot admit a new container grant (1.776317ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0326405Z ✔ even an exact fragment cannot admit a new service grant (2.062818ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0327060Z ✔ even an exact fragment cannot admit a new credential persistence grant (2.505562ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0327961Z ✔ even an exact fragment cannot admit a new implicit checkout persistence grant (2.131406ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0329076Z ✔ nested checkout persistence changes remain visible (3.536339ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0329663Z ✔ nested literal step token changes remain visible (1.979643ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0330203Z ✔ nested literal action token changes remain visible (3.397811ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0330854Z ✔ nested SSH identity changes remain visible (4.227474ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0334262Z ✔ nested default checkout credentials changes remain visible (3.653927ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0335569Z ✔ failed started execution proves only historical enrollment (2.169977ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0336625Z ✔ historical proof refuses foreign head repository (1.567427ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0337596Z ✔ historical proof refuses source mismatch (1.351274ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0338506Z ✔ historical proof refuses workflow path mismatch (2.829874ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0339415Z ✔ historical proof refuses non-default branch (1.792364ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0340484Z ✔ historical proof refuses run mismatch (1.783989ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0341329Z ✔ historical proof refuses job attempt mismatch (1.549403ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0342375Z ✔ historical proof refuses incomplete jobs (1.741169ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0343250Z ✔ historical proof refuses duplicate job IDs (1.681889ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0343910Z ✔ historical proof refuses same-label wrong job (1.101507ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0344443Z ✔ historical proof refuses no runner assignment (1.012053ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0344963Z ✔ historical proof refuses unstarted queued job (2.069461ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0346248Z ✔ default proof provider is a required compatible peer in both manifest and lock metadata (0.337548ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0347636Z ✔ real received BCF sync and its newer CD supplier retain exact no-billing admission (12.388107ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0348720Z ✔ real historical optional hosted-runner default cannot excuse changed current call declarations (13.688569ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0349779Z ✔ complete real Guix projection retains cf54 release admission and exposes its historical preview boundary (12.978495ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0351320Z ✔ read-only inventory qualifies real Git blob, not repository name or a substring (4.576394ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0352766Z ✔ one fleet invocation changes all verified owners and independently checks absence (1.502816ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0353517Z ✔ individual refusal is not retried and cannot be claimed successful (1.938496ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0354293Z ✔ unread inventory refuses all writes before any mutation (1.302323ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0355297Z ✔ stale default branch and archived source refuse effects (1.965784ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0356434Z ✔ pagination is complete, not just the first page of a large organization (8.020712ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0357331Z ✔ bounded organization, immutable source and effect budget prevent blind fleet writes (0.862855ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0358130Z ✔ a census past 500 repositories stays complete up to the 1000-repository bound (54.4981ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:18.0359076Z ✔ all five house organizations are admitted together, and no others (0.719648ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.6700730Z ✔ existing: the workflow CLI receives the exact same-run proposal through REST (334.355707ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.6706249Z ✔ missing: the workflow CLI receives the exact same-run proposal through REST (301.462892ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.6710839Z ✔ lost-response: the workflow CLI receives the exact same-run proposal through REST (305.135296ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.6714170Z ✔ lookup-failure: the workflow CLI refuses before metadata writes (137.128343ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.6718003Z ✔ ambiguous: the workflow CLI refuses before metadata writes (141.027753ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.6721392Z ✔ invalid-number: the workflow CLI refuses before metadata writes (145.175658ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.6725474Z ✔ unreceived metadata remains failed after one write and original-destination readback (302.854739ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.6732276Z ✔ workflow activates the immutable pending receiver while retaining caller authority (0.39277ms)
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.6819929Z ℹ tests 178
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.6820418Z ℹ suites 0
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.6820841Z ℹ pass 178
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.6821225Z ℹ fail 0
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.6821625Z ℹ cancelled 0
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.6822398Z ℹ skipped 0
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.6822853Z ℹ todo 0
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.6823287Z ℹ duration_ms 3375.837041
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.7939629Z {
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.7940701Z   "root": "/home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section",
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.7941770Z   "findings": []
+agent-work-contract	Check standalone public source contracts	2026-10-21T22:29:19.7942369Z }
+agent-work-contract	Post Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	﻿2026-10-21T22:29:19.8156941Z Post job cleanup.
+agent-work-contract	Post Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:19.9355470Z (node:3555) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+agent-work-contract	Post Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:19.9356437Z (Use `node --trace-deprecation ...` to show where the warning was created)
+agent-work-contract	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	﻿2026-10-21T22:29:19.9602067Z Post job cleanup.
+agent-work-contract	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:20.0468414Z [command]/usr/bin/git version
+agent-work-contract	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:20.0513895Z git version 2.55.0
+agent-work-contract	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:20.0558197Z Temporarily overriding HOME='/home/runner/work/_temp/73eab4d5-2af0-46e7-b765-f56f3b160fd1' before making global git config changes
+agent-work-contract	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:20.0559435Z Adding repository directory to the temporary git global config as a safe directory
+agent-work-contract	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:20.0565280Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section
+agent-work-contract	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:20.0612622Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+agent-work-contract	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:20.0654602Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+agent-work-contract	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:20.0976298Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+agent-work-contract	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:20.1036724Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+agent-work-contract	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:20.1350780Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+agent-work-contract	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:20.1361789Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+agent-work-contract	Complete job	﻿2026-10-21T22:29:20.1786378Z Cleaning up orphan processes
+agent-work-contract	Complete job	2026-10-21T22:29:20.2235317Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

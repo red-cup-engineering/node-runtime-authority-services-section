@@ -1,0 +1,71 @@
+{
+  "kind": "IndependentNodeSharedOwnedDataSourceReceiving",
+  "at": "2026-10-21T01:16:37.248090+00:00",
+  "reviewer": "root independent receiver; source supplier qualify_publication_fabrication",
+  "verdict": "MET_SOURCE_AND_BOUNDED_DIRECT_NODE_QA",
+  "base": "23113a67473de9784fdea1d1d45757fc0dd1569b",
+  "baseTree": "3ec1e72a033ae2c404a2481f2a775e7168d3aa75",
+  "proposal": {
+    "path": "data/logs/shared-data-admission-logs/2026-10-20-source-v1/source-proposal-v3.json",
+    "sha256": "770e0bb3294f2342e22760ae980252adfaf0d1ffbba3fa5560f18265d6c3abdc"
+  },
+  "acceptedPaths": [
+    {
+      "mode": "100644",
+      "gitBlob": "eb50e1b09f521af88c722d25e2240bc836a5a0bd",
+      "sha256": "c9825e69f6f41c61664e01d098cf6a3091d56ed018b67e77473e8ea5a1481440",
+      "bytes": 11540,
+      "path": "src/config.mjs"
+    },
+    {
+      "mode": "100644",
+      "gitBlob": "81ef12a8bfe88834a4fe0c65b4a50ee52d832da5",
+      "sha256": "4c40f21a0cb79c3cff2b5c17e580306757719a4add6398f93c023009b866282c",
+      "bytes": 4327,
+      "path": "specifications/explicit-owned-data-admission.md"
+    },
+    {
+      "mode": "100644",
+      "gitBlob": "d40707d215e05abea030427278daa114580d27ba",
+      "sha256": "407759d236272a0ba1f1a29515022a713e8bf6bd2548d19c1905d00bb025e6db",
+      "bytes": 8377,
+      "path": "test/owned-data-admission.test.mjs"
+    }
+  ],
+  "contract": [
+    "Additive explicit receiveServicesSectionDataRoot returns the unchanged section path without process config/environment/argv/cwd selection. The existing process resolver preserves its own complete precedence and private error order.",
+    "One original owner law is factored into path-shape and ancestry phases. The data-directory adapter preserves the original CDE convention and meaningful syntax TypeError versus native missing-owner/data ENOENT and parent-file ENOTDIR.",
+    "Destination receiver preserves missing descendant, existing kind and no-redirect metadata checks, using native relative confinement. Caller still supplies actual jurisdiction, typed filing, authority and immediate effect receiving. No sandbox, exclusive access or TOCTOU guarantee."
+  ],
+  "reviewedAntecedents": [
+    "v1 2612 and v2 277e were reviewed with changes requested; both bound candidates remain unchanged and neither was tested.",
+    "Full original three-path v1 diff and complete new tests were read, then exact v1-v2-v3 deltas. No unrelated original source change."
+  ],
+  "actualDirectSourceQA": {
+    "cases": 62,
+    "originalCases": 49,
+    "newCases": 13,
+    "fail": 0,
+    "skipped": 0,
+    "cancelled": 0,
+    "todo": 0,
+    "stderrBytes": 0,
+    "seconds": 1.1407625869996991,
+    "childMaxRSSKiB": 65808,
+    "sourceFilesUnchanged": 25,
+    "processGroupAbsent": true,
+    "stdoutSHA256": "600b9e1e71a78ef2dea174dcef964fe504a2d0f16e98ceef6f05a1bb4dac1a04",
+    "indexPath": "data/logs/shared-data-admission-logs/2026-10-20-source-v1/source-native-v3/receiving-index.json",
+    "indexSHA256": "25d2805fc0ba26b28f5b27d5ebbc80af86c937cb0b481fb4c242737baf6d1271",
+    "eaccesSeparatelyExecuted": false
+  },
+  "releaseClassification": "Additive Node API relative to published0.3.0; no changed valid existing resolver calls. Existing Code23 policy permits a patch for nonbreaking changes. Final manifest/dev-runner/source/version/native/package receiving remains required.",
+  "notReceived": [
+    "full declared NPM/dev runner supplier closure and actual package scripts",
+    "final coherent manifest/version and remote source integration",
+    "packing, publication, installed consumer use",
+    "CDE/CSE/GHS adoption and removal of competing copies",
+    "native office projection, live host or storage migration"
+  ],
+  "next": "Coauthor the received three API paths with the actual qualified dev-runner dependency at the same Node owner; receive exact final source and full required native check/test before release acceptance. Then qualify the original three consumers through published package boundaries."
+}

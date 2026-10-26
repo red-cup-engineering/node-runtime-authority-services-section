@@ -11,19 +11,24 @@ import { runJavascriptNodeOperation } from "@red-cup-engineering/javascript-node
 /**
  * Executes one exact program request without a shell.
  * @param {object} candidateRequest An exact JavascriptNodeCommandExecutionRequest@1.
- * @param {{ timeoutMilliseconds?: number }} policy A local execution bound; it is not part of the caller's command data.
+ * @param {{ timeoutMilliseconds?: number, maximumOutputBytes?: number, inheritedFileDescriptors?: number[] }} policy A local execution bound; it is not part of the caller's command data.
  * @returns {object} An immutable JavascriptNodeCommandExecutionReceipt@1.
  */
 export function executeJavascriptNodeCommand(candidateRequest, policy = {}) {
   const request = admitJavascriptNodeCommandExecutionRequest(candidateRequest);
-  if (policy === null || typeof policy !== "object" || Array.isArray(policy) || (policy.timeoutMilliseconds !== undefined && (!Number.isSafeInteger(policy.timeoutMilliseconds) || policy.timeoutMilliseconds <= 0))) {
-    throw new TypeError("execution policy timeoutMilliseconds must be a positive safe integer when supplied");
+  if (policy === null || typeof policy !== "object" || Array.isArray(policy)
+    || Object.keys(policy).some(key => !["timeoutMilliseconds", "maximumOutputBytes", "inheritedFileDescriptors"].includes(key))
+    || ["timeoutMilliseconds", "maximumOutputBytes"].some(key => policy[key] !== undefined && (!Number.isSafeInteger(policy[key]) || policy[key] <= 0))
+    || (policy.inheritedFileDescriptors !== undefined && (!Array.isArray(policy.inheritedFileDescriptors)
+      || Array.from(policy.inheritedFileDescriptors).some(fd => !Number.isSafeInteger(fd) || fd < 0)))) {
+    throw new TypeError("execution policy requires positive finite bounds and an explicit array of opened file descriptors");
   }
   const childResult = spawnSync(request.command, request.arguments, {
     cwd: request.directory,
     shell: false,
     encoding: "utf8",
-    maxBuffer: Number.POSITIVE_INFINITY,
+    maxBuffer: policy.maximumOutputBytes ?? Number.POSITIVE_INFINITY,
+    ...(policy.inheritedFileDescriptors === undefined ? {} : { stdio: ["pipe", "pipe", "pipe", ...policy.inheritedFileDescriptors] }),
     env: request.environment === null ? undefined : request.environment,
     input: request.input === null ? undefined : request.input,
     ...(policy.timeoutMilliseconds === undefined ? {} : { timeout: policy.timeoutMilliseconds }),

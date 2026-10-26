@@ -1,6 +1,6 @@
 {
   "name": "@red-cup-engineering/legacy-capability-reallocation-service",
-  "version": "0.2.0",
+  "version": "0.3.0-dev.3",
   "type": "module",
   "description": "Inventories every legacy source carrier and refuses a reallocation claim until modern realization and legacy-route retirement are evidenced.",
   "exports": {
@@ -15,12 +15,16 @@
     "census-owned-copies": "./scripts/census-owned-copies.mjs",
     "reconcile-copy-with-owner": "./scripts/reconcile-copy-with-owner.mjs",
     "reconcile-wave": "./scripts/reconcile-wave.mjs",
-    "retire-wave": "./scripts/retire-wave.mjs"
+    "retire-wave": "./scripts/retire-wave.mjs",
+    "retire-tracked-legacy-capabilities": "./scripts/retire-tracked-legacy-capabilities.mjs",
+    "observe-tracked-legacy-owners": "./scripts/observe-tracked-legacy-owners.mjs",
+    "receive-pinned-legacy-owners": "./scripts/receive-pinned-legacy-owners.mjs"
   },
   "files": [
     "README.md",
     "src",
-    "scripts"
+    "scripts",
+    "specifications"
   ],
   "scripts": {
     "test": "node --test test/*.test.mjs"
@@ -28,5 +32,18 @@
   "engines": {
     "node": ">=22"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "dependencies": {
+    "@red-cup-engineering/git-source-reading-service": "0.1.4",
+    "@red-cup-engineering/computer-systems-fabrication-engineering-services-section": "0.4.15-dev.243"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/legacy-capability-reallocation-service.git"
+  },
+  "license": "MIT",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
+  }
 }

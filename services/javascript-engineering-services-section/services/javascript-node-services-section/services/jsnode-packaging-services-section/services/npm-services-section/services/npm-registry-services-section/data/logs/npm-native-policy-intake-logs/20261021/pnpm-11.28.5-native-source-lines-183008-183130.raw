@@ -1,0 +1,123 @@
+  };
+}
+var DEFAULT_PACKAGE_MANAGER_REGISTRY;
+var init_packageManagerRegistries = __esm({
+  "../config/reader/lib/packageManagerRegistries.js"() {
+    "use strict";
+    DEFAULT_PACKAGE_MANAGER_REGISTRY = "https://registry.npmjs.org/";
+  }
+});
+
+// ../config/reader/lib/index.js
+import fs56 from "node:fs";
+import os14 from "node:os";
+import path91 from "node:path";
+async function getConfig(opts3) {
+  if (opts3.onlyInheritDlxSettingsFromLocal) {
+    return getConfigInheritingDlxSettingsFromLocal(opts3);
+  }
+  const packageManager2 = opts3.packageManager ?? { name: "pnpm", version: "undefined" };
+  const cliOptions = opts3.cliOptions ?? {};
+  assertNoHoistConflicts(cliOptions);
+  if (cliOptions.dir) {
+    cliOptions.dir = await realpathMissing(cliOptions.dir);
+  }
+  const { configDir, state, globalDepsBuildConfig, globalYamlConfig } = await loadConfigSources(opts3, cliOptions);
+  const { pnpmConfig } = state;
+  const cwd = applyRunContext(state, { packageManager: packageManager2, workspaceDir: opts3.workspaceDir });
+  const globalYamlRegistries = applyGlobalYamlConfig(state, { configDir, globalYamlConfig });
+  const initialRegistries = resolveInitialRegistries(state);
+  assertTokenHelperComesFromTrustedConfig(pnpmConfig.authConfig, state.npmrcResult.trustedConfig);
+  resolveGlobalDirs(state);
+  pnpmConfig.dir = cwd;
+  if (cliOptions["global"]) {
+    await applyGlobalInstallSettings(state, opts3);
+  }
+  pnpmConfig.packageManager = packageManager2;
+  pnpmConfig.rootProjectManifestDir = pnpmConfig.lockfileDir ?? pnpmConfig.workspaceDir ?? pnpmConfig.dir;
+  const workspaceManifestRegistries = opts3.ignoreLocalSettings ? void 0 : await applyLocalSettings(state, { forSelfUpdate: opts3.forSelfUpdate });
+  resolveRegistriesByScope(state, { ...initialRegistries, globalYamlRegistries, workspaceManifestRegistries });
+  const maxSocketsFromEnv = applyEnvVarSettings(state);
+  await applyInstallSettingsFromAllSources(state, { maxSocketsFromEnv, globalDepsBuildConfig });
+  applyRuntimeSettings(state);
+  finalizeConfig(state);
+  return { ...splitConfigAndContext(pnpmConfig), warnings: state.warnings };
+}
+async function getConfigInheritingDlxSettingsFromLocal(opts3) {
+  const { onlyInheritDlxSettingsFromLocal: _, warnings = [], ...localOpts } = opts3;
+  const globalCfgOpts = {
+    ...localOpts,
+    ignoreLocalSettings: true,
+    cliOptions: {
+      ...localOpts.cliOptions,
+      dir: os14.homedir()
+    }
+  };
+  const globalWarnings = [];
+  const localWarnings = [];
+  const results = await Promise.allSettled([
+    getConfig({ ...globalCfgOpts, warnings: globalWarnings }),
+    getConfig({ ...localOpts, warnings: localWarnings })
+  ]);
+  warnings.push(.../* @__PURE__ */ new Set([...globalWarnings, ...localWarnings]));
+  const [final, localSrc] = results.map((result2) => {
+    if (result2.status === "rejected")
+      throw result2.reason;
+    return result2.value;
+  });
+  inheritDlxConfig(final, localSrc);
+  return { ...final, warnings };
+}
+function assertNoHoistConflicts(cliOptions) {
+  if (cliOptions["hoist"] !== false)
+    return;
+  if (cliOptions["shamefully-hoist"] === true) {
+    throw new PnpmError("CONFIG_CONFLICT_HOIST", "--shamefully-hoist cannot be used with --no-hoist");
+  }
+  if (cliOptions["hoist-pattern"]) {
+    throw new PnpmError("CONFIG_CONFLICT_HOIST", "--hoist-pattern cannot be used with --no-hoist");
+  }
+}
+async function loadConfigSources(opts3, cliOptions) {
+  const env4 = opts3.env ?? process.env;
+  const defaultOptions5 = createDefaultOptions(opts3.workspaceDir);
+  const configDir = getConfigDir(process);
+  const globalYamlConfig = await readWorkspaceManifest(configDir, GLOBAL_CONFIG_YAML_FILENAME);
+  const npmrcResult = loadNpmrcConfig({
+    cliOptions,
+    defaultOptions: defaultOptions5,
+    dir: cliOptions.dir,
+    workspaceDir: opts3.workspaceDir,
+    ignoreProjectNpmrc: opts3.ignoreProjectNpmrc,
+    npmrcAuthFile: getNpmrcAuthFile({ cliOptions, env: env4, globalYamlConfig }),
+    configDir,
+    moduleDirname: import.meta.dirname,
+    env: opts3.env,
+    // Only the global config yaml may supply `_auth` (deleted from
+    // `globalYamlConfig` later so it isn't flagged as an unknown setting).
+    globalConfigAuth: globalYamlConfig?._auth,
+    warnings: opts3.warnings
+  });
+  const configFromCliOpts = Object.fromEntries(Object.entries(cliOptions).filter(([_, value]) => typeof value !== "undefined").map(([name, value]) => [camelCase(name, { locale: "en-US" }), value]));
+  const pnpmConfig = createConfigFromDefaultsAndNpmrc(defaultOptions5, npmrcResult.mergedConfig);
+  const globalDepsBuildConfig = extractAndRemoveDependencyBuildOptions(pnpmConfig);
+  const explicitlySetKeys = new Set(Object.keys(configFromCliOpts));
+  pnpmConfig.explicitlySetKeys = explicitlySetKeys;
+  pnpmConfig.cliOptions = cliOptions;
+  Object.assign(pnpmConfig, configFromCliOpts);
+  pnpmConfig.configDir = configDir;
+  const state = {
+    cliOptions,
+    configFromCliOpts,
+    env: env4,
+    explicitlySetKeys,
+    npmrcResult,
+    pnpmConfig,
+    registrySetOnCommandLine: explicitlySetKeys.has("registry"),
+    warnings: npmrcResult.warnings
+  };
+  return { configDir, state, globalDepsBuildConfig, globalYamlConfig };
+}
+function getNpmrcAuthFile({ cliOptions, env: env4, globalYamlConfig }) {
+  return cliOptions["npmrc-auth-file"] ?? cliOptions.userconfig ?? readEnvVar(env4, "npmrc_auth_file") ?? readEnvVar(env4, "userconfig") ?? globalYamlConfig?.npmrcAuthFile ?? readNpmEnvVar(env4, "userconfig");
+}

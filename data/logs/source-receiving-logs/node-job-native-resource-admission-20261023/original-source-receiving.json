@@ -1,0 +1,107 @@
+{
+  "repository": "red-cup-engineering/node-job-service",
+  "commit": "051717649838fff960851f63ba2fdd497f3e2356",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha": "c2658d7d1b31848c3b71960543cb0368e56cd4c7",
+      "size": 14
+    },
+    {
+      "path": ".npmrc",
+      "sha": "0a1f8151935f5a483c368cd930c26519cb3663cf",
+      "size": 37
+    },
+    {
+      "path": "README.md",
+      "sha": "e082ac52cfbc51c9e137b71047c5e79433c291fd",
+      "size": 10963
+    },
+    {
+      "path": "package.json",
+      "sha": "dde8f8c024141822e32be35f6d1b39d107f0e627",
+      "size": 789
+    },
+    {
+      "path": "scripts/fleet-sync.mjs",
+      "sha": "d9defd101326e5e52ab0c68be6bfcc66f285b85b",
+      "size": 2309
+    },
+    {
+      "path": "scripts/install-fleet-sync.mjs",
+      "sha": "056b9cdc822ec5cd95e05f3015d5adaaa2949873",
+      "size": 3835
+    },
+    {
+      "path": "scripts/receive-job-writers.mjs",
+      "sha": "e8aa7e84873663147e46bd36c6ffcaf8b937598d",
+      "size": 1971
+    },
+    {
+      "path": "scripts/record-node-job-run.mjs",
+      "sha": "521b34934569060105247fc25787f04dcf654849",
+      "size": 2018
+    },
+    {
+      "path": "scripts/replicate-host-state.mjs",
+      "sha": "588517db7665f33350fdb27913b0116fda711b55",
+      "size": 1755
+    },
+    {
+      "path": "specifications/selected-job-writer-receiving.md",
+      "sha": "f2b26e3a6ac695dd397e65f0064e7260f2c7a4f1",
+      "size": 11051
+    },
+    {
+      "path": "src/fleet.mjs",
+      "sha": "a27110438a731b800f089067661c539ef4ec024b",
+      "size": 7175
+    },
+    {
+      "path": "src/node-job.mjs",
+      "sha": "e8a0c7d14a95cce8c3804b73aa6bba44a60b3984",
+      "size": 29714
+    },
+    {
+      "path": "src/observe.mjs",
+      "sha": "d1075a539517a910a3d1a72f8635bc1b9d3c7130",
+      "size": 4007
+    },
+    {
+      "path": "src/placement.mjs",
+      "sha": "7d6e62e218c5c68e9b7e5771435717a6264fc8ba",
+      "size": 8693
+    },
+    {
+      "path": "src/selected-job-writer-receiving.mjs",
+      "sha": "16695799fa82995602d2033122322d2603cfe8c4",
+      "size": 23191
+    },
+    {
+      "path": "test/node-job.test.mjs",
+      "sha": "44aa578b27140ab16897f928d953d7b015d1affe",
+      "size": 11747
+    },
+    {
+      "path": "test/placement.test.mjs",
+      "sha": "7d9e1cfb9025ba1d857596dd7e9da32575a90c9d",
+      "size": 28543
+    },
+    {
+      "path": "test/program-entries.test.mjs",
+      "sha": "91166ccd96e5aed02e861e31f2052614aee01df6",
+      "size": 2323
+    },
+    {
+      "path": "test/record-node-job-run.test.mjs",
+      "sha": "e20c37773f658ed713b6578b8b6031d81e72565b",
+      "size": 3086
+    },
+    {
+      "path": "test/selected-job-writer-receiving.test.mjs",
+      "sha": "6a65696f397f13ff1ea3b92cda60a48a03b62f41",
+      "size": 16673
+    }
+  ],
+  "builtinsOnly": true
+}

@@ -1,9 +1,13 @@
 {
   "name": "@red-cup-engineering/jsnode-package-services-section",
-  "version": "0.2.3",
+  "version": "0.5.1-dev.1",
   "type": "module",
   "description": "Shared JSNode module and schema projection with an optional package catalog and fabrication boundary.",
-  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/red-cup-engineering/jsnode-package-engineering-services-section.git"
+  },
+  "license": "MIT",
   "exports": {
     "./fabrication-receipts": "./src/fabrication-receipts.mjs",
     "./admit-jsnode-operation-package-specification": "./src/admit-jsnode-operation-package-specification.mjs",
@@ -51,6 +55,7 @@
     "package.json",
     "data/records/schema",
     "data/records/jsnode-package-cli.specification.json",
+    "examples",
     "test"
   ],
   "scripts": {
@@ -78,7 +83,7 @@
     "@red-cup-engineering/read-javascript-file-export-documentation-service": "0.1.5",
     "@red-cup-engineering/uri-services-section": "0.1.1",
     "@red-cup-engineering/yaml-frontmatter-codec-service": "0.1.7",
-    "@red-cup-engineering/computer-data-engineering-services-section": "0.2.0",
+    "@red-cup-engineering/computer-data-engineering-services-section": "0.7.0",
     "@red-cup-engineering/computer-content-address-engineering-services-section": "0.2.0",
     "@red-cup-engineering/npm-package-version-admission-service": "0.2.0",
     "@red-cup-engineering/npm-scoped-package-name-formation-service": "0.3.0"
@@ -92,5 +97,9 @@
     "run-package-tests": "./scripts/run-package-tests.mjs",
     "check-package-syntax": "./scripts/check-package-syntax.mjs",
     "standardize-package-tests": "./scripts/standardize-package-tests.mjs"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
   }
 }

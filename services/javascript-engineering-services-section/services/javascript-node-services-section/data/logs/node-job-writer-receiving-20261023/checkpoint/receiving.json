@@ -1,0 +1,30 @@
+{
+  "type": "OriginalHarnessAddressedHandoffReceiving",
+  "id": "sha256:c32b761905960116edf85c16a4bb9ab70319a615d1414a58534939cb2a16ff10",
+  "file": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/data/logs/node-job-writer-receiving-20261023/checkpoint/handoffs/c32b761905960116edf85c16a4bb9ab70319a615d1414a58534939cb2a16ff10.json",
+  "sha256": "ea234655575b08aa5d00cf981a98ee06c1e85dc520188ec31bef07ec7260f301",
+  "bytes": 9157,
+  "originalHarness": "0.2.11",
+  "nativeNode": "v24.18.0",
+  "nativeWriterExit": 0,
+  "readbackReformedSameIdAndObject": true,
+  "from": {
+    "sessionId": null,
+    "agentId": "/root/receive_pace_source",
+    "model": null,
+    "contextTokens": null
+  },
+  "work": {
+    "id": "8",
+    "title": "Revive and deploy coherent PACE capabilities on Bare Cedar Fog"
+  },
+  "sourceQualificationSHA256": "08c672f4934e17d61257aa9f6f1b8904c0b0c14b65aab2731713adb80935e9e4",
+  "contextOnly": true,
+  "nativeUnitBinding": null,
+  "modelAndUsageUnknown": true,
+  "ownCommandsInFlightAfterThisReceiving": false,
+  "otherActorInventoryClaimed": false,
+  "userReadinessReceived": false,
+  "offlineAdmissionClaimed": false,
+  "overallWorkComplete": false
+}

@@ -1,0 +1,111 @@
+    return original;
+  }
+  try {
+    const files = fs54.readdirSync(name);
+    if (PREFIX_MARKER_FILES.some((file2) => files.includes(file2))) {
+      return name;
+    }
+    const dirname3 = path89.dirname(name);
+    if (dirname3 === name) {
+      return original;
+    }
+    return findPrefixUp(dirname3, original);
+  } catch (err2) {
+    if (name === original && !(isError(err2) && "code" in err2 && err2.code === "ENOENT")) {
+      throw err2;
+    }
+    return original;
+  }
+}
+function isFilesystemRoot(dir) {
+  const driveRootRegex = /^[a-z]:[/\\]?$/i;
+  return dir === "/" || process.platform === "win32" && driveRootRegex.test(dir);
+}
+var PREFIX_MARKER_FILES;
+var init_findLocalPrefix = __esm({
+  "../config/reader/lib/findLocalPrefix.js"() {
+    "use strict";
+    init_lib3();
+    PREFIX_MARKER_FILES = ["node_modules", "package.json", "package.json5", "package.yaml", "pnpm-workspace.yaml"];
+  }
+});
+
+// ../config/reader/lib/jsonAuth.js
+function readJsonAuthEnv(env4) {
+  const value = readJsonAuthEnvValue(env4);
+  if (value == null)
+    return { auth: {}, registries: {}, fallbackRegistries: {} };
+  let parsed;
+  try {
+    parsed = JSON.parse(value);
+  } catch (err2) {
+    throw new PnpmError("INVALID_AUTH_SETTING", `Failed to parse pnpm_config__auth as JSON: ${isError(err2) ? err2.message : String(err2)}`);
+  }
+  return parseJsonAuth(parsed, "pnpm_config__auth");
+}
+function parseJsonAuth(parsed, source) {
+  if (!isJsonObject(parsed)) {
+    throw new PnpmError("INVALID_AUTH_SETTING", `${source} must be a JSON object`);
+  }
+  const collected = { auth: {}, registries: {}, defaultCandidates: [] };
+  for (const [index2, [url6, scopes]] of Object.entries(parsed).entries()) {
+    const registry = parseJsonAuthRegistry(url6, index2 + 1, source);
+    if (!isJsonObject(scopes)) {
+      throw new PnpmError("INVALID_AUTH_SETTING", `${source}[${registry.label}] must be an object keyed by scope`);
+    }
+    for (const [scope, rawCreds] of Object.entries(scopes)) {
+      addJsonAuthScope(collected, { registry, scope, rawCreds, source });
+    }
+  }
+  const { auth, registries, defaultCandidates } = collected;
+  if (defaultCandidates.length > 0) {
+    registries.default = defaultCandidates[defaultCandidates.length - 1];
+  }
+  return { auth, registries, fallbackRegistries: {}, defaultCandidates };
+}
+function addJsonAuthScope(collected, { registry, scope, rawCreds, source }) {
+  if (!isJsonAuthScope(scope)) {
+    throw new PnpmError("INVALID_AUTH_SETTING", `${source}[${registry.label}][${JSON.stringify(scope)}]: scope must be "@" or a package scope like "@org"`);
+  }
+  if (!isJsonObject(rawCreds)) {
+    throw new PnpmError("INVALID_AUTH_SETTING", `${source}[${registry.label}][${JSON.stringify(scope)}] must be an auth object`);
+  }
+  const token = jsonAuthToken(rawCreds, registry, scope, source);
+  collected.auth[`${registry.nerfed}:${scope === "@" ? "" : `${scope}:`}_authToken`] = token;
+  if (scope === "@") {
+    collected.defaultCandidates.push(registry.normalized);
+  } else {
+    collected.registries[scope] = registry.normalized;
+  }
+}
+function isJsonObject(value) {
+  return value !== null && typeof value === "object" && !Array.isArray(value);
+}
+function readGlobalConfigAuth(globalConfigAuth) {
+  if (globalConfigAuth == null)
+    return { auth: {}, registries: {}, fallbackRegistries: {} };
+  return parseJsonAuth(globalConfigAuth, "_auth");
+}
+function parseJsonAuthRegistry(url6, entryNumber, source) {
+  const label = jsonAuthRegistryLabel(url6, entryNumber);
+  let parsed;
+  try {
+    parsed = new URL(url6);
+  } catch {
+    throw new PnpmError("INVALID_AUTH_SETTING", `${source}[${label}]: key must be an http(s) registry URL`);
+  }
+  if (parsed.protocol !== "https:" && parsed.protocol !== "http:" || parsed.hostname === "") {
+    throw new PnpmError("INVALID_AUTH_SETTING", `${source}[${label}]: key must be an http(s) registry URL`);
+  }
+  if (parsed.username !== "" || parsed.password !== "" || parsed.search !== "" || parsed.hash !== "") {
+    throw new PnpmError("INVALID_AUTH_SETTING", `${source}[${label}]: registry URL must not include credentials, query, or fragment`);
+  }
+  const normalized = (0, import_normalize_registry_url7.default)(parsed.href);
+  const nerfed = nerfDart(normalized);
+  if (nerfed === "") {
+    throw new PnpmError("INVALID_AUTH_SETTING", `${source}[${label}]: key must be an http(s) registry URL`);
+  }
+  return { label, nerfed, normalized };
+}
+function jsonAuthRegistryLabel(url6, entryNumber) {
+  const entryLabel = `entry ${entryNumber}`;

@@ -1,0 +1,50 @@
+{
+  "type": "ActualOriginalMetadataAdmissionRefusalReceiving",
+  "executed": false,
+  "scopeDispatchAttempted": false,
+  "sourceRegularHashesUnchanged": 164,
+  "paths": [
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/native-result-v1",
+      "absentIncludingSymlink": true
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/node_modules",
+      "absentIncludingSymlink": true
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/package-lock.json",
+      "absentIncludingSymlink": true
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/npm-shrinkwrap.json",
+      "absentIncludingSymlink": true
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/node_modules",
+      "absentIncludingSymlink": true
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-consumer/node_modules",
+      "absentIncludingSymlink": true
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-consumer/package-lock.json",
+      "absentIncludingSymlink": true
+    }
+  ],
+  "scope": {
+    "unit": "node-process-coherent-lock-metadata-v1.scope",
+    "ActiveState": "inactive",
+    "SubState": "dead",
+    "ControlGroup": ""
+  },
+  "physicalAvailableBytes": 102947524608,
+  "aggregatePromiseBytes": 6442450944,
+  "growthChargedBytes": 4294967296,
+  "overheadChargedBytes": 134217728,
+  "projectedBytes": 92075888640,
+  "floorBytes": 100000000000,
+  "nativeGraphOrLockOrAliasCreated": false,
+  "remaining": "No retry with unchanged inputs; genuine changed capacity before original metadata, then actual identities/size evidence/full native proposal. No promise retirement/GC/threshold reduction."
+}

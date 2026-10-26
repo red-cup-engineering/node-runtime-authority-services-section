@@ -1,0 +1,13 @@
+{
+  "kind": "TaskNativeStorageOuterRefusal",
+  "plan": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24/primitive12-lock-storage-plan-qualified-continuation.json",
+  "expectedPlanSHA256": "d82e07f3c7bd030ec35663ed932806d9a57aba03bc00404355f35c802aae121b",
+  "admissionPersisted": true,
+  "childStarted": false,
+  "error": {
+    "name": "AssertionError",
+    "message": "task100GBphysicalfloorunmet",
+    "code": "ERR_ASSERTION"
+  },
+  "replayAuthorized": false
+}
