@@ -1,0 +1,69 @@
+{
+  "kind": "ConcreteCodeNativePolicyDataOwnerDesignProposal",
+  "status": "independent-concrete-contract-review-required-before-construction",
+  "at": "2026-10-21T05:23:34.104372+00:00",
+  "design": {
+    "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-native-policy-design-records/20261021/native-pnpm-policy-concrete-data-owner-design-v3.md",
+    "sha256": "c0ff8aa0fb746b279cfc82b2be0dce1a38111a527160803add9b68c7c37ec54f",
+    "bytes": 21473
+  },
+  "sources": [
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-native-policy-design-records/20261021/native-policy-primary-source-custody.json",
+      "sha256": "e49873926fd2d9dd4934e184b6b79628f002c1c9907418bfe3d44b9f2411bb9e",
+      "bytes": 4388
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-native-policy-design-records/20261021/concrete-policy-data-owner-and-current-code-primary-custody.json",
+      "sha256": "84844f7071242ab2c31c79c84ff1aef1de677dcfe4b5fa059fab3136d8726534",
+      "bytes": 11175
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-native-policy-design-records/20261021/pnpm-11.28.5-concrete-channel-source-custody.json",
+      "sha256": "f20834db394550b1c6bab22861b8947106a7d5eac3a1d8a0fad2732a13ca56a7",
+      "bytes": 19719
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-native-policy-design-records/20261021/yaml-data-owner-and-maintained-parser-primary-metadata.json",
+      "sha256": "a3093c632ab705fe69c87f8dfb5ef2df4820ca8f365ef6af50040e8e3fed8999",
+      "bytes": 15940
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-native-policy-design-records/20261021/yaml-2.9.0-actual-code-frozen-source-receiving.json",
+      "sha256": "6c5b2cda2670209257f85ad796450d6abb278aeb4984b12323e16fb1e9dc1522",
+      "bytes": 2358
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-native-policy-design-records/20261021/yaml-2.9.0-public-api-receiving-final.json",
+      "sha256": "509362d8ae98533ffc0841203dbd5a56616d3288fb7f84354c21caf74be814d6",
+      "bytes": 3625
+    }
+  ],
+  "CodeCurrentMain": "29bd16f1394553afb075f6951d9779503e0432e7",
+  "sourceEffects": false,
+  "nativeConfigCommandsRun": false,
+  "graphInstall": false,
+  "PR24Changed": false,
+  "newSupplierAlreadyReceived": false,
+  "DataOwner": "red-cup-engineering/yaml-frontmatter-codec-service",
+  "DataScope": "proposed bounded public syntax entrance using existing declared yaml2.9.0; retain existing APIs",
+  "knownClosureDelta": {
+    "baselineLock": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-frozen-recipient/consumer/pnpm-lock.yaml",
+    "baselineLockSHA256": "a9caa4caa8ab208171848235cc736ce52bae70c6f7bf45d820dbaecd7e19a0e5",
+    "alreadyHeld": [
+      "yaml@2.9.0:",
+      "@red-cup-engineering/json-services-section@0.4.0",
+      "@red-cup-engineering/yaml-frontmatter-codec-service@0.1.4",
+      "@red-cup-engineering/yaml-frontmatter-codec-service@0.1.6",
+      "@red-cup-engineering/yaml-frontmatter-codec-service@0.1.7"
+    ],
+    "newPackageVersions": 1,
+    "newCodeDirectEdges": 1,
+    "newTransitiveVersions": 0,
+    "newNetworkingEdges": 0,
+    "versionAllocation": "not performed; original planner before construction"
+  },
+  "retainedPriorSupplierAssay": "parseDocument silent multiple-doc expectation failed; original observation retained, corrected parseAllDocuments seven-vector public supplier assay received",
+  "predecessorProposal": "native-pnpm-policy-concrete-data-owner-proposal-v2.json",
+  "predecessorChange": "replace pending closure count with exact manifest/committed-lock bounded observation; no source/behavior effects"
+}

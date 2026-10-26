@@ -1,0 +1,28 @@
+{
+  "type": "NodeProcessOriginalRunnerProperOwnerReadOnlySourceProposal",
+  "state": "UNEXECUTED",
+  "dispatcherSHA256": "6397d4010b34742d534e9457d52f068bdc49889e578bafc7ddaebbd5e957e17a",
+  "managedSHA256": "87a2ece0aa5647a8f561c8eabcf04be395533d3fb0b53cf3d831f212195460da",
+  "planSHA256": "0e91b5447b575fd00042ec753a46927b68754d743ff93097de77e0611ca64395",
+  "sourceModuleSHA256": "8a3ea5787f79ef656a546596ab1b5d87b5b61f8419323a1416b7937432efeba5",
+  "sourceRepository": "red-cup-engineering/jsnode-package-services-section",
+  "publicRepoId": 1425294006,
+  "nativeOnlySmallMetadata": true,
+  "originalAggregateBytes": 6442450944,
+  "ownBytes": 536870912,
+  "scopeSeconds": 180,
+  "memoryBytes": 2147483648,
+  "sourceBounds": {
+    "treeEntries": 20000,
+    "files": 16,
+    "sourceBytes": 4194304,
+    "pagesEach": 2
+  },
+  "freshOriginalGuestAndPhysical100GBDoubleGrowthRequired": true,
+  "command": [
+    "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/runner-source-owner-intake-v1/reader-v1/dispatch-native.mjs",
+    "6397d4010b34742d534e9457d52f068bdc49889e578bafc7ddaebbd5e957e17a",
+    "87a2ece0aa5647a8f561c8eabcf04be395533d3fb0b53cf3d831f212195460da"
+  ]
+}

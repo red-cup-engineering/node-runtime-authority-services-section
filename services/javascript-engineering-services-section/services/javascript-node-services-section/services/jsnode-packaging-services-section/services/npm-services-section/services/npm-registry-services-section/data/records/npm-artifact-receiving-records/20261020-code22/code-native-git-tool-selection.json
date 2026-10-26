@@ -1,0 +1,9 @@
+{
+  "kind": "NativeCodeQualificationToolSelection",
+  "path": "/gnu/store/niv2n69b6gr947cp1p1k9lyzml7nnhvg-git-minimal-2.54.0/bin/git",
+  "realpath": "/gnu/store/niv2n69b6gr947cp1p1k9lyzml7nnhvg-git-minimal-2.54.0/bin/git",
+  "sha256": "24d78a30250537129fc84cbad6bfd4fceb4ffcc69a90981f97cdfb67971fef7b",
+  "version": "git version 2.54.0",
+  "selection": "Existing registered Guix closure; no installation or machine environment change",
+  "scope": "Code complete canonical source QA rerun; prior old-Git failure retained"
+}

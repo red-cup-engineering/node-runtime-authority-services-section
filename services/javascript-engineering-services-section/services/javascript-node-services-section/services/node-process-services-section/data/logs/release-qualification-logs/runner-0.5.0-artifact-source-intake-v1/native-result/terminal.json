@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-21T00:59:00.540Z",
+  "status": 0,
+  "queries": [
+    {
+      "name": "@red-cup-engineering/jsnode-package-services-section",
+      "version": "0.5.0",
+      "found": true,
+      "reachable": true
+    },
+    {
+      "name": "@red-cup-engineering/node-process-services-section",
+      "version": "0.3.1",
+      "found": false,
+      "reachable": true
+    }
+  ],
+  "sourceFiles": 3,
+  "scope": "Exact runner artifact/source controls intake; no native install, test execution, source mutation or publication"
+}

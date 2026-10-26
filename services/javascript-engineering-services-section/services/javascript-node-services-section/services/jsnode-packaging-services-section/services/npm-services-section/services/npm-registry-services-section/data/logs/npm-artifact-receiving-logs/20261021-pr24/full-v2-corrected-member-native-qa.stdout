@@ -1,0 +1,28 @@
+✔ source/archive accepts a nonexecutable declared bin without claiming installation (12.125401ms)
+✔ archive stage cannot promote a declared bin or lose source executable intent (4.423205ms)
+✔ one immutable SHA512 identity rejects pad-bit aliases and wrong digest lengths (3.88615ms)
+✔ publisher projection requires exact source commit and exact representation, with no extra fields (14.686191ms)
+✔ bounded literal member identity refuses duplicates, traversal, links and special modes (2.778126ms)
+✔ member omissions, extra members and changed payload cannot disappear into a set or digest (3.890269ms)
+✔ received native context permits finite read/write normalization and actual bin promotion (3.668797ms)
+✔ native npm file-directory bins follow the actual manager umask primitive only (25.315141ms)
+✔ declaration, extract, failed or foreign manager evidence cannot stand for native installation (17.750816ms)
+✔ normalization does not permit payload changes, undeclared execute, lost execute or an arbitrary chmod map (6.962146ms)
+✔ the original receiving CLI compares both stages offline and preserves exclusive result custody (2365.013225ms)
+✔ full release composes the same partial identities without authenticating or mutating supplied observations (22.567593ms)
+✔ full admission requires both byte stages, native context, finite bounds and explicit import observations (6.481161ms)
+✔ either failed partial comparison prevents a full release, with exact failure scope (32.577895ms)
+✔ full release retains witnessed PNPM normalization and the distinct native NPM umask law (11.103665ms)
+✔ full source identities support literal SHA256 while keeping exact publisher and native manifest binding (8.574774ms)
+✔ new partial stages refuse contradictory, unknown and mixed-unit evidence without freezing callers (3.383581ms)
+✔ literal paths refuse control characters and native bin receipts cannot contain duplicate or foreign bindings (5.316922ms)
+✔ the bounded original CLI decodes UTF8 fatally while preserving ordinary Unicode (721.811973ms)
+✔ immutable identities are literal strings and never coercible shared objects (19.424902ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3504.122273

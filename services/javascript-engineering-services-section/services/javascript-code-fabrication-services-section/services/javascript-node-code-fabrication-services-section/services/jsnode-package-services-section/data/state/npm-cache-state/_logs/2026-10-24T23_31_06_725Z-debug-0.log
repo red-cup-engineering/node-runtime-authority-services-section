@@ -1,0 +1,1121 @@
+0 verbose cli /gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node /gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/lib/node_modules/npm/bin/npm-cli.js
+1 info using npm@11.16.0
+2 info using node@v24.18.0
+3 silly config load:file:/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/state/registry-package-installations/market-mcp-0.1.7-x402-purchase-0.2.0/.npmrc
+5 silly config load:file:/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/logs/package-installation-logs/2026-10-24-market-mcp-purchase/user.npmrc
+6 silly config load:file:/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/logs/package-installation-logs/2026-10-24-market-mcp-purchase/global.npmrc
+7 verbose title npm install /home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/logs/package-installation-logs/2026-10-24-market-mcp-purchase/mcp-engineering-services-section-0.1.7.tgz /home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/logs/package-installation-logs/2026-10-24-market-mcp-purchase/x402-exact-purchase-service-0.2.0.tgz
+8 verbose argv "install" "--prefix" "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/state/registry-package-installations/market-mcp-0.1.7-x402-purchase-0.2.0" "--cache" "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/state/npm-cache-state" "--no-save" "--ignore-scripts" "--no-package-lock" "--no-audit" "--no-fund" "--no-update-notifier" "--fetch-retries" "0" "--fetch-timeout" "10000" "--registry" "https://registry.561.group/" "--userconfig" "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/logs/package-installation-logs/2026-10-24-market-mcp-purchase/user.npmrc" "--globalconfig" "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/logs/package-installation-logs/2026-10-24-market-mcp-purchase/global.npmrc" "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/logs/package-installation-logs/2026-10-24-market-mcp-purchase/mcp-engineering-services-section-0.1.7.tgz" "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/logs/package-installation-logs/2026-10-24-market-mcp-purchase/x402-exact-purchase-service-0.2.0.tgz"
+9 verbose logfile logs-max:10 dir:/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/state/npm-cache-state/_logs/2026-10-24T23_31_06_725Z-
+10 verbose logfile /home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/state/npm-cache-state/_logs/2026-10-24T23_31_06_725Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly allow-scripts no package.json at prefix Could not read package.json: Error: ENOENT: no such file or directory, open '/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/state/registry-package-installations/market-mcp-0.1.7-x402-purchase-0.2.0/package.json'
+13 silly packumentCache heap:335544320 maxSize:83886080 maxEntrySize:41943040
+14 silly idealTree buildDeps
+15 silly fetch manifest @red-cup-engineering/mcp-engineering-services-section@file:../../../../../../../../../../../../../../../../../../../../../../../info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/logs/package-installation-logs/2026-10-24-market-mcp-purchase/mcp-engineering-services-section-0.1.7.tgz
+16 silly fetch manifest @red-cup-engineering/x402-exact-purchase-service@file:../../../../../../../../../../../../../../../../../../../../../../../info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/logs/package-installation-logs/2026-10-24-market-mcp-purchase/x402-exact-purchase-service-0.2.0.tgz
+17 silly placeDep ROOT @red-cup-engineering/mcp-engineering-services-section@0.1.7 OK for:  want: file:../../../../../../../../../../../../../../../../../../../../../../../info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/logs/package-installation-logs/2026-10-24-market-mcp-purchase/mcp-engineering-services-section-0.1.7.tgz
+18 silly placeDep ROOT @red-cup-engineering/x402-exact-purchase-service@0.2.0 OK for:  want: file:../../../../../../../../../../../../../../../../../../../../../../../info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/logs/package-installation-logs/2026-10-24-market-mcp-purchase/x402-exact-purchase-service-0.2.0.tgz
+19 silly fetch manifest @red-cup-engineering/computer-data-engineering-services-section@0.2.0
+20 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-data-engineering-services-section cache-miss
+21 silly fetch manifest @red-cup-engineering/computer-serialized-content-engineering-services-section@0.1.0
+22 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-serialized-content-engineering-services-section cache-miss
+23 silly fetch manifest @red-cup-engineering/json-schema-services-section@0.5.0
+24 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjson-schema-services-section cache-miss
+25 silly fetch manifest @red-cup-engineering/signcell@0.2.0
+26 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fsigncell cache-miss
+27 silly fetch manifest @red-cup-engineering/oauth-services-section@0.1.2
+28 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2foauth-services-section cache-miss
+29 silly fetch manifest @red-cup-engineering/computer-triplet-serialized-content-engineering-services-section@0.1.1
+30 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-triplet-serialized-content-engineering-services-section cache-miss
+31 silly fetch manifest @a2a-js/sdk@1.0.0-beta.0
+32 silly packumentCache full:https://registry.561.group/@a2a-js%2fsdk cache-miss
+33 silly fetch manifest @red-cup-engineering/a2a-rmn-part-service@0.2.0
+34 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fa2a-rmn-part-service cache-miss
+35 silly fetch manifest @red-cup-engineering/activitypub-services-section@0.5.0
+36 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2factivitypub-services-section cache-miss
+37 silly fetch manifest @red-cup-engineering/x402-services-section@0.2.0
+38 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fx402-services-section cache-miss
+39 silly fetch manifest @x402/core@2.19.0
+40 silly packumentCache full:https://registry.561.group/@x402%2fcore cache-miss
+41 silly fetch manifest @x402/evm@2.19.0
+42 silly packumentCache full:https://registry.561.group/@x402%2fevm cache-miss
+43 silly fetch manifest express@5.2.1
+44 silly packumentCache full:https://registry.561.group/express cache-miss
+45 silly fetch manifest @red-cup-engineering/relation-model-notation-cbor-codec@0.1.0
+46 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2frelation-model-notation-cbor-codec cache-miss
+47 silly fetch manifest @red-cup-engineering/ni-services-section@0.1.2
+48 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fni-services-section cache-miss
+49 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2foauth-services-section 469ms (cache miss)
+50 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2foauth-services-section set size:undefined disposed:false
+51 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcomputer-serialized-content-engineering-services-section -585ms (cache revalidated)
+52 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-serialized-content-engineering-services-section set size:10386 disposed:false
+53 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fni-services-section -593ms (cache miss)
+54 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fni-services-section set size:undefined disposed:false
+55 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2frelation-model-notation-cbor-codec -564ms (cache miss)
+56 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2frelation-model-notation-cbor-codec set size:undefined disposed:false
+57 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fa2a-rmn-part-service -542ms (cache miss)
+58 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fa2a-rmn-part-service set size:undefined disposed:false
+59 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2factivitypub-services-section -305ms (cache miss)
+60 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2factivitypub-services-section set size:undefined disposed:false
+61 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcomputer-data-engineering-services-section -289ms (cache revalidated)
+62 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-data-engineering-services-section set size:60867 disposed:false
+63 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fjson-schema-services-section -155ms (cache revalidated)
+64 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjson-schema-services-section set size:65537 disposed:false
+65 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fx402-services-section -159ms (cache miss)
+66 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fx402-services-section set size:undefined disposed:false
+67 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcomputer-triplet-serialized-content-engineering-services-section 101ms (cache revalidated)
+68 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-triplet-serialized-content-engineering-services-section set size:68158 disposed:false
+69 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fsigncell 117ms (cache revalidated)
+70 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fsigncell set size:52888 disposed:false
+71 http fetch GET 200 https://registry.561.group/@x402%2fcore 466ms (cache miss)
+72 silly packumentCache full:https://registry.561.group/@x402%2fcore set size:undefined disposed:false
+73 http fetch GET 200 https://registry.561.group/@x402%2fevm 613ms (cache miss)
+74 silly packumentCache full:https://registry.561.group/@x402%2fevm set size:undefined disposed:false
+75 http fetch GET 200 https://registry.561.group/@a2a-js%2fsdk 908ms (cache miss)
+76 silly packumentCache full:https://registry.561.group/@a2a-js%2fsdk set size:undefined disposed:false
+77 http fetch GET 200 https://registry.561.group/express 3853ms (cache miss)
+78 silly packumentCache full:https://registry.561.group/express set size:undefined disposed:false
+79 silly placeDep ROOT @red-cup-engineering/computer-data-engineering-services-section@0.2.0 OK for: @red-cup-engineering/mcp-engineering-services-section@0.1.7 want: 0.2.0
+80 silly placeDep ROOT @red-cup-engineering/computer-serialized-content-engineering-services-section@0.1.0 OK for: @red-cup-engineering/mcp-engineering-services-section@0.1.7 want: 0.1.0
+81 silly placeDep ROOT @red-cup-engineering/computer-triplet-serialized-content-engineering-services-section@0.1.1 OK for: @red-cup-engineering/mcp-engineering-services-section@0.1.7 want: 0.1.1
+82 silly placeDep ROOT @red-cup-engineering/json-schema-services-section@0.5.0 OK for: @red-cup-engineering/mcp-engineering-services-section@0.1.7 want: 0.5.0
+83 silly placeDep ROOT @red-cup-engineering/oauth-services-section@0.1.2 OK for: @red-cup-engineering/mcp-engineering-services-section@0.1.7 want: 0.1.2
+84 silly placeDep ROOT @red-cup-engineering/signcell@0.2.0 OK for: @red-cup-engineering/mcp-engineering-services-section@0.1.7 want: 0.2.0
+85 silly fetch manifest @red-cup-engineering/cbor-services-section@0.1.1
+86 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcbor-services-section cache-miss
+87 silly fetch manifest @red-cup-engineering/computer-content-address-engineering-services-section@0.2.0
+88 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-content-address-engineering-services-section cache-miss
+89 silly fetch manifest @red-cup-engineering/json-services-section@0.4.0
+90 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjson-services-section cache-miss
+91 silly fetch manifest @red-cup-engineering/uri-services-section@0.1.1
+92 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2furi-services-section cache-miss
+93 silly fetch manifest @red-cup-engineering/exact-number-data-service@0.1.1
+94 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fexact-number-data-service cache-miss
+95 silly fetch manifest http-structured-fields@1.0.0
+96 silly packumentCache full:https://registry.561.group/http-structured-fields cache-miss
+97 silly fetch manifest @scure/base@2.4.0
+98 silly packumentCache full:https://registry.561.group/@scure%2fbase cache-miss
+99 silly fetch manifest whatwg-mimetype@5.0.0
+100 silly packumentCache full:https://registry.561.group/whatwg-mimetype cache-miss
+101 silly fetch manifest @red-cup-engineering/json-services-section@0.4.0
+102 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjson-services-section cache-miss
+103 silly fetch manifest @red-cup-engineering/uri-services-section@0.1.1
+104 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2furi-services-section cache-miss
+105 silly fetch manifest rdf-canonize@5.0.0
+106 silly packumentCache full:https://registry.561.group/rdf-canonize cache-miss
+107 silly fetch manifest @red-cup-engineering/eavt-services-section@0.10.4
+108 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2feavt-services-section cache-miss
+109 silly fetch manifest @red-cup-engineering/json-services-section@0.4.0
+110 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjson-services-section cache-miss
+111 silly fetch manifest @red-cup-engineering/computer-content-address-engineering-services-section@0.2.0
+112 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-content-address-engineering-services-section cache-miss
+113 silly fetch manifest @red-cup-engineering/computer-article-engineering-services-section@0.1.2
+114 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-article-engineering-services-section cache-miss
+115 http cache https://registry.561.group/@scure%2fbase 107ms (cache hit)
+116 silly packumentCache full:https://registry.561.group/@scure%2fbase set size:73702 disposed:false
+117 silly fetch manifest @red-cup-engineering/turtle-services-section@0.1.2
+118 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fturtle-services-section cache-miss
+119 http cache https://registry.561.group/whatwg-mimetype 112ms (cache hit)
+120 silly packumentCache full:https://registry.561.group/whatwg-mimetype set size:28134 disposed:false
+121 silly fetch manifest @hyperjump/browser@1.5.1
+122 silly packumentCache full:https://registry.561.group/@hyperjump%2fbrowser cache-miss
+123 http cache https://registry.561.group/rdf-canonize 113ms (cache hit)
+124 silly packumentCache full:https://registry.561.group/rdf-canonize set size:103879 disposed:false
+125 silly fetch manifest @hyperjump/json-schema@1.18.0
+126 silly packumentCache full:https://registry.561.group/@hyperjump%2fjson-schema cache-miss
+127 http cache https://registry.561.group/http-structured-fields 119ms (cache hit)
+128 silly packumentCache full:https://registry.561.group/http-structured-fields set size:17297 disposed:false
+129 silly fetch manifest @red-cup-engineering/cryptographic-computer-data-engineering-services-section@0.3.1
+130 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcryptographic-computer-data-engineering-services-section cache-miss
+131 http cache https://registry.561.group/@hyperjump%2fbrowser 34ms (cache hit)
+132 silly packumentCache full:https://registry.561.group/@hyperjump%2fbrowser set size:105204 disposed:false
+133 silly fetch manifest @red-cup-engineering/json-services-section@0.4.0
+134 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjson-services-section cache-miss
+135 http cache https://registry.561.group/@hyperjump%2fjson-schema 49ms (cache hit)
+136 silly packumentCache full:https://registry.561.group/@hyperjump%2fjson-schema set size:451311 disposed:false
+137 silly fetch manifest @red-cup-engineering/uri-services-section@0.1.1
+138 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2furi-services-section cache-miss
+139 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fjson-services-section 240ms (cache revalidated)
+140 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjson-services-section set size:22858 disposed:false
+141 silly fetch manifest @red-cup-engineering/cryptographic-computer-data-engineering-services-section@0.3.1
+142 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcryptographic-computer-data-engineering-services-section cache-miss
+143 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcbor-services-section 268ms (cache revalidated)
+144 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcbor-services-section set size:8393 disposed:false
+145 silly fetch manifest @red-cup-engineering/html-structural-projection-service@0.3.2
+146 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fhtml-structural-projection-service cache-miss
+147 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2furi-services-section 276ms (cache revalidated)
+148 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2furi-services-section set size:19882 disposed:false
+149 silly fetch manifest @red-cup-engineering/http-services-section@0.6.2
+150 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fhttp-services-section cache-miss
+151 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcomputer-content-address-engineering-services-section 288ms (cache revalidated)
+152 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-content-address-engineering-services-section set size:6041 disposed:false
+153 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fjson-services-section 289ms (cache revalidated)
+154 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjson-services-section set size:22858 disposed:false
+155 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjson-services-section dispose
+156 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcomputer-content-address-engineering-services-section 291ms (cache revalidated)
+157 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-content-address-engineering-services-section set size:6041 disposed:false
+158 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-content-address-engineering-services-section dispose
+159 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcomputer-article-engineering-services-section 510ms (cache revalidated)
+160 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-article-engineering-services-section set size:11518 disposed:false
+161 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fexact-number-data-service 532ms (cache revalidated)
+162 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fexact-number-data-service set size:15950 disposed:false
+163 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2furi-services-section 553ms (cache revalidated)
+164 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2furi-services-section set size:19882 disposed:false
+165 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2furi-services-section dispose
+166 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fjson-services-section 565ms (cache revalidated)
+167 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjson-services-section set size:22858 disposed:true
+168 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjson-services-section dispose
+169 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2feavt-services-section 595ms (cache revalidated)
+170 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2feavt-services-section set size:72379 disposed:false
+171 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcryptographic-computer-data-engineering-services-section 488ms (cache revalidated)
+172 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcryptographic-computer-data-engineering-services-section set size:14829 disposed:false
+173 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fturtle-services-section 508ms (cache revalidated)
+174 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fturtle-services-section set size:8522 disposed:false
+175 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fjson-services-section 474ms (cache revalidated)
+176 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjson-services-section set size:22858 disposed:true
+177 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjson-services-section dispose
+178 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2furi-services-section 467ms (cache revalidated)
+179 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2furi-services-section set size:19882 disposed:true
+180 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2furi-services-section dispose
+181 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcryptographic-computer-data-engineering-services-section 536ms (cache revalidated)
+182 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcryptographic-computer-data-engineering-services-section set size:14829 disposed:false
+183 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcryptographic-computer-data-engineering-services-section dispose
+184 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fhtml-structural-projection-service 530ms (cache revalidated)
+185 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fhtml-structural-projection-service set size:29234 disposed:false
+186 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fhttp-services-section 680ms (cache miss)
+187 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fhttp-services-section set size:undefined disposed:false
+188 silly placeDep ROOT @red-cup-engineering/cbor-services-section@0.1.1 OK for: @red-cup-engineering/computer-data-engineering-services-section@0.2.0 want: 0.1.1
+189 silly placeDep ROOT @red-cup-engineering/computer-content-address-engineering-services-section@0.2.0 OK for: @red-cup-engineering/computer-data-engineering-services-section@0.2.0 want: 0.2.0
+190 silly placeDep ROOT @red-cup-engineering/exact-number-data-service@0.1.1 OK for: @red-cup-engineering/computer-data-engineering-services-section@0.2.0 want: 0.1.1
+191 silly placeDep ROOT @red-cup-engineering/json-services-section@0.4.0 OK for: @red-cup-engineering/computer-data-engineering-services-section@0.2.0 want: 0.4.0
+192 silly placeDep ROOT @red-cup-engineering/uri-services-section@0.1.1 OK for: @red-cup-engineering/computer-data-engineering-services-section@0.2.0 want: 0.1.1
+193 silly fetch manifest cbor2@2.4.0
+194 silly packumentCache full:https://registry.561.group/cbor2 cache-miss
+195 http cache https://registry.561.group/cbor2 20ms (cache hit)
+196 silly packumentCache full:https://registry.561.group/cbor2 set size:79530 disposed:false
+197 silly placeDep ROOT @red-cup-engineering/cryptographic-computer-data-engineering-services-section@0.3.1 OK for: @red-cup-engineering/cbor-services-section@0.1.1 want: 0.3.1
+198 silly placeDep ROOT cbor2@2.4.0 OK for: @red-cup-engineering/cbor-services-section@0.1.1 want: 2.4.0
+199 silly fetch manifest @cto.af/wtf8@0.0.6
+200 silly packumentCache full:https://registry.561.group/@cto.af%2fwtf8 cache-miss
+201 http cache https://registry.561.group/@cto.af%2fwtf8 12ms (cache hit)
+202 silly packumentCache full:https://registry.561.group/@cto.af%2fwtf8 set size:15756 disposed:false
+203 silly placeDep ROOT @scure/base@2.4.0 OK for: @red-cup-engineering/computer-serialized-content-engineering-services-section@0.1.0 want: 2.4.0
+204 silly placeDep ROOT http-structured-fields@1.0.0 OK for: @red-cup-engineering/computer-serialized-content-engineering-services-section@0.1.0 want: 1.0.0
+205 silly placeDep ROOT whatwg-mimetype@5.0.0 OK for: @red-cup-engineering/computer-serialized-content-engineering-services-section@0.1.0 want: 5.0.0
+206 silly placeDep ROOT @red-cup-engineering/computer-article-engineering-services-section@0.1.2 OK for: @red-cup-engineering/computer-triplet-serialized-content-engineering-services-section@0.1.1 want: 0.1.2
+207 silly placeDep ROOT @red-cup-engineering/eavt-services-section@0.10.4 OK for: @red-cup-engineering/computer-triplet-serialized-content-engineering-services-section@0.1.1 want: 0.10.4
+208 silly placeDep ROOT @red-cup-engineering/turtle-services-section@0.1.2 OK for: @red-cup-engineering/computer-triplet-serialized-content-engineering-services-section@0.1.1 want: 0.1.2
+209 silly placeDep ROOT rdf-canonize@5.0.0 OK for: @red-cup-engineering/computer-triplet-serialized-content-engineering-services-section@0.1.1 want: 5.0.0
+210 silly fetch manifest @red-cup-engineering/computer-content-engineering-services-section@0.1.0
+211 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-content-engineering-services-section cache-miss
+212 silly fetch manifest @red-cup-engineering/computer-file-engineering-services-section@0.4.0
+213 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-file-engineering-services-section cache-miss
+214 silly fetch manifest @red-cup-engineering/computer-filepath-engineering-services-section@0.1.0
+215 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-filepath-engineering-services-section cache-miss
+216 silly fetch manifest @red-cup-engineering/computer-text-content-engineering-services-section@0.1.0
+217 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-text-content-engineering-services-section cache-miss
+218 silly fetch manifest @red-cup-engineering/datom-services-section@0.1.0
+219 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fdatom-services-section cache-miss
+220 silly fetch manifest @red-cup-engineering/jsonl-services-section@0.1.0
+221 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjsonl-services-section cache-miss
+222 silly fetch manifest @red-cup-engineering/markdown-engineering-services-section@0.5.1
+223 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fmarkdown-engineering-services-section cache-miss
+224 silly fetch manifest @red-cup-engineering/metrologic@0.3.0
+225 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fmetrologic cache-miss
+226 silly fetch manifest @red-cup-engineering/signcell@0.1.0
+227 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fsigncell cache-hit
+228 silly fetch manifest @red-cup-engineering/eavt-services-section@0.11.0
+229 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2feavt-services-section cache-hit
+230 silly fetch manifest setimmediate@^1.0.5
+231 silly packumentCache full:https://registry.561.group/setimmediate cache-miss
+232 http cache https://registry.561.group/setimmediate 61ms (cache hit)
+233 silly packumentCache full:https://registry.561.group/setimmediate set size:17237 disposed:false
+234 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcomputer-filepath-engineering-services-section 442ms (cache revalidated)
+235 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-filepath-engineering-services-section set size:6296 disposed:false
+236 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fmarkdown-engineering-services-section 446ms (cache revalidated)
+237 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fmarkdown-engineering-services-section set size:89237 disposed:false
+238 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcomputer-file-engineering-services-section 465ms (cache revalidated)
+239 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-file-engineering-services-section set size:62844 disposed:false
+240 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fjsonl-services-section 483ms (cache revalidated)
+241 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjsonl-services-section set size:9860 disposed:false
+242 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcomputer-text-content-engineering-services-section 485ms (cache revalidated)
+243 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-text-content-engineering-services-section set size:2181 disposed:false
+244 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcomputer-content-engineering-services-section 490ms (cache revalidated)
+245 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-content-engineering-services-section set size:29225 disposed:false
+246 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fdatom-services-section 490ms (cache revalidated)
+247 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fdatom-services-section set size:10889 disposed:false
+248 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fmetrologic 509ms (cache revalidated)
+249 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fmetrologic set size:484836 disposed:false
+250 silly placeDep ROOT @red-cup-engineering/computer-content-engineering-services-section@0.1.0 OK for: @red-cup-engineering/eavt-services-section@0.10.4 want: 0.1.0
+251 silly placeDep ROOT @red-cup-engineering/computer-file-engineering-services-section@0.4.0 OK for: @red-cup-engineering/eavt-services-section@0.10.4 want: 0.4.0
+252 silly placeDep ROOT @red-cup-engineering/computer-filepath-engineering-services-section@0.1.0 OK for: @red-cup-engineering/eavt-services-section@0.10.4 want: 0.1.0
+253 silly placeDep ROOT @red-cup-engineering/computer-text-content-engineering-services-section@0.1.0 OK for: @red-cup-engineering/eavt-services-section@0.10.4 want: 0.1.0
+254 silly placeDep ROOT @red-cup-engineering/datom-services-section@0.1.0 OK for: @red-cup-engineering/eavt-services-section@0.10.4 want: 0.1.0
+255 silly placeDep ROOT @red-cup-engineering/jsonl-services-section@0.1.0 OK for: @red-cup-engineering/eavt-services-section@0.10.4 want: 0.1.0
+256 silly placeDep ROOT @red-cup-engineering/markdown-engineering-services-section@0.5.1 OK for: @red-cup-engineering/eavt-services-section@0.10.4 want: 0.5.1
+257 silly placeDep ROOT @red-cup-engineering/metrologic@0.3.0 OK for: @red-cup-engineering/eavt-services-section@0.10.4 want: 0.3.0
+258 silly placeDep node_modules/@red-cup-engineering/eavt-services-section @red-cup-engineering/signcell@0.1.0 OK for: @red-cup-engineering/eavt-services-section@0.10.4 want: 0.1.0
+259 silly fetch manifest @red-cup-engineering/split-markdown-frontmatter-fence-service@0.2.0
+260 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fsplit-markdown-frontmatter-fence-service cache-miss
+261 silly fetch manifest @red-cup-engineering/read-markdown-structure-service@0.2.0
+262 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fread-markdown-structure-service cache-miss
+263 silly fetch manifest @red-cup-engineering/read-markdown-features-service@0.2.0
+264 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fread-markdown-features-service cache-miss
+265 silly fetch manifest @red-cup-engineering/read-markdown-frontmatter-service@0.2.0
+266 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fread-markdown-frontmatter-service cache-miss
+267 silly fetch manifest @red-cup-engineering/csl-json-services-section@0.2.0
+268 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcsl-json-services-section cache-miss
+269 silly fetch manifest @red-cup-engineering/html-structural-projection-service@0.3.1
+270 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fhtml-structural-projection-service cache-hit
+271 silly fetch manifest @red-cup-engineering/metrologic@0.4.0
+272 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fmetrologic cache-hit
+273 silly fetch manifest @red-cup-engineering/semiotic-eavt-services-section@0.1.0
+274 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fsemiotic-eavt-services-section cache-miss
+275 silly fetch manifest @red-cup-engineering/yaml-frontmatter-codec-service@0.1.6
+276 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fyaml-frontmatter-codec-service cache-miss
+277 silly fetch manifest @red-cup-engineering/toml-file-codec-service@0.1.1
+278 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2ftoml-file-codec-service cache-miss
+279 silly fetch manifest @red-cup-engineering/toml-services-section@0.1.1
+280 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2ftoml-services-section cache-miss
+281 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcsl-json-services-section 109ms (cache revalidated)
+282 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcsl-json-services-section set size:36552 disposed:false
+283 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fsplit-markdown-frontmatter-fence-service 171ms (cache revalidated)
+284 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fsplit-markdown-frontmatter-fence-service set size:2398 disposed:false
+285 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fread-markdown-features-service 189ms (cache revalidated)
+286 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fread-markdown-features-service set size:3195 disposed:false
+287 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fyaml-frontmatter-codec-service 188ms (cache revalidated)
+288 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fyaml-frontmatter-codec-service set size:15673 disposed:false
+289 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fread-markdown-structure-service 199ms (cache revalidated)
+290 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fread-markdown-structure-service set size:2353 disposed:false
+291 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2ftoml-services-section 195ms (cache revalidated)
+292 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2ftoml-services-section set size:11657 disposed:false
+293 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2ftoml-file-codec-service 197ms (cache revalidated)
+294 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2ftoml-file-codec-service set size:5224 disposed:false
+295 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fread-markdown-frontmatter-service 202ms (cache revalidated)
+296 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fread-markdown-frontmatter-service set size:9730 disposed:false
+297 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fsemiotic-eavt-services-section 208ms (cache revalidated)
+298 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fsemiotic-eavt-services-section set size:103250 disposed:false
+299 silly placeDep node_modules/@red-cup-engineering/computer-file-engineering-services-section @red-cup-engineering/signcell@0.1.0 OK for: @red-cup-engineering/computer-file-engineering-services-section@0.4.0 want: 0.1.0
+300 silly placeDep node_modules/@red-cup-engineering/datom-services-section @red-cup-engineering/eavt-services-section@0.11.0 OK for: @red-cup-engineering/datom-services-section@0.1.0 want: 0.11.0
+301 silly placeDep ROOT @hyperjump/browser@1.5.1 OK for: @red-cup-engineering/json-schema-services-section@0.5.0 want: 1.5.1
+302 silly placeDep ROOT @hyperjump/json-schema@1.18.0 OK for: @red-cup-engineering/json-schema-services-section@0.5.0 want: 1.18.0
+303 silly fetch manifest content-type@^1.0.5
+304 silly packumentCache full:https://registry.561.group/content-type cache-miss
+305 silly fetch manifest @hyperjump/uri@^1.2.0
+306 silly packumentCache full:https://registry.561.group/@hyperjump%2furi cache-miss
+307 silly fetch manifest @hyperjump/json-pointer@^1.1.0
+308 silly packumentCache full:https://registry.561.group/@hyperjump%2fjson-pointer cache-miss
+309 silly fetch manifest uuid@^14.0.0
+310 silly packumentCache full:https://registry.561.group/uuid cache-miss
+311 silly fetch manifest content-type@^1.0.4
+312 silly packumentCache full:https://registry.561.group/content-type cache-miss
+313 silly fetch manifest just-curry-it@^5.3.0
+314 silly packumentCache full:https://registry.561.group/just-curry-it cache-miss
+315 silly fetch manifest @hyperjump/uri@^1.2.0
+316 silly packumentCache full:https://registry.561.group/@hyperjump%2furi cache-miss
+317 silly fetch manifest @hyperjump/pact@^1.2.0
+318 silly packumentCache full:https://registry.561.group/@hyperjump%2fpact cache-miss
+319 silly fetch manifest @hyperjump/json-pointer@^1.1.0
+320 silly packumentCache full:https://registry.561.group/@hyperjump%2fjson-pointer cache-miss
+321 silly fetch manifest @hyperjump/json-schema-formats@^1.0.0
+322 silly packumentCache full:https://registry.561.group/@hyperjump%2fjson-schema-formats cache-miss
+323 http cache https://registry.561.group/content-type 38ms (cache hit)
+324 silly packumentCache full:https://registry.561.group/content-type set size:29533 disposed:false
+325 http cache https://registry.561.group/content-type 38ms (cache hit)
+326 silly packumentCache full:https://registry.561.group/content-type set size:29533 disposed:false
+327 silly packumentCache full:https://registry.561.group/content-type dispose
+328 http cache https://registry.561.group/@hyperjump%2furi 43ms (cache hit)
+329 silly packumentCache full:https://registry.561.group/@hyperjump%2furi set size:36738 disposed:false
+330 http cache https://registry.561.group/@hyperjump%2furi 42ms (cache hit)
+331 silly packumentCache full:https://registry.561.group/@hyperjump%2furi set size:36738 disposed:false
+332 silly packumentCache full:https://registry.561.group/@hyperjump%2furi dispose
+333 http cache https://registry.561.group/@hyperjump%2fjson-pointer 46ms (cache hit)
+334 silly packumentCache full:https://registry.561.group/@hyperjump%2fjson-pointer set size:84219 disposed:false
+335 http cache https://registry.561.group/@hyperjump%2fjson-pointer 45ms (cache hit)
+336 silly packumentCache full:https://registry.561.group/@hyperjump%2fjson-pointer set size:84219 disposed:false
+337 silly packumentCache full:https://registry.561.group/@hyperjump%2fjson-pointer dispose
+338 http cache https://registry.561.group/just-curry-it 48ms (cache hit)
+339 silly packumentCache full:https://registry.561.group/just-curry-it set size:38897 disposed:false
+340 http cache https://registry.561.group/@hyperjump%2fpact 53ms (cache hit)
+341 silly packumentCache full:https://registry.561.group/@hyperjump%2fpact set size:40934 disposed:false
+342 http cache https://registry.561.group/@hyperjump%2fjson-schema-formats 58ms (cache hit)
+343 silly packumentCache full:https://registry.561.group/@hyperjump%2fjson-schema-formats set size:26082 disposed:false
+344 http cache https://registry.561.group/uuid 75ms (cache hit)
+345 silly packumentCache full:https://registry.561.group/uuid set size:265684 disposed:false
+346 silly placeDep ROOT @hyperjump/json-pointer@1.1.3 OK for: @hyperjump/browser@1.5.1 want: ^1.1.0
+347 silly placeDep ROOT @hyperjump/uri@1.3.9 OK for: @hyperjump/browser@1.5.1 want: ^1.2.0
+348 silly placeDep ROOT content-type@1.0.5 OK for: @hyperjump/browser@1.5.1 want: ^1.0.5
+349 silly placeDep ROOT @hyperjump/json-schema-formats@1.1.0 OK for: @hyperjump/json-schema@1.18.0 want: ^1.0.0
+350 silly placeDep ROOT @hyperjump/pact@1.4.0 OK for: @hyperjump/json-schema@1.18.0 want: ^1.2.0
+351 silly placeDep ROOT just-curry-it@5.3.0 OK for: @hyperjump/json-schema@1.18.0 want: ^5.3.0
+352 silly placeDep ROOT uuid@14.0.3 OK for: @hyperjump/json-schema@1.18.0 want: ^14.0.0
+353 silly fetch manifest idn-hostname@^15.1.2
+354 silly packumentCache full:https://registry.561.group/idn-hostname cache-miss
+355 http cache https://registry.561.group/idn-hostname 16ms (cache hit)
+356 silly packumentCache full:https://registry.561.group/idn-hostname set size:75123 disposed:false
+357 silly placeDep ROOT idn-hostname@15.1.19 OK for: @hyperjump/json-schema-formats@1.1.0 want: ^15.1.2
+358 silly fetch manifest punycode@^2.3.1
+359 silly packumentCache full:https://registry.561.group/punycode cache-miss
+360 http cache https://registry.561.group/punycode 11ms (cache hit)
+361 silly packumentCache full:https://registry.561.group/punycode set size:61232 disposed:false
+362 silly placeDep ROOT @red-cup-engineering/csl-json-services-section@0.2.0 OK for: @red-cup-engineering/markdown-engineering-services-section@0.5.1 want: 0.2.0
+363 silly placeDep ROOT @red-cup-engineering/html-structural-projection-service@0.3.1 OK for: @red-cup-engineering/markdown-engineering-services-section@0.5.1 want: 0.3.1
+364 silly placeDep node_modules/@red-cup-engineering/markdown-engineering-services-section @red-cup-engineering/metrologic@0.4.0 OK for: @red-cup-engineering/markdown-engineering-services-section@0.5.1 want: 0.4.0
+365 silly placeDep ROOT @red-cup-engineering/read-markdown-features-service@0.2.0 OK for: @red-cup-engineering/markdown-engineering-services-section@0.5.1 want: 0.2.0
+366 silly placeDep ROOT @red-cup-engineering/read-markdown-frontmatter-service@0.2.0 OK for: @red-cup-engineering/markdown-engineering-services-section@0.5.1 want: 0.2.0
+367 silly placeDep ROOT @red-cup-engineering/read-markdown-structure-service@0.2.0 OK for: @red-cup-engineering/markdown-engineering-services-section@0.5.1 want: 0.2.0
+368 silly placeDep ROOT @red-cup-engineering/semiotic-eavt-services-section@0.1.0 OK for: @red-cup-engineering/markdown-engineering-services-section@0.5.1 want: 0.1.0
+369 silly placeDep ROOT @red-cup-engineering/split-markdown-frontmatter-fence-service@0.2.0 OK for: @red-cup-engineering/markdown-engineering-services-section@0.5.1 want: 0.2.0
+370 silly placeDep ROOT @red-cup-engineering/toml-file-codec-service@0.1.1 OK for: @red-cup-engineering/markdown-engineering-services-section@0.5.1 want: 0.1.1
+371 silly placeDep ROOT @red-cup-engineering/toml-services-section@0.1.1 OK for: @red-cup-engineering/markdown-engineering-services-section@0.5.1 want: 0.1.1
+372 silly placeDep ROOT @red-cup-engineering/yaml-frontmatter-codec-service@0.1.6 OK for: @red-cup-engineering/markdown-engineering-services-section@0.5.1 want: 0.1.6
+373 silly fetch manifest parse5@8.0.1
+374 silly packumentCache full:https://registry.561.group/parse5 cache-miss
+375 silly fetch manifest entities@8.1.0
+376 silly packumentCache full:https://registry.561.group/entities cache-miss
+377 silly fetch manifest @red-cup-engineering/css-services-section@0.1.1
+378 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcss-services-section cache-miss
+379 silly fetch manifest @red-cup-engineering/html-engineering-services-section@0.1.1
+380 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fhtml-engineering-services-section cache-miss
+381 silly fetch manifest @red-cup-engineering/xml-document-rendering-service@0.1.7
+382 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fxml-document-rendering-service cache-miss
+383 silly fetch manifest @red-cup-engineering/toml-codec-service@0.1.3
+384 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2ftoml-codec-service cache-miss
+385 silly fetch manifest @red-cup-engineering/yaml-frontmatter-codec-service@0.1.4
+386 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fyaml-frontmatter-codec-service cache-hit
+387 silly fetch manifest smol-toml@1.9.0
+388 silly packumentCache full:https://registry.561.group/smol-toml cache-miss
+389 silly fetch manifest yaml@2.9.1
+390 silly packumentCache full:https://registry.561.group/yaml cache-miss
+391 http cache https://registry.561.group/entities 56ms (cache hit)
+392 silly packumentCache full:https://registry.561.group/entities set size:104823 disposed:false
+393 http cache https://registry.561.group/smol-toml 57ms (cache hit)
+394 silly packumentCache full:https://registry.561.group/smol-toml set size:106832 disposed:false
+395 http cache https://registry.561.group/parse5 71ms (cache hit)
+396 silly packumentCache full:https://registry.561.group/parse5 set size:123070 disposed:false
+397 http cache https://registry.561.group/yaml 88ms (cache hit)
+398 silly packumentCache full:https://registry.561.group/yaml set size:386369 disposed:false
+399 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2ftoml-codec-service 121ms (cache revalidated)
+400 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2ftoml-codec-service set size:3477 disposed:false
+401 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fxml-document-rendering-service 168ms (cache revalidated)
+402 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fxml-document-rendering-service set size:17544 disposed:false
+403 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fhtml-engineering-services-section 171ms (cache revalidated)
+404 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fhtml-engineering-services-section set size:26406 disposed:false
+405 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcss-services-section 179ms (cache revalidated)
+406 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcss-services-section set size:11170 disposed:false
+407 silly placeDep ROOT @red-cup-engineering/css-services-section@0.1.1 OK for: @red-cup-engineering/html-structural-projection-service@0.3.1 want: 0.1.1
+408 silly placeDep ROOT @red-cup-engineering/html-engineering-services-section@0.1.1 OK for: @red-cup-engineering/html-structural-projection-service@0.3.1 want: 0.1.1
+409 silly placeDep ROOT @red-cup-engineering/xml-document-rendering-service@0.1.7 OK for: @red-cup-engineering/html-structural-projection-service@0.3.1 want: 0.1.7
+410 silly placeDep ROOT entities@8.1.0 OK for: @red-cup-engineering/html-structural-projection-service@0.3.1 want: 8.1.0
+411 silly placeDep ROOT parse5@8.0.1 OK for: @red-cup-engineering/html-structural-projection-service@0.3.1 want: 8.0.1
+412 silly fetch manifest @red-cup-engineering/web-theming-service@0.0.5
+413 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fweb-theming-service cache-miss
+414 silly fetch manifest @red-cup-engineering/computer-article-engineering-services-section@0.1.1
+415 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-article-engineering-services-section cache-hit
+416 silly fetch manifest @red-cup-engineering/computer-triplet-serialized-content-engineering-services-section@0.1.0
+417 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-triplet-serialized-content-engineering-services-section cache-hit
+418 silly fetch manifest @rgrove/parse-xml@5.0.0
+419 silly packumentCache full:https://registry.561.group/@rgrove%2fparse-xml cache-miss
+420 silly fetch manifest xml-name-validator@5.0.0
+421 silly packumentCache full:https://registry.561.group/xml-name-validator cache-miss
+422 http cache https://registry.561.group/xml-name-validator 18ms (cache hit)
+423 silly packumentCache full:https://registry.561.group/xml-name-validator set size:11040 disposed:false
+424 http cache https://registry.561.group/@rgrove%2fparse-xml 25ms (cache hit)
+425 silly packumentCache full:https://registry.561.group/@rgrove%2fparse-xml set size:63635 disposed:false
+426 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fweb-theming-service 129ms (cache revalidated)
+427 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fweb-theming-service set size:15848 disposed:false
+428 silly placeDep node_modules/@red-cup-engineering/css-services-section @red-cup-engineering/metrologic@0.4.0 OK for: @red-cup-engineering/css-services-section@0.1.1 want: 0.4.0
+429 silly placeDep ROOT @red-cup-engineering/web-theming-service@0.0.5 OK for: @red-cup-engineering/css-services-section@0.1.1 want: 0.0.5
+430 silly placeDep node_modules/@red-cup-engineering/html-engineering-services-section @red-cup-engineering/computer-article-engineering-services-section@0.1.1 OK for: @red-cup-engineering/html-engineering-services-section@0.1.1 want: 0.1.1
+431 silly placeDep node_modules/@red-cup-engineering/html-engineering-services-section @red-cup-engineering/computer-triplet-serialized-content-engineering-services-section@0.1.0 OK for: @red-cup-engineering/html-engineering-services-section@0.1.1 want: 0.1.0
+432 silly fetch manifest @red-cup-engineering/turtle-services-section@0.1.1
+433 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fturtle-services-section cache-hit
+434 silly placeDep node_modules/@red-cup-engineering/oauth-services-section @red-cup-engineering/html-structural-projection-service@0.3.2 OK for: @red-cup-engineering/oauth-services-section@0.1.2 want: 0.3.2
+435 silly placeDep ROOT @red-cup-engineering/http-services-section@0.6.2 OK for: @red-cup-engineering/oauth-services-section@0.1.2 want: 0.6.2
+436 silly fetch manifest @red-cup-engineering/css-services-section@0.1.2
+437 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcss-services-section cache-hit
+438 silly fetch manifest @red-cup-engineering/html-engineering-services-section@0.1.2
+439 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fhtml-engineering-services-section cache-hit
+440 silly fetch manifest @red-cup-engineering/signchain@0.1.0
+441 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fsignchain cache-miss
+442 silly fetch manifest @red-cup-engineering/computer-code-engineering-services-section@0.1.2
+443 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-code-engineering-services-section cache-miss
+444 silly fetch manifest @red-cup-engineering/javascript-node-services-section@0.3.2
+445 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjavascript-node-services-section cache-miss
+446 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fjavascript-node-services-section 140ms (cache revalidated)
+447 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjavascript-node-services-section set size:24190 disposed:false
+448 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcomputer-code-engineering-services-section 149ms (cache revalidated)
+449 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcomputer-code-engineering-services-section set size:47049 disposed:false
+450 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fsignchain 188ms (cache miss)
+451 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fsignchain set size:undefined disposed:false
+452 silly placeDep ROOT @red-cup-engineering/computer-code-engineering-services-section@0.1.2 OK for: @red-cup-engineering/http-services-section@0.6.2 want: 0.1.2
+453 silly placeDep node_modules/@red-cup-engineering/http-services-section @red-cup-engineering/eavt-services-section@0.11.0 OK for: @red-cup-engineering/http-services-section@0.6.2 want: 0.11.0
+454 silly placeDep ROOT @red-cup-engineering/javascript-node-services-section@0.3.2 OK for: @red-cup-engineering/http-services-section@0.6.2 want: 0.3.2
+455 silly placeDep ROOT @red-cup-engineering/signchain@0.1.0 OK for: @red-cup-engineering/http-services-section@0.6.2 want: 0.1.0
+456 silly fetch manifest @red-cup-engineering/markdown-engineering-services-section@0.5.2
+457 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fmarkdown-engineering-services-section cache-hit
+458 silly fetch manifest @red-cup-engineering/read-javascript-file-export-documentation-service@0.1.5
+459 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fread-javascript-file-export-documentation-service cache-miss
+460 silly fetch manifest @red-cup-engineering/node-process-services-section@0.2.2
+461 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fnode-process-services-section cache-miss
+462 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fread-javascript-file-export-documentation-service 92ms (cache revalidated)
+463 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fread-javascript-file-export-documentation-service set size:17071 disposed:false
+464 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fnode-process-services-section 99ms (cache revalidated)
+465 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fnode-process-services-section set size:17791 disposed:false
+466 silly placeDep node_modules/@red-cup-engineering/javascript-node-services-section @red-cup-engineering/markdown-engineering-services-section@0.5.2 OK for: @red-cup-engineering/javascript-node-services-section@0.3.2 want: 0.5.2
+467 silly placeDep node_modules/@red-cup-engineering/javascript-node-services-section @red-cup-engineering/metrologic@0.4.0 OK for: @red-cup-engineering/javascript-node-services-section@0.3.2 want: 0.4.0
+468 silly placeDep ROOT @red-cup-engineering/node-process-services-section@0.2.2 OK for: @red-cup-engineering/javascript-node-services-section@0.3.2 want: 0.2.2
+469 silly placeDep ROOT @red-cup-engineering/read-javascript-file-export-documentation-service@0.1.5 OK for: @red-cup-engineering/javascript-node-services-section@0.3.2 want: 0.1.5
+470 silly fetch manifest @red-cup-engineering/csl-json-services-section@0.2.1
+471 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcsl-json-services-section cache-hit
+472 silly fetch manifest @red-cup-engineering/yaml-frontmatter-codec-service@0.1.7
+473 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fyaml-frontmatter-codec-service cache-hit
+474 silly fetch manifest @red-cup-engineering/toml-file-codec-service@0.1.2
+475 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2ftoml-file-codec-service cache-hit
+476 silly fetch manifest @red-cup-engineering/toml-services-section@0.1.2
+477 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2ftoml-services-section cache-hit
+478 silly placeDep ROOT @red-cup-engineering/toml-codec-service@0.1.3 OK for: @red-cup-engineering/read-markdown-frontmatter-service@0.2.0 want: 0.1.3
+479 silly placeDep node_modules/@red-cup-engineering/read-markdown-frontmatter-service @red-cup-engineering/yaml-frontmatter-codec-service@0.1.4 OK for: @red-cup-engineering/read-markdown-frontmatter-service@0.2.0 want: 0.1.4
+480 silly fetch manifest @red-cup-engineering/json-codec-service@0.1.6
+481 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjson-codec-service cache-miss
+482 silly fetch manifest yaml@2.9.0
+483 silly packumentCache full:https://registry.561.group/yaml cache-hit
+484 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fjson-codec-service 115ms (cache revalidated)
+485 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjson-codec-service set size:22009 disposed:false
+486 silly placeDep node_modules/@red-cup-engineering/semiotic-eavt-services-section @red-cup-engineering/eavt-services-section@0.11.0 OK for: @red-cup-engineering/semiotic-eavt-services-section@0.1.0 want: 0.11.0
+487 silly placeDep node_modules/@red-cup-engineering/signchain @red-cup-engineering/metrologic@0.4.0 OK for: @red-cup-engineering/signchain@0.1.0 want: 0.4.0
+488 silly placeDep ROOT smol-toml@1.9.0 OK for: @red-cup-engineering/toml-services-section@0.1.1 want: 1.9.0
+489 silly placeDep node_modules/@red-cup-engineering/turtle-services-section @red-cup-engineering/eavt-services-section@0.11.0 OK for: @red-cup-engineering/turtle-services-section@0.1.2 want: 0.11.0
+490 silly placeDep node_modules/@red-cup-engineering/web-theming-service @red-cup-engineering/metrologic@0.4.0 OK for: @red-cup-engineering/web-theming-service@0.0.5 want: 0.4.0
+491 silly fetch manifest @bufbuild/protobuf@^2.10.2
+492 silly packumentCache full:https://registry.561.group/@bufbuild%2fprotobuf cache-miss
+493 http fetch GET 200 https://registry.561.group/@bufbuild%2fprotobuf 933ms (cache miss)
+494 silly packumentCache full:https://registry.561.group/@bufbuild%2fprotobuf set size:undefined disposed:false
+495 silly fetch manifest @grpc/grpc-js@^1.11.0
+496 silly packumentCache full:https://registry.561.group/@grpc%2fgrpc-js cache-miss
+497 http fetch GET 200 https://registry.561.group/@grpc%2fgrpc-js 2219ms (cache miss)
+498 silly packumentCache full:https://registry.561.group/@grpc%2fgrpc-js set size:undefined disposed:false
+499 silly fetch manifest @red-cup-engineering/a2a-agent-card-discovery-service@0.5.0
+500 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fa2a-agent-card-discovery-service cache-miss
+501 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fa2a-agent-card-discovery-service 149ms (cache miss)
+502 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fa2a-agent-card-discovery-service set size:undefined disposed:false
+503 silly placeDep ROOT @a2a-js/sdk@1.0.0-beta.0 OK for: @red-cup-engineering/x402-exact-purchase-service@0.2.0 want: 1.0.0-beta.0
+504 silly placeDep ROOT @red-cup-engineering/a2a-rmn-part-service@0.2.0 OK for: @red-cup-engineering/x402-exact-purchase-service@0.2.0 want: 0.2.0
+505 silly placeDep ROOT @red-cup-engineering/activitypub-services-section@0.5.0 OK for: @red-cup-engineering/x402-exact-purchase-service@0.2.0 want: 0.5.0
+506 silly placeDep ROOT @red-cup-engineering/ni-services-section@0.1.2 OK for: @red-cup-engineering/x402-exact-purchase-service@0.2.0 want: 0.1.2
+507 silly placeDep ROOT @red-cup-engineering/relation-model-notation-cbor-codec@0.1.0 OK for: @red-cup-engineering/x402-exact-purchase-service@0.2.0 want: 0.1.0
+508 silly placeDep ROOT @red-cup-engineering/x402-services-section@0.2.0 OK for: @red-cup-engineering/x402-exact-purchase-service@0.2.0 want: 0.2.0
+509 silly placeDep ROOT @x402/core@2.19.0 OK for: @red-cup-engineering/x402-exact-purchase-service@0.2.0 want: 2.19.0
+510 silly placeDep ROOT @x402/evm@2.19.0 OK for: @red-cup-engineering/x402-exact-purchase-service@0.2.0 want: 2.19.0
+511 silly placeDep ROOT express@5.2.1 OK for: @red-cup-engineering/x402-exact-purchase-service@0.2.0 want: 5.2.1
+512 silly fetch manifest jose@^6.2.3
+513 silly packumentCache full:https://registry.561.group/jose cache-miss
+514 silly fetch manifest uuid@^11.1.0
+515 silly packumentCache full:https://registry.561.group/uuid cache-hit
+516 silly fetch manifest @red-cup-engineering/ni-services-section@0.1.1
+517 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fni-services-section cache-miss
+518 silly fetch manifest @fedify/fedify@2.3.1
+519 silly packumentCache full:https://registry.561.group/@fedify%2ffedify cache-miss
+520 silly fetch manifest @fedify/sqlite@2.3.1
+521 silly packumentCache full:https://registry.561.group/@fedify%2fsqlite cache-miss
+522 silly fetch manifest @fedify/vocab@2.3.1
+523 silly packumentCache full:https://registry.561.group/@fedify%2fvocab cache-miss
+524 silly fetch manifest @hono/node-server@1.19.14
+525 silly packumentCache full:https://registry.561.group/@hono%2fnode-server cache-miss
+526 silly fetch manifest @red-cup-engineering/a2a-rmn-part-service@0.3.0
+527 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fa2a-rmn-part-service cache-miss
+528 silly fetch manifest @red-cup-engineering/gcloud-runtime-authorities-service@0.1.0
+529 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fgcloud-runtime-authorities-service cache-miss
+530 silly fetch manifest @red-cup-engineering/cloudflare-r2-services-section@0.4.0
+531 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcloudflare-r2-services-section cache-miss
+532 silly fetch manifest @red-cup-engineering/json-schema-services-section@0.1.9
+533 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjson-schema-services-section cache-hit
+534 silly fetch manifest @red-cup-engineering/relation-model-notation-json-codec@0.0.6
+535 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2frelation-model-notation-json-codec cache-miss
+536 silly fetch manifest @red-cup-engineering/relation-model-notation-typing@0.0.2
+537 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2frelation-model-notation-typing cache-miss
+538 silly fetch manifest @red-cup-engineering/semantic-content-identify-service@0.2.8
+539 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fsemantic-content-identify-service cache-miss
+540 silly fetch manifest ethers@6.17.0
+541 silly packumentCache full:https://registry.561.group/ethers cache-miss
+542 silly fetch manifest @red-cup-engineering/canonicalize-semiotic-json-service@0.0.1
+543 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcanonicalize-semiotic-json-service cache-miss
+544 silly fetch manifest @red-cup-engineering/cbor-ni-service@0.0.1
+545 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcbor-ni-service cache-miss
+546 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fni-services-section 754ms (cache revalidated)
+547 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fni-services-section set size:3200 disposed:false
+548 silly fetch manifest @red-cup-engineering/cbor-codec-service@0.0.2
+549 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcbor-codec-service cache-miss
+550 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fa2a-rmn-part-service 838ms (cache revalidated)
+551 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fa2a-rmn-part-service set size:6031 disposed:false
+552 silly fetch manifest @red-cup-engineering/canonicalize-https-url-service@0.1.0
+553 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcanonicalize-https-url-service cache-miss
+554 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcanonicalize-semiotic-json-service 900ms (cache miss)
+555 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcanonicalize-semiotic-json-service set size:undefined disposed:false
+556 silly fetch manifest @red-cup-engineering/semantic-content-identify-service@0.2.7
+557 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fsemantic-content-identify-service cache-miss
+558 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fgcloud-runtime-authorities-service 921ms (cache miss)
+559 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fgcloud-runtime-authorities-service set size:undefined disposed:false
+560 silly fetch manifest @x402/express@2.19.0
+561 silly packumentCache full:https://registry.561.group/@x402%2fexpress cache-miss
+562 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2frelation-model-notation-json-codec 935ms (cache miss)
+563 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2frelation-model-notation-json-codec set size:undefined disposed:false
+564 silly fetch manifest @x402/extensions@2.19.0
+565 silly packumentCache full:https://registry.561.group/@x402%2fextensions cache-miss
+566 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2frelation-model-notation-typing 994ms (cache miss)
+567 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2frelation-model-notation-typing set size:undefined disposed:false
+568 silly fetch manifest zod@^3.24.2
+569 silly packumentCache full:https://registry.561.group/zod cache-miss
+570 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcloudflare-r2-services-section 1116ms (cache miss)
+571 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcloudflare-r2-services-section set size:undefined disposed:false
+572 silly fetch manifest zod@^3.24.2
+573 silly packumentCache full:https://registry.561.group/zod cache-miss
+574 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcbor-ni-service 1114ms (cache miss)
+575 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcbor-ni-service set size:undefined disposed:false
+576 silly fetch manifest viem@^2.48.11
+577 silly packumentCache full:https://registry.561.group/viem cache-miss
+578 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fsemantic-content-identify-service 1263ms (cache miss)
+579 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fsemantic-content-identify-service set size:undefined disposed:false
+580 silly fetch manifest qs@^6.14.0
+581 silly packumentCache full:https://registry.561.group/qs cache-miss
+582 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcbor-codec-service 698ms (cache miss)
+583 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcbor-codec-service set size:undefined disposed:false
+584 silly fetch manifest depd@^2.0.0
+585 silly packumentCache full:https://registry.561.group/depd cache-miss
+586 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fcanonicalize-https-url-service 1341ms (cache miss)
+587 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fcanonicalize-https-url-service set size:undefined disposed:false
+588 silly fetch manifest etag@^1.8.1
+589 silly packumentCache full:https://registry.561.group/etag cache-miss
+590 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fsemantic-content-identify-service 1282ms (cache miss)
+591 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fsemantic-content-identify-service set size:undefined disposed:false
+592 silly fetch manifest once@^1.4.0
+593 silly packumentCache full:https://registry.561.group/once cache-miss
+594 http fetch GET 200 https://registry.561.group/once 1188ms (cache miss)
+595 silly packumentCache full:https://registry.561.group/once set size:undefined disposed:false
+596 silly fetch manifest send@^1.1.0
+597 silly packumentCache full:https://registry.561.group/send cache-miss
+598 http fetch GET 200 https://registry.561.group/depd 2006ms (cache miss)
+599 silly packumentCache full:https://registry.561.group/depd set size:undefined disposed:false
+600 silly fetch manifest vary@^1.1.2
+601 silly packumentCache full:https://registry.561.group/vary cache-miss
+602 http fetch GET 200 https://registry.561.group/etag 1427ms (cache miss)
+603 silly packumentCache full:https://registry.561.group/etag set size:undefined disposed:false
+604 silly fetch manifest debug@^4.4.0
+605 silly packumentCache full:https://registry.561.group/debug cache-miss
+606 http fetch GET 200 https://registry.561.group/@x402%2fexpress 2702ms (cache miss)
+607 silly packumentCache full:https://registry.561.group/@x402%2fexpress set size:undefined disposed:false
+608 silly fetch manifest fresh@^2.0.0
+609 silly packumentCache full:https://registry.561.group/fresh cache-miss
+610 http fetch GET 200 https://registry.561.group/@x402%2fextensions 2828ms (cache miss)
+611 silly packumentCache full:https://registry.561.group/@x402%2fextensions set size:undefined disposed:false
+612 silly fetch manifest cookie@^0.7.1
+613 silly packumentCache full:https://registry.561.group/cookie cache-miss
+614 http fetch GET 200 https://registry.561.group/vary 505ms (cache miss)
+615 silly packumentCache full:https://registry.561.group/vary set size:undefined disposed:false
+616 silly fetch manifest router@^2.2.0
+617 silly packumentCache full:https://registry.561.group/router cache-miss
+618 http fetch GET 200 https://registry.561.group/fresh 449ms (cache miss)
+619 silly packumentCache full:https://registry.561.group/fresh set size:undefined disposed:false
+620 silly fetch manifest accepts@^2.0.0
+621 silly packumentCache full:https://registry.561.group/accepts cache-miss
+622 http fetch GET 200 https://registry.561.group/cookie 656ms (cache miss)
+623 silly packumentCache full:https://registry.561.group/cookie set size:undefined disposed:false
+624 silly fetch manifest type-is@^2.0.1
+625 silly packumentCache full:https://registry.561.group/type-is cache-miss
+626 http fetch GET 200 https://registry.561.group/send 2140ms (cache miss)
+627 silly packumentCache full:https://registry.561.group/send set size:undefined disposed:false
+628 silly fetch manifest parseurl@^1.3.3
+629 silly packumentCache full:https://registry.561.group/parseurl cache-miss
+630 http fetch GET 200 https://registry.561.group/@hono%2fnode-server 5948ms (cache miss)
+631 silly packumentCache full:https://registry.561.group/@hono%2fnode-server set size:undefined disposed:false
+632 silly fetch manifest statuses@^2.0.1
+633 silly packumentCache full:https://registry.561.group/statuses cache-miss
+634 http fetch GET 200 https://registry.561.group/accepts 1909ms (cache miss)
+635 silly packumentCache full:https://registry.561.group/accepts set size:undefined disposed:false
+636 silly fetch manifest encodeurl@^2.0.0
+637 silly packumentCache full:https://registry.561.group/encodeurl cache-miss
+638 http fetch GET 200 https://registry.561.group/router 2712ms (cache miss)
+639 silly packumentCache full:https://registry.561.group/router set size:undefined disposed:false
+640 silly fetch manifest mime-types@^3.0.0
+641 silly packumentCache full:https://registry.561.group/mime-types cache-miss
+642 http fetch GET 200 https://registry.561.group/parseurl 1204ms (cache miss)
+643 silly packumentCache full:https://registry.561.group/parseurl set size:undefined disposed:false
+644 silly fetch manifest proxy-addr@^2.0.7
+645 silly packumentCache full:https://registry.561.group/proxy-addr cache-miss
+646 http fetch GET 200 https://registry.561.group/type-is 2366ms (cache miss)
+647 silly packumentCache full:https://registry.561.group/type-is set size:undefined disposed:false
+648 silly fetch manifest body-parser@^2.2.1
+649 silly packumentCache full:https://registry.561.group/body-parser cache-miss
+650 http fetch GET 200 https://registry.561.group/encodeurl 1290ms (cache miss)
+651 silly packumentCache full:https://registry.561.group/encodeurl set size:undefined disposed:false
+652 silly fetch manifest escape-html@^1.0.3
+653 silly packumentCache full:https://registry.561.group/escape-html cache-miss
+654 http fetch GET 200 https://registry.561.group/statuses 1503ms (cache miss)
+655 silly packumentCache full:https://registry.561.group/statuses set size:undefined disposed:false
+656 silly fetch manifest http-errors@^2.0.0
+657 silly packumentCache full:https://registry.561.group/http-errors cache-miss
+658 http fetch GET 200 https://registry.561.group/escape-html 1097ms (cache miss)
+659 silly packumentCache full:https://registry.561.group/escape-html set size:undefined disposed:false
+660 silly fetch manifest on-finished@^2.4.1
+661 silly packumentCache full:https://registry.561.group/on-finished cache-miss
+662 http fetch GET 200 https://registry.561.group/proxy-addr 1783ms (cache miss)
+663 silly packumentCache full:https://registry.561.group/proxy-addr set size:undefined disposed:false
+664 silly fetch manifest finalhandler@^2.1.0
+665 silly packumentCache full:https://registry.561.group/finalhandler cache-miss
+666 http fetch GET 200 https://registry.561.group/debug 4922ms (cache miss)
+667 silly packumentCache full:https://registry.561.group/debug set size:undefined disposed:false
+668 silly fetch manifest range-parser@^1.2.1
+669 silly packumentCache full:https://registry.561.group/range-parser cache-miss
+670 http fetch GET 200 https://registry.561.group/mime-types 1873ms (cache miss)
+671 silly packumentCache full:https://registry.561.group/mime-types set size:undefined disposed:false
+672 silly fetch manifest serve-static@^2.2.0
+673 silly packumentCache full:https://registry.561.group/serve-static cache-miss
+674 http fetch GET 200 https://registry.561.group/http-errors 1443ms (cache miss)
+675 silly packumentCache full:https://registry.561.group/http-errors set size:undefined disposed:false
+676 silly fetch manifest cookie-signature@^1.2.1
+677 silly packumentCache full:https://registry.561.group/cookie-signature cache-miss
+678 http fetch GET 200 https://registry.561.group/on-finished 664ms (cache miss)
+679 silly packumentCache full:https://registry.561.group/on-finished set size:undefined disposed:false
+680 silly fetch manifest merge-descriptors@^2.0.0
+681 silly packumentCache full:https://registry.561.group/merge-descriptors cache-miss
+682 http fetch GET 200 https://registry.561.group/qs 7806ms (cache miss)
+683 silly packumentCache full:https://registry.561.group/qs set size:undefined disposed:false
+684 silly fetch manifest content-disposition@^1.0.0
+685 silly packumentCache full:https://registry.561.group/content-disposition cache-miss
+686 http fetch GET 200 https://registry.561.group/range-parser 613ms (cache miss)
+687 silly packumentCache full:https://registry.561.group/range-parser set size:undefined disposed:false
+688 http fetch GET 200 https://registry.561.group/cookie-signature 517ms (cache miss)
+689 silly packumentCache full:https://registry.561.group/cookie-signature set size:undefined disposed:false
+690 http fetch GET 200 https://registry.561.group/finalhandler 906ms (cache miss)
+691 silly packumentCache full:https://registry.561.group/finalhandler set size:undefined disposed:false
+692 http fetch GET 200 https://registry.561.group/merge-descriptors 419ms (cache miss)
+693 silly packumentCache full:https://registry.561.group/merge-descriptors set size:undefined disposed:false
+694 http fetch GET 200 https://registry.561.group/content-disposition 457ms (cache miss)
+695 silly packumentCache full:https://registry.561.group/content-disposition set size:undefined disposed:false
+696 http fetch GET 200 https://registry.561.group/serve-static 1048ms (cache miss)
+697 silly packumentCache full:https://registry.561.group/serve-static set size:undefined disposed:false
+698 http fetch GET https://registry.561.group/jose attempt 1 failed with FETCH_ERROR
+699 http fetch GET https://registry.561.group/@fedify%2ffedify attempt 1 failed with FETCH_ERROR
+700 http fetch GET https://registry.561.group/@fedify%2fsqlite attempt 1 failed with FETCH_ERROR
+701 http fetch GET https://registry.561.group/@fedify%2fvocab attempt 1 failed with FETCH_ERROR
+702 http fetch GET https://registry.561.group/ethers attempt 1 failed with FETCH_ERROR
+703 http fetch GET https://registry.561.group/zod attempt 1 failed with FETCH_ERROR
+704 http fetch GET https://registry.561.group/zod attempt 1 failed with FETCH_ERROR
+705 http fetch GET https://registry.561.group/viem attempt 1 failed with FETCH_ERROR
+706 http fetch GET 200 https://registry.561.group/body-parser 4350ms (cache miss)
+707 silly packumentCache full:https://registry.561.group/body-parser set size:undefined disposed:false
+708 silly fetch manifest jose@^6.2.3
+709 silly packumentCache full:https://registry.561.group/jose cache-miss
+710 http fetch GET 200 https://registry.561.group/jose 331ms (cache miss)
+711 silly packumentCache full:https://registry.561.group/jose set size:undefined disposed:false
+712 silly placeDep ROOT jose@6.2.13 OK for: @a2a-js/sdk@1.0.0-beta.0 want: ^6.2.3
+713 silly placeDep node_modules/@a2a-js/sdk uuid@11.1.1 OK for: @a2a-js/sdk@1.0.0-beta.0 want: ^11.1.0
+714 silly placeDep node_modules/@red-cup-engineering/a2a-rmn-part-service @red-cup-engineering/ni-services-section@0.1.1 OK for: @red-cup-engineering/a2a-rmn-part-service@0.2.0 want: 0.1.1
+715 silly fetch manifest @fedify/fedify@2.3.1
+716 silly packumentCache full:https://registry.561.group/@fedify%2ffedify cache-miss
+717 http fetch GET https://registry.561.group/@fedify%2ffedify attempt 1 failed with FETCH_ERROR
+718 silly fetch manifest @fedify/sqlite@2.3.1
+719 silly packumentCache full:https://registry.561.group/@fedify%2fsqlite cache-miss
+720 http fetch GET 200 https://registry.561.group/@fedify%2fsqlite 1743ms (cache miss)
+721 silly packumentCache full:https://registry.561.group/@fedify%2fsqlite set size:undefined disposed:false
+722 silly fetch manifest @fedify/fedify@2.3.1
+723 silly packumentCache full:https://registry.561.group/@fedify%2ffedify cache-miss
+724 http fetch GET 200 https://registry.561.group/@fedify%2ffedify 8556ms (cache miss)
+725 silly packumentCache full:https://registry.561.group/@fedify%2ffedify set size:undefined disposed:false
+726 silly fetch manifest @fedify/vocab@2.3.1
+727 silly packumentCache full:https://registry.561.group/@fedify%2fvocab cache-miss
+728 http fetch GET 200 https://registry.561.group/@fedify%2fvocab 1168ms (cache miss)
+729 silly packumentCache full:https://registry.561.group/@fedify%2fvocab set size:undefined disposed:false
+730 silly fetch manifest hono@^4
+731 silly packumentCache full:https://registry.561.group/hono cache-miss
+732 http fetch GET 200 https://registry.561.group/hono 6653ms (cache miss)
+733 silly packumentCache full:https://registry.561.group/hono set size:undefined disposed:false
+734 silly fetch manifest ethers@6.17.0
+735 silly packumentCache full:https://registry.561.group/ethers cache-miss
+736 http fetch GET 200 https://registry.561.group/ethers 1971ms (cache miss)
+737 silly packumentCache full:https://registry.561.group/ethers set size:undefined disposed:false
+738 silly placeDep node_modules/@red-cup-engineering/activitypub-services-section @fedify/fedify@ OK for: @red-cup-engineering/activitypub-services-section@0.5.0 want: 2.3.1
+739 silly placeDep ROOT @fedify/sqlite@2.3.1 OK for: @red-cup-engineering/activitypub-services-section@0.5.0 want: 2.3.1
+740 silly placeDep ROOT @fedify/fedify@2.3.1 OK for: @fedify/sqlite@2.3.1 want: ^2.3.1
+741 silly placeDep ROOT @fedify/vocab@2.3.1 OK for: @red-cup-engineering/activitypub-services-section@0.5.0 want: 2.3.1
+742 silly placeDep ROOT @hono/node-server@1.19.14 OK for: @red-cup-engineering/activitypub-services-section@0.5.0 want: 1.19.14
+743 silly placeDep ROOT hono@4.13.13 OK for: @hono/node-server@1.19.14 want: ^4
+744 silly placeDep node_modules/@red-cup-engineering/activitypub-services-section @red-cup-engineering/a2a-rmn-part-service@0.3.0 OK for: @red-cup-engineering/activitypub-services-section@0.5.0 want: 0.3.0
+745 silly placeDep ROOT @red-cup-engineering/cloudflare-r2-services-section@0.4.0 OK for: @red-cup-engineering/activitypub-services-section@0.5.0 want: 0.4.0
+746 silly placeDep ROOT @red-cup-engineering/gcloud-runtime-authorities-service@0.1.0 OK for: @red-cup-engineering/activitypub-services-section@0.5.0 want: 0.1.0
+747 silly placeDep node_modules/@red-cup-engineering/activitypub-services-section @red-cup-engineering/json-schema-services-section@0.1.9 OK for: @red-cup-engineering/activitypub-services-section@0.5.0 want: 0.1.9
+748 silly placeDep ROOT @red-cup-engineering/relation-model-notation-json-codec@0.0.6 OK for: @red-cup-engineering/activitypub-services-section@0.5.0 want: 0.0.6
+749 silly placeDep ROOT @red-cup-engineering/relation-model-notation-typing@0.0.2 OK for: @red-cup-engineering/activitypub-services-section@0.5.0 want: 0.0.2
+750 silly placeDep ROOT @red-cup-engineering/semantic-content-identify-service@0.2.8 OK for: @red-cup-engineering/activitypub-services-section@0.5.0 want: 0.2.8
+751 silly placeDep ROOT ethers@6.17.0 OK for: @red-cup-engineering/activitypub-services-section@0.5.0 want: 6.17.0
+752 silly fetch manifest es-toolkit@^1.46.1
+753 silly packumentCache full:https://registry.561.group/es-toolkit cache-miss
+754 silly fetch manifest @logtape/logtape@^2.2.0
+755 silly packumentCache full:https://registry.561.group/@logtape%2flogtape cache-miss
+756 silly fetch manifest @js-temporal/polyfill@^0.5.1
+757 silly packumentCache full:https://registry.561.group/@js-temporal%2fpolyfill cache-miss
+758 silly fetch manifest jsonld@^9.0.0
+759 silly packumentCache full:https://registry.561.group/jsonld cache-miss
+760 silly fetch manifest es-toolkit@1.46.1
+761 silly packumentCache full:https://registry.561.group/es-toolkit cache-miss
+762 silly fetch manifest json-canon@^1.0.1
+763 silly packumentCache full:https://registry.561.group/json-canon cache-miss
+764 silly fetch manifest byte-encodings@^1.0.11
+765 silly packumentCache full:https://registry.561.group/byte-encodings cache-miss
+766 silly fetch manifest @logtape/logtape@^2.2.0
+767 silly packumentCache full:https://registry.561.group/@logtape%2flogtape cache-miss
+768 silly fetch manifest @fedify/webfinger@2.3.1
+769 silly packumentCache full:https://registry.561.group/@fedify%2fwebfinger cache-miss
+770 silly fetch manifest @opentelemetry/api@^1.9.1
+771 silly packumentCache full:https://registry.561.group/@opentelemetry%2fapi cache-miss
+772 silly fetch manifest @opentelemetry/core@^2.7.1
+773 silly packumentCache full:https://registry.561.group/@opentelemetry%2fcore cache-miss
+774 silly fetch manifest urlpattern-polyfill@^10.1.0
+775 silly packumentCache full:https://registry.561.group/urlpattern-polyfill cache-miss
+776 silly fetch manifest @fedify/uri-template@2.3.1
+777 silly packumentCache full:https://registry.561.group/@fedify%2furi-template cache-miss
+778 silly fetch manifest @fedify/vocab-runtime@2.3.1
+779 silly packumentCache full:https://registry.561.group/@fedify%2fvocab-runtime cache-miss
+780 silly fetch manifest @js-temporal/polyfill@^0.5.1
+781 silly packumentCache full:https://registry.561.group/@js-temporal%2fpolyfill cache-miss
+782 http fetch GET 200 https://registry.561.group/json-canon 2144ms (cache miss)
+783 silly packumentCache full:https://registry.561.group/json-canon set size:undefined disposed:false
+784 silly fetch manifest structured-field-values@^2.0.4
+785 silly packumentCache full:https://registry.561.group/structured-field-values cache-miss
+786 http fetch GET 200 https://registry.561.group/byte-encodings 2292ms (cache miss)
+787 silly packumentCache full:https://registry.561.group/byte-encodings set size:undefined disposed:false
+788 silly fetch manifest @opentelemetry/sdk-metrics@2.7.1
+789 silly packumentCache full:https://registry.561.group/@opentelemetry%2fsdk-metrics cache-miss
+790 http fetch GET 200 https://registry.561.group/@js-temporal%2fpolyfill 4876ms (cache miss)
+791 silly packumentCache full:https://registry.561.group/@js-temporal%2fpolyfill set size:undefined disposed:false
+792 silly fetch manifest @opentelemetry/sdk-trace-base@^2.7.1
+793 silly packumentCache full:https://registry.561.group/@opentelemetry%2fsdk-trace-base cache-miss
+794 http fetch GET 200 https://registry.561.group/@js-temporal%2fpolyfill 4917ms (cache miss)
+795 silly packumentCache full:https://registry.561.group/@js-temporal%2fpolyfill set size:undefined disposed:false
+796 silly fetch manifest @opentelemetry/semantic-conventions@^1.40.0
+797 silly packumentCache full:https://registry.561.group/@opentelemetry%2fsemantic-conventions cache-miss
+798 http fetch GET 200 https://registry.561.group/structured-field-values 3166ms (cache miss)
+799 silly packumentCache full:https://registry.561.group/structured-field-values set size:undefined disposed:false
+800 silly fetch manifest pkijs@^3.3.3
+801 silly packumentCache full:https://registry.561.group/pkijs cache-miss
+802 http fetch GET 200 https://registry.561.group/@opentelemetry%2fsdk-metrics 3264ms (cache miss)
+803 silly packumentCache full:https://registry.561.group/@opentelemetry%2fsdk-metrics set size:undefined disposed:false
+804 silly fetch manifest asn1js@^3.0.10
+805 silly packumentCache full:https://registry.561.group/asn1js cache-miss
+806 http fetch GET 200 https://registry.561.group/urlpattern-polyfill 5791ms (cache miss)
+807 silly packumentCache full:https://registry.561.group/urlpattern-polyfill set size:undefined disposed:false
+808 silly fetch manifest jsonld@^9.0.0
+809 silly packumentCache full:https://registry.561.group/jsonld cache-miss
+810 http fetch GET 200 https://registry.561.group/@opentelemetry%2fapi 6296ms (cache miss)
+811 silly packumentCache full:https://registry.561.group/@opentelemetry%2fapi set size:undefined disposed:false
+812 silly fetch manifest es-toolkit@1.46.1
+813 silly packumentCache full:https://registry.561.group/es-toolkit cache-miss
+814 http fetch GET 200 https://registry.561.group/asn1js 1079ms (cache miss)
+815 silly packumentCache full:https://registry.561.group/asn1js set size:undefined disposed:false
+816 silly fetch manifest @logtape/logtape@^2.2.0
+817 silly packumentCache full:https://registry.561.group/@logtape%2flogtape cache-miss
+818 http fetch GET 200 https://registry.561.group/@opentelemetry%2fsdk-trace-base 2096ms (cache miss)
+819 silly packumentCache full:https://registry.561.group/@opentelemetry%2fsdk-trace-base set size:undefined disposed:false
+820 silly fetch manifest @fedify/webfinger@2.3.1
+821 silly packumentCache full:https://registry.561.group/@fedify%2fwebfinger cache-miss
+822 http fetch GET 200 https://registry.561.group/@opentelemetry%2fsemantic-conventions 2686ms (cache miss)
+823 silly packumentCache full:https://registry.561.group/@opentelemetry%2fsemantic-conventions set size:undefined disposed:false
+824 silly fetch manifest @fedify/vocab-tools@2.3.1
+825 silly packumentCache full:https://registry.561.group/@fedify%2fvocab-tools cache-miss
+826 http fetch GET 200 https://registry.561.group/@fedify%2furi-template 7683ms (cache miss)
+827 silly packumentCache full:https://registry.561.group/@fedify%2furi-template set size:undefined disposed:false
+828 silly fetch manifest @multiformats/base-x@^4.0.1
+829 silly packumentCache full:https://registry.561.group/@multiformats%2fbase-x cache-miss
+830 http fetch GET 200 https://registry.561.group/jsonld 3330ms (cache miss)
+831 silly packumentCache full:https://registry.561.group/jsonld set size:undefined disposed:false
+832 silly fetch manifest @fedify/vocab-runtime@2.3.1
+833 silly packumentCache full:https://registry.561.group/@fedify%2fvocab-runtime cache-miss
+834 http fetch GET 200 https://registry.561.group/jsonld 9429ms (cache miss)
+835 silly packumentCache full:https://registry.561.group/jsonld set size:undefined disposed:false
+836 silly fetch manifest @red-cup-engineering/immutable-content-custody-service@0.2.0
+837 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fimmutable-content-custody-service cache-miss
+838 http fetch GET https://registry.561.group/es-toolkit attempt 1 failed with FETCH_ERROR
+839 silly fetch manifest @red-cup-engineering/relation-model-notation@0.0.2
+840 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2frelation-model-notation cache-miss
+841 http fetch GET https://registry.561.group/@logtape%2flogtape attempt 1 failed with FETCH_ERROR
+842 silly fetch manifest @red-cup-engineering/relation-model-notation@0.0.2
+843 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2frelation-model-notation cache-miss
+844 http fetch GET https://registry.561.group/es-toolkit attempt 1 failed with FETCH_ERROR
+845 silly fetch manifest @red-cup-engineering/relation-model-notation@0.0.2
+846 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2frelation-model-notation cache-miss
+847 http fetch GET https://registry.561.group/@logtape%2flogtape attempt 1 failed with FETCH_ERROR
+848 silly fetch manifest @red-cup-engineering/relation-model-notation-eval@0.0.4
+849 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2frelation-model-notation-eval cache-miss
+850 http fetch GET https://registry.561.group/@fedify%2fwebfinger attempt 1 failed with FETCH_ERROR
+851 silly fetch manifest @red-cup-engineering/relation-model-notation-runtime@0.2.0
+852 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2frelation-model-notation-runtime cache-miss
+853 http fetch GET https://registry.561.group/@fedify%2fvocab-runtime attempt 1 failed with FETCH_ERROR
+854 silly fetch manifest @red-cup-engineering/json-byte-carrier-service@0.1.0
+855 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjson-byte-carrier-service cache-miss
+856 http fetch GET https://registry.561.group/@opentelemetry%2fcore attempt 1 failed with FETCH_ERROR
+857 silly fetch manifest @adraffy/ens-normalize@1.11.1
+858 silly packumentCache full:https://registry.561.group/@adraffy%2fens-normalize cache-miss
+859 http fetch GET 200 https://registry.561.group/@multiformats%2fbase-x 3977ms (cache miss)
+860 silly packumentCache full:https://registry.561.group/@multiformats%2fbase-x set size:undefined disposed:false
+861 silly fetch manifest @noble/curves@1.2.0
+862 silly packumentCache full:https://registry.561.group/@noble%2fcurves cache-miss
+863 http fetch GET 200 https://registry.561.group/pkijs 6054ms (cache miss)
+864 silly packumentCache full:https://registry.561.group/pkijs set size:undefined disposed:false
+865 silly fetch manifest @noble/hashes@1.3.2
+866 silly packumentCache full:https://registry.561.group/@noble%2fhashes cache-miss
+867 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fimmutable-content-custody-service 2143ms (cache miss)
+868 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fimmutable-content-custody-service set size:undefined disposed:false
+869 silly fetch manifest @types/node@22.7.5
+870 silly packumentCache full:https://registry.561.group/@types%2fnode cache-miss
+871 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2frelation-model-notation 1733ms (cache miss)
+872 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2frelation-model-notation set size:undefined disposed:false
+873 silly fetch manifest aes-js@4.0.0-beta.5
+874 silly packumentCache full:https://registry.561.group/aes-js cache-miss
+875 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2frelation-model-notation 1792ms (cache miss)
+876 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2frelation-model-notation set size:undefined disposed:false
+877 silly fetch manifest tslib@2.7.0
+878 silly packumentCache full:https://registry.561.group/tslib cache-miss
+879 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2frelation-model-notation 1879ms (cache miss)
+880 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2frelation-model-notation set size:undefined disposed:false
+881 silly fetch manifest ws@8.21.0
+882 silly packumentCache full:https://registry.561.group/ws cache-miss
+883 http fetch GET 200 https://registry.561.group/@logtape%2flogtape 5331ms (cache miss)
+884 silly packumentCache full:https://registry.561.group/@logtape%2flogtape set size:undefined disposed:false
+885 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2frelation-model-notation-eval 1996ms (cache miss)
+886 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2frelation-model-notation-eval set size:undefined disposed:false
+887 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2frelation-model-notation-runtime 2035ms (cache miss)
+888 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2frelation-model-notation-runtime set size:undefined disposed:false
+889 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2fjson-byte-carrier-service 2354ms (cache miss)
+890 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2fjson-byte-carrier-service set size:undefined disposed:false
+891 http fetch GET https://registry.561.group/es-toolkit attempt 1 failed with FETCH_ERROR
+892 http fetch GET https://registry.561.group/@fedify%2fwebfinger attempt 1 failed with FETCH_ERROR
+893 http fetch GET https://registry.561.group/@fedify%2fvocab-tools attempt 1 failed with FETCH_ERROR
+894 http fetch GET 200 https://registry.561.group/@adraffy%2fens-normalize 6718ms (cache miss)
+895 silly packumentCache full:https://registry.561.group/@adraffy%2fens-normalize set size:undefined disposed:false
+896 http fetch GET 200 https://registry.561.group/@fedify%2fvocab-runtime 8204ms (cache miss)
+897 silly packumentCache full:https://registry.561.group/@fedify%2fvocab-runtime set size:undefined disposed:false
+898 http fetch GET 200 https://registry.561.group/aes-js 7112ms (cache miss)
+899 silly packumentCache full:https://registry.561.group/aes-js set size:undefined disposed:false
+900 http fetch GET 200 https://registry.561.group/@noble%2fcurves 7582ms (cache miss)
+901 silly packumentCache full:https://registry.561.group/@noble%2fcurves set size:undefined disposed:false
+902 http fetch GET 200 https://registry.561.group/tslib 7471ms (cache miss)
+903 silly packumentCache full:https://registry.561.group/tslib set size:undefined disposed:false
+904 http fetch GET 200 https://registry.561.group/@noble%2fhashes 8004ms (cache miss)
+905 silly packumentCache full:https://registry.561.group/@noble%2fhashes set size:undefined disposed:false
+906 http fetch GET 200 https://registry.561.group/ws 7820ms (cache miss)
+907 silly packumentCache full:https://registry.561.group/ws set size:undefined disposed:false
+908 http fetch GET https://registry.561.group/@types%2fnode attempt 1 failed with FETCH_ERROR
+909 silly fetch manifest es-toolkit@1.46.1
+910 silly packumentCache full:https://registry.561.group/es-toolkit cache-miss
+911 http fetch GET https://registry.561.group/es-toolkit attempt 1 failed with FETCH_ERROR
+912 silly fetch manifest @fedify/webfinger@2.3.1
+913 silly packumentCache full:https://registry.561.group/@fedify%2fwebfinger cache-miss
+914 http fetch GET https://registry.561.group/@fedify%2fwebfinger attempt 1 failed with FETCH_ERROR
+915 silly fetch manifest @opentelemetry/core@^2.7.1
+916 silly packumentCache full:https://registry.561.group/@opentelemetry%2fcore cache-miss
+917 http fetch GET 200 https://registry.561.group/@opentelemetry%2fcore 490ms (cache miss)
+918 silly packumentCache full:https://registry.561.group/@opentelemetry%2fcore set size:undefined disposed:false
+919 silly fetch manifest @opentelemetry/api@>=1.0.0 <1.10.0
+920 silly packumentCache full:https://registry.561.group/@opentelemetry%2fapi cache-miss
+921 http cache https://registry.561.group/@opentelemetry%2fapi 16ms (cache hit)
+922 silly packumentCache full:https://registry.561.group/@opentelemetry%2fapi set size:283749 disposed:false
+923 silly fetch manifest @opentelemetry/api@>=1.9.0 <1.10.0
+924 silly packumentCache full:https://registry.561.group/@opentelemetry%2fapi cache-hit
+925 silly fetch manifest @opentelemetry/api@>=1.3.0 <1.10.0
+926 silly packumentCache full:https://registry.561.group/@opentelemetry%2fapi cache-hit
+927 silly placeDep ROOT @fedify/uri-template@2.3.1 OK for: @fedify/fedify@2.3.1 want: 2.3.1
+928 silly placeDep ROOT @fedify/vocab-runtime@2.3.1 OK for: @fedify/fedify@2.3.1 want: 2.3.1
+929 silly placeDep node_modules/@fedify/fedify @fedify/webfinger@ OK for: @fedify/fedify@2.3.1 want: 2.3.1
+930 silly placeDep ROOT @js-temporal/polyfill@0.5.1 OK for: @fedify/fedify@2.3.1 want: ^0.5.1
+931 silly placeDep ROOT @logtape/logtape@2.4.2 OK for: @fedify/fedify@2.3.1 want: ^2.2.0
+932 silly placeDep ROOT @opentelemetry/api@1.10.0 OK for: @fedify/fedify@2.3.1 want: ^1.9.1
+933 silly placeDep ROOT @opentelemetry/core@2.12.0 OK for: @fedify/fedify@2.3.1 want: ^2.7.1
+934 silly placeDep ROOT @opentelemetry/api@1.9.1 REPLACE for: @opentelemetry/core@2.12.0 want: >=1.0.0 <1.10.0
+935 silly placeDep ROOT @opentelemetry/sdk-metrics@2.7.1 OK for: @fedify/fedify@2.3.1 want: 2.7.1
+936 silly placeDep ROOT @opentelemetry/sdk-trace-base@2.12.0 OK for: @fedify/fedify@2.3.1 want: ^2.7.1
+937 silly placeDep ROOT @opentelemetry/semantic-conventions@1.43.0 OK for: @fedify/fedify@2.3.1 want: ^1.40.0
+938 silly placeDep ROOT byte-encodings@1.0.11 OK for: @fedify/fedify@2.3.1 want: ^1.0.11
+939 silly placeDep node_modules/@fedify/fedify es-toolkit@ OK for: @fedify/fedify@2.3.1 want: 1.46.1
+940 silly placeDep ROOT json-canon@1.0.1 OK for: @fedify/fedify@2.3.1 want: ^1.0.1
+941 silly placeDep ROOT jsonld@9.0.0 OK for: @fedify/fedify@2.3.1 want: ^9.0.0
+942 silly placeDep ROOT structured-field-values@2.0.4 OK for: @fedify/fedify@2.3.1 want: ^2.0.4
+943 silly placeDep ROOT urlpattern-polyfill@10.1.0 OK for: @fedify/fedify@2.3.1 want: ^10.1.0
+944 silly fetch manifest jsbi@^4.3.0
+945 silly packumentCache full:https://registry.561.group/jsbi cache-miss
+946 silly fetch manifest @opentelemetry/semantic-conventions@^1.29.0
+947 silly packumentCache full:https://registry.561.group/@opentelemetry%2fsemantic-conventions cache-miss
+948 silly fetch manifest @opentelemetry/core@2.7.1
+949 silly packumentCache full:https://registry.561.group/@opentelemetry%2fcore cache-miss
+950 silly fetch manifest @opentelemetry/resources@2.7.1
+951 silly packumentCache full:https://registry.561.group/@opentelemetry%2fresources cache-miss
+952 silly fetch manifest @opentelemetry/resources@2.12.0
+953 silly packumentCache full:https://registry.561.group/@opentelemetry%2fresources cache-miss
+954 silly fetch manifest @opentelemetry/sdk-trace@2.12.0
+955 silly packumentCache full:https://registry.561.group/@opentelemetry%2fsdk-trace cache-miss
+956 silly fetch manifest @opentelemetry/semantic-conventions@^1.29.0
+957 silly packumentCache full:https://registry.561.group/@opentelemetry%2fsemantic-conventions cache-miss
+958 silly fetch manifest @digitalbazaar/http-client@^4.2.0
+959 silly packumentCache full:https://registry.561.group/@digitalbazaar%2fhttp-client cache-miss
+960 silly fetch manifest canonicalize@^2.1.0
+961 silly packumentCache full:https://registry.561.group/canonicalize cache-miss
+962 silly fetch manifest lru-cache@^6.0.0
+963 silly packumentCache full:https://registry.561.group/lru-cache cache-miss
+964 http cache https://registry.561.group/@opentelemetry%2fsemantic-conventions 26ms (cache hit)
+965 silly packumentCache full:https://registry.561.group/@opentelemetry%2fsemantic-conventions set size:428778 disposed:false
+966 http cache https://registry.561.group/@opentelemetry%2fsemantic-conventions 38ms (cache hit)
+967 silly packumentCache full:https://registry.561.group/@opentelemetry%2fsemantic-conventions set size:428778 disposed:false
+968 silly packumentCache full:https://registry.561.group/@opentelemetry%2fsemantic-conventions dispose
+969 http cache https://registry.561.group/@opentelemetry%2fcore 44ms (cache hit)
+970 silly packumentCache full:https://registry.561.group/@opentelemetry%2fcore set size:863611 disposed:false
+971 http fetch GET 200 https://registry.561.group/jsbi -1442ms (cache miss)
+972 silly packumentCache full:https://registry.561.group/jsbi set size:undefined disposed:false
+973 http fetch GET 200 https://registry.561.group/@opentelemetry%2fsdk-trace -1388ms (cache miss)
+974 silly packumentCache full:https://registry.561.group/@opentelemetry%2fsdk-trace set size:undefined disposed:false
+975 http fetch GET 200 https://registry.561.group/canonicalize -1387ms (cache miss)
+976 silly packumentCache full:https://registry.561.group/canonicalize set size:undefined disposed:false
+977 http fetch GET 200 https://registry.561.group/@digitalbazaar%2fhttp-client -1239ms (cache miss)
+978 silly packumentCache full:https://registry.561.group/@digitalbazaar%2fhttp-client set size:undefined disposed:false
+979 http fetch GET 200 https://registry.561.group/lru-cache -1156ms (cache miss)
+980 silly packumentCache full:https://registry.561.group/lru-cache set size:undefined disposed:false
+981 http fetch GET 200 https://registry.561.group/@opentelemetry%2fresources -1036ms (cache miss)
+982 silly packumentCache full:https://registry.561.group/@opentelemetry%2fresources set size:undefined disposed:false
+983 http fetch GET 200 https://registry.561.group/@opentelemetry%2fresources -715ms (cache miss)
+984 silly packumentCache full:https://registry.561.group/@opentelemetry%2fresources set size:undefined disposed:false
+985 silly fetch manifest es-toolkit@^1.46.1
+986 silly packumentCache full:https://registry.561.group/es-toolkit cache-miss
+987 http fetch GET 200 https://registry.561.group/es-toolkit 3959ms (cache miss)
+988 silly packumentCache full:https://registry.561.group/es-toolkit set size:undefined disposed:false
+989 silly placeDep ROOT es-toolkit@1.53.0 OK for: @fedify/sqlite@2.3.1 want: ^1.46.1
+990 silly fetch manifest es-toolkit@1.46.1
+991 silly packumentCache full:https://registry.561.group/es-toolkit cache-miss
+992 http cache https://registry.561.group/es-toolkit 178ms (cache hit)
+993 silly packumentCache full:https://registry.561.group/es-toolkit set size:13725634 disposed:false
+994 silly fetch manifest @fedify/webfinger@2.3.1
+995 silly packumentCache full:https://registry.561.group/@fedify%2fwebfinger cache-miss
+996 http fetch GET 200 https://registry.561.group/@fedify%2fwebfinger 576ms (cache miss)
+997 silly packumentCache full:https://registry.561.group/@fedify%2fwebfinger set size:undefined disposed:false
+998 silly fetch manifest @fedify/vocab-tools@2.3.1
+999 silly packumentCache full:https://registry.561.group/@fedify%2fvocab-tools cache-miss
+1000 http fetch GET 200 https://registry.561.group/@fedify%2fvocab-tools 504ms (cache miss)
+1001 silly packumentCache full:https://registry.561.group/@fedify%2fvocab-tools set size:undefined disposed:false
+1002 silly placeDep ROOT @fedify/vocab-tools@2.3.1 OK for: @fedify/vocab@2.3.1 want: 2.3.1
+1003 silly placeDep ROOT @fedify/webfinger@2.3.1 OK for: @fedify/vocab@2.3.1 want: 2.3.1
+1004 silly placeDep ROOT @multiformats/base-x@4.0.1 OK for: @fedify/vocab@2.3.1 want: ^4.0.1
+1005 silly placeDep ROOT asn1js@3.1.0 OK for: @fedify/vocab@2.3.1 want: ^3.0.10
+1006 silly placeDep node_modules/@fedify/vocab es-toolkit@1.46.1 OK for: @fedify/vocab@2.3.1 want: 1.46.1
+1007 silly placeDep ROOT pkijs@3.4.3 OK for: @fedify/vocab@2.3.1 want: ^3.3.3
+1008 silly fetch manifest yaml@^2.9.0
+1009 silly packumentCache full:https://registry.561.group/yaml cache-hit
+1010 silly fetch manifest @cfworker/json-schema@^4.1.1
+1011 silly packumentCache full:https://registry.561.group/@cfworker%2fjson-schema cache-miss
+1012 silly fetch manifest tslib@^2.8.1
+1013 silly packumentCache full:https://registry.561.group/tslib cache-miss
+1014 silly fetch manifest pvutils@^1.2.0
+1015 silly packumentCache full:https://registry.561.group/pvutils cache-miss
+1016 silly fetch manifest pvtsutils@^1.3.6
+1017 silly packumentCache full:https://registry.561.group/pvtsutils cache-miss
+1018 silly fetch manifest tslib@^2.8.1
+1019 silly packumentCache full:https://registry.561.group/tslib cache-miss
+1020 silly fetch manifest pvutils@^1.1.3
+1021 silly packumentCache full:https://registry.561.group/pvutils cache-miss
+1022 silly fetch manifest pvtsutils@^1.3.6
+1023 silly packumentCache full:https://registry.561.group/pvtsutils cache-miss
+1024 silly fetch manifest bytestreamjs@^2.0.1
+1025 silly packumentCache full:https://registry.561.group/bytestreamjs cache-miss
+1026 silly fetch manifest @noble/hashes@1.8.0
+1027 silly packumentCache full:https://registry.561.group/@noble%2fhashes cache-miss
+1028 http cache https://registry.561.group/tslib 53ms (cache hit)
+1029 silly packumentCache full:https://registry.561.group/tslib set size:108798 disposed:false
+1030 http cache https://registry.561.group/tslib 57ms (cache hit)
+1031 silly packumentCache full:https://registry.561.group/tslib set size:108798 disposed:false
+1032 silly packumentCache full:https://registry.561.group/tslib dispose
+1033 http cache https://registry.561.group/@noble%2fhashes 64ms (cache hit)
+1034 silly packumentCache full:https://registry.561.group/@noble%2fhashes set size:219955 disposed:false
+1035 http fetch GET 200 https://registry.561.group/bytestreamjs 385ms (cache miss)
+1036 silly packumentCache full:https://registry.561.group/bytestreamjs set size:undefined disposed:false
+1037 http fetch GET 200 https://registry.561.group/pvtsutils 434ms (cache miss)
+1038 silly packumentCache full:https://registry.561.group/pvtsutils set size:undefined disposed:false
+1039 http fetch GET 200 https://registry.561.group/pvtsutils 454ms (cache miss)
+1040 silly packumentCache full:https://registry.561.group/pvtsutils set size:undefined disposed:false
+1041 http fetch GET 200 https://registry.561.group/@cfworker%2fjson-schema 466ms (cache miss)
+1042 silly packumentCache full:https://registry.561.group/@cfworker%2fjson-schema set size:undefined disposed:false
+1043 http fetch GET 200 https://registry.561.group/pvutils 505ms (cache miss)
+1044 silly packumentCache full:https://registry.561.group/pvutils set size:undefined disposed:false
+1045 http fetch GET 200 https://registry.561.group/pvutils 507ms (cache miss)
+1046 silly packumentCache full:https://registry.561.group/pvutils set size:undefined disposed:false
+1047 silly placeDep ROOT @cfworker/json-schema@4.1.1 OK for: @fedify/vocab-tools@2.3.1 want: ^4.1.1
+1048 silly placeDep ROOT yaml@2.9.1 OK for: @fedify/vocab-tools@2.3.1 want: ^2.9.0
+1049 silly placeDep node_modules/@fedify/webfinger es-toolkit@1.46.1 OK for: @fedify/webfinger@2.3.1 want: 1.46.1
+1050 silly placeDep ROOT jsbi@4.3.2 OK for: @js-temporal/polyfill@0.5.1 want: ^4.3.0
+1051 silly placeDep node_modules/@opentelemetry/sdk-metrics @opentelemetry/core@2.7.1 OK for: @opentelemetry/sdk-metrics@2.7.1 want: 2.7.1
+1052 silly placeDep ROOT @opentelemetry/resources@2.7.1 OK for: @opentelemetry/sdk-metrics@2.7.1 want: 2.7.1
+1053 silly placeDep node_modules/@opentelemetry/resources @opentelemetry/core@2.7.1 OK for: @opentelemetry/resources@2.7.1 want: 2.7.1
+1054 silly placeDep node_modules/@opentelemetry/sdk-trace-base @opentelemetry/resources@2.12.0 OK for: @opentelemetry/sdk-trace-base@2.12.0 want: 2.12.0
+1055 silly placeDep ROOT @opentelemetry/sdk-trace@2.12.0 OK for: @opentelemetry/sdk-trace-base@2.12.0 want: 2.12.0
+1056 silly placeDep node_modules/@opentelemetry/sdk-trace @opentelemetry/resources@2.12.0 OK for: @opentelemetry/sdk-trace@2.12.0 want: 2.12.0
+1057 silly placeDep ROOT @red-cup-engineering/immutable-content-custody-service@0.2.0 OK for: @red-cup-engineering/cloudflare-r2-services-section@0.4.0 want: 0.2.0
+1058 silly placeDep ROOT @red-cup-engineering/canonicalize-semiotic-json-service@0.0.1 OK for: @red-cup-engineering/relation-model-notation-cbor-codec@0.1.0 want: 0.0.1
+1059 silly placeDep ROOT @red-cup-engineering/cbor-codec-service@0.0.2 OK for: @red-cup-engineering/relation-model-notation-cbor-codec@0.1.0 want: 0.0.2
+1060 silly placeDep ROOT @red-cup-engineering/cbor-ni-service@0.0.1 OK for: @red-cup-engineering/relation-model-notation-cbor-codec@0.1.0 want: 0.0.1
+1061 silly placeDep node_modules/@red-cup-engineering/cbor-ni-service @red-cup-engineering/ni-services-section@0.1.1 OK for: @red-cup-engineering/cbor-ni-service@0.0.1 want: 0.1.1
+1062 silly placeDep ROOT @red-cup-engineering/relation-model-notation@0.0.2 OK for: @red-cup-engineering/relation-model-notation-json-codec@0.0.6 want: 0.0.2
+1063 silly placeDep ROOT @red-cup-engineering/json-byte-carrier-service@0.1.0 OK for: @red-cup-engineering/semantic-content-identify-service@0.2.8 want: 0.1.0
+1064 silly placeDep ROOT @red-cup-engineering/relation-model-notation-eval@0.0.4 OK for: @red-cup-engineering/semantic-content-identify-service@0.2.8 want: 0.0.4
+1065 silly placeDep ROOT @red-cup-engineering/relation-model-notation-runtime@0.2.0 OK for: @red-cup-engineering/semantic-content-identify-service@0.2.8 want: 0.2.0
+1066 silly fetch manifest @red-cup-engineering/relational-value-graph-service@0.1.1
+1067 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2frelational-value-graph-service cache-miss
+1068 http fetch GET 200 https://registry.561.group/@red-cup-engineering%2frelational-value-graph-service 145ms (cache miss)
+1069 silly packumentCache full:https://registry.561.group/@red-cup-engineering%2frelational-value-graph-service set size:undefined disposed:false
+1070 silly placeDep node_modules/@red-cup-engineering/relation-model-notation-runtime @red-cup-engineering/ni-services-section@0.1.1 OK for: @red-cup-engineering/relation-model-notation-runtime@0.2.0 want: 0.1.1
+1071 silly placeDep ROOT @red-cup-engineering/relational-value-graph-service@0.1.1 OK for: @red-cup-engineering/relation-model-notation-runtime@0.2.0 want: 0.1.1
+1072 silly placeDep node_modules/@red-cup-engineering/relational-value-graph-service @red-cup-engineering/ni-services-section@0.1.1 OK for: @red-cup-engineering/relational-value-graph-service@0.1.1 want: 0.1.1
+1073 silly fetch manifest @x402/paywall@^2.19.0
+1074 silly packumentCache full:https://registry.561.group/@x402%2fpaywall cache-miss
+1075 http fetch GET 200 https://registry.561.group/@x402%2fpaywall 568ms (cache miss)
+1076 silly packumentCache full:https://registry.561.group/@x402%2fpaywall set size:undefined disposed:false
+1077 silly fetch manifest react@^19.0.0
+1078 silly packumentCache full:https://registry.561.group/react cache-miss
+1079 http fetch GET 200 https://registry.561.group/react 3841ms (cache miss)
+1080 silly packumentCache full:https://registry.561.group/react set size:undefined disposed:false
+1081 silly fetch manifest react-dom@^19.0.0
+1082 silly packumentCache full:https://registry.561.group/react-dom cache-miss
+1083 http fetch GET 200 https://registry.561.group/react-dom 6732ms (cache miss)
+1084 silly packumentCache full:https://registry.561.group/react-dom set size:undefined disposed:false
+1085 silly placeDep ROOT @red-cup-engineering/canonicalize-https-url-service@0.1.0 OK for: @red-cup-engineering/x402-services-section@0.2.0 want: 0.1.0
+1086 silly placeDep node_modules/@red-cup-engineering/x402-services-section @red-cup-engineering/semantic-content-identify-service@0.2.7 OK for: @red-cup-engineering/x402-services-section@0.2.0 want: 0.2.7
+1087 silly placeDep ROOT @x402/express@2.19.0 OK for: @red-cup-engineering/x402-services-section@0.2.0 want: 2.19.0
+1088 silly placeDep ROOT @x402/extensions@2.19.0 OK for: @red-cup-engineering/x402-services-section@0.2.0 want: 2.19.0
+1089 silly fetch manifest @x402/extensions@~2.19.0
+1090 silly packumentCache full:https://registry.561.group/@x402%2fextensions cache-miss
+1091 silly fetch manifest ajv@^8.17.1
+1092 silly packumentCache full:https://registry.561.group/ajv cache-miss
+1093 silly fetch manifest zod@^3.24.2
+1094 silly packumentCache full:https://registry.561.group/zod cache-miss
+1095 silly fetch manifest jose@^5.9.6
+1096 silly packumentCache full:https://registry.561.group/jose cache-miss
+1097 silly fetch manifest viem@^2.48.11
+1098 silly packumentCache full:https://registry.561.group/viem cache-miss
+1099 silly fetch manifest tweetnacl@^1.0.3
+1100 silly packumentCache full:https://registry.561.group/tweetnacl cache-miss
+1101 silly fetch manifest @scure/base@^1.2.6
+1102 silly packumentCache full:https://registry.561.group/@scure%2fbase cache-hit
+1103 silly fetch manifest @noble/curves@^1.9.0
+1104 silly packumentCache full:https://registry.561.group/@noble%2fcurves cache-miss
+1105 silly fetch manifest @signinwithethereum/siwe@^4.1.0
+1106 silly packumentCache full:https://registry.561.group/@signinwithethereum%2fsiwe cache-miss
+1107 http cache https://registry.561.group/@x402%2fextensions 30ms (cache hit)
+1108 silly packumentCache full:https://registry.561.group/@x402%2fextensions set size:116236 disposed:false
+1109 http cache https://registry.561.group/@noble%2fcurves 31ms (cache hit)
+1110 silly packumentCache full:https://registry.561.group/@noble%2fcurves set size:312273 disposed:false
+1111 http cache https://registry.561.group/jose 85ms (cache hit)
+1112 silly packumentCache full:https://registry.561.group/jose set size:1464191 disposed:false
+1113 http fetch GET 200 https://registry.561.group/@signinwithethereum%2fsiwe 770ms (cache miss)
+1114 silly packumentCache full:https://registry.561.group/@signinwithethereum%2fsiwe set size:undefined disposed:false
+1115 http fetch GET 200 https://registry.561.group/tweetnacl 1075ms (cache miss)
+1116 silly packumentCache full:https://registry.561.group/tweetnacl set size:undefined disposed:false
+1117 http fetch GET 200 https://registry.561.group/ajv 1962ms (cache miss)
+1118 silly packumentCache full:https://registry.561.group/ajv set size:undefined disposed:false
+1119 http fetch GET 200 https://registry.561.group/zod 4841ms (cache miss)
+1120 silly packumentCache full:https://registry.561.group/zod set size:undefined disposed:false

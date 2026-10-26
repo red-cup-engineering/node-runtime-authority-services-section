@@ -1,0 +1,22 @@
+{
+  "source": {
+    "repository": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/data/logs/node-job-writer-receiving-20261023/source",
+    "commit": "e01d3e27028045feceaf4c57514fff5397c59bf3",
+    "scope": ""
+  },
+  "name": "@red-cup-engineering/node-job-service",
+  "version": "0.4.1-dev.28",
+  "integrity": "sha512-HFitmCRt3RyVDxoYn8L4WDIW9tleaip2Hu4qaWgVd/hOJExoVAbZRg7FbRxzDoAF7kQvfX8fEna4uMaa0TaICw==",
+  "artifactSHA256": "8586cf2f34e50a61aee4139f023b34a69373bb71e9faacdbd3173e01afd43b67",
+  "sourceArchiveMatched": true,
+  "sourceInputs": 13,
+  "archiveMembers": 12,
+  "acceptedSourceCommit": "63a122349da80a6ea026d84032b7419b70a302a6",
+  "versionOnlySourceReconciliation": true,
+  "reviewPath": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/data/logs/node-job-writer-receiving-20261023/qualification/63a122349da80a6ea026d84032b7419b70a302a6/independent-source-receiving.json",
+  "reviewSHA256": "8442f888f1d5aff9d430cf1f476e121c1c347886ddc029828e52dc81d0a8605f",
+  "packedReceiptSHA256": "cfbd936e238869e8a181b1088408ddfeba1a7ce6cd1f94fde54dc330749eeb11",
+  "sourceReceiptSHA256": "694e9f5981007fa6efbe76dd5d6dbf5d8a4b15793c161597b2a55d3592cc0eb7",
+  "publicationClaimed": false,
+  "hostEffectsExecuted": false
+}

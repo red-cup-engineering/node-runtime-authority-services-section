@@ -1,0 +1,29 @@
+{
+  "kind": "OriginalDirectNodeSourceFamilyAttempt",
+  "source": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/shared-data-admission-logs/2026-10-20-source-v1/candidate-v3",
+  "sourceProposalSHA256": "770e0bb3294f2342e22760ae980252adfaf0d1ffbba3fa5560f18265d6c3abdc",
+  "argv": [
+    "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+    "--max-old-space-size=96",
+    "--test",
+    "--test-concurrency=1",
+    "test/config.test.mjs",
+    "test/command.test.mjs",
+    "test/environment.test.mjs",
+    "test/entrypoint.test.mjs",
+    "test/owned-data-admission.test.mjs"
+  ],
+  "cwd": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/shared-data-admission-logs/2026-10-20-source-v1/candidate-v3",
+  "environmentNames": [
+    "PATH",
+    "HOME",
+    "TMPDIR",
+    "NODE_COMPILE_CACHE",
+    "LANG"
+  ],
+  "timeoutSeconds": 60,
+  "sourceFilesGuarded": 25,
+  "expectedTests": 62,
+  "scope": "original512MiB source-only fixture/log envelope; no install/graph/network/Guix",
+  "at": "2026-10-21T01:14:25.995329+00:00"
+}

@@ -1,0 +1,24 @@
+{
+  "type": "NodeJobNativeResourceReceiving",
+  "candidate": "93ab2190e28e3c1f703e10c76770bcd1f0f56b8e",
+  "unit": "nodejob-resource-inert-bcf-20261023-job-inert.service",
+  "limits": {
+    "memoryMaxBytes": 67108864,
+    "memoryHighBytes": 50331648,
+    "memorySwapMaxBytes": 0,
+    "tasksMax": 12,
+    "cpuQuotaPercent": 50,
+    "memoryReserveBytes": 33554432
+  },
+  "firstInvocation": "835370ebab8242d7b5e7f0c3670aef22",
+  "secondInvocation": "96642d9605634e01ae0a60d9cb808fcc",
+  "runs": 2,
+  "duplicateStarts": 0,
+  "naturalSuccesses": 2,
+  "resourceRefusalPreservedReceiptAndDemand": true,
+  "journal": {
+    "bytes": 12036,
+    "sha256": "f0df865d9b5793c5e7f2eee5114fd91a0e09e18828a4717bf60d022ccf7915b3"
+  },
+  "productionEffects": 0
+}

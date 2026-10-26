@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-21T00:11:57.852Z",
+  "method": "POST",
+  "path": "/repos/red-cup-engineering/node-process-services-section/git/refs",
+  "body": {
+    "ref": "refs/heads/codex/require-service-owned-data-roots",
+    "sha": "9ea4f22f9e56fe67d936d629fae8033634903b7b"
+  }
+}

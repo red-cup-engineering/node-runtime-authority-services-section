@@ -1,0 +1,1164 @@
+{
+  "kind": "npm.source-registry-closure.consumers",
+  "packages": [
+    {
+      "name": "native-code-member-receiving-fixture",
+      "version": "0.0.0",
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-semver/consumer/package.json",
+      "frozenInstall": true,
+      "manifestDigest": "41849a251a4b13f341621bfda9bff112ffef679116d108c77a97f92ede90ebef",
+      "lockDigest": "52b8137a2081513e14e181e64f94f474987a1c76b877730831a43a06f3b97192",
+      "workspacePolicyDigest": null,
+      "minimumReleaseAge": "pnpm-default",
+      "log": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261020-code22/semver-native-success/native-code-member-receiving-fixture.log",
+      "artifactReceiving": [
+        {
+          "kind": "npm.native-installed-artifact-receiving",
+          "version": 1,
+          "ok": true,
+          "archive": {
+            "kind": "npm.native-archive-members",
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-semver/semver-7.7.2.tgz",
+            "integrity": "sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==",
+            "archiveSHA256": "290a29b26644b16ad172c21797c5523788b537a7784ffd175607c4812653504e",
+            "compressedBytes": 28388,
+            "expandedSHA256": "f8cb77d8a2b8e4a65ec8a068c4de4fed3728aa94edc6b03e54b6d82c7d2a23d6",
+            "expandedBytes": 140288,
+            "parserEndOffset": 140288,
+            "accountedEndOffset": 140288,
+            "headers": [
+              {
+                "path": "package/LICENSE",
+                "type": "File",
+                "mode": 420,
+                "size": 765
+              },
+              {
+                "path": "package/range.bnf",
+                "type": "File",
+                "mode": 420,
+                "size": 619
+              },
+              {
+                "path": "package/functions/clean.js",
+                "type": "File",
+                "mode": 420,
+                "size": 205
+              },
+              {
+                "path": "package/functions/cmp.js",
+                "type": "File",
+                "mode": 420,
+                "size": 961
+              },
+              {
+                "path": "package/functions/coerce.js",
+                "type": "File",
+                "mode": 420,
+                "size": 2004
+              },
+              {
+                "path": "package/classes/comparator.js",
+                "type": "File",
+                "mode": 420,
+                "size": 3631
+              },
+              {
+                "path": "package/functions/compare-build.js",
+                "type": "File",
+                "mode": 420,
+                "size": 281
+              },
+              {
+                "path": "package/functions/compare-loose.js",
+                "type": "File",
+                "mode": 420,
+                "size": 132
+              },
+              {
+                "path": "package/functions/compare.js",
+                "type": "File",
+                "mode": 420,
+                "size": 170
+              },
+              {
+                "path": "package/internal/constants.js",
+                "type": "File",
+                "mode": 420,
+                "size": 873
+              },
+              {
+                "path": "package/internal/debug.js",
+                "type": "File",
+                "mode": 420,
+                "size": 240
+              },
+              {
+                "path": "package/functions/diff.js",
+                "type": "File",
+                "mode": 420,
+                "size": 1421
+              },
+              {
+                "path": "package/functions/eq.js",
+                "type": "File",
+                "mode": 420,
+                "size": 126
+              },
+              {
+                "path": "package/functions/gt.js",
+                "type": "File",
+                "mode": 420,
+                "size": 124
+              },
+              {
+                "path": "package/functions/gte.js",
+                "type": "File",
+                "mode": 420,
+                "size": 127
+              },
+              {
+                "path": "package/ranges/gtr.js",
+                "type": "File",
+                "mode": 420,
+                "size": 231
+              },
+              {
+                "path": "package/internal/identifiers.js",
+                "type": "File",
+                "mode": 420,
+                "size": 424
+              },
+              {
+                "path": "package/functions/inc.js",
+                "type": "File",
+                "mode": 420,
+                "size": 478
+              },
+              {
+                "path": "package/classes/index.js",
+                "type": "File",
+                "mode": 420,
+                "size": 143
+              },
+              {
+                "path": "package/index.js",
+                "type": "File",
+                "mode": 420,
+                "size": 2630
+              },
+              {
+                "path": "package/ranges/intersects.js",
+                "type": "File",
+                "mode": 420,
+                "size": 224
+              },
+              {
+                "path": "package/internal/lrucache.js",
+                "type": "File",
+                "mode": 420,
+                "size": 802
+              },
+              {
+                "path": "package/functions/lt.js",
+                "type": "File",
+                "mode": 420,
+                "size": 124
+              },
+              {
+                "path": "package/functions/lte.js",
+                "type": "File",
+                "mode": 420,
+                "size": 127
+              },
+              {
+                "path": "package/ranges/ltr.js",
+                "type": "File",
+                "mode": 420,
+                "size": 227
+              },
+              {
+                "path": "package/functions/major.js",
+                "type": "File",
+                "mode": 420,
+                "size": 136
+              },
+              {
+                "path": "package/ranges/max-satisfying.js",
+                "type": "File",
+                "mode": 420,
+                "size": 593
+              },
+              {
+                "path": "package/ranges/min-satisfying.js",
+                "type": "File",
+                "mode": 420,
+                "size": 591
+              },
+              {
+                "path": "package/ranges/min-version.js",
+                "type": "File",
+                "mode": 420,
+                "size": 1514
+              },
+              {
+                "path": "package/functions/minor.js",
+                "type": "File",
+                "mode": 420,
+                "size": 136
+              },
+              {
+                "path": "package/functions/neq.js",
+                "type": "File",
+                "mode": 420,
+                "size": 128
+              },
+              {
+                "path": "package/ranges/outside.js",
+                "type": "File",
+                "mode": 420,
+                "size": 2204
+              },
+              {
+                "path": "package/internal/parse-options.js",
+                "type": "File",
+                "mode": 420,
+                "size": 338
+              },
+              {
+                "path": "package/functions/parse.js",
+                "type": "File",
+                "mode": 420,
+                "size": 331
+              },
+              {
+                "path": "package/functions/patch.js",
+                "type": "File",
+                "mode": 420,
+                "size": 136
+              },
+              {
+                "path": "package/preload.js",
+                "type": "File",
+                "mode": 420,
+                "size": 83
+              },
+              {
+                "path": "package/functions/prerelease.js",
+                "type": "File",
+                "mode": 420,
+                "size": 234
+              },
+              {
+                "path": "package/classes/range.js",
+                "type": "File",
+                "mode": 420,
+                "size": 14938
+              },
+              {
+                "path": "package/functions/rcompare.js",
+                "type": "File",
+                "mode": 420,
+                "size": 132
+              },
+              {
+                "path": "package/internal/re.js",
+                "type": "File",
+                "mode": 420,
+                "size": 8141
+              },
+              {
+                "path": "package/functions/rsort.js",
+                "type": "File",
+                "mode": 420,
+                "size": 163
+              },
+              {
+                "path": "package/functions/satisfies.js",
+                "type": "File",
+                "mode": 420,
+                "size": 247
+              },
+              {
+                "path": "package/bin/semver.js",
+                "type": "File",
+                "mode": 493,
+                "size": 4739
+              },
+              {
+                "path": "package/classes/semver.js",
+                "type": "File",
+                "mode": 420,
+                "size": 9297
+              },
+              {
+                "path": "package/ranges/simplify.js",
+                "type": "File",
+                "mode": 420,
+                "size": 1355
+              },
+              {
+                "path": "package/functions/sort.js",
+                "type": "File",
+                "mode": 420,
+                "size": 161
+              },
+              {
+                "path": "package/ranges/subset.js",
+                "type": "File",
+                "mode": 420,
+                "size": 7524
+              },
+              {
+                "path": "package/ranges/to-comparators.js",
+                "type": "File",
+                "mode": 420,
+                "size": 282
+              },
+              {
+                "path": "package/functions/valid.js",
+                "type": "File",
+                "mode": 420,
+                "size": 176
+              },
+              {
+                "path": "package/ranges/valid.js",
+                "type": "File",
+                "mode": 420,
+                "size": 326
+              },
+              {
+                "path": "package/package.json",
+                "type": "File",
+                "mode": 420,
+                "size": 1663
+              },
+              {
+                "path": "package/README.md",
+                "type": "File",
+                "mode": 420,
+                "size": 24763
+              }
+            ],
+            "parser": {
+              "name": "tar",
+              "context": "regular-npm-gzip-tar",
+              "extensions": "unreceived",
+              "ambiguousNames": "unreceived"
+            },
+            "extracted": false,
+            "installationClaimed": false
+          },
+          "installation": {
+            "root": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261020-code22/semver-native-success/.registry-install-rckqOl",
+            "packageRoot": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261020-code22/semver-native-success/.registry-install-rckqOl/node_modules/.pnpm/semver@7.7.2/node_modules/semver",
+            "provider": {
+              "entry": "/home/emsenn/.cache/561-group/lagoon-promote/runtimes/f3e4672231d2b37284388677d176e9b2cd899744/node_modules/.pnpm/pnpm@11.28.5/node_modules/pnpm/bin/pnpm.mjs",
+              "entrySHA256": "ff3224d46b47fbb24a7e9fe15fededef7e00892d07d4e376b6762d4899906bfd",
+              "manifestPath": "/home/emsenn/.cache/561-group/lagoon-promote/runtimes/f3e4672231d2b37284388677d176e9b2cd899744/node_modules/.pnpm/pnpm@11.28.5/node_modules/pnpm/package.json",
+              "manifestSHA256": "2dd7bab34254562873ed6a748748f7259b727b143c2f8cca9966069cfdcae800",
+              "distPath": "/home/emsenn/.cache/561-group/lagoon-promote/runtimes/f3e4672231d2b37284388677d176e9b2cd899744/node_modules/.pnpm/pnpm@11.28.5/node_modules/pnpm/dist/pnpm.mjs",
+              "distSHA256": "e3738fda08262f74611d7a1ffc11b3e87fa52b466c07eb73211d179ebcb98810",
+              "shimTargetFormat": "pnpm11-cmd-shim-target"
+            },
+            "registrations": [
+              {
+                "name": "semver",
+                "kind": "pnpm11-cmd-shim-target",
+                "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261020-code22/semver-native-success/.registry-install-rckqOl/node_modules/.bin/semver",
+                "target": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261020-code22/semver-native-success/.registry-install-rckqOl/node_modules/.pnpm/semver@7.7.2/node_modules/semver/bin/semver.js",
+                "sha256": "404751fa8ce59ceba9cbe1e701397f3ae0789215d1e44fcc3d4ded4d4f5c9364"
+              }
+            ],
+            "requestSHA256": "b4034c856e40163a6671925f116aeaace852a9bb82651761a8329a83d0ccb23c",
+            "receipt": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/.registry-install-rckqOl.native-installation.json",
+            "receiptSHA256": "e457ed762298005fabb9a7590f2e791a12ed795466ae04643683ddcb0edf166f"
+          },
+          "comparison": {
+            "ok": true,
+            "value": {
+              "type": "ArtifactMemberAdmission",
+              "version": 1,
+              "stage": "archive-installed",
+              "identity": "ni:///sha-256;zlxdhj_qPn1DrVlxRgpiqFzvZTKzL4cuB8sNBo2mJiY",
+              "registry": "https://registry.npmjs.org/",
+              "package": "semver",
+              "releaseVersion": "7.7.2",
+              "integrity": "sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==",
+              "archive": [
+                {
+                  "path": "LICENSE",
+                  "kind": "file",
+                  "bytes": 765,
+                  "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b",
+                  "mode": 420
+                },
+                {
+                  "path": "README.md",
+                  "kind": "file",
+                  "bytes": 24763,
+                  "sha256": "7ab5c841aac2530066b0e40b82ba304969ceec5d373637f8499d23d138826140",
+                  "mode": 420
+                },
+                {
+                  "path": "bin/semver.js",
+                  "kind": "file",
+                  "bytes": 4739,
+                  "sha256": "ad25dc10977d5f51e783a48f8721fcc8f0f2284f1a99614d14eb1428b959ce47",
+                  "mode": 493
+                },
+                {
+                  "path": "classes/comparator.js",
+                  "kind": "file",
+                  "bytes": 3631,
+                  "sha256": "054202956430d63d5ff4599fae09760ce465b489e4f0b5ef5ce7cc7ac21157ac",
+                  "mode": 420
+                },
+                {
+                  "path": "classes/index.js",
+                  "kind": "file",
+                  "bytes": 143,
+                  "sha256": "3bb69280c2a788d0eb16f915bb9df4dbe812075182024c753dca2283bcea1b17",
+                  "mode": 420
+                },
+                {
+                  "path": "classes/range.js",
+                  "kind": "file",
+                  "bytes": 14938,
+                  "sha256": "1e5679e4b710388c808013f1fd4eac5fe504567d0608bd15c0d962141966a280",
+                  "mode": 420
+                },
+                {
+                  "path": "classes/semver.js",
+                  "kind": "file",
+                  "bytes": 9297,
+                  "sha256": "b10e8b120f7f313089b41914d0ced81c9c9b97d9339fdb96b690f18e04fb3a62",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/clean.js",
+                  "kind": "file",
+                  "bytes": 205,
+                  "sha256": "4eadb0892844cf3ae295121a86163a66c73f89acd1b7f0b114ec115b4539512f",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/cmp.js",
+                  "kind": "file",
+                  "bytes": 961,
+                  "sha256": "a63d74e87b73788e78e9ce0a4892b5333d6b809c0de88b31e4ed76cbf17f94b3",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/coerce.js",
+                  "kind": "file",
+                  "bytes": 2004,
+                  "sha256": "28a251c5ab210ddf9e97551b9f37a53329fcce91f0c3943dcbc02de1a1de915a",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/compare-build.js",
+                  "kind": "file",
+                  "bytes": 281,
+                  "sha256": "5ab651d5b40af289bd85c645a92b6d8cfe1a986dc413c797cfcc8d623d7c844c",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/compare-loose.js",
+                  "kind": "file",
+                  "bytes": 132,
+                  "sha256": "07b6a3a1db0a5210ceb784c1708bd4679f3a94fc73a9c9eb349349e7070a6f78",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/compare.js",
+                  "kind": "file",
+                  "bytes": 170,
+                  "sha256": "d404b5aa48aaddc8a654c5da8fb7d4443404b7948589b21ac4b045d1cee4e34c",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/diff.js",
+                  "kind": "file",
+                  "bytes": 1421,
+                  "sha256": "ea876a3256d09f1301d33a95cd6451b6312c055328abfc8fc49b5f27fe6d2afe",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/eq.js",
+                  "kind": "file",
+                  "bytes": 126,
+                  "sha256": "b6e30a7168e52723216fc163d300e2bbabf92ec0251f9ac5438bb6ccf57c8936",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/gt.js",
+                  "kind": "file",
+                  "bytes": 124,
+                  "sha256": "135523704aa48cd98834dd170ee9f74f0e68043b379f32d021db11e6304c5c93",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/gte.js",
+                  "kind": "file",
+                  "bytes": 127,
+                  "sha256": "991c5bbe48ecb210a562646872f05862ad9fc0d42186d85aa60bdc6fa323eb9d",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/inc.js",
+                  "kind": "file",
+                  "bytes": 478,
+                  "sha256": "952069fc8690b7d3af0fe9d55f7c54fe2ac067b48c5e74f6a54f9ce19a334493",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/lt.js",
+                  "kind": "file",
+                  "bytes": 124,
+                  "sha256": "1c897a9bc849320e2e9dc0f6c09555c01ee3ddf30734515d717b88ad7740ea25",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/lte.js",
+                  "kind": "file",
+                  "bytes": 127,
+                  "sha256": "3a8d0b1d00423f60cc7cb810b36ab77b61330831ad237dbe73eb5cecfa412800",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/major.js",
+                  "kind": "file",
+                  "bytes": 136,
+                  "sha256": "5c678480d882f511200fed2c16ec3847dfedb08a1d70328dc2f031d35d825276",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/minor.js",
+                  "kind": "file",
+                  "bytes": 136,
+                  "sha256": "1b051794f1713adec2a236517196691687c35f82e0b596ff3316a78b3cc10ae6",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/neq.js",
+                  "kind": "file",
+                  "bytes": 128,
+                  "sha256": "a662883751918822c162183b46b9e20d09489132f82686c92ab78bee67f3a127",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/parse.js",
+                  "kind": "file",
+                  "bytes": 331,
+                  "sha256": "29a69e15b6d02fe381d573f861881a89590e9d0f0f0ca740c5f85eaf0234c4ad",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/patch.js",
+                  "kind": "file",
+                  "bytes": 136,
+                  "sha256": "f02d3c1b059fe3d96ce124886f7eef321d381a95638fd3c4a8d5ccd8e76ffadd",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/prerelease.js",
+                  "kind": "file",
+                  "bytes": 234,
+                  "sha256": "baedbf503d5610ad041bfb56071efa48feb331ca278295c399537d35d3ffb593",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/rcompare.js",
+                  "kind": "file",
+                  "bytes": 132,
+                  "sha256": "84fa5e88adf08d15c993cac8cdec6d1a65045b7e95a9c55184230a7f807f4dc0",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/rsort.js",
+                  "kind": "file",
+                  "bytes": 163,
+                  "sha256": "6ec659ce3b6c2b173c719286caab04409adba046c0917874ec3b5e36ddfbc7e3",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/satisfies.js",
+                  "kind": "file",
+                  "bytes": 247,
+                  "sha256": "8cf5e122b757251671ed6c9d9680904b71cd375845853f05312e608cf2cc2946",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/sort.js",
+                  "kind": "file",
+                  "bytes": 161,
+                  "sha256": "c2fe2d3ed0be8a4e9de8f02abdfd5d9c0d3bcc510d88e87af84185592882c4b8",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/valid.js",
+                  "kind": "file",
+                  "bytes": 176,
+                  "sha256": "0de7ea736cb7807179d46dfac09c830a9338e02b6a07db12d7040cde2def6025",
+                  "mode": 420
+                },
+                {
+                  "path": "index.js",
+                  "kind": "file",
+                  "bytes": 2630,
+                  "sha256": "646e0b707f56dca7cb90cebc6fe687278bcc1a16fdcc83756dbe23083ff15e06",
+                  "mode": 420
+                },
+                {
+                  "path": "internal/constants.js",
+                  "kind": "file",
+                  "bytes": 873,
+                  "sha256": "38a112baf27ceca0260082ff26ac2fd7a9861cab1af12dd65e720277f68e6ce9",
+                  "mode": 420
+                },
+                {
+                  "path": "internal/debug.js",
+                  "kind": "file",
+                  "bytes": 240,
+                  "sha256": "8a9f420572260f3cf944463b5090d62a60f0730589dc23a7ec4ca25e2ee41bb3",
+                  "mode": 420
+                },
+                {
+                  "path": "internal/identifiers.js",
+                  "kind": "file",
+                  "bytes": 424,
+                  "sha256": "2cde4269bc837c84d122af71148ba5d146fc4dc4b326b3ae803a9e9c0d87f251",
+                  "mode": 420
+                },
+                {
+                  "path": "internal/lrucache.js",
+                  "kind": "file",
+                  "bytes": 802,
+                  "sha256": "14d087c87da87b6f5c36fc4cdd7d2d14077874b14a68e20fce5b6138fa2ca34f",
+                  "mode": 420
+                },
+                {
+                  "path": "internal/parse-options.js",
+                  "kind": "file",
+                  "bytes": 338,
+                  "sha256": "fdf51d0de8d5442c35a997ef58cd530d239ce206f961d14c5121354451b01d01",
+                  "mode": 420
+                },
+                {
+                  "path": "internal/re.js",
+                  "kind": "file",
+                  "bytes": 8141,
+                  "sha256": "016655766a1381078a83ba04cd6ba39afc6e64c3e5a95789ad82c3672ae87a94",
+                  "mode": 420
+                },
+                {
+                  "path": "package.json",
+                  "kind": "file",
+                  "bytes": 1663,
+                  "sha256": "bf2e091359d5870257cc8287a268e001bfb39abf19275f382276efe3c7785a4f",
+                  "mode": 420
+                },
+                {
+                  "path": "preload.js",
+                  "kind": "file",
+                  "bytes": 83,
+                  "sha256": "edb6808911bebcb324b2df57e5c9935149e56984ff083b74c6cfe215f5b710ba",
+                  "mode": 420
+                },
+                {
+                  "path": "range.bnf",
+                  "kind": "file",
+                  "bytes": 619,
+                  "sha256": "ed628fdaff64be366d07f6cc4559eae4de109826f743ea7f5e1588c370bca49a",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/gtr.js",
+                  "kind": "file",
+                  "bytes": 231,
+                  "sha256": "8fadad28e36d28e93d498ac7ac20badba2a407312845eabc18e82e90a0732b19",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/intersects.js",
+                  "kind": "file",
+                  "bytes": 224,
+                  "sha256": "fe87ac5d3020010ad3ec00636dadbf0c669ff07d0f57e0a8165a8264f79a676f",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/ltr.js",
+                  "kind": "file",
+                  "bytes": 227,
+                  "sha256": "e5186fcc03018acf9be6d968755d4c49727aeb0d981d179eb568ae5fbe983038",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/max-satisfying.js",
+                  "kind": "file",
+                  "bytes": 593,
+                  "sha256": "e1a2c0d6144cc772cd20bbc8ecb9e8a3a4074e9172a3d8e794838b591cdeb416",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/min-satisfying.js",
+                  "kind": "file",
+                  "bytes": 591,
+                  "sha256": "2681abf54098aa670f12826b76a6ec77a2441186ae4243afde3be8ae4908f7ca",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/min-version.js",
+                  "kind": "file",
+                  "bytes": 1514,
+                  "sha256": "fefba0a88c2bf74d5cede504b5ae50a8dc3edfd69cf0174a491e2cf3e442614b",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/outside.js",
+                  "kind": "file",
+                  "bytes": 2204,
+                  "sha256": "3a2b0b23593d2f49419c06af2af75450cab103b0c25d665d48fe5bca495a21ca",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/simplify.js",
+                  "kind": "file",
+                  "bytes": 1355,
+                  "sha256": "7b78581c13322bc68ece2088685386b2a9b51c15b94d0a2063bdf2546bd41934",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/subset.js",
+                  "kind": "file",
+                  "bytes": 7524,
+                  "sha256": "299abae66d0bcf7ac4f4bdf593fcf14e6c94964ffdd7c72b844357925693d3c2",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/to-comparators.js",
+                  "kind": "file",
+                  "bytes": 282,
+                  "sha256": "6c5e966210cff270fa2850668aaf8460fac7759f8d99f282521ef7a78f4564e9",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/valid.js",
+                  "kind": "file",
+                  "bytes": 326,
+                  "sha256": "5ef6f995af801868925940cf8df5735d565ebabb090b068695cae65218bcd3ac",
+                  "mode": 420
+                }
+              ],
+              "compared": [
+                {
+                  "path": "LICENSE",
+                  "kind": "file",
+                  "bytes": 765,
+                  "sha256": "4ec3d4c66cd87f5c8d8ad911b10f99bf27cb00cdfcff82621956e379186b016b",
+                  "mode": 420
+                },
+                {
+                  "path": "README.md",
+                  "kind": "file",
+                  "bytes": 24763,
+                  "sha256": "7ab5c841aac2530066b0e40b82ba304969ceec5d373637f8499d23d138826140",
+                  "mode": 420
+                },
+                {
+                  "path": "bin/semver.js",
+                  "kind": "file",
+                  "bytes": 4739,
+                  "sha256": "ad25dc10977d5f51e783a48f8721fcc8f0f2284f1a99614d14eb1428b959ce47",
+                  "mode": 493
+                },
+                {
+                  "path": "classes/comparator.js",
+                  "kind": "file",
+                  "bytes": 3631,
+                  "sha256": "054202956430d63d5ff4599fae09760ce465b489e4f0b5ef5ce7cc7ac21157ac",
+                  "mode": 420
+                },
+                {
+                  "path": "classes/index.js",
+                  "kind": "file",
+                  "bytes": 143,
+                  "sha256": "3bb69280c2a788d0eb16f915bb9df4dbe812075182024c753dca2283bcea1b17",
+                  "mode": 420
+                },
+                {
+                  "path": "classes/range.js",
+                  "kind": "file",
+                  "bytes": 14938,
+                  "sha256": "1e5679e4b710388c808013f1fd4eac5fe504567d0608bd15c0d962141966a280",
+                  "mode": 420
+                },
+                {
+                  "path": "classes/semver.js",
+                  "kind": "file",
+                  "bytes": 9297,
+                  "sha256": "b10e8b120f7f313089b41914d0ced81c9c9b97d9339fdb96b690f18e04fb3a62",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/clean.js",
+                  "kind": "file",
+                  "bytes": 205,
+                  "sha256": "4eadb0892844cf3ae295121a86163a66c73f89acd1b7f0b114ec115b4539512f",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/cmp.js",
+                  "kind": "file",
+                  "bytes": 961,
+                  "sha256": "a63d74e87b73788e78e9ce0a4892b5333d6b809c0de88b31e4ed76cbf17f94b3",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/coerce.js",
+                  "kind": "file",
+                  "bytes": 2004,
+                  "sha256": "28a251c5ab210ddf9e97551b9f37a53329fcce91f0c3943dcbc02de1a1de915a",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/compare-build.js",
+                  "kind": "file",
+                  "bytes": 281,
+                  "sha256": "5ab651d5b40af289bd85c645a92b6d8cfe1a986dc413c797cfcc8d623d7c844c",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/compare-loose.js",
+                  "kind": "file",
+                  "bytes": 132,
+                  "sha256": "07b6a3a1db0a5210ceb784c1708bd4679f3a94fc73a9c9eb349349e7070a6f78",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/compare.js",
+                  "kind": "file",
+                  "bytes": 170,
+                  "sha256": "d404b5aa48aaddc8a654c5da8fb7d4443404b7948589b21ac4b045d1cee4e34c",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/diff.js",
+                  "kind": "file",
+                  "bytes": 1421,
+                  "sha256": "ea876a3256d09f1301d33a95cd6451b6312c055328abfc8fc49b5f27fe6d2afe",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/eq.js",
+                  "kind": "file",
+                  "bytes": 126,
+                  "sha256": "b6e30a7168e52723216fc163d300e2bbabf92ec0251f9ac5438bb6ccf57c8936",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/gt.js",
+                  "kind": "file",
+                  "bytes": 124,
+                  "sha256": "135523704aa48cd98834dd170ee9f74f0e68043b379f32d021db11e6304c5c93",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/gte.js",
+                  "kind": "file",
+                  "bytes": 127,
+                  "sha256": "991c5bbe48ecb210a562646872f05862ad9fc0d42186d85aa60bdc6fa323eb9d",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/inc.js",
+                  "kind": "file",
+                  "bytes": 478,
+                  "sha256": "952069fc8690b7d3af0fe9d55f7c54fe2ac067b48c5e74f6a54f9ce19a334493",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/lt.js",
+                  "kind": "file",
+                  "bytes": 124,
+                  "sha256": "1c897a9bc849320e2e9dc0f6c09555c01ee3ddf30734515d717b88ad7740ea25",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/lte.js",
+                  "kind": "file",
+                  "bytes": 127,
+                  "sha256": "3a8d0b1d00423f60cc7cb810b36ab77b61330831ad237dbe73eb5cecfa412800",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/major.js",
+                  "kind": "file",
+                  "bytes": 136,
+                  "sha256": "5c678480d882f511200fed2c16ec3847dfedb08a1d70328dc2f031d35d825276",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/minor.js",
+                  "kind": "file",
+                  "bytes": 136,
+                  "sha256": "1b051794f1713adec2a236517196691687c35f82e0b596ff3316a78b3cc10ae6",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/neq.js",
+                  "kind": "file",
+                  "bytes": 128,
+                  "sha256": "a662883751918822c162183b46b9e20d09489132f82686c92ab78bee67f3a127",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/parse.js",
+                  "kind": "file",
+                  "bytes": 331,
+                  "sha256": "29a69e15b6d02fe381d573f861881a89590e9d0f0f0ca740c5f85eaf0234c4ad",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/patch.js",
+                  "kind": "file",
+                  "bytes": 136,
+                  "sha256": "f02d3c1b059fe3d96ce124886f7eef321d381a95638fd3c4a8d5ccd8e76ffadd",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/prerelease.js",
+                  "kind": "file",
+                  "bytes": 234,
+                  "sha256": "baedbf503d5610ad041bfb56071efa48feb331ca278295c399537d35d3ffb593",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/rcompare.js",
+                  "kind": "file",
+                  "bytes": 132,
+                  "sha256": "84fa5e88adf08d15c993cac8cdec6d1a65045b7e95a9c55184230a7f807f4dc0",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/rsort.js",
+                  "kind": "file",
+                  "bytes": 163,
+                  "sha256": "6ec659ce3b6c2b173c719286caab04409adba046c0917874ec3b5e36ddfbc7e3",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/satisfies.js",
+                  "kind": "file",
+                  "bytes": 247,
+                  "sha256": "8cf5e122b757251671ed6c9d9680904b71cd375845853f05312e608cf2cc2946",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/sort.js",
+                  "kind": "file",
+                  "bytes": 161,
+                  "sha256": "c2fe2d3ed0be8a4e9de8f02abdfd5d9c0d3bcc510d88e87af84185592882c4b8",
+                  "mode": 420
+                },
+                {
+                  "path": "functions/valid.js",
+                  "kind": "file",
+                  "bytes": 176,
+                  "sha256": "0de7ea736cb7807179d46dfac09c830a9338e02b6a07db12d7040cde2def6025",
+                  "mode": 420
+                },
+                {
+                  "path": "index.js",
+                  "kind": "file",
+                  "bytes": 2630,
+                  "sha256": "646e0b707f56dca7cb90cebc6fe687278bcc1a16fdcc83756dbe23083ff15e06",
+                  "mode": 420
+                },
+                {
+                  "path": "internal/constants.js",
+                  "kind": "file",
+                  "bytes": 873,
+                  "sha256": "38a112baf27ceca0260082ff26ac2fd7a9861cab1af12dd65e720277f68e6ce9",
+                  "mode": 420
+                },
+                {
+                  "path": "internal/debug.js",
+                  "kind": "file",
+                  "bytes": 240,
+                  "sha256": "8a9f420572260f3cf944463b5090d62a60f0730589dc23a7ec4ca25e2ee41bb3",
+                  "mode": 420
+                },
+                {
+                  "path": "internal/identifiers.js",
+                  "kind": "file",
+                  "bytes": 424,
+                  "sha256": "2cde4269bc837c84d122af71148ba5d146fc4dc4b326b3ae803a9e9c0d87f251",
+                  "mode": 420
+                },
+                {
+                  "path": "internal/lrucache.js",
+                  "kind": "file",
+                  "bytes": 802,
+                  "sha256": "14d087c87da87b6f5c36fc4cdd7d2d14077874b14a68e20fce5b6138fa2ca34f",
+                  "mode": 420
+                },
+                {
+                  "path": "internal/parse-options.js",
+                  "kind": "file",
+                  "bytes": 338,
+                  "sha256": "fdf51d0de8d5442c35a997ef58cd530d239ce206f961d14c5121354451b01d01",
+                  "mode": 420
+                },
+                {
+                  "path": "internal/re.js",
+                  "kind": "file",
+                  "bytes": 8141,
+                  "sha256": "016655766a1381078a83ba04cd6ba39afc6e64c3e5a95789ad82c3672ae87a94",
+                  "mode": 420
+                },
+                {
+                  "path": "package.json",
+                  "kind": "file",
+                  "bytes": 1663,
+                  "sha256": "bf2e091359d5870257cc8287a268e001bfb39abf19275f382276efe3c7785a4f",
+                  "mode": 420
+                },
+                {
+                  "path": "preload.js",
+                  "kind": "file",
+                  "bytes": 83,
+                  "sha256": "edb6808911bebcb324b2df57e5c9935149e56984ff083b74c6cfe215f5b710ba",
+                  "mode": 420
+                },
+                {
+                  "path": "range.bnf",
+                  "kind": "file",
+                  "bytes": 619,
+                  "sha256": "ed628fdaff64be366d07f6cc4559eae4de109826f743ea7f5e1588c370bca49a",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/gtr.js",
+                  "kind": "file",
+                  "bytes": 231,
+                  "sha256": "8fadad28e36d28e93d498ac7ac20badba2a407312845eabc18e82e90a0732b19",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/intersects.js",
+                  "kind": "file",
+                  "bytes": 224,
+                  "sha256": "fe87ac5d3020010ad3ec00636dadbf0c669ff07d0f57e0a8165a8264f79a676f",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/ltr.js",
+                  "kind": "file",
+                  "bytes": 227,
+                  "sha256": "e5186fcc03018acf9be6d968755d4c49727aeb0d981d179eb568ae5fbe983038",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/max-satisfying.js",
+                  "kind": "file",
+                  "bytes": 593,
+                  "sha256": "e1a2c0d6144cc772cd20bbc8ecb9e8a3a4074e9172a3d8e794838b591cdeb416",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/min-satisfying.js",
+                  "kind": "file",
+                  "bytes": 591,
+                  "sha256": "2681abf54098aa670f12826b76a6ec77a2441186ae4243afde3be8ae4908f7ca",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/min-version.js",
+                  "kind": "file",
+                  "bytes": 1514,
+                  "sha256": "fefba0a88c2bf74d5cede504b5ae50a8dc3edfd69cf0174a491e2cf3e442614b",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/outside.js",
+                  "kind": "file",
+                  "bytes": 2204,
+                  "sha256": "3a2b0b23593d2f49419c06af2af75450cab103b0c25d665d48fe5bca495a21ca",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/simplify.js",
+                  "kind": "file",
+                  "bytes": 1355,
+                  "sha256": "7b78581c13322bc68ece2088685386b2a9b51c15b94d0a2063bdf2546bd41934",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/subset.js",
+                  "kind": "file",
+                  "bytes": 7524,
+                  "sha256": "299abae66d0bcf7ac4f4bdf593fcf14e6c94964ffdd7c72b844357925693d3c2",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/to-comparators.js",
+                  "kind": "file",
+                  "bytes": 282,
+                  "sha256": "6c5e966210cff270fa2850668aaf8460fac7759f8d99f282521ef7a78f4564e9",
+                  "mode": 420
+                },
+                {
+                  "path": "ranges/valid.js",
+                  "kind": "file",
+                  "bytes": 326,
+                  "sha256": "5ef6f995af801868925940cf8df5735d565ebabb090b068695cae65218bcd3ac",
+                  "mode": 420
+                }
+              ],
+              "evidence": {
+                "installation": {
+                  "kind": "native-package-installation",
+                  "status": 0,
+                  "platform": "linux",
+                  "manager": {
+                    "name": "pnpm",
+                    "version": "11.28.5",
+                    "entrySHA256": "ff3224d46b47fbb24a7e9fe15fededef7e00892d07d4e376b6762d4899906bfd"
+                  },
+                  "receipt": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/.registry-install-rckqOl.native-installation.json",
+                  "receiptSHA256": "e457ed762298005fabb9a7590f2e791a12ed795466ae04643683ddcb0edf166f",
+                  "requestSHA256": "b4034c856e40163a6671925f116aeaace852a9bb82651761a8329a83d0ccb23c",
+                  "manifestSHA256": "41849a251a4b13f341621bfda9bff112ffef679116d108c77a97f92ede90ebef",
+                  "lockSHA256": "52b8137a2081513e14e181e64f94f474987a1c76b877730831a43a06f3b97192",
+                  "installedManifestSHA256": "bf2e091359d5870257cc8287a268e001bfb39abf19275f382276efe3c7785a4f",
+                  "artifactIntegrity": "sha512-RF0Fw+rO5AMf9MAyaRXI4AV0Ulj5lMHqVxxdSgiVbixSCXoEmmX/jk0CuJw4+3SqroYO9VoUh+HcuJivvtJemA==",
+                  "package": "semver",
+                  "version": "7.7.2",
+                  "normalization": "posix-package-files-0644-0755",
+                  "operation": null,
+                  "umask": null,
+                  "normalizationProvider": null,
+                  "bins": [
+                    {
+                      "name": "semver",
+                      "target": "bin/semver.js",
+                      "registered": true,
+                      "targetSHA256": "ad25dc10977d5f51e783a48f8721fcc8f0f2284f1a99614d14eb1428b959ce47"
+                    }
+                  ]
+                },
+                "modeChanges": []
+              },
+              "installationClaimed": true
+            }
+          },
+          "installationClaimed": true,
+          "publicationClaimed": false
+        }
+      ]
+    }
+  ],
+  "refusals": []
+}

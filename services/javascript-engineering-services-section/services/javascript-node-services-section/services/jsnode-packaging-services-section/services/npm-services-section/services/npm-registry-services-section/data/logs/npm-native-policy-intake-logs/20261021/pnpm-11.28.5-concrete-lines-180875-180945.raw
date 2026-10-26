@@ -1,0 +1,71 @@
+      return orig.slice((escape.length + 1) / 2);
+    const halfEscape = escape.slice(escape.length / 2);
+    const envValue = getEnvValue2(env4, name);
+    if (envValue === void 0)
+      return `${halfEscape}${onUnresolved(orig)}`;
+    return `${halfEscape}${envValue}`;
+  });
+}
+function getEnvValue2(env4, name) {
+  const withFallback = parseFallback(name);
+  if (!withFallback)
+    return readEnv(env4, name);
+  const { variableName, fallback, fallbackOnEmpty } = withFallback;
+  const value = readEnv(env4, variableName);
+  if (value === void 0)
+    return fallback;
+  return !value && fallbackOnEmpty ? fallback : value;
+}
+function parseFallback(name) {
+  const dashIndex = name.indexOf("-");
+  if (dashIndex === -1)
+    return void 0;
+  const fallback = name.slice(dashIndex + 1);
+  const fallbackOnEmpty = name[dashIndex - 1] === ":";
+  const variableName = name.slice(0, fallbackOnEmpty ? dashIndex - 1 : dashIndex);
+  if (!variableName || variableName.includes(":") || !fallback)
+    return void 0;
+  return { variableName, fallback, fallbackOnEmpty };
+}
+function readEnv(env4, name) {
+  const value = env4[name];
+  return typeof value === "string" ? value : void 0;
+}
+var ENV_EXPR;
+var init_env_replace = __esm({
+  "../config/env-replace/lib/env-replace.js"() {
+    "use strict";
+    ENV_EXPR = /(?<!\\)(\\*)\$\{([^${}]+)\}/g;
+  }
+});
+
+// ../config/env-replace/lib/index.js
+var init_lib77 = __esm({
+  "../config/env-replace/lib/index.js"() {
+    "use strict";
+    init_env_replace();
+  }
+});
+
+// ../config/reader/lib/replaceEnvInSettings.js
+function replaceEnvInSettings(settings, opts3) {
+  const newSettings = {};
+  for (const [key, value] of Object.entries(settings)) {
+    const newKey = envReplace(key, process.env);
+    if (typeof value === "string" && isGatedRequestScalar(newKey, value, opts3))
+      continue;
+    newSettings[newKey] = replaceEnvInSettingValue(newKey, value, opts3);
+  }
+  return newSettings;
+}
+function isGatedRequestScalar(key, value, opts3) {
+  return REQUEST_SCALAR_KEYS.has(key) && !opts3.expandRequestDestinationEnv && hasEnvPlaceholder(value);
+}
+function replaceEnvInSettingValue(key, value, opts3) {
+  if (typeof value === "string")
+    return envReplace(value, process.env);
+  if (key === "namedRegistries" || key === "registries" && isScopeRouteMap(value)) {
+    return opts3.expandRequestDestinationEnv ? replaceEnvInStringValues(value) : copyStringValuesWithoutEnvPlaceholders(value);
+  }
+  if (key === "registries") {
+    return opts3.expandRequestDestinationEnv ? replaceEnvInKeys(value) : copyEntriesWithoutEnvPlaceholderKeys(value);

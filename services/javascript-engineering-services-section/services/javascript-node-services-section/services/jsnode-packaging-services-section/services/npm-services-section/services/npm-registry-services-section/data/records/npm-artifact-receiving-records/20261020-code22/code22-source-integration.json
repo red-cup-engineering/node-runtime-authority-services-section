@@ -1,0 +1,16 @@
+{
+  "kind": "CodeNativeReceivingSourceIntegrationReceipt",
+  "pull": 27,
+  "url": "https://github.com/red-cup-engineering/npm-workspace-publication-service/pull/27",
+  "acceptedHead": "905e17113da0cb63021215174ec48da0d32b1728",
+  "main": "24bb6cedfe36a847057f9003bde6e88bcc7da00b",
+  "tree": "254c07d55b5bccd01cff09cc244c92510e58dca3",
+  "actualParents": [
+    "bc494ee673f59fcdccc939a6102ae089fac1658b",
+    "905e17113da0cb63021215174ec48da0d32b1728"
+  ],
+  "remoteBranchRetirement": "GitHub automatic postmerge retirement received through exact404",
+  "localExpectedBranchRetired": true,
+  "sourceOwnerVersion": "0.14.24",
+  "state": "source-integrated; actualprimarypublication observed, independentartifact transfer pending"
+}

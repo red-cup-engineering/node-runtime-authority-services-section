@@ -1,0 +1,36 @@
+    return;
+  const modulesDir = pathAbsolute(pnpmConfig.modulesDir ?? "node_modules", pnpmConfig.rootProjectManifestDir);
+  const nodePaths = [
+    ...pnpmConfig.extraEnv["NODE_PATH"]?.split(path88.delimiter) ?? [],
+    path88.join(modulesDir, ".pnpm", "node_modules"),
+    modulesDir
+  ];
+  pnpmConfig.extraEnv["NODE_PATH"] = Array.from(new Set(nodePaths)).join(path88.delimiter);
+  pnpmConfig.extraEnv["NODE_OPTIONS"] = addEsmNodePathLoaderOption(env4["NODE_OPTIONS"]);
+}
+var import_is_windows8;
+var init_runtimeSettings = __esm({
+  "../config/reader/lib/getConfig/runtimeSettings.js"() {
+    "use strict";
+    init_lib78();
+    import_is_windows8 = __toESM(require_is_windows(), 1);
+    init_path_absolute();
+    init_binDir();
+    init_concurrency();
+    init_dirs();
+    init_projectConfig();
+    init_envVars();
+    init_sideEffectsCache();
+  }
+});
+
+// ../config/reader/lib/getConfig/tokenHelper.js
+function assertTokenHelperComesFromTrustedConfig(authConfig, trustedConfig) {
+  for (const [key, value] of Object.entries(authConfig)) {
+    if (!key.endsWith("tokenHelper") && key !== "tokenHelper")
+      continue;
+    if (!(key in trustedConfig) || trustedConfig[key] !== value) {
+      throw new PnpmError("TOKEN_HELPER_IN_PROJECT_CONFIG", "tokenHelper must not be configured in project-level .npmrc", { hint: `The key "${key}" was found in project config. Move it to ~/.npmrc or the global pnpm auth.ini.` });
+    }
+  }
+}

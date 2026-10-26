@@ -1,0 +1,721 @@
+{
+  "source": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261021-pr24/code-source",
+  "nativeCode": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-frozen-recipient/consumer/node_modules/.pnpm/@red-cup-engineering+npm-workspace-publication-service@0.14.24/node_modules/@red-cup-engineering/npm-workspace-publication-service",
+  "primitiveReceipt": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/services/git-services-section/data/records/git-source-reading-qualification-records/20261021-sha256/authoritative-0.1.2-received.json",
+  "primitiveReceiptSHA256": "d08b7a1778341fbbcca313db71cb4fd5222b8a0ec1d7681194b4050b389d3b6a",
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97"
+    },
+    {
+      "path": ".npmrc",
+      "sha256": "8de08949bab508293e0d9aa76a511469ee2d306b1f6140a8f60c0d1de8b17fe2"
+    },
+    {
+      "path": "package.json",
+      "sha256": "fe97c87dffa3b06a732acedd7bf217ee3e2de97be2be7bd8121c1d12a010ac74"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "sha256": "750a5ad0e85f02011895eb6c7225b4b36c9264b4522bf7a04512dce2c76c195a"
+    },
+    {
+      "path": "README.md",
+      "sha256": "dd25bc5a1d5a971f4fab4aa738ab60bdc663dc983e53a1f09b41762c500dcab9"
+    },
+    {
+      "path": "scripts/assay-carrier-module-graph.mjs",
+      "sha256": "f5202d620aec82b488278b7b3f48f0862d62923a4e6f3b044c18ee6d8a059f12"
+    },
+    {
+      "path": "scripts/assay-npm-package-publication.mjs",
+      "sha256": "480d61350a84c2c137a85409fba9ef24d95440ed44d75ebd4eb0de73ec4fdd14"
+    },
+    {
+      "path": "scripts/audit-owner-package-namespaces.mjs",
+      "sha256": "3a82d621ec1a4f9fcff86895ce305499d75595a16b256090637779b9fc85bb66"
+    },
+    {
+      "path": "scripts/audit-registry-carrier-imports.mjs",
+      "sha256": "ee7c71e8cea9299450094170e3bd07ed797457efa5f55659816a9bdf27cd8ddd"
+    },
+    {
+      "path": "scripts/audit-release-truth.mjs",
+      "sha256": "c78ca52a84acd7435f89250d3eb244406861ab70ae62de638b84f1f9ba44b8e4"
+    },
+    {
+      "path": "scripts/audit-semantic-version-policy.mjs",
+      "sha256": "c5faac7a39fa4a028ebde89c0033995d118bce10d5327b3ddb332e9ed361e627"
+    },
+    {
+      "path": "scripts/cache-verdaccio-upstream-release.mjs",
+      "sha256": "e127002ddc2bda62d7d6263f78670626c6c4acf7079fe8680b9d627950b36f5e"
+    },
+    {
+      "path": "scripts/form-node-runtime-provider-catalog.mjs",
+      "sha256": "342ed034a61e5fff3b6cd91655f02462a5fff4f49dbd255b864a18c0b9c8af33"
+    },
+    {
+      "path": "scripts/pack-source-registry-closure.mjs",
+      "sha256": "a63c9b051c5d9523467a7107ea0803453428b905237dd9604cf0c3ef540f05a0"
+    },
+    {
+      "path": "scripts/pin-exact-dependencies.mjs",
+      "sha256": "6a03413ccd2640418a340df2adb4b820e14cf62f7b02e24ff6c972e465127b31"
+    },
+    {
+      "path": "scripts/plan-source-registry-closure.mjs",
+      "sha256": "b88323cb03b974310f805271a5cfc5ba579be87d876ad790171d6c4f28be2af0"
+    },
+    {
+      "path": "scripts/prepare-release-wave.mjs",
+      "sha256": "4449328b3a5021cf90c357ee1ef452a6028c28844abf109647c4609880e41086"
+    },
+    {
+      "path": "scripts/produce-registry-runtime.mjs",
+      "sha256": "27892e7b90f210d0538268364f175b2c5ff8a7958f1525af6c2742db1cec913c"
+    },
+    {
+      "path": "scripts/prune-set-of-stale-install-trees.mjs",
+      "sha256": "130079753c65d25535cc27ee6e5cc3ca746b01fbda260ac6c2f54d877ec82208"
+    },
+    {
+      "path": "scripts/publish-authorized-npm-package.mjs",
+      "sha256": "5996d6f4fd220d6fa670b4ea95c4375b4f810670d3c4cccb003b34f6ff27f136"
+    },
+    {
+      "path": "scripts/publish-package.mjs",
+      "sha256": "836c9c086aceb74b301c199827336963b581c7172c70da0ea971a7b37f082dd7"
+    },
+    {
+      "path": "scripts/publish-source-registry-closure.mjs",
+      "sha256": "63bccf64aac803790da7fe00a96190e7cc9cd781b85a2cada1287eef2221c75e"
+    },
+    {
+      "path": "scripts/publish-workspace-tiers.mjs",
+      "sha256": "4e97bb237c553ece51c0ee4b507cd726b034b7d592428dc3d29abb72e3c0bd45"
+    },
+    {
+      "path": "scripts/read-native-registry-imports.mjs",
+      "sha256": "a5c4a43a99cecde6b843641f37fd4b5a5f05629625f451885ae864651d852e09"
+    },
+    {
+      "path": "scripts/receive-packed-registry-artifact.mjs",
+      "sha256": "3380c9dc80810a67a774212d4c154f21b7ca35898f6664f88525d7bb48d0c2d8"
+    },
+    {
+      "path": "scripts/receive-source-registry-consumers.mjs",
+      "sha256": "dfbec60da7ef4792fe6f04958d33717db24c4761cdf622b46f615262e078a988"
+    },
+    {
+      "path": "scripts/reconcile-package-locks-from-releases.mjs",
+      "sha256": "c94aa2014526fec215c31e5121c908c2ed59608f04f35153d421366679b2a0a6"
+    },
+    {
+      "path": "scripts/reconcile-package-locks.mjs",
+      "sha256": "bc4f36a30bfcb7e6fca1c36d2a3c248115ac8682f98793d8394513b57c4f3ce2"
+    },
+    {
+      "path": "scripts/recover-demanded-versions.mjs",
+      "sha256": "427f93d4b49dbe6a2a641a1baf06d128997ea77d5235cf349f38730e8199eee0"
+    },
+    {
+      "path": "scripts/reset-package-versions.mjs",
+      "sha256": "bf50f528966bf4f4520b7577e75710816ea78cbf3dd5ca573ac5833cf2989a22"
+    },
+    {
+      "path": "scripts/reset-python-package-versions.py",
+      "sha256": "d9de12a1c5e04d96524b84933fa2acd0f1c46855cb093b263b8282095f23fc35"
+    },
+    {
+      "path": "scripts/verify-active-software.mjs",
+      "sha256": "acf119073a89cb968ae66aa7e12fabdf5a25fa03f6a6188fc0c98bc5e0512606"
+    },
+    {
+      "path": "scripts/verify-exact-dependencies.mjs",
+      "sha256": "578586642714a771154cc75417805506e716a852923853c19f041892bc27da0b"
+    },
+    {
+      "path": "scripts/verify-package-carrier.mjs",
+      "sha256": "e25710993e85a8016613b60ae81bc865e922aee15a532c8e7b4a1714eabfb1f7"
+    },
+    {
+      "path": "specifications/artifact-member-receiving.md",
+      "sha256": "95844349a636f5d0004875b8a9020f52c241f5e53fc002b9f04a359970623723"
+    },
+    {
+      "path": "specifications/canonical-version-validation.md",
+      "sha256": "a8b1439055af7d181adf8f34f4b01f87627250d3ee65217b90f32c755588e98e"
+    },
+    {
+      "path": "specifications/development-root-self-source-qa.md",
+      "sha256": "0a1c7453ffe4a58a15a85830ad1df1230225445e3417d5cf9b960df926502e2d"
+    },
+    {
+      "path": "specifications/repository-aware-source-members.md",
+      "sha256": "253cfc826337f7a21f5716fd0663ce3537fa93a7157225fd8a5306b29cc2fd96"
+    },
+    {
+      "path": "src/artifact-member-receiving.mjs",
+      "sha256": "0358984f32e1054625f88e9fdfd79718ad57e1265b74aa9bef8e0e8c5be05b11"
+    },
+    {
+      "path": "src/artifact-release.mjs",
+      "sha256": "1750e450991fa55f425844832ea2f3bcb4b88ddd6384b90efff104957218bce6"
+    },
+    {
+      "path": "src/carrier-surface.mjs",
+      "sha256": "99225424bd7cb7d42fe5af08c95d5b066bcc002b4200736586da9394cc7936be"
+    },
+    {
+      "path": "src/dependency-policy.mjs",
+      "sha256": "c640f79eb5c9ece8336401656b08410230b0f6cd87938f5ed96418416b57383b"
+    },
+    {
+      "path": "src/dist-staleness.mjs",
+      "sha256": "e38c2829fa96e4c352057e69e1ab0502c4067d9cb1291b2a8b363a7647492101"
+    },
+    {
+      "path": "src/export-subpath-targets.mjs",
+      "sha256": "915db26bff5dce8ce9a43406822ac00041b510679a04637c1862841ffa79a999"
+    },
+    {
+      "path": "src/export-surface-diff.mjs",
+      "sha256": "8e7cfce5a56c3b4bc4b8bea5ead8476682c876204306087bd134763a03a3ec5d"
+    },
+    {
+      "path": "src/failing-test-names.mjs",
+      "sha256": "55fb7ca49a37c355e570f7eb661dc439827bb0b3d9658404ac5d385d7d3f744f"
+    },
+    {
+      "path": "src/installed-carrier-bindings.mjs",
+      "sha256": "726b48e8aaa6ac115ba9db0d947e0de14618cbfe5366dc08ed87ce66d922a358"
+    },
+    {
+      "path": "src/isolated-carrier-verification.mjs",
+      "sha256": "ca9d90620e4571b2e1692b6f9fd8081876cfbb8065ed3df8468f40f880e44732"
+    },
+    {
+      "path": "src/javascript-export-names.mjs",
+      "sha256": "01c2eb672dd8199b448b84efc4e84f46f7ceb1feb35e7bf98c0096456c92a6ca"
+    },
+    {
+      "path": "src/lockfile-registry-classification.mjs",
+      "sha256": "e58928fd524259aacb84e2df79dbeba94ab42f34f14a703a469009b4e8e8386c"
+    },
+    {
+      "path": "src/native-registry-imports.mjs",
+      "sha256": "e39d10c092914db8141bc0727f05f98459fc0c8792d5b53c87b27d85816cb82b"
+    },
+    {
+      "path": "src/npm-pack-result.mjs",
+      "sha256": "bdc66a21c53488a9b0b90a920eb1b7915fe40ea1dd5c18d6b89fdf219a19ad70"
+    },
+    {
+      "path": "src/npm-publication-command.mjs",
+      "sha256": "28f84f1489050074313078e726f7fd67d1181f04515360d5f430ded036d77591"
+    },
+    {
+      "path": "src/npm-publication-target.mjs",
+      "sha256": "08451307a48b396e9463b190e6429e54dc2a982abd34c39162416179663c05e5"
+    },
+    {
+      "path": "src/owner-namespace-debt.mjs",
+      "sha256": "fcdc87e5e01fa5be16262cf613f6009d55074737a90e092e3e8aba45ebeb29f4"
+    },
+    {
+      "path": "src/package-manager.mjs",
+      "sha256": "bc1ceb3cc16d124dbc1bbb1dcac4b590d8d4a0209f0243d0de0d8abb8845ecd7"
+    },
+    {
+      "path": "src/pin-exact-dependencies.mjs",
+      "sha256": "c93d1303556fcd201781f0dba156709856a645e1bab1f9a2eed197651fb676d3"
+    },
+    {
+      "path": "src/produce-registry-runtime.mjs",
+      "sha256": "d27fd0b952a25063308f7610db9e6b4facbfb13503a98e115af9510c2a12d3dd"
+    },
+    {
+      "path": "src/publication-carrier-manifest.mjs",
+      "sha256": "aabd5754ac18bdf8be5e306fcf617708055a8b2ec70a6860f7044cdaaaa37e7d"
+    },
+    {
+      "path": "src/publication.mjs",
+      "sha256": "ffbe2adbd4d73b91be85aa374171582ddc1222ad318af49e22177fb9fc268be8"
+    },
+    {
+      "path": "src/publish-gate-receipt.mjs",
+      "sha256": "61be3c935f0903f2c862a5634c245499e7f571c13cd35dd08b64f64d1566fa38"
+    },
+    {
+      "path": "src/read-only-publication-plan.mjs",
+      "sha256": "73b474eb980dc2e87666c81b52eaadca35803d384305bc9c925b2abf10c9ab5c"
+    },
+    {
+      "path": "src/read-workspace-manifests.mjs",
+      "sha256": "9dc3514f29d50ba84f13899bdce0db84c739017882c98b938bd7b19719c174a5"
+    },
+    {
+      "path": "src/reconcile-package-locks-from-releases.mjs",
+      "sha256": "07463fa9a5e6a7fd310c6df47f79a813f3c07fc4335a784e41f4d9433b97ef35"
+    },
+    {
+      "path": "src/reconcile-package-locks.mjs",
+      "sha256": "996fde6a0910243f7ab5b27078563ca66fcb56cdead4636065c7be3d753c2bd8"
+    },
+    {
+      "path": "src/registry-carrier-imports.mjs",
+      "sha256": "82c0772a5d6b017b944f7a73af3f69a1eef4c21cf2280e8f907c28cad796a7c4"
+    },
+    {
+      "path": "src/registry-liveness.mjs",
+      "sha256": "fd72a1994c6c65e0496f1d9ab6dc9be6157e8bef79dbca0c8a10fc183449ccc7"
+    },
+    {
+      "path": "src/registry.mjs",
+      "sha256": "78f5505bdcb93d893c76346a82eaa29ded10c0438ff37b08939aef2263d5fa4a"
+    },
+    {
+      "path": "src/release-truth.mjs",
+      "sha256": "b020c5873ef3501adb365568f34a1822a4c99a7d3114ddbf5ec7a1b3123b317a"
+    },
+    {
+      "path": "src/release-wave.mjs",
+      "sha256": "d5b5c0e86873837aaf00658d5705868d4c2efea28b425c670f4807f532dec9b6"
+    },
+    {
+      "path": "src/reset-package-versions.mjs",
+      "sha256": "f63ade47f555e85a15097fe432523ef768a581251ad00189466f7e03a33afcc6"
+    },
+    {
+      "path": "src/runner.mjs",
+      "sha256": "dbd1bdebb239a05683eee949b4596438aae4d57d6797c2215f047855d560d045"
+    },
+    {
+      "path": "src/runtime-provider-catalog.mjs",
+      "sha256": "e86fb751facf27b7710f6bd3719c010208ae752cc268a69cc809000a98e532a4"
+    },
+    {
+      "path": "src/semantic-version-audit.mjs",
+      "sha256": "8d791f901650483c38a749896aa96dc2fa8245b72f1ab0838fb860123b43d1fe"
+    },
+    {
+      "path": "src/semantic-version-policy.mjs",
+      "sha256": "aac15d4d6142b14a52efe7994cec90e863042e86716adced1041aead00d88203"
+    },
+    {
+      "path": "src/software-estate.mjs",
+      "sha256": "ea51f56ea19e4282bd9a1b352049eb6fe00553928edab105cd914cb07ff32956"
+    },
+    {
+      "path": "src/software-verification.mjs",
+      "sha256": "1166c1f06120125c50db9d39107d19a7fe58cc07f10808d6baadbe6bd231ac55"
+    },
+    {
+      "path": "src/source-bindings.mjs",
+      "sha256": "1830cc9f3585c54af7476d0ef843709329dfe98612682ec848efe16a4cbfbecd"
+    },
+    {
+      "path": "src/source-build-qualification.mjs",
+      "sha256": "fe457941515b817f4571a7ea13c2a1df2cb14937ee868586ce8faf81f5bcbd79"
+    },
+    {
+      "path": "src/source-member-binding.mjs",
+      "sha256": "8faa12eb77e467ce5d7191373406bc48c077b4880d6544b89849c456236f506a"
+    },
+    {
+      "path": "src/source-registry-closure.mjs",
+      "sha256": "a358064e1c7a726441dc37ecbe2836721ca1b0a0eb077b169fc3dc1d8d30ace8"
+    },
+    {
+      "path": "src/stale-install-trees.mjs",
+      "sha256": "8252238745dcf66e1a9c43df433c5400327fb7584f21117af0a6ff5399d84c1e"
+    },
+    {
+      "path": "src/tarball-guard.mjs",
+      "sha256": "af22c38763a2799fa6438c44e3ae0f7a7b33eae4ba2c39f07c6d9d0db6d1bbe3"
+    },
+    {
+      "path": "src/test-run-summary.mjs",
+      "sha256": "3ffa7663ceaac0560c17f9baecba0b43da31bbd6b15caeda6ee8ec177363bb38"
+    },
+    {
+      "path": "src/text-tail.mjs",
+      "sha256": "2fee407573a4557c0b6d643dae8690fbcae5420ddb88e6abb4652243a15d31dc"
+    },
+    {
+      "path": "src/verdaccio-upstream-cache.mjs",
+      "sha256": "730eb62f15d49c8645145bb53e180501f07bb33a75b109bfe7949b909dbd2f76"
+    },
+    {
+      "path": "src/verdaccio-version-reset-executor.mjs",
+      "sha256": "14acc8da06978cf3178b011e582a8fc366094152236e228fd8ec643ec3e51645"
+    },
+    {
+      "path": "src/verdaccio-version-reset.mjs",
+      "sha256": "a448394043bdb5aa898b48aacdf4f945210fa167b8b6ebd01cd972e624e02ad8"
+    },
+    {
+      "path": "src/verification-copy.mjs",
+      "sha256": "7ecfc4f9a068b9f32b84b10a603ea27e8660a98dc3b48b357eb27327a17c3cfd"
+    },
+    {
+      "path": "src/workspace-graph.mjs",
+      "sha256": "cc826305ff9a57f74806a7fc97f16d41f7b719eb91bae10bfe85ce4ef911ca3f"
+    },
+    {
+      "path": "src/workspace-publication.mjs",
+      "sha256": "22cb92c76675ce84b00612e8cb88b7cf4c3e4dabbc614dfaaf2632f85a9362b6"
+    },
+    {
+      "path": "src/zero-major-version-reset.mjs",
+      "sha256": "a337fccc5c0a370e8ff68a5d0d722314fdfb20fbadc25bf17b40dd33cbdb91ec"
+    },
+    {
+      "path": "test/artifact-member-receiving.test.mjs",
+      "sha256": "dfd84d0ea214f3ecd4d36cd87af0ad004a9188392b72002d0e2c8853e04f8a5a"
+    },
+    {
+      "path": "test/artifact-native-receiving.test.mjs",
+      "sha256": "288684991be9092d7b558e61bad6fdc87c12703c0edc6ab067f5f35b9a8b2d1c"
+    },
+    {
+      "path": "test/artifact-release.test.mjs",
+      "sha256": "4fe6f19613b513b603c89094e33907b99ef5980e9c83aba4f556d4986434a5e7"
+    },
+    {
+      "path": "test/carrier-module-graph.test.mjs",
+      "sha256": "0817e4272f7f4f457dad80641c74374c8cf5887aa633b3ae25266b2e19e0033e"
+    },
+    {
+      "path": "test/carrier-source-selection.test.mjs",
+      "sha256": "5fb79e4f13cc0c42b25a4c71f8beab6a94550db95714b20cc11064fbc9a28ac6"
+    },
+    {
+      "path": "test/carrier-surface.test.mjs",
+      "sha256": "64ec8dec8c3ff0704b014ac13888d23c66a5cb84d02c4f99c25af58ab57e7581"
+    },
+    {
+      "path": "test/dependency-policy.test.mjs",
+      "sha256": "b01930a9ed8fdd77bc83e67ff1a1aee44d79a3f1f5e9d18090e8eaf2c075b79d"
+    },
+    {
+      "path": "test/development-root-self-context.test.mjs",
+      "sha256": "3b0d7b935e1309f61b078a1b24979263bbfb592f262019f1ddbbcc2daa665713"
+    },
+    {
+      "path": "test/development-source-publication.test.mjs",
+      "sha256": "1e4bd187b0595687b86279c76c3cfabba0afb848eea8c595414df5f2e9a9921e"
+    },
+    {
+      "path": "test/dist-staleness.test.mjs",
+      "sha256": "ef1b2761542f6ce18b11716e5270a357b8f64a4a5a23e8fdf8324197948198b6"
+    },
+    {
+      "path": "test/export-subpath-targets.test.mjs",
+      "sha256": "155933a864e4c45051f38b31e4e06e4eec6009b3913871edbb6631e0791cb713"
+    },
+    {
+      "path": "test/export-surface-diff.test.mjs",
+      "sha256": "c759009051b86912eb73185c3999e024e4e1070a18324f8c996cfead18072950"
+    },
+    {
+      "path": "test/failing-test-names.test.mjs",
+      "sha256": "467a6d761788004cbe8ffbed790461c36c7e908495bb36354e62459eab1f8ed7"
+    },
+    {
+      "path": "test/fixtures/publish-package-build-failure-fixture/build.mjs",
+      "sha256": "748e1d9b315866faa3ddf5696f06fbe2af89474207b991e3105e96ff1d51f1e7"
+    },
+    {
+      "path": "test/fixtures/publish-package-build-failure-fixture/package.json",
+      "sha256": "da68fe2b273fce92c377ba5e1004c91c5e1574a460ba30d3932a9b56416b5880"
+    },
+    {
+      "path": "test/fixtures/publish-package-build-failure-fixture/test/index.test.mjs",
+      "sha256": "8e24a4b4e1562f8fffb81ba2a2a925ad185eff0a7a251f87b9610c719a7359e5"
+    },
+    {
+      "path": "test/fixtures/publish-package-build-success-fixture/build.mjs",
+      "sha256": "befe224b874c5a166bc8126debd2a2a2302a6cf5867e5fc48203149bd2abe6eb"
+    },
+    {
+      "path": "test/fixtures/publish-package-build-success-fixture/package.json",
+      "sha256": "0f0f5e2488e3b8cb4b21d2b3e44b36abd888e3b50a8180b3d1c472a0421e25b2"
+    },
+    {
+      "path": "test/fixtures/publish-package-build-success-fixture/test/index.test.mjs",
+      "sha256": "8e24a4b4e1562f8fffb81ba2a2a925ad185eff0a7a251f87b9610c719a7359e5"
+    },
+    {
+      "path": "test/fixtures/publish-package-gate-fixture/package.json",
+      "sha256": "ea1876e0cd691b53129569982bb1fbe60c276ca30fe8b317622e10d8566a43f2"
+    },
+    {
+      "path": "test/javascript-export-names.test.mjs",
+      "sha256": "c0791c4738b6f69014b537fc3f348103ae3c0eb0d384a7aa173866f1bdf18032"
+    },
+    {
+      "path": "test/lockfile-registry-classification.test.mjs",
+      "sha256": "987e117833a863b27fa5bcc7611fa936857545610fd0a22b9688482ad9076469"
+    },
+    {
+      "path": "test/native-registry-imports.test.mjs",
+      "sha256": "9a1fea527a542d797b54c3760eec509507e97dc0f2aba2feab7ed3ba8dada8a1"
+    },
+    {
+      "path": "test/non-package-operation-publication.test.mjs",
+      "sha256": "9ade704473d8dec6d61d7644de821c05eb83dcd79b8dfe86f54d198ff80e7349"
+    },
+    {
+      "path": "test/npm-publication-command.test.mjs",
+      "sha256": "551310f185eb1771f984db6999be64a2d4f98a647aa599c2510ef79be0ef790f"
+    },
+    {
+      "path": "test/npm-publication-target.test.mjs",
+      "sha256": "c311269501d825f4982ff3fe73dbdcccc65e319e79c250d724cf0f48c3d27377"
+    },
+    {
+      "path": "test/owner-namespace-debt.test.mjs",
+      "sha256": "b9c08240c07832d7731e36037010f33df872053a82700a56b354c8c3e053159f"
+    },
+    {
+      "path": "test/package-entrypoint.test.mjs",
+      "sha256": "0c2e959f995d5c0bdd367874d82b1d8a64e7f96f2c3e972055930f58668c2e8e"
+    },
+    {
+      "path": "test/package-manager.test.mjs",
+      "sha256": "63335ca93bfa204edbc4b798692fbc483e26a37cdc67779fdfd03ee5f649b75c"
+    },
+    {
+      "path": "test/package-test-completion.test.mjs",
+      "sha256": "2267cd01de0be636a12a29fa311ad5a2bef5fd1728b244341b81b0c8c849589b"
+    },
+    {
+      "path": "test/pin-exact-dependencies.test.mjs",
+      "sha256": "03bd5424162c42aefe29c144c356ca04470e32ed63cdcbc0ba5f9fdaa172adc1"
+    },
+    {
+      "path": "test/produce-registry-runtime.test.mjs",
+      "sha256": "4a782ab0d7bd464742d4bbb50a9381e6eb9b35d8c2598179292054043d178922"
+    },
+    {
+      "path": "test/prune-stale-install-trees.test.mjs",
+      "sha256": "2ecde26e3e2e9cd3e92b333918c13331392a2c3783ebba7afcc8ccf5086fb3f7"
+    },
+    {
+      "path": "test/publication-lock-preflight.test.mjs",
+      "sha256": "c23cefb8073e4ab7efe718a53522fa100c6d40085edad0fbfdba571282a50bd2"
+    },
+    {
+      "path": "test/publication.test.mjs",
+      "sha256": "1156b06ceb4ca06f17e7758f4f644d176ef969b66c8b4d3b4d38673d374bb47c"
+    },
+    {
+      "path": "test/publish-gate-receipt.test.mjs",
+      "sha256": "577bcab3b6263f1ecd0615fba262c0a6d96f24a474fc1e046cd43b4eaf84ef8d"
+    },
+    {
+      "path": "test/publish-package-build-step.test.mjs",
+      "sha256": "a1c0ed2a0e74b21125604d2a124c2382c4994f27111ca44cf1aba20d7ef33a11"
+    },
+    {
+      "path": "test/publish-package.test.mjs",
+      "sha256": "1192bbc344ecc74d6d0a1e7b2a3b31be0a01822775866b130a6f86bc0d537a6c"
+    },
+    {
+      "path": "test/reconcile-package-locks-from-releases.test.mjs",
+      "sha256": "beaddbe538a667160bc0cc067eff0dc8126a321ac2e0fa8958f0c0c8280875f3"
+    },
+    {
+      "path": "test/reconcile-package-locks.test.mjs",
+      "sha256": "2c261e85e214303f82b250e1ec064663f7b92e04735c590ccb47d0eadddc8c3e"
+    },
+    {
+      "path": "test/registry-configured-transport.test.mjs",
+      "sha256": "91f2ed52167223207e3819159631971c5b0a639d1bc59cec0f054a4832e45d6c"
+    },
+    {
+      "path": "test/registry-global-transport.test.mjs",
+      "sha256": "ec892493a5a519147d754c7d51c99efc126d2f815d2dac688b6178e15cbeae7a"
+    },
+    {
+      "path": "test/registry-liveness.test.mjs",
+      "sha256": "622430a04cc62288c5879ad02dd4d7f15fc06bb741ac068147b4b2abc43a4582"
+    },
+    {
+      "path": "test/registry-storage.test.mjs",
+      "sha256": "24f70d594c16f21751d2d7f1443b9d9615db84a05bd10120a088d6ea1582d8b7"
+    },
+    {
+      "path": "test/release-change.test.mjs",
+      "sha256": "c01e56b9d5250e244ef154441f67d204c2b87c5905739c0b6a2c959b3dc043f4"
+    },
+    {
+      "path": "test/release-truth.test.mjs",
+      "sha256": "c1386ecd6703576c71f4e7b59c3e082f4131b50456d3e6cada217b19e28601c0"
+    },
+    {
+      "path": "test/release-wave.test.mjs",
+      "sha256": "3d3eda7a7ddd35199499209115d40d7af7cbc321b84c578dc8490d8f0424690b"
+    },
+    {
+      "path": "test/reset-package-versions.test.mjs",
+      "sha256": "05de349ab3593247b3ca95e0ad624283b25a87ee4cda0068e6a86d1dc4c701e5"
+    },
+    {
+      "path": "test/reset-python-package-versions.test.mjs",
+      "sha256": "cf71b514643f2ebf6fe80329339dd901fe26dad1cc8f6a0983f1bcd5287d0fde"
+    },
+    {
+      "path": "test/reviewed-release-selection.test.mjs",
+      "sha256": "738ed999c58c141a42556a5eb94bfed6187b587196cd6ed602d140f5c631ca6d"
+    },
+    {
+      "path": "test/reviewed-selection-native-lock.test.mjs",
+      "sha256": "bb88ecd990112025d7e599f5b3ba85bc897719c45b0e62bdb59c06107b04dcca"
+    },
+    {
+      "path": "test/runtime-provider-catalog.test.mjs",
+      "sha256": "0695331725b9cff4c1288a7341a2f4a588755ef8683ee796bfeeed1d916d9bce"
+    },
+    {
+      "path": "test/semantic-version-audit.test.mjs",
+      "sha256": "2abe111ea93371e468ebeca3a514c4b3234dd01b10fea25bcfe10e95848642e8"
+    },
+    {
+      "path": "test/semantic-version-policy.test.mjs",
+      "sha256": "7d6b64ff54014b1959e53b1229fb175ad924d8032708686c1a505498d8097bd2"
+    },
+    {
+      "path": "test/software-estate.test.mjs",
+      "sha256": "93e37c49d1e2e0b87cdf6f72f495c950e44e07de17246f4235d80ddb4b9abe14"
+    },
+    {
+      "path": "test/software-verification.test.mjs",
+      "sha256": "0f2f79bda61eee6904797516f524d6fea93b079fa3b343c0cdbc7a24c6178c36"
+    },
+    {
+      "path": "test/source-bindings.test.mjs",
+      "sha256": "8b0e5a21bc4fe762647274ae324f6309c9a2f835c288f6532656a3acaab43acc"
+    },
+    {
+      "path": "test/source-build-qualification.test.mjs",
+      "sha256": "28b3a4c010838b7f814e56c8024ec8886308f48e84a3b1dde91fc81049b492fb"
+    },
+    {
+      "path": "test/source-member-binding.test.mjs",
+      "sha256": "dbbbbd07aa4e328e7988ce5b78bb3cec5cfe9d1f51a450f08473532d688e580e"
+    },
+    {
+      "path": "test/source-registry-closure.test.mjs",
+      "sha256": "91cec4c17aaffcecd0e968ea4592610e02c6f31dde252b0e2f331056ea314a40"
+    },
+    {
+      "path": "test/source-registry-consumer-admission.test.mjs",
+      "sha256": "bdb78c7f24dbdf7a514f85fce47a9cbc751146d05ae2f61d2cc467137b2321d9"
+    },
+    {
+      "path": "test/tarball-guard.test.mjs",
+      "sha256": "5338d51c801d611555ad2e9bc6eeca076689c970a54789607ef79687df3c4065"
+    },
+    {
+      "path": "test/test-run-summary.test.mjs",
+      "sha256": "e1831592ea96e89b375e05529bf2e21ac7e8b5ee27548c72b6ab3d477e58fdbe"
+    },
+    {
+      "path": "test/text-tail.test.mjs",
+      "sha256": "6066874daa955891e331afad2e11020cca547ad516e095e2575af7cac8a81ea7"
+    },
+    {
+      "path": "test/verdaccio-upstream-cache.test.mjs",
+      "sha256": "60e19b07ba5c8e126bc53e14c28479555ab09a5d29ecb36a659a8f80f001fe9d"
+    },
+    {
+      "path": "test/verdaccio-version-reset-executor.test.mjs",
+      "sha256": "a97137687205fb313ee74a6b99ed46871a8772efd2f5323374ee53a92d44eacf"
+    },
+    {
+      "path": "test/verdaccio-version-reset.test.mjs",
+      "sha256": "fdbdb60f086dd378f0912257859ef227842b67613c5d14ed02435222d6fb57f2"
+    },
+    {
+      "path": "test/verification-copy.test.mjs",
+      "sha256": "3f71e286d6d86de9c79ed4cae5db0c8789a821c268fb3bde5bf422630324e812"
+    },
+    {
+      "path": "test/workspace-graph.test.mjs",
+      "sha256": "6a3a958f4d92605995639a232b2128fa417030c5d604e0e77c15fed273f574a7"
+    },
+    {
+      "path": "test/zero-major-version-reset.test.mjs",
+      "sha256": "5b700170a826a8f11a754a64bd048fa3e38389cb4a9cb4a10464270be082cdb2"
+    }
+  ],
+  "tests": [
+    "test/artifact-member-receiving.test.mjs",
+    "test/artifact-native-receiving.test.mjs",
+    "test/artifact-release.test.mjs",
+    "test/carrier-module-graph.test.mjs",
+    "test/carrier-source-selection.test.mjs",
+    "test/carrier-surface.test.mjs",
+    "test/dependency-policy.test.mjs",
+    "test/development-root-self-context.test.mjs",
+    "test/development-source-publication.test.mjs",
+    "test/dist-staleness.test.mjs",
+    "test/export-subpath-targets.test.mjs",
+    "test/export-surface-diff.test.mjs",
+    "test/failing-test-names.test.mjs",
+    "test/javascript-export-names.test.mjs",
+    "test/lockfile-registry-classification.test.mjs",
+    "test/native-registry-imports.test.mjs",
+    "test/non-package-operation-publication.test.mjs",
+    "test/npm-publication-command.test.mjs",
+    "test/npm-publication-target.test.mjs",
+    "test/owner-namespace-debt.test.mjs",
+    "test/package-entrypoint.test.mjs",
+    "test/package-manager.test.mjs",
+    "test/package-test-completion.test.mjs",
+    "test/pin-exact-dependencies.test.mjs",
+    "test/produce-registry-runtime.test.mjs",
+    "test/prune-stale-install-trees.test.mjs",
+    "test/publication-lock-preflight.test.mjs",
+    "test/publication.test.mjs",
+    "test/publish-gate-receipt.test.mjs",
+    "test/publish-package-build-step.test.mjs",
+    "test/publish-package.test.mjs",
+    "test/reconcile-package-locks-from-releases.test.mjs",
+    "test/reconcile-package-locks.test.mjs",
+    "test/registry-configured-transport.test.mjs",
+    "test/registry-global-transport.test.mjs",
+    "test/registry-liveness.test.mjs",
+    "test/registry-storage.test.mjs",
+    "test/release-change.test.mjs",
+    "test/release-truth.test.mjs",
+    "test/release-wave.test.mjs",
+    "test/reset-package-versions.test.mjs",
+    "test/reset-python-package-versions.test.mjs",
+    "test/reviewed-release-selection.test.mjs",
+    "test/reviewed-selection-native-lock.test.mjs",
+    "test/runtime-provider-catalog.test.mjs",
+    "test/semantic-version-audit.test.mjs",
+    "test/semantic-version-policy.test.mjs",
+    "test/software-estate.test.mjs",
+    "test/software-verification.test.mjs",
+    "test/source-bindings.test.mjs",
+    "test/source-build-qualification.test.mjs",
+    "test/source-member-binding.test.mjs",
+    "test/source-registry-closure.test.mjs",
+    "test/source-registry-consumer-admission.test.mjs",
+    "test/tarball-guard.test.mjs",
+    "test/test-run-summary.test.mjs",
+    "test/text-tail.test.mjs",
+    "test/verdaccio-upstream-cache.test.mjs",
+    "test/verdaccio-version-reset-executor.test.mjs",
+    "test/verdaccio-version-reset.test.mjs",
+    "test/verification-copy.test.mjs",
+    "test/workspace-graph.test.mjs",
+    "test/zero-major-version-reset.test.mjs"
+  ]
+}

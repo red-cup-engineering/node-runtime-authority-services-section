@@ -1,0 +1,177 @@
+{
+  "kind": "YamlPublicAPIObservationAfterFailedAssumption",
+  "priorPureProbe": {
+    "failed": true,
+    "error": "publicAPIobservationdiffers",
+    "implementationChanged": false
+  },
+  "version": "2.9.0",
+  "options": {
+    "version": "1.2",
+    "schema": "core",
+    "strict": true,
+    "stringKeys": true,
+    "uniqueKeys": true,
+    "customTags": [],
+    "resolveKnownTags": false,
+    "merge": false,
+    "logLevel": "silent"
+  },
+  "observations": [
+    {
+      "name": "ordinary",
+      "errors": [],
+      "warnings": [],
+      "aliases": 0,
+      "keys": [
+        "minimumReleaseAge",
+        "minimumReleaseAgeExclude"
+      ],
+      "directives": {
+        "docStart": null,
+        "docEnd": false,
+        "yaml": {
+          "explicit": false,
+          "version": "1.2"
+        },
+        "tags": {
+          "!!": "tag:yaml.org,2002:"
+        }
+      },
+      "rootMap": true
+    },
+    {
+      "name": "duplicate",
+      "errors": [
+        "DUPLICATE_KEY"
+      ],
+      "warnings": [],
+      "aliases": 0,
+      "keys": [
+        "minimumReleaseAge",
+        "minimumReleaseAge"
+      ],
+      "directives": {
+        "docStart": null,
+        "docEnd": false,
+        "yaml": {
+          "explicit": false,
+          "version": "1.2"
+        },
+        "tags": {
+          "!!": "tag:yaml.org,2002:"
+        }
+      },
+      "rootMap": true
+    },
+    {
+      "name": "custom-tag",
+      "errors": [],
+      "warnings": [
+        "TAG_RESOLVE_FAILED"
+      ],
+      "aliases": 0,
+      "keys": [
+        "pnpmfile"
+      ],
+      "directives": {
+        "docStart": null,
+        "docEnd": false,
+        "yaml": {
+          "explicit": false,
+          "version": "1.2"
+        },
+        "tags": {
+          "!!": "tag:yaml.org,2002:"
+        }
+      },
+      "rootMap": true
+    },
+    {
+      "name": "alias",
+      "errors": [],
+      "warnings": [],
+      "aliases": 1,
+      "keys": [
+        "a",
+        "b",
+        "pnpmfile"
+      ],
+      "directives": {
+        "docStart": null,
+        "docEnd": false,
+        "yaml": {
+          "explicit": false,
+          "version": "1.2"
+        },
+        "tags": {
+          "!!": "tag:yaml.org,2002:"
+        }
+      },
+      "rootMap": true
+    },
+    {
+      "name": "env-key",
+      "errors": [],
+      "warnings": [],
+      "aliases": 0,
+      "keys": [
+        "${HOOK_KEY}"
+      ],
+      "directives": {
+        "docStart": null,
+        "docEnd": false,
+        "yaml": {
+          "explicit": false,
+          "version": "1.2"
+        },
+        "tags": {
+          "!!": "tag:yaml.org,2002:"
+        }
+      },
+      "rootMap": true
+    },
+    {
+      "name": "yaml-11",
+      "errors": [],
+      "warnings": [],
+      "aliases": 0,
+      "keys": [
+        "pnpmfile"
+      ],
+      "directives": {
+        "docStart": true,
+        "docEnd": false,
+        "yaml": {
+          "explicit": true,
+          "version": "1.1"
+        },
+        "tags": {
+          "!!": "tag:yaml.org,2002:"
+        }
+      },
+      "rootMap": true
+    },
+    {
+      "name": "two-documents",
+      "errors": [],
+      "warnings": [],
+      "aliases": 0,
+      "keys": [
+        "a"
+      ],
+      "directives": {
+        "docStart": null,
+        "docEnd": false,
+        "yaml": {
+          "explicit": false,
+          "version": "1.2"
+        },
+        "tags": {
+          "!!": "tag:yaml.org,2002:"
+        }
+      },
+      "rootMap": true
+    }
+  ]
+}

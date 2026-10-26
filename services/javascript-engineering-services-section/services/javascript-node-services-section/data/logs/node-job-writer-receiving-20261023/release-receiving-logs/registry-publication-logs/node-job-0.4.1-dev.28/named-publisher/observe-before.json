@@ -1,0 +1,44 @@
+{
+  "found": true,
+  "reachable": true,
+  "manifest": {
+    "name": "@red-cup-engineering/node-job-service",
+    "version": "0.4.1-dev.28",
+    "private": false,
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/red-cup-engineering/node-job-service.git"
+    },
+    "files": [
+      "src",
+      "scripts"
+    ],
+    "type": "module",
+    "exports": {
+      ".": "./src/node-job.mjs",
+      "./placement": "./src/placement.mjs",
+      "./observe": "./src/observe.mjs",
+      "./fleet": "./src/fleet.mjs",
+      "./selected-job-writer-receiving": "./src/selected-job-writer-receiving.mjs"
+    },
+    "bin": {
+      "node-job-fleet-sync": "scripts/fleet-sync.mjs",
+      "node-job-fleet-join": "scripts/install-fleet-sync.mjs",
+      "node-job-receive-writers": "scripts/receive-job-writers.mjs"
+    },
+    "scripts": {
+      "test": "node --test test/*.test.mjs"
+    },
+    "gitHead": "e01d3e27028045feceaf4c57514fff5397c59bf3",
+    "_id": "@red-cup-engineering/node-job-service@0.4.1-dev.28",
+    "contentDigest": "sha256-a4f10b0a00655fd475dc3409b6a762a313a2616eb9ad038ea969e69c5ca0227f",
+    "dist": {
+      "shasum": "b2504b90bd2811629cb22ef0f36b905d785dacb1",
+      "integrity": "sha512-3Uo3EfefaVNqox1UeJHz3YnwzFCBF5krD4Fx30573ZPpp6S1cstCsBYVJbVT2Yoxj/W4BGUnorpiuBTB13u92Q==",
+      "tarball": "https://registry.561.group/@red-cup-engineering/node-job-service/-/node-job-service-0.4.1-dev.28.tgz"
+    },
+    "_npmUser": {
+      "name": "github-services"
+    }
+  }
+}

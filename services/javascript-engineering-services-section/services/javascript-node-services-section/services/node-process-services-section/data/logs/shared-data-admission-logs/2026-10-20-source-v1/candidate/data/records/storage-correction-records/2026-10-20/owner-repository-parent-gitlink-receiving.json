@@ -1,0 +1,38 @@
+{
+  "kind": "SourceOwnerRepositoryAndParentGitlinkReceiving",
+  "at": "2026-10-21T00:01:39.180037+00:00",
+  "owner": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section",
+  "repository": {
+    "id": 1425297553,
+    "full_name": "red-cup-engineering/node-process-services-section",
+    "private": false,
+    "default_branch": "main",
+    "head": "9ea4f22f9e56fe67d936d629fae8033634903b7b"
+  },
+  "parent": {
+    "repository": "red-cup-engineering/javascript-node-services-section",
+    "head": "6dba76abe567aa7e7da2d995067b6d1a4f31632e",
+    "tree": "d9325138657e2ccfad3add7b703ab66b69086704",
+    "declaration": {
+      "path": ".gitmodules",
+      "blob": "493d66e26a4cca1cf71cabbd6ded689af7d3db9b",
+      "selectedEntry": {
+        "name": "node-process-services-section",
+        "path": "services/node-process-services-section",
+        "url": "https://github.com/red-cup-engineering/node-process-services-section.git",
+        "branch": "main"
+      }
+    },
+    "gitlink": {
+      "path": "services/node-process-services-section",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "9ea4f22f9e56fe67d936d629fae8033634903b7b"
+    }
+  },
+  "scope": [
+    "Exact parent declaration and mode160000 identify the existing proper repository; no new repository, nesting or transfer needed.",
+    "Primary working forest manifest is stale metadata and is not base authority. Candidate receives immutable remote base.",
+    "Parent pin/dependency/registry/installed deployment not advanced by this receiving."
+  ]
+}

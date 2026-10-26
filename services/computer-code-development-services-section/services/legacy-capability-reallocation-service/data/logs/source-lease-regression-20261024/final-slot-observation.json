@@ -1,0 +1,21 @@
+{
+  "kind": "existing-host-controller-slot-observation/v1",
+  "lock": "/run/user/1000/agent-heavy.lock",
+  "inode": 545,
+  "observations": [
+    {
+      "pid": 1808085,
+      "waiting": false
+    },
+    {
+      "pid": 1808184,
+      "waiting": true
+    },
+    {
+      "pid": 1839848,
+      "waiting": true
+    }
+  ],
+  "free": false,
+  "newWaiterStarted": false
+}

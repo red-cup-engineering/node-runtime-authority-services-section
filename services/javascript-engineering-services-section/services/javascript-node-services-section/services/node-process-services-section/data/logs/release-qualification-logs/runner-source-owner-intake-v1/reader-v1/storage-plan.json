@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "stages": [
+    {
+      "name": "receive-node-process-runner-owner-source-v1",
+      "lifecycle": {
+        "owner": "@red-cup-engineering/node-process-services-section",
+        "invocation": "20261020-node-process-030-runner-source-owner-v1",
+        "purpose": "Read-only exact proper JSNodePackage GitHub producer current source/tree and all-state issue/PR intake to identify original shared check/test entrance; no install, source change or publication.",
+        "kind": "reproducible",
+        "retention": "Retain raw metadata, immutable archives, exact component/source/provider custody and actual refusals in typed Node logs; curated receiving records separately source-tracked.",
+        "source": [
+          {
+            "repository": "red-cup-engineering/node-process-services-section",
+            "commit": "23113a67473de9784fdea1d1d45757fc0dd1569b",
+            "path": "."
+          }
+        ],
+        "custody": [
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/runner-source-owner-intake-v1/reader-v1/receive-owner-source.mjs",
+            "sha256": "478e74fbac02f631450a835c761d1ce08cbba956a57096bfc4097bac7f36c9af",
+            "role": "creation"
+          },
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/runner-source-owner-intake-v1/reader-v1/inputs.json",
+            "sha256": "ed00f5339e6dd4f829dfd65ece52e0c0e7c5641b483310fab97f0778b278b51c",
+            "role": "creation"
+          }
+        ],
+        "status": "planned"
+      },
+      "headroom": {
+        "minFreePercent": 10,
+        "minFreeInodes": 1000000,
+        "growthBytes": 536870912,
+        "growthInodes": 100000
+      },
+      "destinations": [
+        {
+          "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/runner-source-owner-intake-v1/reader-v1",
+          "peakBytes": 536870912,
+          "peakInodes": 20000,
+          "basis": "Standing512MiB own source/logs ceiling, exact bounded GitHub tree20k paths, at most16 selected sourcefiles/4MiB, no acquisition graph.",
+          "estimateKind": "estimate"
+        },
+        {
+          "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs",
+          "peakBytes": 5905580032,
+          "peakInodes": 250000,
+          "basis": "All remaining four512MiB owner promises plus entire3.5GiB outside/future contingency retained; aggregate original6GiB unchanged. Fresh snapshot is not a reservation.",
+          "estimateKind": "estimate"
+        }
+      ],
+      "command": [
+        "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+        "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/runner-source-owner-intake-v1/reader-v1/receive-owner-source.mjs",
+        "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/runner-source-owner-intake-v1/reader-v1/inputs.json",
+        "ed00f5339e6dd4f829dfd65ece52e0c0e7c5641b483310fab97f0778b278b51c"
+      ],
+      "backingCapacity": {
+        "kind": "wsl-host-service/1",
+        "node": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+        "script": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/scripts/wsl-host.mjs",
+        "scriptSha256": "eb9d89519f73f30726d9673c5f0588e81f88235dcc0e016c84c28c6366703ec3",
+        "parameters": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/bare-cedar-fog-services-section/data/records/wsl-host-service-records/bare-cedar-fog/wsl-host.json",
+        "parametersSha256": "4778ccbb8c36b0abf4fc8c7a360b10ee333c3cff8ec6374201f57cc9cea3e49f",
+        "sourceFiles": [
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/scripts/wsl-host.mjs",
+            "sha256": "eb9d89519f73f30726d9673c5f0588e81f88235dcc0e016c84c28c6366703ec3"
+          },
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/src/wsl-host.mjs",
+            "sha256": "755478f1da2001991c6ae6501da096ee3881dc060860ab1d0f3d83e17f51becd"
+          },
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/src/backing-capacity.mjs",
+            "sha256": "5b04c9ba24a611a62fa13a1a11de0ce7ed25ada22463e86b3b1983767a586c01"
+          },
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/assets/observe-backing-capacity.ps1",
+            "sha256": "4c2cf7a9818943c8adf166cc1b5af6d28037b88617d6426ee2c95d6b9a079e70"
+          }
+        ]
+      }
+    }
+  ]
+}

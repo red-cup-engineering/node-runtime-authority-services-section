@@ -1,0 +1,103 @@
+{
+  "kind": "exact-git-path-repair-proposal/v1",
+  "decoderRoot": "/home/emsenn/info/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/services/git-services-section/services/git-source-reading-service",
+  "decoderHead": "62329bda718aaf7b89ce47cb5d7856afcfe490f1",
+  "decoderPackageVersion": "0.1.4",
+  "registryBaseline014Modules": [
+    {
+      "path": "src/git-command-codec.mjs",
+      "artifactSHA256": "5804ca169b8af30613187f0e933bac7d5d7c013753e2d3b4a377556ec3190297",
+      "nativeBaselineSHA256": "5804ca169b8af30613187f0e933bac7d5d7c013753e2d3b4a377556ec3190297",
+      "baselineEqual": true,
+      "candidateSHA256": "2496fe0f0dd1c69523b859b4a7591484bed7193bdb253f15c1a68849c0251056"
+    },
+    {
+      "path": "src/gitmodules.mjs",
+      "artifactSHA256": "8457d5652aa568834f25f9d9f5b8972c7dbc1be1e52df603f248e624d933d921",
+      "nativeBaselineSHA256": "8457d5652aa568834f25f9d9f5b8972c7dbc1be1e52df603f248e624d933d921",
+      "baselineEqual": true,
+      "candidateSHA256": "8457d5652aa568834f25f9d9f5b8972c7dbc1be1e52df603f248e624d933d921"
+    },
+    {
+      "path": "src/pinned-source-files.mjs",
+      "artifactSHA256": "1dd3a3ed8c56b667369599a4738e29268ed95742f4d0948b7b5c17927515b2be",
+      "nativeBaselineSHA256": "1dd3a3ed8c56b667369599a4738e29268ed95742f4d0948b7b5c17927515b2be",
+      "baselineEqual": true,
+      "candidateSHA256": "1dd3a3ed8c56b667369599a4738e29268ed95742f4d0948b7b5c17927515b2be"
+    },
+    {
+      "path": "src/read-source-files.mjs",
+      "artifactSHA256": "a37265bab9f85e8b94db73f912763711f3bf545bb4f3e6c807d04a1e8ebf65bc",
+      "nativeBaselineSHA256": "a37265bab9f85e8b94db73f912763711f3bf545bb4f3e6c807d04a1e8ebf65bc",
+      "baselineEqual": true,
+      "candidateSHA256": "a37265bab9f85e8b94db73f912763711f3bf545bb4f3e6c807d04a1e8ebf65bc"
+    },
+    {
+      "path": "src/source-working-copy-schema.mjs",
+      "artifactSHA256": "d5153069adb7609eb59fe665b372ebb59097da2a6dcff11dc9271c18e3536a05",
+      "nativeBaselineSHA256": "d5153069adb7609eb59fe665b372ebb59097da2a6dcff11dc9271c18e3536a05",
+      "baselineEqual": true,
+      "candidateSHA256": "d5153069adb7609eb59fe665b372ebb59097da2a6dcff11dc9271c18e3536a05"
+    }
+  ],
+  "outputs": [
+    {
+      "root": "/home/emsenn/info/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/services/git-services-section/services/git-source-reading-service",
+      "path": "README.md",
+      "sha256": "dc50665e622c196b1d084ee355e80c431fdacc5dda4786dc699d16d746e0096b",
+      "blob": "4bb06274cb02977b53a7a64361faae5903135c78",
+      "size": 12378,
+      "mode": "0o644"
+    },
+    {
+      "root": "/home/emsenn/info/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/services/git-services-section/services/git-source-reading-service",
+      "path": "src/git-command-codec.mjs",
+      "sha256": "2496fe0f0dd1c69523b859b4a7591484bed7193bdb253f15c1a68849c0251056",
+      "blob": "160920429e589261e214ef0aab3f66655796f343",
+      "size": 53854,
+      "mode": "0o644"
+    },
+    {
+      "root": "/home/emsenn/info/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/services/git-services-section/services/git-source-reading-service",
+      "path": "test/git-command-codec.test.mjs",
+      "sha256": "91a65c91ab4206e49c1b9edb1938eecacca02202f79cc3a90dd086a2f41c10b0",
+      "blob": "158661eefb3ec332d709b20150ab12e1ea1f3b32",
+      "size": 29617,
+      "mode": "0o644"
+    },
+    {
+      "root": "/home/emsenn/info/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/legacy-capability-reallocation-service",
+      "path": "src/tracked-legacy-source-publication.mjs",
+      "sha256": "1878abcec2fdf9fa07bf01936c68f67576c93cc1c41351e4a6f2378afd2ea2d7",
+      "blob": "ec3086d3f9b62e826ccc1a63428625c2b2468c22",
+      "size": 5042,
+      "mode": "0o644"
+    },
+    {
+      "root": "/home/emsenn/info/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/legacy-capability-reallocation-service",
+      "path": "specifications/requirements.md",
+      "sha256": "7c56456d36066b7880c5e499e53c507232c311aba400e9a60160865432317faf",
+      "blob": "3b2da5f9cc933eb227ab1b64c48200bf5d005f76",
+      "size": 7144,
+      "mode": "0o644"
+    },
+    {
+      "root": "/home/emsenn/info/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/legacy-capability-reallocation-service",
+      "path": "specifications/design.md",
+      "sha256": "13c03c5396d9dbaee8fbd2adcfc84cee32124876f79f2d0e2d2f412547e749ac",
+      "blob": "fae37f4fd652a288c30acdec1dac0c43ab414197",
+      "size": 9681,
+      "mode": "0o644"
+    },
+    {
+      "root": "/home/emsenn/info/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/legacy-capability-reallocation-service",
+      "path": "test/tracked-legacy-source-request.test.mjs",
+      "sha256": "df9e28a2a43c416381ffb6a43251d657fc4228261e9ce7e16f8996689b023b92",
+      "blob": "64f5516b1438ca0621ba0bb8b9591d57882e8790",
+      "size": 1446,
+      "mode": "0o644"
+    }
+  ],
+  "validation": "/home/emsenn/info/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/legacy-capability-reallocation-service/data/state/exact-git-path-preflight-repair-20261024/actual-request-validation.json",
+  "publicationHeldForReview": true
+}

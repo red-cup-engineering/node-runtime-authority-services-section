@@ -1,0 +1,9 @@
+{
+  "at": "2026-10-21T22:32:17.164Z",
+  "runId": 39686830877,
+  "artifactId": 12387056856,
+  "originalCommand": "gh run download exact run/name/owned directory",
+  "exit": 0,
+  "stdoutBytes": 0,
+  "limits": "Read-only existing archive only; no lifecycle, install, tests, registry or fleet effect"
+}

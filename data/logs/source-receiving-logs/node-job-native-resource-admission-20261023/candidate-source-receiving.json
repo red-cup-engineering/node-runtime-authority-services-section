@@ -1,0 +1,115 @@
+{
+  "type": "NodeJobResourceSourceReceiving",
+  "original": {
+    "head": "051717649838fff960851f63ba2fdd497f3e2356",
+    "tests": 100,
+    "passed": 98,
+    "failed": 2,
+    "rawRetained": true
+  },
+  "candidate": {
+    "head": "93ab2190e28e3c1f703e10c76770bcd1f0f56b8e",
+    "branch": "codex/node-job-native-resource-admission",
+    "tests": 119,
+    "passed": 119,
+    "failed": 0,
+    "files": [
+      {
+        "path": "src/node-job.mjs",
+        "bytes": 30347,
+        "sha256": "04057145023bfcabe7e5303ae17ae1c5fa7b8ee0f335d01dcb9ac2343e2aa699",
+        "gitBlob": "2dfe466bcb2c3f98ec5bacdce15245d8713414c4"
+      },
+      {
+        "path": "src/resources.mjs",
+        "bytes": 2869,
+        "sha256": "6fb7a250b5366857ad1b4d32af862a9fa5f06aba29e11ec1aa537932557b92c4",
+        "gitBlob": "fc2f614a2b5e90e21d7b817094e21ebf879e2b38"
+      },
+      {
+        "path": "test/node-job.test.mjs",
+        "bytes": 11663,
+        "sha256": "73a39e09c77929589abdb5223cb29d807baaa426dbaf3adffa9dae8184c9b0f7",
+        "gitBlob": "4d00ebc27f68eb008bb96e9357aab85f840dd265"
+      },
+      {
+        "path": "test/placement.test.mjs",
+        "bytes": 28561,
+        "sha256": "7ef3fa926047aedbd664d8d5af05e9d7d0c1ea7c3901d86acfca636ca4b6c48a",
+        "gitBlob": "dc78539dc4b1af018fc3d1e9e0b5921cfe770436"
+      },
+      {
+        "path": "test/resources.test.mjs",
+        "bytes": 6822,
+        "sha256": "228b65cb84fb4e808a4cac973eec40b4d75b69c5022b4d0d5561c2cddd9eb691",
+        "gitBlob": "c03cbaab3a70cff76b691ce81a4ab0c91e2fd16b"
+      },
+      {
+        "path": "specifications/native-resource-admission.md",
+        "bytes": 3362,
+        "sha256": "60ad4f5e6d428c1fc1585d36a4f9d9538e0a30fb36e5dc0b744680a5cef9412b",
+        "gitBlob": "c427b1938fe667d54597ebe8e208795b077f89d9"
+      }
+    ]
+  },
+  "native": [
+    {
+      "path": "original-suite.stdout",
+      "bytes": 10917,
+      "sha256": "5a1075b450cd1894a1d0115fbb5162688aa03883fd433bb3f6e48c906a5b8d6f"
+    },
+    {
+      "path": "original-suite.stderr",
+      "bytes": 290,
+      "sha256": "fcfefa204828028e33b8373d97e00a655d17d2287b1f41af2cfa05fa62085d3d"
+    },
+    {
+      "path": "candidate-suite.stdout",
+      "bytes": 15688,
+      "sha256": "773df530e74de515a505449ba9ef49475bec92d9ccb21112005bb970c733bd52"
+    },
+    {
+      "path": "candidate-suite.stderr",
+      "bytes": 296,
+      "sha256": "3488d6b962ef7538647bfc16bba3b58e98486a8d05e8573c0e4a8062b75ae6b5"
+    },
+    {
+      "path": "candidate-suite-v2.stdout",
+      "bytes": 10744,
+      "sha256": "288368274627b6a1f557e27603a2f5eb9ebc091e575667c5e325190b404fcaf3"
+    },
+    {
+      "path": "candidate-suite-v2.stderr",
+      "bytes": 297,
+      "sha256": "62a97d958e6b01dc6529069aa96a2b5bb3225c49bd2ca3404f5fa2d756628cd4"
+    },
+    {
+      "path": "candidate-suite-v3.stdout",
+      "bytes": 10835,
+      "sha256": "9af1840416d930ebe0b251f28e0b2c31aa3ad301342a539ad2b40662d4eb24a9"
+    },
+    {
+      "path": "candidate-suite-v3.stderr",
+      "bytes": 297,
+      "sha256": "5b678aeceb5bebc0503be94cb11b5b61024c910350382672e4cd3b43515fa964"
+    }
+  ],
+  "command": "'systemd-run' '--user' '--wait' '--collect' '--pipe' '--unit=nodejob-resource-candidate-source-qa-v3-20261023.service' '--property=MemoryMax=134217728' '--property=MemorySwapMax=0' '--property=CPUQuota=100%' '--property=TasksMax=32' '--property=RuntimeMaxSec=60' '--property=LimitCPU=30' '--property=LimitAS=2147483648' '--property=LimitFSIZE=1048576' '--working-directory=/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/data/logs/source-receiving-logs/node-job-native-resource-admission-20261023/source' '--setenv=TMPDIR=/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/data/logs/source-receiving-logs/node-job-native-resource-admission-20261023/scratch' '--setenv=XDG_CACHE_HOME=/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/data/logs/source-receiving-logs/node-job-native-resource-admission-20261023/scratch' '--setenv=NODE_JOB_FLEET=' '--setenv=NODE_OPTIONS=--jitless --max-old-space-size=64 --max-semi-space-size=4' '/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node' '--test' '--test-concurrency=1' 'test/node-job.test.mjs' 'test/placement.test.mjs' 'test/program-entries.test.mjs' 'test/record-node-job-run.test.mjs' 'test/selected-job-writer-receiving.test.mjs' 'test/resources.test.mjs'>'/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/data/logs/source-receiving-logs/node-job-native-resource-admission-20261023/candidate-suite-v3.stdout' 2>'/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/data/logs/source-receiving-logs/node-job-native-resource-admission-20261023/candidate-suite-v3.stderr'",
+  "scope": {
+    "dependencyInstalls": 0,
+    "graphAllocations": 0,
+    "productionChanges": 0,
+    "nativeKernelUptakeClaimed": false,
+    "consumerUptakeClaimed": false,
+    "physicalCap": 134217728,
+    "virtualCap": 2147483648,
+    "cpuSeconds": 30,
+    "wallSeconds": 60
+  },
+  "unreceived": [
+    "native resource kernel receiving",
+    "affected Operations authored budgets and aggregate ceiling",
+    "shared acquisition envelope",
+    "published consumer uptake"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "parent": {
+    "pid": 3709573,
+    "group": "/user.slice/user-1000.slice/user@1000.service/app.slice/nodejob-resource-native-receiving-bcf-20261023.service",
+    "procCgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/nodejob-resource-native-receiving-bcf-20261023.service\n",
+    "files": {
+      "cgroup.procs": "3709573\n",
+      "memory.max": "134217728\n",
+      "memory.high": "max\n",
+      "memory.swap.max": "0\n",
+      "memory.current": "16506880\n",
+      "pids.max": "32\n",
+      "cpu.max": "100000 100000\n"
+    },
+    "processMemory": [
+      "VmSize:\t  985176 kB",
+      "VmRSS:\t   53084 kB"
+    ]
+  },
+  "child": {
+    "pid": 3709700,
+    "group": "/user.slice/user-1000.slice/user@1000.service/app.slice/nodejob-resource-inert-bcf-20261023-job-inert.service",
+    "procCgroup": "0::/user.slice/user-1000.slice/user@1000.service/app.slice/nodejob-resource-inert-bcf-20261023-job-inert.service\n",
+    "files": {
+      "cgroup.procs": "3709700\n",
+      "memory.max": "67108864\n",
+      "memory.high": "50331648\n",
+      "memory.swap.max": "0\n",
+      "memory.current": "3268608\n",
+      "pids.max": "12\n",
+      "cpu.max": "50000 100000\n"
+    },
+    "processMemory": [
+      "VmSize:\t  111752 kB",
+      "VmRSS:\t   21212 kB"
+    ]
+  }
+}

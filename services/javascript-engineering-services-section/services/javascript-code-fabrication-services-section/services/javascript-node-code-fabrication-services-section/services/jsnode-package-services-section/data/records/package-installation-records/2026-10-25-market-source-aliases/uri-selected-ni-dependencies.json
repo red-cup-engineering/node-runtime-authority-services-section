@@ -1,0 +1,16 @@
+{
+  "root": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/state/registry-package-installations/market-source-aliases/uri-0.1.4-dev.58",
+  "rows": [
+    {
+      "name": "@red-cup-engineering/cryptographic-computer-data-engineering-services-section",
+      "version": "0.3.1",
+      "root": "/home/emsenn/info/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/state/registry-package-installations/issuer-research-0.1.5/node_modules/@red-cup-engineering/cryptographic-computer-data-engineering-services-section"
+    },
+    {
+      "name": "@red-cup-engineering/json-services-section",
+      "version": "0.4.0",
+      "root": "/home/emsenn/info/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/state/registry-package-installations/issuer-research-0.1.5/node_modules/@red-cup-engineering/json-services-section"
+    }
+  ],
+  "scope": "Actual APP catalogue-source NI face dependencies; HTTP URL face remains dependency-free."
+}

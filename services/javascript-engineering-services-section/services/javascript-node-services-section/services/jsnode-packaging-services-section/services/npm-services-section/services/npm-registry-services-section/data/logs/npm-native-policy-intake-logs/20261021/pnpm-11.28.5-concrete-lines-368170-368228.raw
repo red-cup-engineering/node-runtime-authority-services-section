@@ -1,0 +1,59 @@
+      publish_exports,
+      stage_exports,
+      unpublish_exports,
+      rebuild_exports,
+      recursive_exports,
+      remove_exports,
+      repo_exports,
+      restart_exports,
+      root_exports,
+      run_exports,
+      sbom_exports,
+      setScript_exports,
+      setup_exports,
+      search_exports,
+      star_exports,
+      stars_exports,
+      store_exports,
+      catFile_exports,
+      catIndex_exports,
+      findHash_exports,
+      undeprecate_exports,
+      unlink_exports,
+      unstar_exports,
+      update_exports,
+      version,
+      view_exports,
+      whoami_exports,
+      why_exports,
+      with_exports,
+      createHelp(helpByCommandName),
+      ...notImplementedCommandDefinitions
+    ];
+    handlerByCommandName = {};
+    cliOptionsTypesByCommandName = {};
+    aliasToFullName = /* @__PURE__ */ new Map();
+    completionByCommandName = {};
+    shorthandsByCommandName = {};
+    skipPackageManagerCheckForCommandArray = ["completion-server"];
+    recursiveByDefaultCommandArray = [];
+    overridableByScriptCommandArray = [];
+    for (let commandIndex = 0; commandIndex < commands.length; commandIndex++) {
+      const { cliOptionsTypes: cliOptionsTypes78, commandNames: commandNames82, completion: completion7, handler: handler83, help: help82, shorthands: shorthands21, skipPackageManagerCheck: skipPackageManagerCheck12, recursiveByDefault: recursiveByDefault16, overridableByScript: overridableByScript5 } = commands[commandIndex];
+      if (!commandNames82 || commandNames82.length === 0) {
+        throw new Error(`The command at index ${commandIndex} doesn't have command names`);
+      }
+      for (const commandName of commandNames82) {
+        handlerByCommandName[commandName] = handler83;
+        helpByCommandName[commandName] = help82;
+        cliOptionsTypesByCommandName[commandName] = cliOptionsTypes78;
+        shorthandsByCommandName[commandName] = shorthands21 ?? {};
+        if (completion7 != null) {
+          completionByCommandName[commandName] = completion7;
+        }
+      }
+      if (skipPackageManagerCheck12) {
+        skipPackageManagerCheckForCommandArray.push(...commandNames82);
+      }
+      if (recursiveByDefault16) {
+        recursiveByDefaultCommandArray.push(...commandNames82);

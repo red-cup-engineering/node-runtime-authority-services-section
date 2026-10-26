@@ -1,0 +1,26 @@
+{
+  "kind": "IndependentVersionControlSectionSourceProjectionReceiving",
+  "status": "MET_FOR_EXACT_NORMAL_PARENT_PR_AND_AUTHENTICATED_ORIGINAL_PULSE",
+  "proposalSha256": "997fc34b2107b451998447408561b4a67e0a88e6161ed719195a640f8d6670b7",
+  "repository": {
+    "id": 1425310771,
+    "name": "red-cup-engineering/software-development-services-section",
+    "private": false,
+    "defaultBranch": "main"
+  },
+  "base": "17fd40e81f915bd23da5b6d40f06bfe93bba49e9",
+  "head": "7b134c75e9a0bd42503aa34dfa4f10ba8010675c",
+  "tree": "bc1bd00770b1fc9bd15034c728eb64a0380e955a",
+  "all50UnrelatedLeavesVerified": true,
+  "childHead": "6ff87e893379db4927b13ab9b4c61922e529d2c1",
+  "originalSelectedEntries": 15,
+  "currentChildEntries": 17,
+  "workflows": [],
+  "effectAuthority": "Original authorized source projection; no manual parent merge or local queue injection. Existing original source integration, current head/base/rules and authenticated handoff remain required.",
+  "notClaimed": [
+    "legacy runtime integration",
+    "entire history imported",
+    "parent merged before provider receiving",
+    "new runtime package release"
+  ]
+}

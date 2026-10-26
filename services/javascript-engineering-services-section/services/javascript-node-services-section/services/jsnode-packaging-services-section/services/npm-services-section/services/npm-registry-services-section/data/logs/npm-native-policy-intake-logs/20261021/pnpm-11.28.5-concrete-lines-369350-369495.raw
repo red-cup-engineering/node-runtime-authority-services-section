@@ -1,0 +1,146 @@
+  if (loaded == null)
+    return;
+  if (cmd == null && parsedCliArgs.options.version) {
+    console.log(packageManager.version);
+    return;
+  }
+  await runCommandWithConfig(parsedCliArgs, loaded);
+}
+function dropUnknownOptions(parsedCliArgs) {
+  const { cmd, options: cliOptions, unknownOptions } = parsedCliArgs;
+  const rejectUnknownOptions = unknownOptions.size > 0 && !(cmd && NOT_IMPLEMENTED_COMMAND_SET.has(cmd));
+  if (rejectUnknownOptions) {
+    for (const unknownOption of unknownOptions.keys()) {
+      delete cliOptions[unknownOption];
+    }
+  }
+  return rejectUnknownOptions;
+}
+async function loadCommandConfig(parsedCliArgs, rejectUnknownOptions) {
+  const { cmd } = parsedCliArgs;
+  try {
+    return await readCommandConfig(parsedCliArgs, rejectUnknownOptions);
+  } catch (err2) {
+    const hint = err2["hint"] ? err2["hint"] : `For help, run: pnpm help${cmd ? ` ${cmd}` : ""}`;
+    printError(err2.message, hint);
+    process.exitCode = 1;
+    await finishWorkers();
+    return void 0;
+  }
+}
+async function readCommandConfig(parsedCliArgs, rejectUnknownOptions) {
+  const { cmd, params: cliParams, options: cliOptions, unknownOptions, workspaceDir, rawCliConfig } = parsedCliArgs;
+  const isConfigCommand = cmd === "config" || cmd === "set" || cmd === "get";
+  applyGlobalScope(parsedCliArgs, isConfigCommand);
+  let { config: config2, context } = await getConfig2(cliOptions, {
+    excludeReporter: false,
+    // When we just want to print the location of the global bin directory,
+    // we don't need the write permission to it. Related issue: pnpm/pnpm#2700
+    globalDirShouldAllowWrite: cmd !== "root" && cmd !== "prefix",
+    skipGlobalBinDirCheck: envSubcommandSkipsGlobalBinCheck(cmd, cliParams),
+    workspaceDir,
+    rawCliConfig,
+    onlyInheritDlxSettingsFromLocal: cmd === "dlx" || cmd === "create",
+    forSelfUpdate: cmd === "self-update",
+    ignoreProjectNpmrc: isGlobalConfigCommand(isConfigCommand, cliOptions),
+    printWarnings: !isSingleSettingRead(cmd, cliParams)
+  });
+  if (cmd !== "setup" && !shouldSkipPmHandling(cmd, cliParams, cliOptions.location)) {
+    await handlePackageManagerAndRuntimes({ cmd, cliOptions, config: config2, context, rejectUnknownOptions });
+  }
+  if (rejectUnknownOptions) {
+    printError(formatUnknownOptionsError(unknownOptions), `For help, run: pnpm help${cmd ? ` ${cmd}` : ""}`);
+    process.exitCode = 1;
+    await finishWorkers();
+    return void 0;
+  }
+  ;
+  ({ config: config2, context } = await installConfigDepsAndLoadHooks(config2, context, {
+    tolerateConfigDependenciesErrors: isConfigCommand,
+    forSelfUpdate: cmd === "self-update"
+  }));
+  applyInvocationToConfig(config2, parsedCliArgs);
+  return { config: config2, context };
+}
+function applyGlobalScope({ cmd, params, options: options2 }, isConfigCommand) {
+  if (cmd === "link" && params.length === 0) {
+    options2.global = true;
+  } else if (isConfigCommand && options2.global === true) {
+    options2.location ??= "global";
+    delete options2.global;
+  }
+}
+function isGlobalConfigCommand(isConfigCommand, cliOptions) {
+  return isConfigCommand && cliOptions.location === "global";
+}
+function applyInvocationToConfig(config2, parsedCliArgs) {
+  const { cmd } = parsedCliArgs;
+  if (cmd != null && COMMANDS_WITH_STDERR_REPORTER.has(cmd)) {
+    config2.useStderr = true;
+  }
+  config2.argv = parsedCliArgs.argv;
+  config2.fallbackCommandUsed = parsedCliArgs.fallbackCommandUsed;
+  if (cmd) {
+    config2.extraEnv = {
+      ...config2.extraEnv,
+      // Follow the behavior of npm by setting it to 'run-script' when running scripts (e.g. pnpm run dev)
+      // and to the command name otherwise (e.g. pnpm test)
+      npm_command: cmd === "run" ? "run-script" : cmd
+    };
+  }
+}
+async function runCommandWithConfig(parsedCliArgs, { config: config2, context }) {
+  const { options: cliOptions, params: cliParams, workspaceDir } = parsedCliArgs;
+  const write = createOutputWriter(config2);
+  const printLogs = !config2["parseable"] && !config2["json"];
+  if (printLogs) {
+    initCommandReporter(parsedCliArgs, { config: config2, context });
+  }
+  checkSudo({ cmd: parsedCliArgs.cmd, cliParams, global: cliOptions.global, location: cliOptions.location, printLogs });
+  const cmd = await redirectToOverridingScript(parsedCliArgs, { config: config2, context });
+  const invocation = { cmd, cliParams, cliOptions, workspaceDir };
+  enableRecursiveByDefault(invocation, config2);
+  if (cliOptions["recursive"] && !await selectWorkspaceProjects(invocation, { config: config2, context, printLogs })) {
+    return;
+  }
+  const { output, exitCode } = await runCommand(invocation, { config: config2, context });
+  if (output) {
+    write(output.endsWith("\n") ? output : `${output}
+`);
+  }
+  const finalExitCode = cmd ? exitCode : 1;
+  if (finalExitCode) {
+    process.exitCode = finalExitCode;
+  }
+}
+function createOutputWriter(config2) {
+  if (config2.color === "always") {
+    process.env["FORCE_COLOR"] = "1";
+  } else if (config2.color === "never") {
+    process.env["FORCE_COLOR"] = "0";
+    return (text) => process.stdout.write(stripAnsi3(text));
+  }
+  return process.stdout.write.bind(process.stdout);
+}
+function initCommandReporter(parsedCliArgs, { config: config2, context }) {
+  const { cmd, options: cliOptions, params: cliParams } = parsedCliArgs;
+  const reporterType = getReporterType(config2);
+  const multiGroupGlobalAdd = cmd === "add" && cliOptions.global === true && cliParams.length > 1;
+  initReporter(reporterType, {
+    cmd,
+    config: { ...config2, ...context },
+    hideProgressPrefix: multiGroupGlobalAdd ? false : void 0
+  });
+  global[REPORTER_INITIALIZED] = reporterType;
+}
+function getReporterType(config2) {
+  if (config2.loglevel === "silent")
+    return "silent";
+  if (config2.reporter)
+    return config2.reporter;
+  if (config2.ci || !process.stdout.isTTY)
+    return "append-only";
+  return "default";
+}
+async function redirectToOverridingScript(parsedCliArgs, { config: config2, context }) {
+  const { cmd, params: cliParams, workspaceDir } = parsedCliArgs;

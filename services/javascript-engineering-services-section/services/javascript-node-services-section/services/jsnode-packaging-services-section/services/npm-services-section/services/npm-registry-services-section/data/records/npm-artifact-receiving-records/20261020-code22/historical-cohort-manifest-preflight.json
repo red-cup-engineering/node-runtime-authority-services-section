@@ -1,0 +1,143 @@
+{
+  "kind": "HistoricalPublicCliManifestPreflight",
+  "receiver": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-frozen-recipient/consumer/node_modules/.pnpm/@red-cup-engineering+npm-workspace-publication-service@0.14.24/node_modules/@red-cup-engineering/npm-workspace-publication-service",
+  "actualNativeFrozenCode": "0.14.24",
+  "allOnlyCanonicalGitHeadProjection": true,
+  "cases": [
+    {
+      "label": "code86",
+      "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+      "name": "@red-cup-engineering/npm-workspace-publication-service",
+      "version": "0.14.21",
+      "gitHead": "3481b324ef02aa12871b358dd2a838782557a9d8",
+      "destination": "/var/tmp/cairn-provider-source-qualification-20261020/upstream-artifacts/code-0.14.21.tgz",
+      "integrity": "sha512-GdCmqzzplSTozYq/Ai1lgzEp9LtYL/WYt2LWNJU8/jsw/OUfylXaP99lD+thYVpicWCDyr4y4NfvVZ8HntmAsQ==",
+      "bytes": 172473,
+      "artifactDownloaded": true,
+      "archivePath": "/var/tmp/cairn-provider-source-qualification-20261020/upstream-artifacts/code-0.14.21.tgz",
+      "sourceManifestPath": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/code86-source-package.json",
+      "sourceManifestSHA256": "138f0d9e994f3fdfda90e72eeae14457a8f1813b161bc70849451ba656026fcf",
+      "archiveManifestSHA256": "d6fd33a24dd5af419d31a4751a021ef04fc0badb61386b63242128255ba51ae6",
+      "sourceVersion": "0.14.21",
+      "archiveVersion": "0.14.21",
+      "sourceRepository": {
+        "type": "git",
+        "url": "git+https://github.com/red-cup-engineering/npm-workspace-publication-service.git"
+      },
+      "archiveRepository": {
+        "type": "git",
+        "url": "git+https://github.com/red-cup-engineering/npm-workspace-publication-service.git"
+      },
+      "onlyCanonicalGitHeadProjection": true,
+      "regularMembers": 86,
+      "observedHeaders": 86,
+      "configurationSelectedByAllowance": [
+        "src",
+        "scripts",
+        "README.md",
+        "package.json",
+        "specifications/"
+      ]
+    },
+    {
+      "label": "git99",
+      "repository": "https://github.com/red-cup-engineering/git-services-section.git",
+      "name": "@red-cup-engineering/git-services-section",
+      "version": "0.1.9",
+      "gitHead": "2c022223608d2f8854a8fd5f0b14c3160b2ada65",
+      "integrity": "sha512-BxPhCCJRASxwfeOgYwDjoBSKr8iaufszHPSKsTxfet4wvXJJ3Wb+zGNqLYXo3YRFkHjjkzVdUf/bcVintOe+Dw==",
+      "artifactDownloaded": true,
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-git19/git-0.1.9-authoritative.tgz",
+      "bytes": 192390,
+      "sha256": "beff464dfed388ad730426e8e4711307a87d8c43aa198d971663438b1ba80e42",
+      "receiver": "original Code receiveRegistryTarball; authentic exactprimary metadata",
+      "scope": "Retained original99member cohort artifact, not a repack or releasedchecker receiving verdict",
+      "archivePath": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-git19/git-0.1.9-authoritative.tgz",
+      "sourceManifestPath": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/git99-source-package.json",
+      "sourceManifestSHA256": "f7e0250c555b5ee5f5c05eca3864fbee169d614f9eda066012e26ac930e95816",
+      "archiveManifestSHA256": "20f78d7b8372432351d7c29273aa409bf9cdf69aa46f792db4fb6afdce379d9c",
+      "sourceVersion": "0.1.9",
+      "archiveVersion": "0.1.9",
+      "sourceRepository": {
+        "type": "git",
+        "url": "git+https://github.com/red-cup-engineering/git-services-section.git"
+      },
+      "archiveRepository": {
+        "type": "git",
+        "url": "git+https://github.com/red-cup-engineering/git-services-section.git"
+      },
+      "onlyCanonicalGitHeadProjection": true,
+      "regularMembers": 99,
+      "observedHeaders": 99,
+      "configurationSelectedByAllowance": [
+        "package.json",
+        "README*",
+        "LICENSE*",
+        "AGENTS.md",
+        "src",
+        "scripts",
+        "test",
+        "docs",
+        "content/customer-interface.md",
+        "content/text/glossary",
+        "ingress/chatgpt-spaces/pointer.schema.json",
+        "ingress/chatgpt-spaces/README.md",
+        "data/records/integrated-reference-receiving-requirement-records/integrated-reference-receiving.json",
+        "data/records/integrated-reference-receiving-specification-records/integrated-reference-receiving.json",
+        "data/records/integrated-reference-receiving-design-records/integrated-reference-receiving.json",
+        "data/records/requirements-records/semiotic-lineage-control-meets-then-beats-application-peers.json",
+        "services/committing-git-paths-service/package.json",
+        "services/committing-git-paths-service/scripts",
+        "services/committing-git-paths-service/test",
+        "services/finding-parent-git-repositories-service/package.json",
+        "services/finding-parent-git-repositories-service/scripts",
+        "services/finding-parent-git-repositories-service/test",
+        "services/gitmodules-file-codec-service/package.json",
+        "services/gitmodules-file-codec-service/src",
+        "services/gitmodules-file-codec-service/scripts",
+        "services/gitmodules-file-codec-service/test",
+        "services/observing-git-repository-service/package.json",
+        "services/observing-git-repository-service/scripts",
+        "services/observing-git-repository-service/test",
+        "services/pushing-current-branch-service/package.json",
+        "services/pushing-current-branch-service/scripts",
+        "services/pushing-current-branch-service/test"
+      ]
+    },
+    {
+      "label": "ghs56",
+      "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+      "name": "@red-cup-engineering/github-repository-hosting-service",
+      "version": "0.2.4",
+      "gitHead": "e423fe6770df03eecce803a82ffd12231a8583a5",
+      "destination": "/var/tmp/cairn-provider-source-qualification-20261020/upstream-artifacts/ghs-0.2.4.tgz",
+      "integrity": "sha512-ryEAx8+nuiINv7gqNBrb8Ake02kudVX2WNjMsoFg+miSmpp0hZrI8gYrKuHKXHwL3SSj5NP5ZmRbRFTyL/Pu/Q==",
+      "bytes": 175303,
+      "artifactDownloaded": true,
+      "archivePath": "/var/tmp/cairn-provider-source-qualification-20261020/upstream-artifacts/ghs-0.2.4.tgz",
+      "sourceManifestPath": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/ghs56-source-package.json",
+      "sourceManifestSHA256": "e83d17fd5fcb03049ca66c77b5c61b41c1ddb5960b82002e26366110df7c6fbd",
+      "archiveManifestSHA256": "8712f32579262c33be74d0dee2dff0d70b1464a49accaedfb50b9eedcc445385",
+      "sourceVersion": "0.2.4",
+      "archiveVersion": "0.2.4",
+      "sourceRepository": {
+        "type": "git",
+        "url": "git+https://github.com/red-cup-engineering/github-engineering-services-section.git"
+      },
+      "archiveRepository": {
+        "type": "git",
+        "url": "git+https://github.com/red-cup-engineering/github-engineering-services-section.git"
+      },
+      "onlyCanonicalGitHeadProjection": true,
+      "regularMembers": 56,
+      "observedHeaders": 56,
+      "configurationSelectedByAllowance": [
+        "src",
+        "scripts",
+        "specifications",
+        "README.md"
+      ]
+    }
+  ],
+  "installationOrSourcePreparationClaims": false
+}

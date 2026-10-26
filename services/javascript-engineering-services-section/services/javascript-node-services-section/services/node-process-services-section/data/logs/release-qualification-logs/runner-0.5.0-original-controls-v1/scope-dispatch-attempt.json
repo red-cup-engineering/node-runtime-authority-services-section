@@ -1,0 +1,25 @@
+{
+  "at": "2026-10-21T01:04:02.774Z",
+  "unit": "node-process-runner-050-original-controls-v1.scope",
+  "argv": [
+    "--user",
+    "--scope",
+    "--quiet",
+    "--unit=node-process-runner-050-original-controls-v1.scope",
+    "--property=CPUQuota=100%",
+    "--property=MemoryMax=2G",
+    "--property=RuntimeMaxSec=180s",
+    "--property=TimeoutStopSec=15s",
+    "--property=KillMode=control-group",
+    "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/runner-0.5.0-original-controls-v1/receive-scope.mjs",
+    "node-process-runner-050-original-controls-v1.scope",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/runner-0.5.0-original-controls-v1/enforced-scope.json",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/runner-0.5.0-original-controls-v1/managed-input.json",
+    "b2517c38a03605bab830a87b1b405255aaad34f5f7184c6f9f3a41c2ea228582",
+    "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/runner-0.5.0-original-controls-v1/qualify-original-runner-controls.mjs",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/runner-0.5.0-original-controls-v1/inputs.json",
+    "01ff5df0ab935884bc2652493859ad02ad6dbcf03a9dc20ca9aed9bc407b2555"
+  ]
+}

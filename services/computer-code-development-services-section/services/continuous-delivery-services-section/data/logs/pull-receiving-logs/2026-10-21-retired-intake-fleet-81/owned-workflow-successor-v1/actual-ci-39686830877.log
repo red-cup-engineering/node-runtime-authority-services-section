@@ -1,0 +1,505 @@
+native-fabrication	Set up job	﻿2026-10-21T22:29:17.8372147Z Current runner version: '2.338.0'
+native-fabrication	Set up job	2026-10-21T22:29:17.8399372Z ##[group]Runner Image Provisioner
+native-fabrication	Set up job	2026-10-21T22:29:17.8400319Z Hosted Compute Agent
+native-fabrication	Set up job	2026-10-21T22:29:17.8400928Z Version: 20261015.610
+native-fabrication	Set up job	2026-10-21T22:29:17.8401723Z Commit: 267fdb4e8bbec4ab5ea31367f3a00d5c480c7656
+native-fabrication	Set up job	2026-10-21T22:29:17.8402521Z Build Date: 2026-10-14T17:06:54Z
+native-fabrication	Set up job	2026-10-21T22:29:17.8403211Z Worker ID: {ac3f5291-2936-4787-9787-36997cb6fbf1}
+native-fabrication	Set up job	2026-10-21T22:29:17.8404020Z Region: westcentralus
+native-fabrication	Set up job	2026-10-21T22:29:17.8404712Z Cloud: Azure
+native-fabrication	Set up job	2026-10-21T22:29:17.8405830Z ##[endgroup]
+native-fabrication	Set up job	2026-10-21T22:29:17.8407763Z ##[group]Operating System
+native-fabrication	Set up job	2026-10-21T22:29:17.8408448Z Ubuntu
+native-fabrication	Set up job	2026-10-21T22:29:17.8409141Z 24.04.5
+native-fabrication	Set up job	2026-10-21T22:29:17.8409718Z LTS
+native-fabrication	Set up job	2026-10-21T22:29:17.8410296Z ##[endgroup]
+native-fabrication	Set up job	2026-10-21T22:29:17.8410916Z ##[group]Runner Image
+native-fabrication	Set up job	2026-10-21T22:29:17.8411530Z Image: ubuntu-24.04
+native-fabrication	Set up job	2026-10-21T22:29:17.8412176Z Version: 20261018.339.1
+native-fabrication	Set up job	2026-10-21T22:29:17.8413329Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261018.339/images/ubuntu/Ubuntu2404-Readme.md
+native-fabrication	Set up job	2026-10-21T22:29:17.8415395Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261018.339
+native-fabrication	Set up job	2026-10-21T22:29:17.8416423Z ##[endgroup]
+native-fabrication	Set up job	2026-10-21T22:29:17.8417704Z ##[group]GITHUB_TOKEN Permissions
+native-fabrication	Set up job	2026-10-21T22:29:17.8419657Z Contents: read
+native-fabrication	Set up job	2026-10-21T22:29:17.8420460Z Metadata: read
+native-fabrication	Set up job	2026-10-21T22:29:17.8421074Z ##[endgroup]
+native-fabrication	Set up job	2026-10-21T22:29:17.8423372Z Secret source: Actions
+native-fabrication	Set up job	2026-10-21T22:29:17.8424432Z Cache mode: write
+native-fabrication	Set up job	2026-10-21T22:29:17.8425840Z Prepare workflow directory
+native-fabrication	Set up job	2026-10-21T22:29:17.8789566Z Prepare all required actions
+native-fabrication	Set up job	2026-10-21T22:29:17.8839604Z Getting action download info
+native-fabrication	Set up job	2026-10-21T22:29:18.1967705Z Download action repository 'actions/checkout@11d5960a326750d5838078e36cf38b85af677262' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+native-fabrication	Set up job	2026-10-21T22:29:18.4694676Z Download action repository 'actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444' (SHA:a0853c24544627f65ddf259abe73b1d18a591444)
+native-fabrication	Set up job	2026-10-21T22:29:18.6292392Z Download action repository 'actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+native-fabrication	Set up job	2026-10-21T22:29:18.8403021Z Complete job name: native-fabrication
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	﻿2026-10-21T22:29:18.9309111Z ##[group]Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:18.9310200Z with:
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:18.9310667Z   persist-credentials: false
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:18.9311385Z   repository: red-cup-engineering/continuous-delivery-services-section
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:18.9315878Z   token: ***
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:18.9316343Z   ssh-strict: true
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:18.9316788Z   ssh-user: git
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:18.9317213Z   clean: true
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:18.9317702Z   sparse-checkout-cone-mode: true
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:18.9318256Z   fetch-depth: 1
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:18.9318700Z   fetch-tags: false
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:18.9319163Z   show-progress: true
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:18.9319620Z   lfs: false
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:18.9320048Z   submodules: false
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:18.9320513Z   set-safe-directory: true
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:18.9321049Z   allow-unsafe-pr-checkout: false
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:18.9321840Z ##[endgroup]
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0412977Z Syncing repository: red-cup-engineering/continuous-delivery-services-section
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0416661Z ##[group]Getting Git version info
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0418512Z Working directory is '/home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section'
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0420925Z [command]/usr/bin/git version
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0519017Z git version 2.55.0
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0559351Z ##[endgroup]
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0567823Z Temporarily overriding HOME='/home/runner/work/_temp/43cb363d-3aa2-45ec-84d5-67415fe392b4' before making global git config changes
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0569789Z Adding repository directory to the temporary git global config as a safe directory
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0571690Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0642588Z Deleting the contents of '/home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section'
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0655778Z ##[group]Initializing the repository
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0666930Z [command]/usr/bin/git init /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0802197Z hint: Using 'master' as the name for the initial branch. This default branch name
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0803530Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0804635Z hint: to use in all of your new repositories, which will suppress this warning,
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0805814Z hint: call:
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0806610Z hint:
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0807196Z hint: 	git config --global init.defaultBranch <name>
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0807899Z hint:
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0808563Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0809652Z hint: 'development'. The just-created branch can be renamed via this command:
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0810556Z hint:
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0811022Z hint: 	git branch -m <name>
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0811554Z hint:
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0812261Z hint: Disable this message with "git config set advice.defaultBranchName false"
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0819811Z Initialized empty Git repository in /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/.git/
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0831232Z [command]/usr/bin/git remote add origin https://github.com/red-cup-engineering/continuous-delivery-services-section
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0895573Z ##[endgroup]
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0896961Z ##[group]Disabling automatic garbage collection
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0900952Z [command]/usr/bin/git config --local gc.auto 0
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0941564Z ##[endgroup]
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0943169Z ##[group]Setting up auth
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.0952888Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.1000021Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.1452016Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.1501856Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.1769111Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.1816752Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.2072146Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.2125974Z ##[endgroup]
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.2126994Z ##[group]Fetching the repository
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.2136777Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +526b1a0c747c43899875412087916d0255dce39a:refs/remotes/pull/81/merge
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7485650Z From https://github.com/red-cup-engineering/continuous-delivery-services-section
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7487451Z  * [new ref]         526b1a0c747c43899875412087916d0255dce39a -> pull/81/merge
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7495164Z ##[endgroup]
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7496415Z ##[group]Determining the checkout info
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7498308Z ##[endgroup]
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7503755Z [command]/usr/bin/git sparse-checkout disable
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7574938Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7617110Z ##[group]Checking out the ref
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7620655Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/81/merge
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7753442Z Note: switching to 'refs/remotes/pull/81/merge'.
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7755566Z 
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7756690Z You are in 'detached HEAD' state. You can look around, make experimental
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7759373Z changes and commit them, and you can discard any commits you make in this
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7761700Z state without impacting any branches by switching back to a branch.
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7762809Z 
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7763826Z If you want to create a new branch to retain commits you create, you may
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7766477Z do so (now or later) by using -c with the switch command. Example:
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7767432Z 
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7767823Z   git switch -c <new-branch-name>
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7768460Z 
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7768856Z Or undo this operation with:
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7769678Z 
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7770138Z   git switch -
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7770883Z 
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7771872Z Turn off this advice by setting config variable advice.detachedHead to false
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7773171Z 
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7774627Z HEAD is now at 526b1a0 Merge 1224c571ae76cbd8949c4eebc237299bb0443fe7 into d36ffc299e2feb28072ca4fe20a843af5e0bdbe1
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7779416Z ##[endgroup]
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7823956Z [command]/usr/bin/git log -1 --format=%H
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7860195Z 526b1a0c747c43899875412087916d0255dce39a
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7871066Z ##[group]Removing auth
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7876002Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.7920343Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.8180726Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.8219793Z http.https://github.com/.extraheader
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.8230026Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.8275947Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.8522428Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.8569741Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+native-fabrication	Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:19.8829576Z ##[endgroup]
+native-fabrication	Bind authored CI outputs to section data	﻿2026-10-21T22:29:19.9313272Z ##[group]Run set -euo pipefail
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9315642Z [36;1mset -euo pipefail[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9317836Z [36;1mcd_workspace=$(realpath -e "$GITHUB_WORKSPACE")[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9320767Z [36;1m[[ "$GITHUB_RUN_ID" =~ ^[0-9]+$ && "$GITHUB_RUN_ATTEMPT" =~ ^[0-9]+$ ]][0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9323578Z [36;1m[[ "$GITHUB_JOB" =~ ^[A-Za-z0-9_-]+$ ]][0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9327338Z [36;1mcd_ci_run="$cd_workspace/data/logs/public-source-ci-logs/$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9330970Z [36;1mcd_ci_data="$cd_ci_run/$GITHUB_JOB"[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9334571Z [36;1mcd_paths=("$cd_workspace/data" "$cd_workspace/data/logs" "$cd_workspace/data/logs/public-source-ci-logs"[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9339827Z [36;1m  "$cd_ci_run" "$cd_ci_data" "$cd_ci_data"/{npm-cache,corepack,cache,state,config,data,temporary})[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9343440Z [36;1mfor selected_path in "${cd_paths[@]}"; do[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9346354Z [36;1m  if [[ -e "$selected_path" || -L "$selected_path" ]]; then[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9349822Z [36;1m    [[ -d "$selected_path" && ! -L "$selected_path" && -O "$selected_path" ]] || exit 1[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9352685Z [36;1m  fi[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9354044Z [36;1mdone[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9355768Z [36;1mmkdir -p "${cd_paths[@]}"[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9357838Z [36;1mfor selected_path in "${cd_paths[@]}"; do[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9360609Z [36;1m  [[ $(realpath -e "$selected_path") == "$selected_path" ]] || exit 1[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9363708Z [36;1mdone[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9365390Z [36;1m{[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9367126Z [36;1m  printf 'CD_ARTIFACT_ROOT=%s\n' "$cd_ci_data"[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9369959Z [36;1m  printf 'npm_config_cache=%s\n' "$cd_ci_data/npm-cache"[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9372894Z [36;1m  printf 'COREPACK_HOME=%s\n' "$cd_ci_data/corepack"[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9375871Z [36;1m  printf 'XDG_CACHE_HOME=%s\n' "$cd_ci_data/cache"[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9378523Z [36;1m  printf 'XDG_STATE_HOME=%s\n' "$cd_ci_data/state"[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9381312Z [36;1m  printf 'XDG_CONFIG_HOME=%s\n' "$cd_ci_data/config"[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9383951Z [36;1m  printf 'XDG_DATA_HOME=%s\n' "$cd_ci_data/data"[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9386784Z [36;1m  printf 'TMPDIR=%s\n' "$cd_ci_data/temporary"[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9389024Z [36;1m} >> "$GITHUB_ENV"[0m
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9639700Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+native-fabrication	Bind authored CI outputs to section data	2026-10-21T22:29:19.9641296Z ##[endgroup]
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	﻿2026-10-21T22:29:20.0193161Z ##[group]Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.0194957Z with:
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.0195709Z   node-version: 24
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.0196515Z   always-auth: false
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.0197339Z   check-latest: false
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.0207685Z   token: ***
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.0208548Z   package-manager-cache: true
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.0209483Z env:
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.0212179Z   CD_ARTIFACT_ROOT: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.0217455Z   npm_config_cache: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/npm-cache
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.0222632Z   COREPACK_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/corepack
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.0227922Z   XDG_CACHE_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/cache
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.0232930Z   XDG_STATE_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/state
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.0238094Z   XDG_CONFIG_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/config
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.0243101Z   XDG_DATA_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/data
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.0248141Z   TMPDIR: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/temporary
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.0251132Z ##[endgroup]
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.1959461Z Found in cache @ /opt/hostedtoolcache/node/24.22.0/x64
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.1963498Z (node:2453) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.1968180Z (Use `node --trace-deprecation ...` to show where the warning was created)
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:20.1972426Z ##[group]Environment details
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:24.7565656Z node: v24.22.0
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:24.7566113Z npm: 11.19.1
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:24.7566409Z yarn: 1.22.22
+native-fabrication	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:24.7567503Z ##[endgroup]
+native-fabrication	Fabricate original source-owned release archive	﻿2026-10-21T22:29:24.7725310Z ##[group]Run set -euo pipefail
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7725773Z [36;1mset -euo pipefail[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7726141Z [36;1mtest "$(git rev-parse --verify HEAD)" = "$GITHUB_SHA"[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7726578Z [36;1mrelease="$CD_ARTIFACT_ROOT/native-cd-release"[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7726950Z [36;1mmkdir -p "$release"[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7727536Z [36;1mnode scripts/release-pack.mjs \[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7728006Z [36;1m  --root '@red-cup-engineering/continuous-delivery-services-section' \[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7728590Z [36;1m  --search "$GITHUB_WORKSPACE" --sha "$GITHUB_SHA" --out "$release"[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7729110Z [36;1mRELEASE_ROOT="$release" node --input-type=module <<'NODE'[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7729515Z [36;1mimport fs from 'node:fs';[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7729841Z [36;1mimport path from 'node:path';[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7730208Z [36;1mimport assert from 'node:assert/strict';[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7730593Z [36;1mconst root=process.env.RELEASE_ROOT;[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7731112Z [36;1mconst plan=JSON.parse(fs.readFileSync(path.join(root,'plan.json'),'utf8'));[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7731770Z [36;1massert.equal(plan.root,'@red-cup-engineering/continuous-delivery-services-section');[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7732342Z [36;1massert.equal(plan.sha,process.env.GITHUB_SHA);[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7732747Z [36;1massert.equal(plan.files.length,1);[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7733107Z [36;1massert.deepEqual(plan.notInTree,[]);[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7733468Z [36;1massert.deepEqual(plan.cycles,[]);[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7733883Z [36;1massert.equal(Object.hasOwn(plan,'dropped'),false);[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7734278Z [36;1mconst file=plan.files[0];[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7734609Z [36;1massert.equal(file.name,plan.root);[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7735490Z [36;1massert.match(file.version,new RegExp('^0\\.0\\.0-sha\\.'+plan.sha.slice(0,12)+'$'));[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7736012Z [36;1massert.match(file.tarball,/\.tgz$/);[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7736439Z [36;1massert.ok(fs.statSync(path.join(root,file.tarball)).size>100);[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7736888Z [36;1mNODE[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.7737210Z [36;1m(cd "$release" && sha256sum -- *.tgz > SHA256SUMS)[0m
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.8039680Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.8040166Z env:
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.8040943Z   CD_ARTIFACT_ROOT: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.8042317Z   npm_config_cache: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/npm-cache
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.8043711Z   COREPACK_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/corepack
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.8045365Z   XDG_CACHE_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/cache
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.8046728Z   XDG_STATE_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/state
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.8048052Z   XDG_CONFIG_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/config
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.8049379Z   XDG_DATA_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/data
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.8050706Z   TMPDIR: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/temporary
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:24.8051526Z ##[endgroup]
+native-fabrication	Fabricate original source-owned release archive	2026-10-21T22:29:26.9802665Z {"packages":1,"notInTree":[],"cycles":0,"external":0}
+native-fabrication	Retain the genuine immutable package, plan and digest	﻿2026-10-21T22:29:27.0443816Z ##[group]Run actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.0444270Z with:
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.0444484Z   name: red-cup-native-cd-package
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.0445834Z   path: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/native-cd-release/
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.0446665Z   if-no-files-found: error
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.0446899Z   retention-days: 7
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.0447110Z   compression-level: 0
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.0447322Z   overwrite: false
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.0447530Z   include-hidden-files: false
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.0447763Z env:
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.0448444Z   CD_ARTIFACT_ROOT: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.0449751Z   npm_config_cache: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/npm-cache
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.0451109Z   COREPACK_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/corepack
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.0452415Z   XDG_CACHE_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/cache
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.0453713Z   XDG_STATE_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/state
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.0455284Z   XDG_CONFIG_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/config
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.0456575Z   XDG_DATA_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/data
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.0457830Z   TMPDIR: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-fabrication/temporary
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.0458595Z ##[endgroup]
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.2242860Z (node:2519) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.2244473Z (Use `node --trace-deprecation ...` to show where the warning was created)
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.2376498Z With the provided path, there will be 3 files uploaded
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.2386821Z Artifact name is valid!
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.2387835Z Root directory input is valid!
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.5731445Z Beginning upload of artifact content to blob storage
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:27.5982904Z (node:2519) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:28.0260641Z Uploaded bytes 219841
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:28.0950258Z Finished uploading artifact content to blob storage!
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:28.0951820Z SHA256 digest of uploaded artifact zip is 8460aefc91a6a08e9a10c3526ddfa7222df025f14a8817a85ecb1da4a31dd14a
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:28.0952987Z Finalizing artifact upload
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:28.3432262Z Artifact red-cup-native-cd-package.zip successfully finalized. Artifact ID 12387056856
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:28.3434002Z Artifact red-cup-native-cd-package has been successfully uploaded! Final size is 219841 bytes. Artifact ID is 12387056856
+native-fabrication	Retain the genuine immutable package, plan and digest	2026-10-21T22:29:28.3440888Z Artifact download URL: https://github.com/red-cup-engineering/continuous-delivery-services-section/actions/runs/39686830877/artifacts/12387056856
+native-fabrication	Post Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	﻿2026-10-21T22:29:28.3666764Z Post job cleanup.
+native-fabrication	Post Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:28.4982081Z (node:2531) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+native-fabrication	Post Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:28.4983242Z (Use `node --trace-deprecation ...` to show where the warning was created)
+native-fabrication	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	﻿2026-10-21T22:29:28.5175702Z Post job cleanup.
+native-fabrication	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:28.6106750Z [command]/usr/bin/git version
+native-fabrication	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:28.6152590Z git version 2.55.0
+native-fabrication	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:28.6195501Z Temporarily overriding HOME='/home/runner/work/_temp/486384fb-6c79-4da7-9be4-58483fe54c9b' before making global git config changes
+native-fabrication	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:28.6197215Z Adding repository directory to the temporary git global config as a safe directory
+native-fabrication	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:28.6201814Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section
+native-fabrication	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:28.6250244Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+native-fabrication	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:28.6319517Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+native-fabrication	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:28.6617052Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+native-fabrication	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:28.6656431Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+native-fabrication	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:28.6970489Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+native-fabrication	Post Run actions/checkout@11d5960a326750d5838078e36cf38b85af677262	2026-10-21T22:29:28.7017893Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+native-fabrication	Complete job	﻿2026-10-21T22:29:28.7493326Z Cleaning up orphan processes
+native-fabrication	Complete job	2026-10-21T22:29:28.7909662Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@11d5960a326750d5838078e36cf38b85af677262, actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+native-receiving	Set up job	﻿2026-10-21T22:29:35.1342577Z Current runner version: '2.338.0'
+native-receiving	Set up job	2026-10-21T22:29:35.1370457Z ##[group]Runner Image Provisioner
+native-receiving	Set up job	2026-10-21T22:29:35.1371398Z Hosted Compute Agent
+native-receiving	Set up job	2026-10-21T22:29:35.1372180Z Version: 20261015.610
+native-receiving	Set up job	2026-10-21T22:29:35.1372872Z Commit: 267fdb4e8bbec4ab5ea31367f3a00d5c480c7656
+native-receiving	Set up job	2026-10-21T22:29:35.1373660Z Build Date: 2026-10-14T17:06:54Z
+native-receiving	Set up job	2026-10-21T22:29:35.1374415Z Worker ID: {3f91d621-9d92-4603-a361-d00b7fecd048}
+native-receiving	Set up job	2026-10-21T22:29:35.1375146Z Region: westus
+native-receiving	Set up job	2026-10-21T22:29:35.1375750Z Cloud: Azure
+native-receiving	Set up job	2026-10-21T22:29:35.1376344Z ##[endgroup]
+native-receiving	Set up job	2026-10-21T22:29:35.1377870Z ##[group]Operating System
+native-receiving	Set up job	2026-10-21T22:29:35.1378691Z Ubuntu
+native-receiving	Set up job	2026-10-21T22:29:35.1379476Z 24.04.5
+native-receiving	Set up job	2026-10-21T22:29:35.1380142Z LTS
+native-receiving	Set up job	2026-10-21T22:29:35.1380681Z ##[endgroup]
+native-receiving	Set up job	2026-10-21T22:29:35.1381229Z ##[group]Runner Image
+native-receiving	Set up job	2026-10-21T22:29:35.1381944Z Image: ubuntu-24.04
+native-receiving	Set up job	2026-10-21T22:29:35.1382531Z Version: 20261018.339.1
+native-receiving	Set up job	2026-10-21T22:29:35.1383637Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261018.339/images/ubuntu/Ubuntu2404-Readme.md
+native-receiving	Set up job	2026-10-21T22:29:35.1385428Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261018.339
+native-receiving	Set up job	2026-10-21T22:29:35.1386527Z ##[endgroup]
+native-receiving	Set up job	2026-10-21T22:29:35.1387729Z ##[group]GITHUB_TOKEN Permissions
+native-receiving	Set up job	2026-10-21T22:29:35.1390033Z Actions: read
+native-receiving	Set up job	2026-10-21T22:29:35.1390692Z Contents: read
+native-receiving	Set up job	2026-10-21T22:29:35.1391386Z Metadata: read
+native-receiving	Set up job	2026-10-21T22:29:35.1391995Z ##[endgroup]
+native-receiving	Set up job	2026-10-21T22:29:35.1394180Z Secret source: Actions
+native-receiving	Set up job	2026-10-21T22:29:35.1395457Z Cache mode: write
+native-receiving	Set up job	2026-10-21T22:29:35.1396178Z Prepare workflow directory
+native-receiving	Set up job	2026-10-21T22:29:35.1789794Z Prepare all required actions
+native-receiving	Set up job	2026-10-21T22:29:35.1851759Z Getting action download info
+native-receiving	Set up job	2026-10-21T22:29:35.5633319Z Download action repository 'actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444' (SHA:a0853c24544627f65ddf259abe73b1d18a591444)
+native-receiving	Set up job	2026-10-21T22:29:35.7331169Z Download action repository 'actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093' (SHA:d3f86a106a0bac45b974a628896c90dbdf5c8093)
+native-receiving	Set up job	2026-10-21T22:29:36.2882392Z Complete job name: native-receiving
+native-receiving	Bind authored CI outputs to section data	﻿2026-10-21T22:29:36.3681420Z ##[group]Run set -euo pipefail
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3682131Z [36;1mset -euo pipefail[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3682775Z [36;1mcd_workspace=$(realpath -e "$GITHUB_WORKSPACE")[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3683589Z [36;1m[[ "$GITHUB_RUN_ID" =~ ^[0-9]+$ && "$GITHUB_RUN_ATTEMPT" =~ ^[0-9]+$ ]][0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3684328Z [36;1m[[ "$GITHUB_JOB" =~ ^[A-Za-z0-9_-]+$ ]][0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3685242Z [36;1mcd_ci_run="$cd_workspace/data/logs/public-source-ci-logs/$GITHUB_RUN_ID-$GITHUB_RUN_ATTEMPT"[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3686231Z [36;1mcd_ci_data="$cd_ci_run/$GITHUB_JOB"[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3687170Z [36;1mcd_paths=("$cd_workspace/data" "$cd_workspace/data/logs" "$cd_workspace/data/logs/public-source-ci-logs"[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3688393Z [36;1m  "$cd_ci_run" "$cd_ci_data" "$cd_ci_data"/{npm-cache,corepack,cache,state,config,data,temporary})[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3689535Z [36;1mfor selected_path in "${cd_paths[@]}"; do[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3690282Z [36;1m  if [[ -e "$selected_path" || -L "$selected_path" ]]; then[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3691198Z [36;1m    [[ -d "$selected_path" && ! -L "$selected_path" && -O "$selected_path" ]] || exit 1[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3691952Z [36;1m  fi[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3692372Z [36;1mdone[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3692820Z [36;1mmkdir -p "${cd_paths[@]}"[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3693412Z [36;1mfor selected_path in "${cd_paths[@]}"; do[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3694167Z [36;1m  [[ $(realpath -e "$selected_path") == "$selected_path" ]] || exit 1[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3694861Z [36;1mdone[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3695276Z [36;1m{[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3695774Z [36;1m  printf 'CD_ARTIFACT_ROOT=%s\n' "$cd_ci_data"[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3696518Z [36;1m  printf 'npm_config_cache=%s\n' "$cd_ci_data/npm-cache"[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3697283Z [36;1m  printf 'COREPACK_HOME=%s\n' "$cd_ci_data/corepack"[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3698016Z [36;1m  printf 'XDG_CACHE_HOME=%s\n' "$cd_ci_data/cache"[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3698968Z [36;1m  printf 'XDG_STATE_HOME=%s\n' "$cd_ci_data/state"[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3699861Z [36;1m  printf 'XDG_CONFIG_HOME=%s\n' "$cd_ci_data/config"[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3700588Z [36;1m  printf 'XDG_DATA_HOME=%s\n' "$cd_ci_data/data"[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3701277Z [36;1m  printf 'TMPDIR=%s\n' "$cd_ci_data/temporary"[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3701897Z [36;1m} >> "$GITHUB_ENV"[0m
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3866142Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+native-receiving	Bind authored CI outputs to section data	2026-10-21T22:29:36.3867180Z ##[endgroup]
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	﻿2026-10-21T22:29:36.4430777Z ##[group]Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.4431597Z with:
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.4432133Z   node-version: 24
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.4432576Z   always-auth: false
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.4433015Z   check-latest: false
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.4436897Z   token: ***
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.4437349Z   package-manager-cache: true
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.4437846Z env:
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.4439388Z   CD_ARTIFACT_ROOT: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.4441639Z   npm_config_cache: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/npm-cache
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.4443902Z   COREPACK_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/corepack
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.4446141Z   XDG_CACHE_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/cache
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.4448337Z   XDG_STATE_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/state
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.4450665Z   XDG_CONFIG_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/config
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.4452831Z   XDG_DATA_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/data
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.4454969Z   TMPDIR: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/temporary
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.4456310Z ##[endgroup]
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.6050766Z Found in cache @ /opt/hostedtoolcache/node/24.22.0/x64
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.6054664Z (node:2228) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.6055898Z (Use `node --trace-deprecation ...` to show where the warning was created)
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:36.6058905Z ##[group]Environment details
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:37.0022117Z node: v24.22.0
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:37.0022917Z npm: 11.19.1
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:37.0023614Z yarn: 1.22.22
+native-receiving	Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:37.0024839Z ##[endgroup]
+native-receiving	Receive original cloud-fabricated artifact	﻿2026-10-21T22:29:37.0281905Z ##[group]Run actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.0283036Z with:
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.0283505Z   name: red-cup-native-cd-package
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.0285410Z   path: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/received-cd
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.0287324Z   merge-multiple: false
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.0288122Z   repository: red-cup-engineering/continuous-delivery-services-section
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.0289028Z   run-id: 39686830877
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.0289849Z env:
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.0291493Z   CD_ARTIFACT_ROOT: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.0294992Z   npm_config_cache: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/npm-cache
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.0298387Z   COREPACK_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/corepack
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.0302221Z   XDG_CACHE_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/cache
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.0305482Z   XDG_STATE_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/state
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.0308734Z   XDG_CONFIG_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/config
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.0312139Z   XDG_DATA_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/data
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.0315358Z   TMPDIR: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/temporary
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.0317263Z ##[endgroup]
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.1951504Z Downloading single artifact
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.2094823Z (node:2259) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.2098502Z (Use `node --trace-deprecation ...` to show where the warning was created)
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.4684946Z Preparing to download the following artifacts:
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.4689052Z - red-cup-native-cd-package (ID: 12387056856, Size: 219841, Expected Digest: sha256:8460aefc91a6a08e9a10c3526ddfa7222df025f14a8817a85ecb1da4a31dd14a)
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.7065952Z Redirecting to blob download url: https://productionresultssa4.blob.core.windows.net/actions-results/8acc9866-c730-89a2-815a-887bdad836f4/workflow-job-run-8a41f1c0-0a29-5b8d-a920-358962d69739/artifacts/9b8ce20d0b4af55fa3fb4a194a6a377f1d96d0d608bba07ecd4443025175a755.zip
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:37.7075266Z Starting download of artifact to: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/received-cd
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:38.0097909Z (node:2259) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:38.2778769Z SHA256 digest of downloaded artifact is 8460aefc91a6a08e9a10c3526ddfa7222df025f14a8817a85ecb1da4a31dd14a
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:38.2782044Z Artifact download completed successfully.
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:38.2783549Z Total of 1 artifact(s) downloaded
+native-receiving	Receive original cloud-fabricated artifact	2026-10-21T22:29:38.2785691Z Download artifact has finished successfully
+native-receiving	Authenticate archive and execute its original bounded work	﻿2026-10-21T22:29:38.2985064Z ##[group]Run set -euo pipefail
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.2986522Z [36;1mset -euo pipefail[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.2987898Z [36;1mreceived="$CD_ARTIFACT_ROOT/received-cd"[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.2989698Z [36;1mcd "$received"[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.2990920Z [36;1msha256sum --check SHA256SUMS[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.2993156Z [36;1marchive="$(node -p 'JSON.parse(require("fs").readFileSync("plan.json","utf8")).files[0].tarball')"[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.2995460Z [36;1mtest -f "$archive"[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.2996810Z [36;1mmkdir -p "$CD_ARTIFACT_ROOT/installed-cd"[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.2998617Z [36;1mtar -xzf "$archive" -C "$CD_ARTIFACT_ROOT/installed-cd"[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3000711Z [36;1mcd "$CD_ARTIFACT_ROOT/installed-cd/package"[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3002308Z [36;1mnode --check scripts/place-job.mjs[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3003824Z [36;1mNOW="$(date -u +%Y-%m-%dT%H:%M:%S.000Z)"[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3005483Z [36;1mexport NOW[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3006759Z [36;1mmkdir -p "$CD_ARTIFACT_ROOT/observed-nodes"[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3008377Z [36;1mnode --input-type=module <<'NODE'[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3010043Z [36;1mimport fs from 'node:fs';[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3011356Z [36;1mimport os from 'node:os';[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3012689Z [36;1mimport path from 'node:path';[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3014161Z [36;1mconst root=process.env.CD_ARTIFACT_ROOT;[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3015686Z [36;1mconst space=fs.statfsSync(root);[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3017297Z [36;1mconst diskGb=space.bavail*space.bsize/1073741824;[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3019590Z [36;1mconst node={id:'github-actions-original-receiver',state:'up',[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3021840Z [36;1m  observedAt:process.env.NOW,cores:os.availableParallelism(),[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3023889Z [36;1m  memoryGb:os.freemem()/1073741824,freeDiskGb:diskGb,[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3025736Z [36;1m  bandwidthMbps:null,capabilities:['node24','git'],[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3027459Z [36;1m  closureCache:[],cost:{kind:'held'}};[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3029736Z [36;1mconst job={id:'receive-original-cd-archive',effect:false,visibility:'public',[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3031862Z [36;1m  minutes:1,maxMinutes:5,closure:[],[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3033453Z [36;1m  needs:{cores:1,memoryGb:0.25,freeDiskGb:0.1},[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3035077Z [36;1m  requires:{capabilities:['node24']}};[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3037294Z [36;1mfs.writeFileSync(path.join(root,'observed-nodes','current.json'),JSON.stringify(node));[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3040497Z [36;1mfs.writeFileSync(path.join(root,'native-qualification-job.json'),JSON.stringify(job));[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3042647Z [36;1mNODE[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3043713Z [36;1mnode scripts/place-job.mjs \[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3045405Z [36;1m  --job "$CD_ARTIFACT_ROOT/native-qualification-job.json" \[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3047918Z [36;1m  --nodes "$CD_ARTIFACT_ROOT/observed-nodes" --now "$NOW" > "$CD_ARTIFACT_ROOT/placement.json"[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3050407Z [36;1mnode --input-type=module <<'NODE'[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3051800Z [36;1mimport fs from 'node:fs';[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3053218Z [36;1mimport assert from 'node:assert/strict';[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3055675Z [36;1mconst proposal=JSON.parse(fs.readFileSync(process.env.CD_ARTIFACT_ROOT+'/placement.json','utf8'));[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3058483Z [36;1massert.equal(proposal.chosen,'github-actions-original-receiver');[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3060723Z [36;1massert.equal(proposal.needsProbe,false);[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3062412Z [36;1massert.equal(proposal.needsLeaderWords,false);[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3063891Z [36;1mNODE[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3065183Z [36;1mnode --test test/placement.test.mjs test/release.test.mjs[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3069744Z [36;1mprintf 'Received original native archive at %s on an independent GitHub-hosted runner; source %s. Full private peer, Guix and enterprise operation remain separately unreceived.\n' "$archive" "$GITHUB_SHA" >> "$GITHUB_STEP_SUMMARY"[0m
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3133019Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3134755Z env:
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3137778Z   CD_ARTIFACT_ROOT: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3143617Z   npm_config_cache: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/npm-cache
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3149525Z   COREPACK_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/corepack
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3155123Z   XDG_CACHE_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/cache
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3160994Z   XDG_STATE_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/state
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3166558Z   XDG_CONFIG_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/config
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3172081Z   XDG_DATA_HOME: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/data
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3177418Z   TMPDIR: /home/runner/work/continuous-delivery-services-section/continuous-delivery-services-section/data/logs/public-source-ci-logs/39686830877-1/native-receiving/temporary
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3180798Z ##[endgroup]
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.3297335Z red-cup-engineering-continuous-delivery-services-section-0.0.0-sha.526b1a0c747c.tgz: OK
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9076680Z ✔ the Kalshi closure goes to the node that already holds it (3.683723ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9081809Z ✔ unknown sizes are intervals, never zero: an unmeasured node is possible, not certain (1.155376ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9086859Z ✔ hosted minutes are refused once the free allowance cannot cover the job, never overdrawn (1.499207ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9092437Z ✔ with only a hosted runner left and an exhausted allowance there is no placement (0.612373ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9096951Z ✔ a hosted minute costs more once the request exceeds the daily pace (0.353289ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9101198Z ✔ a node too small for the job is refused with the field named (0.356265ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9105891Z ✔ a job that must run on named nodes is not placed elsewhere, and an effect waits for the Leader (0.547691ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9109935Z ✔ a down node is never chosen (0.457494ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9113928Z ✔ allowance: hold, settle spent, remaining shrinks; a second hold on the same job is refused (0.893657ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9119393Z ✔ lease: one live holder, fencing token rises, stale holder is refused (1.252396ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9124402Z ✔ invalid lease identities or unbounded time cannot mutate fencing custody (1.22684ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9129034Z ✔ lease: an effect is not accepted after expiry, a pure build is (0.350126ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9134253Z ✔ two builders with identical store paths agree; a difference is top and queues a repair (0.799482ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9139948Z ✔ absence of usage or freshness never becomes free private GitHub minutes (0.542092ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9144308Z ✔ stale cloud capacity is refused; source snapshots never authorize a job (0.407471ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9149436Z ✔ observed Free CircleCI credits select original source without spending GitHub minutes (1.370027ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9154366Z ✔ Oracle Always Free multi-unit quotes cannot overspend either OCPU or GB-hour (0.721767ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9159059Z ✔ shared compute budget refuses zero holds and negative multi-unit settlement (0.402842ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9163971Z ✔ budget receipt expires and provider may not silently switch denomination (0.274773ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9169996Z ✔ hosted remaining minutes cannot be carried across a monthly reset without reobservation (0.148367ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9174838Z ✔ fenced build comparison never publishes a lone or duplicate builder (0.195875ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9179827Z ✔ hosted minutes are held at maximum duration and provider overrun cannot settle (0.796707ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9184867Z ✔ fleet planning actually distributes concurrent work across held and free providers (2.157397ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9190146Z ✔ fleet does not dispatch effects, unknown nodes, missing quota or duplicate jobs (0.775247ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9195090Z ✔ provider placement prices net-available free credits after original reservations (1.231248ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9200791Z ✔ typed effectful office jobs never acquire pure fleet placements on owned or cloud capacity (1.208886ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:38.9206673Z ✔ the existing placement CLI reads a complete original office shift without provider effects (260.215718ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6044126Z ✔ a version is a semver prerelease tagged with the commit (1.475084ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6046585Z ✔ pull: activates the tagged version, then is a no-op on a 304 (64.866979ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6048161Z ✔ pull: promoting a new version activates it; moving the tag back is the rollback (67.643307ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6050447Z ✔ pull: a tarball whose digest differs from the packument is refused and nothing is installed (19.597848ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6052103Z ✔ pull: when the registry answers 502 the active version is kept (6.28989ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6054053Z ✔ pull: a failed health check returns to the previous version (47.036079ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6056192Z ✔ publish: dependencies first, exact internal versions, a cycle is refused, promotion is a tag move (1.856916ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6057798Z ✔ closure: follows internal dependencies, rewrites workspace ranges to exact versions, ignores external ones (4.210909ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6059534Z ✔ unit: names one checkout's packages, shares one version among them, and sends every other internal dependency to the registry (2.302928ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6064862Z ✔ publish-packed: token from the credential directory only, dependencies first, present versions are idempotent, root is promoted (5.550369ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6066918Z ✔ release source census excludes raw logs while preserving durable records and state (2.774288ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6068999Z ✔ actual release CLI packs from owned descendant temp without copying logs or losing durable data (721.659762ms)
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6200297Z ℹ tests 39
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6200981Z ℹ suites 0
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6201507Z ℹ pass 39
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6201865Z ℹ fail 0
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6202211Z ℹ cancelled 0
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6202573Z ℹ skipped 0
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6220527Z ℹ todo 0
+native-receiving	Authenticate archive and execute its original bounded work	2026-10-21T22:29:39.6232114Z ℹ duration_ms 1082.490137
+native-receiving	Post Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	﻿2026-10-21T22:29:39.6404194Z Post job cleanup.
+native-receiving	Post Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:39.7745908Z (node:2416) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+native-receiving	Post Run actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444	2026-10-21T22:29:39.7747712Z (Use `node --trace-deprecation ...` to show where the warning was created)
+native-receiving	Complete job	﻿2026-10-21T22:29:39.7924874Z Cleaning up orphan processes
+native-receiving	Complete job	2026-10-21T22:29:39.8383737Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

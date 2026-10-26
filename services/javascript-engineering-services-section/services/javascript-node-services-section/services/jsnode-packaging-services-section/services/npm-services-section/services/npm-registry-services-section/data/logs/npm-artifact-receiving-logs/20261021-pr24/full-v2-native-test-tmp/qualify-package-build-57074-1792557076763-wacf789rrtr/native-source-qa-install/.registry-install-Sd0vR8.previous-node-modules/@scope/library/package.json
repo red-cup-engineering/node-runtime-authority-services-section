@@ -1,0 +1,1 @@
+{"name":"@scope/library","version":"1.0.0","type":"module","main":"./index.mjs","peerDependencies":{"@scope/driver":"0.9.0"}}

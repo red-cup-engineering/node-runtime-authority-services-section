@@ -1,0 +1,1571 @@
+--- a/README.md
++++ b/README.md
+@@ -559,6 +559,33 @@
+ It performs only the bounded comparison of original native observations;
+ the [member receiving contract](specifications/artifact-member-receiving.md)
+ defines byte, path, executable-intent, manifest-stamp and native-context laws.
++The registered `receive-packed-registry-artifact receive INPUT [OUTPUT]` performs
++native source/archive receiving. Input selects `registry`, exact Git `source`
++(repository, commit and optional package scope), `sourceDirectory`, an explicit
++private `scratchDirectory`, archive path/SHA512, finite `limits`, and optional
++existing `publisher` gitHead stamp. It reads the source through the dependency-free
++Git reading primitive, verifies the staged original inputs, asks native NPM for its packlist
++with lifecycle scripts disabled, then reads the archive through declared `tar`.
++Native ignore precedence narrows the source allowance. Unsupported TAR extensions,
++ambiguous decoded names, links and incomplete parser accounting remain unread;
++no extraction or package evaluation establishes membership. Output is exclusive.
++This entrance cannot assert prepared manifests, build products or installation.
++
++Networking publishers use `preparePublicationCarrierManifest` from
++`./source-registry-closure` and `planLandedPackageRelease` from `./release-wave`
++for their original occupied-version/history selection. The native receiver
++recomputes their finite version/missing-repository preparation and retains the
++original Git witness separately. The pure model's sole gitHead stamp law remains
++unchanged; preparation grants no publication authority.
++
++The original `receiveSourceRegistryConsumers` can receive selected independently
++downloaded direct dependencies through `artifactReceiving`, with an explicit
++`artifactReceiptDirectory`. Its actual successful frozen PNPM operation, complete
++unchanged inputs and original supplier/bin observations own native installation
++proof, before replacing prior node_modules. Source/archive reading alone never
++claims that effect. Package-specific frozen receiving still uses its own actual
++lock; repositories in general acquire no workspace or lockfile requirement.
++
+ The original registry observation/publication modes below remain unchanged.
+ 
+ `receive-packed-registry-artifact before|after` reads `PACKAGE`, `VERSION`,
+@@ -618,5 +645,11 @@
+ reachable static ESM imports through Node’s native resolver against the received
+ installation before copying or transferring it. Missing provider subpaths refuse
+ fabrication and retain the full findings in the unpromoted output. Application
+-code is never evaluated. CommonJS internals and dynamic imports remain explicit
+-limits; declare spawned child programs as entrances too.
++code is never evaluated. Untyped `.js` files use Node's syntax parsers: parse
++with the CommonJS wrapper parameters first, then read static ESM links when
++that parse refuses. This preserves CommonJS (including top-level return and
++hashbangs), while inspecting static imports, exports, `import.meta`, top-level
++await and lexical redeclarations of wrapper parameters in ambiguous files.
++Explicit `type: commonjs` and `.cjs` remain opaque. Invalid source refuses;
++neither parser runs the application. CommonJS internals and dynamic imports
++remain explicit limits; declare spawned child programs as entrances too.
+--- a/package.json
++++ b/package.json
+@@ -1,6 +1,6 @@
+ {
+   "name": "@red-cup-engineering/npm-workspace-publication-service",
+-  "version": "0.14.23",
++  "version": "0.14.24",
+   "description": "Verifies exact registry dependency specifications, orders a package estate into leaf-first tiers, and publishes with npm; dry-run by default.",
+   "type": "module",
+   "dependencies": {
+@@ -13,10 +13,11 @@
+     "@red-cup-engineering/uri-services-section": "0.1.1",
+     "@red-cup-engineering/computer-content-address-engineering-services-section": "0.2.0",
+     "@red-cup-engineering/execute-javascript-node-command-service": "0.3.1",
+-    "@red-cup-engineering/git-services-section": "0.1.2",
++    "@red-cup-engineering/git-source-reading-service": "0.1.1",
+     "@red-cup-engineering/javascript-node-services-section": "0.3.2",
+     "@red-cup-engineering/npm-registry-read-service": "0.1.2",
+-    "@red-cup-engineering/npm-registry-snapshot-services-section": "0.1.1"
++    "@red-cup-engineering/npm-registry-snapshot-services-section": "0.1.1",
++    "tar": "7.5.22"
+   },
+   "private": false,
+   "license": "MIT",
+--- a/pnpm-lock.yaml
++++ b/pnpm-lock.yaml
+@@ -23,9 +23,9 @@
+       '@red-cup-engineering/execute-javascript-node-command-service':
+         specifier: 0.3.1
+         version: 0.3.1
+-      '@red-cup-engineering/git-services-section':
+-        specifier: 0.1.2
+-        version: 0.1.2
++      '@red-cup-engineering/git-source-reading-service':
++        specifier: 0.1.1
++        version: 0.1.1
+       '@red-cup-engineering/javascript-node-services-section':
+         specifier: 0.3.2
+         version: 0.3.2
+@@ -47,6 +47,9 @@
+       semver:
+         specifier: 7.7.2
+         version: 7.7.2
++      tar:
++        specifier: 7.5.22
++        version: 7.5.22
+ 
+ packages:
+ 
+@@ -75,6 +78,10 @@
+   '@hyperjump/uri@1.3.9':
+     resolution: {integrity: sha512-cxG5vyIdx3gUb/OQD/FDruQQcGNzF2aKTXWJ6LzlAC1kh97YZQSRsF3hL274xlTDJ1nWGJGRtknlW6ZpU3Ch+A==}
+ 
++  '@isaacs/fs-minipass@4.0.1':
++    resolution: {integrity: sha512-wgm9Ehl2jpeqP3zw/7mo3kRHFp5MEDhqAdwy1fTGkHAwnkGOVsgpvQhL8B5n1qlb01jV3n/bI0ZfZp5lWA1k4w==}
++    engines: {node: '>=18.0.0'}
++
+   '@lenticule-science/articulating@0.2.2':
+     resolution: {integrity: sha512-namzkMve433Wf34Ek8juKOnUK9bgv7Hqm3PHHcBHtmfHwXvJhRv2qKqNj7pEcL9Eca7ljKWih7UNQHfg0cMpMg==}
+ 
+@@ -166,13 +173,8 @@
+     engines: {node: '>=24'}
+     hasBin: true
+ 
+-  '@red-cup-engineering/git-services-section@0.1.2':
+-    resolution: {integrity: sha512-xN1ePXUUNkbv/jXHDFgl/NmHnmnC5KOzThsB5stZHa3X54+P/GKHJL+s9g5yeXsWHwrBcILP0CaECCgpYu4c4A==}
+-    engines: {node: '>=22.18'}
+-    hasBin: true
+-
+-  '@red-cup-engineering/git-source-reading-service@0.1.0':
+-    resolution: {integrity: sha512-edVPsTP7bbkFZhHP3yjXTTpNJOmTtVkyDwZQTgYfm4wOL2SgJOI0Q9pAJ5qR3estmChXDmTHu1gvc+s9NP/s9A==}
++  '@red-cup-engineering/git-source-reading-service@0.1.1':
++    resolution: {integrity: sha512-AtiBu9I5H+35nJPka4T0CClR7oJfZCPwpWlvScR2M95h/xLSa07FAgAhf47oSON7fRM5LKdfZJNpEf5f64U2vQ==}
+     engines: {node: '>=22.18'}
+ 
+   '@red-cup-engineering/html-engineering-services-section@0.1.1':
+@@ -342,6 +344,10 @@
+     resolution: {integrity: sha512-s6+CPoEI6tgwasK2cWMTXt5sy8Yxo4vgRmKgkJSCdKDL/0bHU3aYJoYeHRX7/oywKYA3bxcpqEYkXkrdHe0+0Q==}
+     engines: {node: '>=22'}
+ 
++  chownr@3.0.0:
++    resolution: {integrity: sha512-+IxzY9BZOQd/XuYPRmrvEVjF/nqj5kgT4kEq7VofrDoM1MxoRjEWkrCC3EtLi59TVawxTAn+orJwFQcrqEN1+g==}
++    engines: {node: '>=18'}
++
+   content-type@1.0.5:
+     resolution: {integrity: sha512-nTjqfcBFEipKdXCv4YDQWCfmcLZKm81ldF0pAopTvyrFGVbcR6P/VAAd5G7N+0tTr8QqiU0tFadD6FK4NtJwOA==}
+     engines: {node: '>= 0.6'}
+@@ -361,6 +367,14 @@
+   just-curry-it@5.3.0:
+     resolution: {integrity: sha512-silMIRiFjUWlfaDhkgSzpuAyQ6EX/o09Eu8ZBfmFwQMbax7+LQzeIU2CBrICT6Ne4l86ITCGvUCBpCubWYy0Yw==}
+ 
++  minipass@7.1.3:
++    resolution: {integrity: sha512-tEBHqDnIoM/1rXME1zgka9g6Q2lcoCkxHLuc7ODJ5BxbP5d4c2Z5cGgtXAku59200Cx7diuHTOYfSBD8n6mm8A==}
++    engines: {node: '>=16 || 14 >=14.17'}
++
++  minizlib@3.1.0:
++    resolution: {integrity: sha512-KZxYo1BUkWD2TVFLr0MQoM8vUUigWD3LlD83a/75BqC+4qE0Hb1Vo5v1FgcfaNXvfXzr+5EhQ6ing/CaBijTlw==}
++    engines: {node: '>= 18'}
++
+   parse5@8.0.1:
+     resolution: {integrity: sha512-z1e/HMG90obSGeidlli3hj7cbocou0/wa5HacvI3ASx34PecNjNQeaHNo5WIZpWofN9kgkqV1q5YvXe3F0FoPw==}
+ 
+@@ -384,6 +398,10 @@
+     resolution: {integrity: sha512-hpd+HLON7HdZXqYchMM/+LaTTbdK0AU3NngIJ4KVyWbY9bfQqdL9cD+4yf6dUoU2Ap4VsU0JkQi6FxAI1B2mXQ==}
+     engines: {node: '>= 18'}
+ 
++  tar@7.5.22:
++    resolution: {integrity: sha512-MFO/QzvtAOmJbkhOaCTvbGcFN9L9b+JunIsDwaKljSOdcLMea3NJ1k9Usz/rjdfSXTq4dfzfeS7W4p4YOAAHeA==}
++    engines: {node: '>=18'}
++
+   uuid@14.0.3:
+     resolution: {integrity: sha512-Sc5u1VVln93y1Xnz4R+CunOZc7R9LUcTmhj7Rc7Eg3HVcf7rVn2FOoa812fe0W8p3jD7xeoGSYbfqCGGH2B6xw==}
+     hasBin: true
+@@ -394,6 +412,10 @@
+ 
+   xml-name-validator@5.0.0:
+     resolution: {integrity: sha512-EvGK8EJ3DhaHfbRlETOWAS5pO9MZITeauHKJyb8wyajUfQUenkIg2MvLDTZ4T/TgIcm3HU0TFBgWWboAZ30UHg==}
++    engines: {node: '>=18'}
++
++  yallist@5.0.0:
++    resolution: {integrity: sha512-YgvUTfwqyc7UXVMrB+SImsVYSmTS8X/tSrtdNZMImM+n7+QTriRXyXim0mBrTXNeqzVF0KWGgHPeiyViFFrNDw==}
+     engines: {node: '>=18'}
+ 
+   yaml@2.9.0:
+@@ -438,6 +460,10 @@
+ 
+   '@hyperjump/uri@1.3.9': {}
+ 
++  '@isaacs/fs-minipass@4.0.1':
++    dependencies:
++      minipass: 7.1.3
++
+   '@lenticule-science/articulating@0.2.2':
+     dependencies:
+       '@red-cup-engineering/transform-json-schema-to-typescript-service': 0.1.0
+@@ -624,12 +650,7 @@
+     dependencies:
+       '@red-cup-engineering/javascript-node-services-section': 0.3.2
+ 
+-  '@red-cup-engineering/git-services-section@0.1.2':
+-    dependencies:
+-      '@red-cup-engineering/git-source-reading-service': 0.1.0
+-      '@red-cup-engineering/semiotic-eavt-services-section': 0.1.0
+-
+-  '@red-cup-engineering/git-source-reading-service@0.1.0': {}
++  '@red-cup-engineering/git-source-reading-service@0.1.1': {}
+ 
+   '@red-cup-engineering/html-engineering-services-section@0.1.1':
+     dependencies:
+@@ -954,6 +975,8 @@
+     dependencies:
+       '@cto.af/wtf8': 0.0.6
+ 
++  chownr@3.0.0: {}
++
+   content-type@1.0.5: {}
+ 
+   entities@8.1.0: {}
+@@ -966,6 +989,12 @@
+ 
+   just-curry-it@5.3.0: {}
+ 
++  minipass@7.1.3: {}
++
++  minizlib@3.1.0:
++    dependencies:
++      minipass: 7.1.3
++
+   parse5@8.0.1:
+     dependencies:
+       entities: 8.1.0
+@@ -982,12 +1011,22 @@
+ 
+   smol-toml@1.9.0: {}
+ 
++  tar@7.5.22:
++    dependencies:
++      '@isaacs/fs-minipass': 4.0.1
++      chownr: 3.0.0
++      minipass: 7.1.3
++      minizlib: 3.1.0
++      yallist: 5.0.0
++
+   uuid@14.0.3: {}
+ 
+   whatwg-mimetype@5.0.0: {}
+ 
+   xml-name-validator@5.0.0: {}
+ 
++  yallist@5.0.0: {}
++
+   yaml@2.9.0: {}
+ 
+   yaml@2.9.1: {}
+--- a/scripts/receive-packed-registry-artifact.mjs
++++ b/scripts/receive-packed-registry-artifact.mjs
+@@ -1,17 +1,40 @@
+ #!/usr/bin/env node
+ import { createHash } from "node:crypto";
+-import { mkdtemp, open, readFile, rm, writeFile } from "node:fs/promises";
++import { mkdtemp, open, readFile, rm, writeFile, realpath, lstat } from "node:fs/promises";
+ import { tmpdir } from "node:os";
+-import { join } from "node:path";
++import { join, isAbsolute } from "node:path";
+ import { downloadConfiguredNpmRegistryTarball, publishConfiguredNpmRegistryArtifact, readConfiguredNpmRegistryPackageVersion } from "../src/registry.mjs";
+ import { admitArtifactRelease } from "../src/artifact-release.mjs";
++
++// The primitive owns declared Gitlink/path/pin admission. This caller's finite
++// locator context deliberately does not implement Git-relative URL resolution.
++function localRepository(value) {
++  if (typeof value !== "string" || /[\x00-\x1f\x7f]/u.test(value)) return false;
++  if (isAbsolute(value)) return true;
++  try {
++    const url = new URL(value);
++    return url.href === value && url.protocol === "file:" && !url.hostname
++      && !url.username && !url.password && !url.search && !url.hash;
++  } catch { return false; }
++}
++function childRepository(repository, declared) {
++  if (typeof declared === "string" && !/[\x00-\x1f\x7f]/u.test(declared)) {
++    try {
++      const url = new URL(declared);
++      if (url.href === declared && url.protocol === "https:" && !url.username
++        && !url.password && !url.search && !url.hash) return declared;
++    } catch { /* Absolute native paths are the other supported context. */ }
++    if (localRepository(repository) && localRepository(declared)) return declared;
++  }
++  throw new TypeError("selected child repository locator is outside the native CLI context");
++}
+ 
+ // Source receiving and publication are separate: this command reads the exact
+ // identity and compares its advertised digests with the one packed artifact.
+ const mode = process.argv[2];
+-if (mode === "compare") {
++if (mode === "compare" || mode === "receive") {
+   const [input, output, ...extra] = process.argv.slice(3);
+-  if (!input || extra.length) throw new Error("compare requires INPUT [exclusive OUTPUT]");
++  if (!input || extra.length) throw new Error(`${mode} requires INPUT [exclusive OUTPUT]`);
+   const handle = await open(input, "r");
+   let request;
+   try {
+@@ -27,8 +50,35 @@
+     if (length > 8 * 1024 * 1024) throw new Error("comparison input exceeded 8 MiB while reading");
+     request = JSON.parse(new TextDecoder("utf-8", { fatal: true }).decode(bounded.subarray(0, length)));
+   } finally { await handle.close(); }
+-  if (!["source-archive", "archive-installed"].includes(request.stage)) throw new Error("compare requires an explicit artifact-member stage");
+-  const result = admitArtifactRelease(request);
++  let result;
++  if (mode === "compare") {
++    if (!["source-archive", "archive-installed"].includes(request.stage)) throw new Error("compare requires an explicit artifact-member stage");
++    result = admitArtifactRelease(request);
++  } else {
++    if (!request || typeof request !== "object" || Array.isArray(request)
++      || Object.keys(request).some(key => !["registry", "source", "archive", "limits", "publisher", "sourceDirectory", "scratchDirectory"].includes(key)))
++      throw new TypeError("receive requires only exact native source/archive locators and bounds");
++    const { sourceDirectory, scratchDirectory, ...selection } = request;
++    if (typeof scratchDirectory !== "string" || !isAbsolute(scratchDirectory) || await realpath(scratchDirectory) !== scratchDirectory
++      || !(await lstat(scratchDirectory)).isDirectory()) throw new TypeError("receive requires an explicit real caller-owned scratchDirectory");
++    let scratch, completed = false;
++    try {
++      const { createPinnedSourceReader } = await import("@red-cup-engineering/git-source-reading-service/pinned-source-files");
++      const { receiveSourceArchiveMembers } = await import("../src/artifact-member-receiving.mjs");
++      let reader;
++      const readSource = async input => {
++        if (!reader) {
++          scratch = await mkdtemp(join(scratchDirectory, "git-source-"));
++          reader = createPinnedSourceReader({ scratch, rejectSelectedNonRegular: true,
++            resolveSubmodule: ({ repository, declaration }) => childRepository(repository, declaration.url),
++            maxRepositories: selection.limits.sourceRepositories, maxPaths: selection.limits.sourcePaths, maxBytes: selection.limits.bytes });
++        }
++        return reader(input);
++      };
++      result = await receiveSourceArchiveMembers(selection, { readSource, sourceDirectory, scratchDirectory });
++      completed = true;
++    } finally { if (completed && scratch) await rm(scratch, { recursive: true, force: true }); }
++  }
+   const bytes = `${JSON.stringify(result, null, 2)}\n`;
+   if (output) await writeFile(output, bytes, { flag: "wx", mode: 0o600 });
+   console.log(bytes.trimEnd());
+--- a/scripts/recover-demanded-versions.mjs
++++ b/scripts/recover-demanded-versions.mjs
+@@ -19,7 +19,7 @@
+ import { join, dirname } from "node:path";
+ import { fileURLToPath } from "node:url";
+ import { promisify } from "node:util";
+-import { gitHistoryPlan, readBatchBlobs, readRawChange } from "@red-cup-engineering/git-services-section/git-command-codec";
++import { gitHistoryPlan, readBatchBlobs, readRawChange } from "@red-cup-engineering/git-source-reading-service/git-command-codec";
+ import { isVersionPublished, repairStorageTarballURL } from "../src/registry.mjs";
+ import { secretBearingPaths } from "../src/tarball-guard.mjs";
+ 
+--- a/specifications/artifact-member-receiving.md
++++ b/specifications/artifact-member-receiving.md
+@@ -111,10 +111,110 @@
+ strict-stage/byte-decoding counterexamples. This coherent path preserves those
+ controls without adopting its compatibility-impacting replacement of the legacy
+ interface or its narrower644→755-only installation rule. Full version-2 release
+-refinement/caller migration, SHA256-repository producer inputs, a separately
+-qualified alternate publisher serialization, and original reusable native
+-archive/installation adapters remain distinct open obligations on that PR and
+-issue22. Supplied selection/receipt addresses alone cannot authenticate native
++refinement/caller migration, SHA256-repository producer inputs and a separately
++qualified alternate publisher serialization remain distinct obligations on that
++PR and issue22. The native adapters below address the reader/installation gap for
++their finite supported contexts; publication and actual caller receiving remain
++separate completion conditions. Supplied selection/receipt addresses alone cannot authenticate native
+ selection or effects. Adapters must bind original independently selected source
+ members; deriving that set only from output archive names proves correspondence
+ and can conceal omissions.
++
++
++## Original native member receiving and prepared carriers
++
++The native source/archive entrance MUST select exact original Git inputs before
++reading archive names. Its original Git reader MUST refuse selected nonregular
++entries and decode native paths fatally. The native NPM dry-run pack operation,
++with lifecycle scripts disabled and bounded output, owns npm selection and ignore
++precedence; carrierSourceIncludes is an acquisition allowance, not an exact pack
++list. Every independently selected native pack path MUST bind to an exact Git
++observation or an actual successful Code build product. Unknown paths refuse.
++The original bounded package acquisition allowance MUST include its relevant
++native ignore inputs without entering unrelated package/gitlink owners. The source
++directory MUST contain only those verified original/prepared inputs and qualified
++products; archive-derived membership cannot define completeness.
++
++The Code caller MUST obtain Git reading and command codecs from the existing
++dependency-free git-source-reading-service primitive. The Git networking umbrella
++may re-export those same implementations, but MUST NOT enter Code's dependency
++closure. Source qualification against an umbrella fixture does not establish the
++released primitive's identity or the installed Code dependency graph.
++
++The receive CLI MUST supply the primitive's original child-repository resolver.
++It may receive only uniquely declared composed Gitlinks beneath the independently
++selected package allowance, at their exact recorded commits. Its finite native
++context accepts credential-free absolute HTTPS declarations. Absolute native
++paths and local file URLs are supported only beneath an acquiring native/file
++repository, preserving real local source fixtures without allowing a remote
++declaration to select local custody. Relative, SSH and other opaque child locators
++remain explicitly unread; Code MUST NOT invent Git-relative or GitHub resolution
++rules. The primitive retains the original child repository, commit, raw source
++path and blob identity. An unselected or uncomposed Gitlink MUST NOT be acquired.
++
++The maintained declared TAR parser owns framing. Native receiving MUST verify the
++canonical SHA512, stable descriptor and named-path identity, compressed/expanded
++bounds, every interpreted member and diagnostic, one npm package container and
++end-of-archive padding before extraction. Unsupported extensions, ambiguous
++replacement-character names, links, special entries, duplicates and path aliases
++are explicitly unread/refused. This finite context does not change the pure
++model's wider supplied-fact interfaces. Native archive observation alone MUST NOT
++claim installation, approval, publication or activation.
++
++The existing release-wave owner owns planLandedPackageRelease, preserving the
++original GHS occupied-version/history allocation. The Code carrier producer
++preparePublicationCarrierManifest binds the exact original Git manifest to that
++allocation. Its only prepared changes are the selected version and, solely when
++repository is absent, a supplied finite npm repositoryFallback value. The fallback
++is the networking caller's already-qualified repository value; Code MUST NOT
++derive a GitHub address from a Git acquisition locator. Original acquisition
++repository/commit and original/prepared manifest digests remain separate evidence.
++Native receiving MUST recompute this projection from original source and the
++original publisher allocation inputs. A caller-supplied prepared manifest is not
++source evidence. The pure comparison still permits only its separate exact
++gitHead/json-2-newline publisher projection. The original clean publisher may explicitly omit only its project .npmrc in a
++retained finite publisherConfiguration declaration; native NPM selection and actual
++packing MUST use the same empty user/global configuration and no inherited
++credentials. This is a carrier-input preparation, not an archive membership or
++manifest exception. Original build qualification, credential, occupied-set and publication authority gates remain in force.
++
++Native installed receiving MUST originate in the actual successful original
++package-manager operation after its complete frozen input/graph checks and before
++prior-installation replacement. A JSON status, extracted tree or hash collection
++cannot authenticate historical installation. These package-specific contracts do
++not require a workspace, lockfile or package manifest in every repository.
++
++
++The original frozen consumer receiver's optional artifactReceiving selection
++MUST identify a unique exact independently received direct dependency per
++consumer. It MUST admit every selected archive's limits, integrity and manifest
++before launching any native installation. Only the actual successful child and
++unchanged full frozen inputs may supply the in-process nativeInstallation port.
++The complete native request/result and actual manager entry/manifest/distribution
++hashes MUST be retained in an exclusive private receipt before comparison.
++Comparison MUST precede replacement of any prior installation.
++
++The initial installed context is Linux PNPM11.28.5. Its original native
++`dist/pnpm.mjs` cmd-shim supplier emits `# cmd-shim-target=`; its own readShimTarget
++consumes that metadata. Receiving MUST bind that single native registration to
++the exact confined executable package target and retain the shim digest. A
++native direct symlink MUST resolve to that same target. No package or shell
++program is evaluated to inspect registration. Missing, foreign, ambiguous or
++unsupported registration refuses. Another manager/shim context remains unread
++until separately qualified; this adds no global shim/filename policy. The
++existing pure model's PNPM mode normalization remains unchanged. A retained JSON
++receipt alone cannot reopen a historical installation as a fresh native claim.
++The actual bin directory MUST resolve to a directory inside the original native
++installation before its registrations are read. A lexically contained path that
++redirects to outside custody does not establish confined registration.
++
++
++New native source/archive receiving requires an explicit real private
++scratchDirectory supplied by its original operational owner, separate from source
++inputs. It MUST NOT derive an operational data owner from the installed package
++or silently use an account/system temp default. The ordinary receive CLI selects
++this resource explicitly in its input; preparation/build evidence remains excluded
++from that JSON entrance. An unsuccessful Git read retains its bounded scratch for
++the original owner's disposition. Native installed receiving separately requires
++an explicit artifactReceiptDirectory; logs, durable operation records and disposable
++staging remain distinct resources chosen by the original receiving owner.
+--- /dev/null
++++ b/src/artifact-member-receiving.mjs
+@@ -0,0 +1,384 @@
++/** Native observations for the existing pure artifact-release comparison.
++ * Reading an archive neither extracts it nor claims native installation.
++ */
++import { constants } from 'node:fs';
++import { open, lstat, readFile, readdir, realpath, mkdtemp, writeFile, rm } from 'node:fs/promises';
++import { createHash } from 'node:crypto';
++import { isAbsolute, join, relative } from 'node:path';
++import { execFile } from 'node:child_process';
++import { promisify } from 'node:util';
++import { setImmediate as turn } from 'node:timers/promises';
++import { gunzipSync } from 'node:zlib';
++import { Parser } from 'tar';
++import { admitArtifactRelease } from './artifact-release.mjs';
++import { carrierSourceIncludes } from './carrier-surface.mjs';
++import { npmPackResult } from './npm-pack-result.mjs';
++import { preparePublicationCarrierManifest } from './publication-carrier-manifest.mjs';
++import { receiveQualifiedPublicationBuildProducts } from './source-build-qualification.mjs';
++const run = promisify(execFile);
++
++const sha256 = bytes => createHash('sha256').update(bytes).digest('hex');
++const decode = bytes => new TextDecoder('utf-8', { fatal: true }).decode(bytes);
++const fail = (message, code = 'artifact-member-receiving-refused') => Object.assign(new TypeError(message), { code });
++function fields(value, names, label) {
++  if (!value || typeof value !== 'object' || Array.isArray(value) || Object.keys(value).some(key => !names.includes(key)))
++    throw fail(label + ' requires its exact native receiving fields');
++}
++function bounds(value) {
++  const ceilings = { members: 100000, bytes: 256 * 1024 * 1024, archiveBytes: 64 * 1024 * 1024,
++    tarBytes: 256 * 1024 * 1024, metadataBytes: 1024 * 1024, sourcePaths: 1000000, sourceRepositories: 4096 };
++  fields(value, Object.keys(ceilings), 'limits');
++  for (const [name, ceiling] of Object.entries(ceilings)) if (!Number.isSafeInteger(value[name]) || value[name] < 1 || value[name] > ceiling)
++    throw fail('finite native receiving bound required: ' + name);
++  return value;
++}
++function literal(path) {
++  return typeof path === 'string' && path.length > 0 && !path.startsWith('/') && !/[\\\x00-\x1f\x7f]/u.test(path)
++    && !path.split('/').some(part => !part || part === '.' || part === '..');
++}
++function unambiguous(path) {
++  if (typeof path !== 'string' || path.includes('\ufffd')) throw fail('archive name encoding is not losslessly received', 'unread-archive-name-encoding');
++}
++function memberPath(path, directory) {
++  unambiguous(path);
++  if (!path.startsWith('package/')) throw fail('archive member is outside the single npm package container');
++  const local = path.slice('package/'.length);
++  if (directory && local === '') return '';
++  const selected = directory && local.endsWith('/') ? local.slice(0, -1) : local;
++  if (!literal(selected)) throw fail('unsafe or aliased archive member path');
++  return selected;
++}
++const member = (path, bytes, mode) => ({ path, kind: 'file', bytes: bytes.length, sha256: sha256(bytes), mode });
++const statIdentity = value => [value.dev, value.ino, value.size, value.mtimeNs, value.ctimeNs].map(String);
++
++/** The maintained parser owns TAR framing and interpretation. The original
++ * archive and expanded digest retain all bytes, including headers and padding.
++ * Its public eof event, not another TAR codec, determines trailing padding.
++ */
++export async function readRegistryArchiveMembers({ path, integrity, limits }) {
++  bounds(limits);
++  if (typeof path !== 'string' || !isAbsolute(path)) throw fail('exact absolute archive path required');
++  if (typeof integrity !== 'string' || !/^sha512-[A-Za-z0-9+/]{86}==$/u.test(integrity)
++    || Buffer.from(integrity.slice(7), 'base64').length !== 64
++    || Buffer.from(integrity.slice(7), 'base64').toString('base64') !== integrity.slice(7)) throw fail('canonical SHA512 archive identity required');
++  const namedBefore = await lstat(path, { bigint: true });
++  if (!namedBefore.isFile()) throw fail('archive pathname must name a regular file directly');
++  const file = await open(path, constants.O_RDONLY | constants.O_NOFOLLOW);
++  let bytes, before;
++  try {
++    before = await file.stat({ bigint: true });
++    if (JSON.stringify(statIdentity(before)) !== JSON.stringify(statIdentity(namedBefore))) throw fail('archive pathname changed before opening');
++    if (!before.isFile() || before.size > BigInt(limits.archiveBytes)) throw fail('archive must be a bounded regular file');
++    const buffer = Buffer.alloc(limits.archiveBytes + 1);
++    let length = 0;
++    while (length < buffer.length) {
++      const next = await file.read(buffer, length, buffer.length - length, null);
++      if (!next.bytesRead) break;
++      length += next.bytesRead;
++    }
++    if (length > limits.archiveBytes) throw fail('archive exceeded its bound during reading');
++    bytes = buffer.subarray(0, length);
++    if (JSON.stringify(statIdentity(await file.stat({ bigint: true }))) !== JSON.stringify(statIdentity(before))) throw fail('archive changed while reading');
++    const namedAfter = await lstat(path, { bigint: true });
++    if (!namedAfter.isFile() || JSON.stringify(statIdentity(namedAfter)) !== JSON.stringify(statIdentity(before))) throw fail('archive pathname changed while reading');
++  } finally { await file.close(); }
++  if ('sha512-' + createHash('sha512').update(bytes).digest('base64') !== integrity) throw fail('archive differs from its received SHA512 identity');
++  // Native bounded decompression precedes parsing; ignored/empty metadata cannot
++  // turn compressed size or payload-only accounting into an expansion allowance.
++  const tar = gunzipSync(bytes, { maxOutputLength: limits.tarBytes });
++  if (!tar.length || tar.length % 512 !== 0) throw fail('archive is not complete TAR blocks');
++  const parser = new Parser({ strict: true, maxMetaEntrySize: limits.metadataBytes });
++  const members = [], headers = [], names = new Map(), implicitParents = new Set();
++  let failure, eof = false, eofOffset = null, payloadBytes = 0, manifestText;
++  const refuse = error => { failure ??= error instanceof Error ? error : fail(String(error)); };
++  parser.on('error', refuse);
++  parser.on('warn', () => refuse(fail('archive parser reported an uninterpreted or invalid archive')));
++  parser.on('ignoredEntry', () => refuse(fail('archive contains an ignored or unsupported member')));
++  // This first native context does not guess at PAX/GNU encoding or override
++  // interpretation. Such inputs remain unread until a lossless maintained port
++  // is qualified; the pure model's other supplied-fact interfaces stay intact.
++  parser.on('meta', () => refuse(fail('archive extension interpretation is not received', 'unread-archive-extension')));
++  parser.on('eof', () => { eof = true; });
++  parser.on('entry', entry => {
++    try {
++      if (headers.length >= limits.members) throw fail('archive header/member bound exceeded');
++      const directory = entry.type === 'Directory';
++      if (!directory && !['File', 'OldFile'].includes(entry.type)) throw fail('archive requires regular files, not links or special members');
++      if (!Number.isSafeInteger(entry.mode) || entry.mode < 0 || entry.mode > 0o777
++        || !Number.isSafeInteger(entry.size) || entry.size < 0 || directory && entry.size !== 0) throw fail('archive member mode or size is invalid');
++      if (entry.path !== entry.header.path) throw fail('archive parser normalized an unreceived name');
++      const path = memberPath(entry.path, directory);
++      if (names.has(path)) throw fail('duplicate or aliased archive member');
++      for (let slash = path.indexOf('/'); slash >= 0; slash = path.indexOf('/', slash + 1)) {
++        const parent = path.slice(0, slash);
++        if (names.get(parent) === 'file') throw fail('archive file is also a parent directory');
++        implicitParents.add(parent);
++      }
++      if (!directory && implicitParents.has(path)) throw fail('archive file replaces a member directory');
++      names.set(path, directory ? 'directory' : 'file');
++      headers.push({ path: entry.path, type: entry.type, mode: entry.mode, size: entry.size });
++      if (directory) { entry.resume(); return; }
++      payloadBytes += entry.size;
++      if (!Number.isSafeInteger(payloadBytes) || payloadBytes > limits.bytes) throw fail('expanded member payload bound exceeded');
++      const hash = createHash('sha256'), manifest = [];
++      let length = 0;
++      entry.on('data', chunk => {
++        length += chunk.length; hash.update(chunk);
++        if (length > entry.size) refuse(fail('archive member body exceeded its header'));
++        if (path === 'package.json') manifest.push(chunk);
++      });
++      entry.on('end', () => {
++        if (length !== entry.size) { refuse(fail('archive member body differs from its header')); return; }
++        members.push({ path, kind: 'file', bytes: length, sha256: hash.digest('hex'), mode: entry.mode });
++        if (path === 'package.json') { try { manifestText = decode(Buffer.concat(manifest)); } catch (error) { refuse(error); } }
++      });
++    } catch (error) { refuse(error); }
++    entry.resume();
++  });
++  const finished = new Promise(resolve => parser.once('end', resolve));
++  // Feed bounded blocks and allow the parser's public events to settle. No TAR
++  // header, body-length or extension decoding is duplicated here.
++  for (let offset = 0; offset < tar.length; offset += 512) {
++    parser.write(tar.subarray(offset, offset + 512));
++    await turn();
++    if (failure) throw failure;
++    if (eof) {
++      eofOffset = offset + 512;
++      if (!tar.subarray(eofOffset).every(byte => byte === 0)) throw fail('archive has nonzero data after the parser end marker');
++      break;
++    }
++  }
++  parser.end(); await finished;
++  if (failure) throw failure;
++  if (!eof || manifestText === undefined) throw fail('archive end marker and exact package manifest are required');
++  const accountedEndOffset = headers.reduce((sum, header) => sum + 512 + Math.ceil(header.size / 512) * 512, 1024);
++  if (accountedEndOffset !== eofOffset) throw fail('native parser header accounting is incomplete', 'unread-archive-header-accounting');
++  return { archive: { integrity, manifestText, members }, observation: {
++    kind: 'npm.native-archive-members', path, integrity, archiveSHA256: sha256(bytes), compressedBytes: bytes.length,
++    expandedSHA256: sha256(tar), expandedBytes: tar.length, parserEndOffset: eofOffset, accountedEndOffset, headers,
++    parser: { name: 'tar', context: 'regular-npm-gzip-tar', extensions: 'unreceived', ambiguousNames: 'unreceived' },
++    extracted: false, installationClaimed: false,
++  } };
++}
++
++/** Native NPM owns its packlist and ignore/config precedence. No lifecycle,
++ * inherited credentials or user/global npm config enters this bounded observer.
++ */
++async function nativePackSelection(directory, manifest, scratchDirectory) {
++  const scratch = await mkdtemp(join(scratchDirectory, 'code-native-packlist-'));
++  try {
++    const userconfig = join(scratch, 'npmrc'), globalconfig = join(scratch, 'global-npmrc');
++    await writeFile(userconfig, '', { flag: 'wx', mode: 0o600 });
++    await writeFile(globalconfig, '', { flag: 'wx', mode: 0o600 });
++    const env = Object.fromEntries(['PATH', 'LANG', 'LC_ALL', 'TZ', 'SystemRoot', 'WINDIR'].filter(key => process.env[key] !== undefined).map(key => [key, process.env[key]]));
++    Object.assign(env, { HOME: scratch, TMPDIR: scratch, TEMP: scratch, TMP: scratch,
++      npm_config_userconfig: userconfig, npm_config_globalconfig: globalconfig, npm_config_cache: join(scratch, 'cache'),
++      npm_config_ignore_scripts: 'true', npm_config_update_notifier: 'false', npm_config_audit: 'false', npm_config_fund: 'false' });
++    const version = (await run('npm', ['--version'], { cwd: directory, env, timeout: 10000, maxBuffer: 65536 })).stdout.trim();
++    if (!/^\d+\.\d+\.\d+$/u.test(version)) throw fail('native npm version was not received');
++    const args = ['pack', '--dry-run', '--json', '--ignore-scripts', '--workspaces=false'];
++    const { stdout } = await run('npm', args, { cwd: directory, env, timeout: 60000, maxBuffer: 16 * 1024 * 1024 });
++    const packed = npmPackResult(stdout, manifest);
++    if (!Array.isArray(packed.files)) throw fail('native npm did not return its independently selected files');
++    return { files: packed.files, observation: { manager: 'npm', version, arguments: args,
++      stdoutSHA256: sha256(stdout), lifecycleScripts: false, userConfiguration: 'empty', globalConfiguration: 'empty' } };
++  } finally { await rm(scratch, { recursive: true, force: true }); }
++}
++
++/** In-process owning ports supply original Git/build/preparation evidence.
++ * JSON cannot assert a prepared manifest, build result or selected member set.
++ */
++export async function receiveSourceArchiveMembers(selection, { readSource, sourceDirectory, scratchDirectory, preparation, buildQualification, selectSourceFile, enterSourceDirectory, publisherConfiguration } = {}) {
++  fields(selection, ['registry', 'source', 'archive', 'limits', 'publisher'], 'source/archive selection');
++  fields(selection.source, ['repository', 'commit', 'scope'], 'source');
++  fields(selection.archive, ['path', 'integrity'], 'archive');
++  const { source, archive, limits, registry, publisher } = selection;
++  bounds(limits);
++  if (typeof readSource !== 'function') throw fail('original qualified source reader required');
++  if (typeof sourceDirectory !== 'string' || !isAbsolute(sourceDirectory)
++    || await realpath(sourceDirectory) !== sourceDirectory || !(await lstat(sourceDirectory)).isDirectory())
++    throw fail('actual unredirected source directory required');
++  if (typeof scratchDirectory !== 'string' || !isAbsolute(scratchDirectory) || await realpath(scratchDirectory) !== scratchDirectory) throw fail('explicit unredirected caller-owned scratch directory required');
++  const scratchStat = await lstat(scratchDirectory);
++  if (!scratchStat.isDirectory() || scratchStat.uid !== process.getuid() || (scratchStat.mode & 0o077) !== 0
++    || inside(sourceDirectory, scratchDirectory) || inside(scratchDirectory, sourceDirectory)) throw fail('private scratch must be separate from selected source');
++  if (typeof source.repository !== 'string' || !source.repository || !/^[a-f0-9]{40}$/u.test(source.commit)
++    || source.scope !== undefined && source.scope !== '' && !literal(source.scope)) throw fail('exact source repository/commit/package scope required');
++  const at = { repository: source.repository, commit: source.commit, scope: source.scope ?? '' };
++  const first = await readSource({ ...at, selectFile: path => path === 'package.json', enterDirectory: () => false });
++  if (!Array.isArray(first) || first.length !== 1 || first[0].path !== 'package.json' || !Buffer.isBuffer(first[0].bytes)) throw fail('exact source manifest required');
++  const declared = JSON.parse(decode(first[0].bytes));
++  if (selectSourceFile !== undefined && typeof selectSourceFile !== 'function'
++    || enterSourceDirectory !== undefined && typeof enterSourceDirectory !== 'function') throw fail('original source acquisition selectors must be functions');
++  // The owner selects a conservative package allowance, including native ignore
++  // inputs. Native NPM narrows it; archive names never define completeness.
++  const entries = await readSource({ ...at,
++    selectFile: path => selectSourceFile ? selectSourceFile(path, declared) : carrierSourceIncludes(declared, path),
++    enterDirectory: path => enterSourceDirectory ? enterSourceDirectory(path, declared) : carrierSourceIncludes(declared, path, { directory: true }),
++  });
++  if (!Array.isArray(entries) || entries.length > limits.sourcePaths) throw fail('source path bound exceeded');
++  const original = new Map(), witnesses = [], repositories = new Set();
++  let sourceBytes = 0;
++  for (const entry of entries) {
++    if (!literal(entry.path) || original.has(entry.path) || !['100644', '100755'].includes(entry.mode)
++      || !Buffer.isBuffer(entry.bytes) || !entry.source || typeof entry.source.repository !== 'string'
++      || !/^[a-f0-9]{40}(?:[a-f0-9]{24})?$/u.test(entry.source.commit) || !/^[a-f0-9]{40}(?:[a-f0-9]{24})?$/u.test(entry.source.object)) throw fail('source requires unique exact regular Git observations');
++    repositories.add(entry.source.repository + '\0' + entry.source.commit);
++    if (repositories.size > limits.sourceRepositories) throw fail('source repository bound exceeded');
++    sourceBytes += entry.bytes.length;
++    if (!Number.isSafeInteger(sourceBytes) || sourceBytes > limits.bytes) throw fail('source selected byte bound exceeded');
++    original.set(entry.path, { bytes: entry.bytes, mode: entry.mode === '100755' ? 0o755 : 0o644 });
++    witnesses.push({ path: entry.path, gitMode: entry.mode, gitSource: { ...entry.source }, bytes: entry.bytes.length, sha256: sha256(entry.bytes) });
++  }
++  const manifestEntry = original.get('package.json');
++  if (!manifestEntry) throw fail('exact source manifest was not received');
++  if (!manifestEntry.bytes.equals(first[0].bytes)) throw fail('manifest changed between original source reads');
++  const originalManifestText = decode(manifestEntry.bytes);
++  let manifestText = originalManifestText, projection;
++  if (preparation !== undefined) {
++    fields(preparation, ['published', 'history', 'repositoryFallback'], 'original publisher preparation');
++    projection = preparePublicationCarrierManifest({ ...at, manifestText, ...preparation });
++    manifestText = projection.preparedManifestText;
++  }
++  const manifest = JSON.parse(manifestText), actual = new Map(original);
++  if (publisherConfiguration !== undefined) {
++    fields(publisherConfiguration, ['omitProjectNpmrc'], 'original publisher configuration');
++    if (publisherConfiguration.omitProjectNpmrc !== true) throw fail('only the original clean-publisher npmrc omission is supported');
++    actual.delete('.npmrc');
++  }
++  const directoryManifestText = publisher === undefined ? manifestText : `${JSON.stringify({ ...manifest, gitHead: publisher.gitHead }, null, 2)}\n`;
++  actual.set('package.json', { ...manifestEntry, bytes: Buffer.from(directoryManifestText) });
++  const generated = buildQualification === undefined ? []
++    : await receiveQualifiedPublicationBuildProducts(buildQualification, { directory: sourceDirectory });
++  for (const entry of generated) {
++    if (!literal(entry.path) || actual.has(entry.path)) throw fail('qualified generated product replaces authored source');
++    actual.set(entry.path, entry);
++    witnesses.push({ path: entry.path, generatedSource: entry.source, bytes: entry.bytes.length, sha256: sha256(entry.bytes), mode: entry.mode });
++  }
++  if ([...actual.values()].reduce((sum, entry) => sum + entry.bytes.length, 0) > limits.bytes) throw fail('prepared source/product byte bound exceeded');
++  let visited;
++  async function receiveDirectory(directory) {
++    for (const entry of await readdir(directory, { withFileTypes: true })) {
++      const file = join(directory, entry.name), path = relative(sourceDirectory, file).split('\\').join('/');
++      if (path === '.git' || path === 'node_modules') continue;
++      if (++visited > limits.sourcePaths) throw fail('actual source directory path bound exceeded');
++      const stat = await lstat(file);
++      if (await realpath(file) !== file) throw fail('source directory has a redirected input: ' + path);
++      if (stat.isDirectory()) await receiveDirectory(file);
++      else {
++        const expected = actual.get(path);
++        if (!stat.isFile() || !expected || stat.size !== expected.bytes.length || (stat.mode & 0o111) !== (expected.mode & 0o111)
++          || !(await readFile(file)).equals(expected.bytes)) throw fail('source directory differs from original producer: ' + path);
++        observed.add(path);
++      }
++    }
++  }
++  let observed;
++  async function receiveInputs() {
++    visited = 0; observed = new Set(); await receiveDirectory(sourceDirectory);
++    for (const path of actual.keys()) if (!observed.has(path)) throw fail('original input absent from source directory: ' + path);
++  }
++  await receiveInputs();
++  const packlist = await nativePackSelection(sourceDirectory, JSON.parse(directoryManifestText), scratchDirectory);
++  await receiveInputs();
++  if (packlist.files.length > limits.members) throw fail('native selected member bound exceeded');
++  const selected = [], seen = new Set();
++  for (const entry of packlist.files) {
++    const expected = actual.get(entry.path);
++    if (!literal(entry.path) || seen.has(entry.path) || !expected || !Number.isSafeInteger(entry.size)
++      || entry.size !== expected.bytes.length) throw fail('native npm selected an unknown or ambiguous source member');
++    seen.add(entry.path);
++    const bytes = entry.path === 'package.json' ? Buffer.from(manifestText) : expected.bytes;
++    selected.push(member(entry.path, bytes, expected.mode));
++  }
++  if (!seen.has('package.json')) throw fail('native npm omitted the package manifest');
++  // Archive observation starts only after complete independent source selection.
++  const packed = await readRegistryArchiveMembers({ ...archive, limits });
++  const comparison = admitArtifactRelease({ stage: 'source-archive', registry,
++    limits: { members: limits.members, bytes: limits.bytes },
++    source: { repository: source.repository, commit: source.commit, manifestText, members: selected },
++    archive: packed.archive, ...(publisher === undefined ? {} : { publisher }) });
++  return { kind: 'npm.native-source-archive-receiving', version: 1, ok: comparison.ok,
++    source: { ...at, manifestSHA256: sha256(originalManifestText), members: witnesses,
++      selection: 'independent-native-npm-packlist', acquisition: selectSourceFile ? 'original-owner-selector' : 'carrier-source-allowance-with-native-ignore-inputs', publisherConfiguration: publisherConfiguration ?? null, packlist: packlist.observation,
++      requiredPaths: selected.map(entry => entry.path), ...(projection === undefined ? {} : { preparation: projection }) },
++    archive: packed.observation, comparison, installationClaimed: false, publicationClaimed: false };
++}
++
++const inside = (root, path) => { const part = relative(root, path); return part === '' || !isAbsolute(part) && part !== '..' && !part.startsWith('../'); };
++/** This port is called by the original successful installer before transfer.
++ * A serialized status/result cannot supply the retained in-process operation.
++ */
++export async function receiveInstalledArtifactMembers(selection, { nativeInstallation } = {}) {
++  fields(selection, ['registry', 'archive', 'limits', 'packageRoot', 'installationRoot', 'binDirectory', 'name', 'version'], 'installed selection');
++  fields(selection.archive, ['path', 'integrity'], 'archive');
++  bounds(selection.limits);
++  if (typeof nativeInstallation !== 'function') throw fail('original native installation receiving port required');
++  const operation = await nativeInstallation();
++  if (!operation || operation.installation?.kind !== 'native-package-installation' || operation.installation.status !== 0
++    || operation.installation.manager?.name !== 'pnpm' || operation.installation.manager.version !== '11.28.5'
++    || operation.provider?.shimTargetFormat !== 'pnpm11-cmd-shim-target') throw fail('qualified original PNPM11 native operation required');
++  const installationRoot = await realpath(selection.installationRoot), packageRoot = await realpath(selection.packageRoot),
++    binDirectory = await realpath(selection.binDirectory);
++  if (installationRoot !== selection.installationRoot || !inside(installationRoot, packageRoot)
++    || !inside(installationRoot, selection.binDirectory) || !inside(installationRoot, binDirectory)
++    || !(await lstat(packageRoot)).isDirectory() || !(await lstat(binDirectory)).isDirectory()) throw fail('installed package/bin directory leaves its original installation');
++  const packed = await readRegistryArchiveMembers({ ...selection.archive, limits: selection.limits });
++  const manifest = JSON.parse(packed.archive.manifestText);
++  if (manifest.name !== selection.name || manifest.version !== selection.version) throw fail('archive is not the exact native selected release');
++  if (packed.archive.members.some(entry => entry.path.startsWith('node_modules/'))) throw fail('bundled dependency installation is outside this native receiving context', 'unread-installed-bundle');
++  const members = [];
++  let visited = 0, bytes = 0, manifestText;
++  async function receive(directory) {
++    for (const entry of await readdir(directory, { withFileTypes: true })) {
++      const file = join(directory, entry.name), path = relative(packageRoot, file).split('\\').join('/');
++      if (path === 'node_modules') continue; // dependency environment is not this package's payload
++      if (++visited > selection.limits.sourcePaths) throw fail('installed package path bound exceeded');
++      if (!literal(path) || await realpath(file) !== file) throw fail('installed member is redirected or aliased');
++      const stat = await lstat(file);
++      if (stat.isDirectory()) await receive(file);
++      else {
++        if (!stat.isFile() || stat.size > selection.limits.bytes - bytes || members.length >= selection.limits.members) throw fail('installed member kind/byte bound exceeded');
++        const body = await readFile(file), after = await lstat(file);
++        if (stat.dev !== after.dev || stat.ino !== after.ino || stat.size !== after.size || stat.mtimeMs !== after.mtimeMs || stat.ctimeMs !== after.ctimeMs
++          || body.length !== stat.size) throw fail('installed member changed during observation');
++        bytes += body.length; members.push(member(path, body, stat.mode & 0o777));
++        if (path === 'package.json') manifestText = decode(body);
++      }
++    }
++  }
++  await receive(packageRoot);
++  const bins = [], registrations = [];
++  const declarations = typeof manifest.bin === 'string' ? [[manifest.name.split('/').at(-1), manifest.bin]] : Object.entries(manifest.bin ?? {});
++  for (const [name, declaredTarget] of declarations) {
++    if (!literal(name) || name.includes('/') || typeof declaredTarget !== 'string') throw fail('native bin registration requires a confined name/target');
++    const target = declaredTarget.replace(/^\.\//u, '');
++    if (!literal(target)) throw fail('native bin target escapes its package');
++    const actualTarget = await realpath(join(packageRoot, target));
++    if (!inside(packageRoot, actualTarget)) throw fail('native bin target leaves its package');
++    const observed = members.find(entry => entry.path === target), shim = join(binDirectory, name), stat = await lstat(shim);
++    if (!observed || !(observed.mode & 0o111)) throw fail('native declared bin target was not received executable');
++    if (stat.isSymbolicLink()) {
++      if (await realpath(shim) !== actualTarget) throw fail('native registered bin resolves to another target');
++      registrations.push({ name, kind: 'symbolic-link', path: shim, target: actualTarget });
++    } else {
++      if (!stat.isFile() || !(stat.mode & 0o111) || stat.size > 256 * 1024) throw fail('native registered shim is not a bounded executable file');
++      const body = await readFile(shim), after = await lstat(shim);
++      if (stat.dev !== after.dev || stat.ino !== after.ino || stat.size !== after.size || stat.mtimeMs !== after.mtimeMs || stat.ctimeMs !== after.ctimeMs) throw fail('native registered shim changed');
++      // PNPM11's own emitted and consumed metadata; no shell parsing/evaluation.
++      const targets = [...decode(body).matchAll(/^#\s*cmd-shim-target=(.+)$/gmu)].map(match => match[1]);
++      if (targets.length !== 1 || await realpath(isAbsolute(targets[0]) ? targets[0] : join(binDirectory, targets[0])) !== actualTarget)
++        throw fail('native PNPM shim metadata selects another or unread target');
++      registrations.push({ name, kind: 'pnpm11-cmd-shim-target', path: shim, target: actualTarget, sha256: sha256(body) });
++    }
++    bins.push({ name, target, registered: true, targetSHA256: observed.sha256 });
++  }
++  const installation = { ...operation.installation, artifactIntegrity: selection.archive.integrity,
++    package: manifest.name, version: manifest.version, installedManifestSHA256: sha256(manifestText), bins };
++  const comparison = admitArtifactRelease({ stage: 'archive-installed', registry: selection.registry, archive: packed.archive,
++    limits: { members: selection.limits.members, bytes: selection.limits.bytes }, installed: { manifestText, members }, installation });
++  return { kind: 'npm.native-installed-artifact-receiving', version: 1, ok: comparison.ok, archive: packed.observation,
++    installation: { root: installationRoot, packageRoot, provider: operation.provider, registrations,
++      requestSHA256: installation.requestSHA256, receipt: installation.receipt, receiptSHA256: installation.receiptSHA256 },
++    comparison, installationClaimed: comparison.ok, publicationClaimed: false };
++}
+--- a/src/carrier-surface.mjs
++++ b/src/carrier-surface.mjs
+@@ -65,6 +65,10 @@
+   if (typeof path !== "string" || !path || posix.isAbsolute(path) || path.includes("\\")
+     || path.split("/").some(part => ["", ".", "..", ".git", "node_modules"].includes(part))) return false;
+   if (!directory && !Array.isArray(manifest.files)) return true;
++  if (!directory && [".npmignore", ".gitignore"].includes(posix.basename(path))) {
++    const parent = posix.dirname(path);
++    return parent === "." || carrierSourceIncludes(manifest, parent, { directory: true });
++  }
+   if (!directory && /^(?:package\.json|(?:README|LICEN[CS]E|NOTICE)(?:\.[^/]*)?)$/iu.test(path)) return true;
+   const targets = directory ? packageExportTargets(manifest) : packageExportTargets({ main: manifest.main, bin: manifest.bin });
+   const named = [...(manifest.files ?? []), ...targets];
+--- a/src/native-registry-imports.mjs
++++ b/src/native-registry-imports.mjs
+@@ -41,11 +41,20 @@
+    seen.add(file);
+    const info=await stat(file);if(!info.isFile()||info.size>16*1024*1024)throw new Error('module must be a bounded regular file');
+    const extension=extname(file);
+-   if(extension==='.node'||extension==='.cjs'||(extension==='.js'&&await moduleType(file)!=='module')){reading.opaqueCommonJs++;continue;}
++   const type=extension==='.js'?await moduleType(file):undefined;
++   if(extension==='.node'||extension==='.cjs'||(extension==='.js'&&type==='commonjs')){reading.opaqueCommonJs++;continue;}
+    if(!['.mjs','.js','.ts','.mts','.json'].includes(extension))throw new Error('unsupported static Node module format');
+    const text=await readFile(file,'utf8');reading.bytesRead+=Buffer.byteLength(text);
+    if(reading.bytesRead>256*1024*1024){pending.length=0;throw new Error('declared native source bytes exceed their bound');}
+    if(extension==='.json'){JSON.parse(text);continue;}
++   if(extension==='.js'&&type!=='module'){
++    try{
++     // Compile only: Node's wrapper bindings distinguish ambiguous ESM syntax
++     // without evaluating application code or treating real CommonJS as ESM.
++     vm.compileFunction(text,['exports','require','module','__filename','__dirname'],{filename:file});
++     reading.opaqueCommonJs++;continue;
++    }catch(error){if(!(error instanceof SyntaxError))throw error;}
++   }
+    const source=['.ts','.mts'].includes(extension)?stripTypeScriptTypes(text,{mode:'strip',sourceUrl:file}):text;
+    const module=new vm.SourceTextModule(source,{identifier:file});reading.modules++;
+    for(const specifier of module.dependencySpecifiers){
+--- /dev/null
++++ b/src/publication-carrier-manifest.mjs
+@@ -0,0 +1,36 @@
++import { createHash } from "node:crypto";
++import { planLandedPackageRelease } from "./release-wave.mjs";
++const hash = text => createHash("sha256").update(text).digest("hex");
++function repositoryValue(value) {
++  const text = value => typeof value === "string" && value.length > 0 && Buffer.byteLength(value) <= 4096 && !/[\x00-\x1f\x7f]/u.test(value);
++  if (text(value)) return structuredClone(value);
++  if (!value || Object.getPrototypeOf(value) !== Object.prototype
++    || Object.keys(value).some(key => !["type", "url", "directory"].includes(key))
++    || !text(value.type) || !text(value.url) || value.directory !== undefined && !text(value.directory))
++    throw new TypeError("repositoryFallback requires a finite npm repository value");
++  return structuredClone(value);
++}
++/** A deterministic carrier producer, distinct from unchanged original Git bytes.
++ * The original caller acquires occupied versions/history and applies the result.
++ */
++export function preparePublicationCarrierManifest({ repository, commit, manifestText, published, history, repositoryFallback }) {
++  if (typeof repository !== "string" || !repository || Buffer.byteLength(repository) > 4096
++    || !/^[a-f0-9]{40}$/u.test(commit) || typeof manifestText !== "string" || Buffer.byteLength(manifestText) > 1024 * 1024)
++    throw new TypeError("exact bounded original source coordinates and manifest required");
++  const original = JSON.parse(manifestText);
++  if (!original || Object.getPrototypeOf(original) !== Object.prototype || typeof original.name !== "string" || !original.name)
++    throw new TypeError("original npm package manifest required");
++  const selection = planLandedPackageRelease({ declared: original.version, published, history });
++  const fallback = repositoryFallback === undefined ? undefined : repositoryValue(repositoryFallback);
++  const applied = !Object.hasOwn(original, "repository") && fallback !== undefined;
++  const prepared = { ...original, ...(applied ? { repository: fallback } : {}), version: selection.version };
++  const preparedManifestText = `${JSON.stringify(prepared, null, 2)}\n`;
++  return {
++    kind: "npm.publication-carrier.manifest-projection", version: 1,
++    source: { repository, commit, manifestSHA256: hash(manifestText) },
++    allocation: { declared: original.version, published: [...published], history },
++    selection, repositoryFallback: fallback === undefined ? null : { value: fallback, applied },
++    preparedManifestText, preparedManifestSHA256: hash(preparedManifestText),
++    publisher: { gitHead: commit, format: "json-2-newline" },
++  };
++}
+--- a/src/release-wave.mjs
++++ b/src/release-wave.mjs
+@@ -1,3 +1,4 @@
++import { isExactSemver } from "./dependency-policy.mjs";
+ const DEPENDENCY_FIELDS = Object.freeze([
+   "dependencies",
+   "devDependencies",
+@@ -161,3 +162,24 @@
+     changedNames: Object.freeze([...changed].sort()),
+   });
+ }
++
++
++/** Original landed-source allocation, shared with the networking publisher.
++ * The caller owns registry/history acquisition; this pure plan grants no PUT.
++ */
++export function planLandedPackageRelease({ declared, published, history }) {
++  if (!isExactSemver(declared)) throw new TypeError("landed publication source is not a SemVer version or supported development version");
++  if (!Array.isArray(published) || published.length > 100000 || published.some(version => !isExactSemver(version)))
++    throw new TypeError("landed publication requires a bounded exact occupied-version set");
++  if (!Number.isSafeInteger(history) || history < 1) throw new TypeError("landed publication requires a positive finite source history");
++  const core = declared.replace(/\+.*$/u, "");
++  const release = classifyReleaseVersion(core);
++  if (release.kind === "prerelease" && release.channel !== "dev")
++    throw new TypeError("landed publication requires stable or canonical development source");
++  if (!published.includes(declared)) return Object.freeze({ version: declared, tag: release.kind === "prerelease" ? "dev" : "latest", kind: "release" });
++  const occupied = new Set(published.map(version => version.replace(/\+.*$/u, "")));
++  const next = classifyReleaseVersion(nextPrereleaseVersion(core, "dev", occupied));
++  const sequence = Math.max(history, next.sequence);
++  if (!Number.isSafeInteger(sequence)) throw new TypeError("landed publication sequence exceeds safe integer bounds");
++  return Object.freeze({ version: `${next.base}-dev.${sequence}`, tag: "dev", kind: "dev" });
++}
+--- a/src/source-build-qualification.mjs
++++ b/src/source-build-qualification.mjs
+@@ -53,6 +53,7 @@
+   });
+ });
+ 
++const qualifiedProducts = new WeakMap();
+ const digest = bytes => createHash("sha256").update(bytes).digest("hex");
+ const literal = path => typeof path === "string" && /^[A-Za-z0-9_-][A-Za-z0-9_./-]*$/u.test(path)
+   && path.split("/").every(part => part && part !== "." && part !== "..");
+@@ -226,9 +227,11 @@
+       }
+     };
+     await receiveProducts(directory);
+-    return { producer: "@red-cup-engineering/npm-workspace-publication-service", operation: "qualify-source-publication-build", apply: false,
++    const qualification = { producer: "@red-cup-engineering/npm-workspace-publication-service", operation: "qualify-source-publication-build", apply: false,
+       sourceVersion: manifest.version, authoredFiles: authored.size, paths, bytes, steps: result.steps, developmentSourceQa: sourceQa,
+       scope: "Development source QA; canonical registry, final artifact and installed/runtime receiving remain separate" };
++    qualifiedProducts.set(qualification, { directory, products: [], qualificationSHA256: digest(JSON.stringify(qualification)) });
++    return qualification;
+   }
+   if (!authored.has("package-lock.json")) throw new TypeError("publication build requires a committed npm lock");
+   for (const path of [".pnpmfile.cjs", ".pnpmfile.mjs", "pnpm-workspace.yaml", "pnpm-lock.yaml", "yarn.lock"])
+@@ -302,6 +305,35 @@
+     files: receivedFiles.filter(path => nativePath.matchesGlob(path, pattern)) }));
+   for (const target of testTargets) if (target.files.length === 0)
+     throw new TypeError("publication build declared test target has no received file: " + target.pattern);
+-  return { producer: "@red-cup-engineering/npm-workspace-publication-service", operation: "qualify-source-publication-build", apply: false,
++  const qualification = { producer: "@red-cup-engineering/npm-workspace-publication-service", operation: "qualify-source-publication-build", apply: false,
+     configuration: recipe.configuration, sourceVersion: manifest.version, steps: result.steps, testTargets, authoredFiles: authored.size, paths, bytes };
+-}
++  const products = [];
++  for (const path of receivedFiles.filter(path => !authored.has(path))) {
++    const file = join(directory, path), stat = await lstat(file), body = await readFile(file);
++    if (!stat.isFile() || await realpath(file) !== file) throw new TypeError("qualified product became redirected");
++    products.push({ path, mode: stat.mode & 0o777, sha256: digest(body), bytes: body.length });
++  }
++  qualifiedProducts.set(qualification, { directory, products, qualificationSHA256: digest(JSON.stringify(qualification)) });
++  return qualification;
++}
++
++/** Only a retained result of this actual in-process producer can open this port.
++ * JSON reports preserve evidence but cannot manufacture qualified products.
++ */
++export async function receiveQualifiedPublicationBuildProducts(qualification, { directory }) {
++  const held = qualifiedProducts.get(qualification);
++  if (!held || held.directory !== directory || held.qualificationSHA256 !== digest(JSON.stringify(qualification))) throw new TypeError("original in-process Code build qualification required");
++  const provenance = { producer: qualification.producer, operation: qualification.operation,
++    sourceVersion: qualification.sourceVersion, qualificationSHA256: held.qualificationSHA256 };
++  const products = [];
++  for (const expected of held.products) {
++    const file = join(directory, expected.path), stat = await lstat(file);
++    if (!stat.isFile() || stat.size !== expected.bytes) throw new TypeError("qualified Code product size changed");
++    const bytes = await readFile(file);
++    if (!stat.isFile() || await realpath(file) !== file || (stat.mode & 0o777) !== expected.mode
++      || bytes.length !== expected.bytes || digest(bytes) !== expected.sha256)
++      throw new TypeError("qualified Code product changed: " + expected.path);
++    products.push({ path: expected.path, bytes, mode: expected.mode, source: { ...provenance } });
++  }
++  return products;
++}
+--- a/src/source-registry-closure.mjs
++++ b/src/source-registry-closure.mjs
+@@ -1,5 +1,5 @@
+-import { readFile, access, readdir, writeFile, mkdir, glob, cp, mkdtemp, rm, link, chmod, lstat, rename } from "node:fs/promises";
+-import { resolve, dirname, join, relative, sep } from "node:path";
++import { readFile, access, readdir, writeFile, mkdir, glob, cp, mkdtemp, rm, link, chmod, lstat, rename, realpath } from "node:fs/promises";
++import { resolve, dirname, join, relative, sep, isAbsolute, basename } from "node:path";
+ import { createHash } from "node:crypto";
+ import { execFile } from "node:child_process";
+ import { promisify, isDeepStrictEqual } from "node:util";
+@@ -10,6 +10,7 @@
+ import { packageExportSurfacePaths } from "./carrier-surface.mjs";
+ import { dependencySpecificationViolations } from "./dependency-policy.mjs";
+ import { npmPackResult } from "./npm-pack-result.mjs";
++import { receiveInstalledArtifactMembers, readRegistryArchiveMembers } from "./artifact-member-receiving.mjs";
+ 
+ const fields = ["dependencies", "devDependencies", "peerDependencies", "optionalDependencies"];
+ const local = /^(workspace:|file:|link:)/u;
+@@ -418,11 +419,54 @@
+   }
+ }
+ 
++/** Receive the actual selected PNPM entry and its original shim supplier.
++ * Arbitrary executable wrappers are not an authenticated manager identity.
++ */
++async function receiveArtifactPnpmProvider(program, arguments_, cwd) {
++  let entry = program === process.execPath && isAbsolute(arguments_[0] ?? "") ? arguments_[0] : program;
++  if (!isAbsolute(entry)) {
++    if (entry.includes("/")) throw new TypeError("artifact receiving requires an absolute native manager entry");
++    let selected;
++    for (const path of (process.env.PATH ?? "").split(":")) {
++      if (!isAbsolute(path)) continue;
++      try { await access(join(path, entry)); selected = join(path, entry); break; } catch {}
++    }
++    if (!selected) throw new TypeError("native manager executable is not resolved");
++    entry = selected;
++  }
++  entry = await realpath(entry);
++  let stat = await lstat(entry);
++  if (!stat.isFile() || stat.size > 1024 * 1024) throw new TypeError("native PNPM entry must be a bounded regular file");
++  let bytes = await readFile(entry);
++  const targets = [...bytes.toString("utf8").matchAll(/^#\s*cmd-shim-target=(.+)$/gmu)];
++  if (targets.length === 1) {
++    entry = await realpath(resolve(dirname(entry), targets[0][1])); stat = await lstat(entry);
++    if (!stat.isFile() || stat.size > 1024 * 1024) throw new TypeError("native PNPM shim target is not bounded");
++    bytes = await readFile(entry);
++  }
++  const root = dirname(dirname(entry)), manifestPath = join(root, "package.json");
++  const manifestBytes = await readFile(manifestPath), manifest = JSON.parse(manifestBytes);
++  if (manifest.name !== "pnpm" || manifest.version !== "11.28.5" || typeof manifest.bin?.pnpm !== "string"
++    || await realpath(join(root, manifest.bin.pnpm)) !== entry) throw new TypeError("artifact receiving requires qualified native PNPM11.28.5");
++  const distPath = join(root, "dist", "pnpm.mjs"), distStat = await lstat(distPath);
++  if (!distStat.isFile() || distStat.size > 64 * 1024 * 1024) throw new TypeError("native PNPM shim supplier exceeds its bound");
++  const dist = await readFile(distPath);
++  const version = (await run(program, [...arguments_, "--version"], { cwd, timeout: 10000, maxBuffer: 65536 })).stdout.trim();
++  if (version !== manifest.version) throw new TypeError("native selected PNPM version differs from its provider");
++  return { manager: { name: "pnpm", version, entrySHA256: digest(bytes) },
++    provider: { entry, entrySHA256: digest(bytes), manifestPath, manifestSHA256: digest(manifestBytes),
++      distPath, distSHA256: digest(dist), shimTargetFormat: "pnpm11-cmd-shim-target" } };
++}
++
+ /** Resolve each consumer independently through its configured registry, then
+  * receive a frozen installation. Fresh-release admission is limited to exact
+  * identities whose actual registry bytes were independently downloaded. */
+-export async function receiveSourceRegistryConsumers({ consumerPaths, releases, logDirectory, pnpm = "pnpm", pnpmArguments = [], onProgress = () => {}, readMemoryPressure = readOwnMemoryPressure, memoryPressureCeiling = 10, admissionTimeout = 1_800_000, installationTimeout = 300_000, pause = delay }) {
++export async function receiveSourceRegistryConsumers({ consumerPaths, releases, artifactReceiving = [], artifactReceiptDirectory, logDirectory, pnpm = "pnpm", pnpmArguments = [], onProgress = () => {}, readMemoryPressure = readOwnMemoryPressure, memoryPressureCeiling = 10, admissionTimeout = 1_800_000, installationTimeout = 300_000, pause = delay }) {
+   if (!Array.isArray(consumerPaths) || !Array.isArray(releases) || !logDirectory) throw new TypeError("explicit consumers, received releases and log directory required");
++  if (!Array.isArray(artifactReceiving) || artifactReceiving.length > 64) throw new TypeError("bounded native artifact receiving selection required");
++  if (artifactReceiving.length && (typeof artifactReceiptDirectory !== "string" || !isAbsolute(artifactReceiptDirectory)
++    || await realpath(artifactReceiptDirectory) !== artifactReceiptDirectory || !(await lstat(artifactReceiptDirectory)).isDirectory()))
++    throw new TypeError("native artifact receiving requires an explicit real owner receipt directory");
+   if (releases.some(release => release.artifactDownloaded !== true || !release.integrity?.startsWith("sha512-"))) throw new Error("release admission requires independent artifact receiving");
+   if (!(memoryPressureCeiling > 0 && memoryPressureCeiling <= 100)) throw new TypeError("memory pressure ceiling must be a stall percentage above zero");
+   if (!Number.isSafeInteger(installationTimeout) || installationTimeout < 1 || installationTimeout > 7_200_000)
+@@ -430,7 +474,7 @@
+   await mkdir(logDirectory, { recursive: true });
+   const admission = ["--config.minimumReleaseAgeStrict=true", ...releases.map(release => `--config.minimumReleaseAgeExclude=${release.name}@${release.version}`)];
+   const receipt = { kind: "npm.source-registry-closure.consumers", packages: [], refusals: [] };
+-  const admittedConsumers = [], selectedNames = new Set(), selectedPaths = new Set();
++  const admittedConsumers = [], selectedNames = new Set(), selectedPaths = new Set(), requestedNames = new Set();
+   // Admit the *whole* original consumer set and every committed lock before
+   // native installation of any member. A later invalid package cannot leave
+   // earlier members of the same enterprise receiving wave modified.
+@@ -444,6 +488,7 @@
+         !/^(?:@[a-z0-9._-]+\/[a-z0-9._-]+|[a-z0-9._-]+)$/u.test(manifest.name)||
+         selectedPaths.has(path)||selectedNames.has(manifest.name))
+         throw new TypeError("unique native consumer identity required");
++      requestedNames.add(manifest.name);
+       if (dependencySpecificationViolations(manifest).length)
+         throw new Error(`consumer declarations are not exact: ${manifest.name}`);
+       const minimumReleaseAge = manifest.registryConsumption?.minimumReleaseAge;
+@@ -454,19 +499,34 @@
+       const workspacePolicy = await nativeRegistryWorkspacePolicy(dir);
+       if (/(?:workspace:|\blink:|\bfile:)/u.test(committedLock))
+         throw new Error("committed consumer lock contains a local dependency binding");
++      const artifacts = artifactReceiving.filter(entry => entry.consumer === manifest.name);
++      const artifactNames = new Set();
++      for (const entry of artifacts) {
++        if (!entry || Object.keys(entry).some(key => !["consumer", "name", "version", "archive", "limits", "registry"].includes(key))
++          || artifactNames.has(entry.name) || manifest.dependencies?.[entry.name] !== entry.version
++          || !releases.some(release => release.name === entry.name && release.version === entry.version && release.integrity === entry.archive?.integrity))
++          throw new TypeError("artifact selection must match a unique exact received native consumer dependency");
++        if (typeof entry.registry !== "string" || !entry.registry) throw new TypeError("original artifact registry identity required");
++        const packed = await readRegistryArchiveMembers({ ...entry.archive, limits: entry.limits });
++        const packedManifest = JSON.parse(packed.archive.manifestText);
++        if (packedManifest.name !== entry.name || packedManifest.version !== entry.version)
++          throw new TypeError("received native artifact identifies another release");
++        artifactNames.add(entry.name);
++      }
+       selectedPaths.add(path);selectedNames.add(manifest.name);
+-      admittedConsumers.push({path,manifest,manifestText,dir,committedLock,workspacePolicy,minimumReleaseAge,
++      admittedConsumers.push({path,manifest,manifestText,dir,committedLock,workspacePolicy,minimumReleaseAge,artifacts,
+         log:join(logDirectory,`${manifest.name.replaceAll("/", "-").replace(/^@/u, "")}.log`)});
+     } catch (error) {
+       receipt.refusals.push({name:manifest?.name??null,path:path??null,
+         reason:error.code??error.message});
+     }
+   }
++  if (artifactReceiving.some(entry => !entry || !requestedNames.has(entry.consumer))) receipt.refusals.push({ name: null, path: null, reason: "artifact receiving names an unselected consumer" });
+   if (receipt.refusals.length) {
+     for (const refused of receipt.refusals) await onProgress(receipt, refused.name);
+     return receipt;
+   }
+-  for (const {path,manifest,manifestText,dir,committedLock,workspacePolicy,minimumReleaseAge,log} of admittedConsumers) {
++  for (const {path,manifest,manifestText,dir,committedLock,workspacePolicy,minimumReleaseAge,artifacts,log} of admittedConsumers) {
+     // PNPM command-line arrays REPLACE the committed workspace array. The
+     // consumer's authored policy already owns all its exact release exceptions;
+     // overlaying only this publication batch drops earlier qualified suppliers.
+@@ -475,6 +535,7 @@
+     const settings = minimumReleaseAge === undefined ? policyAdmission :
+       [...policyAdmission,`--config.minimumReleaseAge=${minimumReleaseAge}`];
+     let output = "", staging, previousInstallation;
++    const artifactReceipts = [];
+     try {
+       if(await receiveNativeRegistryLock(dir,manifest,{materialize:true})!==committedLock)
+         throw new Error('native frozen lock advanced after preflight');
+@@ -488,6 +549,8 @@
+       try{await cp(join(dir,'.npmrc'),join(staging,'.npmrc'));}catch(error){if(error.code!=='ENOENT')throw error;}
+       const args = ["--dir", staging, ...settings, "install", ...(workspacePolicy===null?["--ignore-workspace"]:[]), "--ignore-scripts",
+         "--reporter=append-only", "--frozen-lockfile"];
++      const artifactProvider = artifacts.length ? await receiveArtifactPnpmProvider(pnpm, pnpmArguments, staging) : null;
++      const nativeRequest = { program: pnpm, arguments: [...pnpmArguments, ...args], cwd: staging, timeout: installationTimeout, manifestSHA256: digest(manifestText), lockSHA256: digest(committedLock), workspacePolicySHA256: workspacePolicy === null ? null : digest(workspacePolicy) };
+       const installation = await receiveExclusively(async () => {
+         await awaitMemoryHeadroom({ readMemoryPressure, memoryPressureCeiling, admissionTimeout, pause });
+         return run(pnpm, [...pnpmArguments, ...args], {
+@@ -510,6 +573,25 @@
+       // Preserve the prior consumer until PNPM's native graph is present.
+       await access(join(staging,'node_modules','.modules.yaml'));
+       for(const dependency of Object.keys(manifest.dependencies??{}))await access(join(staging,'node_modules',dependency,'package.json'));
++      if (artifacts.length) {
++        const afterProvider = await receiveArtifactPnpmProvider(pnpm, pnpmArguments, staging);
++        if (!isDeepStrictEqual(artifactProvider, afterProvider)) throw new Error("native manager provider changed during installation");
++        const nativeRecord = { kind: "npm.native-frozen-installation", request: nativeRequest,
++          result: { code: 0, signal: null, stdout: installation.stdout, stderr: installation.stderr }, provider: artifactProvider };
++        const nativeText = `${JSON.stringify(nativeRecord, null, 2)}\n`;
++        const nativePath = join(artifactReceiptDirectory, basename(staging) + ".native-installation.json");
++        await writeFile(nativePath, nativeText, { flag: "wx", mode: 0o600 });
++        const nativeInstallation = async () => ({ installation: { kind: "native-package-installation", status: 0, platform: process.platform,
++          manager: artifactProvider.manager, requestSHA256: digest(JSON.stringify(nativeRequest)), receipt: nativePath, receiptSHA256: digest(nativeText),
++          manifestSHA256: digest(manifestText), lockSHA256: digest(committedLock), normalization: "posix-package-files-0644-0755" }, provider: artifactProvider.provider });
++        for (const entry of artifacts) {
++          const comparison = await receiveInstalledArtifactMembers({ registry: entry.registry, name: entry.name, version: entry.version,
++            archive: entry.archive, limits: entry.limits, packageRoot: join(staging, "node_modules", entry.name), installationRoot: staging,
++            binDirectory: join(staging, "node_modules", ".bin") }, { nativeInstallation });
++          artifactReceipts.push(comparison);
++          if (!comparison.ok) throw new Error("native installed artifact member receiving refused");
++        }
++      }
+       const modules=join(dir,'node_modules');
+       try{
+         if(!(await lstat(modules)).isDirectory())throw new Error('previous installation is not a local directory');
+@@ -522,13 +604,18 @@
+         manifestDigest: digest(manifestText), lockDigest: digest(committedLock),
+         workspacePolicyDigest: workspacePolicy===null?null:digest(workspacePolicy),
+         minimumReleaseAge: minimumReleaseAge ?? "pnpm-default", log,
++        ...(artifactReceipts.length ? { artifactReceiving: artifactReceipts } : {}),
+         ...(previousInstallation?{previousInstallation}:{} ) });
+     } catch (error) {
+       output += `${error.stdout ?? ""}${error.stderr ?? ""}\n${error.message}\n`;
+-      receipt.refusals.push({ name: manifest.name, path, log, reason: error.code ?? error.signal ?? "command-failed" });
++      receipt.refusals.push({ name: manifest.name, path, log, reason: error.code ?? error.signal ?? "command-failed", ...(artifactReceipts.length ? { artifactReceiving: artifactReceipts } : {}) });
+     }finally{if(staging)await rm(staging,{recursive:true,force:true});}
+     await writeFile(log, output);
+     await onProgress(receipt, manifest.name);
+   }
+   return receipt;
+ }
++
++export { preparePublicationCarrierManifest } from "./publication-carrier-manifest.mjs";
++
++export { receiveSourceArchiveMembers, readRegistryArchiveMembers, receiveInstalledArtifactMembers } from "./artifact-member-receiving.mjs";
+--- /dev/null
++++ b/test/artifact-native-receiving.test.mjs
+@@ -0,0 +1,215 @@
++import assert from 'node:assert/strict';
++import { test } from 'node:test';
++import { mkdtemp, mkdir, writeFile, readFile, rm, chmod, symlink, cp } from 'node:fs/promises';
++import { tmpdir } from 'node:os';
++import { join } from 'node:path';
++import { createHash } from 'node:crypto';
++import { gzipSync, gunzipSync } from 'node:zlib';
++import { create, Header } from 'tar';
++import { readRegistryArchiveMembers, receiveSourceArchiveMembers, receiveInstalledArtifactMembers } from '../src/artifact-member-receiving.mjs';
++import { planLandedPackageRelease } from '../src/release-wave.mjs';
++import { preparePublicationCarrierManifest } from '../src/publication-carrier-manifest.mjs';
++const limits = { members: 1000, bytes: 8 * 1024 * 1024, archiveBytes: 1024 * 1024, tarBytes: 16 * 1024 * 1024, metadataBytes: 65536, sourcePaths: 10000, sourceRepositories: 16 };
++const sri = bytes => 'sha512-' + createHash('sha512').update(bytes).digest('base64');
++async function fixture(t) {
++  const root = await mkdtemp(join(tmpdir(), 'artifact-native-test-'));
++  t.after(() => rm(root, { recursive: true, force: true }));
++  const source = join(root, 'source'); await mkdir(source);
++  const scratch = join(root, 'caller-owned-scratch'); await mkdir(scratch, { mode: 0o700 });
++  const manifest = { name: 'native-artifact-test', version: '0.1.0', files: ['src', 'package'], bin: { native: 'src/cli.mjs' } };
++  const text = JSON.stringify(manifest) + '\n';
++  await writeFile(join(source, 'package.json'), text); await mkdir(join(source, 'src')); await mkdir(join(source, 'package'));
++  await writeFile(join(source, 'src/cli.mjs'), '#!/usr/bin/env node\n'); await chmod(join(source, 'src/cli.mjs'), 0o755);
++  await writeFile(join(source, 'src/ignored.mjs'), 'ignored\n'); await writeFile(join(source, 'src/.npmignore'), 'ignored.mjs\n');
++  await writeFile(join(source, 'package/real.txt'), 'nested package directory\n');
++  async function pack(paths, options = {}) {
++    const path = join(root, `archive-${Math.random()}.tgz`);
++    await create({ cwd: source, file: path, prefix: 'package', gzip: true, portable: true, ...options }, paths);
++    return { path, integrity: sri(await readFile(path)), limits };
++  }
++  return { root, source, scratch, manifest, text, pack };
++}
++test('original landed allocation retains unoccupied, history and occupied dev sequence laws', () => {
++  assert.deepEqual(planLandedPackageRelease({ declared: '0.4.0', published: [], history: 2 }), { version: '0.4.0', tag: 'latest', kind: 'release' });
++  assert.deepEqual(planLandedPackageRelease({ declared: '0.4.0', published: ['0.4.0', '0.4.1-dev.7'], history: 4 }), { version: '0.4.1-dev.8', tag: 'dev', kind: 'dev' });
++  assert.equal(planLandedPackageRelease({ declared: '0.4.1-dev.2', published: ['0.4.1-dev.2'], history: 99 }).version, '0.4.1-dev.99');
++  assert.throws(() => planLandedPackageRelease({ declared: '0.4.1-rc.1', published: [], history: 1 }));
++  assert.throws(() => planLandedPackageRelease({ declared: '0.4.0', published: ['latest'], history: 1 }));
++});
++test('prepared carrier separates native source coordinates from finite repository fallback', () => {
++  const input = { repository: 'file:///original/mirror', commit: 'a'.repeat(40), manifestText: '{"name":"native","version":"0.1.0","scripts":{"test":"kept"}}\n', published: ['0.1.0'], history: 5, repositoryFallback: { type: 'git', url: 'https://example.invalid/owner/native.git' } };
++  const plan = preparePublicationCarrierManifest(input), value = JSON.parse(plan.preparedManifestText);
++  assert.equal(plan.source.repository, input.repository); assert.equal(value.version, '0.1.1-dev.5'); assert.equal(value.scripts.test, 'kept');
++  assert.deepEqual(value.repository, input.repositoryFallback); assert.equal(Object.hasOwn(value, 'gitHead'), false);
++  const original = { name: 'native', version: '0.1.0', repository: 'https://elsewhere.invalid/native' };
++  assert.equal(JSON.parse(preparePublicationCarrierManifest({ ...input, manifestText: JSON.stringify(original) }).preparedManifestText).repository, original.repository);
++  assert.throws(() => preparePublicationCarrierManifest({ ...input, repositoryFallback: { url: 'x', unexpected: true } }));
++});
++test('maintained native archive reader preserves a literal nested package directory and executable intent', async t => {
++  const f = await fixture(t), archive = await f.pack(['package.json', 'src/cli.mjs', 'package/real.txt']);
++  const result = await readRegistryArchiveMembers(archive);
++  assert.deepEqual(result.archive.members.map(e => e.path).sort(), ['package.json', 'package/real.txt', 'src/cli.mjs']);
++  assert.equal(result.archive.members.find(e => e.path === 'src/cli.mjs').mode & 0o111, 0o111);
++  assert.equal(result.observation.extracted, false); assert.equal(result.observation.installationClaimed, false);
++});
++test('native archive reader refuses duplicate paths, links and bounded expansion before extraction', async t => {
++  const f = await fixture(t);
++  await assert.rejects(readRegistryArchiveMembers(await f.pack(['package.json', 'package.json'])), /duplicate/);
++  await symlink('cli.mjs', join(f.source, 'src/link'));
++  await assert.rejects(readRegistryArchiveMembers(await f.pack(['package.json', 'src/link'])), /regular|unsupported/);
++  const archive = await f.pack(['package.json', 'src/cli.mjs']);
++  await assert.rejects(readRegistryArchiveMembers({ ...archive, limits: { ...limits, tarBytes: 512 } }));
++  await assert.rejects(readRegistryArchiveMembers({ ...archive, integrity: sri(Buffer.from('another')) }), /SHA512/);
++});
++test('native archive reader refuses parser metadata, truncated bodies, nonzero tails and ambiguous decoded names', async t => {
++  const f = await fixture(t);
++  const long = 'a'.repeat(150); await writeFile(join(f.source, long), 'long\n');
++  await assert.rejects(readRegistryArchiveMembers(await f.pack(['package.json', long])), /extension|uninterpreted/);
++  const replacement = 'x\ufffd'; await writeFile(join(f.source, replacement), 'ambiguous\n');
++  await assert.rejects(readRegistryArchiveMembers(await f.pack(['package.json', replacement])), /encoding|extension/);
++  const archive = await f.pack(['package.json', 'src/cli.mjs']), raw = gunzipSync(await readFile(archive.path));
++  const bad = gzipSync(Buffer.concat([raw, Buffer.from('tail') , Buffer.alloc(508)]));
++  const path = join(f.root, 'tail.tgz'); await writeFile(path, bad);
++  await assert.rejects(readRegistryArchiveMembers({ ...archive, path, integrity: sri(bad) }), /after.*end|uninterpreted/);
++  const truncated = gzipSync(raw.subarray(0, 1024)); await writeFile(path, truncated);
++  await assert.rejects(readRegistryArchiveMembers({ ...archive, path, integrity: sri(truncated) }));
++});
++test('unobserved zero-length metadata cannot hide in public parser event coverage', async t => {
++  const f = await fixture(t), archive = await f.pack(['package.json', 'src/cli.mjs']);
++  const header = new Header({ path: 'package/zero-meta', type: 'ExtendedHeader', size: 0, mode: 0o644 });
++  header.encode();
++  const bytes = gzipSync(Buffer.concat([header.block, gunzipSync(await readFile(archive.path))]));
++  const path = join(f.root, 'zero-meta.tgz'); await writeFile(path, bytes);
++  await assert.rejects(readRegistryArchiveMembers({ ...archive, path, integrity: sri(bytes) }), /account|extension|uninterpreted/);
++});
++// These tests exercise the original reader port with explicit supplied Git facts;
++// released CLI receiving additionally qualifies the actual selected Git provider.
++async function suppliedReader(f) {
++  const paths = ['package.json', 'src/cli.mjs', 'src/ignored.mjs', 'src/.npmignore', 'package/real.txt'];
++  const entries = await Promise.all(paths.map(async path => ({ path, mode: path === 'src/cli.mjs' ? '100755' : '100644', bytes: await readFile(join(f.source, path)), source: { repository: 'fixture', commit: 'a'.repeat(40), object: 'b'.repeat(40), path: 'scope/' + path } })));
++  return async ({ selectFile }) => entries.filter(entry => selectFile(entry.path));
++}
++test('native npm narrows the original source allowance using real ignore precedence, before archive names', async t => {
++  const f = await fixture(t), readSource = await suppliedReader(f), archive = await f.pack(['package.json', 'src/cli.mjs', 'package/real.txt']);
++  const result = await receiveSourceArchiveMembers({ registry: 'https://registry.example.invalid/', source: { repository: 'fixture', commit: 'a'.repeat(40), scope: 'scope' }, archive: { path: archive.path, integrity: archive.integrity }, limits }, { readSource, sourceDirectory: f.source, scratchDirectory: f.scratch });
++  assert.equal(result.ok, true); assert.ok(!result.source.requiredPaths.includes('src/ignored.mjs'));
++  assert.equal(result.source.members[0].path, 'package.json'); assert.equal(result.source.members[0].gitSource.path, 'scope/package.json');
++  assert.equal(result.installationClaimed, false);
++  const missing = await f.pack(['package.json', 'src/cli.mjs']);
++  const refusal = await receiveSourceArchiveMembers({ registry: 'https://registry.example.invalid/', source: { repository: 'fixture', commit: 'a'.repeat(40) }, archive: { path: missing.path, integrity: missing.integrity }, limits }, { readSource, sourceDirectory: f.source, scratchDirectory: f.scratch });
++  assert.equal(refusal.ok, false); assert.ok(refusal.comparison.refusal.findings.some(f => f.code === 'absent-from-archive' && f.path === 'package/real.txt'));
++});
++test('native source receiving refuses unknown source-directory inputs and JSON claimed build evidence', async t => {
++  const f = await fixture(t), readSource = await suppliedReader(f), archive = await f.pack(['package.json']);
++  const input = { registry: 'https://registry.example.invalid/', source: { repository: 'fixture', commit: 'a'.repeat(40) }, archive: { path: archive.path, integrity: archive.integrity }, limits };
++  await assert.rejects(receiveSourceArchiveMembers(input, { readSource, sourceDirectory: f.source, scratchDirectory: f.scratch, buildQualification: { outcome: 'source-build-qualified' } }), /in-process/);
++  await writeFile(join(f.source, 'unexpected.txt'), 'unreceived\n');
++  await assert.rejects(receiveSourceArchiveMembers(input, { readSource, sourceDirectory: f.source, scratchDirectory: f.scratch }), /differs.*producer/);
++});
++
++test('native dynamic preparation is recomputed from original Git manifest and occupied/history inputs', async t => {
++  const f = await fixture(t), readSource = await suppliedReader(f);
++  const commit = 'a'.repeat(40), preparation = { published: ['0.1.0'], history: 7, repositoryFallback: { type: 'git', url: 'https://example.invalid/native.git' } };
++  const producer = preparePublicationCarrierManifest({ repository: 'fixture', commit, manifestText: f.text, ...preparation });
++  const stamped = JSON.stringify({ ...JSON.parse(producer.preparedManifestText), gitHead: commit }, null, 2) + '\n';
++  await writeFile(join(f.source, 'package.json'), stamped);
++  const archive = await f.pack(['package.json', 'src/cli.mjs', 'package/real.txt']);
++  const input = { registry: 'https://registry.example.invalid/', source: { repository: 'fixture', commit }, archive: { path: archive.path, integrity: archive.integrity }, publisher: { gitHead: commit, format: 'json-2-newline' }, limits };
++  const received = await receiveSourceArchiveMembers(input, { readSource, sourceDirectory: f.source, scratchDirectory: f.scratch, preparation });
++  assert.equal(received.ok, true); assert.equal(received.source.preparation.selection.version, '0.1.1-dev.7');
++  await assert.rejects(receiveSourceArchiveMembers(input, { readSource, sourceDirectory: f.source, scratchDirectory: f.scratch, preparation: { ...preparation, history: 8 } }), /differs.*producer/);
++});
++
++test('ordinary native receive CLI uses the selected strict Git provider and exclusive output', async t => {
++  const { execFile } = await import('node:child_process'), { promisify } = await import('node:util');
++  const execute = promisify(execFile), f = await fixture(t);
++  const git = args => execute('git', ['-c', 'core.hooksPath=/dev/null', ...args], { cwd: f.source });
++  await git(['init', '--quiet']); await git(['add', '.']);
++  await git(['-c', 'user.name=Native Fixture', '-c', 'user.email=fixture@example.invalid', 'commit', '--quiet', '-m', 'native receiving fixture']);
++  const commit = (await git(['rev-parse', 'HEAD'])).stdout.trim(), archive = await f.pack(['package.json', 'src/cli.mjs', 'package/real.txt']);
++  const input = join(f.root, 'selection.json'), output = join(f.root, 'received.json');
++  await writeFile(input, JSON.stringify({ registry: 'https://registry.example.invalid/', source: { repository: f.source, commit },
++    sourceDirectory: f.source, scratchDirectory: f.scratch, archive: { path: archive.path, integrity: archive.integrity }, limits }));
++  const cli = new URL('../scripts/receive-packed-registry-artifact.mjs', import.meta.url);
++  const { stdout } = await execute(process.execPath, [cli.pathname, 'receive', input, output], { timeout: 60000 });
++  assert.equal(JSON.parse(stdout).ok, true); const held = await readFile(output);
++  await assert.rejects(execute(process.execPath, [cli.pathname, 'receive', input, output], { timeout: 60000 }), error => error.stderr.includes('EEXIST'));
++  assert.deepEqual(await readFile(output), held);
++  await symlink('cli.mjs', join(f.source, 'src/unexported-link')); await git(['add', '.']);
++  await git(['-c', 'user.name=Native Fixture', '-c', 'user.email=fixture@example.invalid', 'commit', '--quiet', '-m', 'unsupported selected kind']);
++  const later = (await git(['rev-parse', 'HEAD'])).stdout.trim();
++  const request = JSON.parse(await readFile(input)); request.source.commit = later; await writeFile(input, JSON.stringify(request));
++  await assert.rejects(execute(process.execPath, [cli.pathname, 'receive', input], { timeout: 60000 }), error => error.stderr.includes('not a supported regular file'));
++});
++
++test('ordinary receive CLI follows only selected declared exact child repositories', async t => {
++  const { execFile } = await import('node:child_process'), { promisify } = await import('node:util');
++  const execute = promisify(execFile), f = await fixture(t), child = join(f.root, 'child-owner');
++  await mkdir(child); await writeFile(join(child, 'child.mjs'), 'export const child = true;\n');
++  const git = (cwd, args) => execute('git', ['-c', 'core.hooksPath=/dev/null', ...args], { cwd });
++  const commit = async cwd => {
++    await git(cwd, ['-c', 'user.name=Native Fixture', '-c', 'user.email=fixture@example.invalid', 'commit', '--quiet', '-m', 'exact native child']);
++    return (await git(cwd, ['rev-parse', 'HEAD'])).stdout.trim();
++  };
++  await git(child, ['init', '--quiet']); await git(child, ['add', '.']); const childCommit = await commit(child);
++  f.manifest.files.push('services/selected/child.mjs');
++  await writeFile(join(f.source, 'package.json'), JSON.stringify(f.manifest) + '\n');
++  const declarations = selected => `[submodule "selected"]\n path = services/selected\n url = ${selected}\n[submodule "unselected"]\n path = unrelated\n url = ${join(f.root, 'must-not-acquire')}\n`;
++  await writeFile(join(f.source, '.gitmodules'), declarations(child));
++  await git(f.source, ['init', '--quiet']); await git(f.source, ['add', '.']);
++  await git(f.source, ['update-index', '--add', '--cacheinfo', `160000,${childCommit},services/selected`]);
++  await git(f.source, ['update-index', '--add', '--cacheinfo', `160000,${'f'.repeat(40)},unrelated`]);
++  const sourceCommit = await commit(f.source);
++  // The actual staged carrier contains selected inputs, while Git retains its
++  // declaration metadata and the unrelated link in the exact original source.
++  const stage = join(f.root, 'staged-source'); await mkdir(stage);
++  for (const path of ['package.json', 'src', 'package']) await cp(join(f.source, path), join(stage, path), { recursive: true });
++  for (const root of [f.source, stage]) {
++    await mkdir(join(root, 'services/selected'), { recursive: true });
++    await cp(join(child, 'child.mjs'), join(root, 'services/selected/child.mjs'));
++  }
++  const archive = await f.pack(['package.json', 'src/cli.mjs', 'package/real.txt', 'services/selected/child.mjs']);
++  const input = join(f.root, 'child-selection.json'), cli = new URL('../scripts/receive-packed-registry-artifact.mjs', import.meta.url);
++  const request = { registry: 'https://registry.example.invalid/', source: { repository: f.source, commit: sourceCommit },
++    sourceDirectory: stage, scratchDirectory: f.scratch, archive: { path: archive.path, integrity: archive.integrity }, limits };
++  await writeFile(input, JSON.stringify(request));
++  const { stdout } = await execute(process.execPath, [cli.pathname, 'receive', input], { timeout: 60000 });
++  const received = JSON.parse(stdout); assert.equal(received.ok, true);
++  const witness = received.source.members.find(entry => entry.path === 'services/selected/child.mjs');
++  assert.equal(witness.gitSource.repository, child); assert.equal(witness.gitSource.commit, childCommit);
++  assert.equal(witness.gitSource.path, 'child.mjs');
++  await writeFile(join(f.source, '.gitmodules'), declarations('../unqualified-relative-child'));
++  await git(f.source, ['add', '.gitmodules']); request.source.commit = await commit(f.source);
++  await writeFile(input, JSON.stringify(request));
++  await assert.rejects(execute(process.execPath, [cli.pathname, 'receive', input], { timeout: 60000 }), error => error.stderr.includes('child repository locator is outside'));
++});
++
++test('installed receiving refuses an outside bin directory before reading archive or registrations', async t => {
++  const f = await fixture(t), installationRoot = join(f.root, 'installation'), outside = join(f.root, 'outside-bins');
++  await mkdir(installationRoot); await mkdir(outside); await mkdir(join(installationRoot, 'package'));
++  await symlink(outside, join(installationRoot, '.bin'));
++  // Supplied in-process fixture facts exercise this negative boundary only;
++  // they make no claim that a historical native installation occurred.
++  const nativeInstallation = async () => ({ installation: { kind: 'native-package-installation', status: 0,
++    manager: { name: 'pnpm', version: '11.28.5' } }, provider: { shimTargetFormat: 'pnpm11-cmd-shim-target' } });
++  await assert.rejects(receiveInstalledArtifactMembers({ registry: 'https://registry.example.invalid/',
++    archive: { path: join(f.root, 'must-not-open.tgz'), integrity: sri(Buffer.alloc(0)) }, limits,
++    installationRoot, packageRoot: join(installationRoot, 'package'), binDirectory: join(installationRoot, '.bin'),
++    name: 'native-artifact-test', version: '0.1.0' }, { nativeInstallation }), /bin directory leaves/);
++});
++
++
++test('one invalid artifact preflight stays attached to its selected consumer and launches no installer', async t => {
++  const { receiveSourceRegistryConsumers } = await import('../src/source-registry-closure.mjs');
++  const f = await fixture(t), archive = await f.pack(['package.json']);
++  const manifest = { name: 'native-consumer-fixture', version: '0.0.0', private: true, dependencies: { 'native-artifact-test': '0.1.0' } };
++  await writeFile(join(f.source, 'package.json'), JSON.stringify(manifest));
++  await writeFile(join(f.source, 'pnpm-lock.yaml'), "lockfileVersion: '9.0'\n");
++  const released = { name: 'native-artifact-test', version: '0.1.0', integrity: archive.integrity, artifactDownloaded: true };
++  const result = await receiveSourceRegistryConsumers({ consumerPaths: [f.source], releases: [released],
++    artifactReceiving: [{ consumer: manifest.name, name: released.name, version: released.version,
++      archive: { path: archive.path, integrity: archive.integrity }, limits: { ...limits, archiveBytes: 1 }, registry: 'https://registry.example.invalid/' }],
++    artifactReceiptDirectory: f.root, logDirectory: join(f.root, 'logs'), pnpm: '/must-not-launch-a-native-installer' });
++  assert.equal(result.packages.length, 0); assert.equal(result.refusals.length, 1);
++  assert.equal(result.refusals[0].name, manifest.name);
++});
+--- a/test/carrier-surface.test.mjs
++++ b/test/carrier-surface.test.mjs
+@@ -1,6 +1,6 @@
+ import assert from "node:assert/strict";
+ import { test } from "node:test";
+-import { carrierSurfaceViolations, packageExportSurfacePaths } from "../src/carrier-surface.mjs";
++import { carrierSourceIncludes, carrierSurfaceViolations, packageExportSurfacePaths } from "../src/carrier-surface.mjs";
+ 
+ test("receiving declarations require exact carried files without becoming exports", () => {
+   const manifest = { exports: "./index.mjs", receivingTests: ["test/one.mjs", "test/two.mjs"] };
+@@ -122,3 +122,16 @@
+   ]);
+   assert.deepEqual(carrierSurfaceViolations({ exports: { "./pair/*": "./dist/*/copy-*.mjs" } }, ["dist/one/copy-one.mjs"]), []);
+ });
++
++
++test("shared carrier allowance includes only relevant native ignore inputs without widening gitlink entry", () => {
++  const manifest = { files: ["lib/foo/src"] };
++  for (const path of [".npmignore", ".gitignore", "lib/.npmignore", "lib/foo/.gitignore", "lib/foo/src/.npmignore"])
++    assert.equal(carrierSourceIncludes(manifest, path), true, path);
++  for (const path of ["docs/.npmignore", "lib/other/.gitignore", "lib/foo/other/.npmignore"])
++    assert.equal(carrierSourceIncludes(manifest, path), false, path);
++  assert.equal(carrierSourceIncludes(manifest, "lib", { directory: true }), true);
++  assert.equal(carrierSourceIncludes(manifest, "docs", { directory: true }), false);
++  assert.equal(carrierSourceIncludes({ files: ["src"], exports: { ".": "./services/library/index.mjs" } }, "services/library/.npmignore"), true);
++  assert.equal(carrierSourceIncludes({ files: ["src"] }, "services/unrelated", { directory: true }), false);
++});
+--- /dev/null
++++ b/test/native-registry-imports.test.mjs
+@@ -0,0 +1,94 @@
++import assert from 'node:assert/strict';
++import {execFile} from 'node:child_process';
++import {mkdir,mkdtemp,readFile,rm,writeFile} from 'node:fs/promises';
++import {tmpdir} from 'node:os';
++import {join} from 'node:path';
++import {promisify} from 'node:util';
++import {test} from 'node:test';
++
++const execute=promisify(execFile);
++const reader=new URL('../src/native-registry-imports.mjs',import.meta.url).href;
++async function fixture(t,source,manifest={}){
++ const root=await mkdtemp(join(tmpdir(),'native-import-syntax-'));
++ t.after(()=>rm(root,{recursive:true,force:true}));
++ await mkdir(join(root,'node_modules'));
++ await writeFile(join(root,'package.json'),JSON.stringify(manifest));
++ await writeFile(join(root,'main.js'),source);
++ return root;
++}
++async function inspect(root){
++ const program=`import {readNativeRegistryImports} from ${JSON.stringify(reader)};
++ console.log(JSON.stringify(await readNativeRegistryImports({root:process.argv[1],entrances:['main.js']})));`;
++ const result=await execute(process.execPath,['--experimental-vm-modules',
++  '--experimental-import-meta-resolve','--input-type=module','-e',program,root]);
++ return JSON.parse(result.stdout);
++}
++
++test('untyped static ESM follows missing imports as native Node does',async t=>{
++ const root=await fixture(t,"import './missing.mjs';\nthrow new Error('must not evaluate');\n");
++ const reading=await inspect(root);
++ assert.equal(reading.modules,1);
++ assert.equal(reading.opaqueCommonJs,0);
++ assert.equal(reading.findings.length,1);
++ assert.equal(reading.findings[0].source,'./missing.mjs');
++ // The oracle executes only this controlled fixture. Missing linkage prevents
++ // evaluation, and distinguishes native ESM detection from CommonJS rejection.
++ await assert.rejects(execute(process.execPath,[join(root,'main.js')]),error=>
++  error.stderr.includes('ERR_MODULE_NOT_FOUND')&&!error.stderr.includes('must not evaluate'));
++});
++
++test('untyped ESM re-exports traverse actual files without evaluation',async t=>{
++ const root=await fixture(t,"export * from './child.js';\nthrow new Error('must not evaluate');\n");
++ await writeFile(join(root,'child.js'),"import './absent.mjs';\n");
++ const reading=await inspect(root);
++ assert.equal(reading.modules,2);
++ assert.equal(reading.findings.length,1);
++ assert.equal(reading.findings[0].source,'./absent.mjs');
++});
++
++test('all native ambiguous ESM syntax is parsed without running it',async t=>{
++ for(const source of ['export const value=1;', 'void import.meta.url;',
++  'await Promise.resolve();', 'const require=1;', 'const module=1;',
++  'const exports=1;', 'const __dirname=1;', 'const __filename=1;']){
++  const root=await fixture(t,source+"\nthrow new Error('must not evaluate');\n");
++  const reading=await inspect(root);
++  assert.equal(reading.modules,1,source);
++  assert.equal(reading.opaqueCommonJs,0,source);
++  assert.deepEqual(reading.findings,[],source);
++ }
++});
++
++test('real CommonJS, wrapper return and hashbangs stay opaque',async t=>{
++ for(const source of ["module.exports=require('./uninspected.cjs');",
++  "return; module.exports=1;", "#!/usr/bin/env node\nmodule.exports=1;",
++  "void import('./dynamic.mjs');"]){
++  const root=await fixture(t,source+"\nthrow new Error('must not evaluate');\n");
++  const reading=await inspect(root);
++  assert.equal(reading.modules,0,source);
++  assert.equal(reading.opaqueCommonJs,1,source);
++  assert.deepEqual(reading.findings,[],source);
++ }
++});
++
++test('explicit CommonJS remains opaque and invalid ambiguous source refuses',async t=>{
++ const explicit=await fixture(t,"import './not-inspected.mjs';",{type:'commonjs'});
++ const common=await inspect(explicit);
++ assert.equal(common.opaqueCommonJs,1);
++ assert.deepEqual(common.findings,[]);
++ const invalid=await fixture(t,'export const = ;');
++ const refused=await inspect(invalid);
++ assert.equal(refused.findings.length,1);
++ assert.equal(refused.findings[0].code,'MODULE_SOURCE_REFUSED');
++});
++
++test('nearest explicit package type remains authoritative',async t=>{
++ const root=await fixture(t,"import './nested/main.js';",{type:'module'});
++ await mkdir(join(root,'nested'));
++ await writeFile(join(root,'nested','package.json'),JSON.stringify({type:'commonjs'}));
++ await writeFile(join(root,'nested','main.js'),"require('./opaque.cjs');");
++ const reading=await inspect(root);
++ assert.equal(reading.modules,1);
++ assert.equal(reading.opaqueCommonJs,1);
++ assert.deepEqual(reading.findings,[]);
++ assert.equal(await readFile(join(root,'nested','main.js'),'utf8'),"require('./opaque.cjs');");
++});
+--- a/test/produce-registry-runtime.test.mjs
++++ b/test/produce-registry-runtime.test.mjs
+@@ -84,3 +84,22 @@
+   );
+   await assert.rejects(stat(destination), { code: "ENOENT" });
+ });
++
++test("runtime production refuses missing static imports in an untyped JS entrance", async t => {
++  const { source, destination, receiving } = await fixture(t);
++  const manifestPath = join(source, "package.json");
++  const manifest = JSON.parse(await readFile(manifestPath, "utf8"));
++  manifest.files = ["main.js"];
++  manifest.registryConsumption = { nodeEntrances: ["./main.js"] };
++  const bytes = Buffer.from(JSON.stringify(manifest) + "\n");
++  await writeFile(manifestPath, bytes);
++  receiving.packages[0].manifestDigest = digest(bytes);
++  await writeFile(join(source, "main.js"), "import './missing.mjs';\nthrow new Error('must not evaluate');\n");
++  await assert.rejects(
++    produceRegistryRuntime({ consumerPath: source, receiving, destination }),
++    /declared Node composition has unresolved static imports/,
++  );
++  await assert.rejects(stat(destination), { code: "ENOENT" });
++  assert.equal((await stat(join(source, "node_modules"))).isDirectory(), true);
++  assert.deepEqual(await readFile(manifestPath), bytes);
++});

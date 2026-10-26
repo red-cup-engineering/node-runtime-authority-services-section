@@ -1,0 +1,120 @@
+{
+  "type": "SourceOnlyRetainedOriginalNativeGraphReuseCandidate",
+  "originalInput": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/pr65-native-qualification-worker-input-exact-supplier-age-received.json",
+  "frozenLock": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-code-development-system-services-section/apps/computer-code-development-engine/data/state/source-receiving-state/pr65-native-3b86651-20261019-transport-received/source/pnpm-lock.yaml",
+  "nativeLock": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-code-development-system-services-section/apps/computer-code-development-engine/data/state/source-receiving-state/pr65-native-3b86651-20261019-transport-received/source/node_modules/.pnpm/lock.yaml",
+  "locksEqual": true,
+  "lockSHA256": "0eedf26a128b757f6429d64fdf2323a96b1c4fe0d11fba8929b7574be976ce67",
+  "retainedRunner": {
+    "root": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-code-development-system-services-section/apps/computer-code-development-engine/data/state/source-receiving-state/pr65-native-3b86651-20261019-transport-received/source/node_modules/.pnpm/@red-cup-engineering+jsnode-package-services-section@0.4.0/node_modules/@red-cup-engineering/jsnode-package-services-section",
+    "version": "0.4.0",
+    "manifestSHA256": "43419c0a5b432c1e3102b6623d3efab026c060a32872889128a470d602281176"
+  },
+  "candidateRunner": {
+    "version": "0.5.0",
+    "sourceArchive": "Actual received .5.0 110members, no native installation"
+  },
+  "directProviderComparison": [
+    {
+      "name": "@red-cup-engineering/computer-filepath-engineering-services-section",
+      "required": "0.1.0",
+      "resolved": false
+    },
+    {
+      "name": "@red-cup-engineering/computer-text-content-engineering-services-section",
+      "required": "0.1.0",
+      "resolved": false
+    },
+    {
+      "name": "@red-cup-engineering/cryptographic-computer-data-engineering-services-section",
+      "required": "0.3.1",
+      "resolved": false
+    },
+    {
+      "name": "@red-cup-engineering/eavt-services-section",
+      "required": "0.11.0",
+      "resolved": false
+    },
+    {
+      "name": "@red-cup-engineering/execute-javascript-node-command-service",
+      "required": "0.3.1",
+      "resolved": false
+    },
+    {
+      "name": "@red-cup-engineering/computer-file-engineering-services-section",
+      "required": "0.4.0",
+      "resolved": false
+    },
+    {
+      "name": "@red-cup-engineering/inspect-installed-npm-package-service",
+      "required": "0.3.2",
+      "resolved": false
+    },
+    {
+      "name": "@red-cup-engineering/javascript-node-services-section",
+      "required": "0.3.2",
+      "resolved": false
+    },
+    {
+      "name": "@red-cup-engineering/json-schema-services-section",
+      "required": "0.5.0",
+      "resolved": false
+    },
+    {
+      "name": "@red-cup-engineering/json-services-section",
+      "required": "0.4.0",
+      "resolved": false
+    },
+    {
+      "name": "@red-cup-engineering/jsonl-services-section",
+      "required": "0.1.0",
+      "resolved": false
+    },
+    {
+      "name": "@red-cup-engineering/npm-package-services-section",
+      "required": "0.1.2",
+      "resolved": false
+    },
+    {
+      "name": "@red-cup-engineering/npm-workspace-publication-service",
+      "required": "0.14.0",
+      "resolved": false
+    },
+    {
+      "name": "@red-cup-engineering/read-javascript-file-export-documentation-service",
+      "required": "0.1.5",
+      "resolved": false
+    },
+    {
+      "name": "@red-cup-engineering/uri-services-section",
+      "required": "0.1.1",
+      "resolved": false
+    },
+    {
+      "name": "@red-cup-engineering/yaml-frontmatter-codec-service",
+      "required": "0.1.7",
+      "resolved": false
+    },
+    {
+      "name": "@red-cup-engineering/computer-data-engineering-services-section",
+      "required": "0.7.0",
+      "resolved": false
+    },
+    {
+      "name": "@red-cup-engineering/computer-content-address-engineering-services-section",
+      "required": "0.2.0",
+      "resolved": false
+    },
+    {
+      "name": "@red-cup-engineering/npm-package-version-admission-service",
+      "required": "0.2.0",
+      "resolved": false
+    },
+    {
+      "name": "@red-cup-engineering/npm-scoped-package-name-formation-service",
+      "required": "0.3.0",
+      "resolved": false
+    }
+  ],
+  "grade": "Readonly actual path/manifest identity comparison against retained previously qualified graph, not a qualified new .5.0 provider union or complete transitive/source/API correspondence. No copying/linking/install/old-carrier execution."
+}

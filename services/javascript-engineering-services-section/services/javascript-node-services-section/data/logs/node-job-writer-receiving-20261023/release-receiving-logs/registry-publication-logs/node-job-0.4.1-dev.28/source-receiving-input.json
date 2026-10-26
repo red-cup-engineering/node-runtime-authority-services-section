@@ -1,0 +1,23 @@
+{
+  "registry": "https://registry.561.group/",
+  "source": {
+    "repository": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/data/logs/node-job-writer-receiving-20261023/source",
+    "commit": "e01d3e27028045feceaf4c57514fff5397c59bf3",
+    "scope": ""
+  },
+  "archive": {
+    "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/data/logs/node-job-writer-receiving-20261023/source/data/logs/registry-publication-logs/node-job-0.4.1-dev.28/artifacts/sha512/1c58ad98246ddd1c950f1a189fc2f8583216f6d95e6a2a761eee2a69681577f84e244c685406d9460ec56d1c730e8005ee442f7d7f1f1276b8b8c69ad136880b.tgz",
+    "integrity": "sha512-HFitmCRt3RyVDxoYn8L4WDIW9tleaip2Hu4qaWgVd/hOJExoVAbZRg7FbRxzDoAF7kQvfX8fEna4uMaa0TaICw=="
+  },
+  "limits": {
+    "members": 1000,
+    "bytes": 16777216,
+    "archiveBytes": 8388608,
+    "tarBytes": 16777216,
+    "metadataBytes": 1048576,
+    "sourcePaths": 10000,
+    "sourceRepositories": 1
+  },
+  "sourceDirectory": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/data/logs/node-job-writer-receiving-20261023/source/data/logs/registry-publication-logs/node-job-0.4.1-dev.28/selected-source",
+  "scratchDirectory": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/data/logs/node-job-writer-receiving-20261023/source/data/logs/registry-publication-logs/node-job-0.4.1-dev.28/source-receiving"
+}

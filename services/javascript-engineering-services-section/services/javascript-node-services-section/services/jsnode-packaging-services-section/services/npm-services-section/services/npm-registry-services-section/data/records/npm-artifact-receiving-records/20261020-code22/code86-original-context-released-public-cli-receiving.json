@@ -1,0 +1,1069 @@
+{
+  "label": "code86-original-context",
+  "name": "@red-cup-engineering/npm-workspace-publication-service",
+  "version": "0.14.21",
+  "source": {
+    "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+    "commit": "3481b324ef02aa12871b358dd2a838782557a9d8"
+  },
+  "archive": "/var/tmp/cairn-provider-source-qualification-20261020/upstream-artifacts/code-0.14.21.tgz",
+  "integrity": "sha512-GdCmqzzplSTozYq/Ai1lgzEp9LtYL/WYt2LWNJU8/jsw/OUfylXaP99lD+thYVpicWCDyr4y4NfvVZ8HntmAsQ==",
+  "archiveMembers": 86,
+  "input": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-historical-cli-original-context/code86-original-context/receive-input.json",
+  "inputSHA256": "565bd1fe7b9ec132cd4b8f2de816d5798044a57011b523c0d58f27939d213795",
+  "receipt": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261020-code22/code86-original-context-released-public-cli.json",
+  "receiptSHA256": "31f67670fd2437c4d9c2b89881402d37f026a7270ebfa1a30b9d336253f8d73d",
+  "sourceMembers": [
+    {
+      "path": ".gitignore",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": ".gitignore",
+        "object": "c2658d7d1b31848c3b71960543cb0368e56cd4c7"
+      },
+      "bytes": 14,
+      "sha256": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97"
+    },
+    {
+      "path": "package.json",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "package.json",
+        "object": "10c2de1aee1d92cdd05943fabcc19155ede3b1e1"
+      },
+      "bytes": 6849,
+      "sha256": "138f0d9e994f3fdfda90e72eeae14457a8f1813b161bc70849451ba656026fcf"
+    },
+    {
+      "path": "README.md",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "README.md",
+        "object": "2d065e318d357042b631fddda092f4d7bd71d6dc"
+      },
+      "bytes": 34463,
+      "sha256": "54d0b2422e1876f7939aa75b4b6b0ea0f09830bdedd1277e38990fb6caa9b310"
+    },
+    {
+      "path": "scripts/assay-carrier-module-graph.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/assay-carrier-module-graph.mjs",
+        "object": "82166932976ca22755622f9f8b8c0fddb1635d31"
+      },
+      "bytes": 11960,
+      "sha256": "f5202d620aec82b488278b7b3f48f0862d62923a4e6f3b044c18ee6d8a059f12"
+    },
+    {
+      "path": "scripts/assay-npm-package-publication.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/assay-npm-package-publication.mjs",
+        "object": "6481c7931fb65f868c13e61c435b4ddeef59f766"
+      },
+      "bytes": 8967,
+      "sha256": "3919915af6212f41008ba83d8c1877a4b4ff655ef4fd0ecf6bdf2cd0a498050c"
+    },
+    {
+      "path": "scripts/audit-owner-package-namespaces.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/audit-owner-package-namespaces.mjs",
+        "object": "f8ddf827181949cfc88dc16f3737658a6404bfce"
+      },
+      "bytes": 894,
+      "sha256": "3a82d621ec1a4f9fcff86895ce305499d75595a16b256090637779b9fc85bb66"
+    },
+    {
+      "path": "scripts/audit-registry-carrier-imports.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/audit-registry-carrier-imports.mjs",
+        "object": "31d36b91c4eabe90057ff648cd1d97ae2bd14e84"
+      },
+      "bytes": 844,
+      "sha256": "ee7c71e8cea9299450094170e3bd07ed797457efa5f55659816a9bdf27cd8ddd"
+    },
+    {
+      "path": "scripts/audit-release-truth.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/audit-release-truth.mjs",
+        "object": "c440d987a8d1499426c0c3a0655cdaa24b261308"
+      },
+      "bytes": 2268,
+      "sha256": "c78ca52a84acd7435f89250d3eb244406861ab70ae62de638b84f1f9ba44b8e4"
+    },
+    {
+      "path": "scripts/audit-semantic-version-policy.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/audit-semantic-version-policy.mjs",
+        "object": "dd85b68dc2ee1f780a20c5e63e1d1862c0c54180"
+      },
+      "bytes": 1185,
+      "sha256": "c5faac7a39fa4a028ebde89c0033995d118bce10d5327b3ddb332e9ed361e627"
+    },
+    {
+      "path": "scripts/cache-verdaccio-upstream-release.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/cache-verdaccio-upstream-release.mjs",
+        "object": "319b534c481934f5c8d8ada9cd21472b6529a69e"
+      },
+      "bytes": 1167,
+      "sha256": "e127002ddc2bda62d7d6263f78670626c6c4acf7079fe8680b9d627950b36f5e"
+    },
+    {
+      "path": "scripts/form-node-runtime-provider-catalog.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/form-node-runtime-provider-catalog.mjs",
+        "object": "9df7256160dbc2e19ae118e1d69934f4bf468dec"
+      },
+      "bytes": 878,
+      "sha256": "342ed034a61e5fff3b6cd91655f02462a5fff4f49dbd255b864a18c0b9c8af33"
+    },
+    {
+      "path": "scripts/pack-source-registry-closure.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/pack-source-registry-closure.mjs",
+        "object": "d8ceb83015dd2002636bafba859cb4f35cc79836"
+      },
+      "bytes": 1170,
+      "sha256": "a63c9b051c5d9523467a7107ea0803453428b905237dd9604cf0c3ef540f05a0"
+    },
+    {
+      "path": "scripts/pin-exact-dependencies.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/pin-exact-dependencies.mjs",
+        "object": "df9e6098e64a88c175aea9485aced1cfc0898ff1"
+      },
+      "bytes": 3150,
+      "sha256": "6a03413ccd2640418a340df2adb4b820e14cf62f7b02e24ff6c972e465127b31"
+    },
+    {
+      "path": "scripts/plan-source-registry-closure.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/plan-source-registry-closure.mjs",
+        "object": "c0fc09d1f3843d51eb92e1b9215199b19a573fa0"
+      },
+      "bytes": 978,
+      "sha256": "b88323cb03b974310f805271a5cfc5ba579be87d876ad790171d6c4f28be2af0"
+    },
+    {
+      "path": "scripts/prepare-release-wave.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/prepare-release-wave.mjs",
+        "object": "913256a2a653a93d2815499fb9edee42e5e029e5"
+      },
+      "bytes": 9244,
+      "sha256": "4449328b3a5021cf90c357ee1ef452a6028c28844abf109647c4609880e41086"
+    },
+    {
+      "path": "scripts/produce-registry-runtime.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/produce-registry-runtime.mjs",
+        "object": "860102e67800871ce6e46232df291c85c38aeb14"
+      },
+      "bytes": 788,
+      "sha256": "27892e7b90f210d0538268364f175b2c5ff8a7958f1525af6c2742db1cec913c"
+    },
+    {
+      "path": "scripts/prune-set-of-stale-install-trees.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/prune-set-of-stale-install-trees.mjs",
+        "object": "0860dfd17e3e1fb9f131461c067f45de1ca3d7a9"
+      },
+      "bytes": 1307,
+      "sha256": "130079753c65d25535cc27ee6e5cc3ca746b01fbda260ac6c2f54d877ec82208"
+    },
+    {
+      "path": "scripts/publish-authorized-npm-package.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/publish-authorized-npm-package.mjs",
+        "object": "5dc00b73f9dc5dfad1b2f5d98eb0d591fef7a3a4"
+      },
+      "bytes": 2970,
+      "sha256": "5996d6f4fd220d6fa670b4ea95c4375b4f810670d3c4cccb003b34f6ff27f136"
+    },
+    {
+      "path": "scripts/publish-package.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/publish-package.mjs",
+        "object": "dcfb0dba17e41dffc4b6bb7aa0de910f06ee2d83"
+      },
+      "bytes": 52014,
+      "sha256": "0afa8e513e7bc1a2892c0d212b82f09a63ede460053237a1c65b223192635992"
+    },
+    {
+      "path": "scripts/publish-source-registry-closure.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/publish-source-registry-closure.mjs",
+        "object": "501db24a6d492da1d31437a532120e336efe1d30"
+      },
+      "bytes": 704,
+      "sha256": "63bccf64aac803790da7fe00a96190e7cc9cd781b85a2cada1287eef2221c75e"
+    },
+    {
+      "path": "scripts/publish-workspace-tiers.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/publish-workspace-tiers.mjs",
+        "object": "4d2aa07fe2b3df1aae755b11cee5361442202466"
+      },
+      "bytes": 17999,
+      "sha256": "4e97bb237c553ece51c0ee4b507cd726b034b7d592428dc3d29abb72e3c0bd45"
+    },
+    {
+      "path": "scripts/read-native-registry-imports.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/read-native-registry-imports.mjs",
+        "object": "6488e6038bec3b0c9632b0ef040f615a0a5819ec"
+      },
+      "bytes": 362,
+      "sha256": "a5c4a43a99cecde6b843641f37fd4b5a5f05629625f451885ae864651d852e09"
+    },
+    {
+      "path": "scripts/receive-packed-registry-artifact.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/receive-packed-registry-artifact.mjs",
+        "object": "f58dfe43ce615053e075542ed95f1cf6b88d3d0b"
+      },
+      "bytes": 3126,
+      "sha256": "80ba316e5abad1703e4603480d16fa7182fe683edd0924c86336b043a30f2c97"
+    },
+    {
+      "path": "scripts/receive-source-registry-consumers.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/receive-source-registry-consumers.mjs",
+        "object": "4e061d7160f626b284da981daaaeeae83adbb9ec"
+      },
+      "bytes": 791,
+      "sha256": "dfbec60da7ef4792fe6f04958d33717db24c4761cdf622b46f615262e078a988"
+    },
+    {
+      "path": "scripts/reconcile-package-locks-from-releases.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/reconcile-package-locks-from-releases.mjs",
+        "object": "fbc7d1d310f781ddf07f85d6f2c931297e3a4bae"
+      },
+      "bytes": 828,
+      "sha256": "c94aa2014526fec215c31e5121c908c2ed59608f04f35153d421366679b2a0a6"
+    },
+    {
+      "path": "scripts/reconcile-package-locks.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/reconcile-package-locks.mjs",
+        "object": "332d33a56b38d91986f7f7c02c94cbdffd12b7c0"
+      },
+      "bytes": 768,
+      "sha256": "bc4f36a30bfcb7e6fca1c36d2a3c248115ac8682f98793d8394513b57c4f3ce2"
+    },
+    {
+      "path": "scripts/recover-demanded-versions.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/recover-demanded-versions.mjs",
+        "object": "90b7ce3e89222ec25d8c924dc6c5abc0cee169ed"
+      },
+      "bytes": 8028,
+      "sha256": "16e75b5d7c44ba43f5977476836bef1a35152c830e5591e1fcb4ec2c14a01a0f"
+    },
+    {
+      "path": "scripts/reset-package-versions.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/reset-package-versions.mjs",
+        "object": "65e802c5a14338dc1f89116184dc8fe3db98dd1d"
+      },
+      "bytes": 3143,
+      "sha256": "bf50f528966bf4f4520b7577e75710816ea78cbf3dd5ca573ac5833cf2989a22"
+    },
+    {
+      "path": "scripts/reset-python-package-versions.py",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/reset-python-package-versions.py",
+        "object": "fd652e76c5c5c0c28169df29c85c35c0c924c5aa"
+      },
+      "bytes": 4934,
+      "sha256": "d9de12a1c5e04d96524b84933fa2acd0f1c46855cb093b263b8282095f23fc35"
+    },
+    {
+      "path": "scripts/verify-active-software.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/verify-active-software.mjs",
+        "object": "79dea4ed42404927e640a5f62cc9aa165c4cebc9"
+      },
+      "bytes": 6013,
+      "sha256": "acf119073a89cb968ae66aa7e12fabdf5a25fa03f6a6188fc0c98bc5e0512606"
+    },
+    {
+      "path": "scripts/verify-exact-dependencies.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/verify-exact-dependencies.mjs",
+        "object": "cee58919a86d859ba72d5ac38ce6b2917a490cb6"
+      },
+      "bytes": 7334,
+      "sha256": "578586642714a771154cc75417805506e716a852923853c19f041892bc27da0b"
+    },
+    {
+      "path": "scripts/verify-package-carrier.mjs",
+      "gitMode": "100755",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "scripts/verify-package-carrier.mjs",
+        "object": "7f2ac784d91fda9e8e1925f38d34842f78f87ecd"
+      },
+      "bytes": 1237,
+      "sha256": "e25710993e85a8016613b60ae81bc865e922aee15a532c8e7b4a1714eabfb1f7"
+    },
+    {
+      "path": "specifications/canonical-version-validation.md",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "specifications/canonical-version-validation.md",
+        "object": "8b7acf874d09e750c5951d9ab22bd3d2874804d4"
+      },
+      "bytes": 4007,
+      "sha256": "a8b1439055af7d181adf8f34f4b01f87627250d3ee65217b90f32c755588e98e"
+    },
+    {
+      "path": "specifications/development-root-self-source-qa.md",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "specifications/development-root-self-source-qa.md",
+        "object": "1b067440d0541b907b876a48f23a13bd2d41c87d"
+      },
+      "bytes": 7516,
+      "sha256": "0a1c7453ffe4a58a15a85830ad1df1230225445e3417d5cf9b960df926502e2d"
+    },
+    {
+      "path": "specifications/repository-aware-source-members.md",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "specifications/repository-aware-source-members.md",
+        "object": "42cedf4307939de7a83644eb07887a0925ed7379"
+      },
+      "bytes": 27414,
+      "sha256": "253cfc826337f7a21f5716fd0663ce3537fa93a7157225fd8a5306b29cc2fd96"
+    },
+    {
+      "path": "src/artifact-release.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/artifact-release.mjs",
+        "object": "729f794e30130dc143e9705ebd3d79416c73143f"
+      },
+      "bytes": 3859,
+      "sha256": "a369ee4edbd195392264a26303f780aee80001e1d1e5b6eb6f2cf137719e686f"
+    },
+    {
+      "path": "src/carrier-surface.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/carrier-surface.mjs",
+        "object": "a3cec613d5e9ac632e3816582ada58ef107a36c8"
+      },
+      "bytes": 7895,
+      "sha256": "fdbaa9c84a631610a555ea43d427e7a884019742559c69347c4d12b07cc27c15"
+    },
+    {
+      "path": "src/dependency-policy.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/dependency-policy.mjs",
+        "object": "18d6ee72de677bf961e8bc1ab359691d5b193e0d"
+      },
+      "bytes": 17762,
+      "sha256": "c640f79eb5c9ece8336401656b08410230b0f6cd87938f5ed96418416b57383b"
+    },
+    {
+      "path": "src/dist-staleness.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/dist-staleness.mjs",
+        "object": "3c26de96fa7927da84d534780c7fc75639866dc1"
+      },
+      "bytes": 1633,
+      "sha256": "e38c2829fa96e4c352057e69e1ab0502c4067d9cb1291b2a8b363a7647492101"
+    },
+    {
+      "path": "src/export-subpath-targets.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/export-subpath-targets.mjs",
+        "object": "274866000124a9028f11216c99f253bebb23eb32"
+      },
+      "bytes": 1793,
+      "sha256": "915db26bff5dce8ce9a43406822ac00041b510679a04637c1862841ffa79a999"
+    },
+    {
+      "path": "src/export-surface-diff.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/export-surface-diff.mjs",
+        "object": "35cf1b0dd0286c0d4f9e3688ac9e7863fe59cfed"
+      },
+      "bytes": 3203,
+      "sha256": "8e7cfce5a56c3b4bc4b8bea5ead8476682c876204306087bd134763a03a3ec5d"
+    },
+    {
+      "path": "src/failing-test-names.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/failing-test-names.mjs",
+        "object": "b63d095952484eb3d376e10c6e214c3fa17bbafb"
+      },
+      "bytes": 1041,
+      "sha256": "55fb7ca49a37c355e570f7eb661dc439827bb0b3d9658404ac5d385d7d3f744f"
+    },
+    {
+      "path": "src/installed-carrier-bindings.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/installed-carrier-bindings.mjs",
+        "object": "99a5c889dd8261482e35d8381f47347c01ee54a4"
+      },
+      "bytes": 7984,
+      "sha256": "726b48e8aaa6ac115ba9db0d947e0de14618cbfe5366dc08ed87ce66d922a358"
+    },
+    {
+      "path": "src/isolated-carrier-verification.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/isolated-carrier-verification.mjs",
+        "object": "ab79aa84979d9e21072e74fc1d33c2425ff8dd82"
+      },
+      "bytes": 6595,
+      "sha256": "9421c74458d1ca4c75b93779028a5bfec22f23b5dcf06a33b3253b6da41452c1"
+    },
+    {
+      "path": "src/javascript-export-names.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/javascript-export-names.mjs",
+        "object": "a334befec2a0ca7a004eb9fbf35ca726e057d2c9"
+      },
+      "bytes": 1140,
+      "sha256": "01c2eb672dd8199b448b84efc4e84f46f7ceb1feb35e7bf98c0096456c92a6ca"
+    },
+    {
+      "path": "src/lockfile-registry-classification.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/lockfile-registry-classification.mjs",
+        "object": "b5fcb8ccdf97300fe8ab47d745e676cbaeba20aa"
+      },
+      "bytes": 3120,
+      "sha256": "e58928fd524259aacb84e2df79dbeba94ab42f34f14a703a469009b4e8e8386c"
+    },
+    {
+      "path": "src/native-registry-imports.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/native-registry-imports.mjs",
+        "object": "a5bc8bf692de6806373b51fcb925c0deb24f7d1b"
+      },
+      "bytes": 4206,
+      "sha256": "ebf828a9e34c350d8df8e0ef5cc9dde8dcc8baf49e19e215492472ee8fa0b82c"
+    },
+    {
+      "path": "src/npm-pack-result.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/npm-pack-result.mjs",
+        "object": "a64c1a0bd7b21ee2c276c310c10991b4bbeb4eb8"
+      },
+      "bytes": 920,
+      "sha256": "bdc66a21c53488a9b0b90a920eb1b7915fe40ea1dd5c18d6b89fdf219a19ad70"
+    },
+    {
+      "path": "src/npm-publication-command.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/npm-publication-command.mjs",
+        "object": "7314c5484dfb0fbdfdf7c34eb5642a25bae46741"
+      },
+      "bytes": 995,
+      "sha256": "28f84f1489050074313078e726f7fd67d1181f04515360d5f430ded036d77591"
+    },
+    {
+      "path": "src/npm-publication-target.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/npm-publication-target.mjs",
+        "object": "ddac6427579d3727f0df8d26b26897efb6fe68fb"
+      },
+      "bytes": 548,
+      "sha256": "08451307a48b396e9463b190e6429e54dc2a982abd34c39162416179663c05e5"
+    },
+    {
+      "path": "src/owner-namespace-debt.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/owner-namespace-debt.mjs",
+        "object": "5cbb57fb4e710b497f1989c171393bef136fe326"
+      },
+      "bytes": 5730,
+      "sha256": "fcdc87e5e01fa5be16262cf613f6009d55074737a90e092e3e8aba45ebeb29f4"
+    },
+    {
+      "path": "src/package-manager.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/package-manager.mjs",
+        "object": "5a26a5119001de676c49c2dc3b16bdf63f1db0f4"
+      },
+      "bytes": 4573,
+      "sha256": "bc1ceb3cc16d124dbc1bbb1dcac4b590d8d4a0209f0243d0de0d8abb8845ecd7"
+    },
+    {
+      "path": "src/pin-exact-dependencies.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/pin-exact-dependencies.mjs",
+        "object": "5aebaf2e79e053caa5e95021cf88cfee10f7e0d4"
+      },
+      "bytes": 22824,
+      "sha256": "c93d1303556fcd201781f0dba156709856a645e1bab1f9a2eed197651fb676d3"
+    },
+    {
+      "path": "src/produce-registry-runtime.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/produce-registry-runtime.mjs",
+        "object": "f31f63cbe86638948ae54787643263060fe9589f"
+      },
+      "bytes": 8316,
+      "sha256": "d27fd0b952a25063308f7610db9e6b4facbfb13503a98e115af9510c2a12d3dd"
+    },
+    {
+      "path": "src/publication.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/publication.mjs",
+        "object": "7026d9da27efaac2a5c8f7eab7c59ec07d2d231e"
+      },
+      "bytes": 11978,
+      "sha256": "ffbe2adbd4d73b91be85aa374171582ddc1222ad318af49e22177fb9fc268be8"
+    },
+    {
+      "path": "src/publish-gate-receipt.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/publish-gate-receipt.mjs",
+        "object": "8b350c1c8d778b36140185250525a9e18eac3d7c"
+      },
+      "bytes": 3172,
+      "sha256": "61be3c935f0903f2c862a5634c245499e7f571c13cd35dd08b64f64d1566fa38"
+    },
+    {
+      "path": "src/read-only-publication-plan.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/read-only-publication-plan.mjs",
+        "object": "9989053e30749d88eee326897e45840dca628680"
+      },
+      "bytes": 8002,
+      "sha256": "73b474eb980dc2e87666c81b52eaadca35803d384305bc9c925b2abf10c9ab5c"
+    },
+    {
+      "path": "src/read-workspace-manifests.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/read-workspace-manifests.mjs",
+        "object": "d71c2f37e5fe95e95967b70fbc1e022518ed0401"
+      },
+      "bytes": 2224,
+      "sha256": "9dc3514f29d50ba84f13899bdce0db84c739017882c98b938bd7b19719c174a5"
+    },
+    {
+      "path": "src/reconcile-package-locks-from-releases.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/reconcile-package-locks-from-releases.mjs",
+        "object": "e8049dff8bdff9f3555720e1695eb1aaa386d7ba"
+      },
+      "bytes": 1723,
+      "sha256": "07463fa9a5e6a7fd310c6df47f79a813f3c07fc4335a784e41f4d9433b97ef35"
+    },
+    {
+      "path": "src/reconcile-package-locks.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/reconcile-package-locks.mjs",
+        "object": "1f0fb80ba87b446a84ee5a05beb6fe9705252cd1"
+      },
+      "bytes": 12885,
+      "sha256": "996fde6a0910243f7ab5b27078563ca66fcb56cdead4636065c7be3d753c2bd8"
+    },
+    {
+      "path": "src/registry-carrier-imports.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/registry-carrier-imports.mjs",
+        "object": "52612b061e4ea15373f0ead7917d95c30d8e0bd8"
+      },
+      "bytes": 5893,
+      "sha256": "82c0772a5d6b017b944f7a73af3f69a1eef4c21cf2280e8f907c28cad796a7c4"
+    },
+    {
+      "path": "src/registry-liveness.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/registry-liveness.mjs",
+        "object": "b5e66d62daa369b0fdda82e1df108d92fd74c675"
+      },
+      "bytes": 3693,
+      "sha256": "fd72a1994c6c65e0496f1d9ab6dc9be6157e8bef79dbca0c8a10fc183449ccc7"
+    },
+    {
+      "path": "src/registry.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/registry.mjs",
+        "object": "1ae81d85b4a4b1f16fa7ba0613b72653166f571e"
+      },
+      "bytes": 18006,
+      "sha256": "78f5505bdcb93d893c76346a82eaa29ded10c0438ff37b08939aef2263d5fa4a"
+    },
+    {
+      "path": "src/release-truth.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/release-truth.mjs",
+        "object": "f68e42ce5b9379d504d70a7d02cbd6b3066b407b"
+      },
+      "bytes": 4176,
+      "sha256": "b020c5873ef3501adb365568f34a1822a4c99a7d3114ddbf5ec7a1b3123b317a"
+    },
+    {
+      "path": "src/release-wave.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/release-wave.mjs",
+        "object": "7bd1617a326febfb76cb1d91e10b5eb62a815056"
+      },
+      "bytes": 8448,
+      "sha256": "642e27c198dad1e738f7eb6d35cf99baf283eac3814f3d72e0984b7969f4d115"
+    },
+    {
+      "path": "src/reset-package-versions.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/reset-package-versions.mjs",
+        "object": "11f7e871885a1bc4b945a05f29013ba5c7448c16"
+      },
+      "bytes": 9796,
+      "sha256": "f63ade47f555e85a15097fe432523ef768a581251ad00189466f7e03a33afcc6"
+    },
+    {
+      "path": "src/runner.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/runner.mjs",
+        "object": "721535dd78fcc8dc3cb080d76b855ecf4281eee9"
+      },
+      "bytes": 5490,
+      "sha256": "dbd1bdebb239a05683eee949b4596438aae4d57d6797c2215f047855d560d045"
+    },
+    {
+      "path": "src/runtime-provider-catalog.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/runtime-provider-catalog.mjs",
+        "object": "ee045bfdf458bb4c6bda94b8e0ec9d07dbe3a866"
+      },
+      "bytes": 28011,
+      "sha256": "e86fb751facf27b7710f6bd3719c010208ae752cc268a69cc809000a98e532a4"
+    },
+    {
+      "path": "src/semantic-version-audit.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/semantic-version-audit.mjs",
+        "object": "c8f6071ec1f3b1b30574ca39c313e25de0deaa4e"
+      },
+      "bytes": 3650,
+      "sha256": "8d791f901650483c38a749896aa96dc2fa8245b72f1ab0838fb860123b43d1fe"
+    },
+    {
+      "path": "src/semantic-version-policy.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/semantic-version-policy.mjs",
+        "object": "ce8447a7bbc17a900a4b894bfd7d7dc85101b119"
+      },
+      "bytes": 2328,
+      "sha256": "aac15d4d6142b14a52efe7994cec90e863042e86716adced1041aead00d88203"
+    },
+    {
+      "path": "src/software-estate.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/software-estate.mjs",
+        "object": "0c60371d9c35555a9e2cd04bc492d9bd921d6096"
+      },
+      "bytes": 5692,
+      "sha256": "ea51f56ea19e4282bd9a1b352049eb6fe00553928edab105cd914cb07ff32956"
+    },
+    {
+      "path": "src/software-verification.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/software-verification.mjs",
+        "object": "ad6ae994df01c29fc81f56e85152c6fb3a8f2f77"
+      },
+      "bytes": 4256,
+      "sha256": "1166c1f06120125c50db9d39107d19a7fe58cc07f10808d6baadbe6bd231ac55"
+    },
+    {
+      "path": "src/source-bindings.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/source-bindings.mjs",
+        "object": "a8d66c7509d570b8273dee080af6f8053a982527"
+      },
+      "bytes": 19030,
+      "sha256": "1830cc9f3585c54af7476d0ef843709329dfe98612682ec848efe16a4cbfbecd"
+    },
+    {
+      "path": "src/source-build-qualification.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/source-build-qualification.mjs",
+        "object": "55116a69b12ffa0b420b63921d848de0a86724d9"
+      },
+      "bytes": 21746,
+      "sha256": "60fa02745c797f5cb987e2c02243f2281f68c3fc299df6f0703e8dc96521e939"
+    },
+    {
+      "path": "src/source-member-binding.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/source-member-binding.mjs",
+        "object": "03ae9a8caafa90343ba0ea498a72f7e1d281acfe"
+      },
+      "bytes": 6391,
+      "sha256": "8faa12eb77e467ce5d7191373406bc48c077b4880d6544b89849c456236f506a"
+    },
+    {
+      "path": "src/source-registry-closure.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/source-registry-closure.mjs",
+        "object": "5c6fc05434d5f02020b4a5315f7c86bf46429e44"
+      },
+      "bytes": 34933,
+      "sha256": "1af9043d57d27da0b31b7080d4dc129b766d85982d122f3b7e8d4fc128a6b31e"
+    },
+    {
+      "path": "src/stale-install-trees.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/stale-install-trees.mjs",
+        "object": "5df64a0ef00e369dafc391a66daf9805b45afa74"
+      },
+      "bytes": 11987,
+      "sha256": "8252238745dcf66e1a9c43df433c5400327fb7584f21117af0a6ff5399d84c1e"
+    },
+    {
+      "path": "src/tarball-guard.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/tarball-guard.mjs",
+        "object": "4444c70b4994a353c1ecd85339e3a3073552cf59"
+      },
+      "bytes": 5159,
+      "sha256": "af22c38763a2799fa6438c44e3ae0f7a7b33eae4ba2c39f07c6d9d0db6d1bbe3"
+    },
+    {
+      "path": "src/test-run-summary.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/test-run-summary.mjs",
+        "object": "5aa77611a099151aac4d0637ea680c17612fee62"
+      },
+      "bytes": 1251,
+      "sha256": "3ffa7663ceaac0560c17f9baecba0b43da31bbd6b15caeda6ee8ec177363bb38"
+    },
+    {
+      "path": "src/text-tail.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/text-tail.mjs",
+        "object": "e0dd36818ae25888f9587ae4ae53a04eb8de61c2"
+      },
+      "bytes": 765,
+      "sha256": "2fee407573a4557c0b6d643dae8690fbcae5420ddb88e6abb4652243a15d31dc"
+    },
+    {
+      "path": "src/verdaccio-upstream-cache.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/verdaccio-upstream-cache.mjs",
+        "object": "b0e5b37f5842762667b91aa9dc45de7500fe6303"
+      },
+      "bytes": 6771,
+      "sha256": "730eb62f15d49c8645145bb53e180501f07bb33a75b109bfe7949b909dbd2f76"
+    },
+    {
+      "path": "src/verdaccio-version-reset-executor.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/verdaccio-version-reset-executor.mjs",
+        "object": "5fdf068bfb81ddb486ddefec545969ef84e7bb4b"
+      },
+      "bytes": 10286,
+      "sha256": "14acc8da06978cf3178b011e582a8fc366094152236e228fd8ec643ec3e51645"
+    },
+    {
+      "path": "src/verdaccio-version-reset.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/verdaccio-version-reset.mjs",
+        "object": "f27068bfdab50878919096bd8226003ac6749e6d"
+      },
+      "bytes": 3571,
+      "sha256": "a448394043bdb5aa898b48aacdf4f945210fa167b8b6ebd01cd972e624e02ad8"
+    },
+    {
+      "path": "src/verification-copy.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/verification-copy.mjs",
+        "object": "006a4ab3bf9fca273d824419b6e21fa68ea9e32a"
+      },
+      "bytes": 220,
+      "sha256": "7ecfc4f9a068b9f32b84b10a603ea27e8660a98dc3b48b357eb27327a17c3cfd"
+    },
+    {
+      "path": "src/workspace-graph.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/workspace-graph.mjs",
+        "object": "c89f915da70f79fb06bf5ace7e1342ff7607b8a8"
+      },
+      "bytes": 4959,
+      "sha256": "cc826305ff9a57f74806a7fc97f16d41f7b719eb91bae10bfe85ce4ef911ca3f"
+    },
+    {
+      "path": "src/workspace-publication.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/workspace-publication.mjs",
+        "object": "ec19fbd44502adabb87bf0eda5375aa141f7fa19"
+      },
+      "bytes": 11265,
+      "sha256": "22cb92c76675ce84b00612e8cb88b7cf4c3e4dabbc614dfaaf2632f85a9362b6"
+    },
+    {
+      "path": "src/zero-major-version-reset.mjs",
+      "gitMode": "100644",
+      "gitSource": {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "3481b324ef02aa12871b358dd2a838782557a9d8",
+        "path": "src/zero-major-version-reset.mjs",
+        "object": "45228792fc2b5386b29795c1e232cdbccee651c0"
+      },
+      "bytes": 6566,
+      "sha256": "a337fccc5c0a370e8ff68a5d0d722314fdfb20fbadc25bf17b40dd33cbdb91ec"
+    }
+  ],
+  "declaredComposedChildren": [],
+  "registeredCommand": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-frozen-recipient/consumer/node_modules/.bin/receive-packed-registry-artifact",
+  "actualNativeFrozenCodeRoot": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-frozen-recipient/consumer/node_modules/.pnpm/@red-cup-engineering+npm-workspace-publication-service@0.14.24/node_modules/@red-cup-engineering/npm-workspace-publication-service",
+  "code": 0,
+  "stderr": "",
+  "sourceBindingsUsed": false,
+  "packageRepacked": false
+}

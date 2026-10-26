@@ -1,0 +1,6 @@
+{
+  "timing": "Captured before the launch-capacity-receiving.json timestamp; raw command result is custody",
+  "command": "systemctl --user show nodejob-resource-inert-bcf-20261023-job-inert.service nodejob-resource-native-receiving-bcf-20261023.service --property=Id --property=LoadState --property=ActiveState --property=SubState --property=MainPID --property=ControlPID --property=InvocationID --property=Job",
+  "exitCode": 0,
+  "raw": "MainPID=0\nControlPID=0\nId=nodejob-resource-inert-bcf-20261023-job-inert.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nJob=\nInvocationID=\n\nMainPID=0\nControlPID=0\nId=nodejob-resource-native-receiving-bcf-20261023.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nJob=\nInvocationID=\n"
+}

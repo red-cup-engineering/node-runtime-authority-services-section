@@ -1,0 +1,82 @@
+{
+  "observedAt": "2026-10-24T23:51:12.679Z",
+  "package": "@red-cup-engineering/http-services-section",
+  "version": "0.6.4",
+  "gitHead": "4797434a5150c513369dc1ad75b6d2971b180f9d",
+  "root": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/state/registry-package-installations/http-0.6.4/node_modules/@red-cup-engineering/http-services-section",
+  "previousAlias": "/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/github-engineering-services-section/node_modules/@red-cup-engineering/http-services-section",
+  "selectedProviderDependencies": [
+    {
+      "name": "@red-cup-engineering/json-services-section",
+      "version": "0.4.0",
+      "path": "/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/state/registry-package-installations/issuer-research-0.1.5/node_modules/@red-cup-engineering/json-services-section"
+    },
+    {
+      "name": "@red-cup-engineering/computer-serialized-content-engineering-services-section",
+      "version": "0.1.0",
+      "path": "/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/state/registry-package-installations/mcp-0.1.7/node_modules/@red-cup-engineering/computer-serialized-content-engineering-services-section"
+    }
+  ],
+  "faces": [
+    {
+      "face": "/body/web",
+      "path": "/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/state/registry-package-installations/http-0.6.4/node_modules/@red-cup-engineering/http-services-section/src/body/web.mjs",
+      "sha256": "ffb98e64357f6554c54851a7a565490a6f2a2e3b30ed1352e3ffb2ee1591b810",
+      "exports": [
+        "BodyReadError",
+        "DEFAULT_BODY_LIMIT",
+        "mediaType",
+        "readBody",
+        "readFormBody",
+        "readFormDataBody",
+        "readJsonBody",
+        "readMultipartBody",
+        "readResponseBody",
+        "readTextBody"
+      ]
+    },
+    {
+      "face": "/retry-after",
+      "path": "/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/state/registry-package-installations/http-0.6.4/node_modules/@red-cup-engineering/http-services-section/src/retry-after.mjs",
+      "sha256": "629ebb98a416ad708e6357c8ce2b1b8573c5e074a76355b8a1859462112c9340",
+      "exports": [
+        "retryAfterDelayMs"
+      ]
+    },
+    {
+      "face": "/content-digest",
+      "path": "/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/state/registry-package-installations/http-0.6.4/node_modules/@red-cup-engineering/http-services-section/src/content-digest.mjs",
+      "sha256": "73ebedaf2e9a7dad6b661668c232cd6aa32b5f239c786419028c3bea91178c6d",
+      "exports": [
+        "makeContentDigest",
+        "verifyContentDigest"
+      ]
+    },
+    {
+      "face": "/canonicalize-https-url",
+      "path": "/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/state/registry-package-installations/http-0.6.4/node_modules/@red-cup-engineering/http-services-section/scripts/canonicalize-https-url.mjs",
+      "sha256": "2a4e08ed4cdfabc88daaec9cb6e9bc98e428cef6bf45a51966a687ceb04f4dc2",
+      "exports": [
+        "HttpsUrlCanonicalizationRefusal",
+        "canonicalizeHttpsUrl"
+      ]
+    },
+    {
+      "face": "/forward-request-headers",
+      "path": "/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/state/registry-package-installations/http-0.6.4/node_modules/@red-cup-engineering/http-services-section/src/forward-request-headers.mjs",
+      "sha256": "11531581ebde8bcc07dfbe409f3e03a789571da24e1ee6b566c103cfac582d46",
+      "exports": [
+        "forwardRequestHeaders"
+      ]
+    },
+    {
+      "face": "/fetch-without-redirects",
+      "path": "/home/emsenn/bare-cedar-fog/lib/phezi-ochage/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/data/state/registry-package-installations/http-0.6.4/node_modules/@red-cup-engineering/http-services-section/src/fetch-without-redirects.mjs",
+      "sha256": "81c9d32012af3dbb92bc370791b4659e72a8477e1eba6647421ca7e55da772f5",
+      "exports": [
+        "fetchWithoutRedirects"
+      ]
+    }
+  ],
+  "scope": "Selected APP and x402 imports only; other manifest faces not claimed installed."
+}

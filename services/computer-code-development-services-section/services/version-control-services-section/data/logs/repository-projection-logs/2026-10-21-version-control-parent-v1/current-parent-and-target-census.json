@@ -1,0 +1,697 @@
+{
+  "at": "2026-10-21T18:17:32.478Z",
+  "repository": {
+    "id": 1425310771,
+    "full_name": "red-cup-engineering/software-development-services-section",
+    "visibility": "public",
+    "private": false,
+    "default_branch": "main"
+  },
+  "main": {
+    "sha": "da3829977fab35cf2af5b4ba84720e24fc30dd4d",
+    "protected": false
+  },
+  "tree": [
+    {
+      "path": ".codex",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4e0a6eba9f3c9afe1c18146b1f6a12eae260f76f"
+    },
+    {
+      "path": ".codex/.codex-agent-manifest",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "576b378bf15e6eb632dd3d0744bf6d43b55538a3",
+      "size": 35
+    },
+    {
+      "path": ".codex/agents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "19f0f64902d0049a005483c0febbda4b27d006b0"
+    },
+    {
+      "path": ".codex/agents/software-development-services-lead.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dccbb44e713045901294218a26c7a2f644069bd1",
+      "size": 4702
+    },
+    {
+      "path": ".gitmodules",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c46fdf88566d0b4148de245fbebdb08b5e8aec3a",
+      "size": 4568
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c6ed672fd2ca58b45f01cc9286c739cdc770387",
+      "size": 5846
+    },
+    {
+      "path": "content",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fb8a1bf6874618e7620b1b0399d6d2af9caf3c15"
+    },
+    {
+      "path": "content/documents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e9f90cb10b598dd5b1bf0b750afe5b97030a235c"
+    },
+    {
+      "path": "content/documents/articles",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c231324ecffdd72031de954a2ac66ea27de88a11"
+    },
+    {
+      "path": "content/documents/articles/notes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "04eeb0ef580e400a43debe01612ab1f7632cde7e"
+    },
+    {
+      "path": "content/documents/articles/notes/2026",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d7aad8f12d82c381dcea8dcbf7cb3003b6c0729b"
+    },
+    {
+      "path": "content/documents/articles/notes/2026/06",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b654cfade6bb0981c9070623b4b2d44d36acfb7f"
+    },
+    {
+      "path": "content/documents/articles/notes/2026/06/22",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b6d33bca358933754129d06f13496566d4d398ac"
+    },
+    {
+      "path": "content/documents/articles/notes/2026/06/22/2026-06-22-notebooklm-studio-report-architectural-assessment-strategic-migration-from-node-js-to-rust--37415683-64ad-4dd6-9eb1-6d568fa65b5f.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e28ec9803c3fdb9f30fd8ca6136335210cd0e6e",
+      "size": 13563
+    },
+    {
+      "path": "content/documents/articles/notes/2026/06/22/2026-06-22-notebooklm-studio-report-from-code-to-action-a-beginner-s-guide-to-runtimes-and-execution-models--1a1ffd12-e1ae-466d-9032-a6369393a5f1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2397db5de662557fe03bd7ea2d1a726999af2d56",
+      "size": 12348
+    },
+    {
+      "path": "content/documents/articles/notes/2026/06/22/2026-06-22-notebooklm-studio-report-the-architectural-multiplier-a-2026-blueprint-for-productizing-high-integrity-cross-runtime-systems--87f9ad20-32b4-4ea5-b392-a8e202187b54.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dbaff688896e76121df47e71bbfa00878b7539f",
+      "size": 14267
+    },
+    {
+      "path": "content/documents/articles/notes/2026/06/22/2026-06-22-notebooklm-studio-report-the-memory-management-handbook-node-js-vs-rust--87328881-496f-47c0-bb48-68c1b0e82821.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62394dc15d9f4808b62a133bd929aed3468c48fc",
+      "size": 11392
+    },
+    {
+      "path": "content/documents/articles/notes/2026/07",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a4140f8f1ad8274ce9883ac12f1b1c55d02d7003"
+    },
+    {
+      "path": "content/documents/articles/notes/2026/07/29",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f48b38aec48d4cadc5a022f114f8d9513e770eb2"
+    },
+    {
+      "path": "content/documents/articles/notes/2026/07/29/2026-07-29-notebooklm-studio-report-the-central-dogma-of-code-fabrication-a-biological-guide-to-high-fidelity-technical-work--87271a80-38cf-4fad-8f48-14dcab08ac75.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dda5fa24d72958b21a0276334a43caf32f212ea0",
+      "size": 10116
+    },
+    {
+      "path": "lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6290fa2fae25fe0a787c620c6488c7ea40ee5329"
+    },
+    {
+      "path": "lib/agency",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6b6611d9876952547d4f22bbc9bb9159942b1f30"
+    },
+    {
+      "path": "lib/agency/duties",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c16f1519186929c321da0b7b6fd79a455c08ace5"
+    },
+    {
+      "path": "lib/agency/duties/operating-computer-code-development-services-section.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7d14bbd5706d0a1e043c0bffaa66b0343cc789ce",
+      "size": 807
+    },
+    {
+      "path": "lib/agency/roster.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96725b358ccec69b1a214122cf42561646c9b90d",
+      "size": 1164
+    },
+    {
+      "path": "lib/agency/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "79201f3c3bbca479ff96e7a94b79d35d3dfc1bec"
+    },
+    {
+      "path": "lib/agency/skills/operating-computer-code-development-services-section",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0b3ef812d3dbc9c2f54df55cb0c10a247f2bcdac"
+    },
+    {
+      "path": "lib/agency/skills/operating-computer-code-development-services-section/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "86a19911eaf0f9456c478f9eaa9ea7d19db0547e",
+      "size": 7155
+    },
+    {
+      "path": "lib/agency/skills/operating-computer-code-development-services-section/agents",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c459fada0c5f572f6338b7473781aebbb581c374"
+    },
+    {
+      "path": "lib/agency/skills/operating-computer-code-development-services-section/agents/openai.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab888c6395cd3c40488b6a68e45ef8bdcfb36ca6",
+      "size": 296
+    },
+    {
+      "path": "lib/agency/works",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "50afe6ce306a24385aa9517f6c4b846f4e7b902b"
+    },
+    {
+      "path": "lib/agency/works/operating-computer-code-development-services-section.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d3c32b01aad32ff2214b7212d911c5022258316e",
+      "size": 816
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bac06c74a637a9445669dba446f02a34a01e8fe6",
+      "size": 451
+    },
+    {
+      "path": "services",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a6d821ce5b0ccccf6a7b724a0da945dec264dc8b"
+    },
+    {
+      "path": "services/acceptance-oracle-assay-service",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "089fed9785a9a8ea29c437c476a13ddc6dc566cf"
+    },
+    {
+      "path": "services/accepted-software-delivery-receiver-service",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "4324461f329c81b3e78f0c35b4e3e0f9a6956560"
+    },
+    {
+      "path": "services/campaign-rollup-projection-service",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "2cfced39c64c3f3a4f2179504d23bd44799f748d"
+    },
+    {
+      "path": "services/deployment-services-section",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "041b0b8c11a70be77434a47f12ac5aa1e8c35256"
+    },
+    {
+      "path": "services/deterministic-intent-compiler-supplier",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "dd41d461091031c73eb1cabb9c83a0042f4ef523"
+    },
+    {
+      "path": "services/deterministic-report-graphic-service",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "8c57724aa4c2b4ed5cf59a0d7571d9e90f4ae948"
+    },
+    {
+      "path": "services/future-work-topology-projection-service",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "959930d7cdc5cd6a896b7c9e0713d67c5cc545fa"
+    },
+    {
+      "path": "services/lean-blueprint-chart-service",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "cd689769b413aab7b18b22c430b1abc3e6ff87e1"
+    },
+    {
+      "path": "services/legacy-capability-reallocation-service",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "7b442c3468160fbabde3d282af7e69ad77c04daa"
+    },
+    {
+      "path": "services/node-job-service",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "4b75665a5c9bfa4082910d1e588007e31d1e4bfa"
+    },
+    {
+      "path": "services/organizational-profile-projection-service",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "527590ea5d5ab538005fb1946842a1d24dacff8d"
+    },
+    {
+      "path": "services/recursive-observation-circuit-synthesis",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "7b2f0b0f62ed3e57533fbc1a48bb81bce2738885"
+    },
+    {
+      "path": "services/repository-state-observation-service",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "47ee1960eea533da3af81eed46aa04c15065e91e"
+    },
+    {
+      "path": "services/research-citation-engineering-service",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "50e09b788c21b04f57136143b70efda6c956907c"
+    },
+    {
+      "path": "services/research-citation-engineering-service/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b629ab423b812ab25ab16de8ab587edb33a5507",
+      "size": 1448
+    },
+    {
+      "path": "services/research-citation-engineering-service/cite-tool",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9f0918cf868760b6b551cb3772775054294f199a"
+    },
+    {
+      "path": "services/research-citation-engineering-service/cite-tool/pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcdd39cc8e128159c10f24908f085f216c4dd5a9",
+      "size": 373
+    },
+    {
+      "path": "services/research-citation-engineering-service/cite-tool/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "80066d685522ce846c9839e0f4fd654480398ed2"
+    },
+    {
+      "path": "services/research-citation-engineering-service/cite-tool/src/cite_tool",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "19412405dbfa4fc1200c3df6feb2bae32eee9497"
+    },
+    {
+      "path": "services/research-citation-engineering-service/cite-tool/src/cite_tool/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ea5374e24725472481fab3900baa28687af517c",
+      "size": 46
+    },
+    {
+      "path": "services/research-citation-engineering-service/cite-tool/src/cite_tool/__main__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "335253eb471267cada168b24d2ac2c816ee21c75",
+      "size": 4363
+    },
+    {
+      "path": "services/research-citation-engineering-service/docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e73b1e07a8fe3573ee79bf61d2b5e10136b03ab8"
+    },
+    {
+      "path": "services/research-citation-engineering-service/docs/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37277c82526142a3c58921fea80081ee7fce99e0",
+      "size": 619
+    },
+    {
+      "path": "services/research-citation-engineering-service/docs/generating-bibliography.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1106583303229b98cfa9c937f732a7df623917e8",
+      "size": 2908
+    },
+    {
+      "path": "services/research-citation-engineering-service/docs/migrating-existing-projects.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aee7c15f135cb0848032c4f3612b27a22c9fc1a0",
+      "size": 2925
+    },
+    {
+      "path": "services/research-citation-engineering-service/docs/recording-citations.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be41c188dcb6a05c863cf6cc5b928dbccc7b3cd1",
+      "size": 7276
+    },
+    {
+      "path": "services/research-citation-engineering-service/pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "673646141861bbc36397e899c25b79949c04debc",
+      "size": 438
+    },
+    {
+      "path": "services/research-citation-engineering-service/research-citations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f127c2cf0db2a0bb48922f12471ad6fc803a432d"
+    },
+    {
+      "path": "services/research-citation-engineering-service/research-citations/pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5fb289dd09a3380663e9005c06d95a32bf0afa5",
+      "size": 333
+    },
+    {
+      "path": "services/research-citation-engineering-service/research-citations/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6086db084150c76eb5a59d494a110a6c4d9a202f"
+    },
+    {
+      "path": "services/research-citation-engineering-service/research-citations/src/research_citations",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f2f574cf5b890018ca0de7be0ed5457218694eaa"
+    },
+    {
+      "path": "services/research-citation-engineering-service/research-citations/src/research_citations/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c70907b01713ab696af7994bda92680853e8caa",
+      "size": 396
+    },
+    {
+      "path": "services/research-citation-engineering-service/research-citations/src/research_citations/bibtex.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccf528bb52ca91b5f7a57c49bc08c32eba7d8074",
+      "size": 5799
+    },
+    {
+      "path": "services/research-citation-engineering-service/research-citations/src/research_citations/citekey.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1dd943e17ccd4af52fb8e0621065eb67860eaf7",
+      "size": 4453
+    },
+    {
+      "path": "services/research-citation-engineering-service/research-citations/src/research_citations/loader.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de0f4fd6ee39760546fbaf99377c583ef7826f9e",
+      "size": 9445
+    },
+    {
+      "path": "services/research-citation-engineering-service/research-citations/src/research_citations/schema.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "192f9dfcf6dbfe1161f5d1fcf5d8717b798d227b",
+      "size": 5334
+    },
+    {
+      "path": "services/search-path-for-relations",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "75e1860d2c08b51fbc6d051f36c33a641f33acc2"
+    },
+    {
+      "path": "services/software-program-synthesis-solicitation-service",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "7c2d5b9dd61c9ced953e7242724cd84865a552fd"
+    },
+    {
+      "path": "services/software-solve-loop-service",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "7d28d6c1c8dc0369a567ea056afd9f1fa20a29d4"
+    },
+    {
+      "path": "services/software-trajectory-memory-service",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "28b37d2c2b88794a9165d4d544d15fe85c75f39d"
+    },
+    {
+      "path": "services/solidity-services-section",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "532824dda2e56ceb01207cbc83abf333ac761f98"
+    },
+    {
+      "path": "services/typed-resource-catalog-service",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "132232c44c0fa025ee371fe8e7cb2c3b35c65fb0"
+    },
+    {
+      "path": "services/version-control-services-section",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e5b4938579124cf35793fbccc680c8bf766c5dcb"
+    },
+    {
+      "path": "services/version-control-services-section/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55ef949b3d67538e0c7e183e97da3c6011de67a7",
+      "size": 981
+    },
+    {
+      "path": "services/version-control-services-section/lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6f4a72deb7b0cc31124a782c1d28224b2e06bce2"
+    },
+    {
+      "path": "services/version-control-services-section/lib/legacy",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "125797c8d126c29eb1f7df5918c10469ef5519d2"
+    },
+    {
+      "path": "services/version-control-services-section/lib/legacy/2026-08-06-block-device-io-coordinator",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e306199f64d6657f179c6d990b971425f5d9988c"
+    },
+    {
+      "path": "services/version-control-services-section/lib/legacy/2026-08-06-block-device-io-coordinator/content",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "79ca328cf2ef6e75c67eee1caa472e416c910e88"
+    },
+    {
+      "path": "services/version-control-services-section/lib/legacy/2026-08-06-block-device-io-coordinator/content/host-activation.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "828acd936512f190ce2482c28c98dbca3c617d3d",
+      "size": 672
+    },
+    {
+      "path": "services/version-control-services-section/lib/legacy/2026-08-06-block-device-io-coordinator/lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "996dfc98d02daeae8fc84dc3515ee76ed40acd4d"
+    },
+    {
+      "path": "services/version-control-services-section/lib/legacy/2026-08-06-block-device-io-coordinator/lib/ownership.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5b69fb990e475bab677bbc64652ba5a6ad72e3c",
+      "size": 899
+    },
+    {
+      "path": "services/version-control-services-section/lib/legacy/2026-08-06-block-device-io-coordinator/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "989eea1730283a0a792d52e3e563314a9fdb7cf5",
+      "size": 1386
+    },
+    {
+      "path": "services/version-control-services-section/lib/legacy/2026-08-06-block-device-io-coordinator/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1b291eb6a9aa4c8ee7879ed32f64be4eed34ab57"
+    },
+    {
+      "path": "services/version-control-services-section/lib/legacy/2026-08-06-block-device-io-coordinator/src/bound-git-profile-a2a-executor.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9844369436c410947f030a2c9631e4307737bfa3",
+      "size": 2410
+    },
+    {
+      "path": "services/version-control-services-section/lib/legacy/2026-08-06-block-device-io-coordinator/src/bound-git-profile-auth.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "201420bf92be9daab53dd7a2bf0aea797a19416e",
+      "size": 7774
+    },
+    {
+      "path": "services/version-control-services-section/lib/legacy/2026-08-06-block-device-io-coordinator/src/bound-git-profile-store.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f9bba1768d060e1f0b26ddb6d9a6c9ad6b45f949",
+      "size": 10233
+    },
+    {
+      "path": "services/version-control-services-section/lib/legacy/2026-08-06-block-device-io-coordinator/src/bound-git-profile-wire.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a1ce6939e61d9ebb46994360cf656f287365ef4",
+      "size": 62826
+    },
+    {
+      "path": "services/version-control-services-section/lib/legacy/2026-08-06-block-device-io-coordinator/src/bound-git-profile.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33f17667ddfb1b39666357984a3577ee6668d810",
+      "size": 41141
+    },
+    {
+      "path": "services/version-control-services-section/lib/legacy/2026-08-06-block-device-io-coordinator/src/serve-bound-git-profile.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97ece652c2a4d50579e6222b8e0ef6723750ee32",
+      "size": 484
+    },
+    {
+      "path": "services/version-control-services-section/lib/legacy/2026-08-06-block-device-io-coordinator/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1afbed96d4984ecdf57db012c02d6a3c16467d23"
+    },
+    {
+      "path": "services/version-control-services-section/lib/legacy/2026-08-06-block-device-io-coordinator/test/bound-git-profile-ingress.test.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ae9cd1be913dc7e93bc7b4fb559c6f62e684588",
+      "size": 4971
+    },
+    {
+      "path": "services/version-control-services-section/lib/legacy/2026-08-06-block-device-io-coordinator/test/bound-git-profile-wire.test.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f18c13db2eca22b40b70863b2d0887a0c501aad",
+      "size": 2419
+    },
+    {
+      "path": "services/version-control-services-section/lib/legacy/2026-08-06-block-device-io-coordinator/test/bound-git-profile.test.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0900c57cf1cb1ad45110489e8b98472c7ce924ef",
+      "size": 20977
+    },
+    {
+      "path": "services/version-control-services-section/services",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ad11e4de4763218d33f8e775bf6322afd600f420"
+    },
+    {
+      "path": "services/version-control-services-section/services/git-services-section",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "d58ad98d486998e1fbe22db44ecd6b63f9ab470f"
+    },
+    {
+      "path": "services/version-control-services-section/services/software-forge-services-section",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "5e26e8ead1a917964229d2e02e3bbbb3300b7bb1"
+    },
+    {
+      "path": "services/workspace-content-graph-service",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "78312b7d92b545ebf03d50d60a47bc8d740a7b04"
+    },
+    {
+      "path": "services/write-capability-assay-service",
+      "mode": "160000",
+      "type": "commit",
+      "sha": "60f1f258ad6a5b368519010c4caf230fce3b2176"
+    }
+  ],
+  "branches": [
+    {
+      "name": "main",
+      "commit": {
+        "sha": "da3829977fab35cf2af5b4ba84720e24fc30dd4d",
+        "url": "https://api.github.com/repos/red-cup-engineering/software-development-services-section/commits/da3829977fab35cf2af5b4ba84720e24fc30dd4d"
+      },
+      "protected": false,
+      "protection": {
+        "enabled": false,
+        "required_status_checks": {
+          "enforcement_level": "off",
+          "contexts": [],
+          "checks": []
+        }
+      },
+      "protection_url": "https://api.github.com/repos/red-cup-engineering/software-development-services-section/branches/main/protection"
+    }
+  ],
+  "tags": [],
+  "pulls": [],
+  "issues": [],
+  "targetRead": {
+    "state": "EXISTS",
+    "repository": null
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "root": "@red-cup-engineering/continuous-delivery-services-section",
+  "sha": "526b1a0c747c43899875412087916d0255dce39a",
+  "files": [
+    {
+      "name": "@red-cup-engineering/continuous-delivery-services-section",
+      "version": "0.0.0-sha.526b1a0c747c",
+      "tarball": "red-cup-engineering-continuous-delivery-services-section-0.0.0-sha.526b1a0c747c.tgz"
+    }
+  ],
+  "notInTree": [],
+  "cycles": [],
+  "externalVersions": {}
+}

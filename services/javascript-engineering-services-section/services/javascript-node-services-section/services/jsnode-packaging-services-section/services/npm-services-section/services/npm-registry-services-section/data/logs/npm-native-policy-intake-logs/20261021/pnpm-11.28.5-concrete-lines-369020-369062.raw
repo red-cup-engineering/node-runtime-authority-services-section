@@ -1,0 +1,43 @@
+    const msg = `This project is configured to use ${pm2.name}`;
+    if (shouldError) {
+      throw new PnpmError("OTHER_PM_EXPECTED", msg);
+    }
+    warnAboutProject(opts3.config, msg);
+    return;
+  }
+  if (!pm2.version)
+    return;
+  const currentPnpmVersion = packageManager.name === "pnpm" ? packageManager.version : void 0;
+  if (!currentPnpmVersion || import_semver102.default.satisfies(currentPnpmVersion, pm2.version, { includePrerelease: true }))
+    return;
+  reportPnpmVersionMismatch(opts3.config, {
+    wantedVersion: pm2.version,
+    currentPnpmVersion,
+    shouldError,
+    underCorepack: opts3.underCorepack
+  });
+}
+function reportPnpmVersionMismatch(config2, mismatch) {
+  let msg = `This project is configured to use ${mismatch.wantedVersion} of pnpm. Your current pnpm is v${mismatch.currentPnpmVersion}`;
+  if (mismatch.underCorepack) {
+    msg += "\nCorepack invoked pnpm with this version, and pnpm does not switch versions when running under corepack.";
+  }
+  if (!mismatch.shouldError) {
+    warnAboutProject(config2, msg);
+    return;
+  }
+  const baseHint = 'If you want to bypass this version check, you can set the "pmOnFail" configuration to "warn" or "ignore" (e.g. via --pm-on-fail=ignore). If using "devEngines.packageManager", you can set its "onFail" to "warn" or "ignore"';
+  const hint = mismatch.underCorepack ? `Align the "packageManager" field in package.json with "devEngines.packageManager", or invoke pnpm directly (without corepack) so it can switch versions automatically.
+${baseHint}` : baseHint;
+  throw new PnpmError("BAD_PM_VERSION", msg, { hint });
+}
+function getWantedRuntimes(context) {
+  const manifest = context.enginePinManifest;
+  if (manifest == null)
+    return [];
+  const result2 = [];
+  const seen = /* @__PURE__ */ new Set();
+  for (const enginesFieldName of ["devEngines", "engines"]) {
+    for (const runtime of listRuntimes(manifest[enginesFieldName]?.runtime)) {
+      if (!runtime.name || !isRuntimeAlias(runtime.name) || seen.has(runtime.name))
+        continue;

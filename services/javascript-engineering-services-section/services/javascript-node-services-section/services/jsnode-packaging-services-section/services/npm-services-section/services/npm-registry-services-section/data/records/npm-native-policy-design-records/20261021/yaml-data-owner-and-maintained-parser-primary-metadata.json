@@ -1,0 +1,286 @@
+{
+  "kind": "NativePolicyYamlPrimaryMetadataReceiving",
+  "at": "2026-10-21T05:15:28.641Z",
+  "originalPublicApi": "readRegistryPackageVersion",
+  "artifactAcquisition": false,
+  "results": [
+    {
+      "registry": "https://registry.npmjs.org/",
+      "name": "yaml",
+      "version": "2.9.0",
+      "found": true,
+      "reachable": true,
+      "manifest": {
+        "bin": {
+          "yaml": "bin.mjs"
+        },
+        "bugs": {
+          "url": "https://github.com/eemeli/yaml/issues"
+        },
+        "dist": {
+          "shasum": "78274afd93598a1dfdd6130df6a566defcbf9aa4",
+          "tarball": "https://registry.npmjs.org/yaml/-/yaml-2.9.0.tgz",
+          "fileCount": 233,
+          "integrity": "sha512-2AvhNX3mb8zd6Zy7INTtSpl1F15HW6Wnqj0srWlkKLcpYl/gMIMJiyuGq2KeI2YFxUPjdlB+3Lc10seMLtL4cA==",
+          "signatures": [
+            {
+              "sig": "MEUCIQDvtQ6koh3y3PKwOUKccftRdR3Y2EtMWKyMQnV14y7ExwIgfr1qOitlHCGwrMD+s5phMpLAOsNoR/toe2Yow0/1A3I=",
+              "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+            }
+          ],
+          "unpackedSize": 685953
+        },
+        "main": "./dist/index.js",
+        "name": "yaml",
+        "type": "commonjs",
+        "types": "./dist/index.d.ts",
+        "author": {
+          "name": "Eemeli Aro",
+          "email": "eemeli@gmail.com"
+        },
+        "browser": {
+          "./util.js": "./browser/dist/util.js",
+          "./dist/util.js": "./browser/dist/util.js",
+          "./dist/index.js": "./browser/index.js"
+        },
+        "engines": {
+          "node": ">= 14.6"
+        },
+        "exports": {
+          ".": {
+            "node": "./dist/index.js",
+            "types": "./dist/index.d.ts",
+            "default": "./browser/index.js"
+          },
+          "./util": {
+            "node": "./dist/util.js",
+            "types": "./dist/util.d.ts",
+            "default": "./browser/dist/util.js"
+          },
+          "./package.json": "./package.json"
+        },
+        "funding": "https://github.com/sponsors/eemeli",
+        "gitHead": "ddb21b04cb889722cec8f89dc1b67f19d62d7f7d",
+        "license": "ISC",
+        "scripts": {
+          "docs": "cd docs-slate && bundle exec middleman server",
+          "lint": "eslint config/ src/",
+          "test": "jest --config config/jest.config.js",
+          "build": "npm run build:node && npm run build:browser",
+          "clean": "git clean -fdxe node_modules",
+          "start": "node --enable-source-maps -i -e 'YAML=require(\"./dist/index.js\");const{parse,parseDocument,parseAllDocuments}=YAML'",
+          "predocs": "node docs/prepare-docs.mjs",
+          "prestart": "rollup --sourcemap -c config/rollup.node-config.mjs",
+          "prettier": "prettier --write .",
+          "test:all": "npm test && npm run test:types && npm run test:dist && npm run test:dist:types",
+          "test:dist": "npm run build:node && jest --config config/jest.config.js",
+          "build:node": "rollup -c config/rollup.node-config.mjs",
+          "preversion": "npm test && npm run build",
+          "test:types": "tsc --noEmit && tsc --noEmit -p tests/tsconfig.json",
+          "docs:deploy": "cd docs-slate && ./deploy.sh",
+          "docs:install": "cd docs-slate && bundle install",
+          "build:browser": "rollup -c config/rollup.browser-config.mjs",
+          "test:browsers": "cd playground && npm test",
+          "predocs:deploy": "node docs/prepare-docs.mjs",
+          "prepublishOnly": "npm run clean && npm test && npm run build",
+          "test:dist:types": "tsc --allowJs --moduleResolution node --noEmit --target es5 dist/index.js"
+        },
+        "_npmUser": {
+          "name": "eemeli",
+          "email": "eemeli@gmail.com"
+        },
+        "homepage": "https://eemeli.org/yaml/",
+        "keywords": [
+          "YAML",
+          "parser",
+          "stringifier"
+        ],
+        "prettier": {
+          "semi": false,
+          "arrowParens": "avoid",
+          "singleQuote": true,
+          "trailingComma": "none"
+        },
+        "repository": {
+          "url": "git+https://github.com/eemeli/yaml.git",
+          "type": "git"
+        },
+        "_npmVersion": "11.8.0",
+        "description": "JavaScript parser and stringifier for YAML",
+        "directories": {},
+        "maintainers": [
+          {
+            "name": "eemeli",
+            "email": "eemeli@gmail.com"
+          }
+        ],
+        "_nodeVersion": "25.5.0",
+        "browserslist": "defaults, not ie 11",
+        "_hasShrinkwrap": false,
+        "devDependencies": {
+          "jest": "^29.0.1",
+          "tslib": "^2.8.1",
+          "eslint": "^9.9.1",
+          "rollup": "^4.12.0",
+          "prettier": "^3.0.2",
+          "@eslint/js": "^9.9.1",
+          "babel-jest": "^29.0.1",
+          "fast-check": "^2.12.0",
+          "typescript": "^5.7.2",
+          "@babel/core": "^7.12.10",
+          "@types/jest": "^29.2.4",
+          "@types/node": "^20.11.20",
+          "jest-resolve": "^29.7.0",
+          "@babel/preset-env": "^7.12.11",
+          "typescript-eslint": "^8.4.0",
+          "@rollup/plugin-babel": "^6.0.3",
+          "@rollup/plugin-replace": "^6.0.3",
+          "eslint-config-prettier": "^10.1.8",
+          "@rollup/plugin-typescript": "^12.1.1",
+          "jest-ts-webcompat-resolver": "^1.0.0",
+          "@babel/plugin-transform-typescript": "^7.12.17"
+        },
+        "_npmOperationalInternal": {
+          "tmp": "tmp/yaml_2.9.0_1778494583891_0.33680098687885596",
+          "host": "s3://npm-registry-packages-npm-production"
+        },
+        "_id": "yaml@2.9.0",
+        "version": "2.9.0"
+      }
+    },
+    {
+      "registry": "https://registry.561.group/",
+      "name": "@red-cup-engineering/yaml-frontmatter-codec-service",
+      "version": "0.1.8",
+      "found": true,
+      "reachable": true,
+      "manifest": {
+        "name": "@red-cup-engineering/yaml-frontmatter-codec-service",
+        "version": "0.1.8",
+        "private": false,
+        "type": "module",
+        "description": "Full YAML mapping codec and byte-preserving top-level mapping mutation.",
+        "exports": {
+          ".": "./src/index.mjs",
+          "./convert-yaml": "./src/convert-yaml.mjs"
+        },
+        "files": [
+          "src"
+        ],
+        "scripts": {
+          "check": "node --check src/index.mjs && node --check src/document.mjs && node --check src/convert-yaml.mjs",
+          "test": "node --test test/*.test.mjs"
+        },
+        "dependencies": {
+          "yaml": "2.9.0",
+          "@red-cup-engineering/json-services-section": "0.4.0"
+        },
+        "readme": "# YAML conversion and source edits\n\nThe native yaml 2.9.1 parser owns grammar, document directives, anchors, tags,\nsource ranges and diagnostics. The hand-written restricted parser is removed.\nMarkdown consumers still own frontmatter fences and body bytes.\n\nThe mapping API admits a finite JSON record: scalar keys become strings,\nsafe integer values remain numbers, aliases resolve, and cycles, unresolved\ntags, nonfinite values and unsafe integers are refused. Existing canonical\nrecord serialization and source-preserving field edits remain available.\nEdits to a valid document cannot leave an unresolved alias. Malformed source\nretains the conservative lexical edit and explicit scalar-repair paths.\n\nThe ./convert-yaml entry exposes yamlToJson({text}), jsonToYaml({value}) and\nvalidateYamlDocument({text}). Conversion accepts all JSON root kinds.\nValidation reports the actual declared YAML version (1.2 by default), syntax\nand unresolved-alias issues, and separate tag/directive warnings. A valid YAML\ngraph need not be representable in JSON.\n\nPaid operations admit 65536 UTF-8 bytes, depth 64, 8192 syntax/projection nodes\nand at most 100 aliases. JSON conversion also limits arrays to 4096 items and\nrefuses excessive alias expansion. Resource refusals are not syntax verdicts.\nNo upstream compute, model or filesystem access is needed.\n",
+        "readmeFilename": "README.md",
+        "_id": "@red-cup-engineering/yaml-frontmatter-codec-service@0.1.8",
+        "_nodeVersion": "24.19.0",
+        "_npmVersion": "11.17.0",
+        "dist": {
+          "integrity": "sha512-u5B5uX2C3oebP36d+h2AoAg3HXiXQ5FUWA+ob/vOyWCwONgrVHEROwNUZBJkSktO2GXXvAd1MTJNaJ0HWndaFg==",
+          "shasum": "c5c75c1e1cda0f0903acfe1aa0b7d5b7d9822b0d",
+          "tarball": "https://registry.561.group/@red-cup-engineering/yaml-frontmatter-codec-service/-/yaml-frontmatter-codec-service-0.1.8.tgz"
+        },
+        "_npmUser": {
+          "name": "emsenn"
+        }
+      }
+    },
+    {
+      "registry": "https://registry.561.group/",
+      "name": "@red-cup-engineering/json-services-section",
+      "version": "0.4.0",
+      "found": true,
+      "reachable": true,
+      "manifest": {
+        "name": "@red-cup-engineering/json-services-section",
+        "version": "0.4.0",
+        "type": "module",
+        "private": false,
+        "license": "MIT",
+        "exports": {
+          ".": "./src/index.mjs",
+          "./parse-json": "./scripts/parse-json.mjs",
+          "./project-json-record-keys": "./scripts/project-json-record-keys.mjs",
+          "./form-cloudevent": "./scripts/form-cloudevent.mjs",
+          "./validate-cloudevent": "./scripts/validate-cloudevent.mjs",
+          "./package.json": "./package.json",
+          "./schema": "./src/json.schema.json",
+          "./canonical-json": {
+            "types": "./scripts/canonical-json.d.mts",
+            "import": "./scripts/canonical-json.mjs"
+          },
+          "./types": {
+            "types": "./src/json-value.d.mts"
+          },
+          "./assert-canonical-json": "./scripts/assert-canonical-json.mjs",
+          "./is-canonical-json": "./scripts/is-canonical-json.mjs",
+          "./parse-json-value": "./scripts/parse-json-value.mjs",
+          "./is-json-value": "./scripts/is-json-value.mjs",
+          "./require-json-value": {
+            "types": "./scripts/require-json-value.d.mts",
+            "import": "./scripts/require-json-value.mjs"
+          },
+          "./assert-nonempty-string": "./scripts/assert-nonempty-string.mjs",
+          "./is-json-record": {
+            "types": "./scripts/is-json-record.d.mts",
+            "import": "./scripts/is-json-record.mjs"
+          },
+          "./freeze-json": "./scripts/freeze-json.mjs",
+          "./admit-json-type": "./scripts/admit-json-type.mjs",
+          "./read-json-field": "./scripts/read-json-field.mjs",
+          "./is-object-record": "./scripts/is-object-record.mjs",
+          "./is-json-text": "./scripts/is-json-text.mjs",
+          "./json-values-of-text": "./scripts/json-values-of-text.mjs",
+          "./write-json-text": "./scripts/write-json-text.mjs",
+          "./keyed-json-text": "./scripts/keyed-json-text.mjs",
+          "./json-byte-carrier": "./src/json-byte-carrier.mjs",
+          "./encode-json-byte-carrier": "./scripts/encode-json-byte-carrier.mjs",
+          "./decode-json-byte-carrier": "./scripts/decode-json-byte-carrier.mjs",
+          "./canonical": "./scripts/canonical-json.mjs",
+          "./differentiate-data": "./scripts/differentiate-data.mjs",
+          "./differentiate-sequences": "./scripts/differentiate-sequences.mjs",
+          "./json-equality": "./scripts/json-equality.mjs",
+          "./json-resource": "./scripts/json-resource.mjs",
+          "./resolve-json-pointer": "./scripts/resolve-json-pointer.mjs",
+          "./json-transformations": "./scripts/json-transformations.mjs",
+          "./json-patch": "./scripts/json-patch.mjs"
+        },
+        "files": [
+          "src",
+          "scripts",
+          "README.md",
+          "package.json",
+          "schemas"
+        ],
+        "devDependencies": {},
+        "scripts": {
+          "test": "node --test test/*.test.mjs",
+          "pack:dry-run": "npm pack --dry-run --ignore-scripts"
+        },
+        "engines": {
+          "node": ">=24.2.0"
+        },
+        "readme": "# JSON\n\nJSON value admission, canonical serialization, text and byte carriers, record-key projection, and CloudEvents are direct functions in `scripts/`. Each script exports its function and input/output schemas. Run it with one JSON value on stdin to receive one JSON value on stdout. `src/index.mjs` collects the function exports.\n\n```sh\nprintf '%s\\n' '{\"z\":2,\"a\":1}' | node scripts/canonical-json.mjs\n# \"{\\\"a\\\":1,\\\"z\\\":2}\"\nprintf '%s\\n' '{\"record\":{\"name\":\"Ada\",\"role\":\"engineer\"},\"keys\":[\"name\"]}' | node scripts/project-json-record-keys.mjs\n# {\"name\":\"Ada\"}\n```\n\n| Capability | Location |\n| --- | --- |\n| Parse, admit, canonicalize, project JSON | `scripts/` |\n| Validate instances, resolve local references, transform schema assertions | [JSON Schema](services/json-schema-services-section/) |\n| Read and write sequences of JSON records | [JSONL](services/jsonl-services-section/) |\n| Entity–attribute–value–time evidence and journals | [EAVT](services/jsonl-services-section/services/eavt-services-section/) |\n| Explicit judgments and assert/retract facts | [Datom](services/jsonl-services-section/services/eavt-services-section/services/datom-services-section/) |\n| Closed RMN semantic coordinates and semantic records | [SEAVT](services/jsonl-services-section/services/eavt-services-section/services/seavt-services-section/) |\n\nGeneric JSON admission accepts finite, acyclic values with dense arrays and plain records. RFC 8785 canonical serialization also refuses lone Unicode surrogates, sorts keys by UTF-16 code units, and preserves array order.\n\nByte carriers use `{mediaType, bytes}` with integer bytes from 0 through 255. Native `Buffer` and `Uint8Array` conversion belongs at the caller boundary. There is no build step; run `node --test test/*.test.mjs`.\n\nRFC 6902 JSON Patch application, applicability checking and deterministic patch creation are direct functions in `scripts/json-patch.mjs`, exported as `./json-patch`. `applyJsonPatch({value,patch})` returns `{present:true,value}` or `{present:false}` for document removal. Its six operations use the same RFC 6901 parser as pointer lookup and schema references; patch paths use string pointers, not URI fragments. Own keys such as `__proto__` remain ordinary JSON data. All edits happen on a private copy; a failed sequence never edits the supplied input. `checkJsonPatch` reports a bounded operation index and rule for an inapplicable patch. `createJsonPatch({before,after})` returns an RFC patch using object keys and positional array edits; it does not promise the smallest patch.\n\nPaid transformations accept at most 64 KiB canonical request/result JSON, 128 patch operations, 8,192 nodes, 4,096 array elements and physical nesting depth 64. Non-finite numbers, invalid Unicode, non-JSON values and resource-limit excess are refused. The HTTP services transform supplied data only; they do not PATCH a remote resource or database.\n",
+        "readmeFilename": "README.md",
+        "gitHead": "a9e1a83623a19e53af7a15f909524d65fd46c062",
+        "_id": "@red-cup-engineering/json-services-section@0.4.0",
+        "description": "JSON value admission, canonical serialization, text and byte carriers, record-key projection, and CloudEvents are direct functions in `scripts/`. Each script exports its function and input/output schemas. Run it with one JSON value on stdin to receive one JSON value on stdout. `src/index.mjs` collects the function exports.",
+        "_nodeVersion": "24.19.0",
+        "_npmVersion": "11.17.0",
+        "dist": {
+          "integrity": "sha512-WjToogRIj9qq5VaPQ52Lao8v/rXhSX7umi+rEn0Xysnfv6qAv77llXe68wboADrpQK2micSBS3DSGJWd5CoZkg==",
+          "shasum": "19f29062fdc609fe4d6ce1fd13292fbeb63200df",
+          "tarball": "https://registry.561.group/@red-cup-engineering/json-services-section/-/json-services-section-0.4.0.tgz"
+        },
+        "_npmUser": {
+          "name": "emsenn"
+        }
+      }
+    }
+  ]
+}

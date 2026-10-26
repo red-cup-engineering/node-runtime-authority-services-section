@@ -1,0 +1,7 @@
+{
+  "kind": "npm.source-registry-closure.applied",
+  "manifests": 1,
+  "changed": [
+    "/var/tmp/engineering-abandoned-prs-20261020/packaging-github-intake/code23-source-bc494ee673f59fcdccc939a6102ae089fac1658b/package.json"
+  ]
+}

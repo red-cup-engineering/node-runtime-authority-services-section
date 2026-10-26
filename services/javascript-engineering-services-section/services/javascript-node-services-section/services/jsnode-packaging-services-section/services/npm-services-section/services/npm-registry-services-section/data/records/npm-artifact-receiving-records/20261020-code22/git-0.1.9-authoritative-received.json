@@ -1,0 +1,12 @@
+{
+  "name": "@red-cup-engineering/git-services-section",
+  "version": "0.1.9",
+  "gitHead": "2c022223608d2f8854a8fd5f0b14c3160b2ada65",
+  "integrity": "sha512-BxPhCCJRASxwfeOgYwDjoBSKr8iaufszHPSKsTxfet4wvXJJ3Wb+zGNqLYXo3YRFkHjjkzVdUf/bcVintOe+Dw==",
+  "artifactDownloaded": true,
+  "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-git19/git-0.1.9-authoritative.tgz",
+  "bytes": 192390,
+  "sha256": "beff464dfed388ad730426e8e4711307a87d8c43aa198d971663438b1ba80e42",
+  "receiver": "original Code receiveRegistryTarball; authentic exactprimary metadata",
+  "scope": "Retained original99member cohort artifact, not a repack or releasedchecker receiving verdict"
+}

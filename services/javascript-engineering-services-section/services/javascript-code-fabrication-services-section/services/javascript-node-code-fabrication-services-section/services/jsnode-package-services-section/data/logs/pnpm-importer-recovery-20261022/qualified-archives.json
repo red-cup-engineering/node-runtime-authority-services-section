@@ -1,0 +1,49 @@
+[
+  {
+    "version": "0.2.4",
+    "gitHead": null,
+    "tarball": "https://registry.561.group/@red-cup-engineering/jsnode-package-services-section/-/jsnode-package-services-section-0.2.4.tgz",
+    "integrity": "sha512-h7dzsgftCK/eRHEhQnRZl5026+cL6xqUzCLE+GKuFRoPe6zx+6AnFqllqKUlXNQEhsedEIVGRsCFWgySi7i/bA==",
+    "bytes": 93406,
+    "extracted": [
+      "package/package.json",
+      "package/src/workspace/pnpm-lockfile.mjs"
+    ]
+  },
+  {
+    "version": "0.2.5-dev.615",
+    "gitHead": "1c7a14cadb6336776b5da2d9f1c1d014b6ab0b51",
+    "tarball": "https://registry.561.group/@red-cup-engineering/jsnode-package-services-section/-/jsnode-package-services-section-0.2.5-dev.615.tgz",
+    "integrity": "sha512-DgC9ZZg5Iw8DKtfilGd75/1xXyRF62KX1f1AqkoWBoWL/hbRrgc0yRXyIEFpa53xGyyKduloqNg0SMT03PTrbw==",
+    "bytes": 153171,
+    "extracted": [
+      "package/package.json",
+      "package/test/pnpm-lockfile-importers.test.mjs",
+      "package/src/workspace/pnpm-lockfile.mjs"
+    ]
+  },
+  {
+    "version": "0.3.0",
+    "gitHead": "8dbf7c01b56c106ab50724b8ea38b5030ace981c",
+    "tarball": "https://registry.561.group/@red-cup-engineering/jsnode-package-services-section/-/jsnode-package-services-section-0.3.0.tgz",
+    "integrity": "sha512-RyH0PIcX/2QFyvuKDdOh3uGoa6KazLFtYakEP1rTIlN+aWdLZk2hRqZYVK8r0vdXUAUwemkVB8VhaluemTfo1w==",
+    "bytes": 157262,
+    "extracted": [
+      "package/package.json",
+      "package/test/pnpm-lockfile-importers.test.mjs",
+      "package/src/workspace/pnpm-lockfile.mjs"
+    ]
+  },
+  {
+    "version": "0.5.0",
+    "gitHead": "60364d28fc84146d74e4c60ccc6bb969f0633603",
+    "tarball": "https://registry.561.group/@red-cup-engineering/jsnode-package-services-section/-/jsnode-package-services-section-0.5.0.tgz",
+    "integrity": "sha512-QBnwNq1qReDYeBv/HZW97QRvKj32bDKdVOfxr7YJnqv1puAc9uywFayFX+4RuhdMePsNA2Ml6SOBCMt0HsgUzw==",
+    "bytes": 159298,
+    "extracted": [
+      "package/package.json",
+      "package/test/pnpm-lockfile-importers.test.mjs",
+      "package/src/workspace/pnpm-lockfile.mjs"
+    ]
+  }
+]

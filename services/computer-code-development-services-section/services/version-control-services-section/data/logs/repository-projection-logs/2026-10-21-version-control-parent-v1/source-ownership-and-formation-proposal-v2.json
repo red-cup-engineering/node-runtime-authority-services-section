@@ -1,0 +1,212 @@
+{
+  "kind": "MissingVersionControlServicesSectionSourceOwnershipProposal",
+  "at": "2026-10-21T18:22:19.103Z",
+  "source": {
+    "repository": "red-cup-engineering/software-development-services-section",
+    "repositoryId": 1425310771,
+    "commit": "da3829977fab35cf2af5b4ba84720e24fc30dd4d",
+    "path": "services/version-control-services-section",
+    "tree": "e5b4938579124cf35793fbccc680c8bf766c5dcb",
+    "leaves": 15,
+    "blobs": 13,
+    "bytes": 157173,
+    "branches": [
+      "main"
+    ],
+    "tags": 0,
+    "allStatePulls": 0,
+    "allStateIssues": 0
+  },
+  "target": {
+    "repository": "red-cup-engineering/version-control-services-section",
+    "visibility": "public",
+    "defaultBranch": "main",
+    "absence": {
+      "provider": "original GitHubReviewRestPort.findRepository null means 404",
+      "actualValue": null,
+      "antecedentCorrection": "Initial census state field mistakenly said EXISTS while its repository is null; no existing repository was observed, no mutation occurred."
+    }
+  },
+  "native": {
+    "git": "/gnu/store/2jgm0z1f745cmg2wnv8yskcm5q2dpq2m-git-2.54.0/bin/git",
+    "directory": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/data/logs/repository-projection-logs/2026-10-21-version-control-parent-v1/source.git",
+    "baseline": "a25b4c32b0612a3b15fb66fa8164998a19388f47",
+    "baselineTree": "e5b4938579124cf35793fbccc680c8bf766c5dcb",
+    "head": "0bd24b5e16f3ce85effaa22fe50da25b2e9d0b2e",
+    "tree": "e7816acb6bd9f4a37e92149c12d0f5cd5d9af687",
+    "leaves": [
+      {
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e6abc9f821840565ac5bc7f2558a0c414f76a5c4",
+        "path": ".gitmodules"
+      },
+      {
+        "mode": "100644",
+        "type": "blob",
+        "sha": "55ef949b3d67538e0c7e183e97da3c6011de67a7",
+        "path": "README.md"
+      },
+      {
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0b29f2a789b9c783a4d3c52b2114e4e6b921b75f",
+        "path": "data/records/repository-origin-records/2026-10-21-source-origin.json"
+      },
+      {
+        "mode": "100644",
+        "type": "blob",
+        "sha": "828acd936512f190ce2482c28c98dbca3c617d3d",
+        "path": "lib/legacy/2026-08-06-block-device-io-coordinator/content/host-activation.md"
+      },
+      {
+        "mode": "100644",
+        "type": "blob",
+        "sha": "e5b69fb990e475bab677bbc64652ba5a6ad72e3c",
+        "path": "lib/legacy/2026-08-06-block-device-io-coordinator/lib/ownership.json"
+      },
+      {
+        "mode": "100644",
+        "type": "blob",
+        "sha": "989eea1730283a0a792d52e3e563314a9fdb7cf5",
+        "path": "lib/legacy/2026-08-06-block-device-io-coordinator/package.json"
+      },
+      {
+        "mode": "100644",
+        "type": "blob",
+        "sha": "9844369436c410947f030a2c9631e4307737bfa3",
+        "path": "lib/legacy/2026-08-06-block-device-io-coordinator/src/bound-git-profile-a2a-executor.js"
+      },
+      {
+        "mode": "100644",
+        "type": "blob",
+        "sha": "201420bf92be9daab53dd7a2bf0aea797a19416e",
+        "path": "lib/legacy/2026-08-06-block-device-io-coordinator/src/bound-git-profile-auth.js"
+      },
+      {
+        "mode": "100644",
+        "type": "blob",
+        "sha": "f9bba1768d060e1f0b26ddb6d9a6c9ad6b45f949",
+        "path": "lib/legacy/2026-08-06-block-device-io-coordinator/src/bound-git-profile-store.js"
+      },
+      {
+        "mode": "100644",
+        "type": "blob",
+        "sha": "2a1ce6939e61d9ebb46994360cf656f287365ef4",
+        "path": "lib/legacy/2026-08-06-block-device-io-coordinator/src/bound-git-profile-wire.js"
+      },
+      {
+        "mode": "100644",
+        "type": "blob",
+        "sha": "33f17667ddfb1b39666357984a3577ee6668d810",
+        "path": "lib/legacy/2026-08-06-block-device-io-coordinator/src/bound-git-profile.js"
+      },
+      {
+        "mode": "100644",
+        "type": "blob",
+        "sha": "97ece652c2a4d50579e6222b8e0ef6723750ee32",
+        "path": "lib/legacy/2026-08-06-block-device-io-coordinator/src/serve-bound-git-profile.js"
+      },
+      {
+        "mode": "100644",
+        "type": "blob",
+        "sha": "3ae9cd1be913dc7e93bc7b4fb559c6f62e684588",
+        "path": "lib/legacy/2026-08-06-block-device-io-coordinator/test/bound-git-profile-ingress.test.js"
+      },
+      {
+        "mode": "100644",
+        "type": "blob",
+        "sha": "6f18c13db2eca22b40b70863b2d0887a0c501aad",
+        "path": "lib/legacy/2026-08-06-block-device-io-coordinator/test/bound-git-profile-wire.test.js"
+      },
+      {
+        "mode": "100644",
+        "type": "blob",
+        "sha": "0900c57cf1cb1ad45110489e8b98472c7ce924ef",
+        "path": "lib/legacy/2026-08-06-block-device-io-coordinator/test/bound-git-profile.test.js"
+      },
+      {
+        "mode": "160000",
+        "type": "commit",
+        "sha": "d58ad98d486998e1fbe22db44ecd6b63f9ab470f",
+        "path": "services/git-services-section"
+      },
+      {
+        "mode": "160000",
+        "type": "commit",
+        "sha": "d5ea38205be0ab45f52f098cbb615769307bd74e",
+        "path": "services/software-forge-services-section"
+      }
+    ],
+    "changedPaths": [
+      ".gitmodules",
+      "data/records/repository-origin-records/2026-10-21-source-origin.json"
+    ],
+    "currentSourceTreeProof": "a034b7edd1d6fb0a13d7fae15bb28f33eb7563bf",
+    "currentSourceIndex": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/data/logs/repository-projection-logs/2026-10-21-version-control-parent-v1/current-original-source.index",
+    "forwardChangedPaths": [
+      "services/software-forge-services-section",
+      "data/records/repository-origin-records/2026-10-21-source-origin.json"
+    ]
+  },
+  "formation": {
+    "api": "original GHS0.2.4 createRepository strictReceiving:true",
+    "input": {
+      "requestId": "version-control-services-section-source-owner-20261021",
+      "organization": "red-cup-engineering",
+      "name": "version-control-services-section",
+      "visibility": "public",
+      "description": "Version Control Services Section; original Git/Software Forge source composition.",
+      "defaultBranch": "main",
+      "initialization": "empty"
+    },
+    "store": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/github-engineering-services-section/data/state/github-source-integration-state/receipts.json",
+    "effect": "One public empty repository; exact already-sealed native source main pushed once, actual identity/audience/17 leaves read back. Any uncertain create or push is observed before successor."
+  },
+  "parent": {
+    "repository": "red-cup-engineering/software-development-services-section",
+    "base": "17fd40e81f915bd23da5b6d40f06bfe93bba49e9",
+    "workflowPaths": [],
+    "effect": "After child independently received, replace exact embedded source subtree with qualified child gitlink, move only two deep declarations to child, add one safe curated parent composition receipt. Ready normal PR consumed by authenticated source-handoff bridge; no manual parent merge."
+  },
+  "notClaimed": [
+    "legacy implementation/activation",
+    "runtime package/version",
+    "native test qualification",
+    "whole source history import",
+    "parent integration before actual bridge receiving"
+  ],
+  "evidence": [
+    {
+      "file": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/data/logs/repository-projection-logs/2026-10-21-version-control-parent-v1/exact-version-control-source.json",
+      "sha256": "9e4bb1c16137f8e4281b531783950d51844c9668644380d699106f8fe218a014"
+    },
+    {
+      "file": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/data/logs/repository-projection-logs/2026-10-21-version-control-parent-v1/actual-original-development-route-census.json",
+      "sha256": "1fcf63a83c483bb27cdef4235c54bfdbbd3c15fabc3f298bf6be8d981437672b"
+    },
+    {
+      "file": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/data/logs/repository-projection-logs/2026-10-21-version-control-parent-v1/current-parent-and-target-census.json",
+      "sha256": "96564860f15938928187f7b2e6f282b200c11ef28b04345f99b425d8c154d9f9"
+    }
+  ],
+  "antecedent": {
+    "proposal": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/data/logs/repository-projection-logs/2026-10-21-version-control-parent-v1/source-ownership-and-formation-proposal.json",
+    "sha256": "c56ce1facc3d8671407e390372c5b634583283680d59ac2c36fc29f0e08634da",
+    "nativeHead": "12e2db9a0fda8fa79394c49999bc0298592ec793",
+    "repositoryEffects": "none before stale selected parent source was observed"
+  },
+  "currentParent": {
+    "commit": "17fd40e81f915bd23da5b6d40f06bfe93bba49e9",
+    "tree": "a034b7edd1d6fb0a13d7fae15bb28f33eb7563bf",
+    "sourceEntries": 15,
+    "regularSourceBytes": 157173,
+    "parentModulesUnchanged": true,
+    "workflowPaths": []
+  },
+  "currentSelectionProvenance": {
+    "parent": "17fd40e81f915bd23da5b6d40f06bfe93bba49e9 Produced-by original normalize-submodule-pins",
+    "softwareForge": "d5ea38205be0ab45f52f098cbb615769307bd74e selects actual GHS16a5d3b; source selection only, no runtime claim"
+  },
+  "deltaSha256": "4ed228b6d219e88d71c480c136b434c62bdef0f5053c4a208d198809c70db33a"
+}

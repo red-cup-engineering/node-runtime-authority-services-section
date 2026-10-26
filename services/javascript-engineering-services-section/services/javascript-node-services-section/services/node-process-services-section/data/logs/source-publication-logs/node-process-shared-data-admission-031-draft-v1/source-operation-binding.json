@@ -1,0 +1,21 @@
+{
+  "type": "ForwardOriginalGuardedNodeSourceDraftPublication",
+  "originalCarrier": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/source-publication/submit-node-owned-root-source.mjs",
+  "originalCarrierSHA256": "dcda30ca64308b55ca5199908fec5f571d301a44ad8bfddecaeb4ac08dbca9db",
+  "carrier": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/source-publication-logs/node-process-shared-data-admission-031-draft-v1/submit-node-shared-source-draft.mjs",
+  "carrierSHA256": "23839c163f04d54966c17e30cfdcd4b5437d30c999cc051aaa984530014d27a6",
+  "input": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/source-publication-logs/node-process-shared-data-admission-031-draft-v1/input-manifest.json",
+  "inputSHA256": "c1db49a15b10c4929a6c1c4b4e541c430cd88841231adf4c37fac5a5787f30f6",
+  "snapshot": "aea503bb5649df85c00a47ea4c40a090dc66ec1dc0804edf6552c6c132b67c4e",
+  "operation": "One original guarded GitData six-path draft source proposal; no merge/package/QA/native effects",
+  "guards": [
+    "exactmain,parent/tree/old6blob",
+    "existing open overlappingPR/branchabsence",
+    "workflow inventory0",
+    "source27snapshot/6afterSHA+Gitblob",
+    "base_tree unrelatedleaves/gitlinks preserved",
+    "freshmain+branch/nonforceupdate",
+    "actual draftPR/ref and6remote blob readback"
+  ],
+  "actualHOMEandCODEXHOME": "Inherited unchanged, only explicit GH_CACHE_DIR/TMPDIR"
+}

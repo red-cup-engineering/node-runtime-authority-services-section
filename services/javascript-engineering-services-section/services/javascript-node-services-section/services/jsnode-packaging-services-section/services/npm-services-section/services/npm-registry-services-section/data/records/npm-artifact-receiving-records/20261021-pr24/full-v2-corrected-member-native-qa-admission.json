@@ -1,0 +1,218 @@
+{
+  "phase": "admitted-before-dispatch",
+  "stage": "qualify-code-pr24-corrected-original-member-suite",
+  "lifecycle": {
+    "owner": "@red-cup-engineering/npm-workspace-publication-service",
+    "invocation": "20261021-CodePR24/full-v2-source-native-qa-corrected-member-suite",
+    "purpose": "Affected complete authored member-receiving suite after independently approved one-line test-only primitive Object.isFrozen correction; unchanged original512MiB budget. Whole481case first run and source-native SHA256 passing receipt preserved.",
+    "kind": "unique",
+    "retention": "Preserve source, exactGitobjects, terminal/admission and qualification through originalCode13/22 integration and publication; original owner retires only after receiving. No blanket cleanup.",
+    "source": [
+      {
+        "repository": "https://github.com/red-cup-engineering/npm-workspace-publication-service.git",
+        "commit": "24bb6cedfe36a847057f9003bde6e88bcc7da00b",
+        "path": "."
+      }
+    ],
+    "custody": [
+      {
+        "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24/qualify-full-v2-corrected-member-source.mjs",
+        "sha256": "1af8a8e218764bf6e6a78a38f64b750383c88fc175829646d1ac6f736175963b",
+        "role": "creation"
+      },
+      {
+        "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24/full-v2-corrected-member-qa-inputs.json",
+        "sha256": "382ccf3b19327701d57439c33295ce324edf352e9511c6536da720b3bb1613ae",
+        "role": "creation"
+      },
+      {
+        "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24/full-v2-source-binding-plan.json",
+        "sha256": "10b5142a12d3cafa6b0a1bdbafc1113bc520ca989a68138cc67f8d96ce5398ed",
+        "role": "creation"
+      },
+      {
+        "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24/code-primitive-lock-receipt.json",
+        "sha256": "f30d524446057ffc9736ff46819ec4320b91cbe19e5484649959c944c8b00493",
+        "role": "creation"
+      },
+      {
+        "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24/root-independent-full-v2-negative-fixture-contract.json",
+        "sha256": "5c4c842614c52940fe596e3ba13c26f23d2719cea5e53c3087c9e78c81a27d9d",
+        "role": "creation"
+      }
+    ],
+    "status": "planned"
+  },
+  "destinations": [
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261021-pr24",
+      "peakBytes": 536870912,
+      "peakInodes": 32768,
+      "basis": "Original unchanged512MiB native authored sourceQA scratch budget; no dependency graph install. Fresh100GBphysicalfloor after all original charges.",
+      "estimateKind": "estimate"
+    },
+    {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24",
+      "peakBytes": 8388608,
+      "peakInodes": 512,
+      "basis": "Native command, source QA, full admission and terminal receipt custody.",
+      "estimateKind": "estimate"
+    }
+  ],
+  "headroom": {
+    "minFreePercent": 3,
+    "minFreeInodes": 1000000,
+    "growthBytes": 2147483648,
+    "growthInodes": 250000
+  },
+  "command": [
+    "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24/qualify-full-v2-corrected-member-source.mjs",
+    "--execute"
+  ],
+  "requiredDestinations": [
+    {
+      "destination": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24",
+      "ancestor": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24",
+      "realpath": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24",
+      "device": "2096",
+      "blockSize": "4096",
+      "blocks": "263940717",
+      "availableBlocks": "166944503",
+      "inodes": "67108864",
+      "freeInodes": "43979939",
+      "requiresBacking": true,
+      "at": "2026-10-21T04:33:28.710Z"
+    },
+    {
+      "destination": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261021-pr24",
+      "ancestor": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261021-pr24",
+      "realpath": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261021-pr24",
+      "device": "2096",
+      "blockSize": "4096",
+      "blocks": "263940717",
+      "availableBlocks": "166944499",
+      "inodes": "67108864",
+      "freeInodes": "43979938",
+      "requiresBacking": true,
+      "at": "2026-10-21T04:33:28.711Z"
+    }
+  ],
+  "before": {
+    "admitted": true,
+    "filesystems": [
+      {
+        "device": "2096",
+        "bytes": "1081101176832",
+        "availableBytes": "683804663808",
+        "inodes": "67108864",
+        "freeInodes": "43979936",
+        "blockSize": "4096",
+        "peakBytes": "545259520",
+        "peakInodes": "33280",
+        "paths": [
+          "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261021-pr24",
+          "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24"
+        ],
+        "requiresBacking": true,
+        "reserveBytes": "32433035305",
+        "requiredBytes": "35125778473",
+        "requiredInodes": "1283280",
+        "admitted": true
+      }
+    ],
+    "admissionKind": "snapshot-not-reservation",
+    "concurrency": "Owner growth allowance is charged; unrelated concurrent activity can change capacity after this observation.",
+    "backing": {
+      "at": "2026-10-21T04:33:32.213Z",
+      "mappings": [
+        {
+          "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261021-pr24",
+          "linuxMount": "/",
+          "device": "2096",
+          "volumeId": "\\\\?\\Volume{715daebd-cb0c-495a-a2cb-85c7ff775c00}\\"
+        },
+        {
+          "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/records/npm-artifact-receiving-records/20261021-pr24",
+          "linuxMount": "/",
+          "device": "2096",
+          "volumeId": "\\\\?\\Volume{715daebd-cb0c-495a-a2cb-85c7ff775c00}\\"
+        }
+      ],
+      "volumes": [
+        {
+          "id": "\\\\?\\Volume{715daebd-cb0c-495a-a2cb-85c7ff775c00}\\",
+          "volumeFreeBytes": "107396034560",
+          "callerAvailableBytes": "107396034560",
+          "totalBytes": "1022907904000",
+          "availableBytes": "107396034560",
+          "allocationUnitBytes": "4096",
+          "policy": {
+            "minFreeBytes": "0",
+            "minFreePercent": 3,
+            "growthBytes": "2147483648",
+            "overheadBytes": "67108864",
+            "basis": "Operations retains 3% physical-volume reserve plus 2 GiB growth and a 64 MiB estimated probe/VHDX metadata allowance; estimates are not reservations or arbitrary-write upper bounds. Exact distro/volume binding was read on 2026-10-19; each capacity invocation reobserves it. No automatic trim, sparse conversion, compaction or deletion is authorized."
+          },
+          "vhd": {
+            "lengthBytes": "489682894848",
+            "path": "C:\\Users\\emsen\\AppData\\Local\\wsl\\{645c490d-c03a-4203-80e4-451ee497d286}\\ext4.vhdx",
+            "attributes": 32,
+            "sparse": false
+          },
+          "peakBytes": "545259520",
+          "reserveBytes": "30687237120",
+          "requiredBytes": "33447089152",
+          "devices": [
+            "2096"
+          ],
+          "admitted": true
+        }
+      ],
+      "port": {
+        "kind": "wsl-host-service/1",
+        "node": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+        "script": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/scripts/wsl-host.mjs",
+        "scriptSha256": "eb9d89519f73f30726d9673c5f0588e81f88235dcc0e016c84c28c6366703ec3",
+        "parameters": "/home/emsenn/info/lib/emsenn/services/561-group/services/561-group-services-section/services/561-group-operations-services-section/services/bare-cedar-fog-services-section/data/records/wsl-host-service-records/bare-cedar-fog/wsl-host.json",
+        "parametersSha256": "4778ccbb8c36b0abf4fc8c7a360b10ee333c3cff8ec6374201f57cc9cea3e49f",
+        "sourceFiles": [
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/scripts/wsl-host.mjs",
+            "sha256": "eb9d89519f73f30726d9673c5f0588e81f88235dcc0e016c84c28c6366703ec3"
+          },
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/src/wsl-host.mjs",
+            "sha256": "755478f1da2001991c6ae6501da096ee3881dc060860ab1d0f3d83e17f51becd"
+          },
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/src/backing-capacity.mjs",
+            "sha256": "5b04c9ba24a611a62fa13a1a11de0ce7ed25ada22463e86b3b1983767a586c01"
+          },
+          {
+            "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/services/linux-services-section/services/persistent-linux-machine-engineering-services-section/services/wsl-host-service/assets/observe-backing-capacity.ps1",
+            "sha256": "4c2cf7a9818943c8adf166cc1b5af6d28037b88617d6426ee2c95d6b9a079e70"
+          }
+        ]
+      },
+      "responseSha256": "6be9e5fafbaa4cee6830f13b5b0e52d23948cb93c6cf931233407dc9c878624b",
+      "admitted": true,
+      "admissionKind": "snapshot-not-reservation"
+    }
+  },
+  "taskPhysicalFloor": {
+    "requiredBytes": "100000000000",
+    "calculations": [
+      {
+        "volume": "\\\\?\\Volume{715daebd-cb0c-495a-a2cb-85c7ff775c00}\\",
+        "availableBytes": "107396034560",
+        "peakBytes": "545259520",
+        "growthBytes": "2147483648",
+        "overheadBytes": "67108864",
+        "remainingAfterCharges": "104636182528",
+        "requiredFloor": "100000000000",
+        "accepted": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "kind": "IndependentCodeFinalGeneratedLockSourceReview",
+  "at": "2026-10-21T00:12:58.999685+00:00",
+  "verdict": "APPROVE_SOURCE",
+  "sourceProposalSHA256": "d4504538c6fbb8404f421a830406987fc26d53d3d875d6be0d56bb65925d914b",
+  "patchSHA256": "80eaf50c3db15819c3246f29482a619ad48dbe30d3f389174329e0cdba9a1bb4",
+  "lockSHA256": "750a5ad0e85f02011895eb6c7225b4b36c9264b4522bf7a04512dce2c76c195a",
+  "priorSourceApproval": "independent-code-0.14.24-prelock2-source-review.json",
+  "onlyDeltaFromApprovedSource": "pnpm-lock.yaml",
+  "frozenChangedFilesVerified": 17,
+  "nativeLockReceiving": {
+    "rootImporters": [
+      "."
+    ],
+    "exactRootDependencies": 14,
+    "packageRecords": 101,
+    "snapshots": 101,
+    "allResolutionSHA512": true,
+    "primitive": {
+      "version": "0.1.1",
+      "integrity": "sha512-AtiBu9I5H+35nJPka4T0CClR7oJfZCPwpWlvScR2M95h/xLSa07FAgAhf47oSON7fRM5LKdfZJNpEf5f64U2vQ==",
+      "zeroDependencies": true,
+      "matchesActuallyReceivedOfficialArtifact": true
+    },
+    "tar": {
+      "version": "7.5.22",
+      "closure": {
+        "dependencies": {
+          "@isaacs/fs-minipass": "4.0.1",
+          "chownr": "3.0.0",
+          "minipass": "7.1.3",
+          "minizlib": "3.1.0",
+          "yallist": "5.0.0"
+        }
+      }
+    },
+    "localBindings": false,
+    "gitUmbrellaSettlerFedify": false,
+    "unrelatedExistingResolutionChanges": false
+  },
+  "remaining": [
+    "Producer full actual canonical-provider/GNU-Git QA terminal and bindings restoration",
+    "Normal source integration/publication and genuine original archive/native consumer receiving"
+  ],
+  "receiverEffects": "Read frozen source and native-generated lock only; no binding, rerun, edits or operating effects. Source approval does not claim pending full QA or publication."
+}

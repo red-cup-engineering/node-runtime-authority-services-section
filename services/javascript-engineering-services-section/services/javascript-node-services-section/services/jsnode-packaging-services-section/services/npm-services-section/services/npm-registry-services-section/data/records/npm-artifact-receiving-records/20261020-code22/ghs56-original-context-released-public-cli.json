@@ -1,0 +1,1946 @@
+{
+  "kind": "npm.native-source-archive-receiving",
+  "version": 1,
+  "ok": true,
+  "source": {
+    "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+    "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+    "scope": "",
+    "manifestSHA256": "e83d17fd5fcb03049ca66c77b5c61b41c1ddb5960b82002e26366110df7c6fbd",
+    "members": [
+      {
+        "path": ".gitignore",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": ".gitignore",
+          "object": "c2658d7d1b31848c3b71960543cb0368e56cd4c7"
+        },
+        "bytes": 14,
+        "sha256": "4d56952b0fb13bf8f9b6c13a6d4c34a075bac3af447636a1df4335d7576e2f97"
+      },
+      {
+        "path": "package.json",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "package.json",
+          "object": "c96caa6373dcbb3812d3b322b951b19d6f556964"
+        },
+        "bytes": 6174,
+        "sha256": "e83d17fd5fcb03049ca66c77b5c61b41c1ddb5960b82002e26366110df7c6fbd"
+      },
+      {
+        "path": "README.md",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "README.md",
+          "object": "96a284a77e927dbecdceac7e0bb672667443d40f"
+        },
+        "bytes": 49837,
+        "sha256": "87ec08c6de7488a2b03df9dcadd26406d215ad5aba6749b77795e7b42bc6e97b"
+      },
+      {
+        "path": "scripts/apply-repository-declarations.mjs",
+        "gitMode": "100755",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "scripts/apply-repository-declarations.mjs",
+          "object": "6c20e0ee8e6e3eb70721055985813705f6fa4cf4"
+        },
+        "bytes": 2055,
+        "sha256": "00c2151bb4686e1bdf88fae818169e6ee3847270fa34647064a541194e706f69"
+      },
+      {
+        "path": "scripts/compose-compositions.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "scripts/compose-compositions.mjs",
+          "object": "2d5f3b2e1b8a69737a39bed73f1f0b45823ef10d"
+        },
+        "bytes": 3311,
+        "sha256": "f2be5933087d19c6131cd6ba0d5e1644139b507683b92a49db809d792e5e2ab6"
+      },
+      {
+        "path": "scripts/compose-on-publication.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "scripts/compose-on-publication.mjs",
+          "object": "1dde10974b1c8e415b5640954f8a2b0a808ea251"
+        },
+        "bytes": 3859,
+        "sha256": "56e713568b1565ef4b61fa128b202982e4c4a1fd6e73f68f7f6363123c76e96c"
+      },
+      {
+        "path": "scripts/drain-composition.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "scripts/drain-composition.mjs",
+          "object": "62b2bb274433a38711570a4eac5fb741b6c051cb"
+        },
+        "bytes": 1068,
+        "sha256": "4d7cfa925f4063c3045a61a742a9247185985230e95feb69edbc3009ebd5be77"
+      },
+      {
+        "path": "scripts/github-app-manifest.mjs",
+        "gitMode": "100755",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "scripts/github-app-manifest.mjs",
+          "object": "48c01c289936d2c2c28fc5123f7d2fcb4920ba69"
+        },
+        "bytes": 2708,
+        "sha256": "9b0309f73d58844b5832ae5b7c40db91901609f79103bf4ddf4a9bde294b7814"
+      },
+      {
+        "path": "scripts/normalize-submodule-pins.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "scripts/normalize-submodule-pins.mjs",
+          "object": "7ed76599f926f5e82a6fbc1ef6754c35e8ce43d8"
+        },
+        "bytes": 3587,
+        "sha256": "128441cfe64f3034bd889567009093042cf672be8e47141065fe4d2421d72bea"
+      },
+      {
+        "path": "scripts/prepare-repository-receiving.mjs",
+        "gitMode": "100755",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "scripts/prepare-repository-receiving.mjs",
+          "object": "4602fbc9b616cd11b2cd1a2cd041b6037564549e"
+        },
+        "bytes": 771,
+        "sha256": "3f97fdfafa95342473b7eb87fef768ffcc314e67ee31250e8e4bfee17e4946fe"
+      },
+      {
+        "path": "scripts/publish-landed-packages.mjs",
+        "gitMode": "100755",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "scripts/publish-landed-packages.mjs",
+          "object": "77ace4b8bf687305d85bb985eea5a69cdd4ebd65"
+        },
+        "bytes": 5464,
+        "sha256": "27781294e6ada27dc442f0bca33959382b1951e0bbbfdcd70c54b8364b6e2392"
+      },
+      {
+        "path": "scripts/receive-gh-credential.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "scripts/receive-gh-credential.mjs",
+          "object": "63e3bdcd3bfa85147c7f2ebece4ff122f38f2be6"
+        },
+        "bytes": 874,
+        "sha256": "14db9b5892dcafabccbcb00fe765a5607f3e6e0e37761fc4e995eb2289b9bb60"
+      },
+      {
+        "path": "scripts/receive-submodule-pin-events.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "scripts/receive-submodule-pin-events.mjs",
+          "object": "28a390f973d5432dca415111ff92c25e315cae73"
+        },
+        "bytes": 10127,
+        "sha256": "518fd27ccf84fc63bfed3465bb8bf2df0618fbab1cba2d97e3885bb8a5dae664"
+      },
+      {
+        "path": "scripts/reconcile-github-estate.mjs",
+        "gitMode": "100755",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "scripts/reconcile-github-estate.mjs",
+          "object": "0f8d7cccdd210a5365d2497660959091216200a3"
+        },
+        "bytes": 8173,
+        "sha256": "b1e3210fa50ab64827a830c82998e6b4fade84e3c828fafcebed6d690d2a57a1"
+      },
+      {
+        "path": "scripts/repository-hosting.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "scripts/repository-hosting.mjs",
+          "object": "662358870d22f9cb25eae8e7ae84006990adfcca"
+        },
+        "bytes": 1005,
+        "sha256": "638604ed712f7425bad23bdcd309ddc15d4889e262dab4ca46aca0a2215ec531"
+      },
+      {
+        "path": "specifications/2026-10-19-observability.md",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "specifications/2026-10-19-observability.md",
+          "object": "78825264c412fd7f6682b404a3874ecbd701ae73"
+        },
+        "bytes": 2319,
+        "sha256": "3d7b91093d2814dade615b35cf384e31e3232aa40ac0cd14ab13d8dff36e8b98"
+      },
+      {
+        "path": "specifications/composition-drain.md",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "specifications/composition-drain.md",
+          "object": "7a57aedce12e1606ce25d5e77f870025b5544381"
+        },
+        "bytes": 3924,
+        "sha256": "b175745a2d32a478cb987723cf085bd772163b70e838037db6ba02bbe87298a3"
+      },
+      {
+        "path": "specifications/github-credential-capability-receiving.md",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "specifications/github-credential-capability-receiving.md",
+          "object": "c5c7b43923925ac2e7aa83a613fe3fd17dd5b0d8"
+        },
+        "bytes": 2825,
+        "sha256": "cadeed48d11ad7db7a49b465a3f1fa35cf39551da3a66f7a695a042f33b5caa0"
+      },
+      {
+        "path": "specifications/github-resource-reconciliation.md",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "specifications/github-resource-reconciliation.md",
+          "object": "34f2b1249fc651c94a35d9ed4c38b737485d5d69"
+        },
+        "bytes": 45080,
+        "sha256": "b3655e25f3af67ed26ea92f49678527babdad118100b620c12349f55367cb586"
+      },
+      {
+        "path": "specifications/governed-operation-adapter.md",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "specifications/governed-operation-adapter.md",
+          "object": "5ae45f0287e5e5048481de6a88fdf502e195b73b"
+        },
+        "bytes": 20665,
+        "sha256": "db1762a4a33f551849a2e9a5dcf21a090e2bc78184c68b56a24b652c940de57c"
+      },
+      {
+        "path": "specifications/historic-branch-receiving.md",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "specifications/historic-branch-receiving.md",
+          "object": "6830e7a7c2292f456e0c5b2bc23248818be0bee1"
+        },
+        "bytes": 5355,
+        "sha256": "4c5619f2623463a26431fd5c4cdb74a0a05a43deef11f4e08970e317d0d566de"
+      },
+      {
+        "path": "specifications/received-repository-retirement.md",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "specifications/received-repository-retirement.md",
+          "object": "fb6793e189593f8e080b769494f3f540ce94921c"
+        },
+        "bytes": 6327,
+        "sha256": "7df5a427155e98781686f114bbcf8cce037fc19ca3e2bc86fa88329f5ebb897c"
+      },
+      {
+        "path": "specifications/source-owned-github-work-intake.md",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "specifications/source-owned-github-work-intake.md",
+          "object": "ff897b06c848861b4c4cfeb6b10ac0223c66ffcf"
+        },
+        "bytes": 18752,
+        "sha256": "c62156ba91aa35a25fe982c02fb9520dbc5eeabb77c0ed94d5d9787627ee1037"
+      },
+      {
+        "path": "src/bounded-review-call.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/bounded-review-call.mjs",
+          "object": "c635972668fbbd69067325e7faafd161c0960e75"
+        },
+        "bytes": 29916,
+        "sha256": "01548a1aec896a42231be4f46e17d544ae84957d117e0c64ed5838af84603f28"
+      },
+      {
+        "path": "src/branch-history-retention.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/branch-history-retention.mjs",
+          "object": "740267b0c5643c454c46ba70c8b86eb7de4d2c33"
+        },
+        "bytes": 2050,
+        "sha256": "05a76b3780a9a31906d2784473b2088fb7aad817407ca36abba36e2446e40883"
+      },
+      {
+        "path": "src/branch-retirement-operations.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/branch-retirement-operations.mjs",
+          "object": "e615be718331245036fc043fc636acb9dcfb2149"
+        },
+        "bytes": 10545,
+        "sha256": "337e145860b384eee75eb863b49e49833055a0c31e7b1a6510849a7c173714f2"
+      },
+      {
+        "path": "src/branch-retirement.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/branch-retirement.mjs",
+          "object": "7467c8e4829212a970933be758fe388aae600ef6"
+        },
+        "bytes": 14687,
+        "sha256": "9a3f9f44c6432b564ab74cf2fe18c6408a455967ff04ff3614af12b12d6249ab"
+      },
+      {
+        "path": "src/credential-authority.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/credential-authority.mjs",
+          "object": "f7f5cee8e1b77746869c10cdf2a701da42df9cbe"
+        },
+        "bytes": 3364,
+        "sha256": "3f828b9e865daba0bbc92a33727dd74e819b1a4f5aef7148bf4b7fff7e80e2b1"
+      },
+      {
+        "path": "src/drain-composition.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/drain-composition.mjs",
+          "object": "d2dab55659c1eef7feef2b4492d760800faebf82"
+        },
+        "bytes": 14537,
+        "sha256": "8df10b8d70a8f8f2ef8a6e2491babe1e6364e3d9d37851c9d493eee2b7830862"
+      },
+      {
+        "path": "src/estate-classify.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/estate-classify.mjs",
+          "object": "9f12916603ca20f06edced31965918921e8c04b8"
+        },
+        "bytes": 6241,
+        "sha256": "2df39b6518cf18b36f6cc6f92d5c6c7225e1758d97378697bc65697156aec25e"
+      },
+      {
+        "path": "src/estate-debt-record.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/estate-debt-record.mjs",
+          "object": "78e13a325e50a7b473f680ef17eacedd89c7ec1c"
+        },
+        "bytes": 3442,
+        "sha256": "b72a8a835616768cd6b0a46faa262a757dd26e9b0aa431ab83607a06fd17d497"
+      },
+      {
+        "path": "src/estate-reconcile.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/estate-reconcile.mjs",
+          "object": "61bc01ebe2b016b7acfc150f6b9bd08cd8d6515f"
+        },
+        "bytes": 31273,
+        "sha256": "679f291b2e23ad88d471ae91e35dc70bc4cb18f69f7ae4b0c7a8e81b4847106f"
+      },
+      {
+        "path": "src/github-app.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/github-app.mjs",
+          "object": "d06218ca78b630bc1a1e7aba8f9114a5cf78a0db"
+        },
+        "bytes": 5766,
+        "sha256": "b485280b4ba7e42fb020e8c8e2f41b5655fbd7ac6a35d663bb0b0dbf3ad60227"
+      },
+      {
+        "path": "src/github-rest-client.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/github-rest-client.mjs",
+          "object": "83f5112797c81f04464a3a4d9fd3c72c40388ec9"
+        },
+        "bytes": 8531,
+        "sha256": "8a3ea5787f79ef656a546596ab1b5d87b5b61f8419323a1416b7937432efeba5"
+      },
+      {
+        "path": "src/github-review-rest.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/github-review-rest.mjs",
+          "object": "8ef651e6160bc45ea687b59493c4ede1a82cbfe6"
+        },
+        "bytes": 22782,
+        "sha256": "11075624689c831b5174ed67f0e260b6c9b12de11721d3ce913a4b39f56b26e7"
+      },
+      {
+        "path": "src/interaction.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/interaction.mjs",
+          "object": "e197caa90d0f450d2dc00963dde63d3af89eb246"
+        },
+        "bytes": 4507,
+        "sha256": "23f419131cf47f103eecf3c7ee9b8c98de0b3d8208ef4d44a9910bf53a75df41"
+      },
+      {
+        "path": "src/landing-composition.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/landing-composition.mjs",
+          "object": "54f95d3e20a5adee2f358d75b19076ae45d4388c"
+        },
+        "bytes": 26904,
+        "sha256": "5620fbee5d9ac9143e625cde9af3c6cc318e7275cf1524f4680c25613203ba85"
+      },
+      {
+        "path": "src/landing-events.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/landing-events.mjs",
+          "object": "b9dfe0c61c9392bf2d994f7b903c2b310bf033db"
+        },
+        "bytes": 4219,
+        "sha256": "c45feee3cc75210468152721da6a47b828d297bed7899b55965a103e2165e60c"
+      },
+      {
+        "path": "src/landing-evidence.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/landing-evidence.mjs",
+          "object": "f8e33f7187e186822c5b1c7e000fdb545072bc4f"
+        },
+        "bytes": 4344,
+        "sha256": "a8689922ca8ca02c64d8ccd8e78523c1bfa5a2aba1097cdb655fbe1723164f10"
+      },
+      {
+        "path": "src/landing-publication.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/landing-publication.mjs",
+          "object": "0ad01e43240932cfdaecf74a4946befa03167a28"
+        },
+        "bytes": 32687,
+        "sha256": "6416785b6392278b3e925274211f7348441623f88dd3e97a010306f9b991e7a6"
+      },
+      {
+        "path": "src/leased-delete.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/leased-delete.mjs",
+          "object": "2e373d016a186462fde2d8f99d5c70a06e42d3e9"
+        },
+        "bytes": 1318,
+        "sha256": "38c345f3962600650d38d25a5c4776644b27d4baa9ad1b928b5dd9fedd41b157"
+      },
+      {
+        "path": "src/named-credential.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/named-credential.mjs",
+          "object": "138c644328dc8ce6299104e48b6d61e5c2a6450a"
+        },
+        "bytes": 2366,
+        "sha256": "ba0283b07ba185ae7839f11cecf7ccda7f9d161297cb75f28eea15e4a402ca7b"
+      },
+      {
+        "path": "src/operations.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/operations.mjs",
+          "object": "f54344b690141796254da6f3bad5cf3709d465bd"
+        },
+        "bytes": 6609,
+        "sha256": "9310a50620b27cc679778921f1bc86be117258ca00bca16b544101c1f2a2e103"
+      },
+      {
+        "path": "src/planned-input-contract.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/planned-input-contract.mjs",
+          "object": "972fe5103e8eba6b55069778ff1ad8c5f56cc252"
+        },
+        "bytes": 469,
+        "sha256": "f6d010d30c77795b5973874072ec9fbc3636a60becf98bd455238c41b7d41969"
+      },
+      {
+        "path": "src/prepare-repository-receiving.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/prepare-repository-receiving.mjs",
+          "object": "38d8c00305fae9f3eceb936014e799670bd53fea"
+        },
+        "bytes": 4330,
+        "sha256": "b8145cb05ab93d71b2144d4c0119d4d1c98fdcb23a941f93b36ca0f065cb44b6"
+      },
+      {
+        "path": "src/receive-gh-credential.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/receive-gh-credential.mjs",
+          "object": "43809baac48adc0413b632c15a08a1462ee86ebe"
+        },
+        "bytes": 2306,
+        "sha256": "6baa67a424b80763b1b7129b123421f8c8166fd3ec8d8514d4b075c604ac71c4"
+      },
+      {
+        "path": "src/repository-history.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/repository-history.mjs",
+          "object": "915bebaba8c6ba71879d0ecea872e9cf636fedb4"
+        },
+        "bytes": 2757,
+        "sha256": "667b27741fba0be8fb592afa32fa03934ff4a1b04ca4fdf6e0be78db45a3c77d"
+      },
+      {
+        "path": "src/repository-hosting.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/repository-hosting.mjs",
+          "object": "85c8a4a2876d2e8dcb86e59ef2b13e9704803c35"
+        },
+        "bytes": 25838,
+        "sha256": "ae89748dc9f034a977259a8f50939c37921929c3d8b036917842d89e61f5f6ce"
+      },
+      {
+        "path": "src/repository-receiving.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/repository-receiving.mjs",
+          "object": "0fe7a1d5a5203ecaef3f16b78787095eb8d79189"
+        },
+        "bytes": 14638,
+        "sha256": "785f8741b485999192d2fab3aa9344448b8bdf6ed4d5cc70f3a384d55e87bd1c"
+      },
+      {
+        "path": "src/repository-transfer.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/repository-transfer.mjs",
+          "object": "cb0fb021b335432f5353f6718cf82cd3071d2959"
+        },
+        "bytes": 6674,
+        "sha256": "1e8407bd44453d9f6d971d4f21eb58844b3dddebddc7913d8db3b8f45c6f5a61"
+      },
+      {
+        "path": "src/review-operations.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/review-operations.mjs",
+          "object": "d6552a6ee34700708c27796908e75911b7cf458e"
+        },
+        "bytes": 5077,
+        "sha256": "d9dd3888112a4ce1b9a6db64ee140e5e5723f0c93fd2f83bda16133a7c176945"
+      },
+      {
+        "path": "src/semioverse-operations.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/semioverse-operations.mjs",
+          "object": "cd257298c467d3eb1b8d5f64466533595769d353"
+        },
+        "bytes": 15651,
+        "sha256": "bbffce10baab3774404bc230b26f22651c3812400bc20164b2550b19ecba6735"
+      },
+      {
+        "path": "src/semver.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/semver.mjs",
+          "object": "02a703447abea033a1e32175c03e2c5c5fe7fd72"
+        },
+        "bytes": 1529,
+        "sha256": "2824a1cc1ab8c17c8c5105b0268591472e8f3ed36201d812615fa38ea523c009"
+      },
+      {
+        "path": "src/source-integration.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/source-integration.mjs",
+          "object": "ffbcebe08ef51f3f9fae4f04644f4fbea7fda157"
+        },
+        "bytes": 7676,
+        "sha256": "b32246d698b966ac054a98367d610d55e3dc6575d486e34453ddd2e3dc7ffbea"
+      },
+      {
+        "path": "src/submodule-pin-events.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/submodule-pin-events.mjs",
+          "object": "5c23597c553c0b3edaaf21901c4f6b28c798e122"
+        },
+        "bytes": 22354,
+        "sha256": "a087264df250c9a27de5f6fb1fdc9642f28e2187865c5a7c151d8cc716b76b90"
+      },
+      {
+        "path": "src/submodule-pins.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/submodule-pins.mjs",
+          "object": "0f0d2985beb3594160d87450aace444abc7911ca"
+        },
+        "bytes": 22664,
+        "sha256": "6c1fcb015361a75deeb204cbdaa029f376b51c06fe56213b7e3bf318c2d63a6c"
+      },
+      {
+        "path": "src/transfer-operations.mjs",
+        "gitMode": "100644",
+        "gitSource": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "path": "src/transfer-operations.mjs",
+          "object": "f8e8b2a3e0742856a9f9609db978ea473cd998cc"
+        },
+        "bytes": 5363,
+        "sha256": "c1b79a16fcd4057aefca7bcfa915ee7d3b97ea94c9081e57b72446e0080389c8"
+      }
+    ],
+    "selection": "independent-native-npm-packlist",
+    "acquisition": "carrier-source-allowance-with-native-ignore-inputs",
+    "publisherConfiguration": null,
+    "packlist": {
+      "manager": "npm",
+      "version": "11.16.0",
+      "arguments": [
+        "pack",
+        "--dry-run",
+        "--json",
+        "--ignore-scripts",
+        "--workspaces=false"
+      ],
+      "stdoutSHA256": "d8dafac45b15d56ab636504f0606988f84a175f19eff00487935e1201e22bd0a",
+      "lifecycleScripts": false,
+      "userConfiguration": "empty",
+      "globalConfiguration": "empty"
+    },
+    "requiredPaths": [
+      "README.md",
+      "package.json",
+      "scripts/apply-repository-declarations.mjs",
+      "scripts/compose-compositions.mjs",
+      "scripts/compose-on-publication.mjs",
+      "scripts/drain-composition.mjs",
+      "scripts/github-app-manifest.mjs",
+      "scripts/normalize-submodule-pins.mjs",
+      "scripts/prepare-repository-receiving.mjs",
+      "scripts/publish-landed-packages.mjs",
+      "scripts/receive-gh-credential.mjs",
+      "scripts/receive-submodule-pin-events.mjs",
+      "scripts/reconcile-github-estate.mjs",
+      "scripts/repository-hosting.mjs",
+      "specifications/2026-10-19-observability.md",
+      "specifications/composition-drain.md",
+      "specifications/github-credential-capability-receiving.md",
+      "specifications/github-resource-reconciliation.md",
+      "specifications/governed-operation-adapter.md",
+      "specifications/historic-branch-receiving.md",
+      "specifications/received-repository-retirement.md",
+      "specifications/source-owned-github-work-intake.md",
+      "src/bounded-review-call.mjs",
+      "src/branch-history-retention.mjs",
+      "src/branch-retirement-operations.mjs",
+      "src/branch-retirement.mjs",
+      "src/credential-authority.mjs",
+      "src/drain-composition.mjs",
+      "src/estate-classify.mjs",
+      "src/estate-debt-record.mjs",
+      "src/estate-reconcile.mjs",
+      "src/github-app.mjs",
+      "src/github-rest-client.mjs",
+      "src/github-review-rest.mjs",
+      "src/interaction.mjs",
+      "src/landing-composition.mjs",
+      "src/landing-events.mjs",
+      "src/landing-evidence.mjs",
+      "src/landing-publication.mjs",
+      "src/leased-delete.mjs",
+      "src/named-credential.mjs",
+      "src/operations.mjs",
+      "src/planned-input-contract.mjs",
+      "src/prepare-repository-receiving.mjs",
+      "src/receive-gh-credential.mjs",
+      "src/repository-history.mjs",
+      "src/repository-hosting.mjs",
+      "src/repository-receiving.mjs",
+      "src/repository-transfer.mjs",
+      "src/review-operations.mjs",
+      "src/semioverse-operations.mjs",
+      "src/semver.mjs",
+      "src/source-integration.mjs",
+      "src/submodule-pin-events.mjs",
+      "src/submodule-pins.mjs",
+      "src/transfer-operations.mjs"
+    ]
+  },
+  "archive": {
+    "kind": "npm.native-archive-members",
+    "path": "/var/tmp/cairn-provider-source-qualification-20261020/upstream-artifacts/ghs-0.2.4.tgz",
+    "integrity": "sha512-ryEAx8+nuiINv7gqNBrb8Ake02kudVX2WNjMsoFg+miSmpp0hZrI8gYrKuHKXHwL3SSj5NP5ZmRbRFTyL/Pu/Q==",
+    "archiveSHA256": "341097427e3c1c11e6bc6bb7a8f9b536d73f54dd2ec6941536b9ea1bf9d34193",
+    "compressedBytes": 175303,
+    "expandedSHA256": "7e052d6abc67621ea8e637e6a135576f05572b52a85110242f6a1af5dc0e2798",
+    "expandedBytes": 621568,
+    "parserEndOffset": 621568,
+    "accountedEndOffset": 621568,
+    "headers": [
+      {
+        "path": "package/package.json",
+        "type": "File",
+        "mode": 384,
+        "size": 6231
+      },
+      {
+        "path": "package/specifications/2026-10-19-observability.md",
+        "type": "File",
+        "mode": 384,
+        "size": 2319
+      },
+      {
+        "path": "package/specifications/composition-drain.md",
+        "type": "File",
+        "mode": 384,
+        "size": 3924
+      },
+      {
+        "path": "package/specifications/github-credential-capability-receiving.md",
+        "type": "File",
+        "mode": 384,
+        "size": 2825
+      },
+      {
+        "path": "package/specifications/github-resource-reconciliation.md",
+        "type": "File",
+        "mode": 384,
+        "size": 45080
+      },
+      {
+        "path": "package/specifications/governed-operation-adapter.md",
+        "type": "File",
+        "mode": 384,
+        "size": 20665
+      },
+      {
+        "path": "package/specifications/historic-branch-receiving.md",
+        "type": "File",
+        "mode": 384,
+        "size": 5355
+      },
+      {
+        "path": "package/README.md",
+        "type": "File",
+        "mode": 384,
+        "size": 49837
+      },
+      {
+        "path": "package/specifications/received-repository-retirement.md",
+        "type": "File",
+        "mode": 384,
+        "size": 6327
+      },
+      {
+        "path": "package/specifications/source-owned-github-work-intake.md",
+        "type": "File",
+        "mode": 384,
+        "size": 18752
+      },
+      {
+        "path": "package/scripts/apply-repository-declarations.mjs",
+        "type": "File",
+        "mode": 493,
+        "size": 2055
+      },
+      {
+        "path": "package/src/bounded-review-call.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 29916
+      },
+      {
+        "path": "package/src/branch-history-retention.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 2050
+      },
+      {
+        "path": "package/src/branch-retirement-operations.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 10545
+      },
+      {
+        "path": "package/src/branch-retirement.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 14687
+      },
+      {
+        "path": "package/scripts/compose-compositions.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 3311
+      },
+      {
+        "path": "package/scripts/compose-on-publication.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 3859
+      },
+      {
+        "path": "package/src/credential-authority.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 3364
+      },
+      {
+        "path": "package/scripts/drain-composition.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 1068
+      },
+      {
+        "path": "package/src/drain-composition.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 14537
+      },
+      {
+        "path": "package/src/estate-classify.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 6241
+      },
+      {
+        "path": "package/src/estate-debt-record.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 3442
+      },
+      {
+        "path": "package/src/estate-reconcile.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 31273
+      },
+      {
+        "path": "package/scripts/github-app-manifest.mjs",
+        "type": "File",
+        "mode": 493,
+        "size": 2708
+      },
+      {
+        "path": "package/src/github-app.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 5766
+      },
+      {
+        "path": "package/src/github-rest-client.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 8531
+      },
+      {
+        "path": "package/src/github-review-rest.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 22782
+      },
+      {
+        "path": "package/src/interaction.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 4507
+      },
+      {
+        "path": "package/src/landing-composition.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 26904
+      },
+      {
+        "path": "package/src/landing-events.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 4219
+      },
+      {
+        "path": "package/src/landing-evidence.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 4344
+      },
+      {
+        "path": "package/src/landing-publication.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 32687
+      },
+      {
+        "path": "package/src/leased-delete.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 1318
+      },
+      {
+        "path": "package/src/named-credential.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 2366
+      },
+      {
+        "path": "package/scripts/normalize-submodule-pins.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 3587
+      },
+      {
+        "path": "package/src/operations.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 6609
+      },
+      {
+        "path": "package/src/planned-input-contract.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 469
+      },
+      {
+        "path": "package/scripts/prepare-repository-receiving.mjs",
+        "type": "File",
+        "mode": 493,
+        "size": 771
+      },
+      {
+        "path": "package/src/prepare-repository-receiving.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 4330
+      },
+      {
+        "path": "package/scripts/publish-landed-packages.mjs",
+        "type": "File",
+        "mode": 493,
+        "size": 5464
+      },
+      {
+        "path": "package/scripts/receive-gh-credential.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 874
+      },
+      {
+        "path": "package/src/receive-gh-credential.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 2306
+      },
+      {
+        "path": "package/scripts/receive-submodule-pin-events.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 10127
+      },
+      {
+        "path": "package/scripts/reconcile-github-estate.mjs",
+        "type": "File",
+        "mode": 493,
+        "size": 8173
+      },
+      {
+        "path": "package/src/repository-history.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 2757
+      },
+      {
+        "path": "package/scripts/repository-hosting.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 1005
+      },
+      {
+        "path": "package/src/repository-hosting.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 25838
+      },
+      {
+        "path": "package/src/repository-receiving.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 14638
+      },
+      {
+        "path": "package/src/repository-transfer.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 6674
+      },
+      {
+        "path": "package/src/review-operations.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 5077
+      },
+      {
+        "path": "package/src/semioverse-operations.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 15651
+      },
+      {
+        "path": "package/src/semver.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 1529
+      },
+      {
+        "path": "package/src/source-integration.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 7676
+      },
+      {
+        "path": "package/src/submodule-pin-events.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 22354
+      },
+      {
+        "path": "package/src/submodule-pins.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 22664
+      },
+      {
+        "path": "package/src/transfer-operations.mjs",
+        "type": "File",
+        "mode": 384,
+        "size": 5363
+      }
+    ],
+    "parser": {
+      "name": "tar",
+      "context": "regular-npm-gzip-tar",
+      "extensions": "unreceived",
+      "ambiguousNames": "unreceived"
+    },
+    "extracted": false,
+    "installationClaimed": false
+  },
+  "comparison": {
+    "ok": true,
+    "value": {
+      "type": "ArtifactMemberAdmission",
+      "version": 1,
+      "stage": "source-archive",
+      "identity": "ni:///sha-256;Re3p6XZ6o69mRLsjnR-fpyaFMMAiJBW0XJDWmnfXyqE",
+      "registry": "https://registry.561.group/",
+      "package": "@red-cup-engineering/github-repository-hosting-service",
+      "releaseVersion": "0.2.4",
+      "integrity": "sha512-ryEAx8+nuiINv7gqNBrb8Ake02kudVX2WNjMsoFg+miSmpp0hZrI8gYrKuHKXHwL3SSj5NP5ZmRbRFTyL/Pu/Q==",
+      "archive": [
+        {
+          "path": "README.md",
+          "kind": "file",
+          "bytes": 49837,
+          "sha256": "87ec08c6de7488a2b03df9dcadd26406d215ad5aba6749b77795e7b42bc6e97b",
+          "mode": 384
+        },
+        {
+          "path": "package.json",
+          "kind": "file",
+          "bytes": 6231,
+          "sha256": "8712f32579262c33be74d0dee2dff0d70b1464a49accaedfb50b9eedcc445385",
+          "mode": 384
+        },
+        {
+          "path": "scripts/apply-repository-declarations.mjs",
+          "kind": "file",
+          "bytes": 2055,
+          "sha256": "00c2151bb4686e1bdf88fae818169e6ee3847270fa34647064a541194e706f69",
+          "mode": 493
+        },
+        {
+          "path": "scripts/compose-compositions.mjs",
+          "kind": "file",
+          "bytes": 3311,
+          "sha256": "f2be5933087d19c6131cd6ba0d5e1644139b507683b92a49db809d792e5e2ab6",
+          "mode": 384
+        },
+        {
+          "path": "scripts/compose-on-publication.mjs",
+          "kind": "file",
+          "bytes": 3859,
+          "sha256": "56e713568b1565ef4b61fa128b202982e4c4a1fd6e73f68f7f6363123c76e96c",
+          "mode": 384
+        },
+        {
+          "path": "scripts/drain-composition.mjs",
+          "kind": "file",
+          "bytes": 1068,
+          "sha256": "4d7cfa925f4063c3045a61a742a9247185985230e95feb69edbc3009ebd5be77",
+          "mode": 384
+        },
+        {
+          "path": "scripts/github-app-manifest.mjs",
+          "kind": "file",
+          "bytes": 2708,
+          "sha256": "9b0309f73d58844b5832ae5b7c40db91901609f79103bf4ddf4a9bde294b7814",
+          "mode": 493
+        },
+        {
+          "path": "scripts/normalize-submodule-pins.mjs",
+          "kind": "file",
+          "bytes": 3587,
+          "sha256": "128441cfe64f3034bd889567009093042cf672be8e47141065fe4d2421d72bea",
+          "mode": 384
+        },
+        {
+          "path": "scripts/prepare-repository-receiving.mjs",
+          "kind": "file",
+          "bytes": 771,
+          "sha256": "3f97fdfafa95342473b7eb87fef768ffcc314e67ee31250e8e4bfee17e4946fe",
+          "mode": 493
+        },
+        {
+          "path": "scripts/publish-landed-packages.mjs",
+          "kind": "file",
+          "bytes": 5464,
+          "sha256": "27781294e6ada27dc442f0bca33959382b1951e0bbbfdcd70c54b8364b6e2392",
+          "mode": 493
+        },
+        {
+          "path": "scripts/receive-gh-credential.mjs",
+          "kind": "file",
+          "bytes": 874,
+          "sha256": "14db9b5892dcafabccbcb00fe765a5607f3e6e0e37761fc4e995eb2289b9bb60",
+          "mode": 384
+        },
+        {
+          "path": "scripts/receive-submodule-pin-events.mjs",
+          "kind": "file",
+          "bytes": 10127,
+          "sha256": "518fd27ccf84fc63bfed3465bb8bf2df0618fbab1cba2d97e3885bb8a5dae664",
+          "mode": 384
+        },
+        {
+          "path": "scripts/reconcile-github-estate.mjs",
+          "kind": "file",
+          "bytes": 8173,
+          "sha256": "b1e3210fa50ab64827a830c82998e6b4fade84e3c828fafcebed6d690d2a57a1",
+          "mode": 493
+        },
+        {
+          "path": "scripts/repository-hosting.mjs",
+          "kind": "file",
+          "bytes": 1005,
+          "sha256": "638604ed712f7425bad23bdcd309ddc15d4889e262dab4ca46aca0a2215ec531",
+          "mode": 384
+        },
+        {
+          "path": "specifications/2026-10-19-observability.md",
+          "kind": "file",
+          "bytes": 2319,
+          "sha256": "3d7b91093d2814dade615b35cf384e31e3232aa40ac0cd14ab13d8dff36e8b98",
+          "mode": 384
+        },
+        {
+          "path": "specifications/composition-drain.md",
+          "kind": "file",
+          "bytes": 3924,
+          "sha256": "b175745a2d32a478cb987723cf085bd772163b70e838037db6ba02bbe87298a3",
+          "mode": 384
+        },
+        {
+          "path": "specifications/github-credential-capability-receiving.md",
+          "kind": "file",
+          "bytes": 2825,
+          "sha256": "cadeed48d11ad7db7a49b465a3f1fa35cf39551da3a66f7a695a042f33b5caa0",
+          "mode": 384
+        },
+        {
+          "path": "specifications/github-resource-reconciliation.md",
+          "kind": "file",
+          "bytes": 45080,
+          "sha256": "b3655e25f3af67ed26ea92f49678527babdad118100b620c12349f55367cb586",
+          "mode": 384
+        },
+        {
+          "path": "specifications/governed-operation-adapter.md",
+          "kind": "file",
+          "bytes": 20665,
+          "sha256": "db1762a4a33f551849a2e9a5dcf21a090e2bc78184c68b56a24b652c940de57c",
+          "mode": 384
+        },
+        {
+          "path": "specifications/historic-branch-receiving.md",
+          "kind": "file",
+          "bytes": 5355,
+          "sha256": "4c5619f2623463a26431fd5c4cdb74a0a05a43deef11f4e08970e317d0d566de",
+          "mode": 384
+        },
+        {
+          "path": "specifications/received-repository-retirement.md",
+          "kind": "file",
+          "bytes": 6327,
+          "sha256": "7df5a427155e98781686f114bbcf8cce037fc19ca3e2bc86fa88329f5ebb897c",
+          "mode": 384
+        },
+        {
+          "path": "specifications/source-owned-github-work-intake.md",
+          "kind": "file",
+          "bytes": 18752,
+          "sha256": "c62156ba91aa35a25fe982c02fb9520dbc5eeabb77c0ed94d5d9787627ee1037",
+          "mode": 384
+        },
+        {
+          "path": "src/bounded-review-call.mjs",
+          "kind": "file",
+          "bytes": 29916,
+          "sha256": "01548a1aec896a42231be4f46e17d544ae84957d117e0c64ed5838af84603f28",
+          "mode": 384
+        },
+        {
+          "path": "src/branch-history-retention.mjs",
+          "kind": "file",
+          "bytes": 2050,
+          "sha256": "05a76b3780a9a31906d2784473b2088fb7aad817407ca36abba36e2446e40883",
+          "mode": 384
+        },
+        {
+          "path": "src/branch-retirement-operations.mjs",
+          "kind": "file",
+          "bytes": 10545,
+          "sha256": "337e145860b384eee75eb863b49e49833055a0c31e7b1a6510849a7c173714f2",
+          "mode": 384
+        },
+        {
+          "path": "src/branch-retirement.mjs",
+          "kind": "file",
+          "bytes": 14687,
+          "sha256": "9a3f9f44c6432b564ab74cf2fe18c6408a455967ff04ff3614af12b12d6249ab",
+          "mode": 384
+        },
+        {
+          "path": "src/credential-authority.mjs",
+          "kind": "file",
+          "bytes": 3364,
+          "sha256": "3f828b9e865daba0bbc92a33727dd74e819b1a4f5aef7148bf4b7fff7e80e2b1",
+          "mode": 384
+        },
+        {
+          "path": "src/drain-composition.mjs",
+          "kind": "file",
+          "bytes": 14537,
+          "sha256": "8df10b8d70a8f8f2ef8a6e2491babe1e6364e3d9d37851c9d493eee2b7830862",
+          "mode": 384
+        },
+        {
+          "path": "src/estate-classify.mjs",
+          "kind": "file",
+          "bytes": 6241,
+          "sha256": "2df39b6518cf18b36f6cc6f92d5c6c7225e1758d97378697bc65697156aec25e",
+          "mode": 384
+        },
+        {
+          "path": "src/estate-debt-record.mjs",
+          "kind": "file",
+          "bytes": 3442,
+          "sha256": "b72a8a835616768cd6b0a46faa262a757dd26e9b0aa431ab83607a06fd17d497",
+          "mode": 384
+        },
+        {
+          "path": "src/estate-reconcile.mjs",
+          "kind": "file",
+          "bytes": 31273,
+          "sha256": "679f291b2e23ad88d471ae91e35dc70bc4cb18f69f7ae4b0c7a8e81b4847106f",
+          "mode": 384
+        },
+        {
+          "path": "src/github-app.mjs",
+          "kind": "file",
+          "bytes": 5766,
+          "sha256": "b485280b4ba7e42fb020e8c8e2f41b5655fbd7ac6a35d663bb0b0dbf3ad60227",
+          "mode": 384
+        },
+        {
+          "path": "src/github-rest-client.mjs",
+          "kind": "file",
+          "bytes": 8531,
+          "sha256": "8a3ea5787f79ef656a546596ab1b5d87b5b61f8419323a1416b7937432efeba5",
+          "mode": 384
+        },
+        {
+          "path": "src/github-review-rest.mjs",
+          "kind": "file",
+          "bytes": 22782,
+          "sha256": "11075624689c831b5174ed67f0e260b6c9b12de11721d3ce913a4b39f56b26e7",
+          "mode": 384
+        },
+        {
+          "path": "src/interaction.mjs",
+          "kind": "file",
+          "bytes": 4507,
+          "sha256": "23f419131cf47f103eecf3c7ee9b8c98de0b3d8208ef4d44a9910bf53a75df41",
+          "mode": 384
+        },
+        {
+          "path": "src/landing-composition.mjs",
+          "kind": "file",
+          "bytes": 26904,
+          "sha256": "5620fbee5d9ac9143e625cde9af3c6cc318e7275cf1524f4680c25613203ba85",
+          "mode": 384
+        },
+        {
+          "path": "src/landing-events.mjs",
+          "kind": "file",
+          "bytes": 4219,
+          "sha256": "c45feee3cc75210468152721da6a47b828d297bed7899b55965a103e2165e60c",
+          "mode": 384
+        },
+        {
+          "path": "src/landing-evidence.mjs",
+          "kind": "file",
+          "bytes": 4344,
+          "sha256": "a8689922ca8ca02c64d8ccd8e78523c1bfa5a2aba1097cdb655fbe1723164f10",
+          "mode": 384
+        },
+        {
+          "path": "src/landing-publication.mjs",
+          "kind": "file",
+          "bytes": 32687,
+          "sha256": "6416785b6392278b3e925274211f7348441623f88dd3e97a010306f9b991e7a6",
+          "mode": 384
+        },
+        {
+          "path": "src/leased-delete.mjs",
+          "kind": "file",
+          "bytes": 1318,
+          "sha256": "38c345f3962600650d38d25a5c4776644b27d4baa9ad1b928b5dd9fedd41b157",
+          "mode": 384
+        },
+        {
+          "path": "src/named-credential.mjs",
+          "kind": "file",
+          "bytes": 2366,
+          "sha256": "ba0283b07ba185ae7839f11cecf7ccda7f9d161297cb75f28eea15e4a402ca7b",
+          "mode": 384
+        },
+        {
+          "path": "src/operations.mjs",
+          "kind": "file",
+          "bytes": 6609,
+          "sha256": "9310a50620b27cc679778921f1bc86be117258ca00bca16b544101c1f2a2e103",
+          "mode": 384
+        },
+        {
+          "path": "src/planned-input-contract.mjs",
+          "kind": "file",
+          "bytes": 469,
+          "sha256": "f6d010d30c77795b5973874072ec9fbc3636a60becf98bd455238c41b7d41969",
+          "mode": 384
+        },
+        {
+          "path": "src/prepare-repository-receiving.mjs",
+          "kind": "file",
+          "bytes": 4330,
+          "sha256": "b8145cb05ab93d71b2144d4c0119d4d1c98fdcb23a941f93b36ca0f065cb44b6",
+          "mode": 384
+        },
+        {
+          "path": "src/receive-gh-credential.mjs",
+          "kind": "file",
+          "bytes": 2306,
+          "sha256": "6baa67a424b80763b1b7129b123421f8c8166fd3ec8d8514d4b075c604ac71c4",
+          "mode": 384
+        },
+        {
+          "path": "src/repository-history.mjs",
+          "kind": "file",
+          "bytes": 2757,
+          "sha256": "667b27741fba0be8fb592afa32fa03934ff4a1b04ca4fdf6e0be78db45a3c77d",
+          "mode": 384
+        },
+        {
+          "path": "src/repository-hosting.mjs",
+          "kind": "file",
+          "bytes": 25838,
+          "sha256": "ae89748dc9f034a977259a8f50939c37921929c3d8b036917842d89e61f5f6ce",
+          "mode": 384
+        },
+        {
+          "path": "src/repository-receiving.mjs",
+          "kind": "file",
+          "bytes": 14638,
+          "sha256": "785f8741b485999192d2fab3aa9344448b8bdf6ed4d5cc70f3a384d55e87bd1c",
+          "mode": 384
+        },
+        {
+          "path": "src/repository-transfer.mjs",
+          "kind": "file",
+          "bytes": 6674,
+          "sha256": "1e8407bd44453d9f6d971d4f21eb58844b3dddebddc7913d8db3b8f45c6f5a61",
+          "mode": 384
+        },
+        {
+          "path": "src/review-operations.mjs",
+          "kind": "file",
+          "bytes": 5077,
+          "sha256": "d9dd3888112a4ce1b9a6db64ee140e5e5723f0c93fd2f83bda16133a7c176945",
+          "mode": 384
+        },
+        {
+          "path": "src/semioverse-operations.mjs",
+          "kind": "file",
+          "bytes": 15651,
+          "sha256": "bbffce10baab3774404bc230b26f22651c3812400bc20164b2550b19ecba6735",
+          "mode": 384
+        },
+        {
+          "path": "src/semver.mjs",
+          "kind": "file",
+          "bytes": 1529,
+          "sha256": "2824a1cc1ab8c17c8c5105b0268591472e8f3ed36201d812615fa38ea523c009",
+          "mode": 384
+        },
+        {
+          "path": "src/source-integration.mjs",
+          "kind": "file",
+          "bytes": 7676,
+          "sha256": "b32246d698b966ac054a98367d610d55e3dc6575d486e34453ddd2e3dc7ffbea",
+          "mode": 384
+        },
+        {
+          "path": "src/submodule-pin-events.mjs",
+          "kind": "file",
+          "bytes": 22354,
+          "sha256": "a087264df250c9a27de5f6fb1fdc9642f28e2187865c5a7c151d8cc716b76b90",
+          "mode": 384
+        },
+        {
+          "path": "src/submodule-pins.mjs",
+          "kind": "file",
+          "bytes": 22664,
+          "sha256": "6c1fcb015361a75deeb204cbdaa029f376b51c06fe56213b7e3bf318c2d63a6c",
+          "mode": 384
+        },
+        {
+          "path": "src/transfer-operations.mjs",
+          "kind": "file",
+          "bytes": 5363,
+          "sha256": "c1b79a16fcd4057aefca7bcfa915ee7d3b97ea94c9081e57b72446e0080389c8",
+          "mode": 384
+        }
+      ],
+      "compared": [
+        {
+          "path": "README.md",
+          "kind": "file",
+          "bytes": 49837,
+          "sha256": "87ec08c6de7488a2b03df9dcadd26406d215ad5aba6749b77795e7b42bc6e97b",
+          "mode": 420
+        },
+        {
+          "path": "package.json",
+          "kind": "file",
+          "bytes": 6231,
+          "sha256": "8712f32579262c33be74d0dee2dff0d70b1464a49accaedfb50b9eedcc445385",
+          "mode": 420
+        },
+        {
+          "path": "scripts/apply-repository-declarations.mjs",
+          "kind": "file",
+          "bytes": 2055,
+          "sha256": "00c2151bb4686e1bdf88fae818169e6ee3847270fa34647064a541194e706f69",
+          "mode": 493
+        },
+        {
+          "path": "scripts/compose-compositions.mjs",
+          "kind": "file",
+          "bytes": 3311,
+          "sha256": "f2be5933087d19c6131cd6ba0d5e1644139b507683b92a49db809d792e5e2ab6",
+          "mode": 420
+        },
+        {
+          "path": "scripts/compose-on-publication.mjs",
+          "kind": "file",
+          "bytes": 3859,
+          "sha256": "56e713568b1565ef4b61fa128b202982e4c4a1fd6e73f68f7f6363123c76e96c",
+          "mode": 420
+        },
+        {
+          "path": "scripts/drain-composition.mjs",
+          "kind": "file",
+          "bytes": 1068,
+          "sha256": "4d7cfa925f4063c3045a61a742a9247185985230e95feb69edbc3009ebd5be77",
+          "mode": 420
+        },
+        {
+          "path": "scripts/github-app-manifest.mjs",
+          "kind": "file",
+          "bytes": 2708,
+          "sha256": "9b0309f73d58844b5832ae5b7c40db91901609f79103bf4ddf4a9bde294b7814",
+          "mode": 493
+        },
+        {
+          "path": "scripts/normalize-submodule-pins.mjs",
+          "kind": "file",
+          "bytes": 3587,
+          "sha256": "128441cfe64f3034bd889567009093042cf672be8e47141065fe4d2421d72bea",
+          "mode": 420
+        },
+        {
+          "path": "scripts/prepare-repository-receiving.mjs",
+          "kind": "file",
+          "bytes": 771,
+          "sha256": "3f97fdfafa95342473b7eb87fef768ffcc314e67ee31250e8e4bfee17e4946fe",
+          "mode": 493
+        },
+        {
+          "path": "scripts/publish-landed-packages.mjs",
+          "kind": "file",
+          "bytes": 5464,
+          "sha256": "27781294e6ada27dc442f0bca33959382b1951e0bbbfdcd70c54b8364b6e2392",
+          "mode": 493
+        },
+        {
+          "path": "scripts/receive-gh-credential.mjs",
+          "kind": "file",
+          "bytes": 874,
+          "sha256": "14db9b5892dcafabccbcb00fe765a5607f3e6e0e37761fc4e995eb2289b9bb60",
+          "mode": 420
+        },
+        {
+          "path": "scripts/receive-submodule-pin-events.mjs",
+          "kind": "file",
+          "bytes": 10127,
+          "sha256": "518fd27ccf84fc63bfed3465bb8bf2df0618fbab1cba2d97e3885bb8a5dae664",
+          "mode": 420
+        },
+        {
+          "path": "scripts/reconcile-github-estate.mjs",
+          "kind": "file",
+          "bytes": 8173,
+          "sha256": "b1e3210fa50ab64827a830c82998e6b4fade84e3c828fafcebed6d690d2a57a1",
+          "mode": 493
+        },
+        {
+          "path": "scripts/repository-hosting.mjs",
+          "kind": "file",
+          "bytes": 1005,
+          "sha256": "638604ed712f7425bad23bdcd309ddc15d4889e262dab4ca46aca0a2215ec531",
+          "mode": 420
+        },
+        {
+          "path": "specifications/2026-10-19-observability.md",
+          "kind": "file",
+          "bytes": 2319,
+          "sha256": "3d7b91093d2814dade615b35cf384e31e3232aa40ac0cd14ab13d8dff36e8b98",
+          "mode": 420
+        },
+        {
+          "path": "specifications/composition-drain.md",
+          "kind": "file",
+          "bytes": 3924,
+          "sha256": "b175745a2d32a478cb987723cf085bd772163b70e838037db6ba02bbe87298a3",
+          "mode": 420
+        },
+        {
+          "path": "specifications/github-credential-capability-receiving.md",
+          "kind": "file",
+          "bytes": 2825,
+          "sha256": "cadeed48d11ad7db7a49b465a3f1fa35cf39551da3a66f7a695a042f33b5caa0",
+          "mode": 420
+        },
+        {
+          "path": "specifications/github-resource-reconciliation.md",
+          "kind": "file",
+          "bytes": 45080,
+          "sha256": "b3655e25f3af67ed26ea92f49678527babdad118100b620c12349f55367cb586",
+          "mode": 420
+        },
+        {
+          "path": "specifications/governed-operation-adapter.md",
+          "kind": "file",
+          "bytes": 20665,
+          "sha256": "db1762a4a33f551849a2e9a5dcf21a090e2bc78184c68b56a24b652c940de57c",
+          "mode": 420
+        },
+        {
+          "path": "specifications/historic-branch-receiving.md",
+          "kind": "file",
+          "bytes": 5355,
+          "sha256": "4c5619f2623463a26431fd5c4cdb74a0a05a43deef11f4e08970e317d0d566de",
+          "mode": 420
+        },
+        {
+          "path": "specifications/received-repository-retirement.md",
+          "kind": "file",
+          "bytes": 6327,
+          "sha256": "7df5a427155e98781686f114bbcf8cce037fc19ca3e2bc86fa88329f5ebb897c",
+          "mode": 420
+        },
+        {
+          "path": "specifications/source-owned-github-work-intake.md",
+          "kind": "file",
+          "bytes": 18752,
+          "sha256": "c62156ba91aa35a25fe982c02fb9520dbc5eeabb77c0ed94d5d9787627ee1037",
+          "mode": 420
+        },
+        {
+          "path": "src/bounded-review-call.mjs",
+          "kind": "file",
+          "bytes": 29916,
+          "sha256": "01548a1aec896a42231be4f46e17d544ae84957d117e0c64ed5838af84603f28",
+          "mode": 420
+        },
+        {
+          "path": "src/branch-history-retention.mjs",
+          "kind": "file",
+          "bytes": 2050,
+          "sha256": "05a76b3780a9a31906d2784473b2088fb7aad817407ca36abba36e2446e40883",
+          "mode": 420
+        },
+        {
+          "path": "src/branch-retirement-operations.mjs",
+          "kind": "file",
+          "bytes": 10545,
+          "sha256": "337e145860b384eee75eb863b49e49833055a0c31e7b1a6510849a7c173714f2",
+          "mode": 420
+        },
+        {
+          "path": "src/branch-retirement.mjs",
+          "kind": "file",
+          "bytes": 14687,
+          "sha256": "9a3f9f44c6432b564ab74cf2fe18c6408a455967ff04ff3614af12b12d6249ab",
+          "mode": 420
+        },
+        {
+          "path": "src/credential-authority.mjs",
+          "kind": "file",
+          "bytes": 3364,
+          "sha256": "3f828b9e865daba0bbc92a33727dd74e819b1a4f5aef7148bf4b7fff7e80e2b1",
+          "mode": 420
+        },
+        {
+          "path": "src/drain-composition.mjs",
+          "kind": "file",
+          "bytes": 14537,
+          "sha256": "8df10b8d70a8f8f2ef8a6e2491babe1e6364e3d9d37851c9d493eee2b7830862",
+          "mode": 420
+        },
+        {
+          "path": "src/estate-classify.mjs",
+          "kind": "file",
+          "bytes": 6241,
+          "sha256": "2df39b6518cf18b36f6cc6f92d5c6c7225e1758d97378697bc65697156aec25e",
+          "mode": 420
+        },
+        {
+          "path": "src/estate-debt-record.mjs",
+          "kind": "file",
+          "bytes": 3442,
+          "sha256": "b72a8a835616768cd6b0a46faa262a757dd26e9b0aa431ab83607a06fd17d497",
+          "mode": 420
+        },
+        {
+          "path": "src/estate-reconcile.mjs",
+          "kind": "file",
+          "bytes": 31273,
+          "sha256": "679f291b2e23ad88d471ae91e35dc70bc4cb18f69f7ae4b0c7a8e81b4847106f",
+          "mode": 420
+        },
+        {
+          "path": "src/github-app.mjs",
+          "kind": "file",
+          "bytes": 5766,
+          "sha256": "b485280b4ba7e42fb020e8c8e2f41b5655fbd7ac6a35d663bb0b0dbf3ad60227",
+          "mode": 420
+        },
+        {
+          "path": "src/github-rest-client.mjs",
+          "kind": "file",
+          "bytes": 8531,
+          "sha256": "8a3ea5787f79ef656a546596ab1b5d87b5b61f8419323a1416b7937432efeba5",
+          "mode": 420
+        },
+        {
+          "path": "src/github-review-rest.mjs",
+          "kind": "file",
+          "bytes": 22782,
+          "sha256": "11075624689c831b5174ed67f0e260b6c9b12de11721d3ce913a4b39f56b26e7",
+          "mode": 420
+        },
+        {
+          "path": "src/interaction.mjs",
+          "kind": "file",
+          "bytes": 4507,
+          "sha256": "23f419131cf47f103eecf3c7ee9b8c98de0b3d8208ef4d44a9910bf53a75df41",
+          "mode": 420
+        },
+        {
+          "path": "src/landing-composition.mjs",
+          "kind": "file",
+          "bytes": 26904,
+          "sha256": "5620fbee5d9ac9143e625cde9af3c6cc318e7275cf1524f4680c25613203ba85",
+          "mode": 420
+        },
+        {
+          "path": "src/landing-events.mjs",
+          "kind": "file",
+          "bytes": 4219,
+          "sha256": "c45feee3cc75210468152721da6a47b828d297bed7899b55965a103e2165e60c",
+          "mode": 420
+        },
+        {
+          "path": "src/landing-evidence.mjs",
+          "kind": "file",
+          "bytes": 4344,
+          "sha256": "a8689922ca8ca02c64d8ccd8e78523c1bfa5a2aba1097cdb655fbe1723164f10",
+          "mode": 420
+        },
+        {
+          "path": "src/landing-publication.mjs",
+          "kind": "file",
+          "bytes": 32687,
+          "sha256": "6416785b6392278b3e925274211f7348441623f88dd3e97a010306f9b991e7a6",
+          "mode": 420
+        },
+        {
+          "path": "src/leased-delete.mjs",
+          "kind": "file",
+          "bytes": 1318,
+          "sha256": "38c345f3962600650d38d25a5c4776644b27d4baa9ad1b928b5dd9fedd41b157",
+          "mode": 420
+        },
+        {
+          "path": "src/named-credential.mjs",
+          "kind": "file",
+          "bytes": 2366,
+          "sha256": "ba0283b07ba185ae7839f11cecf7ccda7f9d161297cb75f28eea15e4a402ca7b",
+          "mode": 420
+        },
+        {
+          "path": "src/operations.mjs",
+          "kind": "file",
+          "bytes": 6609,
+          "sha256": "9310a50620b27cc679778921f1bc86be117258ca00bca16b544101c1f2a2e103",
+          "mode": 420
+        },
+        {
+          "path": "src/planned-input-contract.mjs",
+          "kind": "file",
+          "bytes": 469,
+          "sha256": "f6d010d30c77795b5973874072ec9fbc3636a60becf98bd455238c41b7d41969",
+          "mode": 420
+        },
+        {
+          "path": "src/prepare-repository-receiving.mjs",
+          "kind": "file",
+          "bytes": 4330,
+          "sha256": "b8145cb05ab93d71b2144d4c0119d4d1c98fdcb23a941f93b36ca0f065cb44b6",
+          "mode": 420
+        },
+        {
+          "path": "src/receive-gh-credential.mjs",
+          "kind": "file",
+          "bytes": 2306,
+          "sha256": "6baa67a424b80763b1b7129b123421f8c8166fd3ec8d8514d4b075c604ac71c4",
+          "mode": 420
+        },
+        {
+          "path": "src/repository-history.mjs",
+          "kind": "file",
+          "bytes": 2757,
+          "sha256": "667b27741fba0be8fb592afa32fa03934ff4a1b04ca4fdf6e0be78db45a3c77d",
+          "mode": 420
+        },
+        {
+          "path": "src/repository-hosting.mjs",
+          "kind": "file",
+          "bytes": 25838,
+          "sha256": "ae89748dc9f034a977259a8f50939c37921929c3d8b036917842d89e61f5f6ce",
+          "mode": 420
+        },
+        {
+          "path": "src/repository-receiving.mjs",
+          "kind": "file",
+          "bytes": 14638,
+          "sha256": "785f8741b485999192d2fab3aa9344448b8bdf6ed4d5cc70f3a384d55e87bd1c",
+          "mode": 420
+        },
+        {
+          "path": "src/repository-transfer.mjs",
+          "kind": "file",
+          "bytes": 6674,
+          "sha256": "1e8407bd44453d9f6d971d4f21eb58844b3dddebddc7913d8db3b8f45c6f5a61",
+          "mode": 420
+        },
+        {
+          "path": "src/review-operations.mjs",
+          "kind": "file",
+          "bytes": 5077,
+          "sha256": "d9dd3888112a4ce1b9a6db64ee140e5e5723f0c93fd2f83bda16133a7c176945",
+          "mode": 420
+        },
+        {
+          "path": "src/semioverse-operations.mjs",
+          "kind": "file",
+          "bytes": 15651,
+          "sha256": "bbffce10baab3774404bc230b26f22651c3812400bc20164b2550b19ecba6735",
+          "mode": 420
+        },
+        {
+          "path": "src/semver.mjs",
+          "kind": "file",
+          "bytes": 1529,
+          "sha256": "2824a1cc1ab8c17c8c5105b0268591472e8f3ed36201d812615fa38ea523c009",
+          "mode": 420
+        },
+        {
+          "path": "src/source-integration.mjs",
+          "kind": "file",
+          "bytes": 7676,
+          "sha256": "b32246d698b966ac054a98367d610d55e3dc6575d486e34453ddd2e3dc7ffbea",
+          "mode": 420
+        },
+        {
+          "path": "src/submodule-pin-events.mjs",
+          "kind": "file",
+          "bytes": 22354,
+          "sha256": "a087264df250c9a27de5f6fb1fdc9642f28e2187865c5a7c151d8cc716b76b90",
+          "mode": 420
+        },
+        {
+          "path": "src/submodule-pins.mjs",
+          "kind": "file",
+          "bytes": 22664,
+          "sha256": "6c1fcb015361a75deeb204cbdaa029f376b51c06fe56213b7e3bf318c2d63a6c",
+          "mode": 420
+        },
+        {
+          "path": "src/transfer-operations.mjs",
+          "kind": "file",
+          "bytes": 5363,
+          "sha256": "c1b79a16fcd4057aefca7bcfa915ee7d3b97ea94c9081e57b72446e0080389c8",
+          "mode": 420
+        }
+      ],
+      "evidence": {
+        "source": {
+          "repository": "https://github.com/red-cup-engineering/github-engineering-services-section.git",
+          "commit": "e423fe6770df03eecce803a82ffd12231a8583a5"
+        },
+        "publisher": {
+          "gitHead": "e423fe6770df03eecce803a82ffd12231a8583a5",
+          "format": "json-2-newline"
+        },
+        "sourceManifestSHA256": "e83d17fd5fcb03049ca66c77b5c61b41c1ddb5960b82002e26366110df7c6fbd",
+        "expectedManifestSHA256": "8712f32579262c33be74d0dee2dff0d70b1464a49accaedfb50b9eedcc445385"
+      },
+      "installationClaimed": false
+    }
+  },
+  "installationClaimed": false,
+  "publicationClaimed": false
+}

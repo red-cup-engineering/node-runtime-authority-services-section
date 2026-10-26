@@ -1,0 +1,78 @@
+{
+  "type": "OriginalNode031ReleasePathAfterCapacityReopening",
+  "at": "2026-10-21T02:13:17.246987+00:00",
+  "currentSource": {
+    "repository": "red-cup-engineering/node-process-services-section",
+    "pull": 2,
+    "head": "f0b7cf0a64738c5b08ffea973f2869c66f83958c",
+    "tree": "993ef058fa8fec8f1ca9f7127cc6dc42772ec6fc",
+    "sourceSnapshot": "aea503bb5649df85c00a47ea4c40a090dc66ec1dc0804edf6552c6c132b67c4e",
+    "files": 27,
+    "originalScriptPlan": {
+      "tests": 5,
+      "syntax": 15,
+      "sourceCases": 62
+    },
+    "fullNativeStatus": "UNMET"
+  },
+  "nextExecutableOperation": {
+    "gate": "Root confirms capacity change; NEW original fresh CDE guest10%/inodes plus physical100GB after unchanged6GiB/double2GiBgrowth/double64MiBoverhead. Old refusal1abb remains. No unchanged-input replay now.",
+    "producer": "Original qualified CDE3.1 runStorageStage + original executeJavascriptNodeCommandAsynchronously0.3.1 + nativeNPM11.16.0/Node24.18.0. No Code worker300 timeout or HOME behavior alteration.",
+    "forwardBindings": "New exclusive dispatcher/inputs/scope/output names before execution; read hash-bound existing immutable sources/retained suppliers at proper owner paths; actual candidateGit f0/tree993ef pins, previous scope inactive/dead/empty. No repeat source or graph copies needed.",
+    "reuseWithoutCopy": [
+      "Existing exact27 frozen source and untouched metadata workspace",
+      "Existing actual87 Code23 source and file-consumer descriptor (no prior node_modules/lock from refused attempt)",
+      "Existing original13 Code suppliers and native executor relative closure"
+    ],
+    "phases": [
+      {
+        "operation": "Native offline Code23 file-directory consumer install then ci, registered publish-package --help",
+        "milliseconds": [
+          60000,
+          60000,
+          30000
+        ],
+        "expected": "Real3entry native lock/registration +13retained providers, no new97 graph"
+      },
+      {
+        "operation": "Native Node own NPM install --package-lock-only --ignore-scripts --no-audit --no-fund --workspaces=false --prefer-offline --registry=https://registry.561.group/",
+        "milliseconds": 600000,
+        "expected": "Exact actual lock IDs/SRIs/classification, package body node_modules absent, source27 unchanged"
+      }
+    ],
+    "scopeSeconds": 900,
+    "memoryBytes": 2147483648,
+    "environment": "Actual HOME and CODEX_HOME inherited unchanged; explicit owned cache/temp/config, no old .local executable/carrier.",
+    "status": "NOT DISPATCHED"
+  },
+  "installedGraphReuseAssessment": {
+    "Code97DirectIDMatches": "15/20",
+    "PR65RetainedNativeDirectIDMatches": "19/20 with real provider manifests, only Data0.7 required vs actual0.6",
+    "RunnerSourceComparison": "102/109 .5 nonmanifest archive members byte-identical to retained.4,7 changed/missing; actual .5 source and declaredData.7 must be preserved.",
+    "limit": "No complete qualified .5 installed context established by these exact inventories. Direct identity overlap is not whole transitive/source/API correspondence or native registration. Do not splice/repin or synthesize old graph as new own install.",
+    "next": "After actual own lock, compare every exact ID/integrity and physical native suppliers/cache against accepted priorreceipts before assigning any added material peak. Use original native manager install/frozen receiving; no unproved5.5GiB sizing or graph copy."
+  },
+  "afterMetadata": [
+    {
+      "operation": "Actual original own frozen native install",
+      "condition": "Exact accepted lock+full required supplier/archive/cache size basis and separately admitted one-heavy scope; reuse proven existing cache/body inputs only via competent original manager/qualified bindings."
+    },
+    {
+      "operation": "npm run check and npm test through actually installed registered JSNodePackage0.5.0",
+      "receiving": "Exact syntax15/15; package-test-run.v1 planned5/files5/ran62/pass62/fail0/requires[] plus complete raw TAP zero skips/todo/cancel, actual original full source plan; not prior49/7/62 substitute."
+    },
+    {
+      "operation": "Original actual pack/public API/recipient receiving",
+      "receiving": "Actual10 export target bytes; deliberate .3.1 availability; pack source correspondence+SRI+exec intent; actual recipient native installation/import/use, records/logs excluded by originalfiles[src]."
+    },
+    {
+      "operation": "Normal expected-head integration and original named publication",
+      "condition": "Independent full source/native/pack receiving first; no Node draft merge or registryPUT through unmet gate."
+    },
+    {
+      "operation": "Actual published artifact/native consumer useful own API + downstream CSE/GHS/CDE/BCF intake",
+      "condition": "Actual immutable publishergitHead/tree mapping, fresh artifact/SRI/own needed providers, actual original caller receives; host/federation gates remain distinct."
+    }
+  ],
+  "noCurrentEffects": true
+}

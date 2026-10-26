@@ -1,0 +1,8 @@
+{
+  "exitCode": 1,
+  "seconds": 0.556704405000346,
+  "stdoutBytes": 2394,
+  "stderrBytes": 0,
+  "tmpEmpty": true,
+  "scope": "ControlGroup=\nLoadState=not-found\nActiveState=inactive\nSubState=dead\n"
+}

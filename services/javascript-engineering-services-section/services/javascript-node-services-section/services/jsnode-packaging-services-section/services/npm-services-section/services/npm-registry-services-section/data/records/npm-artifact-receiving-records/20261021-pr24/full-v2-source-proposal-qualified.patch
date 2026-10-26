@@ -1,0 +1,513 @@
+--- a/package.json
++++ b/package.json
+@@ -13,7 +13,7 @@
+     "@red-cup-engineering/uri-services-section": "0.1.1",
+     "@red-cup-engineering/computer-content-address-engineering-services-section": "0.2.0",
+     "@red-cup-engineering/execute-javascript-node-command-service": "0.3.1",
+-    "@red-cup-engineering/git-source-reading-service": "0.1.1",
++    "@red-cup-engineering/git-source-reading-service": "0.1.2",
+     "@red-cup-engineering/javascript-node-services-section": "0.3.2",
+     "@red-cup-engineering/npm-registry-read-service": "0.1.2",
+     "@red-cup-engineering/npm-registry-snapshot-services-section": "0.1.1",
+--- a/pnpm-lock.yaml
++++ b/pnpm-lock.yaml
+@@ -24,8 +24,8 @@
+         specifier: 0.3.1
+         version: 0.3.1
+       '@red-cup-engineering/git-source-reading-service':
+-        specifier: 0.1.1
+-        version: 0.1.1
++        specifier: 0.1.2
++        version: 0.1.2
+       '@red-cup-engineering/javascript-node-services-section':
+         specifier: 0.3.2
+         version: 0.3.2
+@@ -173,8 +173,8 @@
+     engines: {node: '>=24'}
+     hasBin: true
+ 
+-  '@red-cup-engineering/git-source-reading-service@0.1.1':
+-    resolution: {integrity: sha512-AtiBu9I5H+35nJPka4T0CClR7oJfZCPwpWlvScR2M95h/xLSa07FAgAhf47oSON7fRM5LKdfZJNpEf5f64U2vQ==}
++  '@red-cup-engineering/git-source-reading-service@0.1.2':
++    resolution: {integrity: sha512-cLt/BcAPEkoz5kpA729rqzrmg3LbkXpnr3zScv4WAmOnAhSBZRXevFLweRK9RX+CCe+K3wQ2W5+2+E6oDuLXNg==}
+     engines: {node: '>=22.18'}
+ 
+   '@red-cup-engineering/html-engineering-services-section@0.1.1':
+@@ -650,7 +650,7 @@
+     dependencies:
+       '@red-cup-engineering/javascript-node-services-section': 0.3.2
+ 
+-  '@red-cup-engineering/git-source-reading-service@0.1.1': {}
++  '@red-cup-engineering/git-source-reading-service@0.1.2': {}
+ 
+   '@red-cup-engineering/html-engineering-services-section@0.1.1':
+     dependencies:
+--- a/README.md
++++ b/README.md
+@@ -550,8 +550,15 @@
+ 
+ ### Receive one packed artifact
+ 
+-The original no-stage inventory model remains a version-1 observation contract;
+-its successful inventory comparison is not byte or native-installation proof.
++`admitArtifactRelease` admits a full byte-backed version-2 release by default,
++or with `stage: "release"`. It composes the existing source/archive and
++archive/installed comparisons over the same immutable archive identity and
++retains explicit supplied import observations. Both explicit partial stages
++remain available for publication before installation. Pure supplied observations
++cannot authenticate a native effect, complete imports or authorize publication.
++The original version-1 inventory model remains available as
++`compareArtifactInventories`; an inventory-only input no longer passes full
++release admission. This default change requires a breaking release.
+ 
+ The existing `receive-packed-registry-artifact compare INPUT [OUTPUT]` entrance
+ uses `admitArtifactRelease` from `./artifact-release` to distinguish exact
+--- a/scripts/receive-packed-registry-artifact.mjs
++++ b/scripts/receive-packed-registry-artifact.mjs
+@@ -52,7 +52,6 @@
+   } finally { await handle.close(); }
+   let result;
+   if (mode === "compare") {
+-    if (!["source-archive", "archive-installed"].includes(request.stage)) throw new Error("compare requires an explicit artifact-member stage");
+     result = admitArtifactRelease(request);
+   } else {
+     if (!request || typeof request !== "object" || Array.isArray(request)
+--- a/specifications/artifact-member-receiving.md
++++ b/specifications/artifact-member-receiving.md
+@@ -1,12 +1,15 @@
+ # Artifact member receiving
+ 
+-`admitArtifactRelease` keeps its existing inventory-release input and result unchanged. Two
+-explicit stages compare native observations about one immutable release:
+-`source-archive` and `archive-installed`. These are partial receiving stages.
++`admitArtifactRelease` compares full byte-backed release observations by default
++or with `stage: "release"`. Two explicit partial stages compare native
++observations about one immutable release: `source-archive` and
++`archive-installed`. Their established inputs and results remain unchanged.
+ An archive result never claims that a package was installed. The original
+-no-stage version-1 interface compares supplied manifest/path-inventory/import-row
+-observations; it is retained for compatibility, not upgraded to byte, native
+-installation, complete import execution or publication proof.
++version-1 manifest/path-inventory/import-row comparison is retained under the
++explicit `compareArtifactInventories` export at this same owner. Its input and
++result remain unchanged. Inventory-only input to full release admission refuses
++as incomplete; it cannot establish payload, native installation, complete import
++execution or publication proof.
+ 
+ The model performs no Git, TAR, registry, filesystem or package-manager effects.
+ The original native readers and installers own those effects and their source,
+@@ -29,7 +32,7 @@
+ fields, wrong-stage evidence and mixed raw-Git/native mode fields refuse in the
+ new partial-stage contract. Adapters retain original Git mode/blob evidence
+ before projecting executable intent into the numeric source-member mode.
+-Legacy no-stage inputs retain their original contract. A real directory named `package/`
++The explicit inventory operation retains its original contract. A real directory named `package/`
+ is not stripped as though it were the TAR container.
+ 
+ For `source-archive`, add `source: {repository, commit, manifestText, members}`
+@@ -99,6 +102,40 @@
+ credentials, download, extract, install or publish in compare mode.
+ The original before/after/publish environment-based contract is unchanged.
+ 
++## Full release and retained inventory contracts
++
++Full input has `registry`, finite `limits`, `source`, `archive`, `installed`,
++`installation`, optional `publisher`, and `imports`, with optional
++`stage: "release"`. Source, archive, installed and native installation facts use
++the same representations and finite mode laws as the two partial contracts.
++Full immutable Git identities may be 40-character SHA1 or 64-character SHA256
++lowercase hexadecimal strings; their native acquisition belongs to the original
++Git source-reading primitive, not this comparison. Missing evidence or legacy
++inventory-only input returns `artifact-release-evidence-incomplete`.
++
++Full admission invokes the existing source/archive comparison and then the
++existing archive/installed comparison, binding their exact registry, package,
++release version, SHA512 and normalized archive member identities. Any refusal
++prevents full success. Its result is `ArtifactRelease`, version 2, stage `release`,
++with both admitted partial values and a deterministic identity. Import rows remain
++only supplied structural observations. Scope explicitly disclaims authenticated
++native effects, complete import execution and publication authority. Input data
++is never frozen or mutated. Partial source publication remains independent of an
++installation that can occur only later.
++
++The compare CLI accepts full input or either explicit partial stage under the
++same fatal UTF8 8 MiB input bound and exclusive optional output. It performs no
++registry, credential, installer or publisher effects. Unknown/mixed-stage fields
++and unsupported representations refuse. Actual native receiving still originates
++at its original source/installer ports; JSON cannot assert that authority.
++
++Moving legacy no-stage acceptance to full admission is a breaking contract change.
++Its original release selector must choose a compatible pre-1.0 minor boundary and
++qualify actual caller migration before publication. `compareArtifactInventories`
++preserves the useful legacy observation capability without presenting inventory
++as full release admission. Known partial publisher/installer callers stay partial;
++they must not acquire a future-installed prerequisite.
++
+ Native adapters must retain all archive headers and reject unsafe members
+ before extracting. They must bind installed observations to the actual native
+ operation, provider, original consumer input projection and registered-bin
+@@ -109,11 +146,14 @@
+ 
+ Original PR24 at ad08ad8ceb3aec4247a760feee848f259eac437e supplies additional
+ strict-stage/byte-decoding counterexamples. This coherent path preserves those
+-controls without adopting its compatibility-impacting replacement of the legacy
+-interface or its narrower644→755-only installation rule. Full version-2 release
+-refinement/caller migration, SHA256-repository producer inputs and a separately
+-qualified alternate publisher serialization remain distinct obligations on that
+-PR and issue22. The native adapters below address the reader/installation gap for
++controls while reconciling its full-release requirement through the same partial
++comparators and retaining the actual received manager mode laws. Its narrower
++644→755-only installation rule cannot replace those witnessed contexts.
++Full version-2 release/caller receiving and actual SHA256 producer receiving remain
++separate from source qualification. A separately selected alternate publisher
++requires its own genuine producer and exact byte contract; unsupported alternate
++serialization still refuses rather than accepting asserted expected JSON.
++The native adapters below address the reader/installation gap for
+ their finite supported contexts; publication and actual caller receiving remain
+ separate completion conditions. Supplied selection/receipt addresses alone cannot authenticate native
+ selection or effects. Adapters must bind original independently selected source
+--- a/src/artifact-member-receiving.mjs
++++ b/src/artifact-member-receiving.mjs
+@@ -202,7 +202,7 @@
+   const scratchStat = await lstat(scratchDirectory);
+   if (!scratchStat.isDirectory() || scratchStat.uid !== process.getuid() || (scratchStat.mode & 0o077) !== 0
+     || inside(sourceDirectory, scratchDirectory) || inside(scratchDirectory, sourceDirectory)) throw fail('private scratch must be separate from selected source');
+-  if (typeof source.repository !== 'string' || !source.repository || !/^[a-f0-9]{40}$/u.test(source.commit)
++  if (typeof source.repository !== 'string' || !source.repository || typeof source.commit !== 'string' || !/^[a-f0-9]{40}(?:[a-f0-9]{24})?$/u.test(source.commit)
+     || source.scope !== undefined && source.scope !== '' && !literal(source.scope)) throw fail('exact source repository/commit/package scope required');
+   const at = { repository: source.repository, commit: source.commit, scope: source.scope ?? '' };
+   const first = await readSource({ ...at, selectFile: path => path === 'package.json', enterDirectory: () => false });
+--- a/src/artifact-release.mjs
++++ b/src/artifact-release.mjs
+@@ -4,7 +4,7 @@
+ 
+ const sha256 = sha256Hex;
+ const HEX = /^[a-f0-9]{64}$/u;
+-const COMMIT = /^[a-f0-9]{40}$/u;
++const COMMIT = /^[a-f0-9]{40}(?:[a-f0-9]{24})?$/u;
+ const exactHex = value => typeof value === "string" && HEX.test(value);
+ const exactSHA512 = value => {
+   if (typeof value !== "string" || !value.startsWith("sha512-") || value.length !== 95) return false;
+@@ -227,20 +227,61 @@
+   return semanticId(manifest);
+ }
+ 
+-/**
+- * Preserve the original inventory-release comparison contract.
+- *
+- * With no explicit stage, matching manifests, path inventories and supplied
+- * import-row structure remain version-1 observations. They do not establish
+- * payload bytes, native installation effects or complete declared imports.
+- * Byte/native receiving uses the explicit partial stages above. The caller
+- * owns all effects and custody; neither result authenticates those facts.
+- */
++/** One full admission composes the existing two partial comparisons. */
++function admitFullRelease(input) {
++  const required = ["registry", "limits", "source", "archive", "installed", "installation", "imports"];
++  const missing = required.filter(key => input[key] === undefined || input[key] === null);
++  if (missing.length) return frozen({ ok: false, refusal: {
++    code: "artifact-release-evidence-incomplete", stage: "release",
++    findings: missing.map(side => ({ code: "incomplete-evidence", side })),
++  } });
++  exactFields(input, ["stage", ...required, "publisher"], "full release");
++  if (!Array.isArray(input.imports)) throw new TypeError("imports must record supplied imported observations");
++  const imports = input.imports.map(row => {
++    exactFields(row, ["specifier", "status", "exports"], "import observation");
++    if (typeof row.specifier !== "string" || !row.specifier || row.status !== "imported"
++      || !Array.isArray(row.exports) || row.exports.some(name => typeof name !== "string"))
++      throw new TypeError("imports must record supplied imported observations");
++    return { specifier: row.specifier, status: row.status, exports: [...row.exports].sort() };
++  });
++  const common = { registry: input.registry, limits: input.limits, archive: input.archive };
++  const sourceArchive = admitMemberStage({ ...common, stage: "source-archive", source: input.source,
++    ...(input.publisher === undefined ? {} : { publisher: input.publisher }) });
++  const refused = result => frozen({ ok: false, refusal: {
++    code: "artifact-release-mismatch", stage: "release",
++    findings: [{ code: result.refusal.code, stage: result.refusal.stage, findings: result.refusal.findings }],
++  } });
++  if (!sourceArchive.ok) return refused(sourceArchive);
++  const archiveInstalled = admitMemberStage({ ...common, stage: "archive-installed",
++    installed: input.installed, installation: input.installation });
++  if (!archiveInstalled.ok) return refused(archiveInstalled);
++  const source = sourceArchive.value, installed = archiveInstalled.value;
++  if (["registry", "package", "releaseVersion", "integrity"].some(key => source[key] !== installed[key])
++    || semanticId(source.archive) !== semanticId(installed.archive)) return frozen({ ok: false, refusal: {
++    code: "artifact-release-mismatch", stage: "release", findings: [{ code: "release-identity-mismatch" }],
++  } });
++  const scope = { suppliedObservations: true, nativeEffectsAuthenticated: false,
++    completeImportsEstablished: false, publicationAuthorized: false };
++  const identity = semanticId({ type: "ArtifactRelease", version: 2, stage: "release",
++    registry: source.registry, package: source.package, releaseVersion: source.releaseVersion,
++    integrity: source.integrity, sourceArchive: source.identity, archiveInstalled: installed.identity, imports, scope });
++  return frozen({ ok: true, value: { type: "ArtifactRelease", version: 2, stage: "release", identity,
++    registry: source.registry, package: source.package, releaseVersion: source.releaseVersion,
++    integrity: source.integrity, sourceArchive: source, archiveInstalled: installed, imports, scope } });
++}
++
++/** Pure full byte/native-fact admission, or an explicitly selected partial stage.
++ * Custody, native authority and complete import execution remain external. */
+ export function admitArtifactRelease(input = {}) {
+-  if (input.stage !== undefined) {
+-    if (!["source-archive", "archive-installed"].includes(input.stage)) throw new TypeError("unknown artifact comparison stage");
+-    return admitMemberStage(input);
+-  }
++  if (!input || typeof input !== "object" || Array.isArray(input)) throw new TypeError("artifact release requires a record");
++  if (["source-archive", "archive-installed"].includes(input.stage)) return admitMemberStage(input);
++  if (input.stage !== undefined && input.stage !== "release") throw new TypeError("unknown artifact comparison stage");
++  return admitFullRelease(input);
++}
++
++/** Retain the original version-1 inventory observations under an explicit name.
++ * This never establishes payload, native effects or complete import receiving. */
++export function compareArtifactInventories(input = {}) {
+   const { registry, manifest, tarballManifest, tarballInventory, installedManifest, installedInventory, imports } = input;
+   if (typeof registry !== "string" || registry === "") throw new TypeError("registry is required");
+   const sourceManifestIdentity = manifestIdentity(manifest);
+--- a/src/publication-carrier-manifest.mjs
++++ b/src/publication-carrier-manifest.mjs
+@@ -15,7 +15,7 @@
+  */
+ export function preparePublicationCarrierManifest({ repository, commit, manifestText, published, history, repositoryFallback }) {
+   if (typeof repository !== "string" || !repository || Buffer.byteLength(repository) > 4096
+-    || !/^[a-f0-9]{40}$/u.test(commit) || typeof manifestText !== "string" || Buffer.byteLength(manifestText) > 1024 * 1024)
++    || typeof commit !== "string" || !/^[a-f0-9]{40}(?:[a-f0-9]{24})?$/u.test(commit) || typeof manifestText !== "string" || Buffer.byteLength(manifestText) > 1024 * 1024)
+     throw new TypeError("exact bounded original source coordinates and manifest required");
+   const original = JSON.parse(manifestText);
+   if (!original || Object.getPrototypeOf(original) !== Object.prototype || typeof original.name !== "string" || !original.name)
+--- a/test/artifact-member-receiving.test.mjs
++++ b/test/artifact-member-receiving.test.mjs
+@@ -36,6 +36,11 @@
+       package: manifest.name, version: manifest.version, normalization: "posix-package-files-0644-0755",
+       bins: [{ name: "receive", target: "bin/receive.mjs", registered: true, targetSHA256: archive.members[1].sha256 }] } };
+ }
++function releaseInput() {
++  const source = sourceInput(), installed = installedInput();
++  return { ...source, stage: "release", installed: installed.installed, installation: installed.installation,
++    imports: [{ specifier: manifest.name, status: "imported", exports: ["z", "a"] }] };
++}
+ const codes = result => result.refusal.findings.map(finding => finding.code);
+ 
+ test("source/archive accepts a nonexecutable declared bin without claiming installation", () => {
+@@ -181,7 +186,8 @@
+   const root = mkdtempSync(join(tmpdir(), "artifact-member-cli-"));
+   const cli = fileURLToPath(new URL("../scripts/receive-packed-registry-artifact.mjs", import.meta.url));
+   try {
+-    for (const [name, input] of [["source", sourceInput()], ["installed", installedInput()]]) {
++    for (const [name, input] of [["source", sourceInput()], ["installed", installedInput()],
++      ["full", releaseInput()], ["full-default", { ...releaseInput(), stage: undefined }]]) {
+       const request = join(root, name + ".json"), output = join(root, name + "-result.json");
+       writeFileSync(request, JSON.stringify(input));
+       const result = spawnSync(process.execPath, [cli, "compare", request, output], {
+@@ -190,6 +196,7 @@
+       });
+       assert.equal(result.status, 0, result.stderr);
+       assert.equal(JSON.parse(readFileSync(output, "utf8")).ok, true);
++      if (name.startsWith("full")) assert.equal(JSON.parse(readFileSync(output, "utf8")).value.version, 2);
+       const before = readFileSync(output);
+       const repeat = spawnSync(process.execPath, [cli, "compare", request, output], { encoding: "utf8", timeout: 20000 });
+       assert.equal(repeat.status, 1);
+@@ -200,7 +207,108 @@
+     const result = spawnSync(process.execPath, [cli, "compare", request], { encoding: "utf8", timeout: 20000 });
+     assert.equal(result.status, 1);
+     assert.equal(JSON.parse(result.stdout).ok, false);
++    const incomplete = join(root, "inventory-only.json"); writeFileSync(incomplete, JSON.stringify({ registry: "https://registry.example/", tarballInventory: ["package.json"] }));
++    const legacy = spawnSync(process.execPath, [cli, "compare", incomplete], {
++      encoding: "utf8", timeout: 20000, env: { ...process.env, REGISTRY: "not-a-registry" },
++    });
++    assert.equal(legacy.status, 1);
++    assert.equal(JSON.parse(legacy.stdout).refusal.code, "artifact-release-evidence-incomplete");
+   } finally { rmSync(root, { recursive: true, force: true }); }
++});
++
++test("full release composes the same partial identities without authenticating or mutating supplied observations", () => {
++  const input = releaseInput(), before = structuredClone(input), result = admitArtifactRelease(input);
++  assert.equal(result.ok, true);
++  assert.equal(result.value.type, "ArtifactRelease");
++  assert.equal(result.value.version, 2);
++  assert.equal(result.value.sourceArchive.identity, admitArtifactRelease(sourceInput()).value.identity);
++  assert.equal(result.value.archiveInstalled.identity, admitArtifactRelease(installedInput()).value.identity);
++  assert.deepEqual(result.value.imports[0].exports, ["a", "z"]);
++  assert.deepEqual(result, admitArtifactRelease(input));
++  const implicit = releaseInput(); delete implicit.stage;
++  assert.deepEqual(admitArtifactRelease(implicit), result);
++  assert.deepEqual(result.value.scope, { suppliedObservations: true, nativeEffectsAuthenticated: false,
++    completeImportsEstablished: false, publicationAuthorized: false });
++  assert.deepEqual(input, before);
++  assert.equal(Object.isFrozen(input.installed.members[0]), false);
++  assert.equal(Object.isFrozen(input.imports[0].exports), false);
++  input.installed.members[0].mode = 0;
++  assert.equal(result.value.archiveInstalled.compared.find(entry => entry.path === "package.json").mode, 0o644);
++});
++
++test("full admission requires both byte stages, native context, finite bounds and explicit import observations", () => {
++  for (const key of ["source", "archive", "installed", "installation", "limits", "imports", "registry"]) {
++    const input = releaseInput(); delete input[key];
++    const result = admitArtifactRelease(input);
++    assert.equal(result.ok, false);
++    assert.equal(result.refusal.code, "artifact-release-evidence-incomplete");
++    assert.equal(Object.isFrozen(input), false);
++  }
++  for (const mutate of [
++    x => { x.unreceived = true; },
++    x => { x.imports = "complete"; },
++    x => { x.imports[0].exports = [1]; },
++    x => { x.imports[0].authority = true; },
++    x => { x.source.members[1].gitMode = "100644"; },
++    x => { x.publisher.expectedManifestBytes = "caller-waiver"; },
++  ]) {
++    const input = releaseInput(); mutate(input);
++    assert.throws(() => admitArtifactRelease(input), TypeError);
++    assert.equal(Object.isFrozen(input), false);
++    if (Array.isArray(input.imports)) assert.equal(Object.isFrozen(input.imports), false);
++  }
++});
++
++test("either failed partial comparison prevents a full release, with exact failure scope", () => {
++  for (const [side, mutate] of [
++    ["source-archive", x => { x.source.members[1] = row("bin/receive.mjs", "source drift"); }],
++    ["source-archive", x => { x.source.members[1].mode = 0o755; }],
++    ["source-archive", x => { x.publisher.gitHead = "b".repeat(40); }],
++    ["archive-installed", x => { x.installed.members[1] = row("bin/receive.mjs", "installed drift", 0o755); }],
++    ["archive-installed", x => { x.installation.artifactIntegrity = "sha512-" + Buffer.alloc(64, 2).toString("base64"); }],
++    ["archive-installed", x => { x.installation.package = "@example/foreign"; }],
++    ["archive-installed", x => { x.installation.version = "2.0.0"; }],
++    ["archive-installed", x => { x.installation.bins[0].registered = false; }],
++  ]) {
++    const input = releaseInput(); mutate(input);
++    const result = admitArtifactRelease(input);
++    assert.equal(result.ok, false);
++    assert.equal(result.refusal.code, "artifact-release-mismatch");
++    assert.equal(result.refusal.findings[0].stage, side);
++  }
++});
++
++test("full release retains witnessed PNPM normalization and the distinct native NPM umask law", () => {
++  const pnpm = admitArtifactRelease(releaseInput());
++  assert.equal(pnpm.ok, true);
++  assert.equal(pnpm.value.archiveInstalled.evidence.modeChanges.length, 2);
++  const input = releaseInput();
++  input.installed.members[0].mode = input.archive.members[0].mode;
++  input.installed.members[1].mode = 0o700;
++  Object.assign(input.installation, { manager: { ...input.installation.manager, name: "npm", version: "11.16.0" },
++    normalization: "npm-file-directory-bin-umask", operation: "npm-ci-file-directory", umask: 0o077,
++    normalizationProvider: { path: "bin-links/lib/fix-bin.js", sha256: digest("actual manager bin-links primitive") } });
++  assert.equal(admitArtifactRelease(input).ok, true);
++  input.installed.members[1].mode = 0o755;
++  assert.equal(admitArtifactRelease(input).ok, false);
++});
++
++test("full source identities support literal SHA256 while keeping exact publisher and native manifest binding", () => {
++  const input = releaseInput(), fullCommit = "b".repeat(64);
++  input.source.commit = fullCommit; input.publisher.gitHead = fullCommit;
++  input.archive.manifestText = text({ ...manifest, gitHead: fullCommit });
++  input.archive.members[0] = row("package.json", input.archive.manifestText, 0o600);
++  input.installed.manifestText = input.archive.manifestText;
++  input.installed.members[0] = row("package.json", input.archive.manifestText, 0o644);
++  input.installation.installedManifestSHA256 = digest(input.archive.manifestText);
++  assert.equal(admitArtifactRelease(input).value.sourceArchive.evidence.source.commit, fullCommit);
++  for (const commit of [fullCommit.slice(0, 63), fullCommit + "b", [fullCommit]]) {
++    const wrong = structuredClone(input); wrong.source.commit = commit;
++    assert.throws(() => admitArtifactRelease(wrong), /immutable source/u);
++    if (Array.isArray(commit)) assert.equal(Object.isFrozen(commit), false);
++  }
++  const wrong = structuredClone(input); wrong.publisher.gitHead = fullCommit.slice(0, 40);
++  assert.equal(admitArtifactRelease(wrong).ok, false);
+ });
+ 
+ 
+--- a/test/artifact-native-receiving.test.mjs
++++ b/test/artifact-native-receiving.test.mjs
+@@ -45,6 +45,17 @@
+   assert.equal(JSON.parse(preparePublicationCarrierManifest({ ...input, manifestText: JSON.stringify(original) }).preparedManifestText).repository, original.repository);
+   assert.throws(() => preparePublicationCarrierManifest({ ...input, repositoryFallback: { url: 'x', unexpected: true } }));
+ });
++test('carrier preparation accepts literal SHA256 source coordinates and refuses truncated or coercible identities', () => {
++  const commit = 'c'.repeat(64), input = { repository: 'file:///original/mirror', commit,
++    manifestText: '{"name":"native","version":"0.1.0"}\n', published: [], history: 1 };
++  const result = preparePublicationCarrierManifest(input);
++  assert.equal(result.source.commit, commit); assert.equal(result.publisher.gitHead, commit);
++  assert.equal(result.selection.version, '0.1.0');
++  for (const wrong of [commit.slice(0, 63), commit + 'c', [commit]]) {
++    assert.throws(() => preparePublicationCarrierManifest({ ...input, commit: wrong }), /exact bounded original/u);
++    if (Array.isArray(wrong)) assert.equal(Object.isFrozen(wrong), false);
++  }
++});
+ test('maintained native archive reader preserves a literal nested package directory and executable intent', async t => {
+   const f = await fixture(t), archive = await f.pack(['package.json', 'src/cli.mjs', 'package/real.txt']);
+   const result = await readRegistryArchiveMembers(archive);
+@@ -120,6 +131,30 @@
+   await assert.rejects(receiveSourceArchiveMembers(input, { readSource, sourceDirectory: f.source, scratchDirectory: f.scratch, preparation: { ...preparation, history: 8 } }), /differs.*producer/);
+ });
+ 
++test('ordinary native receive CLI receives an actual SHA256 Git commit through the selected primitive', async t => {
++  const { execFile } = await import('node:child_process'), { promisify } = await import('node:util');
++  const execute = promisify(execFile), f = await fixture(t);
++  const git = args => execute('git', ['-c', 'core.hooksPath=/dev/null', ...args], { cwd: f.source });
++  await git(['init', '--quiet', '--object-format=sha256']); await git(['add', '.']);
++  await git(['-c', 'user.name=Native Fixture', '-c', 'user.email=fixture@example.invalid', 'commit', '--quiet', '-m', 'native SHA256 receiving fixture']);
++  assert.equal((await git(['rev-parse', '--show-object-format=storage'])).stdout.trim(), 'sha256');
++  const commit = (await git(['rev-parse', 'HEAD'])).stdout.trim(); assert.match(commit, /^[a-f0-9]{64}$/u);
++  const archive = await f.pack(['package.json', 'src/cli.mjs', 'package/real.txt']);
++  const input = join(f.root, 'sha256-selection.json'), output = join(f.root, 'sha256-received.json');
++  await writeFile(input, JSON.stringify({ registry: 'https://registry.example.invalid/', source: { repository: f.source, commit },
++    sourceDirectory: f.source, scratchDirectory: f.scratch, archive: { path: archive.path, integrity: archive.integrity }, limits }));
++  const cli = new URL('../scripts/receive-packed-registry-artifact.mjs', import.meta.url);
++  const { stdout } = await execute(process.execPath, [cli.pathname, 'receive', input, output], {
++    timeout: 60000, maxBuffer: 1024 * 1024, env: { ...process.env, GIT_DEFAULT_HASH: 'sha1' },
++  });
++  const result = JSON.parse(stdout); assert.equal(result.ok, true);
++  assert.equal(result.source.commit, commit); assert.equal(result.installationClaimed, false);
++  assert.equal(result.source.requiredPaths.length, 3);
++  for (const entry of result.source.members) {
++    assert.equal(entry.gitSource.commit, commit); assert.match(entry.gitSource.object, /^[a-f0-9]{64}$/u);
++  }
++  assert.deepEqual(JSON.parse(await readFile(output, 'utf8')), result);
++});
+ test('ordinary native receive CLI uses the selected strict Git provider and exclusive output', async t => {
+   const { execFile } = await import('node:child_process'), { promisify } = await import('node:util');
+   const execute = promisify(execFile), f = await fixture(t);
+--- a/test/artifact-release.test.mjs
++++ b/test/artifact-release.test.mjs
+@@ -1,6 +1,6 @@
+ import assert from "node:assert/strict";
+ import { test } from "node:test";
+-import { admitArtifactRelease } from "../src/artifact-release.mjs";
++import { admitArtifactRelease, compareArtifactInventories } from "../src/artifact-release.mjs";
+ 
+ const manifest = Object.freeze({ name: "@red-cup-engineering/example", version: "0.1.0", exports: { ".": "./dist/index.mjs" } });
+ const input = Object.freeze({
+@@ -13,17 +13,17 @@
+   imports: [{ specifier: "@red-cup-engineering/example", status: "imported", exports: ["answer"] }],
+ });
+ 
+-test("an ArtifactRelease derives one replayable identity from matching manifest, tarball, install, and imports", () => {
+-  const first = admitArtifactRelease(input);
+-  const second = admitArtifactRelease(input);
++test("explicit inventory comparison preserves its original replayable manifest/path/import observations", () => {
++  const first = compareArtifactInventories(input);
++  const second = compareArtifactInventories(input);
+   assert.equal(first.ok, true);
+   assert.deepEqual(first, second);
+   assert.match(first.value.identity, /^ni:\/\//u);
+   assert.deepEqual(first.value.tarball.inventory, ["dist/index.mjs", "package.json"]);
+ });
+ 
+-test("an ArtifactRelease refuses promotion when the installed artifact differs from its tarball", () => {
+-  const result = admitArtifactRelease({ ...input, installedInventory: ["package.json"] });
++test("explicit inventory comparison preserves its original mismatched inventory refusal", () => {
++  const result = compareArtifactInventories({ ...input, installedInventory: ["package.json"] });
+   assert.deepEqual(result, {
+     ok: false,
+     refusal: {
+@@ -34,3 +34,11 @@
+     },
+   });
+ });
++
++test("legacy inventory evidence cannot become a successful full release admission", () => {
++  const result = admitArtifactRelease(input);
++  assert.equal(result.ok, false);
++  assert.equal(result.refusal.code, "artifact-release-evidence-incomplete");
++  assert.equal(result.refusal.stage, "release");
++  assert.equal(compareArtifactInventories(input).value.version, 1);
++});

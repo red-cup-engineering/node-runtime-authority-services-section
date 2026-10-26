@@ -1,0 +1,25 @@
+{
+  "schema": "cd.retired-intake-fleet.owned-workflow-syntax.v1",
+  "yaml": "actual installed Python yaml safe_load succeeded",
+  "bashN": [
+    {
+      "job": "reconcile",
+      "step": 1,
+      "name": "Bind authored CI outputs to section data",
+      "exitCode": 0
+    },
+    {
+      "job": "reconcile",
+      "step": 3,
+      "name": "Receive exact fleet source before any remote effect",
+      "exitCode": 0
+    },
+    {
+      "job": "reconcile",
+      "step": 4,
+      "name": "Reconcile existing GitHub repository consumers",
+      "exitCode": 0
+    }
+  ],
+  "execution": "YAML parsing and bash -n only; no run block, package operation, API, install, fleet effect, test or GitHub CI rerun executed"
+}

@@ -1,0 +1,11 @@
+{
+  "id": 1425297553,
+  "full_name": "red-cup-engineering/node-process-services-section",
+  "private": false,
+  "default_branch": "main",
+  "archived": false,
+  "disabled": false,
+  "permissions": {
+    "push": true
+  }
+}

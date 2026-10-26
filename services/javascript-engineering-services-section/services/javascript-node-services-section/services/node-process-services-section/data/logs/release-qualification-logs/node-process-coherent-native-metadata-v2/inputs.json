@@ -1,0 +1,1224 @@
+{
+  "type": "NewExclusiveNode031MetadataCapacityReopeningInputs",
+  "owner": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section",
+  "root": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v2",
+  "parentCommit": "23113a67473de9784fdea1d1d45757fc0dd1569b",
+  "sourceCommit": "f0b7cf0a64738c5b08ffea973f2869c66f83958c",
+  "frozenSource": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2",
+  "nodeSource": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source",
+  "nodeSourceFiles": [
+    {
+      "path": ".npmrc",
+      "sha256": "8de08949bab508293e0d9aa76a511469ee2d306b1f6140a8f60c0d1de8b17fe2",
+      "gitBlob": "0a1f8151935f5a483c368cd930c26519cb3663cf",
+      "mode": "100644",
+      "bytes": 37
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/commit-tree-field-correction-receiving.json",
+      "sha256": "f24c3bad4de70f6dd1825ee6c70946ab859f92ca4386a9fefe97a49ffd86a208",
+      "gitBlob": "21946b9384bd661f375241a3eddad7d845271898",
+      "mode": "100644",
+      "bytes": 1075
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/independent-node-process-owned-data-root-source-receiving.json",
+      "sha256": "20ea35ebb1fad04c8798cdd91ee585a31307dda7315519704f22ca73b08c1e0b",
+      "gitBlob": "db611ecb53ea91ff83c499e8d7b914c922fea3d7",
+      "mode": "100644",
+      "bytes": 14242
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/independent-shared-owned-data-corrected-context-receiving.json",
+      "sha256": "03dcf159dc3b41957ee276f29fc686daec98262d1a855ec043e5900908a58f63",
+      "gitBlob": "42231488b500d0188fe44766cc44635587553bd1",
+      "mode": "100644",
+      "bytes": 5303
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/independent-shared-owned-data-source-receiving.json",
+      "sha256": "c473e0187eee7f375cc9af31a0f672e468d1d6941d4a481bae2ea550e624cdd2",
+      "gitBlob": "a255907bcfd99c18309cd2de293452cdbfeffcb2",
+      "mode": "100644",
+      "bytes": 3980
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/native-node-source-family-observation.json",
+      "sha256": "da5802cf4d3ca05de8bbe3f623f93940ca2281c98bfd919de54db7948282c2e1",
+      "gitBlob": "c82a4104b6c3a5c04de39f82e2fc45f6de2bfd49",
+      "mode": "100644",
+      "bytes": 10677
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/node-process-owned-data-root-source-proposal.json",
+      "sha256": "6b44a6cdf7b79529ae1e7025be999ec5eb250f03070c2f9a6d775d87b28dd902",
+      "gitBlob": "cd5d17a5a792beccb85f30599bb9b6a043d7cd0f",
+      "mode": "100644",
+      "bytes": 21233
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/owner-repository-parent-gitlink-receiving.json",
+      "sha256": "98ad894d87515e4abe37b5bab12aeedb9b07963cdc3294a2e4b2473e73942959",
+      "gitBlob": "56cdf2974c6e13edaba725d87b26e3787fdb77e9",
+      "mode": "100644",
+      "bytes": 1786
+    },
+    {
+      "path": "package.json",
+      "sha256": "81f002900016bf4b3449ef9da6b7a9bb8c8cd6c7859307f6dfa5fd3ae506b635",
+      "gitBlob": "cf7a3f5168ac3eb07457a726c56d6cfc4bfc4722",
+      "mode": "100644",
+      "bytes": 1588
+    },
+    {
+      "path": "specifications/design.md",
+      "sha256": "0e6e9337bea55f3105768a52d90d91eb0138e897be0c0c4e693866ab1f60fbd5",
+      "gitBlob": "e3d57eb47dc983d51f46769278ca7fd16e5f74a1",
+      "mode": "100644",
+      "bytes": 1855
+    },
+    {
+      "path": "specifications/explicit-owned-data-admission.md",
+      "sha256": "4c40f21a0cb79c3cff2b5c17e580306757719a4add6398f93c023009b866282c",
+      "gitBlob": "81ef12a8bfe88834a4fe0c65b4a50ee52d832da5",
+      "mode": "100644",
+      "bytes": 4327
+    },
+    {
+      "path": "specifications/requirements.md",
+      "sha256": "45aedbb8b535df05bab626678001e2d6c012ffb103a243e66374174369052da4",
+      "gitBlob": "9fcc6a10d8b97ec003cc5c1d9325e48f638358e0",
+      "mode": "100644",
+      "bytes": 1946
+    },
+    {
+      "path": "src/clock.mjs",
+      "sha256": "f65ec1ff8deaa0b3ebb98295e28f0740b34c9dadeda010756c196e6480a185b9",
+      "gitBlob": "8ac3a38e653d9ac224b5839bea10cecf93a43e8a",
+      "mode": "100644",
+      "bytes": 338
+    },
+    {
+      "path": "src/command.mjs",
+      "sha256": "51c3e72bc15b1b7464282429442da5db221f9d4402715dc8f61cafee76ac8d05",
+      "gitBlob": "6132d70597933cab3974fc5206a28e58f2342344",
+      "mode": "100644",
+      "bytes": 3161
+    },
+    {
+      "path": "src/config.mjs",
+      "sha256": "c9825e69f6f41c61664e01d098cf6a3091d56ed018b67e77473e8ea5a1481440",
+      "gitBlob": "eb50e1b09f521af88c722d25e2240bc836a5a0bd",
+      "mode": "100644",
+      "bytes": 11540
+    },
+    {
+      "path": "src/entropy.mjs",
+      "sha256": "318318f79b36bc142951324d080ca7f89c1883a756ebbb8d9c46d38f253dd7fe",
+      "gitBlob": "e92b816419c65228f3d2c8ff803f7e4ce6a00894",
+      "mode": "100644",
+      "bytes": 216
+    },
+    {
+      "path": "src/entrypoint.mjs",
+      "sha256": "d3e75a5fff5b8057d0189ada61ea5c5664cf2171ab57b8b2624b1a8ce9a797c9",
+      "gitBlob": "05f3152276fe0b11d334d05309039597cd257100",
+      "mode": "100644",
+      "bytes": 2546
+    },
+    {
+      "path": "src/environment.mjs",
+      "sha256": "585ade712d1ae1e459a30c363a38b115f7732c95c3354d35d032eae81c427ee7",
+      "gitBlob": "a366c71785cc423bc5bdc413be0d36f37d08655c",
+      "mode": "100644",
+      "bytes": 1164
+    },
+    {
+      "path": "src/lifecycle-schema-schema.mjs",
+      "sha256": "614c50a0708ff380c9688e5c8081674f7b7bfdc1f99be5e21fa9e0df5a70fb87",
+      "gitBlob": "15b476b31ce56e104f37166a73eac12621d5278b",
+      "mode": "100644",
+      "bytes": 4459
+    },
+    {
+      "path": "src/lifecycle.mjs",
+      "sha256": "64285ae1a93498d8ca0f00cdf8c3187ea80e9b9ffdeaca425e274cc7a82584a6",
+      "gitBlob": "b5a3f1f80406265981f7f143d264f63ce4567eb6",
+      "mode": "100644",
+      "bytes": 1763
+    },
+    {
+      "path": "src/main-runner.mjs",
+      "sha256": "fbe2032803b9511b10cc24af081f6a5fdeff52a5e3e488717dccffe69f466d8f",
+      "gitBlob": "db7a40ccc1351b982e35d1c6cce5451048c4d585",
+      "mode": "100644",
+      "bytes": 1784
+    },
+    {
+      "path": "src/stdio.mjs",
+      "sha256": "ddba6f5dd52f6a3c5af53ab27544c76e3b3fb1a6cb1f69a8e8dfe2d8bd4f85cd",
+      "gitBlob": "a44c25504eb42fdd49490bc9d23c969545ecd216",
+      "mode": "100644",
+      "bytes": 927
+    },
+    {
+      "path": "test/command.test.mjs",
+      "sha256": "015b3abe97d6633989723192e0c220717b23ee044c97adb9ce8c073d7c78617e",
+      "gitBlob": "c9fb4b91226678f7a8ca37aa2221b5f040d4e99c",
+      "mode": "100644",
+      "bytes": 1468
+    },
+    {
+      "path": "test/config.test.mjs",
+      "sha256": "4f260290dad9355dc5e3c105105377533016277a9ab32b8244f28f0c56eeb2c1",
+      "gitBlob": "62bda69711d70779880f7ad35a2c192fb3d55b54",
+      "mode": "100644",
+      "bytes": 9444
+    },
+    {
+      "path": "test/entrypoint.test.mjs",
+      "sha256": "fba9cc5b7e7ef42f780837203dfeb32508dc8fa72403571debb4011d413cf4a9",
+      "gitBlob": "00f065f625fc14e15f9d563681c19f6fc492870c",
+      "mode": "100644",
+      "bytes": 4128
+    },
+    {
+      "path": "test/environment.test.mjs",
+      "sha256": "964ad659ed53b49c425a9859d16d713fef826b9ec1557f876681fdc794524df0",
+      "gitBlob": "69550f3b9de56b567559ee34f5bdcad095a511cd",
+      "mode": "100644",
+      "bytes": 612
+    },
+    {
+      "path": "test/owned-data-admission.test.mjs",
+      "sha256": "407759d236272a0ba1f1a29515022a713e8bf6bd2548d19c1905d00bb025e6db",
+      "gitBlob": "d40707d215e05abea030427278daa114580d27ba",
+      "mode": "100644",
+      "bytes": 8377
+    }
+  ],
+  "candidateSourceDigest": "aea503bb5649df85c00a47ea4c40a090dc66ec1dc0804edf6552c6c132b67c4e",
+  "workDirectory": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v2/native-result-v1",
+  "unit": "node-process-coherent-lock-metadata-v2.scope",
+  "ancestors": [
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v2",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-consumer"
+  ],
+  "files": {
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/qualify-native-metadata-final.mjs": "8c8ee584a99c364f2f7deca8d978fa0c052ce040f0c7635a35b3e4d73fd7882a",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/.npmrc": "8de08949bab508293e0d9aa76a511469ee2d306b1f6140a8f60c0d1de8b17fe2",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/.npmrc": "8de08949bab508293e0d9aa76a511469ee2d306b1f6140a8f60c0d1de8b17fe2",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/data/records/storage-correction-records/2026-10-20/commit-tree-field-correction-receiving.json": "f24c3bad4de70f6dd1825ee6c70946ab859f92ca4386a9fefe97a49ffd86a208",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/data/records/storage-correction-records/2026-10-20/commit-tree-field-correction-receiving.json": "f24c3bad4de70f6dd1825ee6c70946ab859f92ca4386a9fefe97a49ffd86a208",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/data/records/storage-correction-records/2026-10-20/independent-node-process-owned-data-root-source-receiving.json": "20ea35ebb1fad04c8798cdd91ee585a31307dda7315519704f22ca73b08c1e0b",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/data/records/storage-correction-records/2026-10-20/independent-node-process-owned-data-root-source-receiving.json": "20ea35ebb1fad04c8798cdd91ee585a31307dda7315519704f22ca73b08c1e0b",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/data/records/storage-correction-records/2026-10-20/independent-shared-owned-data-corrected-context-receiving.json": "03dcf159dc3b41957ee276f29fc686daec98262d1a855ec043e5900908a58f63",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/data/records/storage-correction-records/2026-10-20/independent-shared-owned-data-corrected-context-receiving.json": "03dcf159dc3b41957ee276f29fc686daec98262d1a855ec043e5900908a58f63",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/data/records/storage-correction-records/2026-10-20/independent-shared-owned-data-source-receiving.json": "c473e0187eee7f375cc9af31a0f672e468d1d6941d4a481bae2ea550e624cdd2",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/data/records/storage-correction-records/2026-10-20/independent-shared-owned-data-source-receiving.json": "c473e0187eee7f375cc9af31a0f672e468d1d6941d4a481bae2ea550e624cdd2",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/data/records/storage-correction-records/2026-10-20/native-node-source-family-observation.json": "da5802cf4d3ca05de8bbe3f623f93940ca2281c98bfd919de54db7948282c2e1",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/data/records/storage-correction-records/2026-10-20/native-node-source-family-observation.json": "da5802cf4d3ca05de8bbe3f623f93940ca2281c98bfd919de54db7948282c2e1",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/data/records/storage-correction-records/2026-10-20/node-process-owned-data-root-source-proposal.json": "6b44a6cdf7b79529ae1e7025be999ec5eb250f03070c2f9a6d775d87b28dd902",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/data/records/storage-correction-records/2026-10-20/node-process-owned-data-root-source-proposal.json": "6b44a6cdf7b79529ae1e7025be999ec5eb250f03070c2f9a6d775d87b28dd902",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/data/records/storage-correction-records/2026-10-20/owner-repository-parent-gitlink-receiving.json": "98ad894d87515e4abe37b5bab12aeedb9b07963cdc3294a2e4b2473e73942959",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/data/records/storage-correction-records/2026-10-20/owner-repository-parent-gitlink-receiving.json": "98ad894d87515e4abe37b5bab12aeedb9b07963cdc3294a2e4b2473e73942959",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/package.json": "81f002900016bf4b3449ef9da6b7a9bb8c8cd6c7859307f6dfa5fd3ae506b635",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/package.json": "81f002900016bf4b3449ef9da6b7a9bb8c8cd6c7859307f6dfa5fd3ae506b635",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/specifications/design.md": "0e6e9337bea55f3105768a52d90d91eb0138e897be0c0c4e693866ab1f60fbd5",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/specifications/design.md": "0e6e9337bea55f3105768a52d90d91eb0138e897be0c0c4e693866ab1f60fbd5",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/specifications/explicit-owned-data-admission.md": "4c40f21a0cb79c3cff2b5c17e580306757719a4add6398f93c023009b866282c",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/specifications/explicit-owned-data-admission.md": "4c40f21a0cb79c3cff2b5c17e580306757719a4add6398f93c023009b866282c",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/specifications/requirements.md": "45aedbb8b535df05bab626678001e2d6c012ffb103a243e66374174369052da4",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/specifications/requirements.md": "45aedbb8b535df05bab626678001e2d6c012ffb103a243e66374174369052da4",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/src/clock.mjs": "f65ec1ff8deaa0b3ebb98295e28f0740b34c9dadeda010756c196e6480a185b9",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/src/clock.mjs": "f65ec1ff8deaa0b3ebb98295e28f0740b34c9dadeda010756c196e6480a185b9",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/src/command.mjs": "51c3e72bc15b1b7464282429442da5db221f9d4402715dc8f61cafee76ac8d05",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/src/command.mjs": "51c3e72bc15b1b7464282429442da5db221f9d4402715dc8f61cafee76ac8d05",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/src/config.mjs": "c9825e69f6f41c61664e01d098cf6a3091d56ed018b67e77473e8ea5a1481440",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/src/config.mjs": "c9825e69f6f41c61664e01d098cf6a3091d56ed018b67e77473e8ea5a1481440",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/src/entropy.mjs": "318318f79b36bc142951324d080ca7f89c1883a756ebbb8d9c46d38f253dd7fe",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/src/entropy.mjs": "318318f79b36bc142951324d080ca7f89c1883a756ebbb8d9c46d38f253dd7fe",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/src/entrypoint.mjs": "d3e75a5fff5b8057d0189ada61ea5c5664cf2171ab57b8b2624b1a8ce9a797c9",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/src/entrypoint.mjs": "d3e75a5fff5b8057d0189ada61ea5c5664cf2171ab57b8b2624b1a8ce9a797c9",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/src/environment.mjs": "585ade712d1ae1e459a30c363a38b115f7732c95c3354d35d032eae81c427ee7",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/src/environment.mjs": "585ade712d1ae1e459a30c363a38b115f7732c95c3354d35d032eae81c427ee7",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/src/lifecycle-schema-schema.mjs": "614c50a0708ff380c9688e5c8081674f7b7bfdc1f99be5e21fa9e0df5a70fb87",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/src/lifecycle-schema-schema.mjs": "614c50a0708ff380c9688e5c8081674f7b7bfdc1f99be5e21fa9e0df5a70fb87",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/src/lifecycle.mjs": "64285ae1a93498d8ca0f00cdf8c3187ea80e9b9ffdeaca425e274cc7a82584a6",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/src/lifecycle.mjs": "64285ae1a93498d8ca0f00cdf8c3187ea80e9b9ffdeaca425e274cc7a82584a6",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/src/main-runner.mjs": "fbe2032803b9511b10cc24af081f6a5fdeff52a5e3e488717dccffe69f466d8f",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/src/main-runner.mjs": "fbe2032803b9511b10cc24af081f6a5fdeff52a5e3e488717dccffe69f466d8f",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/src/stdio.mjs": "ddba6f5dd52f6a3c5af53ab27544c76e3b3fb1a6cb1f69a8e8dfe2d8bd4f85cd",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/src/stdio.mjs": "ddba6f5dd52f6a3c5af53ab27544c76e3b3fb1a6cb1f69a8e8dfe2d8bd4f85cd",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/test/command.test.mjs": "015b3abe97d6633989723192e0c220717b23ee044c97adb9ce8c073d7c78617e",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/test/command.test.mjs": "015b3abe97d6633989723192e0c220717b23ee044c97adb9ce8c073d7c78617e",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/test/config.test.mjs": "4f260290dad9355dc5e3c105105377533016277a9ab32b8244f28f0c56eeb2c1",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/test/config.test.mjs": "4f260290dad9355dc5e3c105105377533016277a9ab32b8244f28f0c56eeb2c1",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/test/entrypoint.test.mjs": "fba9cc5b7e7ef42f780837203dfeb32508dc8fa72403571debb4011d413cf4a9",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/test/entrypoint.test.mjs": "fba9cc5b7e7ef42f780837203dfeb32508dc8fa72403571debb4011d413cf4a9",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/test/environment.test.mjs": "964ad659ed53b49c425a9859d16d713fef826b9ec1557f876681fdc794524df0",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/test/environment.test.mjs": "964ad659ed53b49c425a9859d16d713fef826b9ec1557f876681fdc794524df0",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2/test/owned-data-admission.test.mjs": "407759d236272a0ba1f1a29515022a713e8bf6bd2548d19c1905d00bb025e6db",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source/test/owned-data-admission.test.mjs": "407759d236272a0ba1f1a29515022a713e8bf6bd2548d19c1905d00bb025e6db",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/package.json": "389f2f12d32f80f61c937d73c987f8853ea0a2414845cbe845f6cd138f8e0370",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/specifications/artifact-member-receiving.md": "b9b0c12f893f559301dfbde42707b7db7b0943818346b2d5af05dabde3a73cf9",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/specifications/canonical-version-validation.md": "a8b1439055af7d181adf8f34f4b01f87627250d3ee65217b90f32c755588e98e",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/specifications/development-root-self-source-qa.md": "0a1c7453ffe4a58a15a85830ad1df1230225445e3417d5cf9b960df926502e2d",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/README.md": "9b955c3fd15bfb3e998d2c12853d7ecbd43496110926b850a581fd96ebb68b7a",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/specifications/repository-aware-source-members.md": "253cfc826337f7a21f5716fd0663ce3537fa93a7157225fd8a5306b29cc2fd96",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/artifact-release.mjs": "c5cd534d769ad327ae28a3b6cdabcb91e467b5ed8da641311a97d3f9af29c710",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/assay-carrier-module-graph.mjs": "f5202d620aec82b488278b7b3f48f0862d62923a4e6f3b044c18ee6d8a059f12",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/assay-npm-package-publication.mjs": "480d61350a84c2c137a85409fba9ef24d95440ed44d75ebd4eb0de73ec4fdd14",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/audit-owner-package-namespaces.mjs": "3a82d621ec1a4f9fcff86895ce305499d75595a16b256090637779b9fc85bb66",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/audit-registry-carrier-imports.mjs": "ee7c71e8cea9299450094170e3bd07ed797457efa5f55659816a9bdf27cd8ddd",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/audit-release-truth.mjs": "c78ca52a84acd7435f89250d3eb244406861ab70ae62de638b84f1f9ba44b8e4",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/audit-semantic-version-policy.mjs": "c5faac7a39fa4a028ebde89c0033995d118bce10d5327b3ddb332e9ed361e627",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/cache-verdaccio-upstream-release.mjs": "e127002ddc2bda62d7d6263f78670626c6c4acf7079fe8680b9d627950b36f5e",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/carrier-surface.mjs": "8a192deafd16f35ebcc7758b1d126cdf07fb6d27a643af60e0d14fcb5abf9981",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/dependency-policy.mjs": "c640f79eb5c9ece8336401656b08410230b0f6cd87938f5ed96418416b57383b",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/dist-staleness.mjs": "e38c2829fa96e4c352057e69e1ab0502c4067d9cb1291b2a8b363a7647492101",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/export-subpath-targets.mjs": "915db26bff5dce8ce9a43406822ac00041b510679a04637c1862841ffa79a999",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/export-surface-diff.mjs": "8e7cfce5a56c3b4bc4b8bea5ead8476682c876204306087bd134763a03a3ec5d",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/failing-test-names.mjs": "55fb7ca49a37c355e570f7eb661dc439827bb0b3d9658404ac5d385d7d3f744f",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/form-node-runtime-provider-catalog.mjs": "342ed034a61e5fff3b6cd91655f02462a5fff4f49dbd255b864a18c0b9c8af33",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/installed-carrier-bindings.mjs": "726b48e8aaa6ac115ba9db0d947e0de14618cbfe5366dc08ed87ce66d922a358",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/isolated-carrier-verification.mjs": "ca9d90620e4571b2e1692b6f9fd8081876cfbb8065ed3df8468f40f880e44732",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/javascript-export-names.mjs": "01c2eb672dd8199b448b84efc4e84f46f7ceb1feb35e7bf98c0096456c92a6ca",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/lockfile-registry-classification.mjs": "e58928fd524259aacb84e2df79dbeba94ab42f34f14a703a469009b4e8e8386c",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/native-registry-imports.mjs": "ebf828a9e34c350d8df8e0ef5cc9dde8dcc8baf49e19e215492472ee8fa0b82c",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/npm-pack-result.mjs": "bdc66a21c53488a9b0b90a920eb1b7915fe40ea1dd5c18d6b89fdf219a19ad70",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/npm-publication-command.mjs": "28f84f1489050074313078e726f7fd67d1181f04515360d5f430ded036d77591",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/npm-publication-target.mjs": "08451307a48b396e9463b190e6429e54dc2a982abd34c39162416179663c05e5",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/owner-namespace-debt.mjs": "fcdc87e5e01fa5be16262cf613f6009d55074737a90e092e3e8aba45ebeb29f4",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/pack-source-registry-closure.mjs": "a63c9b051c5d9523467a7107ea0803453428b905237dd9604cf0c3ef540f05a0",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/package-manager.mjs": "bc1ceb3cc16d124dbc1bbb1dcac4b590d8d4a0209f0243d0de0d8abb8845ecd7",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/pin-exact-dependencies.mjs": "6a03413ccd2640418a340df2adb4b820e14cf62f7b02e24ff6c972e465127b31",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/pin-exact-dependencies.mjs": "c93d1303556fcd201781f0dba156709856a645e1bab1f9a2eed197651fb676d3",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/plan-source-registry-closure.mjs": "b88323cb03b974310f805271a5cfc5ba579be87d876ad790171d6c4f28be2af0",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/prepare-release-wave.mjs": "4449328b3a5021cf90c357ee1ef452a6028c28844abf109647c4609880e41086",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/produce-registry-runtime.mjs": "27892e7b90f210d0538268364f175b2c5ff8a7958f1525af6c2742db1cec913c",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/produce-registry-runtime.mjs": "d27fd0b952a25063308f7610db9e6b4facbfb13503a98e115af9510c2a12d3dd",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/prune-set-of-stale-install-trees.mjs": "130079753c65d25535cc27ee6e5cc3ca746b01fbda260ac6c2f54d877ec82208",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/publication.mjs": "ffbe2adbd4d73b91be85aa374171582ddc1222ad318af49e22177fb9fc268be8",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/publish-authorized-npm-package.mjs": "5996d6f4fd220d6fa670b4ea95c4375b4f810670d3c4cccb003b34f6ff27f136",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/publish-gate-receipt.mjs": "61be3c935f0903f2c862a5634c245499e7f571c13cd35dd08b64f64d1566fa38",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/publish-package.mjs": "836c9c086aceb74b301c199827336963b581c7172c70da0ea971a7b37f082dd7",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/publish-source-registry-closure.mjs": "63bccf64aac803790da7fe00a96190e7cc9cd781b85a2cada1287eef2221c75e",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/publish-workspace-tiers.mjs": "4e97bb237c553ece51c0ee4b507cd726b034b7d592428dc3d29abb72e3c0bd45",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/read-native-registry-imports.mjs": "a5c4a43a99cecde6b843641f37fd4b5a5f05629625f451885ae864651d852e09",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/read-only-publication-plan.mjs": "73b474eb980dc2e87666c81b52eaadca35803d384305bc9c925b2abf10c9ab5c",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/read-workspace-manifests.mjs": "9dc3514f29d50ba84f13899bdce0db84c739017882c98b938bd7b19719c174a5",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/receive-packed-registry-artifact.mjs": "07f33b085883f30b03d8d20d9a5a34866c763d3469517a332551f0e810448dca",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/receive-source-registry-consumers.mjs": "dfbec60da7ef4792fe6f04958d33717db24c4761cdf622b46f615262e078a988",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/reconcile-package-locks-from-releases.mjs": "c94aa2014526fec215c31e5121c908c2ed59608f04f35153d421366679b2a0a6",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/reconcile-package-locks-from-releases.mjs": "07463fa9a5e6a7fd310c6df47f79a813f3c07fc4335a784e41f4d9433b97ef35",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/reconcile-package-locks.mjs": "bc4f36a30bfcb7e6fca1c36d2a3c248115ac8682f98793d8394513b57c4f3ce2",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/reconcile-package-locks.mjs": "996fde6a0910243f7ab5b27078563ca66fcb56cdead4636065c7be3d753c2bd8",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/recover-demanded-versions.mjs": "16e75b5d7c44ba43f5977476836bef1a35152c830e5591e1fcb4ec2c14a01a0f",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/registry-carrier-imports.mjs": "82c0772a5d6b017b944f7a73af3f69a1eef4c21cf2280e8f907c28cad796a7c4",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/registry-liveness.mjs": "fd72a1994c6c65e0496f1d9ab6dc9be6157e8bef79dbca0c8a10fc183449ccc7",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/registry.mjs": "78f5505bdcb93d893c76346a82eaa29ded10c0438ff37b08939aef2263d5fa4a",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/release-truth.mjs": "b020c5873ef3501adb365568f34a1822a4c99a7d3114ddbf5ec7a1b3123b317a",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/release-wave.mjs": "642e27c198dad1e738f7eb6d35cf99baf283eac3814f3d72e0984b7969f4d115",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/reset-package-versions.mjs": "bf50f528966bf4f4520b7577e75710816ea78cbf3dd5ca573ac5833cf2989a22",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/reset-package-versions.mjs": "f63ade47f555e85a15097fe432523ef768a581251ad00189466f7e03a33afcc6",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/runner.mjs": "dbd1bdebb239a05683eee949b4596438aae4d57d6797c2215f047855d560d045",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/runtime-provider-catalog.mjs": "e86fb751facf27b7710f6bd3719c010208ae752cc268a69cc809000a98e532a4",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/semantic-version-audit.mjs": "8d791f901650483c38a749896aa96dc2fa8245b72f1ab0838fb860123b43d1fe",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/semantic-version-policy.mjs": "aac15d4d6142b14a52efe7994cec90e863042e86716adced1041aead00d88203",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/software-estate.mjs": "ea51f56ea19e4282bd9a1b352049eb6fe00553928edab105cd914cb07ff32956",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/software-verification.mjs": "1166c1f06120125c50db9d39107d19a7fe58cc07f10808d6baadbe6bd231ac55",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/source-bindings.mjs": "1830cc9f3585c54af7476d0ef843709329dfe98612682ec848efe16a4cbfbecd",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/source-build-qualification.mjs": "60fa02745c797f5cb987e2c02243f2281f68c3fc299df6f0703e8dc96521e939",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/source-member-binding.mjs": "8faa12eb77e467ce5d7191373406bc48c077b4880d6544b89849c456236f506a",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/source-registry-closure.mjs": "8edeac32a19d9d271fa02d9d1ca511dcff3f2e4e9defa16328e6615b9e4a7410",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/stale-install-trees.mjs": "8252238745dcf66e1a9c43df433c5400327fb7584f21117af0a6ff5399d84c1e",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/tarball-guard.mjs": "af22c38763a2799fa6438c44e3ae0f7a7b33eae4ba2c39f07c6d9d0db6d1bbe3",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/test-run-summary.mjs": "3ffa7663ceaac0560c17f9baecba0b43da31bbd6b15caeda6ee8ec177363bb38",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/text-tail.mjs": "2fee407573a4557c0b6d643dae8690fbcae5420ddb88e6abb4652243a15d31dc",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/verdaccio-upstream-cache.mjs": "730eb62f15d49c8645145bb53e180501f07bb33a75b109bfe7949b909dbd2f76",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/verdaccio-version-reset-executor.mjs": "14acc8da06978cf3178b011e582a8fc366094152236e228fd8ec643ec3e51645",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/verdaccio-version-reset.mjs": "a448394043bdb5aa898b48aacdf4f945210fa167b8b6ebd01cd972e624e02ad8",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/verification-copy.mjs": "7ecfc4f9a068b9f32b84b10a603ea27e8660a98dc3b48b357eb27327a17c3cfd",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/verify-active-software.mjs": "acf119073a89cb968ae66aa7e12fabdf5a25fa03f6a6188fc0c98bc5e0512606",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/verify-exact-dependencies.mjs": "578586642714a771154cc75417805506e716a852923853c19f041892bc27da0b",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/verify-package-carrier.mjs": "e25710993e85a8016613b60ae81bc865e922aee15a532c8e7b4a1714eabfb1f7",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/workspace-graph.mjs": "cc826305ff9a57f74806a7fc97f16d41f7b719eb91bae10bfe85ce4ef911ca3f",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/workspace-publication.mjs": "22cb92c76675ce84b00612e8cb88b7cf4c3e4dabbc614dfaaf2632f85a9362b6",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/zero-major-version-reset.mjs": "a337fccc5c0a370e8ff68a5d0d722314fdfb20fbadc25bf17b40dd33cbdb91ec",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/reset-python-package-versions.py": "d9de12a1c5e04d96524b84933fa2acd0f1c46855cb093b263b8282095f23fc35",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-consumer/package.json": "f874f780a0972e4d6cb433fa0765cb704feca6d53bd3a0dac1ab0afd9878438e",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+execute-javascript-node-command-service@0.3.1/node_modules/@red-cup-engineering/execute-javascript-node-command-service/package.json": "c6cb5856e2e07677ed09a2b31f4fdff6afb2dab6ddd55b5d6be963c4dc8302f9",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+execute-javascript-node-command-service@0.3.1/node_modules/@red-cup-engineering/execute-javascript-node-command-service/scripts/execute-javascript-node-command-asynchronously.mjs": "a7277c063e05cec3e2e9b12c5702dae4c215d63d0d3d1e6700b50113e7c0239e",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+javascript-node-services-section@0.3.2/node_modules/@red-cup-engineering/javascript-node-services-section/package.json": "b9fc01eee9dcea51c3910091eff398f43d6da5b22a5b866c435f44ea4b1b3108",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+javascript-node-services-section@0.3.2/node_modules/@red-cup-engineering/javascript-node-services-section/scripts/admit-javascript-node-command-execution-request.mjs": "2d6a83c90e1f7252f28c180b56a1e5949ed6e13bcf5d5cfc30afbf62cd7f33ec",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+javascript-node-services-section@0.3.2/node_modules/@red-cup-engineering/javascript-node-services-section/scripts/project-javascript-node-command-execution-receipt.mjs": "15362cae9461f2ef775584fc57e4f97376334f24a7adffec7c0f5d26e0584c86",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/semver@7.7.2/node_modules/semver/package.json": "bf2e091359d5870257cc8287a268e001bfb39abf19275f382276efe3c7785a4f",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+semiotic-eavt-services-section@0.1.0/node_modules/@red-cup-engineering/semiotic-eavt-services-section/package.json": "6ef49d36048aaacbe3c9cbc05bdcc50931f3bb61ba82bc2157b3b6e45e62097d",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+computer-filepath-engineering-services-section@0.1.0/node_modules/@red-cup-engineering/computer-filepath-engineering-services-section/package.json": "9b9a36059f033250dd8847aa80fdbaeaae39184a06c0edcddc9bab7c85244261",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+cryptographic-computer-data-engineering-services-section@0.3.1/node_modules/@red-cup-engineering/cryptographic-computer-data-engineering-services-section/package.json": "a566ae04f9addac8538c1b3a8d23414305de15961c1facfafb5f99751ffd3dd7",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+computer-file-engineering-services-section@0.4.0/node_modules/@red-cup-engineering/computer-file-engineering-services-section/package.json": "6d5f429a0780668747b1fc04db5e8d62284f1187109b4a4946cadf6e9694b64e",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+metrologic@0.4.0/node_modules/@red-cup-engineering/metrologic/package.json": "8dbc510c7b92f74d84048a5d083195ed4f2b2ad0c51312925db421c4774b1793",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+uri-services-section@0.1.1/node_modules/@red-cup-engineering/uri-services-section/package.json": "ad2294be4d435b8c12871d030a5976686259c15579818e1dd1eb84d0f96e1dc4",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+computer-content-address-engineering-services-section@0.2.0/node_modules/@red-cup-engineering/computer-content-address-engineering-services-section/package.json": "cff45a5b99d892048b7e50ec4516e435f1c00cbe7d0e316e9307fe10fdc400c4",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+git-services-section@0.1.2/node_modules/@red-cup-engineering/git-services-section/package.json": "623117ff540dfa1e78c8720cd8a156be9f8cefd7d15102c249a5d991277ee220",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+npm-registry-read-service@0.1.2/node_modules/@red-cup-engineering/npm-registry-read-service/package.json": "ec4d3739719f7da96abb8575195ee82262a917943129e1513f95c28066f4c135",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+npm-registry-snapshot-services-section@0.1.1/node_modules/@red-cup-engineering/npm-registry-snapshot-services-section/package.json": "ed72a0c145a5c7f7f3f81c7e457026d2bfb4dfeef746121caf3850c136b94267",
+    "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/lib/node_modules/npm/package.json": "60ff022e32b5d8291d3e09849fd0cee6bbbff4e4d8352ad258214b1adf070714",
+    "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/lib/node_modules/npm/lib/commands/install.js": "f7a60e8b40ab1bece76a2441b8b15378d199f05c6050eebe455cd9961f67b816",
+    "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/lib/node_modules/npm/node_modules/@npmcli/config/lib/definitions/definitions.js": "9c7b6567bc25c4dfba128a214231dceab6d854c59d8655aabd050077271c943c",
+    "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js": "6d917a9df6dd63d6206eb24defff05367ef6c5fcd0d057f6c30f35e4a353b542",
+    "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/npm": "6d9ad283ab683811d2f222b2b1d2998eaed3d0d9a25206339874daf8470fdf99",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v2/qualify-native-metadata.mjs": "3c8f88c5e65a57d0a8f3864627ac8613dcc39f3b9bc9baf185f17c584df85049"
+  },
+  "code": {
+    "source": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source",
+    "consumer": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-consumer",
+    "gitHead": "bc494ee673f59fcdccc939a6102ae089fac1658b",
+    "archive": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/schema-family-208a22f7-v2/code-artifact-installed-modes-v1/actual-code23-artifact-v1/native-result/release.tgz",
+    "integrity": "sha512-nj8GcbE9FcC+L+dGikFjYHFoD+Um9q6A42MX6aiELdw1rv55LKObo2RNE0rzuFswJ+x6QbtZMqlEtkLJz0knag==",
+    "members": [
+      {
+        "path": "package.json",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/package.json",
+        "sha256": "389f2f12d32f80f61c937d73c987f8853ea0a2414845cbe845f6cd138f8e0370",
+        "gitBlob": "d95c49d6bb613bb017624b31df5fb2a36ee1f584",
+        "bytes": 6906,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "specifications/artifact-member-receiving.md",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/specifications/artifact-member-receiving.md",
+        "sha256": "b9b0c12f893f559301dfbde42707b7db7b0943818346b2d5af05dabde3a73cf9",
+        "gitBlob": "d998b82498c4dadf9e96fb7860779ffaf681ae86",
+        "bytes": 7778,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "specifications/canonical-version-validation.md",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/specifications/canonical-version-validation.md",
+        "sha256": "a8b1439055af7d181adf8f34f4b01f87627250d3ee65217b90f32c755588e98e",
+        "gitBlob": "8b7acf874d09e750c5951d9ab22bd3d2874804d4",
+        "bytes": 4007,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "specifications/development-root-self-source-qa.md",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/specifications/development-root-self-source-qa.md",
+        "sha256": "0a1c7453ffe4a58a15a85830ad1df1230225445e3417d5cf9b960df926502e2d",
+        "gitBlob": "1b067440d0541b907b876a48f23a13bd2d41c87d",
+        "bytes": 7516,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "README.md",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/README.md",
+        "sha256": "9b955c3fd15bfb3e998d2c12853d7ecbd43496110926b850a581fd96ebb68b7a",
+        "gitBlob": "d58a00cb857cd9a1008fe2b7a5d0cffd97b66825",
+        "bytes": 39908,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "specifications/repository-aware-source-members.md",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/specifications/repository-aware-source-members.md",
+        "sha256": "253cfc826337f7a21f5716fd0663ce3537fa93a7157225fd8a5306b29cc2fd96",
+        "gitBlob": "42cedf4307939de7a83644eb07887a0925ed7379",
+        "bytes": 27414,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/artifact-release.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/artifact-release.mjs",
+        "sha256": "c5cd534d769ad327ae28a3b6cdabcb91e467b5ed8da641311a97d3f9af29c710",
+        "gitBlob": "1445b82a15ebe05b862ffb63d7c9febf235eeabc",
+        "bytes": 19038,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "scripts/assay-carrier-module-graph.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/assay-carrier-module-graph.mjs",
+        "sha256": "f5202d620aec82b488278b7b3f48f0862d62923a4e6f3b044c18ee6d8a059f12",
+        "gitBlob": "82166932976ca22755622f9f8b8c0fddb1635d31",
+        "bytes": 11960,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "scripts/assay-npm-package-publication.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/assay-npm-package-publication.mjs",
+        "sha256": "480d61350a84c2c137a85409fba9ef24d95440ed44d75ebd4eb0de73ec4fdd14",
+        "gitBlob": "e155d0cfa8c47c0ae93480f96bf01cbc1d523376",
+        "bytes": 9003,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "scripts/audit-owner-package-namespaces.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/audit-owner-package-namespaces.mjs",
+        "sha256": "3a82d621ec1a4f9fcff86895ce305499d75595a16b256090637779b9fc85bb66",
+        "gitBlob": "f8ddf827181949cfc88dc16f3737658a6404bfce",
+        "bytes": 894,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "scripts/audit-registry-carrier-imports.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/audit-registry-carrier-imports.mjs",
+        "sha256": "ee7c71e8cea9299450094170e3bd07ed797457efa5f55659816a9bdf27cd8ddd",
+        "gitBlob": "31d36b91c4eabe90057ff648cd1d97ae2bd14e84",
+        "bytes": 844,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "scripts/audit-release-truth.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/audit-release-truth.mjs",
+        "sha256": "c78ca52a84acd7435f89250d3eb244406861ab70ae62de638b84f1f9ba44b8e4",
+        "gitBlob": "c440d987a8d1499426c0c3a0655cdaa24b261308",
+        "bytes": 2268,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "scripts/audit-semantic-version-policy.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/audit-semantic-version-policy.mjs",
+        "sha256": "c5faac7a39fa4a028ebde89c0033995d118bce10d5327b3ddb332e9ed361e627",
+        "gitBlob": "dd85b68dc2ee1f780a20c5e63e1d1862c0c54180",
+        "bytes": 1185,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "scripts/cache-verdaccio-upstream-release.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/cache-verdaccio-upstream-release.mjs",
+        "sha256": "e127002ddc2bda62d7d6263f78670626c6c4acf7079fe8680b9d627950b36f5e",
+        "gitBlob": "319b534c481934f5c8d8ada9cd21472b6529a69e",
+        "bytes": 1167,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "src/carrier-surface.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/carrier-surface.mjs",
+        "sha256": "8a192deafd16f35ebcc7758b1d126cdf07fb6d27a643af60e0d14fcb5abf9981",
+        "gitBlob": "7312d9d1eff659ab6ba88d57a54c6ff9eb0dd64a",
+        "bytes": 9287,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/dependency-policy.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/dependency-policy.mjs",
+        "sha256": "c640f79eb5c9ece8336401656b08410230b0f6cd87938f5ed96418416b57383b",
+        "gitBlob": "18d6ee72de677bf961e8bc1ab359691d5b193e0d",
+        "bytes": 17762,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/dist-staleness.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/dist-staleness.mjs",
+        "sha256": "e38c2829fa96e4c352057e69e1ab0502c4067d9cb1291b2a8b363a7647492101",
+        "gitBlob": "3c26de96fa7927da84d534780c7fc75639866dc1",
+        "bytes": 1633,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/export-subpath-targets.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/export-subpath-targets.mjs",
+        "sha256": "915db26bff5dce8ce9a43406822ac00041b510679a04637c1862841ffa79a999",
+        "gitBlob": "274866000124a9028f11216c99f253bebb23eb32",
+        "bytes": 1793,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/export-surface-diff.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/export-surface-diff.mjs",
+        "sha256": "8e7cfce5a56c3b4bc4b8bea5ead8476682c876204306087bd134763a03a3ec5d",
+        "gitBlob": "35cf1b0dd0286c0d4f9e3688ac9e7863fe59cfed",
+        "bytes": 3203,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/failing-test-names.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/failing-test-names.mjs",
+        "sha256": "55fb7ca49a37c355e570f7eb661dc439827bb0b3d9658404ac5d385d7d3f744f",
+        "gitBlob": "b63d095952484eb3d376e10c6e214c3fa17bbafb",
+        "bytes": 1041,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "scripts/form-node-runtime-provider-catalog.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/form-node-runtime-provider-catalog.mjs",
+        "sha256": "342ed034a61e5fff3b6cd91655f02462a5fff4f49dbd255b864a18c0b9c8af33",
+        "gitBlob": "9df7256160dbc2e19ae118e1d69934f4bf468dec",
+        "bytes": 878,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "src/installed-carrier-bindings.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/installed-carrier-bindings.mjs",
+        "sha256": "726b48e8aaa6ac115ba9db0d947e0de14618cbfe5366dc08ed87ce66d922a358",
+        "gitBlob": "99a5c889dd8261482e35d8381f47347c01ee54a4",
+        "bytes": 7984,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/isolated-carrier-verification.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/isolated-carrier-verification.mjs",
+        "sha256": "ca9d90620e4571b2e1692b6f9fd8081876cfbb8065ed3df8468f40f880e44732",
+        "gitBlob": "7e1582630162d2e1943bc8d58fbfffeabb33d57a",
+        "bytes": 6631,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/javascript-export-names.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/javascript-export-names.mjs",
+        "sha256": "01c2eb672dd8199b448b84efc4e84f46f7ceb1feb35e7bf98c0096456c92a6ca",
+        "gitBlob": "a334befec2a0ca7a004eb9fbf35ca726e057d2c9",
+        "bytes": 1140,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/lockfile-registry-classification.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/lockfile-registry-classification.mjs",
+        "sha256": "e58928fd524259aacb84e2df79dbeba94ab42f34f14a703a469009b4e8e8386c",
+        "gitBlob": "b5fcb8ccdf97300fe8ab47d745e676cbaeba20aa",
+        "bytes": 3120,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/native-registry-imports.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/native-registry-imports.mjs",
+        "sha256": "ebf828a9e34c350d8df8e0ef5cc9dde8dcc8baf49e19e215492472ee8fa0b82c",
+        "gitBlob": "a5bc8bf692de6806373b51fcb925c0deb24f7d1b",
+        "bytes": 4206,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/npm-pack-result.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/npm-pack-result.mjs",
+        "sha256": "bdc66a21c53488a9b0b90a920eb1b7915fe40ea1dd5c18d6b89fdf219a19ad70",
+        "gitBlob": "a64c1a0bd7b21ee2c276c310c10991b4bbeb4eb8",
+        "bytes": 920,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/npm-publication-command.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/npm-publication-command.mjs",
+        "sha256": "28f84f1489050074313078e726f7fd67d1181f04515360d5f430ded036d77591",
+        "gitBlob": "7314c5484dfb0fbdfdf7c34eb5642a25bae46741",
+        "bytes": 995,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/npm-publication-target.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/npm-publication-target.mjs",
+        "sha256": "08451307a48b396e9463b190e6429e54dc2a982abd34c39162416179663c05e5",
+        "gitBlob": "ddac6427579d3727f0df8d26b26897efb6fe68fb",
+        "bytes": 548,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/owner-namespace-debt.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/owner-namespace-debt.mjs",
+        "sha256": "fcdc87e5e01fa5be16262cf613f6009d55074737a90e092e3e8aba45ebeb29f4",
+        "gitBlob": "5cbb57fb4e710b497f1989c171393bef136fe326",
+        "bytes": 5730,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "scripts/pack-source-registry-closure.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/pack-source-registry-closure.mjs",
+        "sha256": "a63c9b051c5d9523467a7107ea0803453428b905237dd9604cf0c3ef540f05a0",
+        "gitBlob": "d8ceb83015dd2002636bafba859cb4f35cc79836",
+        "bytes": 1170,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/package-manager.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/package-manager.mjs",
+        "sha256": "bc1ceb3cc16d124dbc1bbb1dcac4b590d8d4a0209f0243d0de0d8abb8845ecd7",
+        "gitBlob": "5a26a5119001de676c49c2dc3b16bdf63f1db0f4",
+        "bytes": 4573,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "scripts/pin-exact-dependencies.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/pin-exact-dependencies.mjs",
+        "sha256": "6a03413ccd2640418a340df2adb4b820e14cf62f7b02e24ff6c972e465127b31",
+        "gitBlob": "df9e6098e64a88c175aea9485aced1cfc0898ff1",
+        "bytes": 3150,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/pin-exact-dependencies.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/pin-exact-dependencies.mjs",
+        "sha256": "c93d1303556fcd201781f0dba156709856a645e1bab1f9a2eed197651fb676d3",
+        "gitBlob": "5aebaf2e79e053caa5e95021cf88cfee10f7e0d4",
+        "bytes": 22824,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "scripts/plan-source-registry-closure.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/plan-source-registry-closure.mjs",
+        "sha256": "b88323cb03b974310f805271a5cfc5ba579be87d876ad790171d6c4f28be2af0",
+        "gitBlob": "c0fc09d1f3843d51eb92e1b9215199b19a573fa0",
+        "bytes": 978,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "scripts/prepare-release-wave.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/prepare-release-wave.mjs",
+        "sha256": "4449328b3a5021cf90c357ee1ef452a6028c28844abf109647c4609880e41086",
+        "gitBlob": "913256a2a653a93d2815499fb9edee42e5e029e5",
+        "bytes": 9244,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "scripts/produce-registry-runtime.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/produce-registry-runtime.mjs",
+        "sha256": "27892e7b90f210d0538268364f175b2c5ff8a7958f1525af6c2742db1cec913c",
+        "gitBlob": "860102e67800871ce6e46232df291c85c38aeb14",
+        "bytes": 788,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "src/produce-registry-runtime.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/produce-registry-runtime.mjs",
+        "sha256": "d27fd0b952a25063308f7610db9e6b4facbfb13503a98e115af9510c2a12d3dd",
+        "gitBlob": "f31f63cbe86638948ae54787643263060fe9589f",
+        "bytes": 8316,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "scripts/prune-set-of-stale-install-trees.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/prune-set-of-stale-install-trees.mjs",
+        "sha256": "130079753c65d25535cc27ee6e5cc3ca746b01fbda260ac6c2f54d877ec82208",
+        "gitBlob": "0860dfd17e3e1fb9f131461c067f45de1ca3d7a9",
+        "bytes": 1307,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "src/publication.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/publication.mjs",
+        "sha256": "ffbe2adbd4d73b91be85aa374171582ddc1222ad318af49e22177fb9fc268be8",
+        "gitBlob": "7026d9da27efaac2a5c8f7eab7c59ec07d2d231e",
+        "bytes": 11978,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "scripts/publish-authorized-npm-package.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/publish-authorized-npm-package.mjs",
+        "sha256": "5996d6f4fd220d6fa670b4ea95c4375b4f810670d3c4cccb003b34f6ff27f136",
+        "gitBlob": "5dc00b73f9dc5dfad1b2f5d98eb0d591fef7a3a4",
+        "bytes": 2970,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/publish-gate-receipt.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/publish-gate-receipt.mjs",
+        "sha256": "61be3c935f0903f2c862a5634c245499e7f571c13cd35dd08b64f64d1566fa38",
+        "gitBlob": "8b350c1c8d778b36140185250525a9e18eac3d7c",
+        "bytes": 3172,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "scripts/publish-package.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/publish-package.mjs",
+        "sha256": "836c9c086aceb74b301c199827336963b581c7172c70da0ea971a7b37f082dd7",
+        "gitBlob": "f8c5ff496072d45ee740d0cafb1cd9e2914b5c05",
+        "bytes": 53291,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "scripts/publish-source-registry-closure.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/publish-source-registry-closure.mjs",
+        "sha256": "63bccf64aac803790da7fe00a96190e7cc9cd781b85a2cada1287eef2221c75e",
+        "gitBlob": "501db24a6d492da1d31437a532120e336efe1d30",
+        "bytes": 704,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "scripts/publish-workspace-tiers.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/publish-workspace-tiers.mjs",
+        "sha256": "4e97bb237c553ece51c0ee4b507cd726b034b7d592428dc3d29abb72e3c0bd45",
+        "gitBlob": "4d2aa07fe2b3df1aae755b11cee5361442202466",
+        "bytes": 17999,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "scripts/read-native-registry-imports.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/read-native-registry-imports.mjs",
+        "sha256": "a5c4a43a99cecde6b843641f37fd4b5a5f05629625f451885ae864651d852e09",
+        "gitBlob": "6488e6038bec3b0c9632b0ef040f615a0a5819ec",
+        "bytes": 362,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/read-only-publication-plan.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/read-only-publication-plan.mjs",
+        "sha256": "73b474eb980dc2e87666c81b52eaadca35803d384305bc9c925b2abf10c9ab5c",
+        "gitBlob": "9989053e30749d88eee326897e45840dca628680",
+        "bytes": 8002,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/read-workspace-manifests.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/read-workspace-manifests.mjs",
+        "sha256": "9dc3514f29d50ba84f13899bdce0db84c739017882c98b938bd7b19719c174a5",
+        "gitBlob": "d71c2f37e5fe95e95967b70fbc1e022518ed0401",
+        "bytes": 2224,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "scripts/receive-packed-registry-artifact.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/receive-packed-registry-artifact.mjs",
+        "sha256": "07f33b085883f30b03d8d20d9a5a34866c763d3469517a332551f0e810448dca",
+        "gitBlob": "46b777beb4feef4ae31b420fef63b34d9deef13e",
+        "bytes": 4627,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "scripts/receive-source-registry-consumers.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/receive-source-registry-consumers.mjs",
+        "sha256": "dfbec60da7ef4792fe6f04958d33717db24c4761cdf622b46f615262e078a988",
+        "gitBlob": "4e061d7160f626b284da981daaaeeae83adbb9ec",
+        "bytes": 791,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "scripts/reconcile-package-locks-from-releases.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/reconcile-package-locks-from-releases.mjs",
+        "sha256": "c94aa2014526fec215c31e5121c908c2ed59608f04f35153d421366679b2a0a6",
+        "gitBlob": "fbc7d1d310f781ddf07f85d6f2c931297e3a4bae",
+        "bytes": 828,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "src/reconcile-package-locks-from-releases.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/reconcile-package-locks-from-releases.mjs",
+        "sha256": "07463fa9a5e6a7fd310c6df47f79a813f3c07fc4335a784e41f4d9433b97ef35",
+        "gitBlob": "e8049dff8bdff9f3555720e1695eb1aaa386d7ba",
+        "bytes": 1723,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "scripts/reconcile-package-locks.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/reconcile-package-locks.mjs",
+        "sha256": "bc4f36a30bfcb7e6fca1c36d2a3c248115ac8682f98793d8394513b57c4f3ce2",
+        "gitBlob": "332d33a56b38d91986f7f7c02c94cbdffd12b7c0",
+        "bytes": 768,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "src/reconcile-package-locks.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/reconcile-package-locks.mjs",
+        "sha256": "996fde6a0910243f7ab5b27078563ca66fcb56cdead4636065c7be3d753c2bd8",
+        "gitBlob": "1f0fb80ba87b446a84ee5a05beb6fe9705252cd1",
+        "bytes": 12885,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "scripts/recover-demanded-versions.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/recover-demanded-versions.mjs",
+        "sha256": "16e75b5d7c44ba43f5977476836bef1a35152c830e5591e1fcb4ec2c14a01a0f",
+        "gitBlob": "90b7ce3e89222ec25d8c924dc6c5abc0cee169ed",
+        "bytes": 8028,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "src/registry-carrier-imports.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/registry-carrier-imports.mjs",
+        "sha256": "82c0772a5d6b017b944f7a73af3f69a1eef4c21cf2280e8f907c28cad796a7c4",
+        "gitBlob": "52612b061e4ea15373f0ead7917d95c30d8e0bd8",
+        "bytes": 5893,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/registry-liveness.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/registry-liveness.mjs",
+        "sha256": "fd72a1994c6c65e0496f1d9ab6dc9be6157e8bef79dbca0c8a10fc183449ccc7",
+        "gitBlob": "b5e66d62daa369b0fdda82e1df108d92fd74c675",
+        "bytes": 3693,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/registry.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/registry.mjs",
+        "sha256": "78f5505bdcb93d893c76346a82eaa29ded10c0438ff37b08939aef2263d5fa4a",
+        "gitBlob": "1ae81d85b4a4b1f16fa7ba0613b72653166f571e",
+        "bytes": 18006,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/release-truth.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/release-truth.mjs",
+        "sha256": "b020c5873ef3501adb365568f34a1822a4c99a7d3114ddbf5ec7a1b3123b317a",
+        "gitBlob": "f68e42ce5b9379d504d70a7d02cbd6b3066b407b",
+        "bytes": 4176,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/release-wave.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/release-wave.mjs",
+        "sha256": "642e27c198dad1e738f7eb6d35cf99baf283eac3814f3d72e0984b7969f4d115",
+        "gitBlob": "7bd1617a326febfb76cb1d91e10b5eb62a815056",
+        "bytes": 8448,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "scripts/reset-package-versions.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/reset-package-versions.mjs",
+        "sha256": "bf50f528966bf4f4520b7577e75710816ea78cbf3dd5ca573ac5833cf2989a22",
+        "gitBlob": "65e802c5a14338dc1f89116184dc8fe3db98dd1d",
+        "bytes": 3143,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "src/reset-package-versions.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/reset-package-versions.mjs",
+        "sha256": "f63ade47f555e85a15097fe432523ef768a581251ad00189466f7e03a33afcc6",
+        "gitBlob": "11f7e871885a1bc4b945a05f29013ba5c7448c16",
+        "bytes": 9796,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/runner.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/runner.mjs",
+        "sha256": "dbd1bdebb239a05683eee949b4596438aae4d57d6797c2215f047855d560d045",
+        "gitBlob": "721535dd78fcc8dc3cb080d76b855ecf4281eee9",
+        "bytes": 5490,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/runtime-provider-catalog.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/runtime-provider-catalog.mjs",
+        "sha256": "e86fb751facf27b7710f6bd3719c010208ae752cc268a69cc809000a98e532a4",
+        "gitBlob": "ee045bfdf458bb4c6bda94b8e0ec9d07dbe3a866",
+        "bytes": 28011,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/semantic-version-audit.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/semantic-version-audit.mjs",
+        "sha256": "8d791f901650483c38a749896aa96dc2fa8245b72f1ab0838fb860123b43d1fe",
+        "gitBlob": "c8f6071ec1f3b1b30574ca39c313e25de0deaa4e",
+        "bytes": 3650,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/semantic-version-policy.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/semantic-version-policy.mjs",
+        "sha256": "aac15d4d6142b14a52efe7994cec90e863042e86716adced1041aead00d88203",
+        "gitBlob": "ce8447a7bbc17a900a4b894bfd7d7dc85101b119",
+        "bytes": 2328,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/software-estate.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/software-estate.mjs",
+        "sha256": "ea51f56ea19e4282bd9a1b352049eb6fe00553928edab105cd914cb07ff32956",
+        "gitBlob": "0c60371d9c35555a9e2cd04bc492d9bd921d6096",
+        "bytes": 5692,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/software-verification.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/software-verification.mjs",
+        "sha256": "1166c1f06120125c50db9d39107d19a7fe58cc07f10808d6baadbe6bd231ac55",
+        "gitBlob": "ad6ae994df01c29fc81f56e85152c6fb3a8f2f77",
+        "bytes": 4256,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/source-bindings.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/source-bindings.mjs",
+        "sha256": "1830cc9f3585c54af7476d0ef843709329dfe98612682ec848efe16a4cbfbecd",
+        "gitBlob": "a8d66c7509d570b8273dee080af6f8053a982527",
+        "bytes": 19030,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/source-build-qualification.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/source-build-qualification.mjs",
+        "sha256": "60fa02745c797f5cb987e2c02243f2281f68c3fc299df6f0703e8dc96521e939",
+        "gitBlob": "55116a69b12ffa0b420b63921d848de0a86724d9",
+        "bytes": 21746,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/source-member-binding.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/source-member-binding.mjs",
+        "sha256": "8faa12eb77e467ce5d7191373406bc48c077b4880d6544b89849c456236f506a",
+        "gitBlob": "03ae9a8caafa90343ba0ea498a72f7e1d281acfe",
+        "bytes": 6391,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/source-registry-closure.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/source-registry-closure.mjs",
+        "sha256": "8edeac32a19d9d271fa02d9d1ca511dcff3f2e4e9defa16328e6615b9e4a7410",
+        "gitBlob": "9fa3ddb8e09ad6564c2238e743867cfbb2939af0",
+        "bytes": 35241,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/stale-install-trees.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/stale-install-trees.mjs",
+        "sha256": "8252238745dcf66e1a9c43df433c5400327fb7584f21117af0a6ff5399d84c1e",
+        "gitBlob": "5df64a0ef00e369dafc391a66daf9805b45afa74",
+        "bytes": 11987,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/tarball-guard.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/tarball-guard.mjs",
+        "sha256": "af22c38763a2799fa6438c44e3ae0f7a7b33eae4ba2c39f07c6d9d0db6d1bbe3",
+        "gitBlob": "4444c70b4994a353c1ecd85339e3a3073552cf59",
+        "bytes": 5159,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/test-run-summary.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/test-run-summary.mjs",
+        "sha256": "3ffa7663ceaac0560c17f9baecba0b43da31bbd6b15caeda6ee8ec177363bb38",
+        "gitBlob": "5aa77611a099151aac4d0637ea680c17612fee62",
+        "bytes": 1251,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/text-tail.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/text-tail.mjs",
+        "sha256": "2fee407573a4557c0b6d643dae8690fbcae5420ddb88e6abb4652243a15d31dc",
+        "gitBlob": "e0dd36818ae25888f9587ae4ae53a04eb8de61c2",
+        "bytes": 765,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/verdaccio-upstream-cache.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/verdaccio-upstream-cache.mjs",
+        "sha256": "730eb62f15d49c8645145bb53e180501f07bb33a75b109bfe7949b909dbd2f76",
+        "gitBlob": "b0e5b37f5842762667b91aa9dc45de7500fe6303",
+        "bytes": 6771,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/verdaccio-version-reset-executor.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/verdaccio-version-reset-executor.mjs",
+        "sha256": "14acc8da06978cf3178b011e582a8fc366094152236e228fd8ec643ec3e51645",
+        "gitBlob": "5fdf068bfb81ddb486ddefec545969ef84e7bb4b",
+        "bytes": 10286,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/verdaccio-version-reset.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/verdaccio-version-reset.mjs",
+        "sha256": "a448394043bdb5aa898b48aacdf4f945210fa167b8b6ebd01cd972e624e02ad8",
+        "gitBlob": "f27068bfdab50878919096bd8226003ac6749e6d",
+        "bytes": 3571,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/verification-copy.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/verification-copy.mjs",
+        "sha256": "7ecfc4f9a068b9f32b84b10a603ea27e8660a98dc3b48b357eb27327a17c3cfd",
+        "gitBlob": "006a4ab3bf9fca273d824419b6e21fa68ea9e32a",
+        "bytes": 220,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "scripts/verify-active-software.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/verify-active-software.mjs",
+        "sha256": "acf119073a89cb968ae66aa7e12fabdf5a25fa03f6a6188fc0c98bc5e0512606",
+        "gitBlob": "79dea4ed42404927e640a5f62cc9aa165c4cebc9",
+        "bytes": 6013,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "scripts/verify-exact-dependencies.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/verify-exact-dependencies.mjs",
+        "sha256": "578586642714a771154cc75417805506e716a852923853c19f041892bc27da0b",
+        "gitBlob": "cee58919a86d859ba72d5ac38ce6b2917a490cb6",
+        "bytes": 7334,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "scripts/verify-package-carrier.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/verify-package-carrier.mjs",
+        "sha256": "e25710993e85a8016613b60ae81bc865e922aee15a532c8e7b4a1714eabfb1f7",
+        "gitBlob": "7f2ac784d91fda9e8e1925f38d34842f78f87ecd",
+        "bytes": 1237,
+        "archiveMode": "0o755"
+      },
+      {
+        "path": "src/workspace-graph.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/workspace-graph.mjs",
+        "sha256": "cc826305ff9a57f74806a7fc97f16d41f7b719eb91bae10bfe85ce4ef911ca3f",
+        "gitBlob": "c89f915da70f79fb06bf5ace7e1342ff7607b8a8",
+        "bytes": 4959,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/workspace-publication.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/workspace-publication.mjs",
+        "sha256": "22cb92c76675ce84b00612e8cb88b7cf4c3e4dabbc614dfaaf2632f85a9362b6",
+        "gitBlob": "ec19fbd44502adabb87bf0eda5375aa141f7fa19",
+        "bytes": 11265,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "src/zero-major-version-reset.mjs",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/src/zero-major-version-reset.mjs",
+        "sha256": "a337fccc5c0a370e8ff68a5d0d722314fdfb20fbadc25bf17b40dd33cbdb91ec",
+        "gitBlob": "45228792fc2b5386b29795c1e232cdbccee651c0",
+        "bytes": 6566,
+        "archiveMode": "0o600"
+      },
+      {
+        "path": "scripts/reset-python-package-versions.py",
+        "actual": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/code23-source/scripts/reset-python-package-versions.py",
+        "sha256": "d9de12a1c5e04d96524b84933fa2acd0f1c46855cb093b263b8282095f23fc35",
+        "gitBlob": "fd652e76c5c5c0c28169df29c85c35c0c924c5aa",
+        "bytes": 4934,
+        "archiveMode": "0o755"
+      }
+    ],
+    "providers": [
+      {
+        "name": "semver",
+        "version": "7.7.2",
+        "root": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/semver@7.7.2/node_modules/semver",
+        "manifestSHA256": "bf2e091359d5870257cc8287a268e001bfb39abf19275f382276efe3c7785a4f",
+        "historicalRoot": "/home/emsenn/.local/state/561-group/settlements/computer-deployment-engine/products/fabrication-records/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/semver@7.7.2/node_modules/semver",
+        "manifestGitBlob": "1fbef5a9bf9cd8d6606aa0741186de2599325b31",
+        "actual": true
+      },
+      {
+        "name": "@red-cup-engineering/semiotic-eavt-services-section",
+        "version": "0.1.0",
+        "root": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+semiotic-eavt-services-section@0.1.0/node_modules/@red-cup-engineering/semiotic-eavt-services-section",
+        "manifestSHA256": "6ef49d36048aaacbe3c9cbc05bdcc50931f3bb61ba82bc2157b3b6e45e62097d",
+        "historicalRoot": "/home/emsenn/.local/state/561-group/settlements/computer-deployment-engine/products/fabrication-records/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+semiotic-eavt-services-section@0.1.0/node_modules/@red-cup-engineering/semiotic-eavt-services-section",
+        "manifestGitBlob": "5966fa6e4fa3dec57c063d4e621d7d4e2bae4aec",
+        "actual": true
+      },
+      {
+        "name": "@red-cup-engineering/computer-filepath-engineering-services-section",
+        "version": "0.1.0",
+        "root": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+computer-filepath-engineering-services-section@0.1.0/node_modules/@red-cup-engineering/computer-filepath-engineering-services-section",
+        "manifestSHA256": "9b9a36059f033250dd8847aa80fdbaeaae39184a06c0edcddc9bab7c85244261",
+        "historicalRoot": "/home/emsenn/.local/state/561-group/settlements/computer-deployment-engine/products/fabrication-records/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+computer-filepath-engineering-services-section@0.1.0/node_modules/@red-cup-engineering/computer-filepath-engineering-services-section",
+        "manifestGitBlob": "d00140575ad913bd00f7202855e3661d77a7132d",
+        "actual": true
+      },
+      {
+        "name": "@red-cup-engineering/cryptographic-computer-data-engineering-services-section",
+        "version": "0.3.1",
+        "root": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+cryptographic-computer-data-engineering-services-section@0.3.1/node_modules/@red-cup-engineering/cryptographic-computer-data-engineering-services-section",
+        "manifestSHA256": "a566ae04f9addac8538c1b3a8d23414305de15961c1facfafb5f99751ffd3dd7",
+        "historicalRoot": "/home/emsenn/.local/state/561-group/settlements/computer-deployment-engine/products/fabrication-records/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+cryptographic-computer-data-engineering-services-section@0.3.1/node_modules/@red-cup-engineering/cryptographic-computer-data-engineering-services-section",
+        "manifestGitBlob": "7746fe13ac83aaa48e9b8f00bf2e1cb58143c8a8",
+        "actual": true
+      },
+      {
+        "name": "@red-cup-engineering/computer-file-engineering-services-section",
+        "version": "0.4.0",
+        "root": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+computer-file-engineering-services-section@0.4.0/node_modules/@red-cup-engineering/computer-file-engineering-services-section",
+        "manifestSHA256": "6d5f429a0780668747b1fc04db5e8d62284f1187109b4a4946cadf6e9694b64e",
+        "historicalRoot": "/home/emsenn/.local/state/561-group/settlements/computer-deployment-engine/products/fabrication-records/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+computer-file-engineering-services-section@0.4.0/node_modules/@red-cup-engineering/computer-file-engineering-services-section",
+        "manifestGitBlob": "f90bcd3c6b7dad9062b4d26547b0e098ee42ccb8",
+        "actual": true
+      },
+      {
+        "name": "@red-cup-engineering/metrologic",
+        "version": "0.4.0",
+        "root": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+metrologic@0.4.0/node_modules/@red-cup-engineering/metrologic",
+        "manifestSHA256": "8dbc510c7b92f74d84048a5d083195ed4f2b2ad0c51312925db421c4774b1793",
+        "historicalRoot": "/home/emsenn/.local/state/561-group/settlements/computer-deployment-engine/products/fabrication-records/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+metrologic@0.4.0/node_modules/@red-cup-engineering/metrologic",
+        "manifestGitBlob": "dd8fd56dd22ad9498f717acd07913b224e2335ba",
+        "actual": true
+      },
+      {
+        "name": "@red-cup-engineering/uri-services-section",
+        "version": "0.1.1",
+        "root": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+uri-services-section@0.1.1/node_modules/@red-cup-engineering/uri-services-section",
+        "manifestSHA256": "ad2294be4d435b8c12871d030a5976686259c15579818e1dd1eb84d0f96e1dc4",
+        "historicalRoot": "/home/emsenn/.local/state/561-group/settlements/computer-deployment-engine/products/fabrication-records/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+uri-services-section@0.1.1/node_modules/@red-cup-engineering/uri-services-section",
+        "manifestGitBlob": "7a89bc4a80fd0ce9d2e78db3b30722d1a0e0d524",
+        "actual": true
+      },
+      {
+        "name": "@red-cup-engineering/computer-content-address-engineering-services-section",
+        "version": "0.2.0",
+        "root": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+computer-content-address-engineering-services-section@0.2.0/node_modules/@red-cup-engineering/computer-content-address-engineering-services-section",
+        "manifestSHA256": "cff45a5b99d892048b7e50ec4516e435f1c00cbe7d0e316e9307fe10fdc400c4",
+        "historicalRoot": "/home/emsenn/.local/state/561-group/settlements/computer-deployment-engine/products/fabrication-records/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+computer-content-address-engineering-services-section@0.2.0/node_modules/@red-cup-engineering/computer-content-address-engineering-services-section",
+        "manifestGitBlob": "2639de202f1b410a6b68bbd77a1c3bd1fe5171f1",
+        "actual": true
+      },
+      {
+        "name": "@red-cup-engineering/execute-javascript-node-command-service",
+        "version": "0.3.1",
+        "root": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+execute-javascript-node-command-service@0.3.1/node_modules/@red-cup-engineering/execute-javascript-node-command-service",
+        "manifestSHA256": "c6cb5856e2e07677ed09a2b31f4fdff6afb2dab6ddd55b5d6be963c4dc8302f9",
+        "historicalRoot": "/home/emsenn/.local/state/561-group/settlements/computer-deployment-engine/products/fabrication-records/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+execute-javascript-node-command-service@0.3.1/node_modules/@red-cup-engineering/execute-javascript-node-command-service",
+        "manifestGitBlob": "2439decad7dfd371db27c42f05d37397d529978e",
+        "actual": true
+      },
+      {
+        "name": "@red-cup-engineering/git-services-section",
+        "version": "0.1.2",
+        "root": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+git-services-section@0.1.2/node_modules/@red-cup-engineering/git-services-section",
+        "manifestSHA256": "623117ff540dfa1e78c8720cd8a156be9f8cefd7d15102c249a5d991277ee220",
+        "historicalRoot": "/home/emsenn/.local/state/561-group/settlements/computer-deployment-engine/products/fabrication-records/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+git-services-section@0.1.2/node_modules/@red-cup-engineering/git-services-section",
+        "manifestGitBlob": "03a84580b0a91582c4cf057785b651cff198b2fa",
+        "actual": true
+      },
+      {
+        "name": "@red-cup-engineering/javascript-node-services-section",
+        "version": "0.3.2",
+        "root": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+javascript-node-services-section@0.3.2/node_modules/@red-cup-engineering/javascript-node-services-section",
+        "manifestSHA256": "b9fc01eee9dcea51c3910091eff398f43d6da5b22a5b866c435f44ea4b1b3108",
+        "historicalRoot": "/home/emsenn/.local/state/561-group/settlements/computer-deployment-engine/products/fabrication-records/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+javascript-node-services-section@0.3.2/node_modules/@red-cup-engineering/javascript-node-services-section",
+        "manifestGitBlob": "5a7d3a4de8a0bcc03b7c4207cc1f92c591a9e9ec",
+        "actual": true
+      },
+      {
+        "name": "@red-cup-engineering/npm-registry-read-service",
+        "version": "0.1.2",
+        "root": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+npm-registry-read-service@0.1.2/node_modules/@red-cup-engineering/npm-registry-read-service",
+        "manifestSHA256": "ec4d3739719f7da96abb8575195ee82262a917943129e1513f95c28066f4c135",
+        "historicalRoot": "/home/emsenn/.local/state/561-group/settlements/computer-deployment-engine/products/fabrication-records/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+npm-registry-read-service@0.1.2/node_modules/@red-cup-engineering/npm-registry-read-service",
+        "manifestGitBlob": "e0fde84aadae8bbcb0a19d75a657038676bd2b21",
+        "actual": true
+      },
+      {
+        "name": "@red-cup-engineering/npm-registry-snapshot-services-section",
+        "version": "0.1.1",
+        "root": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+npm-registry-snapshot-services-section@0.1.1/node_modules/@red-cup-engineering/npm-registry-snapshot-services-section",
+        "manifestSHA256": "ed72a0c145a5c7f7f3f81c7e457026d2bfb4dfeef746121caf3850c136b94267",
+        "historicalRoot": "/home/emsenn/.local/state/561-group/settlements/computer-deployment-engine/products/fabrication-records/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+npm-registry-snapshot-services-section@0.1.1/node_modules/@red-cup-engineering/npm-registry-snapshot-services-section",
+        "manifestGitBlob": "d25534f0fac8536c556f411552056d366fcbaaea",
+        "actual": true
+      }
+    ]
+  },
+  "node": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+  "nodeDirectory": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin",
+  "gitDirectory": "/gnu/store/2jgm0z1f745cmg2wnv8yskcm5q2dpq2m-git-2.54.0/bin",
+  "npm": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/npm",
+  "npmVersion": "11.16.0",
+  "npmModeWitness": {
+    "package.json": "60ff022e32b5d8291d3e09849fd0cee6bbbff4e4d8352ad258214b1adf070714",
+    "lib/commands/install.js": "f7a60e8b40ab1bece76a2441b8b15378d199f05c6050eebe455cd9961f67b816",
+    "node_modules/@npmcli/config/lib/definitions/definitions.js": "9c7b6567bc25c4dfba128a214231dceab6d854c59d8655aabd050077271c943c",
+    "node_modules/@npmcli/arborist/lib/arborist/reify.js": "6d917a9df6dd63d6206eb24defff05367ef6c5fcd0d057f6c30f35e4a353b542"
+  },
+  "executor": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/computer-operating-system-services-section/data/logs/computer-deployment-fabrication-logs/20261019-bcf-tagged-release/coordination/console-object-methods-correction/code-pr18-current-receiver-timeout-v1/genuine97-proposal-v1/native-metadata-comparison-v5/recipient/node_modules/.pnpm/@red-cup-engineering+execute-javascript-node-command-service@0.3.1/node_modules/@red-cup-engineering/execute-javascript-node-command-service/scripts/execute-javascript-node-command-asynchronously.mjs",
+  "registry": "https://registry.561.group/",
+  "preserveActualHome": true,
+  "scopeGrade": "Native Code offline3entry file consumer with13 retained suppliers, then Node own lock-only metadata. No Node body graph/check/test/pack/publication.",
+  "candidateGitTree": "993ef058fa8fec8f1ca9f7127cc6dc42772ec6fc",
+  "previousUnit": "node-process-coherent-lock-metadata-v1.scope"
+}

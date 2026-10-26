@@ -1,0 +1,86 @@
+{
+  "kind": "NativeCodeOwnerLockDerivation",
+  "command": {
+    "program": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+    "args": [
+      "/home/emsenn/.cache/561-group/lagoon-promote/runtimes/f3e4672231d2b37284388677d176e9b2cd899744/node_modules/.pnpm/pnpm@11.28.5/node_modules/pnpm/bin/pnpm.mjs",
+      "--dir",
+      "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261021-pr24/code-source",
+      "--store-dir",
+      "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261021-pr24-primitive12-lock/store",
+      "--cache-dir",
+      "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-lock/metadata",
+      "install",
+      "--lockfile-only",
+      "--ignore-scripts",
+      "--ignore-workspace",
+      "--reporter=append-only",
+      "--config.minimumReleaseAgeStrict=true",
+      "--config.minimumReleaseAgeExclude=@red-cup-engineering/git-source-reading-service@0.1.1",
+      "--config.minimumReleaseAgeExclude=@red-cup-engineering/git-source-reading-service@0.1.2"
+    ],
+    "cwd": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/logs/npm-artifact-receiving-logs/20261021-pr24/code-source"
+  },
+  "result": {
+    "code": 0,
+    "signal": null
+  },
+  "managerEntrySHA256": "ff3224d46b47fbb24a7e9fe15fededef7e00892d07d4e376b6762d4899906bfd",
+  "manifestSHA256": "fe97c87dffa3b06a732acedd7bf217ee3e2de97be2be7bd8121c1d12a010ac74",
+  "lockSHA256": "508a3ba0961167af9a5f55692542e32e91c154af21fb1e488161f709f713895c",
+  "lockBytes": 49125,
+  "workspaceAdded": false,
+  "installationPerformed": false,
+  "qualifiedFreshSupplier": {
+    "kind": "AuthoritativePrimitiveSHA256ArtifactReceiving",
+    "name": "@red-cup-engineering/git-source-reading-service",
+    "version": "0.1.2",
+    "gitHead": "dcbcf09bb834a2dd00480378ca47607803d7a04e",
+    "integrity": "sha512-cLt/BcAPEkoz5kpA729rqzrmg3LbkXpnr3zScv4WAmOnAhSBZRXevFLweRK9RX+CCe+K3wQ2W5+2+E6oDuLXNg==",
+    "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/services/git-services-section/data/logs/git-source-reading-qualification-logs/20261021-sha256/primitive-0.1.2-authoritative.tgz",
+    "provider": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/services/git-services-section/data/logs/git-source-reading-qualification-logs/20261021-sha256/primitive-0.1.2-authoritative",
+    "bytes": 24069,
+    "artifactDownloaded": true,
+    "archiveMembers": 7,
+    "files": [
+      {
+        "path": "package.json",
+        "sha256": "e2850cacaa09f055132e32b55b904cd96dfa3acf5086327e775ec474be88f474",
+        "bytes": 1171
+      },
+      {
+        "path": "README.md",
+        "sha256": "d54f24af9c69e07a19ec391f9660100c95c0f679f41a801a9a072f6c4f1e89f0",
+        "bytes": 3672
+      },
+      {
+        "path": "src/git-command-codec.mjs",
+        "sha256": "394b79dac21133d28fea1687feaf3cb50ae0b287a58cf35f7c0dd9eea6a51270",
+        "bytes": 49842
+      },
+      {
+        "path": "src/gitmodules.mjs",
+        "sha256": "8457d5652aa568834f25f9d9f5b8972c7dbc1be1e52df603f248e624d933d921",
+        "bytes": 6969
+      },
+      {
+        "path": "src/pinned-source-files.mjs",
+        "sha256": "3a40ba296d04549c9865e4edb75f74b42235852e4ce7b66ce9659bfd1693eb3b",
+        "bytes": 10651
+      },
+      {
+        "path": "src/read-source-files.mjs",
+        "sha256": "a37265bab9f85e8b94db73f912763711f3bf545bb4f3e6c807d04a1e8ebf65bc",
+        "bytes": 8411
+      },
+      {
+        "path": "src/source-working-copy-schema.mjs",
+        "sha256": "d5153069adb7609eb59fe665b372ebb59097da2a6dcff11dc9271c18e3536a05",
+        "bytes": 3659
+      }
+    ],
+    "sourceDifference": "Exact normal native publisher gitHead/json2newline only",
+    "sourceBindingsUsed": false,
+    "installationClaimed": false
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "type": "CoherentNodeProcess031SourceIndex",
+  "base": "23113a67473de9784fdea1d1d45757fc0dd1569b",
+  "baseTree": "3ec1e72a033ae2c404a2481f2a775e7168d3aa75",
+  "sourceVersion": "0.3.1",
+  "developmentRunner": "0.5.0",
+  "sourceSnapshotSHA256": "aea503bb5649df85c00a47ea4c40a090dc66ec1dc0804edf6552c6c132b67c4e",
+  "sourceRows": [
+    {
+      "path": ".npmrc",
+      "sha256": "8de08949bab508293e0d9aa76a511469ee2d306b1f6140a8f60c0d1de8b17fe2",
+      "gitBlob": "0a1f8151935f5a483c368cd930c26519cb3663cf",
+      "mode": "100644",
+      "bytes": 37
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/commit-tree-field-correction-receiving.json",
+      "sha256": "f24c3bad4de70f6dd1825ee6c70946ab859f92ca4386a9fefe97a49ffd86a208",
+      "gitBlob": "21946b9384bd661f375241a3eddad7d845271898",
+      "mode": "100644",
+      "bytes": 1075
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/independent-node-process-owned-data-root-source-receiving.json",
+      "sha256": "20ea35ebb1fad04c8798cdd91ee585a31307dda7315519704f22ca73b08c1e0b",
+      "gitBlob": "db611ecb53ea91ff83c499e8d7b914c922fea3d7",
+      "mode": "100644",
+      "bytes": 14242
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/independent-shared-owned-data-corrected-context-receiving.json",
+      "sha256": "03dcf159dc3b41957ee276f29fc686daec98262d1a855ec043e5900908a58f63",
+      "gitBlob": "42231488b500d0188fe44766cc44635587553bd1",
+      "mode": "100644",
+      "bytes": 5303
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/independent-shared-owned-data-source-receiving.json",
+      "sha256": "c473e0187eee7f375cc9af31a0f672e468d1d6941d4a481bae2ea550e624cdd2",
+      "gitBlob": "a255907bcfd99c18309cd2de293452cdbfeffcb2",
+      "mode": "100644",
+      "bytes": 3980
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/native-node-source-family-observation.json",
+      "sha256": "da5802cf4d3ca05de8bbe3f623f93940ca2281c98bfd919de54db7948282c2e1",
+      "gitBlob": "c82a4104b6c3a5c04de39f82e2fc45f6de2bfd49",
+      "mode": "100644",
+      "bytes": 10677
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/node-process-owned-data-root-source-proposal.json",
+      "sha256": "6b44a6cdf7b79529ae1e7025be999ec5eb250f03070c2f9a6d775d87b28dd902",
+      "gitBlob": "cd5d17a5a792beccb85f30599bb9b6a043d7cd0f",
+      "mode": "100644",
+      "bytes": 21233
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/owner-repository-parent-gitlink-receiving.json",
+      "sha256": "98ad894d87515e4abe37b5bab12aeedb9b07963cdc3294a2e4b2473e73942959",
+      "gitBlob": "56cdf2974c6e13edaba725d87b26e3787fdb77e9",
+      "mode": "100644",
+      "bytes": 1786
+    },
+    {
+      "path": "package.json",
+      "sha256": "81f002900016bf4b3449ef9da6b7a9bb8c8cd6c7859307f6dfa5fd3ae506b635",
+      "gitBlob": "cf7a3f5168ac3eb07457a726c56d6cfc4bfc4722",
+      "mode": "100644",
+      "bytes": 1588
+    },
+    {
+      "path": "specifications/design.md",
+      "sha256": "0e6e9337bea55f3105768a52d90d91eb0138e897be0c0c4e693866ab1f60fbd5",
+      "gitBlob": "e3d57eb47dc983d51f46769278ca7fd16e5f74a1",
+      "mode": "100644",
+      "bytes": 1855
+    },
+    {
+      "path": "specifications/explicit-owned-data-admission.md",
+      "sha256": "4c40f21a0cb79c3cff2b5c17e580306757719a4add6398f93c023009b866282c",
+      "gitBlob": "81ef12a8bfe88834a4fe0c65b4a50ee52d832da5",
+      "mode": "100644",
+      "bytes": 4327
+    },
+    {
+      "path": "specifications/requirements.md",
+      "sha256": "45aedbb8b535df05bab626678001e2d6c012ffb103a243e66374174369052da4",
+      "gitBlob": "9fcc6a10d8b97ec003cc5c1d9325e48f638358e0",
+      "mode": "100644",
+      "bytes": 1946
+    },
+    {
+      "path": "src/clock.mjs",
+      "sha256": "f65ec1ff8deaa0b3ebb98295e28f0740b34c9dadeda010756c196e6480a185b9",
+      "gitBlob": "8ac3a38e653d9ac224b5839bea10cecf93a43e8a",
+      "mode": "100644",
+      "bytes": 338
+    },
+    {
+      "path": "src/command.mjs",
+      "sha256": "51c3e72bc15b1b7464282429442da5db221f9d4402715dc8f61cafee76ac8d05",
+      "gitBlob": "6132d70597933cab3974fc5206a28e58f2342344",
+      "mode": "100644",
+      "bytes": 3161
+    },
+    {
+      "path": "src/config.mjs",
+      "sha256": "c9825e69f6f41c61664e01d098cf6a3091d56ed018b67e77473e8ea5a1481440",
+      "gitBlob": "eb50e1b09f521af88c722d25e2240bc836a5a0bd",
+      "mode": "100644",
+      "bytes": 11540
+    },
+    {
+      "path": "src/entropy.mjs",
+      "sha256": "318318f79b36bc142951324d080ca7f89c1883a756ebbb8d9c46d38f253dd7fe",
+      "gitBlob": "e92b816419c65228f3d2c8ff803f7e4ce6a00894",
+      "mode": "100644",
+      "bytes": 216
+    },
+    {
+      "path": "src/entrypoint.mjs",
+      "sha256": "d3e75a5fff5b8057d0189ada61ea5c5664cf2171ab57b8b2624b1a8ce9a797c9",
+      "gitBlob": "05f3152276fe0b11d334d05309039597cd257100",
+      "mode": "100644",
+      "bytes": 2546
+    },
+    {
+      "path": "src/environment.mjs",
+      "sha256": "585ade712d1ae1e459a30c363a38b115f7732c95c3354d35d032eae81c427ee7",
+      "gitBlob": "a366c71785cc423bc5bdc413be0d36f37d08655c",
+      "mode": "100644",
+      "bytes": 1164
+    },
+    {
+      "path": "src/lifecycle-schema-schema.mjs",
+      "sha256": "614c50a0708ff380c9688e5c8081674f7b7bfdc1f99be5e21fa9e0df5a70fb87",
+      "gitBlob": "15b476b31ce56e104f37166a73eac12621d5278b",
+      "mode": "100644",
+      "bytes": 4459
+    },
+    {
+      "path": "src/lifecycle.mjs",
+      "sha256": "64285ae1a93498d8ca0f00cdf8c3187ea80e9b9ffdeaca425e274cc7a82584a6",
+      "gitBlob": "b5a3f1f80406265981f7f143d264f63ce4567eb6",
+      "mode": "100644",
+      "bytes": 1763
+    },
+    {
+      "path": "src/main-runner.mjs",
+      "sha256": "fbe2032803b9511b10cc24af081f6a5fdeff52a5e3e488717dccffe69f466d8f",
+      "gitBlob": "db7a40ccc1351b982e35d1c6cce5451048c4d585",
+      "mode": "100644",
+      "bytes": 1784
+    },
+    {
+      "path": "src/stdio.mjs",
+      "sha256": "ddba6f5dd52f6a3c5af53ab27544c76e3b3fb1a6cb1f69a8e8dfe2d8bd4f85cd",
+      "gitBlob": "a44c25504eb42fdd49490bc9d23c969545ecd216",
+      "mode": "100644",
+      "bytes": 927
+    },
+    {
+      "path": "test/command.test.mjs",
+      "sha256": "015b3abe97d6633989723192e0c220717b23ee044c97adb9ce8c073d7c78617e",
+      "gitBlob": "c9fb4b91226678f7a8ca37aa2221b5f040d4e99c",
+      "mode": "100644",
+      "bytes": 1468
+    },
+    {
+      "path": "test/config.test.mjs",
+      "sha256": "4f260290dad9355dc5e3c105105377533016277a9ab32b8244f28f0c56eeb2c1",
+      "gitBlob": "62bda69711d70779880f7ad35a2c192fb3d55b54",
+      "mode": "100644",
+      "bytes": 9444
+    },
+    {
+      "path": "test/entrypoint.test.mjs",
+      "sha256": "fba9cc5b7e7ef42f780837203dfeb32508dc8fa72403571debb4011d413cf4a9",
+      "gitBlob": "00f065f625fc14e15f9d563681c19f6fc492870c",
+      "mode": "100644",
+      "bytes": 4128
+    },
+    {
+      "path": "test/environment.test.mjs",
+      "sha256": "964ad659ed53b49c425a9859d16d713fef826b9ec1557f876681fdc794524df0",
+      "gitBlob": "69550f3b9de56b567559ee34f5bdcad095a511cd",
+      "mode": "100644",
+      "bytes": 612
+    },
+    {
+      "path": "test/owned-data-admission.test.mjs",
+      "sha256": "407759d236272a0ba1f1a29515022a713e8bf6bd2548d19c1905d00bb025e6db",
+      "gitBlob": "d40707d215e05abea030427278daa114580d27ba",
+      "mode": "100644",
+      "bytes": 8377
+    }
+  ],
+  "apiProposalSHA256": "770e0bb3294f2342e22760ae980252adfaf0d1ffbba3fa5560f18265d6c3abdc",
+  "rootIndependentReceiptSHA256": "c473e0187eee7f375cc9af31a0f672e468d1d6941d4a481bae2ea550e624cdd2",
+  "sourceGrade": "Exact3 APIv3 source paths; old c473 and substantive HOME-corrected03dc both preserved. Actual62 corrected-context source QA accepted; full own installed runner check/test/packing/publication/use remain unreceived.",
+  "metadataWorkspace": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/metadata-workspace-v2/source",
+  "correctedContextReceiptSHA256": "03dcf159dc3b41957ee276f29fc686daec98262d1a855ec043e5900908a58f63",
+  "frozenSource": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/release-qualification-logs/node-process-coherent-native-metadata-v1/frozen-coherent-source-v2"
+}

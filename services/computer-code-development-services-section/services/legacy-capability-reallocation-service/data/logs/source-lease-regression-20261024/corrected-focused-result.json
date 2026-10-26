@@ -1,0 +1,6 @@
+{
+  "exit": 75,
+  "elapsedSeconds": 104.225,
+  "stdout": "",
+  "stderr": "agent-heavy: waited 110s for one of the host's 1 heavy-command slot (/run/user/1000/agent-heavy.lock); other agents' clones, fetches, builds or tree scans hold it, so this command did not run. Retry shortly, or narrow it.\n"
+}

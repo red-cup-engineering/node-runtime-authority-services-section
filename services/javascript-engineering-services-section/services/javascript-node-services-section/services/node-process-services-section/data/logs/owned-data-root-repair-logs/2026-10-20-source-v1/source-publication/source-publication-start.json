@@ -1,0 +1,82 @@
+{
+  "at": "2026-10-21T00:11:48.051Z",
+  "manifestSHA256": "aa7e070f820bad6cb3cdcfb1c034cf2200ae980d26784ef7e81b80212e6212c2",
+  "files": [
+    {
+      "path": "package.json",
+      "sha256": "6e7e7a190785aa2a0447b56ae61b46028363a752171abc6fa2b03723ed977ba7",
+      "gitBlob": "fef6008c0e2771c05c522e64f5fdff62c596ed68",
+      "bytes": 1588,
+      "mode": "100644"
+    },
+    {
+      "path": "src/config.mjs",
+      "sha256": "4325393e8722cc1aeeb6d25627531c6c0ee51d1fb4b654b2bfe41d152ee26387",
+      "gitBlob": "c4390e30692b3fb9f7b1ee88d10e5c6923468f31",
+      "bytes": 8469,
+      "mode": "100644"
+    },
+    {
+      "path": "test/config.test.mjs",
+      "sha256": "4f260290dad9355dc5e3c105105377533016277a9ab32b8244f28f0c56eeb2c1",
+      "gitBlob": "62bda69711d70779880f7ad35a2c192fb3d55b54",
+      "bytes": 9444,
+      "mode": "100644"
+    },
+    {
+      "path": "specifications/requirements.md",
+      "sha256": "45aedbb8b535df05bab626678001e2d6c012ffb103a243e66374174369052da4",
+      "gitBlob": "9fcc6a10d8b97ec003cc5c1d9325e48f638358e0",
+      "bytes": 1946,
+      "mode": "100644"
+    },
+    {
+      "path": "specifications/design.md",
+      "sha256": "0e6e9337bea55f3105768a52d90d91eb0138e897be0c0c4e693866ab1f60fbd5",
+      "gitBlob": "e3d57eb47dc983d51f46769278ca7fd16e5f74a1",
+      "bytes": 1855,
+      "mode": "100644"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/node-process-owned-data-root-source-proposal.json",
+      "sha256": "6b44a6cdf7b79529ae1e7025be999ec5eb250f03070c2f9a6d775d87b28dd902",
+      "gitBlob": "cd5d17a5a792beccb85f30599bb9b6a043d7cd0f",
+      "bytes": 21233,
+      "mode": "100644"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/commit-tree-field-correction-receiving.json",
+      "sha256": "f24c3bad4de70f6dd1825ee6c70946ab859f92ca4386a9fefe97a49ffd86a208",
+      "gitBlob": "21946b9384bd661f375241a3eddad7d845271898",
+      "bytes": 1075,
+      "mode": "100644"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/native-node-source-family-observation.json",
+      "sha256": "da5802cf4d3ca05de8bbe3f623f93940ca2281c98bfd919de54db7948282c2e1",
+      "gitBlob": "c82a4104b6c3a5c04de39f82e2fc45f6de2bfd49",
+      "bytes": 10677,
+      "mode": "100644"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/owner-repository-parent-gitlink-receiving.json",
+      "sha256": "98ad894d87515e4abe37b5bab12aeedb9b07963cdc3294a2e4b2473e73942959",
+      "gitBlob": "56cdf2974c6e13edaba725d87b26e3787fdb77e9",
+      "bytes": 1786,
+      "mode": "100644"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/independent-node-process-owned-data-root-source-receiving.json",
+      "sha256": "20ea35ebb1fad04c8798cdd91ee585a31307dda7315519704f22ca73b08c1e0b",
+      "gitBlob": "db611ecb53ea91ff83c499e8d7b914c922fea3d7",
+      "bytes": 14242,
+      "mode": "100644"
+    }
+  ],
+  "supplier": {
+    "module": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/version-control-services-section/services/git-services-section/data/logs/github-source-operation-suppliers/github-rest-client-0.2.4/github-rest-client.mjs",
+    "sha256": "8a3ea5787f79ef656a546596ab1b5d87b5b61f8419323a1416b7937432efeba5",
+    "kind": "Byte-exact received GHS2.4 all-builtins source projection; no package installation or old home carrier executed"
+  },
+  "noRawPrivateProviderResponses": true
+}

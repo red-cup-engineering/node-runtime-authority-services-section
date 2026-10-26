@@ -1,0 +1,12 @@
+{
+  "name": "@red-cup-engineering/npm-workspace-publication-service",
+  "version": "0.14.24",
+  "gitHead": "24bb6cedfe36a847057f9003bde6e88bcc7da00b",
+  "integrity": "sha512-yP3HH3zedt4/OruoDQyz01LpilIOufVr7ExSsYTAMAj4nZuR7Nzj19bjceKMQVrWfjPwakXvptvMtAKHkGxtxw==",
+  "artifactDownloaded": true,
+  "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/data/state/npm-artifact-receiving-state/20261020-code22-released-artifact/code-0.14.24-authoritative.tgz",
+  "bytes": 197189,
+  "sha256": "d009d08cc8161cb51172dbadd4b031e0bf49eeee4d254e4bad854807f21c3b80",
+  "receiver": "original Code receiveRegistryTarball; authentic exactprimary metadata",
+  "scope": "Authoritative releasedCode artifact; not a localpack or installedconsumer receiving verdict"
+}

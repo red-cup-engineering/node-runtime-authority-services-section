@@ -1,0 +1,11 @@
+{
+  "type": "OriginalSourcePublicationGateReceiving",
+  "providerPath": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/jsnode-packaging-services-section/services/npm-services-section/services/npm-registry-services-section/services/npm-registry-serving-service/src/publish-gate.mjs",
+  "providerVersion": "0.2.1",
+  "actualServingProviderIdentityBound": false,
+  "actualServerGateRemainsMandatory": true,
+  "metadataContext": "observed original registry plus DEFAULT_HOUSE_SCOPES/privateScopes",
+  "archiveSHA256": "8586cf2f34e50a61aee4139f023b34a69373bb71e9faacdbd3173e01afd43b67",
+  "violations": [],
+  "publicationAttempted": false
+}

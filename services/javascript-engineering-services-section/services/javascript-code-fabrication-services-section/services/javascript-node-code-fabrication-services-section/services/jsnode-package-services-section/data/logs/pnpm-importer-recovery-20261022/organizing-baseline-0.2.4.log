@@ -1,0 +1,34 @@
+✔ a cover's nerve joins the opens sharing members, and H1 is its cycle rank plus the obstructions (19.299373ms)
+✔ dependency tiers put providers first, and the dependency graph's H1 counts the dependencies closing a loop (1.423676ms)
+✔ PNPM source-specific resolution refuses stale packages and unrelated listings (2.445443ms)
+✔ distinct PNPM importer positions retain different exact provider versions (1.261748ms)
+✔ workspace selection requires an actual local PNPM link and valid document (0.717122ms)
+✖ the Code source refuses ambiguous duplicate PNPM importers before Organizing receives resolution (1.043084ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 5
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 187.828416
+
+✖ failing tests:
+
+test at test/workspace-coordination.test.mjs:79:1
+✖ the Code source refuses ambiguous duplicate PNPM importers before Organizing receives resolution (1.043084ms)
+  AssertionError [ERR_ASSERTION]: Missing expected exception.
+      at TestContext.<anonymous> (file:///home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-systems-engineering-services-section/services/agent-computer-system-engineering-services-section/apps/agent-organization-engine/data/logs/pace-s-baseline-main-20261022/lib/organizing/test/workspace-coordination.test.mjs:84:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: undefined,
+    expected: /duplicate or unnamed importer/,
+    operator: 'throws',
+    diff: 'simple'
+  }

@@ -1,0 +1,14 @@
+✔ a cover's nerve joins the opens sharing members, and H1 is its cycle rank plus the obstructions (20.407675ms)
+✔ dependency tiers put providers first, and the dependency graph's H1 counts the dependencies closing a loop (1.571385ms)
+✔ PNPM source-specific resolution refuses stale packages and unrelated listings (2.81934ms)
+✔ distinct PNPM importer positions retain different exact provider versions (1.495545ms)
+✔ workspace selection requires an actual local PNPM link and valid document (0.78996ms)
+✔ the Code source refuses ambiguous duplicate PNPM importers before Organizing receives resolution (0.348759ms)
+ℹ tests 6
+ℹ suites 0
+ℹ pass 6
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 202.477925

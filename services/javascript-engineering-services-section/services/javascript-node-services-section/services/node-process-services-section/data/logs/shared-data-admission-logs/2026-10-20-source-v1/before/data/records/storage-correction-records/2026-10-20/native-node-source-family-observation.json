@@ -1,0 +1,279 @@
+{
+  "kind": "NativeNodeSourceFamilyObservation",
+  "at": "2026-10-21T00:01:01.016080+00:00",
+  "repository": "red-cup-engineering/node-process-services-section",
+  "base": "9ea4f22f9e56fe67d936d629fae8033634903b7b",
+  "executedSource": {
+    "src/clock.mjs": "f65ec1ff8deaa0b3ebb98295e28f0740b34c9dadeda010756c196e6480a185b9",
+    "src/command.mjs": "51c3e72bc15b1b7464282429442da5db221f9d4402715dc8f61cafee76ac8d05",
+    "src/config.mjs": "4325393e8722cc1aeeb6d25627531c6c0ee51d1fb4b654b2bfe41d152ee26387",
+    "src/entropy.mjs": "318318f79b36bc142951324d080ca7f89c1883a756ebbb8d9c46d38f253dd7fe",
+    "src/entrypoint.mjs": "d3e75a5fff5b8057d0189ada61ea5c5664cf2171ab57b8b2624b1a8ce9a797c9",
+    "src/environment.mjs": "585ade712d1ae1e459a30c363a38b115f7732c95c3354d35d032eae81c427ee7",
+    "src/lifecycle-schema-schema.mjs": "614c50a0708ff380c9688e5c8081674f7b7bfdc1f99be5e21fa9e0df5a70fb87",
+    "src/lifecycle.mjs": "64285ae1a93498d8ca0f00cdf8c3187ea80e9b9ffdeaca425e274cc7a82584a6",
+    "src/main-runner.mjs": "fbe2032803b9511b10cc24af081f6a5fdeff52a5e3e488717dccffe69f466d8f",
+    "src/stdio.mjs": "ddba6f5dd52f6a3c5af53ab27544c76e3b3fb1a6cb1f69a8e8dfe2d8bd4f85cd",
+    "test/command.test.mjs": "015b3abe97d6633989723192e0c220717b23ee044c97adb9ce8c073d7c78617e",
+    "test/config.test.mjs": "4f260290dad9355dc5e3c105105377533016277a9ab32b8244f28f0c56eeb2c1",
+    "test/entrypoint.test.mjs": "fba9cc5b7e7ef42f780837203dfeb32508dc8fa72403571debb4011d413cf4a9",
+    "test/environment.test.mjs": "964ad659ed53b49c425a9859d16d713fef826b9ec1557f876681fdc794524df0"
+  },
+  "node": {
+    "path": "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+    "sha256": "50a72373396c7051debb94435f7f0eb2b35518357888204204415652f41e0d3c"
+  },
+  "entrance": [
+    "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+    "--max-old-space-size=96",
+    "--test",
+    "--test-concurrency=1",
+    "test/config.test.mjs",
+    "test/command.test.mjs",
+    "test/environment.test.mjs",
+    "test/entrypoint.test.mjs"
+  ],
+  "actualResult": {
+    "status": 0,
+    "seconds": 1.1718837859999667,
+    "maxRssKiBChildren": 65672,
+    "stdoutBytes": 3931,
+    "stderrBytes": 0,
+    "processGroupAbsent": true,
+    "sourceUnchanged": true
+  },
+  "summary": {
+    "tests": 49,
+    "pass": 49,
+    "fail": 0,
+    "cancelled": 0,
+    "skipped": 0,
+    "todo": 0
+  },
+  "cases": [
+    {
+      "name": "projects a successful canonical command result to a successful lifecycle",
+      "result": "pass"
+    },
+    {
+      "name": "projects a failed canonical command result to a failed lifecycle",
+      "result": "pass"
+    },
+    {
+      "name": "an owning section can be its own checkout (directory)",
+      "result": "pass"
+    },
+    {
+      "name": "an owning section can be its own checkout (worktree-file)",
+      "result": "pass"
+    },
+    {
+      "name": "an owning section can be its own checkout (none)",
+      "result": "pass"
+    },
+    {
+      "name": "a nested section is admitted independently of its ancestor checkout",
+      "result": "pass"
+    },
+    {
+      "name": "an app selects its owning section through its existing explicit input",
+      "result": "pass"
+    },
+    {
+      "name": "an arbitrary selected root is refused (some-random-directory)",
+      "result": "pass"
+    },
+    {
+      "name": "an arbitrary selected root is refused (checkout)",
+      "result": "pass"
+    },
+    {
+      "name": "an arbitrary selected root is refused (-services-section)",
+      "result": "pass"
+    },
+    {
+      "name": "an arbitrary selected root is refused (data)",
+      "result": "pass"
+    },
+    {
+      "name": "a missing owner is refused without creating it",
+      "result": "pass"
+    },
+    {
+      "name": "an owner that is a regular file is refused",
+      "result": "pass"
+    },
+    {
+      "name": "an existing disguised installation or home root is refused (.local/state/widget-services-section)",
+      "result": "pass"
+    },
+    {
+      "name": "an existing disguised installation or home root is refused (node_modules/widget-services-section)",
+      "result": "pass"
+    },
+    {
+      "name": "the real home .local selection is refused using read-only resolution",
+      "result": "pass"
+    },
+    {
+      "name": "an immutable installed-code root is refused before any data creation",
+      "result": "pass"
+    },
+    {
+      "name": "symlink backing is refused (owner)",
+      "result": "pass"
+    },
+    {
+      "name": "symlink backing is refused (ancestor)",
+      "result": "pass"
+    },
+    {
+      "name": "symlink backing is refused (dangling-owner)",
+      "result": "pass"
+    },
+    {
+      "name": "existing data backing is refused (file)",
+      "result": "pass"
+    },
+    {
+      "name": "existing data backing is refused (symlink)",
+      "result": "pass"
+    },
+    {
+      "name": "existing data backing is refused (dangling-symlink)",
+      "result": "pass"
+    },
+    {
+      "name": "an existing real data tier is admitted and cannot itself be selected",
+      "result": "pass"
+    },
+    {
+      "name": "config then environment then argv precedence and relative inputs are preserved",
+      "result": "pass"
+    },
+    {
+      "name": "absolute default is independent of invoking cwd",
+      "result": "pass"
+    },
+    {
+      "name": "custom config selectors and root flags retain their precedence",
+      "result": "pass"
+    },
+    {
+      "name": "empty or repeated process flags are refused ([\"--data-root\"])",
+      "result": "pass"
+    },
+    {
+      "name": "empty or repeated process flags are refused ([\"--data-root=\"])",
+      "result": "pass"
+    },
+    {
+      "name": "empty or repeated process flags are refused ([\"--data-root\",\"--domain=x\"])",
+      "result": "pass"
+    },
+    {
+      "name": "empty or repeated process flags are refused ([\"--data-root=x\",\"--data-root=y\"])",
+      "result": "pass"
+    },
+    {
+      "name": "empty or repeated process flags are refused ([\"--config\"])",
+      "result": "pass"
+    },
+    {
+      "name": "empty or repeated process flags are refused ([\"--config=\"])",
+      "result": "pass"
+    },
+    {
+      "name": "empty or repeated process flags are refused ([\"--config=x\",\"--config=y\"])",
+      "result": "pass"
+    },
+    {
+      "name": "invalid process configuration is refused ({invalid)",
+      "result": "pass"
+    },
+    {
+      "name": "invalid process configuration is refused ([])",
+      "result": "pass"
+    },
+    {
+      "name": "invalid process configuration is refused (null)",
+      "result": "pass"
+    },
+    {
+      "name": "invalid process configuration is refused ({\"dataRoot\":1})",
+      "result": "pass"
+    },
+    {
+      "name": "invalid process configuration is refused ({\"dataRoot\":\" \"})",
+      "result": "pass"
+    },
+    {
+      "name": "an empty config object leaves the default selected",
+      "result": "pass"
+    },
+    {
+      "name": "a configured legacy environment input is still refused",
+      "result": "pass"
+    },
+    {
+      "name": "relative defaults remain invalid",
+      "result": "pass"
+    },
+    {
+      "name": "process config arguments are removed before the domain dispatcher",
+      "result": "pass"
+    },
+    {
+      "name": "a script run by its real path is the entry; a module it imports is not",
+      "result": "pass"
+    },
+    {
+      "name": "a script run through a symlinked package directory under node_modules is the entry",
+      "result": "pass"
+    },
+    {
+      "name": "a script run under a symlinked top-level directory is the entry",
+      "result": "pass"
+    },
+    {
+      "name": "a missing, empty or unresolvable argv[1] answers false and never throws",
+      "result": "pass"
+    },
+    {
+      "name": "an explicit argv slot naming this file answers true, and the older name agrees",
+      "result": "pass"
+    },
+    {
+      "name": "puts the running Node.js first on PATH once and keeps the rest of the environment",
+      "result": "pass"
+    }
+  ],
+  "rawLogs": {
+    "intent.json": {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/corrected-native-v2/intent.json",
+      "bytes": 3014,
+      "sha256": "d4640de724caa702b80b33a0e5ac34301f4e6d4e63b285a63b7c59b1ae5d10cf"
+    },
+    "stdout": {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/corrected-native-v2/stdout",
+      "bytes": 3931,
+      "sha256": "617b7afb12766225240019fe7b852a96cd3d561e44b49265ca1cbf9c0d53fc1d"
+    },
+    "stderr": {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/corrected-native-v2/stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "result.json": {
+      "path": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/corrected-native-v2/result.json",
+      "bytes": 181,
+      "sha256": "3d15739dd1f5e45314c9870d7dac669e424af725154d6255ee0613ae1171aaee"
+    }
+  },
+  "limits": [
+    "Four source Node families only; not shared npm runner/dependency closure or packaged consumer qualification.",
+    "All scratch and caches under owning section data/logs. Real home .local selection was only resolved and refused; never created.",
+    "Previous baseline14/15 and authoring48/49 failures retained in proposal and logs; not replaced by this success.",
+    "CSE dependency/deployment bindings and actual federation use remain open."
+  ]
+}

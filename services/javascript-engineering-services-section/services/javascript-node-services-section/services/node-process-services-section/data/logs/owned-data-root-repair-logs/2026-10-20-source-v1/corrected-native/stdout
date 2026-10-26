@@ -1,0 +1,90 @@
+✔ projects a successful canonical command result to a successful lifecycle (7.11959ms)
+✔ projects a failed canonical command result to a failed lifecycle (0.650227ms)
+✔ an owning section can be its own checkout (directory) (25.498901ms)
+✔ an owning section can be its own checkout (worktree-file) (4.715171ms)
+✔ an owning section can be its own checkout (none) (4.305793ms)
+✔ a nested section is admitted independently of its ancestor checkout (6.9282ms)
+✔ an app selects its owning section through its existing explicit input (5.859788ms)
+✔ an arbitrary selected root is refused (some-random-directory) (2.444823ms)
+✔ an arbitrary selected root is refused (checkout) (2.985645ms)
+✔ an arbitrary selected root is refused (-services-section) (3.026231ms)
+✔ an arbitrary selected root is refused (data) (3.259036ms)
+✔ a missing owner is refused without creating it (2.734132ms)
+✔ an owner that is a regular file is refused (2.531777ms)
+✔ an existing disguised installation or home root is refused (.local/state/widget-services-section) (5.31061ms)
+✔ an existing disguised installation or home root is refused (node_modules/widget-services-section) (3.706927ms)
+✔ the real home .local selection is refused using read-only resolution (0.454714ms)
+✔ an immutable installed-code root is refused before any data creation (16.04485ms)
+✔ symlink backing is refused (owner) (6.110532ms)
+✔ symlink backing is refused (ancestor) (4.994033ms)
+✔ symlink backing is refused (dangling-owner) (3.829407ms)
+✔ existing data backing is refused (file) (3.065525ms)
+✔ existing data backing is refused (symlink) (5.441482ms)
+✔ existing data backing is refused (dangling-symlink) (4.175364ms)
+✔ an existing real data tier is admitted and cannot itself be selected (5.380516ms)
+✔ config then environment then argv precedence and relative inputs are preserved (10.071286ms)
+✔ absolute default is independent of invoking cwd (4.692458ms)
+✔ custom config selectors and root flags retain their precedence (5.858086ms)
+✔ empty or repeated process flags are refused (["--data-root"]) (3.705734ms)
+✔ empty or repeated process flags are refused (["--data-root="]) (2.902973ms)
+✖ empty or repeated process flags are refused (["--data-root","--config=x"]) (3.080355ms)
+✔ empty or repeated process flags are refused (["--data-root=x","--data-root=y"]) (2.177056ms)
+✔ empty or repeated process flags are refused (["--config"]) (1.741926ms)
+✔ empty or repeated process flags are refused (["--config="]) (1.919905ms)
+✔ empty or repeated process flags are refused (["--config=x","--config=y"]) (1.763848ms)
+✔ invalid process configuration is refused ({invalid) (2.301721ms)
+✔ invalid process configuration is refused ([]) (1.986366ms)
+✔ invalid process configuration is refused (null) (1.98651ms)
+✔ invalid process configuration is refused ({"dataRoot":1}) (1.871354ms)
+✔ invalid process configuration is refused ({"dataRoot":" "}) (1.898501ms)
+✔ an empty config object leaves the default selected (2.062459ms)
+✔ a configured legacy environment input is still refused (1.838903ms)
+✔ relative defaults remain invalid (0.106706ms)
+✔ process config arguments are removed before the domain dispatcher (0.188863ms)
+✔ a script run by its real path is the entry; a module it imports is not (64.884865ms)
+✔ a script run through a symlinked package directory under node_modules is the entry (66.263467ms)
+✔ a script run under a symlinked top-level directory is the entry (62.517858ms)
+✔ a missing, empty or unresolvable argv[1] answers false and never throws (66.997879ms)
+✔ an explicit argv slot naming this file answers true, and the older name agrees (1.198665ms)
+✔ puts the running Node.js first on PATH once and keeps the rest of the environment (0.886187ms)
+ℹ tests 49
+ℹ suites 0
+ℹ pass 48
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 816.485794
+
+✖ failing tests:
+
+test at test/config.test.mjs:115:3
+✖ empty or repeated process flags are refused (["--data-root","--config=x"]) (3.080355ms)
+  AssertionError [ERR_ASSERTION]: The input did not match the regular expression /requires a non-empty value|must be supplied once/. Input:
+  
+  "Error: invalid process config /home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/corrected-native/fixtures/node-process-owner-eVgd8i/widget-services-section/x: ENOENT: no such file or directory, open '/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/corrected-native/fixtures/node-process-owner-eVgd8i/widget-services-section/x'"
+  
+      at TestContext.<anonymous> (file:///home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/candidate/test/config.test.mjs:116:46)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1325:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:911:18)
+      at Test.postRun (node:internal/test_runner/test:1465:19)
+      at Test.run (node:internal/test_runner/test:1390:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:911:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: Error: invalid process config /home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/corrected-native/fixtures/node-process-owner-eVgd8i/widget-services-section/x: ENOENT: no such file or directory, open '/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/corrected-native/fixtures/node-process-owner-eVgd8i/widget-services-section/x'
+        at readDataRootConfig (file:///home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/candidate/src/config.mjs:97:15)
+        at processDataRootConfig (file:///home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/candidate/src/config.mjs:44:28)
+        at configFor (file:///home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/candidate/test/config.test.mjs:15:10)
+        at file:///home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/candidate/test/config.test.mjs:116:59
+        at getActual (node:assert:611:5)
+        at strict.throws (node:assert:759:24)
+        at TestContext.<anonymous> (file:///home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-process-services-section/data/logs/owned-data-root-repair-logs/2026-10-20-source-v1/candidate/test/config.test.mjs:116:46)
+        at Test.runInAsyncScope (node:async_hooks:227:14)
+        at Test.run (node:internal/test_runner/test:1325:25)
+        at Test.processPendingSubtests (node:internal/test_runner/test:911:18),
+    expected: /requires a non-empty value|must be supplied once/,
+    operator: 'throws',
+    diff: 'simple'
+  }

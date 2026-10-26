@@ -1,0 +1,95 @@
+{
+  "at": "2026-10-21T00:12:00.090Z",
+  "repository": {
+    "id": 1425297553,
+    "full_name": "red-cup-engineering/node-process-services-section",
+    "private": false,
+    "default_branch": "main",
+    "archived": false,
+    "disabled": false,
+    "permissions": {
+      "push": true
+    }
+  },
+  "branch": "codex/require-service-owned-data-roots",
+  "parent": "9ea4f22f9e56fe67d936d629fae8033634903b7b",
+  "candidate": "71b71a26157ab8d1638f5471bc299d2dc1735912",
+  "tree": "3ec1e72a033ae2c404a2481f2a775e7168d3aa75",
+  "number": 1,
+  "url": "https://github.com/red-cup-engineering/node-process-services-section/pull/1",
+  "files": [
+    {
+      "path": "package.json",
+      "gitBlob": "fef6008c0e2771c05c522e64f5fdff62c596ed68",
+      "sha256": "6e7e7a190785aa2a0447b56ae61b46028363a752171abc6fa2b03723ed977ba7",
+      "bytes": 1588,
+      "mode": "100644"
+    },
+    {
+      "path": "src/config.mjs",
+      "gitBlob": "c4390e30692b3fb9f7b1ee88d10e5c6923468f31",
+      "sha256": "4325393e8722cc1aeeb6d25627531c6c0ee51d1fb4b654b2bfe41d152ee26387",
+      "bytes": 8469,
+      "mode": "100644"
+    },
+    {
+      "path": "test/config.test.mjs",
+      "gitBlob": "62bda69711d70779880f7ad35a2c192fb3d55b54",
+      "sha256": "4f260290dad9355dc5e3c105105377533016277a9ab32b8244f28f0c56eeb2c1",
+      "bytes": 9444,
+      "mode": "100644"
+    },
+    {
+      "path": "specifications/requirements.md",
+      "gitBlob": "9fcc6a10d8b97ec003cc5c1d9325e48f638358e0",
+      "sha256": "45aedbb8b535df05bab626678001e2d6c012ffb103a243e66374174369052da4",
+      "bytes": 1946,
+      "mode": "100644"
+    },
+    {
+      "path": "specifications/design.md",
+      "gitBlob": "e3d57eb47dc983d51f46769278ca7fd16e5f74a1",
+      "sha256": "0e6e9337bea55f3105768a52d90d91eb0138e897be0c0c4e693866ab1f60fbd5",
+      "bytes": 1855,
+      "mode": "100644"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/node-process-owned-data-root-source-proposal.json",
+      "gitBlob": "cd5d17a5a792beccb85f30599bb9b6a043d7cd0f",
+      "sha256": "6b44a6cdf7b79529ae1e7025be999ec5eb250f03070c2f9a6d775d87b28dd902",
+      "bytes": 21233,
+      "mode": "100644"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/commit-tree-field-correction-receiving.json",
+      "gitBlob": "21946b9384bd661f375241a3eddad7d845271898",
+      "sha256": "f24c3bad4de70f6dd1825ee6c70946ab859f92ca4386a9fefe97a49ffd86a208",
+      "bytes": 1075,
+      "mode": "100644"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/native-node-source-family-observation.json",
+      "gitBlob": "c82a4104b6c3a5c04de39f82e2fc45f6de2bfd49",
+      "sha256": "da5802cf4d3ca05de8bbe3f623f93940ca2281c98bfd919de54db7948282c2e1",
+      "bytes": 10677,
+      "mode": "100644"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/owner-repository-parent-gitlink-receiving.json",
+      "gitBlob": "56cdf2974c6e13edaba725d87b26e3787fdb77e9",
+      "sha256": "98ad894d87515e4abe37b5bab12aeedb9b07963cdc3294a2e4b2473e73942959",
+      "bytes": 1786,
+      "mode": "100644"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/independent-node-process-owned-data-root-source-receiving.json",
+      "gitBlob": "db611ecb53ea91ff83c499e8d7b914c922fea3d7",
+      "sha256": "20ea35ebb1fad04c8798cdd91ee585a31307dda7315519704f22ca73b08c1e0b",
+      "bytes": 14242,
+      "mode": "100644"
+    }
+  ],
+  "allOtherSourceLeavesAndGitlinksPreserved": true,
+  "rawProviderPayloadsPublished": false,
+  "nativePackageOrConsumerQualificationClaimed": false
+}

@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "/usr/bin/systemd-run",
+    "--user",
+    "--scope",
+    "--quiet",
+    "--unit=cd81-retired-intake-source-20261021-v2",
+    "--property=MemoryMax=96M",
+    "--property=CPUQuota=100%",
+    "--property=RuntimeMaxSec=10s",
+    "/gnu/store/kba00zrnc1d1cg9bkx0krpvc2sp7wzrh-node-24.18.0/bin/node",
+    "--test",
+    "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/continuous-delivery-services-section/data/logs/pull-receiving-logs/2026-10-21-retired-intake-fleet-81/candidate-v1/test/retired-intake-fleet.test.mjs"
+  ],
+  "HOME": "/home/emsenn",
+  "CODEX_HOME": "/home/emsenn/.codex",
+  "TMPDIR": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/computer-engineering-services-section/services/computer-code-engineering-services-section/services/computer-code-development-services-section/services/continuous-delivery-services-section/data/logs/pull-receiving-logs/2026-10-21-retired-intake-fleet-81/native-v2/temporary-logs",
+  "yamlSupplier": "/home/emsenn/info/lib/emsenn/services/561-group/services/engineering-services-section/services/github-engineering-services-section/data/logs/repository-custody-logs/2026-10-21-union-free-compute-original-v1/cd-yaml-supplier-v1/package",
+  "receiptSHA256": "be9e0eafaf968c3f89760d210628b66c3b431b966c8c94a4e3f63151267e2651"
+}

@@ -1,0 +1,271 @@
+{
+  "sha": "993ef058fa8fec8f1ca9f7127cc6dc42772ec6fc",
+  "truncated": false,
+  "tree": [
+    {
+      "path": ".npmrc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a1f8151935f5a483c368cd930c26519cb3663cf",
+      "size": 37,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/0a1f8151935f5a483c368cd930c26519cb3663cf"
+    },
+    {
+      "path": "data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "57eae1354b01a373a9f15df5cdea3795537a75c1",
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/trees/57eae1354b01a373a9f15df5cdea3795537a75c1"
+    },
+    {
+      "path": "data/records",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fae6579ace09a7515175fd5ebe1b683d89c1d230",
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/trees/fae6579ace09a7515175fd5ebe1b683d89c1d230"
+    },
+    {
+      "path": "data/records/storage-correction-records",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f06058366246ccbafaa959256c00d62218635ec9",
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/trees/f06058366246ccbafaa959256c00d62218635ec9"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2f1651fc75a784aa1ac75d611dc50c0e9c67db80",
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/trees/2f1651fc75a784aa1ac75d611dc50c0e9c67db80"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/commit-tree-field-correction-receiving.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21946b9384bd661f375241a3eddad7d845271898",
+      "size": 1075,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/21946b9384bd661f375241a3eddad7d845271898"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/independent-node-process-owned-data-root-source-receiving.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db611ecb53ea91ff83c499e8d7b914c922fea3d7",
+      "size": 14242,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/db611ecb53ea91ff83c499e8d7b914c922fea3d7"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/independent-shared-owned-data-corrected-context-receiving.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42231488b500d0188fe44766cc44635587553bd1",
+      "size": 5303,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/42231488b500d0188fe44766cc44635587553bd1"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/independent-shared-owned-data-source-receiving.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a255907bcfd99c18309cd2de293452cdbfeffcb2",
+      "size": 3980,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/a255907bcfd99c18309cd2de293452cdbfeffcb2"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/native-node-source-family-observation.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c82a4104b6c3a5c04de39f82e2fc45f6de2bfd49",
+      "size": 10677,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/c82a4104b6c3a5c04de39f82e2fc45f6de2bfd49"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/node-process-owned-data-root-source-proposal.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd5d17a5a792beccb85f30599bb9b6a043d7cd0f",
+      "size": 21233,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/cd5d17a5a792beccb85f30599bb9b6a043d7cd0f"
+    },
+    {
+      "path": "data/records/storage-correction-records/2026-10-20/owner-repository-parent-gitlink-receiving.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56cdf2974c6e13edaba725d87b26e3787fdb77e9",
+      "size": 1786,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/56cdf2974c6e13edaba725d87b26e3787fdb77e9"
+    },
+    {
+      "path": "package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf7a3f5168ac3eb07457a726c56d6cfc4bfc4722",
+      "size": 1588,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/cf7a3f5168ac3eb07457a726c56d6cfc4bfc4722"
+    },
+    {
+      "path": "specifications",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5dab04cfac87f980295fa8fe37ec15e799dd556b",
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/trees/5dab04cfac87f980295fa8fe37ec15e799dd556b"
+    },
+    {
+      "path": "specifications/design.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3d57eb47dc983d51f46769278ca7fd16e5f74a1",
+      "size": 1855,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/e3d57eb47dc983d51f46769278ca7fd16e5f74a1"
+    },
+    {
+      "path": "specifications/explicit-owned-data-admission.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81ef12a8bfe88834a4fe0c65b4a50ee52d832da5",
+      "size": 4327,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/81ef12a8bfe88834a4fe0c65b4a50ee52d832da5"
+    },
+    {
+      "path": "specifications/requirements.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fcc6a10d8b97ec003cc5c1d9325e48f638358e0",
+      "size": 1946,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/9fcc6a10d8b97ec003cc5c1d9325e48f638358e0"
+    },
+    {
+      "path": "src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cd3e9d1a64aa7a75ba5a853374eb309280bb2dfd",
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/trees/cd3e9d1a64aa7a75ba5a853374eb309280bb2dfd"
+    },
+    {
+      "path": "src/clock.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ac3a38e653d9ac224b5839bea10cecf93a43e8a",
+      "size": 338,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/8ac3a38e653d9ac224b5839bea10cecf93a43e8a"
+    },
+    {
+      "path": "src/command.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6132d70597933cab3974fc5206a28e58f2342344",
+      "size": 3161,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/6132d70597933cab3974fc5206a28e58f2342344"
+    },
+    {
+      "path": "src/config.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb50e1b09f521af88c722d25e2240bc836a5a0bd",
+      "size": 11540,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/eb50e1b09f521af88c722d25e2240bc836a5a0bd"
+    },
+    {
+      "path": "src/entropy.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e92b816419c65228f3d2c8ff803f7e4ce6a00894",
+      "size": 216,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/e92b816419c65228f3d2c8ff803f7e4ce6a00894"
+    },
+    {
+      "path": "src/entrypoint.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05f3152276fe0b11d334d05309039597cd257100",
+      "size": 2546,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/05f3152276fe0b11d334d05309039597cd257100"
+    },
+    {
+      "path": "src/environment.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a366c71785cc423bc5bdc413be0d36f37d08655c",
+      "size": 1164,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/a366c71785cc423bc5bdc413be0d36f37d08655c"
+    },
+    {
+      "path": "src/lifecycle-schema-schema.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15b476b31ce56e104f37166a73eac12621d5278b",
+      "size": 4459,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/15b476b31ce56e104f37166a73eac12621d5278b"
+    },
+    {
+      "path": "src/lifecycle.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5a3f1f80406265981f7f143d264f63ce4567eb6",
+      "size": 1763,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/b5a3f1f80406265981f7f143d264f63ce4567eb6"
+    },
+    {
+      "path": "src/main-runner.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db7a40ccc1351b982e35d1c6cce5451048c4d585",
+      "size": 1784,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/db7a40ccc1351b982e35d1c6cce5451048c4d585"
+    },
+    {
+      "path": "src/stdio.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a44c25504eb42fdd49490bc9d23c969545ecd216",
+      "size": 927,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/a44c25504eb42fdd49490bc9d23c969545ecd216"
+    },
+    {
+      "path": "test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "419bce7ce8a77b83e27fee8ddbda9b019dbc299d",
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/trees/419bce7ce8a77b83e27fee8ddbda9b019dbc299d"
+    },
+    {
+      "path": "test/command.test.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9fb4b91226678f7a8ca37aa2221b5f040d4e99c",
+      "size": 1468,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/c9fb4b91226678f7a8ca37aa2221b5f040d4e99c"
+    },
+    {
+      "path": "test/config.test.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62bda69711d70779880f7ad35a2c192fb3d55b54",
+      "size": 9444,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/62bda69711d70779880f7ad35a2c192fb3d55b54"
+    },
+    {
+      "path": "test/entrypoint.test.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00f065f625fc14e15f9d563681c19f6fc492870c",
+      "size": 4128,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/00f065f625fc14e15f9d563681c19f6fc492870c"
+    },
+    {
+      "path": "test/environment.test.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69550f3b9de56b567559ee34f5bdcad095a511cd",
+      "size": 612,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/69550f3b9de56b567559ee34f5bdcad095a511cd"
+    },
+    {
+      "path": "test/owned-data-admission.test.mjs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d40707d215e05abea030427278daa114580d27ba",
+      "size": 8377,
+      "url": "https://api.github.com/repos/red-cup-engineering/node-process-services-section/git/blobs/d40707d215e05abea030427278daa114580d27ba"
+    }
+  ]
+}

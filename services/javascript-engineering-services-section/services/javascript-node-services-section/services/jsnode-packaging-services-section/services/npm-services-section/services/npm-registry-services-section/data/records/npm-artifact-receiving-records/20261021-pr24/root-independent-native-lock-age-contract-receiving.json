@@ -1,0 +1,7 @@
+{
+  "kind": "IndependentBoundedCallerContractReceiving",
+  "decision": "APPROVE_EXACT_RECEIVED_OLD_AND_NEW_RELEASE_ADMISSION",
+  "proposalSHA256": "57751a76c025428fb1bf89998c6f9dd6a5a72cae3c108184e450826771c50fe1",
+  "observed": "Both independently retained SHA512 provider receipts and helper/plan exact hashes verified; repeated exact name@version PNPM flags match actual Code14.24 owner contract. No broad scope exclusion/external age policy weakening/dependency or lock handedit. Preserve original failedattempt and unchanged preimage; continuation requires fresh original floor admission.",
+  "at": "2026-10-21T03:35:22.907246+00:00"
+}

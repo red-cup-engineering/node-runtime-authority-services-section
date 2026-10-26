@@ -1,0 +1,339 @@
+--- a/specifications/requirements.md
++++ b/specifications/requirements.md
+@@ -52,6 +52,17 @@
+ and durable output shall reconcile the original publication without another
+ push or review. A local-only invocation remains available.
+ 
++Before a new `--apply --publish` retirement removes or commits any source,
++the service MUST qualify the selected original mode/type/blob preimages at an
++actual advertised original remote commit. The accepted local immutable plan
++cut need not itself exist at that remote. Retain both the reviewed plan cut
++and the independently received remote source lease; never substitute local
++HEAD for remote source identity. If remote observation, acquisition or any
++selected preimage check fails, refuse before deletion or commit. Local-only
++apply shall not require an origin or remote availability. A retained source
++candidate or completed merge shall continue its original receiving path on
++replay, without preparing a replacement candidate or push.
++
+ The same command shall optionally publish the retirement's plan, completed
+ result and explicitly selected supporting records through the existing maker.
+ The caller supplies their actual repository and the maker's reviewed-path
+--- a/specifications/design.md
++++ b/specifications/design.md
+@@ -56,11 +56,27 @@
+ receipt. Omitted owners retain the original same-repository behavior.
+ 
+ `--apply --publish --output=RESULT.json` composes the existing local retirement
+-and Fabrication's public source maker. The result's immutable original
+-mode/type/blob entries become the maker's `reviewedSource`; removed and
+-previously absent selected paths form the complete publication cut. This
++and Fabrication's public source maker. Before its first deletion, source
++preparation reads the original origin's advertised main commit and uses the
++existing Fabrication/Git source reader to compare every selected original
++mode/type/blob against that independently acquired commit. The accepted plan
++revision remains the local review identity; the distinct remote revision and
++origin become a retained source-preparation witness and the maker's
++`reviewedSource`. A local-only immutable plan cut therefore does not have to
++be fetchable from the original remote. Unknown remote state or mismatched
++selected preimages refuses before local effects. Removed and previously
++absent selected paths form the complete publication cut. This
+ service contains no GitHub publication or merge algorithm. Save the local
+ receipt before publication and the returned source result afterwards.
++The receiving root is the plan's validated actual `repositoryRoot`, passed
++explicitly as Fabrication's `packageRoot`; process cwd does not choose the
++retirement or publication owner. The selected Fabrication0.4.15-dev.243
++provider owns `git-objects.mjs` and its bounded immutable metadata transport.
++Resolve that exact sibling from its public `git/github-candidate` selection;
++do not copy its fetch/shallow/readback machinery. This is an explicitly
++qualified internal supplier boundary, not a claim that the helper has a
++published public export. Promoting that shared reader to a public API remains
++a separate conformance concern.
+ Retain a failed receiving result's candidate and merge identity; on replay,
+ check the retained root and path set, then ask the same maker to receive that
+ candidate. No working-tree reinterpretation or replacement review is needed.
+--- a/src/tracked-legacy-retirement.mjs
++++ b/src/tracked-legacy-retirement.mjs
+@@ -191,9 +191,14 @@
+   const selected = result.outcomes.filter(row => ['removed', 'absent'].includes(row.state));
+   if (!selected.length) return {ok: true, phase: 'unchanged', paths: []};
+   const paths = selected.map(row => result.legacyRoot + '/' + row.path);
++  let reviewedSource;
++  if (!previousPublication?.candidate) {
++    const {reviewedSourceForTrackedLegacyRetirement} = await import('./tracked-legacy-source-publication.mjs');
++    reviewedSource = await reviewedSourceForTrackedLegacyRetirement(result, selected);
++  }
+   return publishRetirementPaths({root: result.repositoryRoot, previousPublication, maker, request: {
+     paths, message: 'Retire reviewed Git-preserved legacy capabilities', push: true,
+-    reviewedSource: {revision: result.revision, entries: selected.map(row => ({path: result.legacyRoot + '/' + row.path, mode: row.mode, type: row.type, sha: row.blob}))}
++    ...(reviewedSource ? {reviewedSource} : {})
+   }});
+ }
+ 
+--- a/scripts/retire-tracked-legacy-capabilities.mjs
++++ b/scripts/retire-tracked-legacy-capabilities.mjs
+@@ -3,6 +3,7 @@
+ import {dirname, resolve} from 'node:path';
+ import {retireTrackedLegacyCapabilities, commitTrackedLegacyRetirement, publishTrackedLegacyRetirement, prepareTrackedLegacyRecordPublication, publishTrackedLegacyRecords} from '../src/tracked-legacy-retirement.mjs';
+ import {prepareTrackedLegacyRetirementBatch} from '../src/tracked-legacy-batch.mjs';
++import {prepareTrackedLegacySourcePublication} from '../src/tracked-legacy-source-publication.mjs';
+ 
+ let [path, ...args] = process.argv.slice(2);
+ if (!path || args.some(x => !['--apply','--publish'].includes(x) && !['--output=','--publish-records=','--records-output='].some(prefix => x.startsWith(prefix)))) throw new TypeError('usage: retire-tracked-legacy-capabilities PLAN.json [--apply [--publish]] [--output=RESULT.json] [--publish-records=REQUEST.json --records-output=RECEIPT.json]');
+@@ -48,8 +49,12 @@
+   records = await prepareTrackedLegacyRecordPublication({request:JSON.parse(readFileSync(recordsRequest,'utf8')), planPath:path, planBytes, resultPath:output, receiptPath:recordsOutput, previousPublication:priorRecords});
+   if (records.replay && (!prior?.publication?.ok || !['committed','already-landed'].includes(prior?.landing?.state))) throw new TypeError('record publication replay requires its completed retirement result');
+ }
++const sourcePreparation = !records?.replay && args.includes('--publish')
++  ? await prepareTrackedLegacySourcePublication({result:retireTrackedLegacyCapabilities({plan}), previousPublication:prior?.publication})
++  : undefined;
+ const result = records?.replay ? prior : retireTrackedLegacyCapabilities({plan, apply: args.includes('--apply')});
+ if (result.apply && !records?.replay) {
++  if (sourcePreparation ?? prior?.sourcePreparation) result.sourcePreparation = sourcePreparation ?? prior.sourcePreparation;
+   try { result.landing = commitTrackedLegacyRetirement({result}); }
+   catch (error) { result.landing = {state: 'uncommitted', error: error.message}; process.exitCode = 1; }
+ }
+--- a/test/tracked-legacy-publication-cli.test.mjs
++++ b/test/tracked-legacy-publication-cli.test.mjs
+@@ -13,7 +13,7 @@
+ 
+ // The service is the consumer under test. All source effects use native local
+ // Git and Fabrication's existing provider fixtures through its public export.
+-function fixture(t, {withRecords = false} = {}) {
++function fixture(t, {withRecords = false, localReview = false, remoteChange} = {}) {
+   const root = mkdtempSync(path.join(tmpdir(), 'legacy-publication-cli-'));
+   t.after(() => rmSync(root, {recursive: true, force: true}));
+   const repository = path.join(root, 'work'), remote = path.join(root, 'source.git');
+@@ -36,13 +36,14 @@
+     'other-writer.txt':'original unrelated source\n'
+   })) writeFileSync(path.join(repository, name), body);
+   git('add', '.'); git('commit', '-qm', 'Original capability source');
+-  const revision = git('rev-parse', 'HEAD');
++  const originalRevision = git('rev-parse', 'HEAD');
+   git('remote', 'add', 'origin', remote); git('push', '-q', 'origin', 'main');
+   // This already-committed absence is outside the reviewed cut. Pushing local
+   // HEAD would lose it upstream, so source publication must preserve it.
+   git('rm', '-q', 'lib/legacy/batch/unreceived.md');
+   git('commit', '-qm', 'Separate unreceived native absence');
+   const localParent = git('rev-parse', 'HEAD');
++  const revision = localReview ? localParent : originalRevision;
+   writeFileSync(path.join(repository, 'other-writer.txt'), 'another writer staged this\n');
+   git('add', 'other-writer.txt');
+   const staged = git('diff', '--cached', '--raw', '-z');
+@@ -153,9 +154,9 @@
+     writeFileSync(path.join(concurrent, 'upstream-only.txt'), 'independent records source\n');
+     raw(concurrent, ['add', '.']); raw(concurrent, ['commit', '-qm', 'Concurrent unselected records source']); raw(concurrent, ['push', '-q', 'origin', 'main']);
+   }
+-  const run = ({outage=false, extraArgs=[], recordsReceipt=recordsOutput, mutateRecord, physicalRecordsRoot=recordsRepository}={}) => {
++  const run = ({outage=false, extraArgs=[], recordsReceipt=recordsOutput, mutateRecord, physicalRecordsRoot=recordsRepository, cwd=repository}={}) => {
+     const execution = spawnSync(process.execPath, [cli, planPath, '--apply', '--publish', '--output='+output, ...(withRecords ? ['--publish-records='+recordsRequestPath, '--records-output='+recordsReceipt] : []), ...extraArgs],
+-      {cwd:repository, env:{...env, RETIREMENT_TEST_RECORDS_PHYSICAL_ROOT:physicalRecordsRoot, RETIREMENT_TEST_OUTAGE:outage===true?'1':outage||'0', ...(mutateRecord?{RETIREMENT_TEST_MUTATE_RECORD:path.join(recordsRepository,mutateRecord)}:{})}, encoding:'utf8', timeout:60000, maxBuffer:2*1024*1024});
++      {cwd, env:{...env, RETIREMENT_TEST_RECORDS_PHYSICAL_ROOT:physicalRecordsRoot, RETIREMENT_TEST_OUTAGE:outage===true?'1':outage||'0', ...(mutateRecord?{RETIREMENT_TEST_MUTATE_RECORD:path.join(recordsRepository,mutateRecord)}:{})}, encoding:'utf8', timeout:60000, maxBuffer:2*1024*1024});
+     return {...execution, result:existsSync(output)?JSON.parse(readFileSync(output,'utf8')):undefined, records:existsSync(recordsOutput)?JSON.parse(readFileSync(recordsOutput,'utf8')):undefined};
+   };
+   const upstream = (...args) => raw(root, ['--git-dir', remote, ...args]);
+@@ -168,8 +169,12 @@
+   raw(advance,['config','user.name','Independent source writer']); raw(advance,['config','user.email','other@example.invalid']);
+   writeFileSync(path.join(advance,'neighbor.txt'),'independent upstream advance\n');
+   writeFileSync(path.join(advance,'upstream-only.txt'),'independent new source\n');
+-  raw(advance,['add','.']); raw(advance,['commit','-qm','Concurrent unselected source']); raw(advance,['push','-q','origin','main']);
+-  return {root, repository, git, upstream, refs, pushes, reviews, reviewsPath, run, revision, localParent, staged, output, planPath,
++  if(remoteChange==='blob')writeFileSync(path.join(advance,'lib/legacy/batch/first.md'),'changed original source\n');
++  if(remoteChange==='absent')rmSync(path.join(advance,'lib/legacy/batch/first.md'));
++  raw(advance,['add','.']);
++  if(remoteChange==='mode')raw(advance,['update-index','--chmod=+x','lib/legacy/batch/first.md']);
++  raw(advance,['commit','-qm','Concurrent unselected source']); raw(advance,['push','-q','origin','main']);
++  return {root, repository, remote, env, git, upstream, refs, pushes, reviews, reviewsPath, run, revision, originalRevision, localParent, staged, output, planPath,
+     recordsRepository, recordsRemote, recordsGit, recordsHead, recordsStaged, recordsRequest, recordsRequestPath, recordsOutput, recordPaths,
+     recordsReviewsPath:path.join(root, 'records-reviews.json'),
+     recordsUpstream:(...args)=>raw(root, ['--git-dir', recordsRemote, ...args]),
+@@ -234,6 +239,77 @@
+   assert.equal(f.git('rev-parse','HEAD'),head); assert.equal(f.refs(),refs); assert.equal(f.pushes(),pushes);
+   assert.deepEqual(readFileSync(f.reviewsPath),reviews); assert.equal(f.git('diff','--cached','--raw','-z'),f.staged);
+   assertReceivedCut(f,replay.result);
++});
++
++test('a reviewed local commit absent at origin is qualified against actual remote preimages before retirement',t=>{
++  const f=fixture(t,{localReview:true}), remoteBefore=f.upstream('rev-parse','main');
++  assert.throws(()=>f.upstream('cat-file','-e',f.revision+'^{commit}'),'the reviewed native commit really is absent upstream');
++  const first=f.run({cwd:f.root}); assert.equal(first.status,0,first.stderr||JSON.stringify(first.result)||first.stdout);
++  assertLocalCut(f,first.result); assertReceivedCut(f,first.result);
++  const prepared=first.result.sourcePreparation;
++  assert.equal(prepared.planRevision,f.revision);
++  assert.equal(prepared.reviewedSource.revision,remoteBefore);
++  assert.notEqual(prepared.reviewedSource.revision,f.revision);
++  assert.deepEqual(prepared.reviewedSource.entries.map(row=>row.path).sort(),['lib/legacy/batch/first.md','lib/legacy/batch/second.md']);
++  assert.equal(prepared.origin,'https://github.com/fixture/source.git');
++  const before={head:f.git('rev-parse','HEAD'),refs:f.refs(),pushes:f.pushes(),reviews:readFileSync(f.reviewsPath)};
++  const replay=f.run(); assert.equal(replay.status,0,replay.stderr||replay.stdout);
++  assert.deepEqual(replay.result.sourcePreparation,prepared);
++  assert.equal(replay.result.publication.candidate.mergeCommit,first.result.publication.candidate.mergeCommit);
++  assert.deepEqual({head:f.git('rev-parse','HEAD'),refs:f.refs(),pushes:f.pushes(),reviews:readFileSync(f.reviewsPath)},before);
++});
++
++for(const remoteChange of ['blob','mode','absent'])test(`remote selected ${remoteChange} mismatch refuses before local deletion or commit`,t=>{
++  const f=fixture(t,{localReview:true,remoteChange});
++  const before={head:f.git('rev-parse','HEAD'),index:f.git('diff','--cached','--raw','-z'),refs:f.refs(),pushes:f.pushes(),bytes:readFileSync(path.join(f.repository,'lib/legacy/batch/first.md'))};
++  const refused=f.run(); assert.notEqual(refused.status,0);
++  assert.match(refused.stderr,/source preimage differs/u);
++  assert.equal(refused.result,undefined); assert.equal(existsSync(f.reviewsPath),false);
++  assert.equal(existsSync(path.join(f.repository,'lib/legacy/batch/second.md')),true);
++  assert.deepEqual({head:f.git('rev-parse','HEAD'),index:f.git('diff','--cached','--raw','-z'),refs:f.refs(),pushes:f.pushes(),bytes:readFileSync(path.join(f.repository,'lib/legacy/batch/first.md'))},before);
++});
++
++test('unavailable original source refuses publication before retirement while local-only apply stays usable',t=>{
++  const f=fixture(t,{localReview:true});
++  f.git('remote','remove','origin');
++  const head=f.git('rev-parse','HEAD'),index=f.git('diff','--cached','--raw','-z');
++  const refused=f.run(); assert.notEqual(refused.status,0); assert.equal(refused.result,undefined);
++  assert.equal(f.git('rev-parse','HEAD'),head); assert.equal(f.git('diff','--cached','--raw','-z'),index);
++  assert.equal(existsSync(path.join(f.repository,'lib/legacy/batch/first.md')),true);
++  const local=spawnSync(process.execPath,[cli,f.planPath,'--apply','--output='+f.output],{encoding:'utf8'});
++  assert.equal(local.status,0,local.stderr||local.stdout);
++  const result=JSON.parse(readFileSync(f.output,'utf8'));assert.equal(result.landing.state,'committed');
++  assert.equal(result.publication,undefined);
++});
++
++test('public root consumers prepare before apply, retain both identities and publish through the existing maker',t=>{
++  const f=fixture(t,{localReview:true});
++  const packageRoot=new URL('../',import.meta.url);
++  const declared=JSON.parse(readFileSync(new URL('package.json',packageRoot),'utf8')).exports['.'];
++  const entry=new URL(declared,packageRoot).href;
++  const code=`
++    import assert from 'node:assert/strict';
++    import {readFileSync,writeFileSync} from 'node:fs';
++    const api=await import(${JSON.stringify(entry)});
++    const plan=JSON.parse(readFileSync(${JSON.stringify(f.planPath)},'utf8'));
++    const preview=api.retireTrackedLegacyCapabilities({plan});
++    const sourcePreparation=await api.prepareTrackedLegacySourcePublication({result:preview});
++    for(const name of ['first.md','second.md'])assert.ok(readFileSync(plan.repositoryRoot+'/lib/legacy/batch/'+name).length);
++    const result=api.retireTrackedLegacyCapabilities({plan,apply:true});
++    result.landing=api.commitTrackedLegacyRetirement({result});
++    await assert.rejects(api.publishTrackedLegacyRetirement({result}),/qualified remote source preparation required/);
++    result.sourcePreparation=sourcePreparation;
++    writeFileSync(${JSON.stringify(f.output)},JSON.stringify(result));
++    result.publication=await api.publishTrackedLegacyRetirement({result});
++    writeFileSync(${JSON.stringify(f.output)},JSON.stringify(result));
++    assert.equal(result.publication.ok,true);
++  `;
++  const run=spawnSync(process.execPath,['--input-type=module','-e',code],{cwd:f.root,env:f.env,encoding:'utf8',timeout:60000,maxBuffer:2*1024*1024});
++  assert.equal(run.status,0,run.stderr||run.stdout);
++  const result=JSON.parse(readFileSync(f.output,'utf8'));
++  assert.equal(result.sourcePreparation.planRevision,f.revision);
++  assert.notEqual(result.sourcePreparation.reviewedSource.revision,f.revision);
++  assertLocalCut(f,result);assertReceivedCut(f,result);
+ });
+ 
+ function assertRecordsReceived(f, received) {
+--- a/README.md
++++ b/README.md
+@@ -81,6 +81,32 @@
+ without `--publish`. Before restoring an unexpected deletion, consult its
+ commit and receiving record.
+ 
++The command qualifies those original preimages at the advertised remote main
++before deleting locally. Its immutable plan revision may be a local-only
++review cut: `sourcePreparation` retains that review identity separately from
++the remote lease used by Fabrication. An unavailable or mismatched original
++source refuses before deletion/commit. Local-only apply needs no remote.
++
++The package's public root also exports `prepareTrackedLegacySourcePublication`
++for library consumers. Prepare before applying; publication refuses a fresh
++retirement without this witness and never silently prepares after deletion:
++
++```js
++const preview = retireTrackedLegacyCapabilities({plan});
++const sourcePreparation = await prepareTrackedLegacySourcePublication({result: preview});
++const result = retireTrackedLegacyCapabilities({plan, apply: true});
++result.sourcePreparation = sourcePreparation;
++result.landing = commitTrackedLegacyRetirement({result});
++// Save result in the owner's durable output before the external source effect.
++result.publication = await publishTrackedLegacyRetirement({result});
++// Save the returned receiving result, including any retained candidate.
++```
++
++For replay, pass the retained `publication` as `previousPublication` to both
++preparation and publication, and retain its original `sourcePreparation`.
++An existing candidate is received as originally named rather than re-leased
++or pushed again. The ordinary CLI performs this custody automatically.
++
+ Add `--publish-records=REQUEST.json --records-output=RECEIPT.json` to finish
+ the plan/result/supporting-record publication in the same invocation.
+ REQUEST contains their actual `repositoryRoot` and Fabrication's ordinary
+--- a/src/legacy-capability-reallocation.mjs
++++ b/src/legacy-capability-reallocation.mjs
+@@ -508,3 +508,4 @@
+ 
+ export {inventoryTrackedLegacyCapabilities, readTrackedLegacyRetirementPlan, retireTrackedLegacyCapabilities, commitTrackedLegacyRetirement, publishTrackedLegacyRetirement, prepareTrackedLegacyRecordPublication, publishTrackedLegacyRecords} from "./tracked-legacy-retirement.mjs";
+ export {composeTrackedLegacyRetirementBatch, prepareTrackedLegacyRetirementBatch} from "./tracked-legacy-batch.mjs";
++export {prepareTrackedLegacySourcePublication} from "./tracked-legacy-source-publication.mjs";
+--- /dev/null
++++ b/src/tracked-legacy-source-publication.mjs
+@@ -0,0 +1,68 @@
++import {resolve} from 'node:path';
++
++const makerName = '@red-cup-engineering/computer-systems-fabrication-engineering-services-section';
++
++async function sourceReader() {
++  const codec = await import('@red-cup-engineering/git-source-reading-service/git-command-codec');
++  // Qualified internal supplier boundary: resolve the selected public maker,
++  // then reuse its own sibling reader without copying its transport.
++  const maker = import.meta.resolve(makerName + '/git/github-candidate');
++  return {...codec, ...await import(new URL('./git-objects.mjs', maker).href)};
++}
++
++/** Qualify only original remote metadata before local retirement effects.
++ * The plan's local review identity is not asserted to exist at origin. */
++export async function prepareTrackedLegacySourcePublication({result, previousPublication}) {
++  if (result?.kind !== 'legacy-capability-retirement-result/v1' || result.apply !== false) throw new TypeError('source preparation requires the read-only retirement result');
++  const root = resolve(result.repositoryRoot);
++  const entries = result.outcomes.filter(row => ['eligible', 'absent'].includes(row.state))
++    .map(row => ({path: result.legacyRoot + '/' + row.path, mode: row.mode, type: row.type, sha: row.blob}));
++  if (!entries.length) return undefined;
++  const paths = entries.map(row => row.path);
++  if (previousPublication?.candidate) {
++    if (previousPublication.root !== root || JSON.stringify([...previousPublication.paths].sort()) !== JSON.stringify([...paths].sort())) throw new TypeError('retained source publication differs from this retirement cut');
++    // The original candidate owns its existing lease and receiving obligations.
++    // Its selected paths may already be absent remotely; never replace it.
++    return undefined;
++  }
++  const {gitCommitPathsPlan, gitRepositoryObservationPlan, gitSync, entryAtSync, withSourceReadTransportSync} = await sourceReader();
++  const read = plan => String(gitSync(root, plan.arguments, {input: plan.input, env: plan.environment})).trim();
++  const origin = read(gitRepositoryObservationPlan.remoteUrl('origin'));
++  const advertised = read(gitCommitPathsPlan.originBranchHead('main'));
++  const match = /^([a-f0-9]{40})\s+refs\/heads\/main$/u.exec(advertised);
++  if (!match) throw new TypeError('source preparation requires one advertised immutable origin/main');
++  const revision = match[1];
++  withSourceReadTransportSync(root, [revision], source => {
++    for (const entry of entries) {
++      const actual = entryAtSync(source, revision, entry.path);
++      if (!actual || actual.mode !== entry.mode || actual.type !== entry.type || actual.object !== entry.sha) throw new TypeError('source preimage differs: ' + entry.path);
++    }
++  });
++  return {
++    kind: 'legacy-retirement-source-preparation/v1',
++    repositoryRoot: root, legacyRoot: result.legacyRoot,
++    planRevision: result.revision, origin, ref: 'refs/heads/main',
++    reviewedSource: {revision, entries}
++  };
++}
++
++/** Keep the original lease and identity when narrowing to actually retired paths. */
++export async function reviewedSourceForTrackedLegacyRetirement(result, selected) {
++  const prepared = result.sourcePreparation;
++  if (prepared?.kind !== 'legacy-retirement-source-preparation/v1' || prepared.repositoryRoot !== resolve(result.repositoryRoot)
++      || prepared.legacyRoot !== result.legacyRoot || prepared.planRevision !== result.revision
++      || !/^[a-f0-9]{40}$/u.test(prepared.reviewedSource?.revision ?? '') || !Array.isArray(prepared.reviewedSource.entries))
++    throw new TypeError('qualified remote source preparation required before retirement publication');
++  const {gitSync, gitRepositoryObservationPlan} = await sourceReader();
++  const plan = gitRepositoryObservationPlan.remoteUrl('origin');
++  const origin = String(gitSync(prepared.repositoryRoot, plan.arguments, {input: plan.input, env: plan.environment})).trim();
++  if (origin !== prepared.origin) throw new TypeError('original source origin changed after retirement preparation');
++  const qualified = new Map(prepared.reviewedSource.entries.map(entry => [entry.path, entry]));
++  const entries = selected.map(row => {
++    const path = result.legacyRoot + '/' + row.path, entry = qualified.get(path);
++    if (!entry || entry.mode !== row.mode || entry.type !== row.type || entry.sha !== row.blob)
++      throw new TypeError('prepared source preimage differs from retirement: ' + path);
++    return entry;
++  });
++  return {revision: prepared.reviewedSource.revision, entries};
++}

@@ -1,0 +1,30 @@
+      h: "--help",
+      H: "--help",
+      "?": "--help",
+      usage: "--help",
+      v: "--version",
+      f: "--force",
+      local: "--no-global",
+      l: "--long",
+      p: "--parseable",
+      porcelain: "--parseable",
+      prod: "--production",
+      development: "--dev",
+      g: "--global",
+      S: "--save",
+      D: "--save-dev",
+      P: "--save-prod",
+      E: "--save-exact",
+      O: "--save-optional",
+      C: "--dir",
+      w: "--workspace-root",
+      i: "--interactive",
+      F: "--filter",
+      y: "--yes"
+    };
+  }
+});
+
+// lib/parseCliArgs.js
+async function parseCliArgs2(inputArgv) {
+  const builtInCommandForced = inputArgv[0] === "pm";

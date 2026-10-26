@@ -1,0 +1,38 @@
+{
+  "kind": "RealHomeSourceFamilyEffectInspection",
+  "at": "2026-10-21T01:20:47.057893+00:00",
+  "scope": "Exact five source test entrances and their local config/entrypoint/environment/command helpers; no source change.",
+  "files": [
+    {
+      "path": "test/config.test.mjs",
+      "sha256": "4f260290dad9355dc5e3c105105377533016277a9ab32b8244f28f0c56eeb2c1"
+    },
+    {
+      "path": "test/command.test.mjs",
+      "sha256": "015b3abe97d6633989723192e0c220717b23ee044c97adb9ce8c073d7c78617e"
+    },
+    {
+      "path": "test/environment.test.mjs",
+      "sha256": "964ad659ed53b49c425a9859d16d713fef826b9ec1557f876681fdc794524df0"
+    },
+    {
+      "path": "test/entrypoint.test.mjs",
+      "sha256": "fba9cc5b7e7ef42f780837203dfeb32508dc8fa72403571debb4011d413cf4a9"
+    },
+    {
+      "path": "test/owned-data-admission.test.mjs",
+      "sha256": "407759d236272a0ba1f1a29515022a713e8bf6bd2548d19c1905d00bb025e6db"
+    }
+  ],
+  "findings": {
+    "config": "All fixture writes/mkdir/symlink/cleanup use mkdtemp(tmpdir) descendants. Only homedir use constructs the explicit not-created .local path and asserts read-only refusal; no mkdir/write for that path. Config resolver uses readonly config/metadata calls.",
+    "entrypoint": "Fixture installation writes only under mkdtemp(tmpdir); child scripts import the original metadata entrypoint helper and print results, with no home writes.",
+    "command": "Pure lifecycle/result values only.",
+    "environment": "Pure input-object environment projection with literal sample HOME value, not process.env or child HOME mutation.",
+    "ownedAdmission": "Fixtures only at explicit candidate data/logs test family path; controlled symlink targets and exact-owned directory cleanup. Public APIs metadata only."
+  },
+  "workerCorrection": "Inherit actual HOME and CODEX_HOME unchanged if present; no home scratch variable. TMPDIR and compile cache remain explicit owned typed-log stage paths.",
+  "noActualHomeWriteRequired": true,
+  "noSourceOrTestEdits": true,
+  "priorWorkerAndRunPreserved": true
+}
