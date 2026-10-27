@@ -148,7 +148,7 @@ function qualifyStructure(value) {
   for (const edge of edges) {
     if (edge.generator === 'specialization') {
       requireExactKeys(edge, SPECIALIZATION_EDGE_KEYS, 'specialization edge');
-    } else if (SIMPLE_EDGE_KEYS.has(edge.generator)) {
+    } else if (SIMPLE_EDGE_KEYS.includes(edge.generator)) {
       requireExactKeys(edge, SIMPLE_EDGE_KEYS, 'generative edge');
     } else {
       throw refusal('unqualified-generative-proof-path', `unknown edge generator: ${edge.generator}`);
