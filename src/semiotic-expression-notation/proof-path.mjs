@@ -214,19 +214,14 @@ function qualifyStructure(value) {
 }
 
 function qualifyWitness(value) {
-  const { sourceKey, targetKey, steps } = value;
-  requireNonemptyString(sourceKey, 'sourceKey');
-  requireNonemptyString(targetKey, 'targetKey');
-  if (!Array.isArray(steps)) {
-    throw refusal('unqualified-generative-proof-path', 'witness steps must be an array');
-  }
-  for (const step of steps) {
-    requireExactKeys(step, SIMPLE_EDGE_KEYS, 'witness step');
-    if (!GENERATOR_KINDS.includes(step.generator)) {
-      throw refusal('unqualified-generative-proof-path', `invalid witness step generator: ${step.generator}`);
-    }
-  }
-  return { sourceKey, targetKey, steps };
+  requireNonemptyString(value.sourceKey, 'sourceKey');
+  requireNonemptyString(value.targetKey, 'targetKey');
+  requireNonemptyString(value.path, 'witness path');
+  return readGenerativeProofPath({
+    sourceKey: value.sourceKey,
+    targetKey: value.targetKey,
+    path: value.path
+  });
 }
 
 export function qualifyGenerativeProofPath({ structureBytes, structureRoot, witnessBytes, witnessRoot } = {}) {
