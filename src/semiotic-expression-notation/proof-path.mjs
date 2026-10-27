@@ -1,4 +1,4 @@
-import { admitJsonSemanticContent, identifyProofPathWitness, readGenerativeProofPath, PROOF_PATH_WITNESS_KIND, GENERATIVE_PROOF_PATH_PROFILE } from '@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/semantic-content-identity';
+import { admitJsonSemanticContent, identifyProofPathWitness, readGenerativeProofPath, identifyJsonSemanticContent, PROOF_PATH_WITNESS_KIND, GENERATIVE_PROOF_PATH_PROFILE } from '@red-cup-engineering/computer-data-engineering-services-section/semiotic-expression-notation/semantic-content-identity';
 
 const MAX_BYTES = 1048576;
 const MIN_NODES = 1;
@@ -67,6 +67,13 @@ function requireStringRange(value, name, minLength, maxLength) {
   }
 }
 
+function requireCanonicalKey(value, name) {
+  requireStringRange(value, name, 1, MAX_KEY_LENGTH);
+  if (value !== value.normalize('NFC')) {
+    throw refusal('unqualified-generative-proof-path', name + ' must already be NFC');
+  }
+}
+
 function isKnownNode(nodeLookup, key) {
   return typeof key === 'string' && nodeLookup.has(key);
 }
@@ -77,17 +84,8 @@ function areCellsEqual(cellA, cellB) {
     cellA.object === cellB.object;
 }
 
-function freezeDeep(value) {
-  if (value === null || typeof value !== 'object') return value;
-  if (Array.isArray(value)) return Object.freeze(value.map(freezeDeep));
-  const frozen = {};
-  for (const key of Object.keys(value)) {
-    frozen[key] = freezeDeep(value[key]);
-  }
-  return Object.freeze(frozen);
-}
-
 function qualifyStructure(value) {
+  requireExactKeys(value, STRUCTURE_KEYS, 'structure');
   if (value.version !== 1) {
     throw refusal('unqualified-generative-proof-path', 'structure version must be 1');
   }
@@ -108,7 +106,7 @@ function qualifyStructure(value) {
   const nodeCells = new Map();
   for (const node of nodes) {
     requireExactKeys(node, NODE_KEYS, 'node');
-    requireStringRange(node.key, 'node.key', 1, MAX_KEY_LENGTH);
+    requireCanonicalKey(node.key, 'node.key');
     requireExactKeys(node.cell, CELL_KEYS, 'node.cell');
     requireStringRange(node.cell.subject, 'node.cell.subject', 1, MAX_CELL_LENGTH);
     requireStringRange(node.cell.predicate, 'node.cell.predicate', 1, MAX_CELL_LENGTH);
@@ -123,7 +121,7 @@ function qualifyStructure(value) {
   const mapLookup = new Map();
   for (const map of predicateMaps) {
     requireExactKeys(map, MAP_KEYS, 'predicateMap');
-    requireStringRange(map.key, 'predicateMap.key', 1, MAX_KEY_LENGTH);
+    requireCanonicalKey(map.key, 'predicateMap.key');
     if (!Array.isArray(map.entries) || map.entries.length < 1 || map.entries.length > MAX_ENTRIES) {
       throw refusal('unqualified-generative-proof-path', `predicateMap entries count must be 1..${MAX_ENTRIES}`);
     }
@@ -146,6 +144,9 @@ function qualifyStructure(value) {
   const edgeSet = new Set();
   const edgeMap = new Map();
   for (const edge of edges) {
+    if (edge === null || typeof edge !== 'object' || Array.isArray(edge)) {
+      throw refusal('unqualified-generative-proof-path', 'edge must be an object');
+    }
     if (!GENERATOR_KINDS.includes(edge.generator)) {
       throw refusal('unqualified-generative-proof-path', `unknown edge generator: ${edge.generator}`);
     }
@@ -224,6 +225,10 @@ function qualifyWitness(value) {
   });
 }
 
+export function identifyFiniteGenerativeStructure({ value, witnessRoot } = {}) {
+  qualifyStructure(value);
+  return identifyJsonSemanticContent({ objectKind: FINITE_GENERATIVE_STRUCTURE_KIND, value, witnessRoot });
+}
 export function qualifyGenerativeProofPath({ structureBytes, structureRoot, witnessBytes, witnessRoot } = {}) {
   requireUint8Array(structureBytes, 'structureBytes');
   requireUint8Array(witnessBytes, 'witnessBytes');
@@ -248,7 +253,7 @@ export function qualifyGenerativeProofPath({ structureBytes, structureRoot, witn
   const structure = qualifyStructure(s.value);
   const witness = qualifyWitness(w.value);
 
-  const route = readGenerativeProofPath({ sourceKey: witness.sourceKey, targetKey: witness.targetKey, path: witness.steps });
+  const route = witness;
 
   if (!structure.nodeLookup.has(route.sourceKey)) {
     throw refusal('unqualified-generative-proof-path', 'route source key is not a known node');

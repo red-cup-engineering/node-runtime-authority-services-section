@@ -48,7 +48,20 @@
     "semantic-content-identity": "./src/semiotic-expression-notation/runtime/semantic-content-identity-cli.mjs"
   },
   "files": [
-    "src"
+    "src",
+    "test/semiotic-expression-notation",
+    "test/generative-proof-path.test.mjs",
+    "docs/generative-proof-path.md"
   ],
-  "private": false
+  "private": false,
+  "receivingTests": [
+    "test/generative-proof-path.test.mjs",
+    "test/semiotic-expression-notation/cbor-codec.test.mjs",
+    "test/semiotic-expression-notation/eval.test.mjs",
+    "test/semiotic-expression-notation/named-codec.test.mjs",
+    "test/semiotic-expression-notation/reader.test.mjs",
+    "test/semiotic-expression-notation/runtime-core.test.mjs",
+    "test/semiotic-expression-notation/runtime-semantic-content-identity-cli.test.mjs",
+    "test/semiotic-expression-notation/runtime-semantic-content-identity.test.mjs"
+  ]
 }
