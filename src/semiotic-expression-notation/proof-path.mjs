@@ -237,8 +237,8 @@ export function qualifyGenerativeProofPath({ structureBytes, structureRoot, witn
   requireNonemptyString(structureRoot, 'structureRoot');
   requireNonemptyString(witnessRoot, 'witnessRoot');
 
-  const s = admitJsonSemanticContent({ bytes: structureBytes, token: '', objectKind: FINITE_GENERATIVE_STRUCTURE_KIND });
-  const w = admitJsonSemanticContent({ bytes: witnessBytes, token: '', objectKind: PROOF_PATH_WITNESS_KIND });
+  const s = admitJsonSemanticContent({ bytes: structureBytes, token: structureRoot, objectKind: FINITE_GENERATIVE_STRUCTURE_KIND });
+  const w = admitJsonSemanticContent({ bytes: witnessBytes, token: witnessRoot, objectKind: PROOF_PATH_WITNESS_KIND });
 
   const rebuiltWitness = identifyProofPathWitness({ ...w.value, witnessRoot: w.envelope.witnessRoot });
   if (rebuiltWitness.bytes.length !== w.bytes.length || !rebuiltWitness.bytes.every((b, i) => b === w.bytes[i])) {
