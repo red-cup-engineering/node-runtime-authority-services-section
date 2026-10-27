@@ -31,7 +31,7 @@ export const FINITE_GENERATIVE_STRUCTURE_KIND = 'semiotic-content.finite-generat
 
 function refusal(code, message) {
   const error = new TypeError(message);
-  error.refusal = code;
+  error.code = code;
   return error;
 }
 
