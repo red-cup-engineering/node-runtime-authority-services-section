@@ -25,7 +25,7 @@ const ENTRY_KEYS = Object.freeze(['from', 'to']);
 const SIMPLE_EDGE_KEYS = Object.freeze(['from', 'generator', 'to']);
 const SPECIALIZATION_EDGE_KEYS = Object.freeze(['from', 'generator', 'to', 'predicateMap']);
 
-const GENERATIVE_TO_SEN_MARK = Object.freeze(GENERATOR_SEN_MAP);
+export const GENERATIVE_TO_SEN_MARK = Object.freeze(GENERATOR_SEN_MAP);
 
 export const FINITE_GENERATIVE_STRUCTURE_KIND = 'semiotic-content.finite-generative-structure';
 
