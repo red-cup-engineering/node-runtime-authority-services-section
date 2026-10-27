@@ -1,9 +1,0 @@
-{
-  "recordedAt": "2026-10-23T16:55:47.703Z",
-  "memoryAvailableBytes": 7502118912,
-  "requiredMemoryBytes": 234881024,
-  "parentBytes": 134217728,
-  "childBytes": 67108864,
-  "guardBytes": 33554432,
-  "growthForecastBytes": 1048576
-}

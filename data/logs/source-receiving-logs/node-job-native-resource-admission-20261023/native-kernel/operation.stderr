@@ -1,7 +1,0 @@
-Running as unit: nodejob-resource-native-receiving-bcf-20261023.service; invocation ID: 758ae197ce7f4033b7e66da41862c6eb
-Finished with result: success
-Main processes terminated with: code=exited/status=0
-Service runtime: 4.897s
-CPU time consumed: 602ms
-Memory peak: 256.0K
-Memory swap peak: 0B

@@ -1,7 +1,0 @@
-Running as unit: nodejob-pr5-original-source-qa-20261023.service; invocation ID: b1405714a37f4edcb879789d7fec02c2
-Finished with result: exit-code
-Main processes terminated with: code=exited/status=1
-Service runtime: 4.904s
-CPU time consumed: 4.898s
-Memory peak: 764.0K
-Memory swap peak: 0B

@@ -1,7 +1,0 @@
-Running as unit: nodejob-resource-candidate-source-qa-v2-20261023.service; invocation ID: b94e67825b054c50931edc0e5a83503b
-Finished with result: success
-Main processes terminated with: code=exited/status=0
-Service runtime: 5.909s
-CPU time consumed: 5.842s
-Memory peak: 764.0K
-Memory swap peak: 0B

@@ -1,5 +1,0 @@
-{
-  "timing": "Captured immediately before launch; capacity record supplies actual launch time",
-  "exitCode": 0,
-  "raw": "MainPID=0\nControlPID=0\nId=nodejob-resource-inert-bcf-20261023-job-inert.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nJob=\nInvocationID=\n\nMainPID=0\nControlPID=0\nId=nodejob-resource-native-receiving-bcf-20261023.service\nLoadState=not-found\nActiveState=inactive\nSubState=dead\nJob=\nInvocationID=\n"
-}
