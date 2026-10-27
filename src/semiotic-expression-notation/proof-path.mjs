@@ -146,12 +146,13 @@ function qualifyStructure(value) {
   const edgeSet = new Set();
   const edgeMap = new Map();
   for (const edge of edges) {
+    if (!GENERATOR_KINDS.includes(edge.generator)) {
+      throw refusal('unqualified-generative-proof-path', `unknown edge generator: ${edge.generator}`);
+    }
     if (edge.generator === 'specialization') {
       requireExactKeys(edge, SPECIALIZATION_EDGE_KEYS, 'specialization edge');
-    } else if (SIMPLE_EDGE_KEYS.includes(edge.generator)) {
-      requireExactKeys(edge, SIMPLE_EDGE_KEYS, 'generative edge');
     } else {
-      throw refusal('unqualified-generative-proof-path', `unknown edge generator: ${edge.generator}`);
+      requireExactKeys(edge, SIMPLE_EDGE_KEYS, 'generative edge');
     }
 
     if (!isKnownNode(nodeLookup, edge.from)) {
@@ -159,9 +160,6 @@ function qualifyStructure(value) {
     }
     if (!isKnownNode(nodeLookup, edge.to)) {
       throw refusal('unqualified-generative-proof-path', `edge to unknown node: ${edge.to}`);
-    }
-    if (!GENERATOR_KINDS.includes(edge.generator)) {
-      throw refusal('unqualified-generative-proof-path', `invalid edge generator: ${edge.generator}`);
     }
     if (edge.generator === 'specialization') {
       if (!mapLookup.has(edge.predicateMap)) {
