@@ -38,36 +38,46 @@ through JSNode and composes the original descriptor, without making Code
 depend upward on Relating or creating another registry.
 
 Its child smart-contract-audit-engineering-services-section audits Solidity codebases and admits only findings proven by a runnable proof-of-concept on a local fork.
- 
-## Source-qualified JSNode fabrication lineage — Code owner receiving
+
+## Source-qualified JSNode fabrication lineage — original Code root
 
 The original Code repository's
-`services/javascript-engineering-services-section` gitlink now selects
-`73589892ea5c49d45308bb5e36cbfeb7e298f200`. Its downstream original
-JavaScript Code Fabrication gitlink selects
-`bbbb946883ea012cde7ff58bc60d8c2b1406a689`; that selects JSNode Code
-Fabrication `6a3474be2b558397ef69f6addb1288c0b0e8dbfb`; and its
-JSNode Package producer is source `f039a4fd4f3fc844fc7aa7455dd16f38ebf1cd77`.
-The original Code owner now checks each immutable Gitlink, not an arbitrary
-mutable branch head or a file copied out of its source domain.
+`services/javascript-engineering-services-section` Gitlink selects
+`d3ec314e89f1bea42c98f5b37aab90ecc09de833`. Its child
+JavaScript Code Fabrication Gitlink selects
+`7d18a6fa7f89a9f90fe023c2b9cd1021e21b2054`, which selects
+JSNode Code Fabrication
+`2741a43881d30860dc1669355be3a13f6bad0bac`, and the
+original JSNode Package producer at
+`7a13bfe1c5ad7287d4c7631564ef7e0f3bc49fbf`.
 
-The incumbent `.github/workflows/code-fabrication.yml` contains a
-`qualified-jsnode-source-chain` receiving job. It independently checks out
-every exact source, verifies all four Gitlink source identities, packs the
-actual JSNode producer and installs that archive into a clean Code root
-consumer, using the **same original Code-owned native tests** authored in
-the JSNode Code Fabrication child. These executable tests reject schema-invalid
-inputs, mutating source, unstable behavior, missing/forged clause receipts and
-weakened test provenance. The original source's reference workflow
-[run 40616054276](https://github.com/red-cup-engineering/javascript-node-code-fabrication-engineering-services-section/actions/runs/40616054276)
-passed native Requirement/Specification/Architecture/HLD/LLD and packed Code
-consumer receiving on the exact child source. This new root job does not
-replace the other CI jobs or their original code-unit duties.
+The Code-root `qualified-jsnode-source-chain` job now selects
+its exact JavaScript source from the reviewed Gitlink and validates the
+original `.gitmodules` provider URL before fetching. It requires
+the independently completed, passing GitHub Actions
+`original-code-receiving` result for that **exact** source
+revision. That JavaScript owner has already authenticated its exact child
+Code Fabrication Gitlink, whose actual Node24
+`child-code-receiving` workflow packed and clean-installed
+the maker, exercised all four original Code-owner behavioral receiver
+tests, and rejected source/hidden-test name collisions, malformed test
+names, stale receipts, schema-invalid values, mutations and unstable replay.
+See [original Code native receiver](https://github.com/red-cup-engineering/javascript-node-code-fabrication-engineering-services-section/actions/runs/40626229293),
+[intermediate installed consumer](https://github.com/red-cup-engineering/javascript-code-fabrication-engineering-services-section/actions/runs/40626692307),
+and [JavaScript source admission](https://github.com/red-cup-engineering/javascript-engineering-services-section/actions/runs/40626933199).
 
-Original [P0 #74](https://github.com/red-cup-engineering/computer-code-engineering-services-section/issues/74)
-remains the Work owner. Gitlink convergence and a clean installed CI
-consumer are not proof of a production OS-isolated generator, independent
-buyer requirement, active MetroPlat operation, GitHub write authority,
-SignCell/SignChain Work settlement, package release, actual source repair,
-or economic result. Legacy CI failures must remain observable and are
-not canceled or hidden by a passing source-chain job.
+The root no longer maintains four duplicated maker-commit literals or
+purchases another full npm installation on each change. Its unrelated
+`typed-operations` and `source-edits` jobs remain unchanged.
+The root GitHub Actions estate has independently observed pre-execution
+failures: three root jobs ended with **zero reported steps** on
+[run 40617220081](https://github.com/red-cup-engineering/computer-code-engineering-services-section/actions/runs/40617220081).
+A source selection and passing child-source proof do not mean the new
+root job has executed. Root CI restart and run-context receiving remain
+unsettled.
+
+Original [Code Engineering P0 #74](https://github.com/red-cup-engineering/computer-code-engineering-services-section/issues/74)
+owns the residual production worker isolation, full native runtime,
+Code/SignChain/Work authority, independently accepted buyer software,
+deployment and economic settlement. No stage can close those obligations
+from a Gitlink, a test fixture or an external check-run alone.
