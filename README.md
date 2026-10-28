@@ -43,13 +43,13 @@ Its child smart-contract-audit-engineering-services-section audits Solidity code
 
 The original Code repository's
 `services/javascript-engineering-services-section` Gitlink selects
-`d3ec314e89f1bea42c98f5b37aab90ecc09de833`. Its child
+`513bb53d4f5c3ab4e4a805dbb3dee88a1e5be120`. Its child
 JavaScript Code Fabrication Gitlink selects
-`7d18a6fa7f89a9f90fe023c2b9cd1021e21b2054`, which selects
+`d7db96c44f21a4a95783b46c7d44094cbb497997`, which selects
 JSNode Code Fabrication
-`2741a43881d30860dc1669355be3a13f6bad0bac`, and the
+`1725668beb6e71a78432c4df2a2691a0bcc0a7bb`, and the
 original JSNode Package producer at
-`7a13bfe1c5ad7287d4c7631564ef7e0f3bc49fbf`.
+`5ea672ea74d1395e2bcc9d7d8bf28562970773fe`.
 
 The Code-root `qualified-jsnode-source-chain` job now selects
 its exact JavaScript source from the reviewed Gitlink and validates the
@@ -62,9 +62,9 @@ Code Fabrication Gitlink, whose actual Node24
 the maker, exercised all four original Code-owner behavioral receiver
 tests, and rejected source/hidden-test name collisions, malformed test
 names, stale receipts, schema-invalid values, mutations and unstable replay.
-See [original Code native receiver](https://github.com/red-cup-engineering/javascript-node-code-fabrication-engineering-services-section/actions/runs/40626229293),
-[intermediate installed consumer](https://github.com/red-cup-engineering/javascript-code-fabrication-engineering-services-section/actions/runs/40626692307),
-and [JavaScript source admission](https://github.com/red-cup-engineering/javascript-engineering-services-section/actions/runs/40626933199).
+See [original Code native receiver](https://github.com/red-cup-engineering/javascript-node-code-fabrication-engineering-services-section/actions/runs/40628641921),
+[intermediate installed consumer](https://github.com/red-cup-engineering/javascript-code-fabrication-engineering-services-section/actions/runs/40628837237),
+and [JavaScript source admission](https://github.com/red-cup-engineering/javascript-engineering-services-section/actions/runs/40629000503).
 
 The root no longer maintains four duplicated maker-commit literals or
 purchases another full npm installation on each change. Its unrelated
@@ -81,3 +81,26 @@ owns the residual production worker isolation, full native runtime,
 Code/SignChain/Work authority, independently accepted buyer software,
 deployment and economic settlement. No stage can close those obligations
 from a Gitlink, a test fixture or an external check-run alone.
+
+## Qualified upstream TAP-label admission, root receiving still required
+
+At source revision `513bb53d4f5c3ab4e4a805dbb3dee88a1e5be120`, JavaScript Engineering has independently
+received the exact Gitlink chain to JSNode package `5ea672ea74d1395e2bcc9d7d8bf28562970773fe`,
+including Node 24 package-wide test
+[40628474406](https://github.com/red-cup-engineering/jsnode-package-engineering-services-section/actions/runs/40628474406),
+the actual independently packed Code consumer
+[40628641921](https://github.com/red-cup-engineering/javascript-node-code-fabrication-engineering-services-section/actions/runs/40628641921),
+the recursive installed consumer
+[40628837237](https://github.com/red-cup-engineering/javascript-code-fabrication-engineering-services-section/actions/runs/40628837237),
+and exact JavaScript source check
+[40629000503](https://github.com/red-cup-engineering/javascript-engineering-services-section/actions/runs/40629000503).
+
+The maker rejects unreportable hash and backslash test labels *before*
+requesting generated implementation source, preventing avoidable false refusal
+after inference spending. This root repository only advances its **original
+source Gitlink**, with no new compiler, generator or producer package.
+The root Code CI currently fails before reported job steps: source selection
+must not be represented as a passed root integration, and no live host
+isolation, Stage Proof, release or beneficiary acceptance is inferred.
+[Original P0 #74](https://github.com/red-cup-engineering/computer-code-engineering-services-section/issues/74)
+remains open for the actual factory and receiver.
