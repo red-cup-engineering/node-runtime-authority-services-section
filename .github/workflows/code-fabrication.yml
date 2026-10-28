@@ -28,6 +28,7 @@ on:
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/connected-module-fabrication.test.mjs"
       - "services/computer-code-development-services-section/services/software-solve-loop-service/**"
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-scaffold-service/**"
+      - "services/javascript-engineering-services-section"
       - ".github/workflows/code-fabrication.yml"
   pull_request:
     paths:
@@ -56,6 +57,7 @@ on:
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-services-section/test/connected-module-fabrication.test.mjs"
       - "services/computer-code-development-services-section/services/software-solve-loop-service/**"
       - "services/javascript-engineering-services-section/services/javascript-code-fabrication-services-section/services/javascript-node-code-fabrication-services-section/services/jsnode-package-scaffold-service/**"
+      - "services/javascript-engineering-services-section"
       - ".github/workflows/code-fabrication.yml"
   workflow_dispatch:
 permissions:
@@ -142,3 +144,80 @@ jobs:
       - name: Verify real pinned pnpm CLI directory selections
         run: |
           npm exec --yes --package=pnpm@11.19.0 -- node --test services/javascript-engineering-services-section/services/javascript-node-services-section/services/node-runtime-authority-services-section/services/node-runtime-release-promotion-service/test/pnpm-exact-importer.integration.test.mjs
+  qualified-jsnode-source-chain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Check out original Code owner including gitlink declarations
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Use original Node 24 receiving runtime
+        uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444
+        with:
+          node-version: "24"
+      - name: Select the exact original JavaScript source from this Code owner
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          repository: red-cup-engineering/javascript-engineering-services-section
+          ref: 73589892ea5c49d45308bb5e36cbfeb7e298f200
+          path: qualified-javascript
+          persist-credentials: false
+      - name: Select the original JavaScript Code Fabrication child
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          repository: red-cup-engineering/javascript-code-fabrication-engineering-services-section
+          ref: bbbb946883ea012cde7ff58bc60d8c2b1406a689
+          path: qualified-code-fabrication
+          persist-credentials: false
+      - name: Select the original JSNode Code Fabrication original consumer
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          repository: red-cup-engineering/javascript-node-code-fabrication-engineering-services-section
+          ref: 6a3474be2b558397ef69f6addb1288c0b0e8dbfb
+          path: qualified-jsnode-code
+          persist-credentials: false
+      - name: Select the original source-free JSNode package producer
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          repository: red-cup-engineering/jsnode-package-engineering-services-section
+          ref: f039a4fd4f3fc844fc7aa7455dd16f38ebf1cd77
+          path: qualified-jsnode-package
+          persist-credentials: false
+      - name: Reject stale, foreign or unqualified source cuts at each original Git boundary
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(git ls-tree HEAD services/javascript-engineering-services-section | awk '{print $3}')" = "73589892ea5c49d45308bb5e36cbfeb7e298f200"
+          test "$(git -C qualified-javascript rev-parse HEAD)" = "73589892ea5c49d45308bb5e36cbfeb7e298f200"
+          test "$(git -C qualified-javascript ls-tree HEAD services/javascript-code-fabrication-services-section | awk '{print $3}')" = "bbbb946883ea012cde7ff58bc60d8c2b1406a689"
+          test "$(git -C qualified-code-fabrication rev-parse HEAD)" = "bbbb946883ea012cde7ff58bc60d8c2b1406a689"
+          test "$(git -C qualified-code-fabrication ls-tree HEAD services/javascript-node-code-fabrication-services-section | awk '{print $3}')" = "6a3474be2b558397ef69f6addb1288c0b0e8dbfb"
+          test "$(git -C qualified-jsnode-code rev-parse HEAD)" = "6a3474be2b558397ef69f6addb1288c0b0e8dbfb"
+          test "$(git -C qualified-jsnode-code ls-tree HEAD services/jsnode-package-services-section | awk '{print $3}')" = "f039a4fd4f3fc844fc7aa7455dd16f38ebf1cd77"
+          test "$(git -C qualified-jsnode-package rev-parse HEAD)" = "f039a4fd4f3fc844fc7aa7455dd16f38ebf1cd77"
+          echo "Original Code / JavaScript / JSNode source hierarchy is exact; no ad hoc source import, branch tip, provider grant or native Work created."
+      - name: Exercise exact installed JSNode producer through original Code consumer
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$(node -p "require('./qualified-jsnode-package/package.json').version")" = "0.5.1-dev.5"
+          mkdir -p "$RUNNER_TEMP/code-root-jsnode-artifact" "$RUNNER_TEMP/code-root-jsnode-consumer"
+          (
+            cd qualified-jsnode-package
+            npm pack --ignore-scripts --silent --pack-destination "$RUNNER_TEMP/code-root-jsnode-artifact" >/dev/null
+          )
+          shopt -s nullglob
+          archives=( "$RUNNER_TEMP"/code-root-jsnode-artifact/*.tgz )
+          test "${#archives[@]}" -eq 1
+          archive="${archives[0]}"
+          sha256sum "$archive"
+          npm install --prefix "$RUNNER_TEMP/code-root-jsnode-consumer" "$archive" --ignore-scripts --no-audit --no-fund --no-package-lock --registry=https://registry.561.group/
+          # Reuse the original child's actual Code-owner consumer; never
+          # invent a second fixture, verifier or sandbox in the Code root.
+          cp qualified-jsnode-code/test/jsnode-assay-packed-receiver.mjs "$RUNNER_TEMP/code-root-jsnode-consumer/"
+          (
+            cd "$RUNNER_TEMP/code-root-jsnode-consumer"
+            node --test --test-reporter=tap jsnode-assay-packed-receiver.mjs
+          )
+          echo "Original root Code source and concrete packed consumer observed. Production worker isolation, release, native Work and beneficiary receiving remain external."
