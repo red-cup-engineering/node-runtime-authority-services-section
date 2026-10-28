@@ -41,46 +41,54 @@ Its child smart-contract-audit-engineering-services-section audits Solidity code
 
 ## Source-qualified JSNode fabrication lineage — original Code root
 
-The original Code repository's
-`services/javascript-engineering-services-section` Gitlink selects
-`513bb53d4f5c3ab4e4a805dbb3dee88a1e5be120`. Its child
-JavaScript Code Fabrication Gitlink selects
-`d7db96c44f21a4a95783b46c7d44094cbb497997`, which selects
-JSNode Code Fabrication
-`1725668beb6e71a78432c4df2a2691a0bcc0a7bb`, and the
-original JSNode Package producer at
-`5ea672ea74d1395e2bcc9d7d8bf28562970773fe`.
+The original Code repository selects the existing JavaScript Engineering owner
+through `services/javascript-engineering-services-section`, now at immutable
+source `18b69823989c283263f0db8b8184899ac92ca9ae`. Its original child Gitlinks
+select JavaScript Code Fabrication
+`d61b7527ba28aa9f07849abb2c5301e8d9217523`, JSNode Code Fabrication
+`7bb05ecc59c3f44145cc805d8f877d94f986d5b7`, and the original JSNode
+Package maker `e254fca3be3d67668b5dc5bce0fe215b66750fe1`.
 
-The Code-root `qualified-jsnode-source-chain` job now selects
-its exact JavaScript source from the reviewed Gitlink and validates the
-original `.gitmodules` provider URL before fetching. It requires
-the independently completed, passing GitHub Actions
-`original-code-receiving` result for that **exact** source
-revision. That JavaScript owner has already authenticated its exact child
-Code Fabrication Gitlink, whose actual Node24
-`child-code-receiving` workflow packed and clean-installed
-the maker, exercised all four original Code-owner behavioral receiver
-tests, and rejected source/hidden-test name collisions, malformed test
-names, stale receipts, schema-invalid values, mutations and unstable replay.
-See [original Code native receiver](https://github.com/red-cup-engineering/javascript-node-code-fabrication-engineering-services-section/actions/runs/40628641921),
-[intermediate installed consumer](https://github.com/red-cup-engineering/javascript-code-fabrication-engineering-services-section/actions/runs/40628837237),
-and [JavaScript source admission](https://github.com/red-cup-engineering/javascript-engineering-services-section/actions/runs/40629000503).
+The maker [PR #13](https://github.com/red-cup-engineering/jsnode-package-engineering-services-section/pull/13)
+unified source-delivery and module-projector ECMAScript export admission under
+the existing JavaScript syntax reader. Its actual ModuleExportName grammar
+allows `default`, reserved and dollar-sign exports and refuses comment-shaped
+or invalid source. The optional generated catalog now quotes the same original
+export names as the independent test generator, with the checked-in catalog
+regenerated and drift-checked.
 
-The root no longer maintains four duplicated maker-commit literals or
-purchases another full npm installation on each change. Its unrelated
-`typed-operations` and `source-edits` jobs remain unchanged.
-The root GitHub Actions estate has independently observed pre-execution
-failures: three root jobs ended with **zero reported steps** on
-[run 40617220081](https://github.com/red-cup-engineering/computer-code-engineering-services-section/actions/runs/40617220081).
-A source selection and passing child-source proof do not mean the new
-root job has executed. Root CI restart and run-context receiving remain
-unsettled.
+**Executed source and consumer receiving:**
+The original maker's [post-merge native full test](https://github.com/red-cup-engineering/jsnode-package-engineering-services-section/actions/runs/40628877064)
+passed. [JSNode Code native test](https://github.com/red-cup-engineering/javascript-node-code-fabrication-engineering-services-section/actions/runs/40629221041)
+independently packed and clean-installed the maker and passed six executable
+Code-owner tests, including catalog source and negative cases.
+[JavaScript Code native receiving](https://github.com/red-cup-engineering/javascript-code-fabrication-engineering-services-section/actions/runs/40629481109)
+independently selected two exact Gitlinks and repeated the **unchanged
+Code-owner test** on a clean installed package, six tests passing.
+[JavaScript Engineering source receiving](https://github.com/red-cup-engineering/javascript-engineering-services-section/actions/runs/40629740295)
+then selected its exact child source and authenticated the immutable GitHub
+Actions `child-code-receiving` result without repeating another package
+installation.
 
-Original [Code Engineering P0 #74](https://github.com/red-cup-engineering/computer-code-engineering-services-section/issues/74)
-owns the residual production worker isolation, full native runtime,
-Code/SignChain/Work authority, independently accepted buyer software,
-deployment and economic settlement. No stage can close those obligations
-from a Gitlink, a test fixture or an external check-run alone.
+The root's **existing** `qualified-jsnode-source-chain` job reads the reviewed
+JavaScript Engineering Gitlink, verifies its provider URL and requires the same
+exact source's authenticated, passing `original-code-receiving` check run. It
+does not separately track four hardcoded maker SHAs or run duplicate full
+npm installs. Existing unrelated `typed-operations` and `source-edits`
+regression jobs are unchanged.
+
+**Root CI remains unreceived.** The original
+[main run 40629136807](https://github.com/red-cup-engineering/computer-code-engineering-services-section/actions/runs/40629136807)
+failed all three root jobs with **zero recorded execution steps**; its failure
+predates these source upgrades, and this new root revision must be assessed
+separately. An exact Gitlink and its child's passing native check do not prove
+the root runner executed or qualify a production OS-isolated JSNode executor,
+native MetroPlat Work, SignCell/SignChain authority, code release, independent
+buyer acceptance or payment settlement.
+
+Original [Computer Code Engineering P0 #74](https://github.com/red-cup-engineering/computer-code-engineering-services-section/issues/74)
+owns these outstanding host, Work and beneficiary duties; [Engineering #137](https://github.com/red-cup-engineering/engineering-services-section/issues/137)
+owns the still-open four-stage closure receiving.
 
 ## Qualified upstream TAP-label admission, root receiving still required
 
