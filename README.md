@@ -43,10 +43,10 @@ Its child smart-contract-audit-engineering-services-section audits Solidity code
 
 The original Code repository selects the existing JavaScript Engineering owner
 through `services/javascript-engineering-services-section`, now at immutable
-source `18b69823989c283263f0db8b8184899ac92ca9ae`. Its original child Gitlinks
+source `91232abb003678c9d143821fcebc21d9ee9900b2`. Its original child Gitlinks
 select JavaScript Code Fabrication
-`d61b7527ba28aa9f07849abb2c5301e8d9217523`, JSNode Code Fabrication
-`7bb05ecc59c3f44145cc805d8f877d94f986d5b7`, and the original JSNode
+`6867caff2d88f7cd8b8a5c479edd4e25cc1be21c`, JSNode Code Fabrication
+`c6d382a4ccaa332911c3f0ab2338c032870b4e91`, and the original JSNode
 Package maker `e254fca3be3d67668b5dc5bce0fe215b66750fe1`.
 
 The maker [PR #13](https://github.com/red-cup-engineering/jsnode-package-engineering-services-section/pull/13)
@@ -69,6 +69,16 @@ Code-owner test** on a clean installed package, six tests passing.
 then selected its exact child source and authenticated the immutable GitHub
 Actions `child-code-receiving` result without repeating another package
 installation.
+
+The original Code owner now also carries the restored Design-to-executable-Code
+generator and native Guix/Node programme construction with the callable Systems
+interface. Its [current source qualification](https://github.com/red-cup-engineering/javascript-node-code-fabrication-engineering-services-section/actions/runs/40743633470)
+passed signed Specification, native Code package/receiver declaration and exact
+JSNode consumer tests; [JavaScript Code parent](https://github.com/red-cup-engineering/javascript-code-fabrication-engineering-services-section/actions/runs/40744423850)
+and [JavaScript Engineering parent](https://github.com/red-cup-engineering/javascript-engineering-services-section/actions/runs/40745002201)
+independently received those exact Gitlinks and existing consumer checks.
+Neither proves Code 0.1.3 was released or a native Systems programme was
+deployed and independently accepted.
 
 The root's **existing** `qualified-jsnode-source-chain` job reads the reviewed
 JavaScript Engineering Gitlink, verifies its provider URL and requires the same
