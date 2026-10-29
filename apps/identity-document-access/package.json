@@ -4,9 +4,17 @@
   "private": true,
   "type": "module",
   "description": "Source-bound identity-document recovery, dependency assessment and variance evidence preparation.",
-  "exports": { ".": "./src/identity-access.mjs" },
-  "bin": { "identity-access": "./bin/identity-access.mjs" },
-  "scripts": { "test": "node --test test/*.test.mjs" },
+  "exports": {
+    ".": "./src/identity-access.mjs",
+    "./initialize-case": "./src/initialize-case.mjs",
+    "./evidence-audit": "./src/evidence-audit.mjs"
+  },
+  "bin": {
+    "identity-access": "./bin/identity-access.mjs"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
   "dependencies": {
     "@red-cup-engineering/computer-data-engineering-services-section": "0.3.1",
     "@red-cup-engineering/json-schema-services-section": "0.5.0",
