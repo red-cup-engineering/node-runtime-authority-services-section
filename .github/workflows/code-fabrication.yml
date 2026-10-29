@@ -3,6 +3,10 @@ on:
   push:
     branches: ["**"]
     paths:
+      # Root Code exports, tests, and package selection are all regression inputs.
+      - "src/**"
+      - "test/**"
+      - "package.json"
       - "src/exact-source-edits.mjs"
       - "src/workspace-path-relocation.mjs"
       - "src/typed-operation.mjs"
@@ -32,6 +36,10 @@ on:
       - ".github/workflows/code-fabrication.yml"
   pull_request:
     paths:
+      # Match push coverage so exported Code changes cannot skip the gate.
+      - "src/**"
+      - "test/**"
+      - "package.json"
       - "src/exact-source-edits.mjs"
       - "src/workspace-path-relocation.mjs"
       - "src/typed-operation.mjs"
@@ -85,6 +93,8 @@ jobs:
         run: node --test test/typed-operation.test.mjs
       - name: Exercise Code-owned schema topology and recipient frontiers
         run: node --test test/operation-schema-topology.test.mjs
+      - name: Exercise complete root Code regression suite
+        run: npm test
   source-edits:
     runs-on: ubuntu-latest
     timeout-minutes: 8
