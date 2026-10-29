@@ -11,6 +11,7 @@ const day = value => {
   if (!Number.isFinite(ms) || new Date(ms).toISOString().slice(0, 10) !== value) throw new TypeError('Invalid calendar date: ' + value);
   return ms / 86400000;
 };
+export { day as validateAssessmentDate };
 const unique = (items, label) => {
   const map = new Map();
   for (const item of items) {
@@ -31,12 +32,14 @@ function atPointer(value, pointer) {
   return value;
 }
 
-function receive({ caseRecord, model, sourceRegistry, asOf, assume = [] }) {
+function receive({ caseRecord, model, sourceRegistry, evidenceAudit = null, asOf, assume = [] }) {
   day(asOf);
   const result = validateJsonSchema(model, schema);
   if (!result.valid) throw new TypeError('Invalid analysis model: ' + JSON.stringify(result.issues));
   if (caseRecord.recordType !== model.caseRecordType) throw new TypeError('Analysis/case record type mismatch');
   if (caseRecord.caseId !== model.caseId) throw new TypeError('Analysis belongs to a different case');
+  if (evidenceAudit && evidenceAudit.caseId !== caseRecord.caseId) throw new TypeError('Evidence audit belongs to a different case');
+  if (evidenceAudit && (evidenceAudit.kind !== 'identity-evidence-audit' || !Array.isArray(evidenceAudit.manifestProblems) || !Array.isArray(evidenceAudit.items) || evidenceAudit.items.some(item => !item || typeof item.sourceId !== 'string' || !Array.isArray(item.issues)))) throw new TypeError('Invalid evidence audit');
   const nodes = unique(model.nodes, 'node'), claims = unique(model.claims, 'claim');
   const sources = unique(sourceRegistry.sources, 'source'), steps = unique(model.steps, 'step');
   const routes = unique(caseRecord.routes, 'case route');
@@ -60,7 +63,7 @@ function receive({ caseRecord, model, sourceRegistry, asOf, assume = [] }) {
     for (const id of task.resolvesNodes) reference(nodes, id, 'node');
     for (const id of task.resolvesClaims) reference(claims, id, 'claim');
   }
-  return { caseRecord, model, sources, claims, nodes, steps, routes, asOf, assume: new Set(assume) };
+  return { caseRecord, model, sources, claims, nodes, steps, routes, evidenceAudit, asOf, assume: new Set(assume) };
 }
 
 function sourceProblems(source, asOf) {
@@ -113,7 +116,13 @@ function nodeReadings(ctx) {
     });
     const reading = readingOfSides('extremal', observations.some(o => o.side === 'for'), observations.some(o => o.side === 'against'));
     if (ctx.assume.has(node.id) && node.kind === 'receipt') throw new TypeError('Cannot assume a receiver receipt: ' + node.id);
-    return { ...node, reading, hypothetical: ctx.assume.has(node.id), usable: reading === 'held' || (ctx.assume.has(node.id) && reading !== 'contested') };
+    const evidenceProblems = (node.artifactSourceIds ?? []).flatMap(sourceId => {
+      const audit = ctx.evidenceAudit;
+      if (!audit || audit.asOf !== ctx.asOf || audit.manifestProblems.length) return [{ sourceId, problem: 'artifact-audit-unavailable' }];
+      const matches = audit.items.filter(item => item.sourceId === sourceId);
+      return matches.length !== 1 || matches[0].state !== 'verified' || matches[0].issues.length ? [{ sourceId, problem: 'required-artifact-unverified' }] : [];
+    });
+    return { ...node, reading, evidenceProblems, hypothetical: ctx.assume.has(node.id), usable: !evidenceProblems.length && (reading === 'held' || (ctx.assume.has(node.id) && reading !== 'contested')) };
   });
 }
 
@@ -176,7 +185,7 @@ export function assess(input) {
     jurisdiction: ctx.model.jurisdiction, hypothetical: ctx.assume.size > 0, assumptions: [...ctx.assume],
     outcome: ctx.model.goals.every(id => held.has(id)) && !ctx.assume.size ? 'received-outcome-recorded' : 'open',
     limitations: 'Source-bound planning. No legal sufficiency, government acceptance, external action or physical receipt is inferred.',
-    nodes, claims, steps, circularDependencies: circularPaths(ctx, held),
+    nodes, claims, steps, evidenceAudit: ctx.evidenceAudit, circularDependencies: circularPaths(ctx, held),
     conditionalReachability: [...reachable].filter(id => !held.has(id)), research,
     unseededPrerequisites: [...relevant].filter(id => !held.has(id) && !steps.some(s => s.active && s.output === id)),
     goals: ctx.model.goals.map(id => ({ id, label: nodeMap.get(id).label, reading: nodeMap.get(id).reading }))
@@ -191,16 +200,16 @@ export function packet(input) {
     const claim = claims.get(o.claimId);
     const exhibit = id => {
       const node = nodes.get(id);
-      return { id, label: node.label, reading: node.reading, usable: node.usable, provenance: node.provenance ?? null, limits: node.limits ?? null };
+      return { id, label: node.label, reading: node.reading, usable: node.usable, evidenceProblems: node.evidenceProblems, provenance: node.provenance ?? null, limits: node.limits ?? null };
     };
     const exhibits = o.exhibits.map(exhibit);
     const alternatives = (o.exhibitAlternatives ?? []).map(ids => ids.map(exhibit));
     const alternativeReady = !alternatives.length || alternatives.some(group => group.every(e => e.usable && e.provenance));
     const missing = exhibits.filter(e => !e.usable).map(e => e.id);
     const provenanceMissing = exhibits.filter(e => e.usable && !e.provenance).map(e => e.id);
-    const recovery = o.recoveryAttempts.map(id => ({ id, reading: nodes.get(id).reading }));
+    const recovery = o.recoveryAttempts.map(id => ({ id, reading: nodes.get(id).reading, usable: nodes.get(id).usable }));
     return { ...o, sourceUrl: claim.sourceUrl, locator: claim.locator, exhibits, alternatives, recovery,
-      state: claim.problems.length || claim.reading !== 'held' || claim.side !== 'for' ? 'source-blocked' : !o.argument || (!exhibits.length && !alternatives.length) || missing.length || provenanceMissing.length || !alternativeReady || recovery.some(r => r.reading !== 'held') || o.objections.length ? 'incomplete' : 'assembled-for-review',
+      state: claim.problems.length || claim.reading !== 'held' || claim.side !== 'for' ? 'source-blocked' : !o.argument || (!exhibits.length && !alternatives.length) || missing.length || provenanceMissing.length || !alternativeReady || recovery.some(r => !r.usable) || o.objections.length ? 'incomplete' : 'assembled-for-review',
       missing, provenanceMissing };
   });
   return { kind: 'identity-document-access-packet', asOf: input.asOf, recipient: assessment.recipient,
@@ -237,6 +246,8 @@ export function sourceImpact({ model, before, after }) {
 
 export function renderAssessment(report) {
   const lines = [`# Identity document access assessment`, '', `${report.recipient}; ${report.jurisdiction}; assessed ${report.asOf}. Outcome: ${report.outcome}.${report.hypothetical ? ' HYPOTHETICAL: ' + report.assumptions.join(', ') : ''}`, '', report.limitations, '', '## Evidence dependencies', ''];
+  if (report.evidenceAudit) lines.push(`Retained-artifact audit: ${report.evidenceAudit.state}. ${report.evidenceAudit.limits}`, '');
+  for (const node of report.nodes.filter(n => n.evidenceProblems.length)) lines.push(`- ${node.id}: attributed reading ${node.reading}; unavailable for preparation: ${node.evidenceProblems.map(p => p.sourceId + ': ' + p.problem).join('; ')}.`);
   for (const step of report.steps) lines.push(`- **${step.id}: ${step.label}** — ${step.state}. ${step.missingInputs.length ? 'Missing: ' + step.missingInputs.join(', ') + '. ' : ''}${step.guardProblems.map(p => p.claimId + ': ' + p.problem).join('; ')}${step.limits ? ' ' + step.limits : ''}`.trimEnd());
   lines.push('', '## Circular dependencies', '');
   for (const cycle of report.circularDependencies) lines.push('- ' + cycle.join(' → '));
@@ -252,9 +263,9 @@ export function renderPacket(report) {
   const lines = ['# Variance evidence matrix', '', `${report.recipient}; ${report.asOf}. Packet: ${report.state}.`, '', report.limitations, ''];
   for (const o of report.obligations) {
     lines.push(`## ${o.id}: ${o.label}`, '', `State: ${o.state}. [Authority: ${o.locator}](${o.sourceUrl}).`, '', o.argument || 'No case argument recorded.', '');
-    for (const e of o.exhibits) lines.push(`- ${e.id}: ${e.label}; ${e.reading}. Provenance: ${(e.provenance ?? 'missing').replace(/\.+$/u, '')}.${e.limits ? ' Limitation: ' + e.limits : ''}`);
-    for (const [index, group] of o.alternatives.entries()) lines.push(`- Alternative ${index + 1}: ` + group.map(e => `${e.id} (${e.reading}; provenance ${e.provenance ? 'specified' : 'missing'})`).join('; ') + '.');
-    for (const r of o.recovery) lines.push(`- Recovery attempt ${r.id}: ${r.reading}.`);
+    for (const e of o.exhibits) lines.push(`- ${e.id}: ${e.label}; attributed reading ${e.reading}; usable for preparation: ${e.usable}.${e.evidenceProblems.length ? ' Artifact problems: ' + e.evidenceProblems.map(p => p.sourceId + ': ' + p.problem).join('; ') + '.' : ''} Provenance: ${(e.provenance ?? 'missing').replace(/\.+$/u, '')}.${e.limits ? ' Limitation: ' + e.limits : ''}`);
+    for (const [index, group] of o.alternatives.entries()) lines.push(`- Alternative ${index + 1}: ` + group.map(e => `${e.id} (${e.reading}; usable for preparation ${e.usable}; provenance ${e.provenance ? 'specified' : 'missing'})`).join('; ') + '.');
+    for (const r of o.recovery) lines.push(`- Recovery attempt ${r.id}: ${r.reading}; usable for preparation ${r.usable}.`);
     if (o.objections.length) lines.push('', 'Unresolved objections:', '', ...o.objections.map(s => '- ' + s));
     lines.push('');
   }

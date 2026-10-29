@@ -39,7 +39,8 @@
           "type": "object", "additionalProperties": false, "required": ["outcome", "receiver"],
           "properties": { "outcome": { "$ref": "#/$defs/id" }, "receiver": { "$ref": "#/$defs/id" } }
         },
-        "provenance": { "type": "string" }, "limits": { "type": "string" }
+        "provenance": { "type": "string" }, "limits": { "type": "string" },
+        "artifactSourceIds": { "$ref": "#/$defs/ids" }
       }
     },
     "claim": {

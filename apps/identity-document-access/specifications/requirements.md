@@ -13,3 +13,14 @@ The first consumer is Morgan Sennhauser's personal civilianization service. Its 
 9. Expose reusable functions and a local CLI, with an actual personal-service caller and counterexample tests. Local source operation, installed dependencies, government action and physical credential receipt remain distinct receiving events.
 
 External contracts: [JSON Schema Draft 2020-12](https://json-schema.org/draft/2020-12), the exact exported native dependencies in package.json, and jurisdiction-specific primary sources supplied by the consumer. The engine does not declare new legal rules or a universal sufficiency threshold.
+
+## Standard service case opening
+
+10. Open a new private case from an explicitly supplied Operations template, an opaque case ID and assessment date. Create a new destination only; never overwrite, merge with or reuse another client's directory.
+11. Reject templates with existing client names, facts, attempts, inventories, selected routes, consent, evidence observations or a bound client ID. Admit the manifest through the existing schema evaluator and assess the resulting case/model/source composition before writing. Template inputs must be ordinary files contained in that template directory, without symlinks or parent traversal.
+12. Create the case directory with mode 0700 and its four JSON records with mode 0600. Report created paths and unresolved outcome only. Initialization grants no contact, fee, signature, filing or publication authority. The reusable tool contains no client facts or jurisdiction-specific requirements.
+
+## Check the evidence actually held
+
+13. Audit an explicitly bound private acquisition manifest against its actual files before a modeled locally held exhibit is usable. Reuse retained originals and their acquisition manifest; do not create another evidence database. Bind manifest, case and referenced source IDs. Check byte count and SHA-256, reject traversal and symlinks, and detect files changed during reading. Never print record contents or identifying fields.
+14. Preserve the distinction between a reported observation and current artifact availability. A missing, corrupted, unaudited or wrong-case required artifact blocks that exhibit's use while retaining the attributed report and unrelated facts. A successful byte audit proves availability and integrity against the retained pin, not authenticity, certification, current-person matching, legal sufficiency or agency acceptance.
