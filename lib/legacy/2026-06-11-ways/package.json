@@ -1,0 +1,26 @@
+{
+  "name": "@561-group/ways",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "description": "The ways, enforced and midwifed: lint 561-group packages against the package invariants, scaffold new packages born conformant.",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "bin": {
+    "ways": "./src/cli.ts"
+  },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "node --test \"src/**/*.test.ts\""
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.8.0"
+  },
+  "sideEffects": false
+}
